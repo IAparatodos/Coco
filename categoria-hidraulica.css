@@ -222,6 +222,8 @@
 }
 
 .tax-product_cat.term-4564 .bho-hub-card-content {
+    position: static;
+    background: none;
     padding: 25px;
     text-align: center;
 }
