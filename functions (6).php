@@ -1691,19 +1691,18 @@ function adrihosan_pilar_bh_contenido_inferior() {
             </div>
         </section>
 
-        <section class="bho-guide-section adrihosan-full-width-block">
-            <div class="bho-guide-wrapper">
-                <h2 class="bho-guide-main-title">La Gu&iacute;a Definitiva para Elegir tu Suelo Hidr&aacute;ulico</h2>
-                <p>Elegir un <strong>suelo de estilo hidr&aacute;ulico</strong> es una de las decisiones de dise&ntilde;o m&aacute;s importantes para tu reforma. No solo define el car&aacute;cter de un espacio, sino que tambi&eacute;n debe responder a tus necesidades de uso y mantenimiento. En Adrihosan, somos expertos en las dos grandes familias de este material: la <strong>baldosa hidr&aacute;ulica original</strong> y el <strong>azulejo porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico</strong>. Entender sus diferencias es la clave para una elecci&oacute;n perfecta.</p>
-
-                <h3 class="bho-guide-subtitle">Original vs. Imitaci&oacute;n: &iquest;Qu&eacute; baldosa hidr&aacute;ulica comprar?</h3>
-                <p>La elecci&oacute;n depende de lo que valores m&aacute;s: la autenticidad artesanal o la practicidad moderna.</p>
-                <ul>
-                    <li>La <strong>baldosa original</strong> es una pieza de arte. Hecha a mano con cemento pigmentado, su color y textura tienen una profundidad inigualable. Es un material poroso que requiere un sellado inicial y un cuidado con productos neutros. A cambio, te ofrece un suelo que envejece con una belleza &uacute;nica, adquiriendo car&aacute;cter con el tiempo.</li>
-                    <li>El <strong>porcel&aacute;nico de imitaci&oacute;n</strong> es la soluci&oacute;n inteligente para el d&iacute;a a d&iacute;a. Gracias a la impresi&oacute;n digital, reproduce fielmente los dise&ntilde;os cl&aacute;sicos sobre una base de gres porcel&aacute;nico de nula porosidad. Esto lo convierte en un material 100% impermeable, resistente a cualquier mancha y producto de limpieza, y con una durabilidad a prueba del alto tr&aacute;nsito. Es la elecci&oacute;n ideal para cocinas, ba&ntilde;os y hogares con mucho movimiento.</li>
-                </ul>
-            </div>
-        </section>
+        <?php
+        $descripcion_editor = category_description();
+        if ( ! empty( $descripcion_editor ) ) {
+            echo '<section class="bho-guide-section">'; // SIN adrihosan-full-width-block
+            echo '    <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">';
+            echo '        <div class="term-description-dinamica" style="text-align: center; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
+            echo              $descripcion_editor;
+            echo '        </div>';
+            echo '    </div>';
+            echo '</section>';
+        }
+        ?>
 
         <section class="faq-section-common adrihosan-full-width-block">
             <div class="faq-wrapper-common">
