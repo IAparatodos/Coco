@@ -61,11 +61,6 @@
 .tax-product_cat.term-4869 .term-description,
 .tax-product_cat.term-4869 .product-categories,
 .tax-product_cat.term-4869 .doo-category-banner,
-.tax-product_cat.term-4564 .woocommerce-breadcrumb,
-.tax-product_cat.term-4564 .woocommerce-products-header,
-.tax-product_cat.term-4564 .term-description,
-.tax-product_cat.term-4564 .product-categories,
-.tax-product_cat.term-4564 .doo-category-banner, 
 .tax-product_cat.term-62 .woocommerce-breadcrumb,
 .tax-product_cat.term-62 .woocommerce-products-header,
 .tax-product_cat.term-62 .term-description,
@@ -125,8 +120,7 @@
 .tax-product_cat.term-2410 ul.products,
 .tax-product_cat.term-1844 ul.products,
 .tax-product_cat.term-2510 ul.products,
-.tax-product_cat.term-2093 ul.products,
-.tax-product_cat.term-4564 ul.products {
+.tax-product_cat.term-2093 ul.products {
   clear: both;
   position: relative;
   z-index: 1;
@@ -152,8 +146,7 @@
   .tax-product_cat.term-2410 ul.products,
   .tax-product_cat.term-1844 ul.products,
   .tax-product_cat.term-2510 ul.products,
-   .tax-product_cat.term-2093 ul.products,
-  .tax-product_cat.term-4564 ul.products {
+   .tax-product_cat.term-2093 ul.products {
     margin-top: 450px !important; /* El gran margen superior, solo en móvil */
   }
 }
@@ -922,390 +915,6 @@
 }
 
 /* ========================================================================== */
-/* 1. BALDOSA HIDRÁULICA (PÁGINA PILAR - ID 4564) */
-/* ========================================================================== */
-
-/* --- OCULTAR ELEMENTOS POR DEFECTO DE WOOCOMMERCE --- */
-.tax-product_cat.term-4564 .woocommerce-breadcrumb,
-.tax-product_cat.term-4564 .woocommerce-products-header,
-.tax-product_cat.term-4564 .term-description,
-.tax-product_cat.term-4564 .product-categories,
-.tax-product_cat.term-4564 .doo-category-banner,
-.tax-product_cat.term-4564 ul.products,
-.tax-product_cat.term-4564 .woocommerce-pagination,
-.tax-product_cat.term-4564 .shop-loop-head,
-.tax-product_cat.term-4564 .wd-shop-tools,
-.tax-product_cat.term-4564 .wd-search-form,
-.tax-product_cat.term-4564 .wd-filtered-nav {
-    display: none !important;
-}
-
-/* --- ESTILOS GENERALES PARA LA PÁGINA PILAR --- */
-.tax-product_cat.term-4564 {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* --- HERO SECTION --- */
-.tax-product_cat.term-4564 .bhp-hero-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-    padding: 80px 20px;
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    text-align: center;
-    overflow: hidden;
-}
-.tax-product_cat.term-4564 .bhp-hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(16, 46, 53, 0.65);
-    z-index: 1;
-}
-.tax-product_cat.term-4564 .bhp-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bhp-hero-content h1 {
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-.tax-product_cat.term-4564 .bhp-hero-content p {
-    font-size: clamp(1.125rem, 3vw, 1.25rem);
-    max-width: 650px;
-    margin: 0 auto 2.5rem;
-    opacity: 0.95;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-.tax-product_cat.term-4564 .bhp-hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    border: 2px solid;
-    transition: all 0.2s ease-in-out;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-primary {
-    background-color: #4dd2d0;
-    border-color: #4dd2d0;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-primary:hover {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-secondary {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-secondary:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #102e35 !important;
-}
-
-/* --- HUB SECTION --- */
-.tax-product_cat.term-4564 .bhp-hub-section {
-    padding: 80px 20px 20px; /* Reducido el padding inferior */
-}
-.tax-product_cat.term-4564 .bhp-hub-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
-@media (min-width: 768px) {
-    .tax-product_cat.term-4564 .bhp-hub-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-.tax-product_cat.term-4564 .bhp-hub-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.tax-product_cat.term-4564 .bhp-hub-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px -10px rgba(16, 46, 53, 0.2);
-}
-.tax-product_cat.term-4564 .bhp-hub-card-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content {
-    padding: 30px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #102e35;
-    margin: 0 0 1rem 0;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content p {
-    font-size: 1rem;
-    color: #3f6f7b;
-    line-height: 1.7;
-    margin: 0 0 2rem 0;
-    flex-grow: 1;
-}
-.tax-product_cat.term-4564 .bhp-hub-btn {
-    display: inline-block;
-    align-self: flex-start;
-    padding: 12px 28px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    background-color: #4dd2d0;
-    border: 2px solid #4dd2d0;
-    color: #ffffff !important;
-    transition: all 0.2s ease-in-out;
-}
-.tax-product_cat.term-4564 .bhp-hub-btn:hover {
-    background-color: #102e35;
-    border-color: #102e35;
-}
-
-/* --- COMPARISON TABLE & SEO SECTION --- */
-.tax-product_cat.term-4564 .bhp-comparison-section {
-    padding: 60px 20px 80px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-seo-section {
-    padding: 40px 20px 80px; /* Reducido el padding superior */
-    background-color: #f7f9fa;
-}
-/* ... (El resto de estilos de la tabla y SEO son iguales y no necesitan el prefijo si son únicos) ... */
-
-/* --- FAQ SECTION (AÑADIDA Y CORREGIDA) --- */
-.tax-product_cat.term-4564 .bh-faq-section {
-    padding: 80px 20px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bh-faq-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bh-faq-main-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-.tax-product_cat.term-4564 .bh-faq-item {
-    border-bottom: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .bh-faq-item:last-child {
-    border-bottom: none;
-}
-.tax-product_cat.term-4564 .bh-faq-question {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 0;
-    background: none;
-    border: none;
-    text-align: left;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #102e35;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-.tax-product_cat.term-4564 .bh-faq-question:hover,
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-question {
-    color: #4dd2d0;
-}
-.tax-product_cat.term-4564 .bh-faq-icon {
-    font-size: 1.5rem;
-    font-weight: 300;
-    transition: transform 0.3s ease;
-}
-.tax-product_cat.term-4564 .bh-faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    color: #3f6f7b;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-.tax-product_cat.term-4564 .bh-faq-answer p {
-    padding-bottom: 1.25rem;
-}
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-answer {
-    max-height: 500px;
-    transition: max-height 0.4s ease-in;
-}
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-icon {
-    transform: rotate(45deg);
-}
-
-/* --- CONTACT HELP BLOCK --- */
-.tax-product_cat.term-4564 .contact-help-block {
-    background-color: #f7f9fa;
-    padding: 80px 20px;
-    border-top: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .contact-help-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
-}
-/* ... (El resto de estilos de contacto son genéricos y no necesitan prefijo) ... */
-.tax-product_cat.term-4564 .contact-options-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
-}
-
-/* ========================================================================== */
-/* ESTILOS FALTANTES PARA PÁGINA PILAR (ID 4564) */
-/* ========================================================================== */
-
-/* --- COMPARISON TABLE SECTION --- */
-.tax-product_cat.term-4564 .bhp-comparison-section {
-    padding: 60px 20px 80px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-comparison-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bhp-comparison-wrapper h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2.5rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
-    border-radius: 8px;
-    overflow: hidden;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table th,
-.tax-product_cat.term-4564 .bhp-comparison-table td {
-    padding: 18px 20px;
-    text-align: left;
-    border-bottom: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table thead {
-    background-color: #102e35;
-    color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table th {
-    font-weight: 600;
-    font-size: 1rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) {
-    background-color: #f7f9fa;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:hover {
-    background-color: #f0f4f6;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table td {
-    color: #3f6f7b;
-    font-size: 0.95rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table td strong {
-    color: #102e35;
-    font-weight: 600;
-}
-@media (max-width: 768px) {
-    .tax-product_cat.term-4564 .bhp-comparison-table thead { display: none; }
-    .tax-product_cat.term-4564 .bhp-comparison-table,
-    .tax-product_cat.term-4564 .bhp-comparison-table tbody,
-    .tax-product_cat.term-4564 .bhp-comparison-table tr,
-    .tax-product_cat.term-4564 .bhp-comparison-table td {
-        display: block;
-        width: 100%;
-    }
-    .tax-product_cat.term-4564 .bhp-comparison-table tr { margin-bottom: 15px; border: 1px solid #eef2f5; border-radius: 8px; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td { text-align: right; padding-left: 50%; position: relative; border-bottom: none; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td:before { content: attr(data-label); position: absolute; left: 15px; width: calc(50% - 30px); padding-right: 10px; white-space: nowrap; text-align: left; font-weight: 600; color: #102e35; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td:last-child { border-bottom: 0; }
-    .tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) { background-color: #ffffff; }
-}
-
-/* --- SEO SECTION --- */
-.tax-product_cat.term-4564 .bhp-seo-section {
-    padding: 40px 20px 80px;
-    background-color: #f7f9fa;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    color: #3f6f7b;
-    line-height: 1.8;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2rem;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #102e35;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #4dd2d0;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper ul {
-    list-style: none;
-    padding-left: 0;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 1rem;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper li::before {
-    content: '✓';
-    color: #4dd2d0;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
-
-/* ========================================================================== */
 /* 2. BALDOSA HIDRÁULICA ORIGINAL (SUB-PÁGINA) */
 /* ========================================================================== */
 
@@ -2061,11 +1670,7 @@ html {
         margin-top: 40px; 
     }
     .tax-product_cat.term-2082 .woocommerce-products-blog-header {
-        margin-top: 80px; 
-    }
-    /* Cat 4564 */
-    .tax-product_cat.term-4564 .woocommerce-products-blog-header {
-        margin-top: 450px !important; 
+        margin-top: 80px;
     }
 }
 
@@ -2565,7 +2170,6 @@ html {
     .tax-product_cat.term-4866 ul.products, /* Cocina Original */
     .tax-product_cat.term-4869 ul.products, /* Exterior */
     .tax-product_cat.term-2082 ul.products, /* Imitación */
-    .tax-product_cat.term-4564 ul.products, /* Pilar Hidráulico */
     .tax-product_cat.term-2626 ul.products, /* Camerinos */
     .tax-product_cat.term-4247 ul.products, /* Espejos Redondos */
     .tax-product_cat.term-4213 ul.products, /* Espejos Luz */
