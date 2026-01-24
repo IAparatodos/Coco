@@ -1873,9 +1873,36 @@ function adrihosan_pilar_paredes_contenido_inferior() {
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Dudas Frecuentes sobre Azulejos de Pared</h2>
             <div class="faq-items-wrapper">
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se pueden instalar en una ducha?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, por supuesto. Nuestros azulejos para pared son de material porcel&aacute;nico, 100% impermeables y resistentes a la humedad, el vapor y las manchas de cal.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Son f&aacute;ciles de limpiar?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, la limpieza es extremadamente sencilla. Su superficie no porosa evita que las manchas se adhieran y permite el uso de cualquier producto de limpieza no abrasivo.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se pueden usar tambi&eacute;n en el suelo?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No, la mayor&iacute;a de los azulejos para pared no son aptos para suelos. Su resistencia al desgaste es menor. Para el suelo, siempre recomendamos utilizar material porcel&aacute;nico espec&iacute;fico para ese uso.</p></div></div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Cu&aacute;l es la diferencia entre el azulejo imitaci&oacute;n hidr&aacute;ulico y la baldosa original?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>La principal diferencia radica en el material y mantenimiento. El azulejo imitaci&oacute;n hidr&aacute;ulico es cer&aacute;mico o porcel&aacute;nico, lo que lo hace impermeable y libre de mantenimiento. La baldosa original es de cemento prensado, muy porosa y requiere selladores para evitar manchas permanentes.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Es apta la cer&aacute;mica hidr&aacute;ulica para el frontal de la cocina?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, es la mejor opci&oacute;n. Al ser un material con acabados resistentes al calor y las manchas , puedes limpiar las salpicaduras de grasa f&aacute;cilmente con productos comunes sin que el dise&ntilde;o del azulejo hidr&aacute;ulico cocina se deteriore.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Puedo personalizar los colores de mis azulejos hidr&aacute;ulicos?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>En Adrihosan ofrecemos una amplia variedad de modelos configurables y colecciones con diferentes texturas y tonos. Desde el azulejo hidr&aacute;ulico verde hasta el azulejo hidr&aacute;ulico gris, disponemos de opciones para adaptarnos a tu estilo personal.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Qu&eacute; formato es mejor para una pared peque&ntilde;a: 20x20 o 15x15?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>Para espacios reducidos, el azulejo hidr&aacute;ulico 15x15 aporta un detalle m&aacute;s fino y artesanal. Si buscas una instalaci&oacute;n m&aacute;s r&aacute;pida y un aspecto cl&aacute;sico, el azulejo hidr&aacute;ulico 20x20 es el est&aacute;ndar que mejor encaja en la mayor&iacute;a de reformas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;El azulejo hidr&aacute;ulico pared ba&ntilde;o resiste la humedad directa de la ducha?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>Totalmente. Al ser materiales fabricados para resistir el uso diario y la humedad , nuestros azulejos cuentan con una estructura s&oacute;lida y anclajes reforzados que garantizan seguridad y durabilidad en zonas h&uacute;medas.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
