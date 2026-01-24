@@ -165,8 +165,15 @@
 /* ========================================================================== */
 
 .tax-product_cat.term-2082 .ai-value-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
     padding: 60px 20px;
     background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
 .tax-product_cat.term-2082 .ai-value-wrapper {

@@ -779,7 +779,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
             </div>
         </div>
     </section>
-    <section class="ai-value-section" id="ventajas-porcelanico">
+    <section class="ai-value-section adrihosan-full-width-block" id="ventajas-porcelanico">
         <div class="ai-value-wrapper">
             <div class="section-header">
                 <h2>Dise&ntilde;ado para Vivir, no solo para Mirar</h2>
