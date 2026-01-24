@@ -6,11 +6,6 @@
 /* ========================================================================== */
 /* BLOQUE COMÚN PARA OCULTAR CABECERAS DE CATEGORÍAS PERSONALIZADAS */
 /* ========================================================================== */
-.tax-product_cat.term-4806 .woocommerce-breadcrumb,
-.tax-product_cat.term-4806 .woocommerce-products-header,
-.tax-product_cat.term-4806 .term-description,
-.tax-product_cat.term-4806 .product-categories,
-.tax-product_cat.term-4806 .doo-category-banner,
 .tax-product_cat.term-2083 .woocommerce-breadcrumb,
 .tax-product_cat.term-2083 .woocommerce-products-header,
 .tax-product_cat.term-2083 .term-description,
@@ -89,7 +84,6 @@
 /* ========================================================================== */
 
 /* Estilo base para escritorio: un margen superior normal */
-.tax-product_cat.term-4806 ul.products,
 .tax-product_cat.term-2083 ul.products,
 .tax-product_cat.term-4876 ul.products,
 .tax-product_cat.term-102 ul.products,
@@ -112,7 +106,6 @@
 
 /* Estilos solo para móvil (hasta 768px de ancho) */
 @media (max-width: 768px) {
-  .tax-product_cat.term-4806 ul.products,
   .tax-product_cat.term-2083 ul.products,
   .tax-product_cat.term-4876 ul.products,
   .tax-product_cat.term-102 ul.products,
@@ -158,24 +151,7 @@
 }
 
 /* ========================================================================== */
-/* 3. PAREDES DECORATIVAS (ID 4806) */
-/* ========================================================================== */
-.tax-product_cat.term-4806 .woocommerce-breadcrumb,
-.tax-product_cat.term-4806 .woocommerce-products-header,
-.tax-product_cat.term-4806 .term-description,
-.tax-product_cat.term-4806 .product-categories,
-.tax-product_cat.term-4806 .doo-category-banner {
-    display: none !important;
-}
-
-.ap-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ap-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ap-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ap-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ap-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:700px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ap-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ap-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ap-hero-btn:hover{transform:translateY(-2px)}.ap-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ap-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
-.ap-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ap-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-value-wrapper .section-header{margin-bottom:50px}.ap-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ap-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ap-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ap-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ap-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ap-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
-.ap-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ap-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ap-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ap-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ap-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ap-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ap-inspiration-card:hover img{transform:scale(1.05)}.ap-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ap-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ap-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ap-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
-.ap-faq-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:50px 20px;box-sizing:border-box;background-color:#fff}.ap-faq-wrapper{max-width:800px;margin:0 auto}.ap-faq-main-title{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin-top:0;margin-bottom:40px;text-align:center}.ap-faq-item{border-bottom:1px solid #e0e0e0}.ap-faq-item:last-child{border-bottom:none}.ap-faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;background:none;border:none;box-shadow:none;text-align:left;font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;color:#333;cursor:pointer;transition:color .2s ease}.ap-faq-question:hover{color:#4dd2d0}.ap-faq-icon{font-size:24px;font-weight:400;transition:transform .3s ease}.ap-faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease-in-out,padding .3s ease-in-out;color:#555;font-size:16px;line-height:1.7}.ap-faq-answer p{margin-top:0;margin-bottom:20px}.ap-faq-item.active .ap-faq-question{color:#4dd2d0}.ap-faq-item.active .ap-faq-answer{max-height:500px;padding-bottom:20px}.ap-faq-item.active .ap-faq-icon{transform:rotate(45deg)}
-.ap-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ap-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ap-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ap-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ap-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ap-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ap-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ap-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ap-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ap-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}@media (max-width:768px){.ap-help-intro{flex-direction:column;text-align:center}.ap-help-intro h2{text-align:center}}
-
-/* ========================================================================== */
-/* 4. AZULEJO HIDRÁULICO BAÑO (ID 2083) */
+/* 3. AZULEJO HIDRÁULICO BAÑO (ID 2083) */
 /* ========================================================================== */
 .tax-product_cat.term-2083 .woocommerce-breadcrumb,
 .tax-product_cat.term-2083 .woocommerce-products-header,
@@ -1151,10 +1127,9 @@ html {
 }
 
 /* ========================================================================== */
-/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 4806, 4862, 2209 */
+/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 4862, 2209 */
 /* ========================================================================== */
 
-.tax-product_cat.term-4806 .bho-guide-section,
 .tax-product_cat.term-4862 .bho-guide-section,
 .tax-product_cat.term-2209 .bho-guide-section {
     padding: 80px 20px;
@@ -1162,7 +1137,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-4806 .bho-guide-wrapper,
 .tax-product_cat.term-4862 .bho-guide-wrapper,
 .tax-product_cat.term-2209 .bho-guide-wrapper {
     max-width: 900px;
@@ -1172,7 +1146,6 @@ html {
 }
 
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title {
     font-size: 2.25rem;
     font-weight: 700;
@@ -1182,13 +1155,11 @@ html {
 }
 
 .tax-product_cat.term-2209 .bho-guide-wrapper p,
-.tax-product_cat.term-4806 .bho-guide-wrapper p,
 .tax-product_cat.term-4862 .bho-guide-wrapper p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle {
     font-size: 1.5rem;
@@ -1202,14 +1173,12 @@ html {
 }
 
 .tax-product_cat.term-2209 .bho-guide-wrapper ul,
-.tax-product_cat.term-4806 .bho-guide-wrapper ul,
 .tax-product_cat.term-4862 .bho-guide-wrapper ul {
     list-style: none;
     padding-left: 0;
     margin-top: 1.5rem;
 }
 
-.tax-product_cat.term-4806 .bho-guide-wrapper li,
 .tax-product_cat.term-2209 .bho-guide-wrapper li,
 .tax-product_cat.term-4862 .bho-guide-wrapper li {
     padding-left: 1.75rem;
@@ -1218,7 +1187,6 @@ html {
     font-size: 1rem;
 }
 
-.tax-product_cat.term-4806 .bho-guide-wrapper li::before,
 .tax-product_cat.term-2209 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4862 .bho-guide-wrapper li::before {
     content: '✓';
@@ -1229,7 +1197,6 @@ html {
     font-size: 1.1rem;
 }
 
-.tax-product_cat.term-4806 .bho-guide-wrapper strong,
 .tax-product_cat.term-4862 .bho-guide-wrapper strong,
 .tax-product_cat.term-2209 .bho-guide-wrapper strong {
     font-weight: 600;

@@ -1800,15 +1800,13 @@ function adrihosan_pilar_paredes_controller() {
  */
 function adrihosan_pilar_paredes_contenido_superior() {
     ?>
-    <section class="ap-hero-section adrihosan-full-width-block">
-        <div class="ap-hero-content">
-        
-            
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg');">
+        <div class="hero-content">
             <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared</h1>
             <p>Redecora sin obras y transforma tus espacios. Descubre c&oacute;mo un simple cambio de azulejos en la pared puede darle una nueva vida a tu hogar.</p>
-            <div class="ap-hero-buttons">
-                <a href="#catalogo-paredes" class="ap-hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="#ideas-paredes" class="ap-hero-btn secondary">Ver Ideas</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-paredes" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#ideas-paredes" class="hero-btn secondary">Ver Ideas</a>
             </div>
         </div>
     </section>
@@ -1854,29 +1852,19 @@ function adrihosan_pilar_paredes_contenido_superior() {
  * Inyecta el contenido inferior para la categoría 4806.
  */
 function adrihosan_pilar_paredes_contenido_inferior() {
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
     ?>
-    <section class="ap-seo-content-section adrihosan-full-width-block">
-        <div class="ap-seo-content-wrapper">
-            <h2>Gu&iacute;a para Elegir Azulejos para Pared de Ba&ntilde;o y Cocina</h2>
-            <p>Renovar las paredes es la forma m&aacute;s r&aacute;pida y efectiva de transformar una estancia sin necesidad de grandes obras. El <strong>revestimiento de pared</strong> es el protagonista, y los <strong>azulejos para pared de ba&ntilde;o y cocina</strong> con dise&ntilde;os de <a href="/categoria-producto/baldosa-hidraulica/imitacion/">inspiraci&oacute;n hidr&aacute;ulica</a> ofrecen la combinaci&oacute;n perfecta de estilo atemporal, resistencia y facilidad de limpieza, convirti&eacute;ndose en la soluci&oacute;n definitiva para los espacios m&aacute;s exigentes.</p>
-            
-            <h3>Porcel&aacute;nico para Pared: La Alternativa Superior</h3>
-            <p>Frente a la pintura o el papel pintado, el <strong>azulejo porcel&aacute;nico para paredes</strong> se posiciona como el rey de la durabilidad. Mientras otros materiales se degradan con la humedad, la grasa o la limpieza frecuente, el porcel&aacute;nico permanece inalterable a lo largo del tiempo.</p>
-            <ul>
-                <li><strong>Resistencia Total:</strong> Soporta sin problemas los productos de limpieza, el calor directo de la zona de cocci&oacute;n en una <a href="/categoria-producto/baldosa-hidraulica/imitacion/cocina-imitacion/">cocina</a> y los ara&ntilde;azos del d&iacute;a a d&iacute;a. Su color no se degrada.</li>
-                <li><strong>Cero Porosidad:</strong> Su principal ventaja t&eacute;cnica es una absorci&oacute;n de agua casi nula (< 0.5%). Esto lo hace 100% impermeable, inmune a las manchas y la mejor barrera contra la humedad y el moho en el <a href="/categoria-producto/baldosa-hidraulica/imitacion/bano-imitacion/">ba&ntilde;o</a>.</li>
-                <li><strong>Instalaci&oacute;n Sencilla:</strong> Se coloca como cualquier otro azulejo, sin necesidad de mano de obra especializada ni costosos tratamientos posteriores, lo que supone un ahorro en cualquier reforma.</li>
-            </ul>
-
-            <h3>Ideas Creativas para tus Paredes: M&aacute;s All&aacute; de lo Convencional</h3>
-            <p>La versatilidad del <strong>azulejo imitaci&oacute;n hidr&aacute;ulico</strong> te permite usarlo como una potente herramienta de dise&ntilde;o para crear puntos focales y a&ntilde;adir car&aacute;cter:</p>
-            <ul>
-                <li><strong>Salpicaderos de Cocina Impactantes:</strong> Convierte el frontal de tu cocina en una obra de arte. Un dise&ntilde;o geom&eacute;trico o floral protege la pared de salpicaduras y se convierte en el centro de todas las miradas.</li>
-                <li><strong>Frentes de Ducha con Personalidad:</strong> Crea un refugio de calma y estilo en tu ba&ntilde;o. Utiliza un patr&oacute;n llamativo en la pared principal de la ducha para un efecto de spa de lujo.</li>
-                <li><strong>Paredes de Acento Estrat&eacute;gicas:</strong> &iquest;Una pared aburrida en el sal&oacute;n o en un dormitorio? Reviste el frontal de una chimenea o el cabecero de la cama para un "efecto wow" instant&aacute;neo.</li>
-            </ul>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php
+    }
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
