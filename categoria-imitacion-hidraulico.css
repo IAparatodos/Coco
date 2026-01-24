@@ -362,6 +362,74 @@
     color: #3f6f7b;
 }
 
+/* --- COMPARISON GRID (Tabla Comparativa) --- */
+.tax-product_cat.term-2082 .ai-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    background-color: #e0e6eb;
+    border: 1px solid #e0e6eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-header.highlight {
+    background-color: #102e35;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-header.highlight h3 {
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-cell {
+    background-color: #fff;
+    padding: 25px 20px;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-cell h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 8px 0;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-cell p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-cell .pro::before {
+    content: '✓';
+    color: #28a745;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.tax-product_cat.term-2082 .ai-comparison-cell .con::before {
+    content: '✗';
+    color: #dc3545;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
 /* ========================================================================== */
 /* 7. PRODUCT HEADER SECTION */
 /* ========================================================================== */
@@ -462,6 +530,15 @@
 
     .tax-product_cat.term-2082 .ai-inspiration-card img {
         height: 200px;
+    }
+
+    /* --- COMPARISON GRID RESPONSIVE --- */
+    .tax-product_cat.term-2082 .ai-comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-2082 .ai-comparison-header.highlight {
+        border-top: 2px solid #e0e6eb;
     }
 
     /* --- BOTÓN FILTRAR MÓVIL --- */
