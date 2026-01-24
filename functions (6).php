@@ -2186,15 +2186,15 @@ add_action( 'template_redirect', 'adrihosan_pilar_cocina_controller' );
  */
 function adrihosan_pilar_cocina_contenido_superior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
-        <div class="bho-hero-content">
-           
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
+        <div class="hero-content">
+
             <h1>Baldosa Hidr&aacute;ulica Original para Cocina</h1>
-            
+
             <p>La baldosa hidr&aacute;ulica original convierte la cocina en una declaraci&oacute;n de estilo. Perfecta para salpicaderos con car&aacute;cter, suelos que cuentan una historia o para enmarcar una isla central.</p>
-            <div class="bhp-hero-buttons">
-                <a href="#catalogo-cocina" class="bhp-hero-btn bhp-hero-btn-primary">Ver Cat&aacute;logo</a>
-                <a href="#contacto-experto-cocina" class="bhp-hero-btn bhp-hero-btn-secondary">Hablar con un experto</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-cocina" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#contacto-experto-cocina" class="hero-btn secondary">Hablar con un experto</a>
             </div>
         </div>
     </section>
@@ -2262,33 +2262,28 @@ function adrihosan_pilar_cocina_contenido_inferior() {
     </div>
 </section>
 
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
-        <div class="bho-hero-content">
-            <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>
+    <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
+        <div class="hero-content">
+            <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>
             <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.4;">El Secreto de una Cocina Eterna: Sellado y Cuidado</h2>
             <p style="font-size: clamp(1rem, 2.5vw, 1.1rem); line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">La baldosa hidr&aacute;ulica es robusta, pero su coraz&oacute;n es poroso. Un buen sellado es el escudo que la proteger&aacute; de manchas de aceite, vino o caf&eacute;. Descubre c&oacute;mo hacerlo en nuestra gu&iacute;a.</p>
-            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="bhp-hero-btn bhp-hero-btn-primary">Leer la Gu&iacute;a →</a>
+            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="hero-btn primary">Leer la Gu&iacute;a →</a>
         </div>
     </section>
 
-    <section class="bho-guide-section adrihosan-full-width-block">
-         <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Baldosa Hidr&aacute;ulica Original en la Cocina: Car&aacute;cter y Funcionalidad</h2>
-            <p>La cocina es un espacio de trabajo intenso, pero tambi&eacute;n el alma de la casa. La <strong><a href="/categoria-producto/baldosa-hidraulica/original/">baldosa hidr&aacute;ulica original</a> en la cocina</strong> no es solo una elecci&oacute;n est&eacute;tica, es una apuesta por un material que combina la robustez necesaria para el d&iacute;a a d&iacute;a con una belleza que transforma por completo el ambiente. Es la soluci&oacute;n perfecta para crear suelos que definan zonas, como el &aacute;rea del comedor, o para dise&ntilde;ar salpicaderos que se conviertan en el centro de todas las miradas.</p>
-            <h3 class="bho-guide-subtitle">Suelos Hidr&aacute;ulicos para Cocinas: Creando Alfombras Cer&aacute;micas</h3>
-            <p>Utilizar el suelo hidr&aacute;ulico en la cocina permite jugar con el espacio. Puedes optar por cubrir toda la superficie para un impacto total o utilizarlo para crear "alfombras" cer&aacute;micas que delimiten visualmente la zona de comedor o la isla central. Esta t&eacute;cnica no solo es decorativa, sino tambi&eacute;n pr&aacute;ctica, ya que define los espacios en cocinas abiertas sin necesidad de tabiques.</p>
-            <ul>
-                <li><strong>Estilo y Durabilidad:</strong> Aporta una calidez y una textura &uacute;nicas. A pesar de ser un material artesanal, su alta densidad lo hace muy resistente al desgaste y al tr&aacute;nsito continuo.</li>
-                <li><strong>El Valor del Sellado:</strong> Al ser un material poroso, es crucial aplicar un <a href="https://www.adrihosan.com/categoria-producto/ceramica/mantenimiento-de-azulejos/" target="_blank" rel="noopener noreferrer">tratamiento sellador de alta calidad</a> tras la instalaci&oacute;n. Esto lo proteger&aacute; de las manchas comunes en una cocina, como aceite, vino o caf&eacute;.</li>
-            </ul>
-            <h3 class="bho-guide-subtitle">El Salpicadero: El Punto Focal de tu Cocina</h3>
-            <p>El frontal de la cocina es el lienzo perfecto para la baldosa hidr&aacute;ulica. Un salpicadero de hidr&aacute;ulico original se convierte en el protagonista indiscutible del dise&ntilde;o, aportando color, patr&oacute;n y una textura que ning&uacute;n otro material puede igualar.</p>
-            <ul>
-                <li><strong>Resistencia al Calor:</strong> Su composici&oacute;n a base de cemento lo hace totalmente inalterable a las altas temperaturas de la zona de cocci&oacute;n.</li>
-                <li><strong>Limpieza Sencilla:</strong> Una vez sellado, la limpieza de las salpicaduras de grasa o tomate es tan simple como pasar una bayeta con agua y jab&oacute;n neutro. Olv&iacute;date de productos agresivos que puedan da&ntilde;ar el material.</li>
-            </ul>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php } ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
