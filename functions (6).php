@@ -2346,14 +2346,14 @@ add_action( 'template_redirect', 'adrihosan_pilar_exterior_controller' );
  */
 function adrihosan_pilar_exterior_contenido_superior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
-        <div class="bho-hero-content">
-        
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
+        <div class="hero-content">
+
             <h1>Baldosa Hidr&aacute;ulica Original para Exterior</h1>
             <p>Descubre nuestra colecci&oacute;n de baldosa hidr&aacute;ulica original para exterior. La soluci&oacute;n artesanal y duradera para crear terrazas, patios y porches con un car&aacute;cter inigualable.</p>
-            <div class="bhp-hero-buttons">
-                <a href="#catalogo-exterior" class="bhp-hero-btn bhp-hero-btn-primary">Ver Cat&aacute;logo Exterior</a>
-                <a href="#contacto-experto-exterior" class="bhp-hero-btn bhp-hero-btn-secondary">Asesoramiento experto</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo Exterior</a>
+                <a href="#contacto-experto-exterior" class="hero-btn secondary">Asesoramiento experto</a>
             </div>
         </div>
     </section>
@@ -2391,12 +2391,12 @@ function adrihosan_pilar_exterior_contenido_superior() {
  */
 function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
-        <div class="bho-hero-content">
-            <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>
+    <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
+        <div class="hero-content">
+            <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>
             <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.4;">El Secreto de una Terraza Eterna: Sellado y Cuidado</h2>
             <p style="font-size: clamp(1rem, 2.5vw, 1.1rem); line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">La baldosa hidr&aacute;ulica es robusta, pero su coraz&oacute;n es poroso. Un buen sellado es el escudo que la proteger&aacute; de la humedad, las heladas y las manchas. Descubre c&oacute;mo hacerlo en nuestra gu&iacute;a.</p>
-            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="bhp-hero-btn bhp-hero-btn-primary" target="_blank" rel="noopener noreferrer">Leer la Gu&iacute;a →</a>
+            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="hero-btn primary" target="_blank" rel="noopener noreferrer">Leer la Gu&iacute;a →</a>
         </div>
     </section>
 
@@ -2413,32 +2413,19 @@ function adrihosan_pilar_exterior_contenido_inferior() {
         </div>
     </section>
     
-    <section class="bho-guide-section adrihosan-full-width-block">
-        <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Baldosa Hidr&aacute;ulica Original para Exterior: Resistencia, Estilo y Durabilidad</h2>
-            <p>Transforma tu jard&iacute;n, terraza o patio en un espacio &uacute;nico con la <strong><a href="/categoria-producto/baldosa-hidraulica/original/">baldosa hidr&aacute;ulica original</a> para exterior</strong>. M&aacute;s all&aacute; de su innegable belleza artesanal, este <strong>pavimento exterior</strong> ofrece una resistencia y durabilidad excepcionales frente a las condiciones clim&aacute;ticas m&aacute;s adversas. Si buscas un <strong>suelo para exterior</strong> que combine autenticidad, bajo mantenimiento y una est&eacute;tica atemporal, la baldosa hidr&aacute;ulica es la elecci&oacute;n perfecta para dar vida a tus zonas al aire libre.</p>
-            
-            <h3 class="bho-guide-subtitle">&iquest;Por Qu&eacute; Elegir Baldosa Hidr&aacute;ulica Original para tu Exterior?</h3>
-            <p>La <strong>baldosa hidr&aacute;ulica artesanal</strong> ha sido utilizada durante siglos en zonas de exterior gracias a su robustez. Fabricada con cemento, arena y pigmentos naturales, su composici&oacute;n la hace intr&iacute;nsecamente resistente. Sin embargo, para un rendimiento &oacute;ptimo y una protecci&oacute;n total en exteriores, es crucial entender sus propiedades y el proceso de instalaci&oacute;n adecuado.</p>
-            <ul>
-                <li><strong>Durabilidad Natural:</strong> El cemento es un material altamente resistente a la compresi&oacute;n y al desgaste por abrasi&oacute;n.</li>
-                <li><strong>Colores Inalterables:</strong> Los pigmentos minerales se integran en la masa de la baldosa, manteniendo su viveza incluso bajo exposici&oacute;n solar intensa y lluvias.</li>
-                <li><strong>Autenticidad y Car&aacute;cter:</strong> Cada pieza es &uacute;nica, aportando una personalidad y un toque artesanal que los materiales industriales no pueden replicar.</li>
-                <li><strong>Versatilidad Est&eacute;tica:</strong> Desde <strong>terrazas con encanto r&uacute;stico</strong> hasta <strong>patios modernos</strong>, los dise&ntilde;os permiten una adaptabilidad a cualquier estilo de paisajismo.</li>
-            </ul>
-
-            <h3 class="bho-guide-subtitle">Claves para una Instalaci&oacute;n Duradera y un Mantenimiento Sencillo</h3>
-            <p>Para garantizar que tu <strong>suelo hidr&aacute;ulico de exterior</strong> mantenga su belleza y funcionalidad a lo largo del tiempo, es fundamental seguir unas pautas espec&iacute;ficas:</p>
-            <ul>
-                <li><strong>Tratamiento Sellador Impermeabilizante (`hidr&oacute;fugo y ole&oacute;fugo`):</strong> <strong>&iexcl;Paso m&aacute;s importante!</strong> Antes de su uso, la baldosa debe ser tratada con un <a href="https://www.adrihosan.com/categoria-producto/ceramica/mantenimiento-de-azulejos/" target="_blank" rel="noopener noreferrer">sellador de alta calidad</a>. Esto la protege de la humedad, previene manchas (grasa, hojas, verd&iacute;n) y la hace <strong>resistente a las heladas</strong>, evitando que el agua se filtre y congele en su interior.</li>
-                <li><strong>Soporte y Drenaje Adecuado:</strong> En exteriores, es vital asegurar una correcta evacuaci&oacute;n del agua. El <strong>pavimento exterior de baldosa hidr&aacute;ulica</strong> debe instalarse sobre una base estable (solera de hormig&oacute;n) y con una ligera pendiente (1-2%) para evitar estancamientos de agua.</li>
-                <li><strong>Juntas Flexibles:</strong> Utiliza morteros de junta hidr&oacute;fugos y flexibles que soporten las expansiones y contracciones por cambios de temperatura.</li>
-                <li><strong>Resistencia Antideslizante (`Clase 3 / R11`):</strong> La textura mate natural de la baldosa hidr&aacute;ulica ofrece una buena adherencia. Para zonas de alto riesgo de humedad constante (como alrededor de piscinas o fuentes), busca modelos certificados con resistencia antideslizante (Clase 3 o R11) para garantizar la seguridad.</li>
-                <li><strong>Limpieza y Conservaci&oacute;n:</strong> Utiliza siempre productos de limpieza neutros y evita los &aacute;cidos, la lej&iacute;a o las hidrolimpiadoras a presi&oacute;n, que pueden da&ntilde;ar el sellador y la superficie.</li>
-            </ul>
-            <p>La <strong>baldosa hidr&aacute;ulica para exterior</strong> de Adrihosan no es solo un producto, es una inversi&oacute;n en dise&ntilde;o, calidad y durabilidad para tus espacios al aire libre. &iexcl;Descubre nuestra colecci&oacute;n y crea un exterior que deje huella!</p>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php } ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">

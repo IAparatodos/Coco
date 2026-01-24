@@ -51,11 +51,6 @@
 .tax-product_cat.term-4862 .term-description,
 .tax-product_cat.term-4862 .product-categories,
 .tax-product_cat.term-4862 .doo-category-banner,
-.tax-product_cat.term-4869 .woocommerce-breadcrumb,
-.tax-product_cat.term-4869 .woocommerce-products-header,
-.tax-product_cat.term-4869 .term-description,
-.tax-product_cat.term-4869 .product-categories,
-.tax-product_cat.term-4869 .doo-category-banner,
 .tax-product_cat.term-62 .woocommerce-breadcrumb,
 .tax-product_cat.term-62 .woocommerce-products-header,
 .tax-product_cat.term-62 .term-description,
@@ -108,7 +103,6 @@
 .tax-product_cat.term-4247 ul.products,
 .tax-product_cat.term-2626 ul.products,
 .tax-product_cat.term-4862 ul.products,
-.tax-product_cat.term-4869 ul.products,
 .tax-product_cat.term-2209 ul.products,
 .tax-product_cat.term-62 ul.products,
 .tax-product_cat.term-2410 ul.products,
@@ -133,7 +127,6 @@
   .tax-product_cat.term-4247 ul.products,
   .tax-product_cat.term-2626 ul.products,
   .tax-product_cat.term-4862 ul.products,
-  .tax-product_cat.term-4869 ul.products,
   .tax-product_cat.term-2209 ul.products,
   .tax-product_cat.term-2209 ul.products,
   .tax-product_cat.term-2410 ul.products,
@@ -1189,8 +1182,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-section,
 .tax-product_cat.term-4806 .bho-guide-section,
 .tax-product_cat.term-4862 .bho-guide-section,
-.tax-product_cat.term-2209 .bho-guide-section,
-.tax-product_cat.term-4869 .bho-guide-section {
+.tax-product_cat.term-2209 .bho-guide-section {
     padding: 80px 20px;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -1199,8 +1191,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper,
 .tax-product_cat.term-4806 .bho-guide-wrapper,
 .tax-product_cat.term-4862 .bho-guide-wrapper,
-.tax-product_cat.term-2209 .bho-guide-wrapper,
-.tax-product_cat.term-4869 .bho-guide-wrapper {
+.tax-product_cat.term-2209 .bho-guide-wrapper {
     max-width: 900px;
     margin: 0 auto;
     color: #3f6f7b;
@@ -1210,8 +1201,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-main-title {
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title {
     font-size: 2.25rem;
     font-weight: 700;
     color: #102e35;
@@ -1222,8 +1212,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper p,
 .tax-product_cat.term-2209 .bho-guide-wrapper p,
 .tax-product_cat.term-4806 .bho-guide-wrapper p,
-.tax-product_cat.term-4862 .bho-guide-wrapper p,
-.tax-product_cat.term-4869 .bho-guide-wrapper p {
+.tax-product_cat.term-4862 .bho-guide-wrapper p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -1231,8 +1220,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-subtitle {
+.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle {
     font-size: 1.5rem;
     font-weight: 600;
     color: #102e35;
@@ -1246,8 +1234,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper ul,
 .tax-product_cat.term-2209 .bho-guide-wrapper ul,
 .tax-product_cat.term-4806 .bho-guide-wrapper ul,
-.tax-product_cat.term-4862 .bho-guide-wrapper ul,
-.tax-product_cat.term-4869 .bho-guide-wrapper ul {
+.tax-product_cat.term-4862 .bho-guide-wrapper ul {
     list-style: none;
     padding-left: 0;
     margin-top: 1.5rem;
@@ -1256,8 +1243,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper li,
 .tax-product_cat.term-4806 .bho-guide-wrapper li,
 .tax-product_cat.term-2209 .bho-guide-wrapper li,
-.tax-product_cat.term-4862 .bho-guide-wrapper li,
-.tax-product_cat.term-4869 .bho-guide-wrapper li {
+.tax-product_cat.term-4862 .bho-guide-wrapper li {
     padding-left: 1.75rem;
     position: relative;
     margin-bottom: 1rem;
@@ -1267,8 +1253,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4806 .bho-guide-wrapper li::before,
 .tax-product_cat.term-2209 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4862 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4869 .bho-guide-wrapper li::before {
+.tax-product_cat.term-4862 .bho-guide-wrapper li::before {
     content: '✓';
     color: #4dd2d0;
     position: absolute;
@@ -1280,8 +1265,7 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper strong,
 .tax-product_cat.term-4806 .bho-guide-wrapper strong,
 .tax-product_cat.term-4862 .bho-guide-wrapper strong,
-.tax-product_cat.term-2209 .bho-guide-wrapper strong,
-.tax-product_cat.term-4869 .bho-guide-wrapper strong {
+.tax-product_cat.term-2209 .bho-guide-wrapper strong {
     font-weight: 600;
     color: #102e35;
 }
@@ -1654,27 +1638,11 @@ html {
 
 
 /* ========================================================================== */
-/* GRID FEATURES (CARACTERÍSTICAS) - RESPONSIVE */
+/* AJUSTES TABLA COMPARATIVA - RESPONSIVE */
 /* ========================================================================== */
 
-/* Ordenador: 4 columnas */
-.tax-product_cat.term-4869 .bho-features-wrapper {
-    grid-template-columns: repeat(4, 1fr) !important;
-}
-
-/* Tablet: 2 columnas */
-@media (max-width: 1024px) {
-    .tax-product_cat.term-4869 .bho-features-wrapper {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-/* Móvil: 1 columna + Ajuste tabla comparativa */
+/* Móvil: Ajuste tabla comparativa */
 @media (max-width: 768px) {
-    .tax-product_cat.term-4869 .bho-features-wrapper {
-        grid-template-columns: 1fr !important;
-    }
-    
     .ocultar-en-movil { display: none !important; }
     .bhp-comparison-table tfoot tr {
         display: flex !important;
@@ -2141,7 +2109,6 @@ html {
     /* Aplicamos el margen a TODAS tus categorías personalizadas */
     .tax-product_cat.term-4865 ul.products, /* Baño Original */
     .tax-product_cat.term-4862 ul.products, /* Hidráulico Original */
-    .tax-product_cat.term-4869 ul.products, /* Exterior */
     .tax-product_cat.term-2082 ul.products, /* Imitación */
     .tax-product_cat.term-2626 ul.products, /* Camerinos */
     .tax-product_cat.term-4247 ul.products, /* Espejos Redondos */
