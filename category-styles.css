@@ -51,11 +51,6 @@
 .tax-product_cat.term-4862 .term-description,
 .tax-product_cat.term-4862 .product-categories,
 .tax-product_cat.term-4862 .doo-category-banner,
-.tax-product_cat.term-4866 .woocommerce-breadcrumb,
-.tax-product_cat.term-4866 .woocommerce-products-header,
-.tax-product_cat.term-4866 .term-description,
-.tax-product_cat.term-4866 .product-categories,
-.tax-product_cat.term-4866 .doo-category-banner,
 .tax-product_cat.term-4869 .woocommerce-breadcrumb,
 .tax-product_cat.term-4869 .woocommerce-products-header,
 .tax-product_cat.term-4869 .term-description,
@@ -113,7 +108,6 @@
 .tax-product_cat.term-4247 ul.products,
 .tax-product_cat.term-2626 ul.products,
 .tax-product_cat.term-4862 ul.products,
-.tax-product_cat.term-4866 ul.products,
 .tax-product_cat.term-4869 ul.products,
 .tax-product_cat.term-2209 ul.products,
 .tax-product_cat.term-62 ul.products,
@@ -139,7 +133,6 @@
   .tax-product_cat.term-4247 ul.products,
   .tax-product_cat.term-2626 ul.products,
   .tax-product_cat.term-4862 ul.products,
-  .tax-product_cat.term-4866 ul.products,
   .tax-product_cat.term-4869 ul.products,
   .tax-product_cat.term-2209 ul.products,
   .tax-product_cat.term-2209 ul.products,
@@ -1197,7 +1190,6 @@ html {
 .tax-product_cat.term-4806 .bho-guide-section,
 .tax-product_cat.term-4862 .bho-guide-section,
 .tax-product_cat.term-2209 .bho-guide-section,
-.tax-product_cat.term-4866 .bho-guide-section,
 .tax-product_cat.term-4869 .bho-guide-section {
     padding: 80px 20px;
     background-color: #ffffff;
@@ -1208,7 +1200,6 @@ html {
 .tax-product_cat.term-4806 .bho-guide-wrapper,
 .tax-product_cat.term-4862 .bho-guide-wrapper,
 .tax-product_cat.term-2209 .bho-guide-wrapper,
-.tax-product_cat.term-4866 .bho-guide-wrapper,
 .tax-product_cat.term-4869 .bho-guide-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -1220,7 +1211,6 @@ html {
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-main-title {
     font-size: 2.25rem;
     font-weight: 700;
@@ -1233,7 +1223,6 @@ html {
 .tax-product_cat.term-2209 .bho-guide-wrapper p,
 .tax-product_cat.term-4806 .bho-guide-wrapper p,
 .tax-product_cat.term-4862 .bho-guide-wrapper p,
-.tax-product_cat.term-4866 .bho-guide-wrapper p,
 .tax-product_cat.term-4869 .bho-guide-wrapper p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -1242,7 +1231,6 @@ html {
 .tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-subtitle {
     font-size: 1.5rem;
@@ -1259,7 +1247,6 @@ html {
 .tax-product_cat.term-2209 .bho-guide-wrapper ul,
 .tax-product_cat.term-4806 .bho-guide-wrapper ul,
 .tax-product_cat.term-4862 .bho-guide-wrapper ul,
-.tax-product_cat.term-4866 .bho-guide-wrapper ul,
 .tax-product_cat.term-4869 .bho-guide-wrapper ul {
     list-style: none;
     padding-left: 0;
@@ -1270,7 +1257,6 @@ html {
 .tax-product_cat.term-4806 .bho-guide-wrapper li,
 .tax-product_cat.term-2209 .bho-guide-wrapper li,
 .tax-product_cat.term-4862 .bho-guide-wrapper li,
-.tax-product_cat.term-4866 .bho-guide-wrapper li,
 .tax-product_cat.term-4869 .bho-guide-wrapper li {
     padding-left: 1.75rem;
     position: relative;
@@ -1282,7 +1268,6 @@ html {
 .tax-product_cat.term-4806 .bho-guide-wrapper li::before,
 .tax-product_cat.term-2209 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4862 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4866 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4869 .bho-guide-wrapper li::before {
     content: '✓';
     color: #4dd2d0;
@@ -1296,7 +1281,6 @@ html {
 .tax-product_cat.term-4806 .bho-guide-wrapper strong,
 .tax-product_cat.term-4862 .bho-guide-wrapper strong,
 .tax-product_cat.term-2209 .bho-guide-wrapper strong,
-.tax-product_cat.term-4866 .bho-guide-wrapper strong,
 .tax-product_cat.term-4869 .bho-guide-wrapper strong {
     font-weight: 600;
     color: #102e35;
@@ -1555,9 +1539,8 @@ html {
 }
 
 /* --- GRID POTENTE (Imagen izq / Texto der) --- */
-/* Aplicado a: 4862 (Hidráulico), 4865 (Baño), 4866 (Cocina) */
-.tax-product_cat.term-4862 .bh-simulator-wrapper,
-.tax-product_cat.term-4866 .bh-simulator-wrapper {
+/* Aplicado a: 4862 (Hidráulico), 4865 (Baño) */
+.tax-product_cat.term-4862 .bh-simulator-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     display: grid !important; 
@@ -1583,9 +1566,8 @@ html {
 
 /* Margen superior solo si NO estamos en modo grid */
 .bh-simulator-device-img { margin-top: 40px; }
-.tax-product_cat.term-4862 .bh-simulator-device-img,
-.tax-product_cat.term-4866 .bh-simulator-device-img { 
-    margin-top: 0; 
+.tax-product_cat.term-4862 .bh-simulator-device-img {
+    margin-top: 0;
 }
 
 .bh-simulator-text { text-align: left; }
@@ -1613,9 +1595,7 @@ html {
 .bh-simulator-section h2, .bh-simulator-section p { text-align: center; }
 
 .tax-product_cat.term-4862 .bh-simulator-text h2,
-.tax-product_cat.term-4862 .bh-simulator-text p,
-.tax-product_cat.term-4866 .bh-simulator-text h2,
-.tax-product_cat.term-4866 .bh-simulator-text p {
+.tax-product_cat.term-4862 .bh-simulator-text p {
     text-align: left;
 }
 
@@ -1644,15 +1624,12 @@ html {
 
 /* --- RESPONSIVE PARA MÓVIL (SIMULADOR) --- */
 @media (max-width: 992px) {
-    .tax-product_cat.term-4862 .bh-simulator-wrapper,
-    .tax-product_cat.term-4866 .bh-simulator-wrapper {
-        grid-template-columns: 1fr; 
+    .tax-product_cat.term-4862 .bh-simulator-wrapper {
+        grid-template-columns: 1fr;
         gap: 40px;
     }
     .tax-product_cat.term-4862 .bh-simulator-text h2,
-    .tax-product_cat.term-4862 .bh-simulator-text p,
-    .tax-product_cat.term-4866 .bh-simulator-text h2,
-    .tax-product_cat.term-4866 .bh-simulator-text p {
+    .tax-product_cat.term-4862 .bh-simulator-text p {
         text-align: center; /* Volver a centrar en móvil */
     }
 }
@@ -1681,14 +1658,12 @@ html {
 /* ========================================================================== */
 
 /* Ordenador: 4 columnas */
-.tax-product_cat.term-4866 .bho-features-wrapper,
 .tax-product_cat.term-4869 .bho-features-wrapper {
     grid-template-columns: repeat(4, 1fr) !important;
 }
 
 /* Tablet: 2 columnas */
 @media (max-width: 1024px) {
-    .tax-product_cat.term-4866 .bho-features-wrapper,
     .tax-product_cat.term-4869 .bho-features-wrapper {
         grid-template-columns: repeat(2, 1fr) !important;
     }
@@ -1696,7 +1671,6 @@ html {
 
 /* Móvil: 1 columna + Ajuste tabla comparativa */
 @media (max-width: 768px) {
-    .tax-product_cat.term-4866 .bho-features-wrapper,
     .tax-product_cat.term-4869 .bho-features-wrapper {
         grid-template-columns: 1fr !important;
     }
@@ -2167,7 +2141,6 @@ html {
     /* Aplicamos el margen a TODAS tus categorías personalizadas */
     .tax-product_cat.term-4865 ul.products, /* Baño Original */
     .tax-product_cat.term-4862 ul.products, /* Hidráulico Original */
-    .tax-product_cat.term-4866 ul.products, /* Cocina Original */
     .tax-product_cat.term-4869 ul.products, /* Exterior */
     .tax-product_cat.term-2082 ul.products, /* Imitación */
     .tax-product_cat.term-2626 ul.products, /* Camerinos */
