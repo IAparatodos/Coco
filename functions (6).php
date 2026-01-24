@@ -849,16 +849,58 @@ function adrihosan_pilar_imitacion_contenido_inferior() {
     </section>
     <?php } ?>
 
-    <section class="faq-section-common adrihosan-full-width-block">
-        <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Dudas Frecuentes sobre el Porcel&aacute;nico Hidr&aacute;ulico</h2>
-            <div class="faq-items-wrapper">
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Realmente es tan resistente como un porcel&aacute;nico normal?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, absolutamente. La decoraci&oacute;n hidr&aacute;ulica es una capa de esmalte y dise&ntilde;o aplicada sobre una base de porcel&aacute;nico de alta calidad. Posee la misma resistencia al desgaste, al rayado y a los productos qu&iacute;micos que cualquier otro porcel&aacute;nico de su misma categor&iacute;a.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se puede usar en exteriores?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, muchos de nuestros modelos son aptos para exterior. Es importante que busques la especificaci&oacute;n "antideslizante" (Clase 2 o 3) en la ficha del producto. Estos modelos est&aacute;n dise&ntilde;ados para soportar heladas y ofrecer un agarre seguro en terrazas y patios.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;El dibujo se desgasta con el tiempo?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No. A diferencia de otros materiales, el dise&ntilde;o del porcel&aacute;nico est&aacute; protegido por una capa de esmalte vitrificado de alta dureza. El patr&oacute;n y los colores permanecer&aacute;n intactos durante toda la vida &uacute;til del producto, incluso en zonas de mucho paso.</p></div></div>
+<section class="faq-section-common adrihosan-full-width-block">
+    <div class="faq-wrapper-common">
+        <h2 class="faq-main-title-common">Dudas Frecuentes sobre el Porcel&aacute;nico Hidr&aacute;ulico</h2>
+        <div class="faq-items-wrapper">
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;El suelo imitaci&oacute;n hidr&aacute;ulico necesita mantenimiento o sellado?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>No. A diferencia del mosaico hidr&aacute;ulico original de cemento, nuestro <strong>gres porcel&aacute;nico</strong> es un material no poroso. Olv&iacute;date de aplicar ceras, selladores o tratamientos peri&oacute;dicos. Su superficie vitrificada impide que las manchas de vino, aceite o cal penetren, facilitando una <strong>limpieza diaria</strong> con agua y jab&oacute;n neutro.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Qu&eacute; tama&ntilde;o de junta debo usar para un efecto realista?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>La clave del realismo est&aacute; en la junta. Recomendamos una separaci&oacute;n m&iacute;nima de 1.5 a 2 mm. Evita la junta blanca pura; opta por un <strong>color cemento</strong> o gris perla que se integre con el patr&oacute;n desgastado de la pieza. Una buena elecci&oacute;n de <strong>material de rejuntado</strong> potencia la est&eacute;tica de baldosa individual antigua.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Puedo colocar este azulejo en la zona de ducha?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>S&iacute;, es una de sus mejores aplicaciones. Al tener una absorci&oacute;n de agua casi nula, el <strong>azulejo porcel&aacute;nico</strong> es t&eacute;cnicamente superior para zonas h&uacute;medas. Adem&aacute;s, muchos modelos cuentan con acabado <strong>antideslizante C2</strong>, garantizando tu seguridad sin perder la suavidad al tacto necesaria para ir descalzo.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;C&oacute;mo evito recargar el espacio visualmente?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Aplica la regla del equilibrio. Si instalas un <strong>suelo con patr&oacute;n geom&eacute;trico</strong> intenso, mantén las paredes en tonos neutros o blancos. Otra opci&oacute;n ganadora es crear una "alfombra" central con el hidr&aacute;ulico y rodearla de un <strong>pavimento base liso</strong> o imitaci&oacute;n madera, zonificando as&iacute; el espacio sin saturarlo.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Es compatible con suelo radiante?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Totalmente. La densidad del <strong>porcel&aacute;nico rectificado</strong> lo convierte en un excelente conductor t&eacute;rmico. Transmite el calor de forma m&aacute;s eficiente que la madera o el laminado, maximizando el rendimiento de tu sistema de <strong>calefacci&oacute;n radiante</strong> y reduciendo el consumo energ&eacute;tico de tu hogar.</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
