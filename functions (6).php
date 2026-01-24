@@ -1865,6 +1865,7 @@ function adrihosan_pilar_paredes_contenido_inferior() {
     </section>
     <?php
     }
+    ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
