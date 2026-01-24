@@ -1852,6 +1852,8 @@ function adrihosan_pilar_paredes_contenido_superior() {
  * Inyecta el contenido inferior para la categoría 4806.
  */
 function adrihosan_pilar_paredes_contenido_inferior() {
+    ?>
+    <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
     if ( ! empty( $descripcion_editor ) ) {
