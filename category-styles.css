@@ -6,11 +6,6 @@
 /* ========================================================================== */
 /* BLOQUE COMÚN PARA OCULTAR CABECERAS DE CATEGORÍAS PERSONALIZADAS */
 /* ========================================================================== */
-.tax-product_cat.term-2082 .woocommerce-breadcrumb,
-.tax-product_cat.term-2082 .woocommerce-products-header,
-.tax-product_cat.term-2082 .term-description,
-.tax-product_cat.term-2082 .product-categories,
-.tax-product_cat.term-2082 .doo-category-banner,
 .tax-product_cat.term-4806 .woocommerce-breadcrumb,
 .tax-product_cat.term-4806 .woocommerce-products-header,
 .tax-product_cat.term-4806 .term-description,
@@ -94,7 +89,6 @@
 /* ========================================================================== */
 
 /* Estilo base para escritorio: un margen superior normal */
-.tax-product_cat.term-2082 ul.products,
 .tax-product_cat.term-4806 ul.products,
 .tax-product_cat.term-2083 ul.products,
 .tax-product_cat.term-4876 ul.products,
@@ -118,7 +112,6 @@
 
 /* Estilos solo para móvil (hasta 768px de ancho) */
 @media (max-width: 768px) {
-  .tax-product_cat.term-2082 ul.products,
   .tax-product_cat.term-4806 ul.products,
   .tax-product_cat.term-2083 ul.products,
   .tax-product_cat.term-4876 ul.products,
@@ -163,24 +156,6 @@
     margin-right: -50vw;
     box-sizing: border-box;
 }
-
-/* ========================================================================== */
-/* 2. IMITACIÓN HIDRÁULICO (azulejo-hidraulico, ID 2082) */
-/* ========================================================================== */
-.tax-product_cat.term-2082 .woocommerce-breadcrumb,
-.tax-product_cat.term-2082 .woocommerce-products-header,
-.tax-product_cat.term-2082 .term-description,
-.tax-product_cat.term-2082 .product-categories,
-.tax-product_cat.term-2082 .doo-category-banner { display: none !important; }
-
-.ai-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2023/11/suelo-hidraulico-adrihosan.gif);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ai-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ai-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ai-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ai-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:650px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ai-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ai-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ai-hero-btn:hover{transform:translateY(-2px)}.ai-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ai-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
-.ai-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ai-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-value-wrapper .section-header{margin-bottom:50px}.ai-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ai-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ai-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ai-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ai-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ai-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
-.ai-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ai-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ai-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ai-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ai-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ai-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ai-inspiration-card:hover img{transform:scale(1.05)}.ai-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ai-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ai-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ai-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
-.ai-filters-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:60px 20px;border-top:1px solid #eef2f5}.ai-filters-wrapper{max-width:960px;margin:0 auto}.ai-filters-header{text-align:center;margin-bottom:40px}.ai-filters-header h2{font-size:1.5rem;font-weight:600;color:#102e35;margin:0}.ai-filter-group{margin-bottom:30px}.ai-filter-group:last-child{margin-bottom:0}.ai-filter-group-title{font-size:1.1rem;font-weight:600;color:#3f6f7b;margin:0 0 15px 0;text-align:center}.ai-filter-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.ai-filter-btn, .ai-filter-btn:visited{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid #4dd2d0;background-color:#4dd2d0;color:#fff;transition:all .2s ease-in-out}.ai-filter-btn:hover{background-color:#fff;color:#4dd2d0;transform:translateY(-2px)}
-.ai-product-header-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px 40px 20px;text-align:center}.ai-product-header-wrapper{max-width:800px;margin:0 auto}.ai-product-header-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-product-header-wrapper p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;margin:0}
-.ai-guide-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5;border-bottom:1px solid #eef2f5}.ai-guide-wrapper{max-width:960px;margin:0 auto}.ai-guide-header{text-align:center;margin-bottom:50px}.ai-guide-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-guide-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;max-width:700px;margin:0 auto}.ai-comparison-grid{display:grid;grid-template-columns:1fr;gap:2px;background-color:#e0e6eb;border:1px solid #e0e6eb;border-radius:8px;overflow:hidden}.ai-comparison-header{background-color:#fff;padding:20px;text-align:center}.ai-comparison-header h3{font-size:1.25rem;font-weight:700;color:#102e35;margin:0}.ai-comparison-header.highlight{background-color:#102e35}.ai-comparison-header.highlight h3{color:#4dd2d0}.ai-comparison-cell{background-color:#fff;padding:25px 20px}.ai-comparison-cell h4{font-size:1rem;font-weight:600;color:#102e35;margin:0 0 8px 0}.ai-comparison-cell p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}.ai-comparison-cell .pro::before{content:'✓';color:#28a745;font-weight:700;margin-right:8px}.ai-comparison-cell .con::before{content:'✗';color:#dc3545;font-weight:700;margin-right:8px}
-.ai-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ai-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ai-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ai-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ai-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ai-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ai-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ai-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ai-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ai-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}
-@media (max-width:768px){.ai-comparison-grid{grid-template-columns:1fr}.ai-comparison-header.highlight{border-top:2px solid #e0e6eb}.ai-help-intro{flex-direction:column;text-align:center}.ai-help-intro h2{text-align:center}}
 
 /* ========================================================================== */
 /* 3. PAREDES DECORATIVAS (ID 4806) */
@@ -1176,10 +1151,9 @@ html {
 }
 
 /* ========================================================================== */
-/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 2082, 4806, 4862, 4865, 4866, 4869 */
+/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 4806, 4862, 2209 */
 /* ========================================================================== */
 
-.tax-product_cat.term-2082 .bho-guide-section,
 .tax-product_cat.term-4806 .bho-guide-section,
 .tax-product_cat.term-4862 .bho-guide-section,
 .tax-product_cat.term-2209 .bho-guide-section {
@@ -1188,7 +1162,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper,
 .tax-product_cat.term-4806 .bho-guide-wrapper,
 .tax-product_cat.term-4862 .bho-guide-wrapper,
 .tax-product_cat.term-2209 .bho-guide-wrapper {
@@ -1198,7 +1171,6 @@ html {
     line-height: 1.8;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title {
@@ -1209,7 +1181,6 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper p,
 .tax-product_cat.term-2209 .bho-guide-wrapper p,
 .tax-product_cat.term-4806 .bho-guide-wrapper p,
 .tax-product_cat.term-4862 .bho-guide-wrapper p {
@@ -1217,7 +1188,6 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle {
@@ -1231,7 +1201,6 @@ html {
     display: inline-block;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper ul,
 .tax-product_cat.term-2209 .bho-guide-wrapper ul,
 .tax-product_cat.term-4806 .bho-guide-wrapper ul,
 .tax-product_cat.term-4862 .bho-guide-wrapper ul {
@@ -1240,7 +1209,6 @@ html {
     margin-top: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper li,
 .tax-product_cat.term-4806 .bho-guide-wrapper li,
 .tax-product_cat.term-2209 .bho-guide-wrapper li,
 .tax-product_cat.term-4862 .bho-guide-wrapper li {
@@ -1250,7 +1218,6 @@ html {
     font-size: 1rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4806 .bho-guide-wrapper li::before,
 .tax-product_cat.term-2209 .bho-guide-wrapper li::before,
 .tax-product_cat.term-4862 .bho-guide-wrapper li::before {
@@ -1262,7 +1229,6 @@ html {
     font-size: 1.1rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper strong,
 .tax-product_cat.term-4806 .bho-guide-wrapper strong,
 .tax-product_cat.term-4862 .bho-guide-wrapper strong,
 .tax-product_cat.term-2209 .bho-guide-wrapper strong {
@@ -1617,25 +1583,6 @@ html {
         text-align: center; /* Volver a centrar en móvil */
     }
 }
-
-/* ========================================================================== */
-/* CORRECCIONES DE SOLAPAMIENTO EN MÓVIL */
-/* ========================================================================== */
-
-@media (max-width: 768px) {
-    /* Cat 2082 */
-    .tax-product_cat.term-2082 .woocommerce-pagination,
-    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
-        clear: both; 
-        position: relative; 
-        margin-top: 40px; 
-    }
-    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
-        margin-top: 80px;
-    }
-}
-
-
 
 /* ========================================================================== */
 /* AJUSTES TABLA COMPARATIVA - RESPONSIVE */
@@ -2109,7 +2056,6 @@ html {
     /* Aplicamos el margen a TODAS tus categorías personalizadas */
     .tax-product_cat.term-4865 ul.products, /* Baño Original */
     .tax-product_cat.term-4862 ul.products, /* Hidráulico Original */
-    .tax-product_cat.term-2082 ul.products, /* Imitación */
     .tax-product_cat.term-2626 ul.products, /* Camerinos */
     .tax-product_cat.term-4247 ul.products, /* Espejos Redondos */
     .tax-product_cat.term-4213 ul.products, /* Espejos Luz */

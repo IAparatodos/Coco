@@ -769,13 +769,13 @@ add_action( 'template_redirect', 'adrihosan_pilar_imitacion_controller' );
  */
 function adrihosan_pilar_imitacion_contenido_superior() {
     ?>
-    <section class="ai-hero-section">
-        <div class="ai-hero-content">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-porcelanico-imitacion-hidraulico.jpg');">
+        <div class="hero-content">
             <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico Porcel&aacute;nico</h1>
             <p>Consigue la est&eacute;tica atemporal del mosaico hidr&aacute;ulico sin preocuparte por manchas, ceras o cuidados especiales. La soluci&oacute;n perfecta para el d&iacute;a a d&iacute;a.</p>
-            <div class="ai-hero-buttons">
-                <a href="#catalogo-imitacion" class="ai-hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="#ventajas-porcelanico" class="ai-hero-btn secondary">Ventajas del Porcel&aacute;nico</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-imitacion" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#ventajas-porcelanico" class="hero-btn secondary">Ventajas del Porcel&aacute;nico</a>
             </div>
         </div>
     </section>
@@ -835,31 +835,19 @@ function adrihosan_pilar_imitacion_contenido_inferior() {
         </div>
     </section>
     
-    <section class="bho-guide-section adrihosan-full-width-block">
-        <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico: Gu&iacute;a Completa de Compra</h2>
-            <p>El <strong>suelo imitaci&oacute;n hidr&aacute;ulico</strong> se ha consolidado como la opci&oacute;n preferida para quienes buscan la est&eacute;tica vintage y artesanal del mosaico tradicional, pero con las prestaciones t&eacute;cnicas del porcel&aacute;nico moderno. Este material no solo replica a la perfecci&oacute;n los dise&ntilde;os geom&eacute;tricos y florales, sino que soluciona los principales inconvenientes del hidr&aacute;ulico aut&eacute;ntico: el mantenimiento y la fragilidad.</p>
-            
-            <h3 class="bho-guide-subtitle">Ventajas Clave del Suelo Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico</h3>
-            <p>Elegir un <strong>suelo porcel&aacute;nico de estilo hidr&aacute;ulico</strong> es una decisi&oacute;n inteligente que combina lo mejor de ambos mundos. Estas son sus ventajas m&aacute;s destacadas:</p>
-            <ul>
-                <li><strong>Durabilidad Superior:</strong> Fabricado a altas temperaturas, el porcel&aacute;nico es extremadamente resistente a golpes, ara&ntilde;azos y al desgaste por alto tr&aacute;nsito. Es un <strong>pavimento duradero</strong> ideal para cualquier estancia de la casa, incluidas cocinas, pasillos y locales comerciales.</li>
-                <li><strong>Mantenimiento Cero:</strong> Su superficie no porosa (absorci&oacute;n de agua < 0.5%) lo hace inmune a las manchas. Puedes limpiarlo con cualquier producto de limpieza convencional sin miedo a da&ntilde;ar el dise&ntilde;o o el color. &iexcl;Olv&iacute;date de ceras y selladores para siempre!</li>
-                <li><strong>Versatilidad de Uso:</strong> Apto para suelos y paredes, tanto en interior como en exterior (modelos con certificaci&oacute;n antideslizante). Es la soluci&oacute;n perfecta para <strong>suelos de <a href="/categoria-producto/baldosa-hidraulica/imitacion/cocina-imitacion/">cocina imitaci&oacute;n hidr&aacute;ulico</a></strong>, <a href="/categoria-producto/baldosa-hidraulica/imitacion/bano-imitacion/">ba&ntilde;os</a> y terrazas.</li>
-                <li><strong>Precisi&oacute;n y Variedad:</strong> La tecnolog&iacute;a de impresi&oacute;n digital permite una infinidad de dise&ntilde;os, desde r&eacute;plicas exactas de patrones del siglo XIX hasta creaciones contempor&aacute;neas. Los colores son estables y no se degradan con el sol o el tiempo.</li>
-            </ul>
-
-            <h3 class="bho-guide-subtitle">&iquest;D&oacute;nde utilizar el Azulejo Imitaci&oacute;n Hidr&aacute;ulico?</h3>
-            <p>La versatilidad del <strong>azulejo imitaci&oacute;n hidr&aacute;ulico</strong> te permite integrarlo en cualquier proyecto de interiorismo:</p>
-            <ul>
-                <li><strong>Suelos de Cocina y Ba&ntilde;o:</strong> Es su aplicaci&oacute;n estrella. Aporta un toque de dise&ntilde;o &uacute;nico y soporta perfectamente la humedad y las manchas.</li>
-                <li><strong>Paredes de Acento:</strong> Ideal para crear un <strong><a href="/categoria-producto/baldosa-hidraulica/imitacion/pared-imitacion/">frontal de cocina</a></strong> (salpicadero) o una pared de ducha espectacular que se convierte en el foco de atenci&oacute;n.</li>
-                <li><strong>Creaci&oacute;n de "Alfombras" Cer&aacute;micas:</strong> En espacios grandes o de planta abierta, puedes usar un patr&oacute;n hidr&aacute;ulico para enmarcar la zona del comedor o la isla de la cocina, delimitando visualmente el espacio sin necesidad de muros.</li>
-                <li><strong>Pasillos y Recibidores:</strong> Da una bienvenida llena de estilo a tu hogar con un suelo que es tan resistente como decorativo.</li>
-            </ul>
-            <p>El <strong>porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico</strong> es, en definitiva, la soluci&oacute;n perfecta para quienes aman la est&eacute;tica vintage pero no quieren renunciar a la comodidad y resistencia de los materiales modernos. Explora nuestra colecci&oacute;n y encuentra el dise&ntilde;o que har&aacute; que tu proyecto brille.</p>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php } ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
