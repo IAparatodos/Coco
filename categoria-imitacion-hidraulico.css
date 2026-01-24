@@ -334,8 +334,15 @@
 /* ========================================================================== */
 
 .tax-product_cat.term-2082 .ai-guide-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
     padding: 60px 20px;
     background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
 .tax-product_cat.term-2082 .ai-guide-wrapper {
@@ -365,7 +372,7 @@
 /* --- COMPARISON GRID (Tabla Comparativa) --- */
 .tax-product_cat.term-2082 .ai-comparison-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2px;
     background-color: #e0e6eb;
     border: 1px solid #e0e6eb;
