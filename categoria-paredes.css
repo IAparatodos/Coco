@@ -1,49 +1,88 @@
 /**
  * CSS para Categoría Paredes Decorativas (ID: 4806)
- * Adrihosan - Clases .ap-* específicas
+ * Adrihosan - Clases estandarizadas
  */
 
-/* --- HERO SECTION --- */
-.tax-product_cat.term-4806 .ap-hero-section {
+/* ========================================================================== */
+/* 1. OCULTAR ELEMENTOS BASE DE WOOCOMMERCE */
+/* ========================================================================== */
+
+.tax-product_cat.term-4806 .woocommerce-breadcrumb,
+.tax-product_cat.term-4806 .woocommerce-products-header,
+.tax-product_cat.term-4806 .term-description,
+.tax-product_cat.term-4806 .product-categories,
+.tax-product_cat.term-4806 .doo-category-banner {
+    display: none !important;
+}
+
+/* ========================================================================== */
+/* 2. HERO SECTION (Estandarizado) */
+/* ========================================================================== */
+
+.tax-product_cat.term-4806 .hero-section-container {
     position: relative;
-    width: 100%;
-    min-height: 50vh;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #3f6f7b 0%, #102e35 100%);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
-.tax-product_cat.term-4806 .ap-hero-content {
+.tax-product_cat.term-4806 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, 0.5);
+    z-index: 1;
+}
+
+.tax-product_cat.term-4806 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
 }
 
-.tax-product_cat.term-4806 .ap-hero-content h1 {
-    font-size: clamp(28px, 5vw, 42px);
+.tax-product_cat.term-4806 .hero-content h1 {
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     margin: 0 0 15px 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.tax-product_cat.term-4806 .ap-hero-content p {
-    font-size: clamp(16px, 3vw, 18px);
+.tax-product_cat.term-4806 .hero-content p {
+    font-size: 18px;
     line-height: 1.6;
     max-width: 650px;
     margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    opacity: 0.95;
 }
 
-.tax-product_cat.term-4806 .ap-hero-buttons {
+.tax-product_cat.term-4806 .hero-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.tax-product_cat.term-4806 .ap-hero-btn {
+.tax-product_cat.term-4806 .hero-btn {
+    display: inline-block;
     padding: 12px 28px;
     border-radius: 5px;
     font-size: 16px;
@@ -56,33 +95,43 @@
     cursor: pointer;
 }
 
-.tax-product_cat.term-4806 .ap-hero-btn.primary {
+.tax-product_cat.term-4806 .hero-btn.primary {
     background-color: #4dd2d0;
     border-color: #4dd2d0;
     color: #ffffff;
 }
 
-.tax-product_cat.term-4806 .ap-hero-btn.primary:hover {
+.tax-product_cat.term-4806 .hero-btn.primary:hover {
     background-color: #ffffff;
     border-color: #ffffff;
     color: #4dd2d0;
 }
 
-.tax-product_cat.term-4806 .ap-hero-btn.secondary {
+.tax-product_cat.term-4806 .hero-btn.secondary {
     background-color: transparent;
     border-color: #ffffff;
     color: #ffffff;
 }
 
-.tax-product_cat.term-4806 .ap-hero-btn.secondary:hover {
+.tax-product_cat.term-4806 .hero-btn.secondary:hover {
     background-color: #ffffff;
     color: #3f6f7b;
 }
 
-/* --- VALUE SECTION --- */
+/* ========================================================================== */
+/* 3. VALUE SECTION */
+/* ========================================================================== */
+
 .tax-product_cat.term-4806 .ap-value-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
     padding: 80px 20px;
     background-color: #f7f9fa;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -113,7 +162,7 @@
 .tax-product_cat.term-4806 .ap-value-grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .tax-product_cat.term-4806 .ap-value-card {
@@ -146,12 +195,23 @@
     font-size: 16px;
     color: #3f6f7b;
     line-height: 1.6;
+    margin: 0;
 }
 
-/* --- INSPIRATION SECTION --- */
+/* ========================================================================== */
+/* 4. INSPIRATION SECTION */
+/* ========================================================================== */
+
 .tax-product_cat.term-4806 .ap-inspiration-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
     padding: 60px 20px;
     background: #fff;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -246,50 +306,10 @@
     color: white !important;
 }
 
-/* --- FILTERS SECTION --- */
-.tax-product_cat.term-4806 .ai-filters-section {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
+/* ========================================================================== */
+/* 5. PRODUCT HEADER */
+/* ========================================================================== */
 
-.tax-product_cat.term-4806 .ai-filters-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tax-product_cat.term-4806 .ai-filters-header h2 {
-    text-align: center;
-    font-size: clamp(24px, 4vw, 32px);
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 40px;
-}
-
-.tax-product_cat.term-4806 .ai-filter-group {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #eef2f5;
-}
-
-.tax-product_cat.term-4806 .ai-filter-group:last-child {
-    border-bottom: none;
-}
-
-.tax-product_cat.term-4806 .ai-filter-group-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #102e35;
-    margin: 0 0 20px 0;
-}
-
-.tax-product_cat.term-4806 .ai-filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-/* --- PRODUCT HEADER --- */
 .tax-product_cat.term-4806 .product-loop-header {
     max-width: 1200px;
     margin: 80px auto 40px auto;
@@ -302,89 +322,79 @@
     font-weight: 700;
     color: #102e35;
     margin: 0;
-}
-
-/* --- SEO CONTENT SECTION --- */
-.tax-product_cat.term-4806 .ap-seo-content-section {
-    padding: 60px 20px;
-    background-color: #f7f9fa;
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-4806 .ap-seo-content-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
+/* ========================================================================== */
+/* 6. PRODUCTS GRID */
+/* ========================================================================== */
+
+.tax-product_cat.term-4806 ul.products {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px !important;
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.tax-product_cat.term-4806 .ap-seo-content-wrapper h2 {
-    font-size: clamp(24px, 4vw, 32px);
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 20px;
+.tax-product_cat.term-4806 ul.products li.product {
+    text-align: center;
 }
 
-.tax-product_cat.term-4806 .ap-seo-content-wrapper h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #102e35;
-    margin: 30px 0 15px 0;
-    border-bottom: 2px solid #4dd2d0;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.tax-product_cat.term-4806 .ap-seo-content-wrapper p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #3f6f7b;
-    margin-bottom: 20px;
-}
-
-.tax-product_cat.term-4806 .ap-seo-content-wrapper ul {
-    margin: 20px 0;
-    padding-left: 25px;
-}
-
-.tax-product_cat.term-4806 .ap-seo-content-wrapper li {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #3f6f7b;
-    margin-bottom: 10px;
-}
-
-.tax-product_cat.term-4806 .ap-seo-content-wrapper a {
-    color: #4dd2d0;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.tax-product_cat.term-4806 .ap-seo-content-wrapper a:hover {
-    text-decoration: underline;
-}
-
-/* --- RESPONSIVE --- */
-@media (min-width: 640px) {
-    .tax-product_cat.term-4806 .ap-value-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .tax-product_cat.term-4806 .ap-value-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/* ========================================================================== */
+/* 7. RESPONSIVE - MÓVIL (max-width: 768px) */
+/* ========================================================================== */
 
 @media (max-width: 768px) {
-    .tax-product_cat.term-4806 .ap-hero-section {
-        min-height: 40vh;
+
+    /* --- HERO RESPONSIVE --- */
+    .tax-product_cat.term-4806 .hero-section-container {
+        min-height: 50vh;
+        padding: 40px 15px;
+    }
+
+    .tax-product_cat.term-4806 .hero-content h1 {
+        font-size: 26px !important;
+        padding: 0 10px;
+    }
+
+    .tax-product_cat.term-4806 .hero-content p {
+        font-size: 15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* --- VALUE SECTION RESPONSIVE --- */
+    .tax-product_cat.term-4806 .ap-value-section {
         padding: 40px 20px;
     }
-    
-    .tax-product_cat.term-4806 .ap-value-section,
-    .tax-product_cat.term-4806 .ap-inspiration-section,
-    .tax-product_cat.term-4806 .ai-filters-section,
-    .tax-product_cat.term-4806 .ap-seo-content-section {
+
+    .tax-product_cat.term-4806 .ap-value-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tax-product_cat.term-4806 .ap-value-card {
+        padding: 20px 15px;
+    }
+
+    /* --- INSPIRATION RESPONSIVE --- */
+    .tax-product_cat.term-4806 .ap-inspiration-section {
         padding: 40px 20px;
+    }
+
+    .tax-product_cat.term-4806 .ap-inspiration-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tax-product_cat.term-4806 .ap-inspiration-card {
+        min-height: 280px;
+    }
+
+    /* --- BOTÓN FILTRAR MÓVIL --- */
+    .solo-movil-filtro {
+        display: block !important;
     }
 }

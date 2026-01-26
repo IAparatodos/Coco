@@ -6,16 +6,6 @@
 /* ========================================================================== */
 /* BLOQUE COMÚN PARA OCULTAR CABECERAS DE CATEGORÍAS PERSONALIZADAS */
 /* ========================================================================== */
-.tax-product_cat.term-2082 .woocommerce-breadcrumb,
-.tax-product_cat.term-2082 .woocommerce-products-header,
-.tax-product_cat.term-2082 .term-description,
-.tax-product_cat.term-2082 .product-categories,
-.tax-product_cat.term-2082 .doo-category-banner,
-.tax-product_cat.term-4806 .woocommerce-breadcrumb,
-.tax-product_cat.term-4806 .woocommerce-products-header,
-.tax-product_cat.term-4806 .term-description,
-.tax-product_cat.term-4806 .product-categories,
-.tax-product_cat.term-4806 .doo-category-banner,
 .tax-product_cat.term-2083 .woocommerce-breadcrumb,
 .tax-product_cat.term-2083 .woocommerce-products-header,
 .tax-product_cat.term-2083 .term-description,
@@ -51,21 +41,6 @@
 .tax-product_cat.term-4862 .term-description,
 .tax-product_cat.term-4862 .product-categories,
 .tax-product_cat.term-4862 .doo-category-banner,
-.tax-product_cat.term-4866 .woocommerce-breadcrumb,
-.tax-product_cat.term-4866 .woocommerce-products-header,
-.tax-product_cat.term-4866 .term-description,
-.tax-product_cat.term-4866 .product-categories,
-.tax-product_cat.term-4866 .doo-category-banner,
-.tax-product_cat.term-4869 .woocommerce-breadcrumb,
-.tax-product_cat.term-4869 .woocommerce-products-header,
-.tax-product_cat.term-4869 .term-description,
-.tax-product_cat.term-4869 .product-categories,
-.tax-product_cat.term-4869 .doo-category-banner,
-.tax-product_cat.term-4564 .woocommerce-breadcrumb,
-.tax-product_cat.term-4564 .woocommerce-products-header,
-.tax-product_cat.term-4564 .term-description,
-.tax-product_cat.term-4564 .product-categories,
-.tax-product_cat.term-4564 .doo-category-banner, 
 .tax-product_cat.term-62 .woocommerce-breadcrumb,
 .tax-product_cat.term-62 .woocommerce-products-header,
 .tax-product_cat.term-62 .term-description,
@@ -109,8 +84,6 @@
 /* ========================================================================== */
 
 /* Estilo base para escritorio: un margen superior normal */
-.tax-product_cat.term-2082 ul.products,
-.tax-product_cat.term-4806 ul.products,
 .tax-product_cat.term-2083 ul.products,
 .tax-product_cat.term-4876 ul.products,
 .tax-product_cat.term-102 ul.products,
@@ -118,15 +91,12 @@
 .tax-product_cat.term-4247 ul.products,
 .tax-product_cat.term-2626 ul.products,
 .tax-product_cat.term-4862 ul.products,
-.tax-product_cat.term-4866 ul.products,
-.tax-product_cat.term-4869 ul.products,
 .tax-product_cat.term-2209 ul.products,
 .tax-product_cat.term-62 ul.products,
 .tax-product_cat.term-2410 ul.products,
 .tax-product_cat.term-1844 ul.products,
 .tax-product_cat.term-2510 ul.products,
-.tax-product_cat.term-2093 ul.products,
-.tax-product_cat.term-4564 ul.products {
+.tax-product_cat.term-2093 ul.products {
   clear: both;
   position: relative;
   z-index: 1;
@@ -136,8 +106,6 @@
 
 /* Estilos solo para móvil (hasta 768px de ancho) */
 @media (max-width: 768px) {
-  .tax-product_cat.term-2082 ul.products,
-  .tax-product_cat.term-4806 ul.products,
   .tax-product_cat.term-2083 ul.products,
   .tax-product_cat.term-4876 ul.products,
   .tax-product_cat.term-102 ul.products,
@@ -145,15 +113,12 @@
   .tax-product_cat.term-4247 ul.products,
   .tax-product_cat.term-2626 ul.products,
   .tax-product_cat.term-4862 ul.products,
-  .tax-product_cat.term-4866 ul.products,
-  .tax-product_cat.term-4869 ul.products,
   .tax-product_cat.term-2209 ul.products,
   .tax-product_cat.term-2209 ul.products,
   .tax-product_cat.term-2410 ul.products,
   .tax-product_cat.term-1844 ul.products,
   .tax-product_cat.term-2510 ul.products,
-   .tax-product_cat.term-2093 ul.products,
-  .tax-product_cat.term-4564 ul.products {
+   .tax-product_cat.term-2093 ul.products {
     margin-top: 450px !important; /* El gran margen superior, solo en móvil */
   }
 }
@@ -186,42 +151,7 @@
 }
 
 /* ========================================================================== */
-/* 2. IMITACIÓN HIDRÁULICO (azulejo-hidraulico, ID 2082) */
-/* ========================================================================== */
-.tax-product_cat.term-2082 .woocommerce-breadcrumb,
-.tax-product_cat.term-2082 .woocommerce-products-header,
-.tax-product_cat.term-2082 .term-description,
-.tax-product_cat.term-2082 .product-categories,
-.tax-product_cat.term-2082 .doo-category-banner { display: none !important; }
-
-.ai-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2023/11/suelo-hidraulico-adrihosan.gif);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ai-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ai-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ai-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ai-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:650px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ai-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ai-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ai-hero-btn:hover{transform:translateY(-2px)}.ai-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ai-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
-.ai-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ai-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-value-wrapper .section-header{margin-bottom:50px}.ai-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ai-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ai-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ai-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ai-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ai-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
-.ai-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ai-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ai-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ai-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ai-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ai-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ai-inspiration-card:hover img{transform:scale(1.05)}.ai-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ai-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ai-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ai-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
-.ai-filters-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:60px 20px;border-top:1px solid #eef2f5}.ai-filters-wrapper{max-width:960px;margin:0 auto}.ai-filters-header{text-align:center;margin-bottom:40px}.ai-filters-header h2{font-size:1.5rem;font-weight:600;color:#102e35;margin:0}.ai-filter-group{margin-bottom:30px}.ai-filter-group:last-child{margin-bottom:0}.ai-filter-group-title{font-size:1.1rem;font-weight:600;color:#3f6f7b;margin:0 0 15px 0;text-align:center}.ai-filter-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.ai-filter-btn, .ai-filter-btn:visited{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid #4dd2d0;background-color:#4dd2d0;color:#fff;transition:all .2s ease-in-out}.ai-filter-btn:hover{background-color:#fff;color:#4dd2d0;transform:translateY(-2px)}
-.ai-product-header-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px 40px 20px;text-align:center}.ai-product-header-wrapper{max-width:800px;margin:0 auto}.ai-product-header-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-product-header-wrapper p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;margin:0}
-.ai-guide-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5;border-bottom:1px solid #eef2f5}.ai-guide-wrapper{max-width:960px;margin:0 auto}.ai-guide-header{text-align:center;margin-bottom:50px}.ai-guide-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-guide-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;max-width:700px;margin:0 auto}.ai-comparison-grid{display:grid;grid-template-columns:1fr;gap:2px;background-color:#e0e6eb;border:1px solid #e0e6eb;border-radius:8px;overflow:hidden}.ai-comparison-header{background-color:#fff;padding:20px;text-align:center}.ai-comparison-header h3{font-size:1.25rem;font-weight:700;color:#102e35;margin:0}.ai-comparison-header.highlight{background-color:#102e35}.ai-comparison-header.highlight h3{color:#4dd2d0}.ai-comparison-cell{background-color:#fff;padding:25px 20px}.ai-comparison-cell h4{font-size:1rem;font-weight:600;color:#102e35;margin:0 0 8px 0}.ai-comparison-cell p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}.ai-comparison-cell .pro::before{content:'✓';color:#28a745;font-weight:700;margin-right:8px}.ai-comparison-cell .con::before{content:'✗';color:#dc3545;font-weight:700;margin-right:8px}
-.ai-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ai-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ai-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ai-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ai-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ai-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ai-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ai-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ai-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ai-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}
-@media (max-width:768px){.ai-comparison-grid{grid-template-columns:1fr}.ai-comparison-header.highlight{border-top:2px solid #e0e6eb}.ai-help-intro{flex-direction:column;text-align:center}.ai-help-intro h2{text-align:center}}
-
-/* ========================================================================== */
-/* 3. PAREDES DECORATIVAS (ID 4806) */
-/* ========================================================================== */
-.tax-product_cat.term-4806 .woocommerce-breadcrumb,
-.tax-product_cat.term-4806 .woocommerce-products-header,
-.tax-product_cat.term-4806 .term-description,
-.tax-product_cat.term-4806 .product-categories,
-.tax-product_cat.term-4806 .doo-category-banner {
-    display: none !important;
-}
-
-.ap-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ap-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ap-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ap-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ap-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:700px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ap-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ap-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ap-hero-btn:hover{transform:translateY(-2px)}.ap-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ap-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
-.ap-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ap-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-value-wrapper .section-header{margin-bottom:50px}.ap-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ap-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ap-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ap-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ap-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ap-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
-.ap-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ap-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ap-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ap-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ap-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ap-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ap-inspiration-card:hover img{transform:scale(1.05)}.ap-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ap-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ap-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ap-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
-.ap-faq-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:50px 20px;box-sizing:border-box;background-color:#fff}.ap-faq-wrapper{max-width:800px;margin:0 auto}.ap-faq-main-title{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin-top:0;margin-bottom:40px;text-align:center}.ap-faq-item{border-bottom:1px solid #e0e0e0}.ap-faq-item:last-child{border-bottom:none}.ap-faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;background:none;border:none;box-shadow:none;text-align:left;font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;color:#333;cursor:pointer;transition:color .2s ease}.ap-faq-question:hover{color:#4dd2d0}.ap-faq-icon{font-size:24px;font-weight:400;transition:transform .3s ease}.ap-faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease-in-out,padding .3s ease-in-out;color:#555;font-size:16px;line-height:1.7}.ap-faq-answer p{margin-top:0;margin-bottom:20px}.ap-faq-item.active .ap-faq-question{color:#4dd2d0}.ap-faq-item.active .ap-faq-answer{max-height:500px;padding-bottom:20px}.ap-faq-item.active .ap-faq-icon{transform:rotate(45deg)}
-.ap-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ap-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ap-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ap-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ap-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ap-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ap-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ap-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ap-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ap-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}@media (max-width:768px){.ap-help-intro{flex-direction:column;text-align:center}.ap-help-intro h2{text-align:center}}
-
-/* ========================================================================== */
-/* 4. AZULEJO HIDRÁULICO BAÑO (ID 2083) */
+/* 3. AZULEJO HIDRÁULICO BAÑO (ID 2083) */
 /* ========================================================================== */
 .tax-product_cat.term-2083 .woocommerce-breadcrumb,
 .tax-product_cat.term-2083 .woocommerce-products-header,
@@ -922,390 +852,6 @@
 }
 
 /* ========================================================================== */
-/* 1. BALDOSA HIDRÁULICA (PÁGINA PILAR - ID 4564) */
-/* ========================================================================== */
-
-/* --- OCULTAR ELEMENTOS POR DEFECTO DE WOOCOMMERCE --- */
-.tax-product_cat.term-4564 .woocommerce-breadcrumb,
-.tax-product_cat.term-4564 .woocommerce-products-header,
-.tax-product_cat.term-4564 .term-description,
-.tax-product_cat.term-4564 .product-categories,
-.tax-product_cat.term-4564 .doo-category-banner,
-.tax-product_cat.term-4564 ul.products,
-.tax-product_cat.term-4564 .woocommerce-pagination,
-.tax-product_cat.term-4564 .shop-loop-head,
-.tax-product_cat.term-4564 .wd-shop-tools,
-.tax-product_cat.term-4564 .wd-search-form,
-.tax-product_cat.term-4564 .wd-filtered-nav {
-    display: none !important;
-}
-
-/* --- ESTILOS GENERALES PARA LA PÁGINA PILAR --- */
-.tax-product_cat.term-4564 {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* --- HERO SECTION --- */
-.tax-product_cat.term-4564 .bhp-hero-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-    padding: 80px 20px;
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    text-align: center;
-    overflow: hidden;
-}
-.tax-product_cat.term-4564 .bhp-hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(16, 46, 53, 0.65);
-    z-index: 1;
-}
-.tax-product_cat.term-4564 .bhp-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bhp-hero-content h1 {
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-.tax-product_cat.term-4564 .bhp-hero-content p {
-    font-size: clamp(1.125rem, 3vw, 1.25rem);
-    max-width: 650px;
-    margin: 0 auto 2.5rem;
-    opacity: 0.95;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-.tax-product_cat.term-4564 .bhp-hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    border: 2px solid;
-    transition: all 0.2s ease-in-out;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-primary {
-    background-color: #4dd2d0;
-    border-color: #4dd2d0;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-primary:hover {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-secondary {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff !important;
-}
-.tax-product_cat.term-4564 .bhp-hero-btn-secondary:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #102e35 !important;
-}
-
-/* --- HUB SECTION --- */
-.tax-product_cat.term-4564 .bhp-hub-section {
-    padding: 80px 20px 20px; /* Reducido el padding inferior */
-}
-.tax-product_cat.term-4564 .bhp-hub-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
-@media (min-width: 768px) {
-    .tax-product_cat.term-4564 .bhp-hub-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-.tax-product_cat.term-4564 .bhp-hub-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.tax-product_cat.term-4564 .bhp-hub-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px -10px rgba(16, 46, 53, 0.2);
-}
-.tax-product_cat.term-4564 .bhp-hub-card-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content {
-    padding: 30px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #102e35;
-    margin: 0 0 1rem 0;
-}
-.tax-product_cat.term-4564 .bhp-hub-card-content p {
-    font-size: 1rem;
-    color: #3f6f7b;
-    line-height: 1.7;
-    margin: 0 0 2rem 0;
-    flex-grow: 1;
-}
-.tax-product_cat.term-4564 .bhp-hub-btn {
-    display: inline-block;
-    align-self: flex-start;
-    padding: 12px 28px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    background-color: #4dd2d0;
-    border: 2px solid #4dd2d0;
-    color: #ffffff !important;
-    transition: all 0.2s ease-in-out;
-}
-.tax-product_cat.term-4564 .bhp-hub-btn:hover {
-    background-color: #102e35;
-    border-color: #102e35;
-}
-
-/* --- COMPARISON TABLE & SEO SECTION --- */
-.tax-product_cat.term-4564 .bhp-comparison-section {
-    padding: 60px 20px 80px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-seo-section {
-    padding: 40px 20px 80px; /* Reducido el padding superior */
-    background-color: #f7f9fa;
-}
-/* ... (El resto de estilos de la tabla y SEO son iguales y no necesitan el prefijo si son únicos) ... */
-
-/* --- FAQ SECTION (AÑADIDA Y CORREGIDA) --- */
-.tax-product_cat.term-4564 .bh-faq-section {
-    padding: 80px 20px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bh-faq-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bh-faq-main-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-.tax-product_cat.term-4564 .bh-faq-item {
-    border-bottom: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .bh-faq-item:last-child {
-    border-bottom: none;
-}
-.tax-product_cat.term-4564 .bh-faq-question {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 0;
-    background: none;
-    border: none;
-    text-align: left;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #102e35;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-.tax-product_cat.term-4564 .bh-faq-question:hover,
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-question {
-    color: #4dd2d0;
-}
-.tax-product_cat.term-4564 .bh-faq-icon {
-    font-size: 1.5rem;
-    font-weight: 300;
-    transition: transform 0.3s ease;
-}
-.tax-product_cat.term-4564 .bh-faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    color: #3f6f7b;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-.tax-product_cat.term-4564 .bh-faq-answer p {
-    padding-bottom: 1.25rem;
-}
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-answer {
-    max-height: 500px;
-    transition: max-height 0.4s ease-in;
-}
-.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-icon {
-    transform: rotate(45deg);
-}
-
-/* --- CONTACT HELP BLOCK --- */
-.tax-product_cat.term-4564 .contact-help-block {
-    background-color: #f7f9fa;
-    padding: 80px 20px;
-    border-top: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .contact-help-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
-}
-/* ... (El resto de estilos de contacto son genéricos y no necesitan prefijo) ... */
-.tax-product_cat.term-4564 .contact-options-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
-}
-
-/* ========================================================================== */
-/* ESTILOS FALTANTES PARA PÁGINA PILAR (ID 4564) */
-/* ========================================================================== */
-
-/* --- COMPARISON TABLE SECTION --- */
-.tax-product_cat.term-4564 .bhp-comparison-section {
-    padding: 60px 20px 80px;
-    background-color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-comparison-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-}
-.tax-product_cat.term-4564 .bhp-comparison-wrapper h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2.5rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
-    border-radius: 8px;
-    overflow: hidden;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table th,
-.tax-product_cat.term-4564 .bhp-comparison-table td {
-    padding: 18px 20px;
-    text-align: left;
-    border-bottom: 1px solid #eef2f5;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table thead {
-    background-color: #102e35;
-    color: #ffffff;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table th {
-    font-weight: 600;
-    font-size: 1rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) {
-    background-color: #f7f9fa;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:hover {
-    background-color: #f0f4f6;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table td {
-    color: #3f6f7b;
-    font-size: 0.95rem;
-}
-.tax-product_cat.term-4564 .bhp-comparison-table td strong {
-    color: #102e35;
-    font-weight: 600;
-}
-@media (max-width: 768px) {
-    .tax-product_cat.term-4564 .bhp-comparison-table thead { display: none; }
-    .tax-product_cat.term-4564 .bhp-comparison-table,
-    .tax-product_cat.term-4564 .bhp-comparison-table tbody,
-    .tax-product_cat.term-4564 .bhp-comparison-table tr,
-    .tax-product_cat.term-4564 .bhp-comparison-table td {
-        display: block;
-        width: 100%;
-    }
-    .tax-product_cat.term-4564 .bhp-comparison-table tr { margin-bottom: 15px; border: 1px solid #eef2f5; border-radius: 8px; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td { text-align: right; padding-left: 50%; position: relative; border-bottom: none; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td:before { content: attr(data-label); position: absolute; left: 15px; width: calc(50% - 30px); padding-right: 10px; white-space: nowrap; text-align: left; font-weight: 600; color: #102e35; }
-    .tax-product_cat.term-4564 .bhp-comparison-table td:last-child { border-bottom: 0; }
-    .tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) { background-color: #ffffff; }
-}
-
-/* --- SEO SECTION --- */
-.tax-product_cat.term-4564 .bhp-seo-section {
-    padding: 40px 20px 80px;
-    background-color: #f7f9fa;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    color: #3f6f7b;
-    line-height: 1.8;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #102e35;
-    margin-bottom: 2rem;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #102e35;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #4dd2d0;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper ul {
-    list-style: none;
-    padding-left: 0;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 1rem;
-}
-.tax-product_cat.term-4564 .bhp-seo-wrapper li::before {
-    content: '✓';
-    color: #4dd2d0;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
-
-/* ========================================================================== */
 /* 2. BALDOSA HIDRÁULICA ORIGINAL (SUB-PÁGINA) */
 /* ========================================================================== */
 
@@ -1581,38 +1127,26 @@ html {
 }
 
 /* ========================================================================== */
-/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 2082, 4806, 4862, 4865, 4866, 4869 */
+/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 4862, 2209 */
 /* ========================================================================== */
 
-.tax-product_cat.term-2082 .bho-guide-section,
-.tax-product_cat.term-4806 .bho-guide-section,
 .tax-product_cat.term-4862 .bho-guide-section,
-.tax-product_cat.term-2209 .bho-guide-section,
-.tax-product_cat.term-4866 .bho-guide-section,
-.tax-product_cat.term-4869 .bho-guide-section {
+.tax-product_cat.term-2209 .bho-guide-section {
     padding: 80px 20px;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper,
-.tax-product_cat.term-4806 .bho-guide-wrapper,
 .tax-product_cat.term-4862 .bho-guide-wrapper,
-.tax-product_cat.term-2209 .bho-guide-wrapper,
-.tax-product_cat.term-4866 .bho-guide-wrapper,
-.tax-product_cat.term-4869 .bho-guide-wrapper {
+.tax-product_cat.term-2209 .bho-guide-wrapper {
     max-width: 900px;
     margin: 0 auto;
     color: #3f6f7b;
     line-height: 1.8;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-main-title,
 .tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-main-title,
-.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-main-title {
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title {
     font-size: 2.25rem;
     font-weight: 700;
     color: #102e35;
@@ -1620,22 +1154,14 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper p,
 .tax-product_cat.term-2209 .bho-guide-wrapper p,
-.tax-product_cat.term-4806 .bho-guide-wrapper p,
-.tax-product_cat.term-4862 .bho-guide-wrapper p,
-.tax-product_cat.term-4866 .bho-guide-wrapper p,
-.tax-product_cat.term-4869 .bho-guide-wrapper p {
+.tax-product_cat.term-4862 .bho-guide-wrapper p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
 .tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle,
-.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-subtitle {
+.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle {
     font-size: 1.5rem;
     font-weight: 600;
     color: #102e35;
@@ -1646,35 +1172,23 @@ html {
     display: inline-block;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper ul,
 .tax-product_cat.term-2209 .bho-guide-wrapper ul,
-.tax-product_cat.term-4806 .bho-guide-wrapper ul,
-.tax-product_cat.term-4862 .bho-guide-wrapper ul,
-.tax-product_cat.term-4866 .bho-guide-wrapper ul,
-.tax-product_cat.term-4869 .bho-guide-wrapper ul {
+.tax-product_cat.term-4862 .bho-guide-wrapper ul {
     list-style: none;
     padding-left: 0;
     margin-top: 1.5rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper li,
-.tax-product_cat.term-4806 .bho-guide-wrapper li,
 .tax-product_cat.term-2209 .bho-guide-wrapper li,
-.tax-product_cat.term-4862 .bho-guide-wrapper li,
-.tax-product_cat.term-4866 .bho-guide-wrapper li,
-.tax-product_cat.term-4869 .bho-guide-wrapper li {
+.tax-product_cat.term-4862 .bho-guide-wrapper li {
     padding-left: 1.75rem;
     position: relative;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4806 .bho-guide-wrapper li::before,
 .tax-product_cat.term-2209 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4862 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4866 .bho-guide-wrapper li::before,
-.tax-product_cat.term-4869 .bho-guide-wrapper li::before {
+.tax-product_cat.term-4862 .bho-guide-wrapper li::before {
     content: '✓';
     color: #4dd2d0;
     position: absolute;
@@ -1683,12 +1197,8 @@ html {
     font-size: 1.1rem;
 }
 
-.tax-product_cat.term-2082 .bho-guide-wrapper strong,
-.tax-product_cat.term-4806 .bho-guide-wrapper strong,
 .tax-product_cat.term-4862 .bho-guide-wrapper strong,
-.tax-product_cat.term-2209 .bho-guide-wrapper strong,
-.tax-product_cat.term-4866 .bho-guide-wrapper strong,
-.tax-product_cat.term-4869 .bho-guide-wrapper strong {
+.tax-product_cat.term-2209 .bho-guide-wrapper strong {
     font-weight: 600;
     color: #102e35;
 }
@@ -1946,9 +1456,8 @@ html {
 }
 
 /* --- GRID POTENTE (Imagen izq / Texto der) --- */
-/* Aplicado a: 4862 (Hidráulico), 4865 (Baño), 4866 (Cocina) */
-.tax-product_cat.term-4862 .bh-simulator-wrapper,
-.tax-product_cat.term-4866 .bh-simulator-wrapper {
+/* Aplicado a: 4862 (Hidráulico), 4865 (Baño) */
+.tax-product_cat.term-4862 .bh-simulator-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     display: grid !important; 
@@ -1974,9 +1483,8 @@ html {
 
 /* Margen superior solo si NO estamos en modo grid */
 .bh-simulator-device-img { margin-top: 40px; }
-.tax-product_cat.term-4862 .bh-simulator-device-img,
-.tax-product_cat.term-4866 .bh-simulator-device-img { 
-    margin-top: 0; 
+.tax-product_cat.term-4862 .bh-simulator-device-img {
+    margin-top: 0;
 }
 
 .bh-simulator-text { text-align: left; }
@@ -2004,9 +1512,7 @@ html {
 .bh-simulator-section h2, .bh-simulator-section p { text-align: center; }
 
 .tax-product_cat.term-4862 .bh-simulator-text h2,
-.tax-product_cat.term-4862 .bh-simulator-text p,
-.tax-product_cat.term-4866 .bh-simulator-text h2,
-.tax-product_cat.term-4866 .bh-simulator-text p {
+.tax-product_cat.term-4862 .bh-simulator-text p {
     text-align: left;
 }
 
@@ -2035,67 +1541,22 @@ html {
 
 /* --- RESPONSIVE PARA MÓVIL (SIMULADOR) --- */
 @media (max-width: 992px) {
-    .tax-product_cat.term-4862 .bh-simulator-wrapper,
-    .tax-product_cat.term-4866 .bh-simulator-wrapper {
-        grid-template-columns: 1fr; 
+    .tax-product_cat.term-4862 .bh-simulator-wrapper {
+        grid-template-columns: 1fr;
         gap: 40px;
     }
     .tax-product_cat.term-4862 .bh-simulator-text h2,
-    .tax-product_cat.term-4862 .bh-simulator-text p,
-    .tax-product_cat.term-4866 .bh-simulator-text h2,
-    .tax-product_cat.term-4866 .bh-simulator-text p {
+    .tax-product_cat.term-4862 .bh-simulator-text p {
         text-align: center; /* Volver a centrar en móvil */
     }
 }
 
 /* ========================================================================== */
-/* CORRECCIONES DE SOLAPAMIENTO EN MÓVIL */
+/* AJUSTES TABLA COMPARATIVA - RESPONSIVE */
 /* ========================================================================== */
 
+/* Móvil: Ajuste tabla comparativa */
 @media (max-width: 768px) {
-    /* Cat 2082 */
-    .tax-product_cat.term-2082 .woocommerce-pagination,
-    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
-        clear: both; 
-        position: relative; 
-        margin-top: 40px; 
-    }
-    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
-        margin-top: 80px; 
-    }
-    /* Cat 4564 */
-    .tax-product_cat.term-4564 .woocommerce-products-blog-header {
-        margin-top: 450px !important; 
-    }
-}
-
-
-
-/* ========================================================================== */
-/* GRID FEATURES (CARACTERÍSTICAS) - RESPONSIVE */
-/* ========================================================================== */
-
-/* Ordenador: 4 columnas */
-.tax-product_cat.term-4866 .bho-features-wrapper,
-.tax-product_cat.term-4869 .bho-features-wrapper {
-    grid-template-columns: repeat(4, 1fr) !important;
-}
-
-/* Tablet: 2 columnas */
-@media (max-width: 1024px) {
-    .tax-product_cat.term-4866 .bho-features-wrapper,
-    .tax-product_cat.term-4869 .bho-features-wrapper {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-/* Móvil: 1 columna + Ajuste tabla comparativa */
-@media (max-width: 768px) {
-    .tax-product_cat.term-4866 .bho-features-wrapper,
-    .tax-product_cat.term-4869 .bho-features-wrapper {
-        grid-template-columns: 1fr !important;
-    }
-    
     .ocultar-en-movil { display: none !important; }
     .bhp-comparison-table tfoot tr {
         display: flex !important;
@@ -2562,10 +2023,6 @@ html {
     /* Aplicamos el margen a TODAS tus categorías personalizadas */
     .tax-product_cat.term-4865 ul.products, /* Baño Original */
     .tax-product_cat.term-4862 ul.products, /* Hidráulico Original */
-    .tax-product_cat.term-4866 ul.products, /* Cocina Original */
-    .tax-product_cat.term-4869 ul.products, /* Exterior */
-    .tax-product_cat.term-2082 ul.products, /* Imitación */
-    .tax-product_cat.term-4564 ul.products, /* Pilar Hidráulico */
     .tax-product_cat.term-2626 ul.products, /* Camerinos */
     .tax-product_cat.term-4247 ul.products, /* Espejos Redondos */
     .tax-product_cat.term-4213 ul.products, /* Espejos Luz */

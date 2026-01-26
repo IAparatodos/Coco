@@ -769,17 +769,17 @@ add_action( 'template_redirect', 'adrihosan_pilar_imitacion_controller' );
  */
 function adrihosan_pilar_imitacion_contenido_superior() {
     ?>
-    <section class="ai-hero-section">
-        <div class="ai-hero-content">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/suelo-hidraulico-adrihosan.jpg');">
+        <div class="hero-content">
             <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico Porcel&aacute;nico</h1>
             <p>Consigue la est&eacute;tica atemporal del mosaico hidr&aacute;ulico sin preocuparte por manchas, ceras o cuidados especiales. La soluci&oacute;n perfecta para el d&iacute;a a d&iacute;a.</p>
-            <div class="ai-hero-buttons">
-                <a href="#catalogo-imitacion" class="ai-hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="#ventajas-porcelanico" class="ai-hero-btn secondary">Ventajas del Porcel&aacute;nico</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-imitacion" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#ventajas-porcelanico" class="hero-btn secondary">Ventajas del Porcel&aacute;nico</a>
             </div>
         </div>
     </section>
-    <section class="ai-value-section" id="ventajas-porcelanico">
+    <section class="ai-value-section adrihosan-full-width-block" id="ventajas-porcelanico">
         <div class="ai-value-wrapper">
             <div class="section-header">
                 <h2>Dise&ntilde;ado para Vivir, no solo para Mirar</h2>
@@ -835,42 +835,72 @@ function adrihosan_pilar_imitacion_contenido_inferior() {
         </div>
     </section>
     
-    <section class="bho-guide-section adrihosan-full-width-block">
-        <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico: Gu&iacute;a Completa de Compra</h2>
-            <p>El <strong>suelo imitaci&oacute;n hidr&aacute;ulico</strong> se ha consolidado como la opci&oacute;n preferida para quienes buscan la est&eacute;tica vintage y artesanal del mosaico tradicional, pero con las prestaciones t&eacute;cnicas del porcel&aacute;nico moderno. Este material no solo replica a la perfecci&oacute;n los dise&ntilde;os geom&eacute;tricos y florales, sino que soluciona los principales inconvenientes del hidr&aacute;ulico aut&eacute;ntico: el mantenimiento y la fragilidad.</p>
-            
-            <h3 class="bho-guide-subtitle">Ventajas Clave del Suelo Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico</h3>
-            <p>Elegir un <strong>suelo porcel&aacute;nico de estilo hidr&aacute;ulico</strong> es una decisi&oacute;n inteligente que combina lo mejor de ambos mundos. Estas son sus ventajas m&aacute;s destacadas:</p>
-            <ul>
-                <li><strong>Durabilidad Superior:</strong> Fabricado a altas temperaturas, el porcel&aacute;nico es extremadamente resistente a golpes, ara&ntilde;azos y al desgaste por alto tr&aacute;nsito. Es un <strong>pavimento duradero</strong> ideal para cualquier estancia de la casa, incluidas cocinas, pasillos y locales comerciales.</li>
-                <li><strong>Mantenimiento Cero:</strong> Su superficie no porosa (absorci&oacute;n de agua < 0.5%) lo hace inmune a las manchas. Puedes limpiarlo con cualquier producto de limpieza convencional sin miedo a da&ntilde;ar el dise&ntilde;o o el color. &iexcl;Olv&iacute;date de ceras y selladores para siempre!</li>
-                <li><strong>Versatilidad de Uso:</strong> Apto para suelos y paredes, tanto en interior como en exterior (modelos con certificaci&oacute;n antideslizante). Es la soluci&oacute;n perfecta para <strong>suelos de <a href="/categoria-producto/baldosa-hidraulica/imitacion/cocina-imitacion/">cocina imitaci&oacute;n hidr&aacute;ulico</a></strong>, <a href="/categoria-producto/baldosa-hidraulica/imitacion/bano-imitacion/">ba&ntilde;os</a> y terrazas.</li>
-                <li><strong>Precisi&oacute;n y Variedad:</strong> La tecnolog&iacute;a de impresi&oacute;n digital permite una infinidad de dise&ntilde;os, desde r&eacute;plicas exactas de patrones del siglo XIX hasta creaciones contempor&aacute;neas. Los colores son estables y no se degradan con el sol o el tiempo.</li>
-            </ul>
-
-            <h3 class="bho-guide-subtitle">&iquest;D&oacute;nde utilizar el Azulejo Imitaci&oacute;n Hidr&aacute;ulico?</h3>
-            <p>La versatilidad del <strong>azulejo imitaci&oacute;n hidr&aacute;ulico</strong> te permite integrarlo en cualquier proyecto de interiorismo:</p>
-            <ul>
-                <li><strong>Suelos de Cocina y Ba&ntilde;o:</strong> Es su aplicaci&oacute;n estrella. Aporta un toque de dise&ntilde;o &uacute;nico y soporta perfectamente la humedad y las manchas.</li>
-                <li><strong>Paredes de Acento:</strong> Ideal para crear un <strong><a href="/categoria-producto/baldosa-hidraulica/imitacion/pared-imitacion/">frontal de cocina</a></strong> (salpicadero) o una pared de ducha espectacular que se convierte en el foco de atenci&oacute;n.</li>
-                <li><strong>Creaci&oacute;n de "Alfombras" Cer&aacute;micas:</strong> En espacios grandes o de planta abierta, puedes usar un patr&oacute;n hidr&aacute;ulico para enmarcar la zona del comedor o la isla de la cocina, delimitando visualmente el espacio sin necesidad de muros.</li>
-                <li><strong>Pasillos y Recibidores:</strong> Da una bienvenida llena de estilo a tu hogar con un suelo que es tan resistente como decorativo.</li>
-            </ul>
-            <p>El <strong>porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico</strong> es, en definitiva, la soluci&oacute;n perfecta para quienes aman la est&eacute;tica vintage pero no quieren renunciar a la comodidad y resistencia de los materiales modernos. Explora nuestra colecci&oacute;n y encuentra el dise&ntilde;o que har&aacute; que tu proyecto brille.</p>
-        </div>
-    </section>
-
-    <section class="faq-section-common adrihosan-full-width-block">
-        <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Dudas Frecuentes sobre el Porcel&aacute;nico Hidr&aacute;ulico</h2>
-            <div class="faq-items-wrapper">
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Realmente es tan resistente como un porcel&aacute;nico normal?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, absolutamente. La decoraci&oacute;n hidr&aacute;ulica es una capa de esmalte y dise&ntilde;o aplicada sobre una base de porcel&aacute;nico de alta calidad. Posee la misma resistencia al desgaste, al rayado y a los productos qu&iacute;micos que cualquier otro porcel&aacute;nico de su misma categor&iacute;a.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se puede usar en exteriores?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, muchos de nuestros modelos son aptos para exterior. Es importante que busques la especificaci&oacute;n "antideslizante" (Clase 2 o 3) en la ficha del producto. Estos modelos est&aacute;n dise&ntilde;ados para soportar heladas y ofrecer un agarre seguro en terrazas y patios.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;El dibujo se desgasta con el tiempo?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No. A diferencia de otros materiales, el dise&ntilde;o del porcel&aacute;nico est&aacute; protegido por una capa de esmalte vitrificado de alta dureza. El patr&oacute;n y los colores permanecer&aacute;n intactos durante toda la vida &uacute;til del producto, incluso en zonas de mucho paso.</p></div></div>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
             </div>
         </div>
     </section>
+    <?php } ?>
+
+<section class="faq-section-common adrihosan-full-width-block">
+    <div class="faq-wrapper-common">
+        <h2 class="faq-main-title-common">Dudas Frecuentes sobre el Porcel&aacute;nico Hidr&aacute;ulico</h2>
+        <div class="faq-items-wrapper">
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;El suelo imitaci&oacute;n hidr&aacute;ulico necesita mantenimiento o sellado?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>No. A diferencia del mosaico hidr&aacute;ulico original de cemento, nuestro <strong>gres porcel&aacute;nico</strong> es un material no poroso. Olv&iacute;date de aplicar ceras, selladores o tratamientos peri&oacute;dicos. Su superficie vitrificada impide que las manchas de vino, aceite o cal penetren, facilitando una <strong>limpieza diaria</strong> con agua y jab&oacute;n neutro.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Qu&eacute; tama&ntilde;o de junta debo usar para un efecto realista?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>La clave del realismo est&aacute; en la junta. Recomendamos una separaci&oacute;n m&iacute;nima de 1.5 a 2 mm. Evita la junta blanca pura; opta por un <strong>color cemento</strong> o gris perla que se integre con el patr&oacute;n desgastado de la pieza. Una buena elecci&oacute;n de <strong>material de rejuntado</strong> potencia la est&eacute;tica de baldosa individual antigua.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Puedo colocar este azulejo en la zona de ducha?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>S&iacute;, es una de sus mejores aplicaciones. Al tener una absorci&oacute;n de agua casi nula, el <strong>azulejo porcel&aacute;nico</strong> es t&eacute;cnicamente superior para zonas h&uacute;medas. Adem&aacute;s, muchos modelos cuentan con acabado <strong>antideslizante C2</strong>, garantizando tu seguridad sin perder la suavidad al tacto necesaria para ir descalzo.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;C&oacute;mo evito recargar el espacio visualmente?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Aplica la regla del equilibrio. Si instalas un <strong>suelo con patr&oacute;n geom&eacute;trico</strong> intenso, mantén las paredes en tonos neutros o blancos. Otra opci&oacute;n ganadora es crear una "alfombra" central con el hidr&aacute;ulico y rodearla de un <strong>pavimento base liso</strong> o imitaci&oacute;n madera, zonificando as&iacute; el espacio sin saturarlo.</p>
+                </div>
+            </div>
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Es compatible con suelo radiante?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Totalmente. La densidad del <strong>porcel&aacute;nico rectificado</strong> lo convierte en un excelente conductor t&eacute;rmico. Transmite el calor de forma m&aacute;s eficiente que la madera o el laminado, maximizando el rendimiento de tu sistema de <strong>calefacci&oacute;n radiante</strong> y reduciendo el consumo energ&eacute;tico de tu hogar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
@@ -1562,219 +1592,178 @@ function adrihosan_contenido_inferior_camerinos() {
 
 /******************************************************************************
  * =============================================================================
- * PÁGINA PILAR "BALDOSA HIDRÁULICA" (ID: 4564) - VERSIÓN FINAL CORREGIDA
+ * PÁGINA PILAR "BALDOSA HIDRÁULICA" (ID: 4564) - VERSIÓN REORGANIZADA
+ * Basada en la estructura de la categoría 4865 (Baño)
  * =============================================================================
  ******************************************************************************/
 
-add_action( 'wp', 'adrihosan_pilar_bh_controller' );
+/**
+ * Función principal que controla toda la lógica de la página Pilar Baldosa Hidráulica.
+ */
 function adrihosan_pilar_bh_controller() {
-    if ( ! is_product_category( 4564 ) ) {
+    // ID numérico de la categoría "Baldosa Hidráulica" (Página Pilar).
+    $category_id = 4564;
+
+    // Si no estamos en la categoría correcta, no hacemos nada.
+    if ( ! is_product_category( $category_id ) ) {
         return;
     }
 
-    // Ocultar elementos sobrantes con CSS
-    add_action( 'wp_head', function() {
-        echo '<style>.tax-product_cat.term-4564 ul.products, .tax-product_cat.term-4564 .woocommerce-pagination { display: none !important; }</style>';
-    });
+    remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
 
-    // Eliminar elementos por defecto de WooCommerce (incluido el H1 original)
-    remove_all_actions( 'woocommerce_archive_description' );
+    // --- Elimina elementos por defecto de WooCommerce ---
     add_filter( 'woocommerce_show_page_title', '__return_false' );
+    remove_all_actions( 'woocommerce_archive_description' );
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
     remove_action( 'woocommerce_no_products_found', 'wc_no_products_found', 10 );
 
-    // Inyectar nuestro contenido personalizado
-    add_action( 'woocommerce_before_main_content', 'adrihosan_pilar_bh_contenido_superior', 5 );
-    add_action( 'woocommerce_after_main_content', 'adrihosan_pilar_bh_contenido_inferior', 20 );
+    // --- Inyecta contenido personalizado ---
+    add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5 );
+    add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99 );
 }
+add_action( 'template_redirect', 'adrihosan_pilar_bh_controller' );
 
 /**
- * Inyecta el contenido HTML superior (Hero, Hub de categorías Y PRODUCTOS).
+ * Inyecta el contenido superior: Hero, Características, Hub y Best Sellers.
  */
 function adrihosan_pilar_bh_contenido_superior() {
     $hero_img_url = get_term_meta( get_queried_object_id(), 'bh_hero_img_url', true ) ?: 'https://www.adrihosan.com/wp-content/uploads/2023/04/fa4a5c7e-d682-41f2-a4a3-c2eafa4fea9d.jpg';
     ?>
-    <section class="bhp-hero-section adrihosan-full-width-block" style="background-image: url('<?php echo esc_url( $hero_img_url ); ?>');">
-        <div class="bhp-hero-content">
-            <h1>Baldosa Hidráulica</h1>
-            <p>Descubre el universo del suelo hidráulico. Elige entre la autenticidad de la baldosa artesanal o la resistencia del porcelánico de imitación. La solución perfecta para tu proyecto está aquí.</p>
-            <div class="bhp-hero-buttons">
-                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="bhp-hero-btn bhp-hero-btn-primary">Ver Colección Original</a>
-                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="bhp-hero-btn bhp-hero-btn-secondary">Ver Colección Imitación</a>
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('<?php echo esc_url( $hero_img_url ); ?>');">
+        <div class="hero-content">
+            <h1>Baldosa Hidr&aacute;ulica</h1>
+            <p>Descubre el universo del suelo hidr&aacute;ulico. Elige entre la autenticidad de la baldosa artesanal o la resistencia del porcel&aacute;nico de imitaci&oacute;n. La soluci&oacute;n perfecta para tu proyecto est&aacute; aqu&iacute;.</p>
+            <div class="hero-buttons">
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="hero-btn primary">Ver Colecci&oacute;n Original</a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="hero-btn secondary">Ver Colecci&oacute;n Imitaci&oacute;n</a>
             </div>
         </div>
     </section>
-    
-    <section class="bhp-hub-section adrihosan-full-width-block">
-        <div class="bhp-hub-wrapper">
-            <div class="bhp-hub-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg" alt="Detalle de una baldosa hidráulica original mostrando su textura artesanal." class="bhp-hub-card-img">
-                <div class="bhp-hub-card-content">
-                    <h2>Baldosa Hidráulica Original</h2>
-                    <p>El valor de lo auténtico. Piezas artesanales de cemento pigmentado con una textura y profundidad de color inigualables. El alma de la tradición en tu suelo.</p>
-                    <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="bhp-hub-btn">Ver Colección Original</a>
+
+    <section class="bho-features-section adrihosan-full-width-block">
+        <div class="bho-features-wrapper">
+            <div class="bho-feature-item"><div class="icon">🎨</div><h3>Dise&ntilde;os &Uacute;nicos</h3><p>Desde patrones geom&eacute;tricos hasta motivos florales. Una colecci&oacute;n que abarca siglos de historia y tendencias actuales.</p></div>
+            <div class="bho-feature-item"><div class="icon">🏛️</div><h3>Tradici&oacute;n Artesanal</h3><p>La baldosa original mantiene viva la t&eacute;cnica centenaria del cemento pigmentado, con todo su car&aacute;cter e irregularidad.</p></div>
+            <div class="bho-feature-item"><div class="icon">🛡️</div><h3>Resistencia Moderna</h3><p>El porcel&aacute;nico de imitaci&oacute;n ofrece la est&eacute;tica cl&aacute;sica con la durabilidad y el cero mantenimiento del siglo XXI.</p></div>
+            <div class="bho-feature-item"><div class="icon">🏠</div><h3>Para Cada Espacio</h3><p>Ba&ntilde;os, cocinas, salones o exteriores. Tenemos la soluci&oacute;n hidr&aacute;ulica perfecta para cada rinc&oacute;n de tu hogar.</p></div>
+        </div>
+    </section>
+
+    <section class="bho-hub-section adrihosan-full-width-block">
+        <div class="bho-hub-wrapper">
+            <div class="bho-hub-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg" alt="Detalle de una baldosa hidr&aacute;ulica original mostrando su textura artesanal." class="bho-hub-card-img">
+                <div class="bho-hub-card-content">
+                    <h2>Baldosa Hidr&aacute;ulica Original</h2>
+                    <p>El valor de lo aut&eacute;ntico. Piezas artesanales de cemento pigmentado con una textura y profundidad de color inigualables. El alma de la tradici&oacute;n en tu suelo.</p>
+                    <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="bho-hub-btn">Ver Colecci&oacute;n Original</a>
                 </div>
             </div>
-            <div class="bhp-hub-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg" alt="Ambiente de un baño moderno con azulejo porcelánico imitación hidráulico en la pared." class="bhp-hub-card-img">
-                <div class="bhp-hub-card-content">
-                    <h2>Porcelánico Imitación Hidráulico</h2>
-                    <p>La estética atemporal con la resistencia del porcelánico. Diseños precisos, cero mantenimiento y una durabilidad a prueba de todo. La elección inteligente para el día a día.</p>
-                    <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="bhp-hub-btn">Ver Colección Imitación</a>
+            <div class="bho-hub-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg" alt="Ambiente de un ba&ntilde;o moderno con azulejo porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico en la pared." class="bho-hub-card-img">
+                <div class="bho-hub-card-content">
+                    <h2>Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico</h2>
+                    <p>La est&eacute;tica atemporal con la resistencia del porcel&aacute;nico. Dise&ntilde;os precisos, cero mantenimiento y una durabilidad a prueba de todo. La elecci&oacute;n inteligente para el d&iacute;a a d&iacute;a.</p>
+                    <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="bho-hub-btn">Ver Colecci&oacute;n Imitaci&oacute;n</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;No sabes cu&aacute;l elegir? La <strong>baldosa original</strong> es para amantes de lo artesanal que disfrutan cuidando su suelo. El <strong>porcel&aacute;nico</strong> es para quienes buscan practicidad sin renunciar al dise&ntilde;o.</p>
+    </div>
 
     <section class="ap-product-header-section adrihosan-full-width-block" style="padding-bottom: 0;">
         <div class="ap-product-header-wrapper">
-            <h2>Nuestros Best Sellers en Hidráulico</h2>
-            <p>Los modelos favoritos de nuestros clientes, seleccionados por su diseño y calidad.</p>
+            <h2>Nuestros Best Sellers en Hidr&aacute;ulico</h2>
+            <p>Los modelos favoritos de nuestros clientes, seleccionados por su dise&ntilde;o y calidad.</p>
         </div>
-        
-   <div id="bh-productos-visibles" style="max-width: 1200px; margin: 20px auto 0; padding: 0 15px;">
-        <style>
-            /* --- RESET GLOBAL PARA ESTE CONTENEDOR --- */
-            /* Ocultamos elementos de control del tema que puedan estorbar */
-            .advanced-filter, .filter-search-btn, #advanced-search, .filter-title, img.close {
-                display: none !important;
-            }
 
-            /* --- ESTILOS DE ESCRITORIO (3 COLUMNAS) --- */
-            #bh-productos-visibles ul.products {
-                display: grid !important;
-                grid-template-columns: repeat(3, 1fr) !important;
-                gap: 30px !important;
-                width: 100% !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                height: auto !important; /* Importante para el bug del espacio blanco */
-            }
-            
-            #bh-productos-visibles ul.products li.product { 
-                width: 100% !important;
-                margin-bottom: 30px !important;
-            }
-
-            /* --- ESTILOS DE MÓVIL (1 COLUMNA - SOLUCIÓN ESPACIO BLANCO) --- */
-            @media(max-width: 768px) {
-                
-                /* Forzamos al contenedor a fluir naturalmente */
-                #bh-productos-visibles {
-                    height: auto !important;
-                    min-height: 0 !important;
-                    padding-bottom: 0 !important;
-                }
-
-                #bh-productos-visibles ul.products {
-                    /* Usamos BLOCK en lugar de Flex o Grid para asegurar el flujo vertical clásico */
-                    display: block !important; 
-                    height: auto !important;
-                    min-height: 0 !important;
-                }
-
-                #bh-productos-visibles ul.products li.product {
-                    /* Ocupar todo el ancho y matar cualquier posicionamiento absoluto o flotante */
-                    width: 100% !important;
-                    float: none !important;
-                    position: relative !important;
-                    top: auto !important;
-                    left: auto !important;
-                    right: auto !important;
-                    bottom: auto !important;
-                    margin: 0 0 30px 0 !important;
-                    height: auto !important;
-                    display: block !important;
-                }
-                
-                /* Si hay imágenes, forzar que se vean bien */
-                #bh-productos-visibles ul.products li.product img {
-                    width: 100% !important;
-                    height: auto !important;
-                    margin: 0 auto !important;
-                }
-            }
-        </style>
-
-        <?php 
-        // Mantenemos columns=3 para escritorio
-        echo do_shortcode('[products limit="6" columns="3" best_selling="true" category="baldosa-hidraulica"]'); 
-        ?>
-    </div>
+        <div id="bh-productos-visibles" style="max-width: 1200px; margin: 20px auto 0; padding: 0 15px;">
+            <?php
+            echo do_shortcode('[products limit="6" columns="3" best_selling="true" category="baldosa-hidraulica"]');
+            ?>
+        </div>
     </section>
     <?php
 }
 /**
- * Inyecta el contenido HTML inferior (Tabla, SEO, FAQ, Contacto).
+ * Inyecta el contenido inferior: Tabla Comparativa, SEO, FAQ y Contacto.
  */
 function adrihosan_pilar_bh_contenido_inferior() {
-    ?>
-    <section class="bhp-comparison-section adrihosan-full-width-block">
-        <div class="bhp-comparison-wrapper">
-            <h2>Original vs. Imitación: Ficha Técnica Comparativa</h2>
-            <table class="bhp-comparison-table">
-                <thead><tr><th>Característica</th><th>Baldosa Hidráulica Original</th><th>Porcelánico Imitación Hidráulico</th></tr></thead>
-                <tbody>
-                    <tr><td data-label="Característica"><strong>Material</strong></td><td data-label="Original">Cemento pigmentado artesanal</td><td data-label="Imitación">Gres porcelánico industrial</td></tr>
-                    <tr><td data-label="Característica"><strong>Resistencia a Manchas</strong></td><td data-label="Original">Baja (Material poroso, requiere sellado)</td><td data-label="Imitación">Total (Nula absorción de agua)</td></tr>
-                    <tr><td data-label="Característica"><strong>Mantenimiento</strong></td><td data-label="Original">Delicado, solo con jabones neutros</td><td data-label="Imitación">Nulo, apto para cualquier producto de limpieza</td></tr>
-                    <tr><td data-label="Característica"><strong>Durabilidad</strong></td><td data-label="Original">Alta, envejece y adquiere pátina con el tiempo</td><td data-label="Imitación">Extrema, inalterable al paso del tiempo y al desgaste</td></tr>
-                    <tr><td data-label="Característica"><strong>Textura</strong></td><td data-label="Original">Táctil, con la irregularidad propia de lo artesanal</td><td data-label="Imitación">Lisa y uniforme, reproduce el diseño visualmente</td></tr>
-                    <tr><td data-label="Característica"><strong>Uso Ideal</strong></td><td data-label="Original">Zonas de bajo tránsito, espacios con encanto, paredes</td><td data-label="Imitación">Cocinas, baños, locales comerciales, exteriores</td></tr>
-                    <tr><td data-label="Característica"><strong>Precio</strong></td><td data-label="Original">Elevado</td><td data-label="Imitación">Asequible</td></tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="ocultar-en-movil"><strong>Ver Opciones</strong></td>
-                        
-                        <td><a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="boton-adrihosan primary">Ver Originales</a></td>
-                        <td><a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="boton-adrihosan primary">Ver Imitación</a></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </section>
-    <section class="bhp-seo-section adrihosan-full-width-block">
-        <div class="bhp-seo-wrapper">
-            <h2>La Guía Definitiva para Elegir tu Suelo Hidráulico</h2>
-            <p>Elegir un <strong>suelo de estilo hidráulico</strong> es una de las decisiones de diseño más importantes para tu reforma. No solo define el carácter de un espacio, sino que también debe responder a tus necesidades de uso y mantenimiento. En Adrihosan, somos expertos en las dos grandes familias de este material: la <strong>baldosa hidráulica original</strong> y el <strong>azulejo porcelánico imitación hidráulico</strong>. Entender sus diferencias es la clave para una elección perfecta.</p>
-            <h3>Original vs. Imitación: ¿Qué baldosa hidráulica comprar?</h3>
-            <p>La elección depende de lo que valores más: la autenticidad artesanal o la practicidad moderna.</p>
-            <ul>
-                <li>La <strong>baldosa original</strong> es una pieza de arte. Hecha a mano con cemento pigmentado, su color y textura tienen una profundidad inigualable. Es un material poroso que requiere un sellado inicial y un cuidado con productos neutros. A cambio, te ofrece un suelo que envejece con una belleza única, adquiriendo carácter con el tiempo.</li>
-                <li>El <strong>porcelánico de imitación</strong> es la solución inteligente para el día a día. Gracias a la impresión digital, reproduce fielmente los diseños clásicos sobre una base de gres porcelánico de nula porosidad. Esto lo convierte en un material 100% impermeable, resistente a cualquier mancha y producto de limpieza, y con una durabilidad a prueba del alto tránsito. Es la elección ideal para cocinas, baños y hogares con mucho movimiento.</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="faq-section-common adrihosan-full-width-block">
-        <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Dudas Frecuentes sobre Suelos Hidráulicos</h2>
-            <div class="faq-item-common"><button class="faq-question-common"><span>¿Cuál es más caro, el original o la imitación?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>La <strong>baldosa hidráulica original</strong> es significativamente más cara debido a su proceso de fabricación artesanal. El <strong>azulejo porcelánico de imitación</strong>, al ser de producción industrial, ofrece una alternativa mucho más asequible sin renunciar al diseño.</p></div></div>
-            <div class="faq-item-common"><button class="faq-question-common"><span>¿Qué opción es mejor para una cocina?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Para la cocina, recomendamos sin dudarlo el <strong>porcelánico imitación hidráulico</strong>. Su resistencia a las manchas de aceite, vino o grasa y su facilidad de limpieza con cualquier producto lo convierten en la opción más práctica y duradera para esta zona tan exigente.</p></div></div>
-            <div class="faq-item-common"><button class="faq-question-common"><span>¿Y para un baño con ducha?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Igualmente, el <strong>porcelánico</strong> es la elección correcta. Su nula absorción de agua lo hace 100% impermeable, ideal para suelos de baño e incluso para el interior de la ducha, donde la baldosa de cemento original podría dar problemas de humedad a largo plazo si no se mantiene un sellado perfecto.</p></div></div>
-            <div class="faq-item-common"><button class="faq-question-common"><span>¿Puedo usar calefacción por suelo radiante con ambos?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Sí, ambos materiales son excelentes conductores térmicos y totalmente compatibles con sistemas de <strong>calefacción por suelo radiante</strong>. Distribuyen el calor de forma eficiente y uniforme, aportando un gran confort a la estancia.</p></div></div>
-        </div>
-    </section>
+    if ( is_product_category( 4564 ) && ! is_singular('product') ) {
+        ?>
+        <section class="bhp-comparison-section adrihosan-full-width-block">
+            <div class="bhp-comparison-wrapper">
+                <h2>Original vs. Imitaci&oacute;n: Ficha T&eacute;cnica Comparativa</h2>
+                <table class="bhp-comparison-table">
+                    <thead><tr><th>Caracter&iacute;stica</th><th>Baldosa Hidr&aacute;ulica Original</th><th>Porcel&aacute;nico Imitaci&oacute;n Hidr&aacute;ulico</th></tr></thead>
+                    <tbody>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Material</strong></td><td data-label="Original">Cemento pigmentado artesanal</td><td data-label="Imitaci&oacute;n">Gres porcel&aacute;nico industrial</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Resistencia a Manchas</strong></td><td data-label="Original">Baja (Material poroso, requiere sellado)</td><td data-label="Imitaci&oacute;n">Total (Nula absorci&oacute;n de agua)</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Mantenimiento</strong></td><td data-label="Original">Delicado, solo con jabones neutros</td><td data-label="Imitaci&oacute;n">Nulo, apto para cualquier producto de limpieza</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Durabilidad</strong></td><td data-label="Original">Alta, envejece y adquiere p&aacute;tina con el tiempo</td><td data-label="Imitaci&oacute;n">Extrema, inalterable al paso del tiempo y al desgaste</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Textura</strong></td><td data-label="Original">T&aacute;ctil, con la irregularidad propia de lo artesanal</td><td data-label="Imitaci&oacute;n">Lisa y uniforme, reproduce el dise&ntilde;o visualmente</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Uso Ideal</strong></td><td data-label="Original">Zonas de bajo tr&aacute;nsito, espacios con encanto, paredes</td><td data-label="Imitaci&oacute;n">Cocinas, ba&ntilde;os, locales comerciales, exteriores</td></tr>
+                        <tr><td data-label="Caracter&iacute;stica"><strong>Precio</strong></td><td data-label="Original">Elevado</td><td data-label="Imitaci&oacute;n">Asequible</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="ocultar-en-movil"><strong>Ver Opciones</strong></td>
+                            <td><a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="boton-adrihosan primary">Ver Originales</a></td>
+                            <td><a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="boton-adrihosan primary">Ver Imitaci&oacute;n</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
 
-    <section class="contact-help-common adrihosan-full-width-block">
-        <div class="contact-help-wrapper">
-            <div class="contact-intro">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo, experto en baldosa hidráulica de Adrihosan">
-                <h2>¿Necesitas ayuda? <span>Soy Ricardo, tu experto en materiales.</span></h2>
+        <?php
+        $descripcion_editor = category_description();
+        if ( ! empty( $descripcion_editor ) ) {
+            echo '<section class="bho-guide-section">'; // SIN adrihosan-full-width-block
+            echo '    <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">';
+            echo '        <div class="term-description-dinamica" style="text-align: center; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
+            echo              $descripcion_editor;
+            echo '        </div>';
+            echo '    </div>';
+            echo '</section>';
+        }
+        ?>
+
+        <section class="faq-section-common adrihosan-full-width-block">
+            <div class="faq-wrapper-common">
+                <h2 class="faq-main-title-common">Dudas Frecuentes sobre Suelos Hidr&aacute;ulicos</h2>
+                <div class="faq-items-wrapper">
+                    <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Cu&aacute;l es m&aacute;s caro, el original o la imitaci&oacute;n?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>La <strong>baldosa hidr&aacute;ulica original</strong> es significativamente m&aacute;s cara debido a su proceso de fabricaci&oacute;n artesanal. El <strong>azulejo porcel&aacute;nico de imitaci&oacute;n</strong>, al ser de producci&oacute;n industrial, ofrece una alternativa mucho m&aacute;s asequible sin renunciar al dise&ntilde;o.</p></div></div>
+                    <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Qu&eacute; opci&oacute;n es mejor para una cocina?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Para la cocina, recomendamos sin dudarlo el <strong>porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico</strong>. Su resistencia a las manchas de aceite, vino o grasa y su facilidad de limpieza con cualquier producto lo convierten en la opci&oacute;n m&aacute;s pr&aacute;ctica y duradera para esta zona tan exigente.</p></div></div>
+                    <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Y para un ba&ntilde;o con ducha?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Igualmente, el <strong>porcel&aacute;nico</strong> es la elecci&oacute;n correcta. Su nula absorci&oacute;n de agua lo hace 100% impermeable, ideal para suelos de ba&ntilde;o e incluso para el interior de la ducha, donde la baldosa de cemento original podr&iacute;a dar problemas de humedad a largo plazo si no se mantiene un sellado perfecto.</p></div></div>
+                    <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Puedo usar calefacci&oacute;n por suelo radiante con ambos?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, ambos materiales son excelentes conductores t&eacute;rmicos y totalmente compatibles con sistemas de <strong>calefacci&oacute;n por suelo radiante</strong>. Distribuyen el calor de forma eficiente y uniforme, aportando un gran confort a la estancia.</p></div></div>
+                </div>
             </div>
-            <div class="contact-options-grid-common">
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposición presencial</div></a>
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Exposición por videollamada</div></a>
-                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Teléfono</div></a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
-                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">📝</div><div class="label">Formulario</div></a>
-                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
+        </section>
+
+        <section id="contacto" class="contact-help-common adrihosan-full-width-block">
+            <div class="contact-help-wrapper">
+                <div class="contact-intro">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo, experto en baldosa hidr&aacute;ulica de Adrihosan">
+                    <div><h2>&iquest;Necesitas ayuda? <span>Soy Ricardo, tu experto en materiales.</span></h2></div>
+                </div>
+                <div class="contact-options-grid-common">
+                    <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposici&oacute;n</div></a>
+                    <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
+                    <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Tel&eacute;fono</div></a>
+                    <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                    <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">📝</div><div class="label">Formulario</div></a>
+                    <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
+                </div>
             </div>
-        </div>
-    </section>
-    <?php
+        </section>
+        <?php
+    }
 }
 
 /******************************************************************************
@@ -1811,15 +1800,13 @@ function adrihosan_pilar_paredes_controller() {
  */
 function adrihosan_pilar_paredes_contenido_superior() {
     ?>
-    <section class="ap-hero-section adrihosan-full-width-block">
-        <div class="ap-hero-content">
-        
-            
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg');">
+        <div class="hero-content">
             <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared</h1>
             <p>Redecora sin obras y transforma tus espacios. Descubre c&oacute;mo un simple cambio de azulejos en la pared puede darle una nueva vida a tu hogar.</p>
-            <div class="ap-hero-buttons">
-                <a href="#catalogo-paredes" class="ap-hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="#ideas-paredes" class="ap-hero-btn secondary">Ver Ideas</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-paredes" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#ideas-paredes" class="hero-btn secondary">Ver Ideas</a>
             </div>
         </div>
     </section>
@@ -1843,9 +1830,9 @@ function adrihosan_pilar_paredes_contenido_superior() {
             <h2>Paredes que Dejan Huella</h2>
             <p class="section-subtitle">Desde un toque sutil a una declaraci&oacute;n de estilo. Descubre c&oacute;mo nuestros azulejos hidr&aacute;ulicos para pared pueden redefinir tus espacios m&aacute;s importantes.</p>
             <div class="ap-inspiration-grid">
-                <a href="/categoria-producto/baldosa-hidraulica/imitacion/cocina-imitacion/" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Salpicadero de cocina revestido con azulejo hidráulico porcelánico de patrón geométrico."><div class="ap-card-content"><h3>Salpicaderos de Cocina</h3><p>Protege la zona de fuegos con un dise&ntilde;o impactante y una superficie que se limpia sin esfuerzo, por mucho que salpique.</p></div></a>
-                <a href="/categoria-producto/baldosa-hidraulica/imitacion/bano-imitacion/" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Pared de ducha en un baño moderno, revestida con azulejo hidráulico de imitación."><div class="ap-card-content"><h3>Frentes de Ducha</h3><p>Crea un refugio de calma y estilo en tu ba&ntilde;o. Totalmente impermeables y resistentes a la cal y a los productos de limpieza.</p></div></a>
-                <a href="#catalogo-paredes" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Pared de acento en un comedor, decorada con azulejos porcelánicos de estilo hidráulico."><div class="ap-card-content"><h3>Paredes de Acento</h3><p>Desde el cabecero de la cama al frontal de una chimenea. Un recurso decorativo para dar personalidad a cualquier estancia.</p></div></a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/pared-imitacion/uso-revestimiento/" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Salpicadero de cocina revestido con azulejo hidráulico porcelánico de patrón geométrico."><div class="ap-card-content"><h3>Salpicaderos de Cocina</h3><p>Protege la zona de fuegos con un dise&ntilde;o impactante y una superficie que se limpia sin esfuerzo, por mucho que salpique.</p></div></a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/pared-imitacion/tono-azul/" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Pared de ducha en un baño moderno, revestida con azulejo hidráulico de imitación."><div class="ap-card-content"><h3>Frentes de Ducha</h3><p>Crea un refugio de calma y estilo en tu ba&ntilde;o. Totalmente impermeables y resistentes a la cal y a los productos de limpieza.</p></div></a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/pared-imitacion/estilo-hexagonal/" class="ap-inspiration-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Pared de acento en un comedor, decorada con azulejos porcelánicos de estilo hidráulico."><div class="ap-card-content"><h3>Paredes de Acento</h3><p>Desde el cabecero de la cama al frontal de una chimenea. Un recurso decorativo para dar personalidad a cualquier estancia.</p></div></a>
             </div>
         </div>
     </section>
@@ -1866,36 +1853,56 @@ function adrihosan_pilar_paredes_contenido_superior() {
  */
 function adrihosan_pilar_paredes_contenido_inferior() {
     ?>
-    <section class="ap-seo-content-section adrihosan-full-width-block">
-        <div class="ap-seo-content-wrapper">
-            <h2>Gu&iacute;a para Elegir Azulejos para Pared de Ba&ntilde;o y Cocina</h2>
-            <p>Renovar las paredes es la forma m&aacute;s r&aacute;pida y efectiva de transformar una estancia sin necesidad de grandes obras. El <strong>revestimiento de pared</strong> es el protagonista, y los <strong>azulejos para pared de ba&ntilde;o y cocina</strong> con dise&ntilde;os de <a href="/categoria-producto/baldosa-hidraulica/imitacion/">inspiraci&oacute;n hidr&aacute;ulica</a> ofrecen la combinaci&oacute;n perfecta de estilo atemporal, resistencia y facilidad de limpieza, convirti&eacute;ndose en la soluci&oacute;n definitiva para los espacios m&aacute;s exigentes.</p>
-            
-            <h3>Porcel&aacute;nico para Pared: La Alternativa Superior</h3>
-            <p>Frente a la pintura o el papel pintado, el <strong>azulejo porcel&aacute;nico para paredes</strong> se posiciona como el rey de la durabilidad. Mientras otros materiales se degradan con la humedad, la grasa o la limpieza frecuente, el porcel&aacute;nico permanece inalterable a lo largo del tiempo.</p>
-            <ul>
-                <li><strong>Resistencia Total:</strong> Soporta sin problemas los productos de limpieza, el calor directo de la zona de cocci&oacute;n en una <a href="/categoria-producto/baldosa-hidraulica/imitacion/cocina-imitacion/">cocina</a> y los ara&ntilde;azos del d&iacute;a a d&iacute;a. Su color no se degrada.</li>
-                <li><strong>Cero Porosidad:</strong> Su principal ventaja t&eacute;cnica es una absorci&oacute;n de agua casi nula (< 0.5%). Esto lo hace 100% impermeable, inmune a las manchas y la mejor barrera contra la humedad y el moho en el <a href="/categoria-producto/baldosa-hidraulica/imitacion/bano-imitacion/">ba&ntilde;o</a>.</li>
-                <li><strong>Instalaci&oacute;n Sencilla:</strong> Se coloca como cualquier otro azulejo, sin necesidad de mano de obra especializada ni costosos tratamientos posteriores, lo que supone un ahorro en cualquier reforma.</li>
-            </ul>
-
-            <h3>Ideas Creativas para tus Paredes: M&aacute;s All&aacute; de lo Convencional</h3>
-            <p>La versatilidad del <strong>azulejo imitaci&oacute;n hidr&aacute;ulico</strong> te permite usarlo como una potente herramienta de dise&ntilde;o para crear puntos focales y a&ntilde;adir car&aacute;cter:</p>
-            <ul>
-                <li><strong>Salpicaderos de Cocina Impactantes:</strong> Convierte el frontal de tu cocina en una obra de arte. Un dise&ntilde;o geom&eacute;trico o floral protege la pared de salpicaduras y se convierte en el centro de todas las miradas.</li>
-                <li><strong>Frentes de Ducha con Personalidad:</strong> Crea un refugio de calma y estilo en tu ba&ntilde;o. Utiliza un patr&oacute;n llamativo en la pared principal de la ducha para un efecto de spa de lujo.</li>
-                <li><strong>Paredes de Acento Estrat&eacute;gicas:</strong> &iquest;Una pared aburrida en el sal&oacute;n o en un dormitorio? Reviste el frontal de una chimenea o el cabecero de la cama para un "efecto wow" instant&aacute;neo.</li>
-            </ul>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php
+    }
+    ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Dudas Frecuentes sobre Azulejos de Pared</h2>
             <div class="faq-items-wrapper">
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se pueden instalar en una ducha?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, por supuesto. Nuestros azulejos para pared son de material porcel&aacute;nico, 100% impermeables y resistentes a la humedad, el vapor y las manchas de cal.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Son f&aacute;ciles de limpiar?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>S&iacute;, la limpieza es extremadamente sencilla. Su superficie no porosa evita que las manchas se adhieran y permite el uso de cualquier producto de limpieza no abrasivo.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se pueden usar tambi&eacute;n en el suelo?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No, la mayor&iacute;a de los azulejos para pared no son aptos para suelos. Su resistencia al desgaste es menor. Para el suelo, siempre recomendamos utilizar material porcel&aacute;nico espec&iacute;fico para ese uso.</p></div></div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Cu&aacute;l es la diferencia entre el azulejo imitaci&oacute;n hidr&aacute;ulico y la baldosa original?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>La principal diferencia radica en el material y mantenimiento. El azulejo imitaci&oacute;n hidr&aacute;ulico es cer&aacute;mico o porcel&aacute;nico, lo que lo hace impermeable y libre de mantenimiento. La baldosa original es de cemento prensado, muy porosa y requiere selladores para evitar manchas permanentes.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Es apta la cer&aacute;mica hidr&aacute;ulica para el frontal de la cocina?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, es la mejor opci&oacute;n. Al ser un material con acabados resistentes al calor y las manchas , puedes limpiar las salpicaduras de grasa f&aacute;cilmente con productos comunes sin que el dise&ntilde;o del azulejo hidr&aacute;ulico cocina se deteriore.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Puedo personalizar los colores de mis azulejos hidr&aacute;ulicos?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>En Adrihosan ofrecemos una amplia variedad de modelos configurables y colecciones con diferentes texturas y tonos. Desde el azulejo hidr&aacute;ulico verde hasta el azulejo hidr&aacute;ulico gris, disponemos de opciones para adaptarnos a tu estilo personal.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Qu&eacute; formato es mejor para una pared peque&ntilde;a: 20x20 o 15x15?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>Para espacios reducidos, el azulejo hidr&aacute;ulico 15x15 aporta un detalle m&aacute;s fino y artesanal. Si buscas una instalaci&oacute;n m&aacute;s r&aacute;pida y un aspecto cl&aacute;sico, el azulejo hidr&aacute;ulico 20x20 es el est&aacute;ndar que mejor encaja en la mayor&iacute;a de reformas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;El azulejo hidr&aacute;ulico pared ba&ntilde;o resiste la humedad directa de la ducha?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common">
+                        <p>Totalmente. Al ser materiales fabricados para resistir el uso diario y la humedad , nuestros azulejos cuentan con una estructura s&oacute;lida y anclajes reforzados que garantizan seguridad y durabilidad en zonas h&uacute;medas.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -2227,15 +2234,15 @@ add_action( 'template_redirect', 'adrihosan_pilar_cocina_controller' );
  */
 function adrihosan_pilar_cocina_contenido_superior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
-        <div class="bho-hero-content">
-           
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
+        <div class="hero-content">
+
             <h1>Baldosa Hidr&aacute;ulica Original para Cocina</h1>
-            
+
             <p>La baldosa hidr&aacute;ulica original convierte la cocina en una declaraci&oacute;n de estilo. Perfecta para salpicaderos con car&aacute;cter, suelos que cuentan una historia o para enmarcar una isla central.</p>
-            <div class="bhp-hero-buttons">
-                <a href="#catalogo-cocina" class="bhp-hero-btn bhp-hero-btn-primary">Ver Cat&aacute;logo</a>
-                <a href="#contacto-experto-cocina" class="bhp-hero-btn bhp-hero-btn-secondary">Hablar con un experto</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-cocina" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#contacto-experto-cocina" class="hero-btn secondary">Hablar con un experto</a>
             </div>
         </div>
     </section>
@@ -2303,41 +2310,36 @@ function adrihosan_pilar_cocina_contenido_inferior() {
     </div>
 </section>
 
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
-        <div class="bho-hero-content">
-            <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>
+    <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
+        <div class="hero-content">
+            <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>
             <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.4;">El Secreto de una Cocina Eterna: Sellado y Cuidado</h2>
             <p style="font-size: clamp(1rem, 2.5vw, 1.1rem); line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">La baldosa hidr&aacute;ulica es robusta, pero su coraz&oacute;n es poroso. Un buen sellado es el escudo que la proteger&aacute; de manchas de aceite, vino o caf&eacute;. Descubre c&oacute;mo hacerlo en nuestra gu&iacute;a.</p>
-            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="bhp-hero-btn bhp-hero-btn-primary">Leer la Gu&iacute;a →</a>
+            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="hero-btn primary">Leer la Gu&iacute;a →</a>
         </div>
     </section>
 
-    <section class="bho-guide-section adrihosan-full-width-block">
-         <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Baldosa Hidr&aacute;ulica Original en la Cocina: Car&aacute;cter y Funcionalidad</h2>
-            <p>La cocina es un espacio de trabajo intenso, pero tambi&eacute;n el alma de la casa. La <strong><a href="/categoria-producto/baldosa-hidraulica/original/">baldosa hidr&aacute;ulica original</a> en la cocina</strong> no es solo una elecci&oacute;n est&eacute;tica, es una apuesta por un material que combina la robustez necesaria para el d&iacute;a a d&iacute;a con una belleza que transforma por completo el ambiente. Es la soluci&oacute;n perfecta para crear suelos que definan zonas, como el &aacute;rea del comedor, o para dise&ntilde;ar salpicaderos que se conviertan en el centro de todas las miradas.</p>
-            <h3 class="bho-guide-subtitle">Suelos Hidr&aacute;ulicos para Cocinas: Creando Alfombras Cer&aacute;micas</h3>
-            <p>Utilizar el suelo hidr&aacute;ulico en la cocina permite jugar con el espacio. Puedes optar por cubrir toda la superficie para un impacto total o utilizarlo para crear "alfombras" cer&aacute;micas que delimiten visualmente la zona de comedor o la isla central. Esta t&eacute;cnica no solo es decorativa, sino tambi&eacute;n pr&aacute;ctica, ya que define los espacios en cocinas abiertas sin necesidad de tabiques.</p>
-            <ul>
-                <li><strong>Estilo y Durabilidad:</strong> Aporta una calidez y una textura &uacute;nicas. A pesar de ser un material artesanal, su alta densidad lo hace muy resistente al desgaste y al tr&aacute;nsito continuo.</li>
-                <li><strong>El Valor del Sellado:</strong> Al ser un material poroso, es crucial aplicar un <a href="https://www.adrihosan.com/categoria-producto/ceramica/mantenimiento-de-azulejos/" target="_blank" rel="noopener noreferrer">tratamiento sellador de alta calidad</a> tras la instalaci&oacute;n. Esto lo proteger&aacute; de las manchas comunes en una cocina, como aceite, vino o caf&eacute;.</li>
-            </ul>
-            <h3 class="bho-guide-subtitle">El Salpicadero: El Punto Focal de tu Cocina</h3>
-            <p>El frontal de la cocina es el lienzo perfecto para la baldosa hidr&aacute;ulica. Un salpicadero de hidr&aacute;ulico original se convierte en el protagonista indiscutible del dise&ntilde;o, aportando color, patr&oacute;n y una textura que ning&uacute;n otro material puede igualar.</p>
-            <ul>
-                <li><strong>Resistencia al Calor:</strong> Su composici&oacute;n a base de cemento lo hace totalmente inalterable a las altas temperaturas de la zona de cocci&oacute;n.</li>
-                <li><strong>Limpieza Sencilla:</strong> Una vez sellado, la limpieza de las salpicaduras de grasa o tomate es tan simple como pasar una bayeta con agua y jab&oacute;n neutro. Olv&iacute;date de productos agresivos que puedan da&ntilde;ar el material.</li>
-            </ul>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php } ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Dudas sobre la Baldosa Original en Cocinas</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se mancha con el aceite o el vino?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p><strong>Si la baldosa est&aacute; correctamente sellada con un producto hidr&oacute;fugo y ole&oacute;fugo, las manchas no penetrar&aacute;n.</strong> Es importante limpiar cualquier derrame de inmediato con una bayeta y un producto neutro para evitar que permanezca en la superficie.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Puedo usarla como encimera?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p><strong>No lo recomendamos.</strong> Aunque es resistente, el uso intensivo de una encimera (cortes, golpes, contacto directo con alimentos) podr&iacute;a da&ntilde;ar el sellado y la propia baldosa a largo plazo. Es mejor reservarla para suelos y paredes.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;C&oacute;mo se limpian las juntas del suelo de la cocina?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p><strong>Las juntas deben limpiarse con cepillos suaves y productos espec&iacute;ficos para juntas o una mezcla de agua y bicarbonato.</strong> Evita los limpiadores &aacute;cidos que puedan da&ntilde;ar tanto la junta como la propia baldosa.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Puedo usarla como encimera?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>T&eacute;cnicamente s&iacute;, por dureza y resistencia al calor. Sin embargo, no lo recomendamos para zonas de corte directo o contacto constante con &aacute;cidos fuertes (lim&oacute;n, vinagre) si no vas a ser muy riguroso con el mantenimiento del sellado. Para encimeras de batalla, es mejor optar por porcel&aacute;nico.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;C&oacute;mo se limpian las juntas del suelo de la cocina?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Usa un cepillo suave con agua y jab&oacute;n neutro. Evita frotar con estropajos met&aacute;licos o usar productos abrasivos como salfum&aacute;n, ya que podr&iacute;an da&ntilde;ar los bordes de la <strong>baldosa hidr&aacute;ulica original</strong> adyacente. Un buen sellado inicial tambi&eacute;n protege la junta de ennegrecerse.</p></div></div>
             </div>
         </div>
     </section>
@@ -2392,14 +2394,14 @@ add_action( 'template_redirect', 'adrihosan_pilar_exterior_controller' );
  */
 function adrihosan_pilar_exterior_contenido_superior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
-        <div class="bho-hero-content">
-        
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
+        <div class="hero-content">
+
             <h1>Baldosa Hidr&aacute;ulica Original para Exterior</h1>
             <p>Descubre nuestra colecci&oacute;n de baldosa hidr&aacute;ulica original para exterior. La soluci&oacute;n artesanal y duradera para crear terrazas, patios y porches con un car&aacute;cter inigualable.</p>
-            <div class="bhp-hero-buttons">
-                <a href="#catalogo-exterior" class="bhp-hero-btn bhp-hero-btn-primary">Ver Cat&aacute;logo Exterior</a>
-                <a href="#contacto-experto-exterior" class="bhp-hero-btn bhp-hero-btn-secondary">Asesoramiento experto</a>
+            <div class="hero-buttons">
+                <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo Exterior</a>
+                <a href="#contacto-experto-exterior" class="hero-btn secondary">Asesoramiento experto</a>
             </div>
         </div>
     </section>
@@ -2437,12 +2439,12 @@ function adrihosan_pilar_exterior_contenido_superior() {
  */
 function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
-        <div class="bho-hero-content">
-            <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>
+    <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
+        <div class="hero-content">
+            <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>
             <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.4;">El Secreto de una Terraza Eterna: Sellado y Cuidado</h2>
             <p style="font-size: clamp(1rem, 2.5vw, 1.1rem); line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">La baldosa hidr&aacute;ulica es robusta, pero su coraz&oacute;n es poroso. Un buen sellado es el escudo que la proteger&aacute; de la humedad, las heladas y las manchas. Descubre c&oacute;mo hacerlo en nuestra gu&iacute;a.</p>
-            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="bhp-hero-btn bhp-hero-btn-primary" target="_blank" rel="noopener noreferrer">Leer la Gu&iacute;a →</a>
+            <a href="https://www.adrihosan.com/baldosa-hidraulica-colocacion-mantenimiento/" class="hero-btn primary" target="_blank" rel="noopener noreferrer">Leer la Gu&iacute;a →</a>
         </div>
     </section>
 
@@ -2459,40 +2461,28 @@ function adrihosan_pilar_exterior_contenido_inferior() {
         </div>
     </section>
     
-    <section class="bho-guide-section adrihosan-full-width-block">
-        <div class="bho-guide-wrapper">
-            <h2 class="bho-guide-main-title">Baldosa Hidr&aacute;ulica Original para Exterior: Resistencia, Estilo y Durabilidad</h2>
-            <p>Transforma tu jard&iacute;n, terraza o patio en un espacio &uacute;nico con la <strong><a href="/categoria-producto/baldosa-hidraulica/original/">baldosa hidr&aacute;ulica original</a> para exterior</strong>. M&aacute;s all&aacute; de su innegable belleza artesanal, este <strong>pavimento exterior</strong> ofrece una resistencia y durabilidad excepcionales frente a las condiciones clim&aacute;ticas m&aacute;s adversas. Si buscas un <strong>suelo para exterior</strong> que combine autenticidad, bajo mantenimiento y una est&eacute;tica atemporal, la baldosa hidr&aacute;ulica es la elecci&oacute;n perfecta para dar vida a tus zonas al aire libre.</p>
-            
-            <h3 class="bho-guide-subtitle">&iquest;Por Qu&eacute; Elegir Baldosa Hidr&aacute;ulica Original para tu Exterior?</h3>
-            <p>La <strong>baldosa hidr&aacute;ulica artesanal</strong> ha sido utilizada durante siglos en zonas de exterior gracias a su robustez. Fabricada con cemento, arena y pigmentos naturales, su composici&oacute;n la hace intr&iacute;nsecamente resistente. Sin embargo, para un rendimiento &oacute;ptimo y una protecci&oacute;n total en exteriores, es crucial entender sus propiedades y el proceso de instalaci&oacute;n adecuado.</p>
-            <ul>
-                <li><strong>Durabilidad Natural:</strong> El cemento es un material altamente resistente a la compresi&oacute;n y al desgaste por abrasi&oacute;n.</li>
-                <li><strong>Colores Inalterables:</strong> Los pigmentos minerales se integran en la masa de la baldosa, manteniendo su viveza incluso bajo exposici&oacute;n solar intensa y lluvias.</li>
-                <li><strong>Autenticidad y Car&aacute;cter:</strong> Cada pieza es &uacute;nica, aportando una personalidad y un toque artesanal que los materiales industriales no pueden replicar.</li>
-                <li><strong>Versatilidad Est&eacute;tica:</strong> Desde <strong>terrazas con encanto r&uacute;stico</strong> hasta <strong>patios modernos</strong>, los dise&ntilde;os permiten una adaptabilidad a cualquier estilo de paisajismo.</li>
-            </ul>
-
-            <h3 class="bho-guide-subtitle">Claves para una Instalaci&oacute;n Duradera y un Mantenimiento Sencillo</h3>
-            <p>Para garantizar que tu <strong>suelo hidr&aacute;ulico de exterior</strong> mantenga su belleza y funcionalidad a lo largo del tiempo, es fundamental seguir unas pautas espec&iacute;ficas:</p>
-            <ul>
-                <li><strong>Tratamiento Sellador Impermeabilizante (`hidr&oacute;fugo y ole&oacute;fugo`):</strong> <strong>&iexcl;Paso m&aacute;s importante!</strong> Antes de su uso, la baldosa debe ser tratada con un <a href="https://www.adrihosan.com/categoria-producto/ceramica/mantenimiento-de-azulejos/" target="_blank" rel="noopener noreferrer">sellador de alta calidad</a>. Esto la protege de la humedad, previene manchas (grasa, hojas, verd&iacute;n) y la hace <strong>resistente a las heladas</strong>, evitando que el agua se filtre y congele en su interior.</li>
-                <li><strong>Soporte y Drenaje Adecuado:</strong> En exteriores, es vital asegurar una correcta evacuaci&oacute;n del agua. El <strong>pavimento exterior de baldosa hidr&aacute;ulica</strong> debe instalarse sobre una base estable (solera de hormig&oacute;n) y con una ligera pendiente (1-2%) para evitar estancamientos de agua.</li>
-                <li><strong>Juntas Flexibles:</strong> Utiliza morteros de junta hidr&oacute;fugos y flexibles que soporten las expansiones y contracciones por cambios de temperatura.</li>
-                <li><strong>Resistencia Antideslizante (`Clase 3 / R11`):</strong> La textura mate natural de la baldosa hidr&aacute;ulica ofrece una buena adherencia. Para zonas de alto riesgo de humedad constante (como alrededor de piscinas o fuentes), busca modelos certificados con resistencia antideslizante (Clase 3 o R11) para garantizar la seguridad.</li>
-                <li><strong>Limpieza y Conservaci&oacute;n:</strong> Utiliza siempre productos de limpieza neutros y evita los &aacute;cidos, la lej&iacute;a o las hidrolimpiadoras a presi&oacute;n, que pueden da&ntilde;ar el sellador y la superficie.</li>
-            </ul>
-            <p>La <strong>baldosa hidr&aacute;ulica para exterior</strong> de Adrihosan no es solo un producto, es una inversi&oacute;n en dise&ntilde;o, calidad y durabilidad para tus espacios al aire libre. &iexcl;Descubre nuestra colecci&oacute;n y crea un exterior que deje huella!</p>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php } ?>
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Dudas sobre la Baldosa Original en Exteriores</h2>
+            <h2 class="faq-main-title-common">Dudas sobre Hidr&aacute;ulico en Exteriores</h2>
             <div class="faq-items-wrapper">
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Se estropea con la lluvia?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No, si est&aacute; correctamente sellada. El tratamiento impermeabilizante es esencial para proteger la baldosa, evitando que el agua penetre y cause da&ntilde;os, especialmente con las heladas.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Los colores pierden intensidad con el sol?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No. Se fabrican con pigmentos minerales naturales de alta calidad, muy resistentes a la radiaci&oacute;n UV. Esto garantiza que los colores se mantendr&aacute;n vivos y estables durante d&eacute;cadas.</p></div></div>
-                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Es resbaladizo si se moja?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Su acabado mate natural le confiere una buena adherencia, siendo m&aacute;s seguro que muchos cer&aacute;micos pulidos. Para zonas cr&iacute;ticas, siempre recomendamos optar por modelos con certificaci&oacute;n antideslizante.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;El sol se comer&aacute; el color de la baldosa?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No. A diferencia de otros materiales impresos o pl&aacute;sticos, la <strong>baldosa hidr&aacute;ulica original</strong> se fabrica con pigmentos minerales de alta calidad integrados en la capa de rodadura (la "trepa"), que tiene unos 4-5mm de grosor. Esto garantiza que los colores resistan la radiaci&oacute;n UV sin desvanecerse durante d&eacute;cadas.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Resbala si llueve?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>El cemento natural tiene una textura mate que ofrece un agarre aceptable para caminar, similar a una piedra lisa. Sin embargo, para zonas cr&iacute;ticas como rampas o bordes de piscina, recomendamos aplicar un tratamiento antideslizante l&iacute;quido adicional o optar directamente por nuestro <strong>porcel&aacute;nico imitaci&oacute;n hidr&aacute;ulico con acabado C3/R11</strong>, espec&iacute;fico para seguridad m&aacute;xima.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;Pueden romperse las baldosas con las heladas?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Si est&aacute;n bien instaladas y selladas, no. La clave es el <strong>tratamiento hidr&oacute;fugo</strong>. Al impedir que el agua penetre en el poro del cemento, evitas que esta se congele dentro y fracture la pieza por expansi&oacute;n. Tambi&eacute;n es vital usar un cemento cola flexible para exteriores y respetar las juntas de dilataci&oacute;n.</p></div></div>
+                <div class="faq-item-common"><button class="faq-question-common"><span>&iquest;C&oacute;mo limpio las manchas de grasa de la barbacoa?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Si el suelo estaba bien sellado, bastar&aacute; con agua caliente y jab&oacute;n neutro. Si la mancha ha penetrado, existen cataplasmas espec&iacute;ficas para absorber grasa en piedra y cemento. Nunca uses desengrasantes &aacute;cidos fuertes. La mejor defensa en la zona de barbacoa es reaplicar el sellador con m&aacute;s frecuencia que en el resto de la terraza.</p></div></div>
             </div>
         </div>
     </section>
@@ -3629,6 +3619,7 @@ function adrihosan_enqueue_category_assets() {
         2093 => 'metro',
         1844 => 'hidraulico',
         2510 => 'imitacion',
+        4564 => 'hidraulica',
         4862 => 'hidraulica-original',
         4865 => 'hidraulica-bano',
         4866 => 'hidraulica-cocina',
@@ -3673,14 +3664,13 @@ function adrihosan_enqueue_category_assets() {
 function adrihosan_azulejos_bano_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="ap-hero-section adrihosan-full-width-block">
-        <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg" alt="Baño moderno con azulejos" class="hero-bg-image">
-        <div class="ap-hero-content">
-            <h1>Azulejos de Baño: Diseños que crean tu zona de relax</h1>
-            <p>Desde porcelánicos antideslizantes para la ducha hasta revestimientos que amplían visualmente tu aseo.</p>
-            <div class="ap-hero-buttons">
-                <a href="#catalogo-bano" class="ap-hero-btn primary">Ver Catálogo</a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20baño" class="ap-hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+        <div class="hero-content">
+            <h1>Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax</h1>
+            <p>Desde porcel&aacute;nicos antideslizantes para la ducha hasta revestimientos que ampl&iacute;an visualmente tu aseo.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-bano" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20baño" class="hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
             </div>
         </div>
     </section>
@@ -3762,12 +3752,12 @@ function adrihosan_azulejos_bano_contenido_superior() {
             </div>
         </div>
     </section>
-    
+
     <!-- 4. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>Ricardo dice:</strong> Tenemos demasiada variedad... ¡y tiene razón! No te agobies mirando los 1.102 productos. Usa los filtros laterales para elegir el color (¿blanco, gris, azul?) o el formato. Si buscas algo para un baño mini, filtra por 'brillo' y verás cómo cambia la película. Pulsa el botón <strong>"FILTRAR"</strong> para ver resultados.</p>
+        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
     </div>
-    
+
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-bano" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
@@ -3781,32 +3771,21 @@ function adrihosan_azulejos_bano_contenido_superior() {
 
 function adrihosan_azulejos_bano_contenido_inferior() {
     ?>
-    <!-- 7. GUÍA MAESTRA SEO -->
-    <section class="ap-seo-content-section adrihosan-full-width-block">
-        <div class="ap-seo-content-wrapper">
-            <h2>Guía Maestra: Azulejos de Baño</h2>
-            
-            <h3>¿Qué azulejo elegir según la zona del baño?</h3>
-            <p>No es lo mismo revestir el interior de la ducha que decorar la pared del lavabo. El <strong>azulejo para baño</strong> debe adaptarse a cada zona según su exposición al agua y al tránsito.</p>
-            <ul>
-                <li><strong>Zona de ducha:</strong> Porcelánico C3 antideslizante. Absorción de agua casi nula para evitar filtraciones.</li>
-                <li><strong>Paredes del lavabo:</strong> Puedes usar pasta blanca o porcelánico. Aquí prima la estética sobre la resistencia extrema.</li>
-                <li><strong>Suelo del baño:</strong> Porcelánico antideslizante obligatorio. Seguridad ante todo, especialmente si hay niños o personas mayores.</li>
-            </ul>
-            
-            <h3>Colores que amplían baños pequeños</h3>
-            <p>Los <strong>azulejos baño pequeño</strong> requieren estrategia. Los tonos claros (blanco, beige, gris claro) reflejan la luz y crean sensación de amplitud. Combina con un formato grande (60x60 o superior) para reducir juntas y ganar continuidad visual.</p>
-            
-            <h3>Tendencias 2026 en azulejos de baño modernos</h3>
-            <p>El <strong>efecto mármol</strong> sigue siendo el rey indiscutible. Vetas naturales en grises, blancos y negros. Otra tendencia fuerte: el <strong>efecto madera</strong> en porcelánico para suelos, que aporta calidez sin el mantenimiento de la madera real.</p>
-            
-            <h3>¿Brillo o mate en el baño?</h3>
-            <p>Depende de la zona. El <strong>brillo</strong> en paredes amplía visualmente y refleja luz (ideal en baños sin ventana). El <strong>mate</strong> en suelos evita resbalones y disimula mejor las gotas de agua secas.</p>
-            
-            <h3>Mantenimiento y limpieza</h3>
-            <p>El porcelánico es el material más agradecido. Resiste lejía, antical y cualquier producto de limpieza. Las juntas son el único punto débil: usa mortero epoxi en zonas muy húmedas para evitar que ennegrezcan con el tiempo.</p>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php
+    }
+    ?>
 
     <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">

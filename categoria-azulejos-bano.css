@@ -3,75 +3,71 @@
  * Adrihosan - Clases estándar .ap-*
  */
 
-/* --- HERO SECTION --- */
-.tax-product_cat.term-1789 .ap-hero-section {
+/* --- HERO SECTION (Estandarizado) --- */
+.tax-product_cat.term-1789 .hero-section-container {
     position: relative;
     width: 100vw !important;
-    max-width: 100vw !important;
-    margin-left: calc(50% - 50vw) !important;
-    margin-right: calc(50% - 50vw) !important;
-    min-height: 50vh;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    isolation: isolate;
 }
 
-.tax-product_cat.term-1789 .hero-bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.tax-product_cat.term-1789 .ap-hero-section::before {
+.tax-product_cat.term-1789 .hero-section-container::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: -1;
-    pointer-events: none;
-}
-
-.tax-product_cat.term-1789 .ap-hero-content {
-    position: relative;
-    max-width: 800px;
+    background-color: rgba(63, 111, 123, 0.45);
     z-index: 1;
 }
 
-.tax-product_cat.term-1789 .ap-hero-content h1 {
-    font-size: clamp(28px, 5vw, 42px);
+.tax-product_cat.term-1789 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.tax-product_cat.term-1789 .hero-content h1 {
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     margin: 0 0 15px 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.tax-product_cat.term-1789 .ap-hero-content p {
-    font-size: clamp(16px, 3vw, 18px);
+.tax-product_cat.term-1789 .hero-content p {
+    font-size: 18px;
     line-height: 1.6;
     max-width: 650px;
     margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    opacity: 0.95;
 }
 
-.tax-product_cat.term-1789 .ap-hero-buttons {
+.tax-product_cat.term-1789 .hero-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.tax-product_cat.term-1789 .ap-hero-btn {
+.tax-product_cat.term-1789 .hero-btn {
+    display: inline-block;
     padding: 12px 28px;
     border-radius: 5px;
     font-size: 16px;
@@ -84,25 +80,25 @@
     cursor: pointer;
 }
 
-.tax-product_cat.term-1789 .ap-hero-btn.primary {
+.tax-product_cat.term-1789 .hero-btn.primary {
     background-color: #4dd2d0;
     border-color: #4dd2d0;
     color: #ffffff;
 }
 
-.tax-product_cat.term-1789 .ap-hero-btn.primary:hover {
+.tax-product_cat.term-1789 .hero-btn.primary:hover {
     background-color: #ffffff;
     border-color: #ffffff;
     color: #4dd2d0;
 }
 
-.tax-product_cat.term-1789 .ap-hero-btn.secondary {
+.tax-product_cat.term-1789 .hero-btn.secondary {
     background-color: transparent;
     border-color: #ffffff;
     color: #ffffff;
 }
 
-.tax-product_cat.term-1789 .ap-hero-btn.secondary:hover {
+.tax-product_cat.term-1789 .hero-btn.secondary:hover {
     background-color: #ffffff;
     color: #3f6f7b;
 }
@@ -335,9 +331,17 @@
 }
 
 @media (max-width: 768px) {
-    .tax-product_cat.term-1789 .ap-hero-section {
+    .tax-product_cat.term-1789 .hero-section-container {
         min-height: 40vh;
         padding: 40px 20px;
+    }
+
+    .tax-product_cat.term-1789 .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .tax-product_cat.term-1789 .hero-content p {
+        font-size: 15px;
     }
     
     .tax-product_cat.term-1789 .ap-value-section,
@@ -349,4 +353,91 @@
     .tax-product_cat.term-1789 .ap-inspiration-card {
         min-height: 300px;
     }
+
+    /* --- BOTÓN FILTRAR MÓVIL --- */
+    .solo-movil-filtro {
+        display: block !important;
+    }
+
+    #destino-filtro-adria-bano {
+        display: block !important;
+        margin: 20px 0 30px 0 !important;
+        text-align: center !important;
+    }
+
+    #destino-filtro-adria-bano .wpc-filters-open-button-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        height: auto !important;
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    #destino-filtro-adria-bano a {
+        display: inline-block !important;
+        background: #4dd2d0 !important;
+        color: #fff !important;
+        padding: 14px 30px !important;
+        border-radius: 5px !important;
+        text-decoration: none !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    }
+
+    /* --- GRID PRODUCTOS MÓVIL CENTRADO --- */
+    .tax-product_cat.term-1789 ul.products {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin-top: 30px !important;
+        padding: 0 10px !important;
+        gap: 20px !important;
+    }
+
+    .tax-product_cat.term-1789 ul.products li.product {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* ========================================================================== */
+/* CONTENEDOR DEL FILTRO */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+/* ========================================================================== */
+/* GRID DE PRODUCTOS */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 ul.products {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px !important;
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tax-product_cat.term-1789 ul.products li.product {
+    text-align: center;
 }
