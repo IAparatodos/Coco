@@ -3885,7 +3885,16 @@ function adrihosan_cargar_css_categoria() {
     
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
-        
+
+        // Cargar JS común (FAQs, scroll, etc.)
+        wp_enqueue_script(
+            'adrihosan-category-common',
+            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
+            array('jquery'),
+            '1.0.0',
+            true
+        );
+
         $cat_id = get_queried_object_id();
         $css_file = '/assets/css/category-' . $cat_id . '.css';
         $css_path = get_stylesheet_directory() . $css_file;
