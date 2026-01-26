@@ -501,3 +501,112 @@ html {
     transform: scale(1.03);
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
+
+/* ========================================================================== */
+/* FILTER EVERYTHING PRO - 3 COLUMNAS                                         */
+/* ========================================================================== */
+
+/* 1. Contenedor General - 3 columnas en escritorio */
+@media (min-width: 992px) {
+    .wpc-filters-widget-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 20px !important;
+        align-items: stretch !important;
+    }
+
+    /* Eliminar huecos vacíos del plugin */
+    .wpc-filters-widget-wrapper > div:empty,
+    .wpc-filters-widget-wrapper > span:empty {
+        display: none !important;
+    }
+
+    /* Cada sección ocupa su lugar sin saltos */
+    .wpc-filters-section {
+        grid-column: span 1 !important;
+        margin: 0 !important;
+    }
+
+    /* Botones en fila nueva que ocupa las 3 columnas */
+    .wpc-filter-layout-submit-button {
+        grid-column: 1 / -1 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        margin-top: 20px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid #eee !important;
+    }
+}
+
+/* 2. Estilo de las Cajas */
+.wpc-filters-section {
+    background: #ffffff !important;
+    padding: 20px !important;
+    border: 1px solid #eef2f3 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(16, 46, 53, 0.04) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* 3. Títulos y Selects */
+.wpc-filter-title {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #102e35 !important;
+    text-transform: uppercase !important;
+    border-bottom: 2px solid #4dd2d0 !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 15px !important;
+}
+
+.wpc-filters-section select {
+    width: 100% !important;
+    height: 45px !important;
+    border: 1px solid #dcdfe6 !important;
+    border-radius: 6px !important;
+    color: #3f6f7b !important;
+    background-color: #fcfcfc !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234dd2d0' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 15px center !important;
+}
+
+/* 4. Botones: Estilo Adrihosan */
+.wpc-filter-layout-submit-button button {
+    background-color: #4dd2d0 !important;
+    color: #fff !important;
+    border: 2px solid #4dd2d0 !important;
+    border-radius: 5px !important;
+    padding: 10px 30px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+}
+
+.wpc-filters-main-wrap a.wpc-filter-reset-link,
+.wpc-filters-main-wrap a.wpc-filter-reset-button {
+    background: #fff !important;
+    color: #3f6f7b !important;
+    border: 1px solid #dcdfe6 !important;
+    padding: 10px 30px !important;
+    border-radius: 5px !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+/* 5. Móvil - 1 columna */
+@media (max-width: 991px) {
+    .wpc-filters-widget-wrapper {
+        display: block !important;
+    }
+    .wpc-filters-section {
+        margin-bottom: 15px !important;
+    }
+    .wpc-filter-layout-submit-button {
+        flex-direction: column !important;
+    }
+}
