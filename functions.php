@@ -3870,7 +3870,7 @@ function adrihosan_cargar_css_categoria() {
     // Siempre cargar el CSS base global
     wp_enqueue_style(
         'adrihosan-base-global',
-        get_stylesheet_directory_uri() . '/css/base-global.css',
+        get_stylesheet_directory_uri() . '/assets/css/base-global.css',
         array(),
         '1.0.0'
     );
@@ -3878,7 +3878,7 @@ function adrihosan_cargar_css_categoria() {
     // Siempre cargar los fixes móviles
     wp_enqueue_style(
         'adrihosan-mobile-fixes',
-        get_stylesheet_directory_uri() . '/css/mobile-fixes.css',
+        get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
         array('adrihosan-base-global'),
         '1.0.0'
     );
@@ -3887,7 +3887,7 @@ function adrihosan_cargar_css_categoria() {
     if (is_product_category()) {
         
         $cat_id = get_queried_object_id();
-        $css_file = '/css/category-' . $cat_id . '.css';
+        $css_file = '/assets/css/category-' . $cat_id . '.css';
         $css_path = get_stylesheet_directory() . $css_file;
         
         // Si existe el archivo CSS específico para esta categoría, cargarlo
@@ -3903,7 +3903,7 @@ function adrihosan_cargar_css_categoria() {
         // Cargar CSS de categorías padre si existen
         $cat = get_term($cat_id, 'product_cat');
         if ($cat && $cat->parent > 0) {
-            $parent_css_file = '/css/category-' . $cat->parent . '.css';
+            $parent_css_file = '/assets/css/category-' . $cat->parent . '.css';
             $parent_css_path = get_stylesheet_directory() . $parent_css_file;
             
             if (file_exists($parent_css_path)) {
@@ -3925,7 +3925,7 @@ add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 function adrihosan_preload_css_critico() {
     if (is_product_category()) {
         $cat_id = get_queried_object_id();
-        $css_file = get_stylesheet_directory_uri() . '/css/category-' . $cat_id . '.css';
+        $css_file = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
         
         echo '<link rel="preload" href="' . esc_url($css_file) . '" as="style">' . "\n";
     }
