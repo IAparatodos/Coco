@@ -3825,8 +3825,8 @@ function adrihosan_azulejos_bano_contenido_inferior() {
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejos">
                 <div>
-                    <h2>Soy Ricardo. Si no sabes cuántos metros necesitas o qué azulejo combina mejor con tu mueble, escríbeme. 
-                        <span>Te doy mi opinión sincera, no la que te daría un vendedor que solo quiere facturar.</span>
+                    <h2>Soy Ricardo. ¿Dudas con tu proyecto? Escríbeme.
+                        <span>Te ayudo a elegir sin compromiso.</span>
                     </h2>
                 </div>
             </div>
