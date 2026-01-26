@@ -167,3 +167,198 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* ========================================================================== */
+/* INSPIRACIÓN SECTION - Ideas que transforman tu cocina                      */
+/* ========================================================================== */
+
+.ahc-inspiracion-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ahc-inspiracion-section .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ahc-inspiracion-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 0.75rem;
+}
+
+.ahc-inspiracion-section .section-p {
+    font-size: 1.125rem;
+    color: #3f6f7b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.ahc-inspiracion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.ahc-inspiracion-card {
+    position: relative;
+    display: block;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(16, 46, 53, 0.1);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ahc-inspiracion-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(16, 46, 53, 0.2);
+}
+
+.ahc-inspiracion-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.ahc-inspiracion-card:hover img {
+    transform: scale(1.05);
+}
+
+.ahc-inspiracion-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 2;
+}
+
+.ahc-inspiracion-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px;
+    z-index: 3;
+}
+
+.ahc-inspiracion-card .card-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.ahc-inspiracion-card .card-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================================================== */
+/* SEO CONTENT SECTION - Texto estándar                                       */
+/* ========================================================================== */
+
+.ap-seo-content-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.ap-seo-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.ap-seo-content-wrapper h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ap-seo-content-wrapper h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.ap-seo-content-wrapper p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.ap-seo-content-wrapper a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ap-seo-content-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                  */
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+    .ahc-hero-section {
+        padding: 60px 20px;
+    }
+
+    .ahc-hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .ahc-inspiracion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ahc-inspiracion-card {
+        min-height: 350px;
+    }
+
+    .ap-seo-content-wrapper h2 {
+        font-size: 1.5rem;
+    }
+}
