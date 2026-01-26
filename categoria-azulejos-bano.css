@@ -1,9 +1,28 @@
 /**
- * CSS para Categoría Azulejos Baño (ID: 1789)
- * Adrihosan - Clases estándar .ap-*
+ * ============================================================================
+ * CSS CATEGORÍA 1789 - AZULEJOS BAÑO
+ * Archivo independiente - Basado en el patrón estandarizado
+ * ============================================================================
  */
 
-/* --- HERO SECTION (Estandarizado) --- */
+/* ========================================================================== */
+/* 1. OCULTAR ELEMENTOS INNECESARIOS */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 .woocommerce-breadcrumb,
+.tax-product_cat.term-1789 .woocommerce-products-header,
+.tax-product_cat.term-1789 .term-description,
+.tax-product_cat.term-1789 .product-categories,
+.tax-product_cat.term-1789 .doo-category-banner,
+.tax-product_cat.term-1789 .wd-shop-tools,
+.tax-product_cat.term-1789 .advanced-filter,
+.tax-product_cat.term-1789 .filter-wrapper {
+    display: none !important;
+}
+
+/* ========================================================================== */
+/* 2. HERO SECTION (Estandarizado) */
+/* ========================================================================== */
 .tax-product_cat.term-1789 .hero-section-container {
     position: relative;
     width: 100vw !important;
@@ -23,6 +42,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    isolation: isolate;
 }
 
 .tax-product_cat.term-1789 .hero-section-container::after {
@@ -30,10 +50,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(63, 111, 123, 0.45);
     z-index: 1;
+    pointer-events: none;
 }
 
 .tax-product_cat.term-1789 .hero-content {
@@ -440,4 +463,72 @@
 
 .tax-product_cat.term-1789 ul.products li.product {
     text-align: center;
+}
+
+/* ========================================================================== */
+/* FAQs Y CONTACTO - FULL WIDTH */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 .faq-section-common {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.tax-product_cat.term-1789 .contact-help-common {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    box-sizing: border-box;
+}
+
+/* ========================================================================== */
+/* DESCRIPCIÓN SEO DINÁMICA */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 .bho-guide-section {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 60px 20px;
+    background-color: #f7f9fa;
+    box-sizing: border-box;
+}
+
+.tax-product_cat.term-1789 .term-description-dinamica {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-1789 .term-description-dinamica h2,
+.tax-product_cat.term-1789 .term-description-dinamica h3 {
+    color: #102e35;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.tax-product_cat.term-1789 .term-description-dinamica p {
+    margin-bottom: 20px;
 }
