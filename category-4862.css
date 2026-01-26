@@ -1,0 +1,566 @@
+/* ========================================================================== */
+/* CATEGORY-4862.CSS - Baldosa Hidráulica                                     */
+/* ========================================================================== */
+
+.tax-product_cat.term-4862 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Eliminar espacio en blanco superior del tema --- */
+.tax-product_cat.term-4862 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- HERO SECTION (BH) --- */
+.tax-product_cat.term-4862 .hero-section-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-4862 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.6);
+    z-index: 1;
+}
+
+.tax-product_cat.term-4862 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-4862 .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tax-product_cat.term-4862 .hero-content p {
+    font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.95;
+}
+
+.tax-product_cat.term-4862 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tax-product_cat.term-4862 .hero-btn {
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tax-product_cat.term-4862 .hero-btn.primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-4862 .hero-btn.primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-4862 .hero-btn.secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-4862 .hero-btn.secondary:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- BLOQUE DE CARACTERÍSTICAS --- */
+.tax-product_cat.term-4862 .bh-features-section {
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4862 .bh-features-section .section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.tax-product_cat.term-4862 .bh-features-section .section-header h2 {
+    font-size: 32px;
+    color: #102e35;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.tax-product_cat.term-4862 .bh-features-section .section-header p {
+    font-size: 18px;
+    color: #3f6f7b;
+    line-height: 1.7;
+}
+
+.tax-product_cat.term-4862 .bh-features-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.tax-product_cat.term-4862 .bh-feature-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+}
+
+.tax-product_cat.term-4862 .bh-feature-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-4862 .bh-feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #102e35;
+    margin-bottom: 10px;
+}
+
+.tax-product_cat.term-4862 .bh-feature-card p {
+    font-size: 16px;
+    color: #3f6f7b;
+    line-height: 1.6;
+}
+
+/* --- BLOQUES DE INSPIRACIÓN, PRODUCTOS, ETC. --- */
+.tax-product_cat.term-4862 .inspiration-section,
+.tax-product_cat.term-4862 .bh-products-header-section,
+.tax-product_cat.term-4862 .bh-custom-section,
+.tax-product_cat.term-4862 .bh-guide-section,
+.tax-product_cat.term-4862 .bh-faq-section,
+.tax-product_cat.term-4862 .bh-ayuda-section,
+.tax-product_cat.term-4862 .bh-simulator-section {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* --- INSPIRATION SECTION --- */
+.tax-product_cat.term-4862 .inspiration-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+
+.tax-product_cat.term-4862 .inspiration-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tax-product_cat.term-4862 .inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-4862 .inspiration-card {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    min-height: 350px;
+}
+
+.tax-product_cat.term-4862 .inspiration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tax-product_cat.term-4862 .inspiration-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.tax-product_cat.term-4862 .inspiration-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 2;
+}
+
+.tax-product_cat.term-4862 .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.tax-product_cat.term-4862 .card-content h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: white !important;
+}
+
+.tax-product_cat.term-4862 .card-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+    color: white !important;
+}
+
+/* --- PRODUCTS HEADER --- */
+.tax-product_cat.term-4862 .bh-products-header-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-4862 .bh-products-header-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+/* --- CUSTOM SECTION --- */
+.tax-product_cat.term-4862 .bh-custom-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.tax-product_cat.term-4862 .bh-custom-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-4862 .bh-custom-text-content,
+.tax-product_cat.term-4862 .bh-custom-image-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tax-product_cat.term-4862 .bh-custom-image-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.tax-product_cat.term-4862 .bh-custom-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.tax-product_cat.term-4862 .bh-custom-cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #4dd2d0;
+    background-color: #4dd2d0;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-4862 .bh-custom-cta-btn:hover {
+    background-color: #ffffff !important;
+    color: #4dd2d0 !important;
+}
+
+/* --- SIMULATOR SECTION (GRID) --- */
+.tax-product_cat.term-4862 .bh-simulator-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+.tax-product_cat.term-4862 .bh-simulator-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.tax-product_cat.term-4862 .bh-simulator-device-img {
+    margin-top: 0;
+}
+
+.tax-product_cat.term-4862 .bh-simulator-text h2,
+.tax-product_cat.term-4862 .bh-simulator-text p {
+    text-align: left;
+}
+
+/* --- GUIDE SECTION --- */
+.tax-product_cat.term-4862 .bh-guide-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-4862 .bh-guide-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-4862 .bh-guide-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tax-product_cat.term-4862 .bh-guide-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
+}
+
+/* --- AYUDA SECTION --- */
+.tax-product_cat.term-4862 .bh-ayuda-section {
+    padding: 60px 20px;
+    background-color: #f4f6f8;
+}
+
+.tax-product_cat.term-4862 .bh-ayuda-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-4862 .bh-ayuda-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tax-product_cat.term-4862 .bh-ayuda-intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-4862 .bh-ayuda-intro h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.tax-product_cat.term-4862 .bh-ayuda-intro h2 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tax-product_cat.term-4862 .bh-contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-4862 .bh-contact-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-4862 .bh-contact-option .icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* --- GUÍA TÉCNICA (BHO) --- */
+.tax-product_cat.term-4862 .bho-guide-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #102e35;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper li {
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper li::before {
+    content: '✓';
+    color: #4dd2d0;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.tax-product_cat.term-4862 .bho-guide-wrapper strong {
+    font-weight: 600;
+    color: #102e35;
+}
+
+/* --- Media Queries --- */
+@media (min-width: 640px) {
+    .tax-product_cat.term-4862 .bh-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .tax-product_cat.term-4862 .bh-ayuda-intro {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tax-product_cat.term-4862 .bh-features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .tax-product_cat.term-4862 .bh-simulator-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .tax-product_cat.term-4862 .bh-simulator-text h2,
+    .tax-product_cat.term-4862 .bh-simulator-text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-4862 .hero-content h1,
+    .tax-product_cat.term-4862 .bh-products-header-title,
+    .tax-product_cat.term-4862 .bh-custom-section h2,
+    .tax-product_cat.term-4862 .bh-simulator-section h2,
+    .tax-product_cat.term-4862 .bh-guide-main-title,
+    .tax-product_cat.term-4862 .bh-features-section .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .tax-product_cat.term-4862 .hero-content p,
+    .tax-product_cat.term-4862 .bh-products-header-description,
+    .tax-product_cat.term-4862 .bh-features-section .section-header p {
+        font-size: 16px;
+    }
+    
+    .tax-product_cat.term-4862 .bh-custom-wrapper {
+        flex-direction: column;
+    }
+    
+    .tax-product_cat.term-4862 .bh-custom-text-content {
+        text-align: center;
+    }
+}
