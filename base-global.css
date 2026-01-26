@@ -506,6 +506,18 @@ html {
 /* FILTER EVERYTHING PRO - 3 COLUMNAS                                         */
 /* ========================================================================== */
 
+/* 0. Contenedor principal - mismo ancho que productos */
+.wpc-filters-main-wrap,
+.wpc-filter-layout,
+.wpc-filters-widget-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
 /* 1. Contenedor General - 3 columnas en escritorio */
 @media (min-width: 992px) {
     .wpc-filters-widget-wrapper {
