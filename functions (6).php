@@ -712,7 +712,7 @@ add_action( 'template_redirect', function() {
 // =============================================================================
 function adrihosan_custom_category_assets() {
     // Solo encolar los archivos si estamos en una de las categorías afectadas.
-    if ( is_product_category( array(2093, 2510, 1844, 2410, 62, 4564, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4877, 2209 ) ) ) {
+    if ( is_product_category( array(2093, 2510, 1844, 2410, 62, 4564, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4877, 2209, 1789 ) ) ) {
         
         // Encolar la hoja de estilos unificada.
         wp_enqueue_style(
