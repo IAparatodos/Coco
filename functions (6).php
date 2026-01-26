@@ -3664,14 +3664,13 @@ function adrihosan_enqueue_category_assets() {
 function adrihosan_azulejos_bano_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="ap-hero-section adrihosan-full-width-block">
-        <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg" alt="Baño moderno con azulejos" class="hero-bg-image">
-        <div class="ap-hero-content">
-            <h1>Azulejos de Baño: Diseños que crean tu zona de relax</h1>
-            <p>Desde porcelánicos antideslizantes para la ducha hasta revestimientos que amplían visualmente tu aseo.</p>
-            <div class="ap-hero-buttons">
-                <a href="#catalogo-bano" class="ap-hero-btn primary">Ver Catálogo</a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20baño" class="ap-hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+        <div class="hero-content">
+            <h1>Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax</h1>
+            <p>Desde porcel&aacute;nicos antideslizantes para la ducha hasta revestimientos que ampl&iacute;an visualmente tu aseo.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-bano" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20baño" class="hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
             </div>
         </div>
     </section>
@@ -3772,32 +3771,21 @@ function adrihosan_azulejos_bano_contenido_superior() {
 
 function adrihosan_azulejos_bano_contenido_inferior() {
     ?>
-    <!-- 7. GUÍA MAESTRA SEO -->
-    <section class="ap-seo-content-section adrihosan-full-width-block">
-        <div class="ap-seo-content-wrapper">
-            <h2>Guía Maestra: Azulejos de Baño</h2>
-            
-            <h3>¿Qué azulejo elegir según la zona del baño?</h3>
-            <p>No es lo mismo revestir el interior de la ducha que decorar la pared del lavabo. El <strong>azulejo para baño</strong> debe adaptarse a cada zona según su exposición al agua y al tránsito.</p>
-            <ul>
-                <li><strong>Zona de ducha:</strong> Porcelánico C3 antideslizante. Absorción de agua casi nula para evitar filtraciones.</li>
-                <li><strong>Paredes del lavabo:</strong> Puedes usar pasta blanca o porcelánico. Aquí prima la estética sobre la resistencia extrema.</li>
-                <li><strong>Suelo del baño:</strong> Porcelánico antideslizante obligatorio. Seguridad ante todo, especialmente si hay niños o personas mayores.</li>
-            </ul>
-            
-            <h3>Colores que amplían baños pequeños</h3>
-            <p>Los <strong>azulejos baño pequeño</strong> requieren estrategia. Los tonos claros (blanco, beige, gris claro) reflejan la luz y crean sensación de amplitud. Combina con un formato grande (60x60 o superior) para reducir juntas y ganar continuidad visual.</p>
-            
-            <h3>Tendencias 2026 en azulejos de baño modernos</h3>
-            <p>El <strong>efecto mármol</strong> sigue siendo el rey indiscutible. Vetas naturales en grises, blancos y negros. Otra tendencia fuerte: el <strong>efecto madera</strong> en porcelánico para suelos, que aporta calidez sin el mantenimiento de la madera real.</p>
-            
-            <h3>¿Brillo o mate en el baño?</h3>
-            <p>Depende de la zona. El <strong>brillo</strong> en paredes amplía visualmente y refleja luz (ideal en baños sin ventana). El <strong>mate</strong> en suelos evita resbalones y disimula mejor las gotas de agua secas.</p>
-            
-            <h3>Mantenimiento y limpieza</h3>
-            <p>El porcelánico es el material más agradecido. Resiste lejía, antical y cualquier producto de limpieza. Las juntas son el único punto débil: usa mortero epoxi en zonas muy húmedas para evitar que ennegrezcan con el tiempo.</p>
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
         </div>
     </section>
+    <?php
+    }
+    ?>
 
     <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
