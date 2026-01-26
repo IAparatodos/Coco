@@ -32,7 +32,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(63, 111, 123, 0.45);
     z-index: 1;
 }
 
@@ -353,4 +353,91 @@
     .tax-product_cat.term-1789 .ap-inspiration-card {
         min-height: 300px;
     }
+
+    /* --- BOTÓN FILTRAR MÓVIL --- */
+    .solo-movil-filtro {
+        display: block !important;
+    }
+
+    #destino-filtro-adria-bano {
+        display: block !important;
+        margin: 20px 0 30px 0 !important;
+        text-align: center !important;
+    }
+
+    #destino-filtro-adria-bano .wpc-filters-open-button-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        height: auto !important;
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    #destino-filtro-adria-bano a {
+        display: inline-block !important;
+        background: #4dd2d0 !important;
+        color: #fff !important;
+        padding: 14px 30px !important;
+        border-radius: 5px !important;
+        text-decoration: none !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    }
+
+    /* --- GRID PRODUCTOS MÓVIL CENTRADO --- */
+    .tax-product_cat.term-1789 ul.products {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin-top: 30px !important;
+        padding: 0 10px !important;
+        gap: 20px !important;
+    }
+
+    .tax-product_cat.term-1789 ul.products li.product {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* ========================================================================== */
+/* CONTENEDOR DEL FILTRO */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+/* ========================================================================== */
+/* GRID DE PRODUCTOS */
+/* ========================================================================== */
+
+.tax-product_cat.term-1789 ul.products {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px !important;
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tax-product_cat.term-1789 ul.products li.product {
+    text-align: center;
 }

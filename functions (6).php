@@ -3662,11 +3662,6 @@ function adrihosan_enqueue_category_assets() {
  ******************************************************************************/
 
 function adrihosan_azulejos_bano_contenido_superior() {
-    // Obtener la URL base de la categoría para los filtros
-    $category_url = get_term_link(1789, 'product_cat');
-    if (is_wp_error($category_url)) {
-        $category_url = '#';
-    }
     ?>
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
@@ -3758,48 +3753,12 @@ function adrihosan_azulejos_bano_contenido_superior() {
         </div>
     </section>
 
-    <!-- 4. SECCIÓN FILTROS PILLS -->
-    <section class="bho-filters-section adrihosan-full-width-block">
-        <div class="bho-filters-wrapper">
-            <h2 class="bho-filters-main-title">Tu B&uacute;squeda, M&aacute;s F&aacute;cil</h2>
-
-            <div class="bho-filter-group">
-                <h3 class="bho-filter-group-title">Acabados</h3>
-                <div class="bho-filter-pills">
-                    <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="bho-filter-pill">Rectificado</a>
-                    <a href="<?php echo esc_url(add_query_arg('acabado', 'brillo', $category_url)); ?>" class="bho-filter-pill">Brillo</a>
-                    <a href="<?php echo esc_url(add_query_arg('acabado', 'mate', $category_url)); ?>" class="bho-filter-pill">Mate</a>
-                    <a href="<?php echo esc_url(add_query_arg('acabado', 'relieve', $category_url)); ?>" class="bho-filter-pill">Relieve</a>
-                </div>
-            </div>
-
-            <div class="bho-filter-group">
-                <h3 class="bho-filter-group-title">Elige tu Tono</h3>
-                <div class="bho-filter-pills">
-                    <a href="<?php echo esc_url(add_query_arg('color', 'blanco', $category_url)); ?>" class="bho-filter-pill">Blanco</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="bho-filter-pill">Gris</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'beige', $category_url)); ?>" class="bho-filter-pill">Beige</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'azul', $category_url)); ?>" class="bho-filter-pill">Azul</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'negro', $category_url)); ?>" class="bho-filter-pill">Negro</a>
-                </div>
-            </div>
-
-            <div class="bho-filter-group">
-                <h3 class="bho-filter-group-title">Por Material</h3>
-                <div class="bho-filter-pills">
-                    <a href="<?php echo esc_url(add_query_arg('azulejo-tipo', 'suelo-porcelanico', $category_url)); ?>" class="bho-filter-pill">Porcel&aacute;nico</a>
-                    <a href="<?php echo esc_url(add_query_arg('azulejo-tipo', 'pasta-blanca', $category_url)); ?>" class="bho-filter-pill">Pasta Blanca</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. CONSEJO ADRIA -->
+    <!-- 4. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>Ricardo dice:</strong> Tenemos demasiada variedad... &iexcl;y tiene raz&oacute;n! No te agobies mirando los 1.102 productos. Usa los filtros laterales para elegir el color (&iquest;blanco, gris, azul?) o el formato. Si buscas algo para un ba&ntilde;o mini, filtra por 'brillo' y ver&aacute;s c&oacute;mo cambia la pel&iacute;cula. Pulsa el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver resultados.</p>
+        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
     </div>
 
-    <!-- 6. DESTINO MÓVIL + WIDGET -->
+    <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-bano" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
     
