@@ -971,7 +971,8 @@ function adrihosan_contenido_superior_bano() {
 	}
 }
 
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20 );
+// COMENTADO - Duplicado del controlador maestro (línea 73)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20 );
 function adrihosan_contenido_inferior_bano() {
 	if ( is_product_category( 2083 ) && ! is_singular('product') ) {
 		?>
@@ -1047,7 +1048,8 @@ function adrihosan_contenido_superior_cocina() {
     }
 }
 
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21 );
+// COMENTADO - Duplicado del controlador maestro (línea 81)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21 );
 function adrihosan_contenido_inferior_cocina() {
     if ( is_product_category( 4876 ) && ! is_singular('product') ) {
         ?>
@@ -1160,7 +1162,8 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
         }
     }
 }
-add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos', 9 );
+// COMENTADO - Duplicado del controlador maestro (línea 98)
+// add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos', 9 );
 
 if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
     function adrihosan_contenido_inferior_espejos() {
@@ -1211,7 +1214,8 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
         }
     }
 }
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21 );
+// COMENTADO - Duplicado del controlador maestro (línea 99)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21 );
 
 /********************************************************************************
  * =============================================================================
@@ -1271,7 +1275,8 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
         }
     }
 }
-add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8 );
+// COMENTADO - Duplicado del controlador maestro (línea 107)
+// add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8 );
 
 if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
     function adrihosan_contenido_inferior_espejos_luz() {
@@ -1328,7 +1333,8 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
         }
     }
 }
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21 );
+// COMENTADO - Duplicado del controlador maestro (línea 108)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21 );
 
 /********************************************************************************
  * =============================================================================
@@ -1948,7 +1954,8 @@ function adrihosan_pilar_paredes_contenido_inferior() {
  ******************************************************************************/
 
 // --- BLOQUE 1: Contenido SUPERIOR (Antes de los productos) ---
-add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7 );
+// COMENTADO - Duplicado del controlador maestro (línea 89)
+// add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7 );
 function adrihosan_contenido_superior_original() {
 	if ( is_product_category( 4862 ) && ! is_singular('product') ) {
 		remove_all_actions( 'woocommerce_archive_description' );
@@ -2000,7 +2007,8 @@ function adrihosan_contenido_superior_original() {
 }
 
 // --- BLOQUE 2: Contenido INFERIOR (Después de los productos) ---
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20 );
+// COMENTADO - Duplicado del controlador maestro (línea 90)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20 );
 function adrihosan_contenido_inferior_original() {
 	if ( is_product_category( 4862 ) && ! is_singular('product') ) {
 		?>
@@ -2566,7 +2574,8 @@ function adrihosan_custom_category_final_fix_css() {
 /**
  * Muestra el contenido ANTES del loop de productos para la categoría Madera.
  */
-add_action('woocommerce_before_shop_loop', 'adrihosan_wood_cat_before_loop_final_validated', 5);
+// COMENTADO - Duplicado del controlador maestro (línea 112)
+// add_action('woocommerce_before_shop_loop', 'adrihosan_wood_cat_before_loop_final_validated', 5);
 function adrihosan_wood_cat_before_loop_final_validated() {
     // Verificar si estamos en la categoría correcta ANTES de hacer nada
     if (!is_product_category(2209)) {
@@ -2679,7 +2688,8 @@ function adrihosan_wood_cat_before_loop_final_validated() {
 /**
  * Muestra el contenido DESPUÉS del loop de productos para la categoría Madera.
  */
-add_action('woocommerce_after_shop_loop', 'adrihosan_wood_cat_after_loop_final', 35);
+// COMENTADO - Duplicado del controlador maestro (línea 113)
+// add_action('woocommerce_after_shop_loop', 'adrihosan_wood_cat_after_loop_final', 35);
 function adrihosan_wood_cat_after_loop_final() {
     // Verificar si estamos en la categoría correcta ANTES de hacer nada
     if (!is_product_category(2209)) {
