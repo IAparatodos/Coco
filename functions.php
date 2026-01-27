@@ -4103,7 +4103,7 @@ function adrihosan_azulejos_cocina_contenido_inferior() {
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejos">
                 <div>
-                    <h2>Soy Ricardo. ¿Dudas con los metros o el material para tu cocina? Escríbeme.
+                    <h2>Soy Ricardo. ¿Dudas con los azulejos para tu cocina?
                         <span>Te ayudo a elegir sin compromiso.</span>
                     </h2>
                 </div>
