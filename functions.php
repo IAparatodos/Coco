@@ -4174,14 +4174,14 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
-    <!-- 2. NAVEGACIÓN POR USO -->
+   <!-- 2. NAVEGACIÓN POR USO -->
 <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-exterior">
     <div class="ap-inspiration-wrapper">
         <h2>¿Qué zona vas a reformar?</h2>
         <p class="section-subtitle">Elige según el uso y te mostramos las mejores opciones</p>
         <div class="ap-inspiration-grid">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/slip-si/" class="ap-inspiration-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Suelo exterior antideslizante">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-de-exterior-antideslizantes.jpg" alt="Suelo exterior antideslizante">
                 <div class="ap-card-content">
                     <h3>Suelo Antideslizante</h3>
                     <p>El "must" de cualquier terraza segura</p>
