@@ -4254,10 +4254,10 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
-    <!-- 4. CONSEJO ADRIA -->
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, el porcel&aacute;nico de 20mm es la opci&oacute;n m&aacute;s resistente. Selecciona las caracter&iacute;sticas que buscas y pulsa <strong>&quot;FILTRAR&quot;</strong> para ver los productos disponibles.</p>
-    </div>
+   <!-- 4. CONSEJO ADRIA -->
+<div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
+</div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-exterior" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
