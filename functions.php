@@ -4212,7 +4212,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
-   <!-- 3. TABLA COMPARATIVA -->
+<!-- 3. TABLA COMPARATIVA -->
 <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
@@ -4243,7 +4243,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">No requiere mantenimiento</td>
                     </tr>
                     <tr style="background: #f8f9fa;">
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Barro Natural</strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong><a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/" style="color: #3f6f7b; text-decoration: underline;">Barro Natural</a></strong></td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">Patios y Casas de Campo</td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Alto</td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">Calidez y tradición mediterránea</td>
