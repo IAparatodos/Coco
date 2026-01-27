@@ -824,7 +824,7 @@ function adrihosan_pilar_imitacion_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
@@ -1708,7 +1708,7 @@ function adrihosan_pilar_bh_contenido_inferior() {
         if ( ! empty( $descripcion_editor ) ) {
             echo '<section class="bho-guide-section">'; // SIN adrihosan-full-width-block
             echo '    <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">';
-            echo '        <div class="term-description-dinamica" style="text-align: center; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
+            echo '        <div class="term-description-dinamica" style="text-align: left; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
             echo              $descripcion_editor;
             echo '        </div>';
             echo '    </div>';
@@ -1842,7 +1842,7 @@ function adrihosan_pilar_paredes_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
@@ -2154,7 +2154,7 @@ function adrihosan_pilar_bano_contenido_inferior() {
         if ( ! empty( $descripcion_editor ) ) {
             echo '<section class="bho-guide-section">'; // SIN adrihosan-full-width-block
             echo '    <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">';
-            echo '        <div class="term-description-dinamica" style="text-align: center; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
+            echo '        <div class="term-description-dinamica" style="text-align: left; font-family: \'Poppins\'; color: #3f6f7b; line-height: 1.8;">';
             echo              $descripcion_editor; 
             echo '        </div>';
             echo '    </div>';
@@ -2308,7 +2308,7 @@ function adrihosan_pilar_cocina_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
@@ -2450,7 +2450,7 @@ function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
@@ -3774,7 +3774,7 @@ function adrihosan_azulejos_bano_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: center; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
