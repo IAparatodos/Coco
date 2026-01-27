@@ -3677,35 +3677,35 @@ function adrihosan_azulejos_bano_contenido_superior() {
             <h2>¿Qué estilo buscas para tu baño?</h2>
             <p class="section-subtitle">Explora nuestras colecciones y encuentra el acabado perfecto para tu proyecto</p>
             <div class="ap-inspiration-grid">
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Azulejos efecto madera para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Madera</h3>
                         <p>Calidez total sin el mantenimiento de la madera real</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Azulejos efecto mármol para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
                         <p>Lujo atemporal en vetas naturales</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Azulejos efecto piedra para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Conexión natural y textura auténtica</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos efecto cemento para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
                         <p>Look industrial minimalista</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-1.jpg" alt="Azulejos hidráulicos para baño">
                     <div class="ap-card-content">
                         <h3>Hidráulicos</h3>
@@ -3724,21 +3724,21 @@ function adrihosan_azulejos_bano_contenido_superior() {
                 <p>Encuentra la solución perfecta para cada zona de tu baño</p>
             </div>
             <div class="ap-inspiration-grid">
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-3.jpg" alt="Soluciones para baños pequeños">
                     <div class="ap-card-content">
                         <h3>Baños Pequeños</h3>
                         <p>Formatos que amplían visualmente el espacio</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejo-imitacion-hidraulico-Adrihosan-1.jpg" alt="Azulejos para zona de ducha">
                     <div class="ap-card-content">
                         <h3>Zona de Ducha</h3>
                         <p>Materiales C3 antideslizantes para máxima seguridad</p>
                     </div>
                 </a>
-                <a href="#catalogo-bano" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Baños modernos">
                     <div class="ap-card-content">
                         <h3>Baños Modernos</h3>
