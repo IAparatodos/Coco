@@ -4041,56 +4041,47 @@ function adrihosan_azulejos_cocina_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué azulejo es mejor para el frente de cocina (splashback)?</span>
+                        <span>¿Cómo elijo el mejor azulejo de cocina para una estancia pequeña?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para el frente de cocina recomendamos azulejos de pasta blanca con acabado brillante o satinado, ya que son muy fáciles de limpiar y resisten bien las salpicaduras de grasa. Los formatos tipo metro o los diseños hidráulicos son opciones muy populares que aportan personalidad sin complicar el mantenimiento.</p>
+                        <p>Para espacios reducidos, lo ideal es apostar por un azulejo cocina blanco o en tonos neutros claros. Los formatos alargados, como el azulejo metro, ayudan a crear una sensación de continuidad horizontal que ensancha visualmente las paredes. Evita las piezas excesivamente oscuras o con patrones muy cargados que puedan agobiar el ambiente.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo usar el mismo azulejo en suelo y pared de la cocina?</span>
+                        <span>¿Qué diferencia hay entre un azulejo rectificado y uno normal para el alicatado de cocina?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Depende del tipo de azulejo. El porcelánico sí puede usarse tanto en suelo como en pared, pero la pasta blanca solo es apta para paredes. Si quieres continuidad visual, elige un porcelánico rectificado que puedas instalar en ambas superficies.</p>
+                        <p>El azulejo rectificado tiene los bordes cortados en un ángulo perfecto de 90 grados, lo que permite una colocación con juntas casi invisibles (menos de 2 mm). Esto es fundamental en azulejos cocina modernos para lograr un acabado continuo y mucho más higiénico, ya que hay menos espacio para que se acumule la grasa en las juntas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué suelo es más resistente para una cocina con mucho uso?</span>
+                        <span>¿Es seguro comprar cerámica para cocina online en Adrihosan?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El gres porcelánico con clasificación PEI 4 o superior es la mejor opción para cocinas con tráfico intenso. Su dureza y baja porosidad lo hacen resistente a manchas, arañazos y productos de limpieza agresivos.</p>
+                        <p>Totalmente. Entendemos el miedo del reformista primerizo, por eso todos nuestros azulejos para cocinas viajan por agencia totalmente asegurados. Si alguna pieza sufre daños durante el transporte, nos encargamos de la reposición inmediata sin coste para ti. Tu única preocupación debe ser elegir el diseño que más te guste para tu revestimiento de cocina.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Cómo elijo azulejos para una cocina pequeña?</span>
+                        <span>¿Puedo colocar porcelánico pared cocina sobre azulejos antiguos?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para cocinas pequeñas, los tonos claros y los formatos medianos o grandes ayudan a ampliar visualmente el espacio. Los azulejos brillantes reflejan la luz y aportan luminosidad. Evita los diseños muy recargados que pueden hacer que el espacio se sienta más reducido.</p>
+                        <p>Sí, es posible realizar un alicatado de cocina sobre el material anterior utilizando cementos cola específicos de alta adherencia. No obstante, es vital que la base antigua esté bien fijada y nivelada. Esta técnica te ahorra tiempo y escombros en tu reforma de cocina, manteniendo la durabilidad del revestimiento pared cocina.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Los azulejos hidráulicos son difíciles de mantener en la cocina?</span>
+                        <span>¿Qué mantenimiento requiere el frente de cocina de cerámica?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Los azulejos de imitación hidráulica en porcelánico o pasta blanca son muy fáciles de limpiar, a diferencia de los hidráulicos originales de cemento. Ofrecen el mismo look vintage pero con las ventajas de los materiales cerámicos modernos: no necesitan sellado ni cuidados especiales.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>¿Qué grosor de junta recomendáis para azulejos de cocina?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Para azulejos rectificados recomendamos juntas de 1,5-2 mm que dan un acabado más elegante y continuo. Para azulejos no rectificados, juntas de 2-3 mm son más adecuadas. En el suelo, usar borada epoxi facilita la limpieza y evita que las juntas se manchen con el tiempo.</p>
+                        <p>Nuestra cerámica de cocina está diseñada para ser ultra resistente. Para el mantenimiento diario de tus azulejos frente cocina, basta con un paño húmedo y un limpiador neutro. Al ser materiales de baja porosidad, la grasa no penetra en la pieza, garantizando que tu revestimiento para pared de cocina luzca como nuevo durante décadas sin necesidad de tratamientos especiales.</p>
                     </div>
                 </div>
             </div>
