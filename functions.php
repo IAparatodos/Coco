@@ -4212,12 +4212,11 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
-<!-- 3. TABLA COMPARATIVA -->
 <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
-            <h2>Compara y elige el material perfecto</h2>
-            <p>Cada zona exterior tiene sus necesidades específicas</p>
+            <h2 style="font-family: 'Poppins', sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
+            <p style="font-family: 'Poppins', sans-serif; color: #3f6f7b;">Cada zona exterior tiene sus necesidades específicas de resistencia y seguridad</p>
         </div>
         <div class="tabla-comparativa-exterior" style="max-width: 1000px; margin: 0 auto; overflow-x: auto;">
             <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins', sans-serif; font-size: 14px;">
@@ -4231,29 +4230,34 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                 </thead>
                 <tbody>
                     <tr style="background: #f8f9fa;">
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Porcelánico 20mm</strong></td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Suelo Técnico / Terrazas</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">C3 (Máximo)</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Irrompible y antihielo</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Porcelánico Exterior</strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Terrazas y Zonas de Paso</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Clase 3 (C3)</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Máxima dureza y antihielo</td>
                     </tr>
                     <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Revestimiento Piedra</strong></td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Fachadas y Muros</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">N/A</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">No requiere mantenimiento</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Imitación Madera</strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Contorno de Piscinas y Porches</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">C3 Antideslizante</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Calidez sin mantenimiento</td>
                     </tr>
                     <tr style="background: #f8f9fa;">
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong><a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/" style="color: #3f6f7b; text-decoration: underline;">Barro Natural</a></strong></td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Patios y Casas de Campo</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Alto</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Calidez y tradición mediterránea</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Revestimiento Pared</strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Fachadas y Muros Exteriores</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">N/A</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Protección contra la humedad</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong><a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/" style="color: #4dd2d0; text-decoration: none; font-weight: 600;">Barro Natural</a></strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Patios Rústicos y Jardines</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Alto Natural</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Autenticidad y tradición mediterránea</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </section>
-
    <!-- 4. CONSEJO ADRIA -->
 <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
     <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
