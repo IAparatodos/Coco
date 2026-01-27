@@ -4188,7 +4188,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                 </div>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/revestimiento-fachada-exterior/" class="ap-inspiration-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Revestimiento fachadas y muros">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-de-exterior-fachadas-muros.jpg" alt="Revestimiento fachadas y muros">
                 <div class="ap-card-content">
                     <h3>Fachadas y Muros</h3>
                     <p>Revestimiento exterior resistente</p>
@@ -4211,7 +4211,6 @@ function adrihosan_azulejos_exterior_contenido_superior() {
         </div>
     </div>
 </section>
-
 <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
