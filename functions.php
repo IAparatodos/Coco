@@ -4175,42 +4175,42 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </section>
 
     <!-- 2. NAVEGACIÓN POR USO -->
-    <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-exterior">
-        <div class="ap-inspiration-wrapper">
-            <h2>¿Qué zona vas a reformar?</h2>
-            <p class="section-subtitle">Elige según el uso y te mostramos las mejores opciones</p>
-            <div class="ap-inspiration-grid">
-                <a href="#catalogo-exterior" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Suelo exterior antideslizante">
-                    <div class="ap-card-content">
-                        <h3>Suelo Antideslizante</h3>
-                        <p>El "must" de cualquier terraza segura</p>
-                    </div>
-                </a>
-                <a href="#catalogo-exterior" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Revestimiento fachadas y muros">
-                    <div class="ap-card-content">
-                        <h3>Fachadas y Muros</h3>
-                        <p>Revestimiento exterior resistente</p>
-                    </div>
-                </a>
-                <a href="#catalogo-exterior" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Suelo imitación madera exterior">
-                    <div class="ap-card-content">
-                        <h3>Imitación Madera</h3>
-                        <p>Calidez sin mantenimiento</p>
-                    </div>
-                </a>
-                <a href="#catalogo-exterior" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos para piscinas">
-                    <div class="ap-card-content">
-                        <h3>Azulejos Piscinas</h3>
-                        <p>Máxima seguridad en zonas húmedas</p>
-                    </div>
-                </a>
-            </div>
+<section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-exterior">
+    <div class="ap-inspiration-wrapper">
+        <h2>¿Qué zona vas a reformar?</h2>
+        <p class="section-subtitle">Elige según el uso y te mostramos las mejores opciones</p>
+        <div class="ap-inspiration-grid">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/slip-si/" class="ap-inspiration-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Suelo exterior antideslizante">
+                <div class="ap-card-content">
+                    <h3>Suelo Antideslizante</h3>
+                    <p>El "must" de cualquier terraza segura</p>
+                </div>
+            </a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/revestimiento-fachada-exterior/" class="ap-inspiration-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Revestimiento fachadas y muros">
+                <div class="ap-card-content">
+                    <h3>Fachadas y Muros</h3>
+                    <p>Revestimiento exterior resistente</p>
+                </div>
+            </a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Suelo imitación madera exterior">
+                <div class="ap-card-content">
+                    <h3>Imitación Madera</h3>
+                    <p>Calidez sin mantenimiento</p>
+                </div>
+            </a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" class="ap-inspiration-card">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos para piscinas">
+                <div class="ap-card-content">
+                    <h3>Azulejos Piscinas</h3>
+                    <p>Máxima seguridad en zonas húmedas</p>
+                </div>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
    <!-- 3. TABLA COMPARATIVA -->
 <section class="ap-value-section adrihosan-full-width-block">
