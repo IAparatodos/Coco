@@ -3790,29 +3790,56 @@ function adrihosan_azulejos_bano_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué azulejo es mejor para la ducha?</span>
+                        <span>¿Es mejor el porcelánico o la pasta blanca para las paredes del baño?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Porcelánico C3 antideslizante. Su absorción de agua es prácticamente nula y la superficie rugosa evita resbalones incluso con jabón.</p>
+                        <p>La pasta blanca es el revestimiento estrella para paredes interiores por su ligereza y su capacidad para ofrecer colores más puros y texturas sedosas. El porcelánico, debido a su nula porosidad, es la opción técnica superior para el interior de la zona de ducha y para el suelo, donde la resistencia al agua y al impacto es crítica.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo poner azulejo de pared en el suelo?</span>
+                        <span>¿Qué tipo de azulejo de baño es más fácil de limpiar?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. El azulejo de pared (pasta blanca) no tiene la resistencia al desgaste necesaria. Para el suelo siempre porcelánico con clasificación PEI 4 o superior.</p>
+                        <p>Los azulejos de gran formato con acabado liso o satinado son los más sencillos de mantener, ya que reducen drásticamente el número de juntas donde se acumula la suciedad. Ricardo recomienda evitar los acabados extremadamente rugosos (antideslizantes C3) en paredes, ya que atrapan el jabón y la cal, dificultando la higiene diaria sin aportar ningún beneficio de seguridad en esa zona.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Cómo evito que las juntas se pongan negras?</span>
+                        <span>¿Puedo colocar azulejos de baño yo mismo si soy un aficionado al bricolaje?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Usa mortero epoxi en lugar de cemento tradicional. Es impermeable y no se mancha. Eso sí, es más caro y requiere instalación profesional.</p>
+                        <p>Sí, siempre que utilices las herramientas y los materiales de colocación adecuados para cada soporte. En Adrihosan recomendamos a los Profesionales del DIY el uso de sistemas de nivelación para evitar "cejas" en piezas de gran formato y el uso de cementos cola específicos para porcelánico de primera calidad.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Cómo elijo los azulejos para baños pequeños para que parezcan más grandes?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La estrategia ganadora consiste en utilizar el azulejo baño blanco o tonos muy claros en formato grande y rectificado, lo que genera una sensación de continuidad visual. Además, colocar los azulejos de forma horizontal ayuda a ensanchar visualmente las paredes, reduciendo ese sentimiento de agobio que suele tener el reformista primerizo ante espacios reducidos.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Por qué es importante que la fabricación sea nacional?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La cerámica española destaca internacionalmente por sus estándares de primera calidad y su estabilidad en los calibres. Comprar producto nacional te asegura que, si necesitas reponer piezas en el futuro, los tonos y medidas serán consistentes, algo que rara vez ocurre con materiales de importación de bajo coste que preocupan al propietario con alquiler.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Qué diseños de azulejos de baño son tendencia actualmente?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Hoy en día triunfan las texturas que conectan con lo natural, como los azulejos imitación piedra o los azulejos imitación cemento para looks industriales. Para quienes buscan un estilo nostálgico, los azulejos imitación hidráulico o el formato azulejo metro siguen siendo opciones líderes por su capacidad de aportar carácter sin pasar de moda.</p>
                     </div>
                 </div>
             </div>
