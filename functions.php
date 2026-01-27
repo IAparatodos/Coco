@@ -4163,16 +4163,16 @@ function adrihosan_azulejos_cocina_contenido_inferior() {
 function adrihosan_azulejos_exterior_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/05/azulejos-para-cocinas-1.jpg');">
-        <div class="hero-content">
-            <h1>Azulejos de Exterior: Resistencia y Dise&ntilde;o para tu Terraza</h1>
-            <p>Olv&iacute;date de baldosas que se rajan con el fr&iacute;o o resbalan cuando llueve. En Adrihosan te ofrecemos soluciones reales en porcel&aacute;nico de exterior y revestimientos de fachada que aguantan lo que les eches.</p>
-            <div class="hero-buttons">
-                <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20exterior" class="hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
-            </div>
+<section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-de-Exterior.jpg');">
+    <div class="hero-content">
+        <h1>Azulejos de Exterior: Resistencia y Dise&ntilde;o para tu Terraza</h1>
+        <p>Olv&iacute;date de baldosas que se rajan con el fr&iacute;o o resbalan cuando llueve. En Adrihosan te ofrecemos soluciones reales en porcel&aacute;nico de exterior y revestimientos de fachada que aguantan lo que les eches.</p>
+        <div class="hero-buttons">
+            <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo</a>
+            <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejos%20de%20exterior" class="hero-btn secondary" target="_blank">Ayuda por WhatsApp</a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 2. NAVEGACIÓN POR USO -->
 <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-exterior">
