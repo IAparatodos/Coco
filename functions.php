@@ -3911,7 +3911,7 @@ function adrihosan_azulejos_bano_contenido_inferior() {
 function adrihosan_azulejos_cocina_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-cocinas.jpg');">
         <div class="hero-content">
             <h1>Azulejos de Cocina: Dise&ntilde;os que inspiran tu lado chef</h1>
             <p>Encuentra el revestimiento perfecto: desde frentes de cocina f&aacute;ciles de limpiar hasta suelos de alta resistencia.</p>
