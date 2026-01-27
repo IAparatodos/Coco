@@ -3928,36 +3928,36 @@ function adrihosan_azulejos_cocina_contenido_superior() {
             <h2>¿Qué estilo buscas para tu cocina?</h2>
             <p class="section-subtitle">Explora nuestras colecciones y encuentra el acabado perfecto para tu proyecto</p>
             <div class="ap-inspiration-grid">
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Azulejos efecto hidráulico para cocina">
                     <div class="ap-card-content">
                         <h3>Efecto Hidráulico</h3>
                         <p>El toque vintage y colorido</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Azulejos estilo metro para cocina">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-cocinas-metro-adrihosan.jpg" alt="Azulejos estilo metro para cocina">
                     <div class="ap-card-content">
                         <h3>Estilo Metro</h3>
                         <p>El clásico atemporal que nunca falla</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Azulejos efecto mármol para cocina">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-para-cocina-marmol.jpg" alt="Azulejos efecto mármol para cocina">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
                         <p>Elegancia y amplitud para tu cocina</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos efecto piedra para cocina">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-para-cocina-piedra.jpg" alt="Azulejos efecto piedra para cocina">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Texturas naturales y rústicas</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-1.jpg" alt="Suelo porcelánico imitación madera para cocina">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-para-cocina-maderajpg.jpg" alt="Suelo porcelánico imitación madera para cocina">
                     <div class="ap-card-content">
                         <h3>Madera Porcelánica</h3>
                         <p>Calidez sin miedo a las manchas</p>
@@ -3975,21 +3975,21 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                 <p>Encuentra la solución perfecta para cada área de tu cocina</p>
             </div>
             <div class="ap-inspiration-grid">
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-hexagonal/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-3.jpg" alt="Frentes de cocina splashbacks">
                     <div class="ap-card-content">
                         <h3>Frentes de Cocina</h3>
                         <p>Diseños decorativos para la zona de cocción</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-imitacion-bambu/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejo-imitacion-hidraulico-Adrihosan-1.jpg" alt="Azulejos para cocinas pequeñas">
                     <div class="ap-card-content">
                         <h3>Cocinas Pequeñas</h3>
                         <p>Azulejos que aportan luz y sensación de espacio</p>
                     </div>
                 </a>
-                <a href="#catalogo-cocina" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/uso-pavimento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Suelos de cocina resistentes">
                     <div class="ap-card-content">
                         <h3>Suelos de Cocina</h3>
