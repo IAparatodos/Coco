@@ -4430,7 +4430,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
             <p class="section-subtitle">Elige según el tipo de revestimiento para tu piscina</p>
             <div class="ap-inspiration-grid">
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Gresite para piscinas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-efecto-bali.jpg" alt="Efecto bali para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra Bali</h3>
                         <p>El clásico que nunca falla</p>
