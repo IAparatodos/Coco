@@ -4423,14 +4423,14 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
         </div>
     </section>
 
-   <!-- 2. FILTROS RÁPIDOS POR MATERIAL -->
+    <!-- 2. FILTROS RÁPIDOS POR MATERIAL -->
     <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-piscinas">
         <div class="ap-inspiration-wrapper">
             <h2>¿Qué material buscas?</h2>
             <p class="section-subtitle">Elige según el tipo de revestimiento para tu piscina</p>
             <div class="ap-inspiration-grid">
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-bali/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-efecto-bali.jpg" alt="Efecto bali para piscinas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-efecto-bali.jpg" alt="Efecto piedra bali para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra Bali</h3>
                         <p>El clásico que nunca falla</p>
@@ -4548,45 +4548,54 @@ function adrihosan_azulejos_piscinas_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Cuál es el mejor material para el revestimiento de piscinas?</span>
+                        <span>¿Es mejor el gresite o el gres porcelánico para piscinas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El <strong>gres porcelánico</strong> se ha posicionado como la opción líder por su nula porosidad y resistencia extrema, superando al gresite tradicional en durabilidad y estética de juntas.</p>
+                        <p>Sin duda, el <strong>porcelánico para piscinas</strong> gana en durabilidad e higiene. Al tener piezas más grandes, reduces las juntas donde crecen algas y evitas que las piezas se suelten con el tiempo, algo muy común en el gresite antiguo.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es seguro el suelo porcelánico para el borde de la piscina?</span>
+                        <span>¿Qué mantenimiento requiere el suelo porcelánico piscina?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Absolutamente, todos nuestros modelos para exterior cuentan con <strong>certificación antideslizante C3</strong>, garantizando la máxima adherencia incluso con pies mojados.</p>
+                        <p>El mantenimiento es mínimo. Gracias a su baja porosidad, las cremas solares y la cal no penetran. Basta con una limpieza periódica con agua a presión para mantener tu <strong>porcelánico antideslizante para piscinas</strong> como el primer día.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿El porcelánico resiste el cloro y el agua salada?</span>
+                        <span>¿Puedo usar el mismo material para el interior y el suelo exterior piscinas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Sí, el gres porcelánico es <strong>resistente a productos químicos</strong> como el cloro, el salitre y los tratamientos de piscinas. Su superficie no porosa impide que estos agentes penetren o dañen el material.</p>
+                        <p>Sí, de hecho es nuestra recomendación para lograr un efecto visual de continuidad. Todos nuestros <strong>azulejos para piscinas</strong> son aptos para inmersión total y para zonas de terraza, resistiendo los rayos UV sin perder color.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo usar el mismo azulejo dentro y fuera del vaso?</span>
+                        <span>¿Los azulejos para piscinas de color oscuro calientan mucho el agua?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es una de las grandes ventajas del porcelánico: permite crear <strong>continuidad visual</strong> usando el mismo material en la playa de la piscina, coronación y terraza circundante.</p>
+                        <p>Los tonos oscuros como el gris antracita o efecto piedra volcánica pueden aumentar la temperatura del agua un par de grados por la absorción térmica, lo cual es ideal para alargar la temporada de baño en zonas menos calurosas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Es difícil instalar porcelánico antideslizante para piscinas sobre gresite viejo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No es difícil si el vaso es estanco, pero requiere un puente de unión y un adhesivo flexible de alta gama. Siempre recomendamos revisar la impermeabilización antes de colocar los nuevos <strong>azulejos para piscinas</strong> para asegurar un resultado eterno.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
+
 
     <!-- 10. CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
