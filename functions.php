@@ -4423,7 +4423,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
         </div>
     </section>
 
-    <!-- 2. FILTROS RÁPIDOS POR MATERIAL -->
+   <!-- 2. FILTROS RÁPIDOS POR MATERIAL -->
     <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-piscinas">
         <div class="ap-inspiration-wrapper">
             <h2>¿Qué material buscas?</h2>
@@ -4432,21 +4432,21 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Gresite para piscinas">
                     <div class="ap-card-content">
-                        <h3>Gresite</h3>
+                        <h3>Efecto piedra Bali</h3>
                         <p>El clásico que nunca falla</p>
                     </div>
                 </a>
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Gres porcelánico para piscinas">
                     <div class="ap-card-content">
-                        <h3>Gres Porcelánico</h3>
+                        <h3>Efecto cemento</h3>
                         <p>Máxima resistencia y diseño</p>
                     </div>
                 </a>
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Piedra natural para piscinas">
                     <div class="ap-card-content">
-                        <h3>Piedra Natural</h3>
+                        <h3>Efecto piedra natural</h3>
                         <p>Elegancia mediterránea</p>
                     </div>
                 </a>
