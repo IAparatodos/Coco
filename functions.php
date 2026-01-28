@@ -2904,7 +2904,7 @@ function adrihosan_ceramica_superior_final() {
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Terraza</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Piscina</h3>
             </a>
         </div>
@@ -4174,7 +4174,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
-   <!-- 2. NAVEGACIÓN POR USO -->
+  <!-- 2. NAVEGACIÓN POR USO -->
 <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-exterior">
     <div class="ap-inspiration-wrapper">
         <h2>¿Qué zona vas a reformar?</h2>
@@ -4195,14 +4195,14 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                 </div>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Suelo imitación madera exterior">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-de-exterior-madera.jpg" alt="Suelo imitación madera exterior">
                 <div class="ap-card-content">
                     <h3>Imitación Madera</h3>
                     <p>Calidez sin mantenimiento</p>
                 </div>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" class="ap-inspiration-card">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos para piscinas">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" alt="Azulejos para piscinas">
                 <div class="ap-card-content">
                     <h3>Azulejos Piscinas</h3>
                     <p>Máxima seguridad en zonas húmedas</p>
@@ -4211,7 +4211,8 @@ function adrihosan_azulejos_exterior_contenido_superior() {
         </div>
     </div>
 </section>
-<section class="ap-value-section adrihosan-full-width-block">
+
+  <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
             <h2 style="font-family: 'Poppins', sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
@@ -4257,6 +4258,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
         </div>
     </div>
 </section>
+
    <!-- 4. CONSEJO ADRIA -->
 <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
     <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
@@ -4298,47 +4300,29 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué mantenimiento requiere el suelo exterior antideslizante?</span>
+                        <span>¿Qué diferencia hay entre un azulejo de interior y una baldosa exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nuestros suelos solo necesitan agua y un detergente neutro. Gracias a la tecnología de superficie, el acabado C3 de Adrihosan no es áspero, lo que evita que la suciedad se incruste como ocurre en otros pavimentos exterior de baja calidad.</p>
+                        <p>La clave es la absorción de agua y la resistencia al deslizamiento. Un azulejo para exterior es mucho más denso y rugoso. El porcelánico exterior tiene una absorción prácticamente nula, lo que evita que el agua penetre y lo dañe con las heladas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Se pueden poner azulejos exterior pared sobre una fachada ya pintada?</span>
+                        <span>¿Es difícil limpiar el gres porcelánico exterior antideslizante?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No es recomendable directamente. Para garantizar que la baldosa para pared exterior no se desprenda, es necesario picar la pintura o usar imprimaciones especiales. Consulta siempre con un profesional para asegurar que tu revestimiento de muros exteriores sea seguro.</p>
+                        <p>Para nada. Aunque sea rugoso, si es un material de calidad, el poro está cerrado. Una manguera y listo. En Adrihosan solo trabajamos con porcelánicos de baja porosidad que no retienen la suciedad.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué diferencia hay entre gres de exterior y porcelánico exterior?</span>
+                        <span>¿Puedo poner azulejos de pared en el suelo de la terraza?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El gres convencional es más poroso y menos resistente. El porcelánico para exterior se prensa a mayor presión y se cuece a más temperatura, lo que lo hace prácticamente indestructible ante el clima y el uso diario.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>¿El precio baldosa exterior incluye el transporte?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>En Adrihosan ofrecemos tarifas de envío optimizadas y todos nuestros pedidos viajan con un seguro a todo riesgo. El valor de recibir tus azulejos de exterior en la puerta de casa sin roturas es nuestra prioridad.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>¿Es difícil limpiar el porcelánico exterior imitación madera?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Para nada. A diferencia de la madera natural, el suelo porcelánico exterior imitación madera no absorbe manchas. Un fregado normal es suficiente para mantener la calidez estética del material sin el trabajo de mantenimiento de la madera real.</p>
+                        <p>Nunca. El revestimiento de muros exteriores no está diseñado para soportar peso ni tránsito. Acabaría agrietado. Para suelos siempre porcelánico con clasificación PEI 4 o superior y antideslizante C3.</p>
                     </div>
                 </div>
             </div>
