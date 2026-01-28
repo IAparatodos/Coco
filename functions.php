@@ -4429,7 +4429,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
             <h2>¿Qué material buscas?</h2>
             <p class="section-subtitle">Elige según el tipo de revestimiento para tu piscina</p>
             <div class="ap-inspiration-grid">
-                <a href="#catalogo-piscinas" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-bali/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-efecto-bali.jpg" alt="Efecto bali para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra Bali</h3>
