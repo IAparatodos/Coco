@@ -4437,7 +4437,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
                     </div>
                 </a>
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Gres porcelánico para piscinas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas-efecto-cemento.jpg" alt="Gres porcelánico para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto cemento</h3>
                         <p>Máxima resistencia y diseño</p>
