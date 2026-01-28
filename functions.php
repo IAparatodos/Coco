@@ -4444,7 +4444,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
                     </div>
                 </a>
                 <a href="#catalogo-piscinas" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Piedra natural para piscinas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-piedra.jpg" alt="Piedra natural para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra natural</h3>
                         <p>Elegancia mediterránea</p>
