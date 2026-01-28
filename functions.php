@@ -4298,29 +4298,47 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué diferencia hay entre un azulejo de interior y una baldosa exterior?</span>
+                        <span>¿Qué mantenimiento requiere el suelo exterior antideslizante?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La clave es la absorción de agua y la resistencia al deslizamiento. Un azulejo para exterior es mucho más denso y rugoso. El porcelánico exterior tiene una absorción prácticamente nula, lo que evita que el agua penetre y lo dañe con las heladas.</p>
+                        <p>Nuestros suelos solo necesitan agua y un detergente neutro. Gracias a la tecnología de superficie, el acabado C3 de Adrihosan no es áspero, lo que evita que la suciedad se incruste como ocurre en otros pavimentos exterior de baja calidad.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es difícil limpiar el gres porcelánico exterior antideslizante?</span>
+                        <span>¿Se pueden poner azulejos exterior pared sobre una fachada ya pintada?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para nada. Aunque sea rugoso, si es un material de calidad, el poro está cerrado. Una manguera y listo. En Adrihosan solo trabajamos con porcelánicos de baja porosidad que no retienen la suciedad.</p>
+                        <p>No es recomendable directamente. Para garantizar que la baldosa para pared exterior no se desprenda, es necesario picar la pintura o usar imprimaciones especiales. Consulta siempre con un profesional para asegurar que tu revestimiento de muros exteriores sea seguro.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo poner azulejos de pared en el suelo de la terraza?</span>
+                        <span>¿Qué diferencia hay entre gres de exterior y porcelánico exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nunca. El revestimiento de muros exteriores no está diseñado para soportar peso ni tránsito. Acabaría agrietado. Para suelos siempre porcelánico con clasificación PEI 4 o superior y antideslizante C3.</p>
+                        <p>El gres convencional es más poroso y menos resistente. El porcelánico para exterior se prensa a mayor presión y se cuece a más temperatura, lo que lo hace prácticamente indestructible ante el clima y el uso diario.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿El precio baldosa exterior incluye el transporte?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>En Adrihosan ofrecemos tarifas de envío optimizadas y todos nuestros pedidos viajan con un seguro a todo riesgo. El valor de recibir tus azulejos de exterior en la puerta de casa sin roturas es nuestra prioridad.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Es difícil limpiar el porcelánico exterior imitación madera?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para nada. A diferencia de la madera natural, el suelo porcelánico exterior imitación madera no absorbe manchas. Un fregado normal es suficiente para mantener la calidez estética del material sin el trabajo de mantenimiento de la madera real.</p>
                     </div>
                 </div>
             </div>
