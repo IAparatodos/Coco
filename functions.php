@@ -4436,7 +4436,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
                         <p>El clásico que nunca falla</p>
                     </div>
                 </a>
-                <a href="#catalogo-piscinas" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas-efecto-cemento.jpg" alt="Gres porcelánico para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto cemento</h3>
