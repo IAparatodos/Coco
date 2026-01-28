@@ -4443,7 +4443,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
                         <p>Máxima resistencia y diseño</p>
                     </div>
                 </a>
-                <a href="#catalogo-piscinas" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-pizarra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-piedra.jpg" alt="Piedra natural para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra natural</h3>
