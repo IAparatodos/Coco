@@ -4586,14 +4586,7 @@ function adrihosan_azulejos_piscinas_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 9. CTA PROYECTO -->
-    <section style="background: #f0fafa; padding: 50px 20px; text-align: center;">
-        <div style="max-width: 700px; margin: 0 auto;">
-            <h2 style="font-family: 'Poppins'; font-size: 28px; color: #102e35; margin: 0 0 15px;">¿Dudas con los metros o las piezas especiales?</h2>
-            <p style="font-family: 'Poppins'; font-size: 16px; color: #3f6f7b; margin: 0 0 25px;">Peldaños, bordes, rejillas... Te ayudamos a calcular todo lo que necesitas.</p>
-            <a href="tel:+34961957136" style="display: inline-block; background: #4dd2d0; color: #fff; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-family: 'Poppins'; font-weight: 600; font-size: 16px; text-transform: uppercase;">Contactar con un experto</a>
-        </div>
-    </section>
+   
 
     <!-- 10. CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
