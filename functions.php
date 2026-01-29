@@ -2939,7 +2939,7 @@ function adrihosan_ceramica_superior_final() {
                 <!-- BLOQUE B: AZULEJOS -->
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/" class="pilar-card">
                     <div class="pilar-image">
-                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-cocinas-1.jpg" alt="Azulejos y revestimientos">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-Adrihosan.jpg" alt="Azulejos y revestimientos">
                     </div>
                     <div class="pilar-content">
                         <h2>AZULEJOS</h2>
