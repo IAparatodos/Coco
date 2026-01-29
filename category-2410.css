@@ -466,109 +466,7 @@
 }
 
 /* ========================================================================== */
-/* 11. CONTACTO COMÚN */
-/* ========================================================================== */
-
-.tax-product_cat.term-2410 .contact-help-common {
-    background-color: #102e35;
-    padding: 80px 20px;
-}
-
-.tax-product_cat.term-2410 .contact-help-wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.tax-product_cat.term-2410 .contact-intro {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex: 1;
-    min-width: 300px;
-}
-
-.tax-product_cat.term-2410 .contact-intro img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #4dd2d0;
-    flex-shrink: 0;
-}
-
-.tax-product_cat.term-2410 .contact-intro h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    margin: 0;
-    line-height: 1.3;
-}
-
-.tax-product_cat.term-2410 .contact-intro h2 span {
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    color: #4dd2d0;
-    margin-top: 8px;
-}
-
-.tax-product_cat.term-2410 .contact-options-grid-common {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.tax-product_cat.term-2410 .contact-option-common {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,0.1);
-    border: 2px solid rgba(255,255,255,0.2);
-    border-radius: 12px;
-    padding: 20px 25px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    min-width: 120px;
-}
-
-.tax-product_cat.term-2410 .contact-option-common:hover {
-    background: #4dd2d0;
-    border-color: #4dd2d0;
-    transform: translateY(-5px);
-}
-
-.tax-product_cat.term-2410 .contact-option-common .icon {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-.tax-product_cat.term-2410 .contact-option-common .label {
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.tax-product_cat.term-2410 .contact-option-common.whatsapp {
-    background: #25d366;
-    border-color: #25d366;
-}
-
-.tax-product_cat.term-2410 .contact-option-common.whatsapp:hover {
-    background: #128c7e;
-    border-color: #128c7e;
-}
-
-/* ========================================================================== */
-/* 12. GRID DE PRODUCTOS */
+/* 11. GRID DE PRODUCTOS (Contacto usa base-global.css) */
 /* ========================================================================== */
 
 .tax-product_cat.term-2410 ul.products {
@@ -579,7 +477,7 @@
 }
 
 /* ========================================================================== */
-/* 13. RESPONSIVE - MÓVIL (max-width: 768px) */
+/* 12. RESPONSIVE - MÓVIL (max-width: 768px) */
 /* ========================================================================== */
 
 @media (max-width: 768px) {
@@ -660,31 +558,6 @@
         padding: 0 20px 20px 20px;
     }
 
-    /* --- CONTACTO RESPONSIVE --- */
-    .tax-product_cat.term-2410 .contact-help-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tax-product_cat.term-2410 .contact-intro {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tax-product_cat.term-2410 .contact-intro h2 {
-        font-size: 22px;
-    }
-
-    .tax-product_cat.term-2410 .contact-options-grid-common {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .tax-product_cat.term-2410 .contact-option-common {
-        flex: 1;
-        min-width: 100px;
-    }
-
     /* --- FILTRO MÓVIL --- */
     .tax-product_cat.term-2410 .solo-movil-filtro {
         display: block !important;
@@ -713,24 +586,11 @@
 }
 
 /* ========================================================================== */
-/* 14. RESPONSIVE - TABLET (max-width: 1024px) */
+/* 13. RESPONSIVE - TABLET (max-width: 1024px) */
 /* ========================================================================== */
 
 @media (max-width: 1024px) and (min-width: 769px) {
     .tax-product_cat.term-2410 .ap-inspiration-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .tax-product_cat.term-2410 .contact-help-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tax-product_cat.term-2410 .contact-intro {
-        justify-content: center;
-    }
-
-    .tax-product_cat.term-2410 .contact-options-grid-common {
-        justify-content: center;
     }
 }
