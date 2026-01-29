@@ -3118,7 +3118,7 @@ function adrihosan_porcelanico_superior_final() {
                         <p>Resistente a heladas y rayos UV</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/salon/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-salon/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Porcelánico para salón">
                     <div class="ap-card-content">
                         <h3>Sal&oacute;n</h3>
