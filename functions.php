@@ -4719,7 +4719,7 @@ function adrihosan_pavimentos_contenido_superior() {
                         <p>M&iacute;nimas juntas, m&aacute;xima elegancia</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Efecto cemento">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
@@ -4762,18 +4762,18 @@ function adrihosan_pavimentos_contenido_superior() {
         <div class="brands-wrapper">
             <h2>Trabajamos con las Mejores Marcas</h2>
             <div class="brands-grid">
-                <div class="brand-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/ceramica-vives/" class="brand-card">
                     <h3>Cer&aacute;mica Vives</h3>
                     <p>Para los que buscan dise&ntilde;o y tendencia. Innovaci&oacute;n espa&ntilde;ola en cada pieza.</p>
-                </div>
-                <div class="brand-card">
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/" class="brand-card">
                     <h3>Techlam</h3>
                     <p>Porcel&aacute;nico extrafino de alto nivel. La elecci&oacute;n de arquitectos exigentes.</p>
-                </div>
-                <div class="brand-card">
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/" class="brand-card">
                     <h3>Navarti</h3>
                     <p>La mejor relaci&oacute;n calidad-precio para reformas integrales.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -4791,7 +4791,7 @@ function adrihosan_pavimentos_contenido_superior() {
                     <span class="link-icon">⬡</span>
                     <span class="link-text">Azulejos Hexagonales</span>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-exterior-tecnico/" class="strategic-link">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-tecnico-exterior/" class="strategic-link">
                     <span class="link-icon">🏔️</span>
                     <span class="link-text">Suelo T&eacute;cnico Exterior</span>
                 </a>
