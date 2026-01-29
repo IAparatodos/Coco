@@ -2901,102 +2901,174 @@ function adrihosan_ceramica_definitiva_controller() {
 
 function adrihosan_ceramica_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="
-        position: relative;
-        background-color: #102e35;
-        background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #fff;
-        padding: 80px 20px;
-        text-align: center;">
-        
-        <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Cerámica: El Origen de tu Reforma</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
-            <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                <a href="#catalogo-ceramica-foco" class="btn-adri-master">Ver Catálogo Completo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+        <div class="hero-content">
+            <h1>CER&Aacute;MICA: EL ORIGEN DE TU REFORMA</h1>
+            <p>Encuentra la base perfecta: desde pavimentos de alta resistencia hasta azulejos que cuentan historias.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-ceramica" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>
+                <a href="#dos-pilares" class="hero-btn secondary">Explorar Opciones</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Para qué estancia lo buscas?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Terraza</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Piscina</h3>
-            </a>
+    <!-- 2. LOS DOS PILARES (Jerarquía Principal) -->
+    <section class="pilares-section adrihosan-full-width-block" id="dos-pilares">
+        <div class="pilares-wrapper">
+            <div class="pilares-grid">
+                <!-- BLOQUE A: PAVIMENTOS -->
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/" class="pilar-card">
+                    <div class="pilar-image">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Pavimentos y suelos cerámicos">
+                    </div>
+                    <div class="pilar-content">
+                        <h2>PAVIMENTOS</h2>
+                        <p class="pilar-subtitle">Suelos que lo aguantan todo</p>
+                        <p class="pilar-description">Porcel&aacute;nicos, gres y soluciones de exterior.</p>
+                        <span class="pilar-cta">Ver Pavimentos →</span>
+                    </div>
+                </a>
+                <!-- BLOQUE B: AZULEJOS -->
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/" class="pilar-card">
+                    <div class="pilar-image">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-cocinas-1.jpg" alt="Azulejos y revestimientos">
+                    </div>
+                    <div class="pilar-content">
+                        <h2>AZULEJOS</h2>
+                        <p class="pilar-subtitle">Paredes que inspiran</p>
+                        <p class="pilar-description">Azulejos decorativos, metro y texturas.</p>
+                        <span class="pilar-cta">Ver Azulejos →</span>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div style="padding-top: 60px; margin-bottom:50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el efecto visual</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Mármol</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Piedra</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
-            </a>
+    <!-- 3. CONSEJO DE ADRI (Asesoramiento Experto) -->
+    <section class="consejo-adri-section adrihosan-full-width-block">
+        <div class="consejo-adri-wrapper">
+            <div class="consejo-adri-content">
+                <div class="consejo-icon">💡</div>
+                <div class="consejo-text">
+                    <p><strong>&iquest;Dudas con la normativa?</strong> No todos los suelos sirven para exterior, ni todos los azulejos aguantan la humedad del ba&ntilde;o. Si no quieres comprar dos veces, escr&iacute;benos. <strong>Te asesoramos gratis.</strong></p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20asesoramiento%20sobre%20cerámica" class="consejo-btn">Preguntar a un experto</a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
-            <strong>¡Consejo de AdrIA!</strong> Para encontrar tu azulejo ideal, selecciona las características y no olvides pinchar en el botón <strong>"FILTRAR"</strong>.
-        </p>
-    </div>
-
-    <div id="destino-filtro-adria" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;">
+    <!-- 4. SELECCIÓN POR ESTANCIA -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="estancias-ceramica">
+        <div class="ap-inspiration-wrapper">
+            <h2>&iquest;Para qu&eacute; estancia lo buscas?</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" alt="Azulejos para baño">
+                    <div class="ap-card-content">
+                        <h3>Ba&ntilde;o</h3>
+                        <p>Resistencia y estilo</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" alt="Azulejos para cocina">
+                    <div class="ap-card-content">
+                        <h3>Cocina</h3>
+                        <p>F&aacute;cil limpieza</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" alt="Azulejos para terraza">
+                    <div class="ap-card-content">
+                        <h3>Terraza</h3>
+                        <p>Antideslizante exterior</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" alt="Azulejos para piscina">
+                    <div class="ap-card-content">
+                        <h3>Piscina</h3>
+                        <p>Resistencia total al agua</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
 
-    <div class="filter-container-master" style="margin-bottom:50px;">
-       <?php echo do_shortcode('[fe_widget id="425985"]'); ?>
-    </div>
-
-    <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Selección por Colecciones y Formatos</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/" class="btn-adri-master">Suelo Porcelánico</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="btn-adri-master">Gran Formato</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="btn-adri-master">Porcelánico Extrafino</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/" class="btn-adri-master">Azulejo Metro</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/" class="btn-adri-master">Azulejos Hexagonales</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/" class="btn-adri-master">Azulejos Decorativos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/" class="btn-adri-master">Mosaicos</a>
+    <!-- 5. SELECCIÓN POR EFECTO VISUAL -->
+    <section class="ap-value-section adrihosan-full-width-block">
+        <div class="ap-value-wrapper">
+            <div class="section-header">
+                <h2>Elige el Efecto Visual</h2>
+                <p>Encuentra el acabado que mejor se adapta a tu estilo</p>
+            </div>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" alt="Efecto madera">
+                    <div class="ap-card-content">
+                        <h3>Efecto Madera</h3>
+                        <p>Calidez natural</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" alt="Efecto mármol">
+                    <div class="ap-card-content">
+                        <h3>Efecto M&aacute;rmol</h3>
+                        <p>Lujo atemporal</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" alt="Efecto piedra">
+                    <div class="ap-card-content">
+                        <h3>Efecto Piedra</h3>
+                        <p>Autenticidad r&uacute;stica</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Efecto cemento">
+                    <div class="ap-card-content">
+                        <h3>Efecto Cemento</h3>
+                        <p>Estilo industrial</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- 6. FILTROS POR FORMATO (Pestañas visuales) -->
+    <section class="formatos-section adrihosan-full-width-block">
+        <div class="formatos-wrapper">
+            <h2>Explora por Formato</h2>
+            <div class="formatos-tabs">
+                <div class="formato-group">
+                    <h4>Formatos de Suelo</h4>
+                    <div class="formato-buttons">
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/" class="hero-btn primary">Suelo Porcel&aacute;nico</a>
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="hero-btn primary">Gran Formato</a>
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="hero-btn primary">Porcel&aacute;nico Extrafino</a>
+                    </div>
+                </div>
+                <div class="formato-group">
+                    <h4>Tipos de Azulejo</h4>
+                    <div class="formato-buttons">
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/" class="hero-btn primary">Azulejo Metro</a>
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/" class="hero-btn primary">Hexagonales</a>
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/" class="hero-btn primary">Decorativos</a>
+                        <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/" class="hero-btn primary">Mosaicos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DESTINO MÓVIL + WIDGET FILTROS -->
+    <div id="destino-filtro-adria-ceramica" class="solo-movil-filtro"></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+
+    <!-- 8. TÍTULO CATÁLOGO -->
+    <div id="catalogo-ceramica" class="product-loop-header">
+        <h2 class="product-loop-title">Cat&aacute;logo Completo de Cer&aacute;mica</h2>
     </div>
-
-    <div id="catalogo-ceramica-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Completo</h2>
-    </div>
-
-
     <?php
 }
 
