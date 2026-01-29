@@ -4757,6 +4757,52 @@ function adrihosan_pavimentos_contenido_superior() {
         </div>
     </section>
 
+    <!-- BLOQUE DE MARCAS ESPECIALIZADAS -->
+    <section class="brands-section adrihosan-full-width-block">
+        <div class="brands-wrapper">
+            <h2>Trabajamos con las Mejores Marcas</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <h3>Cer&aacute;mica Vives</h3>
+                    <p>Para los que buscan dise&ntilde;o y tendencia. Innovaci&oacute;n espa&ntilde;ola en cada pieza.</p>
+                </div>
+                <div class="brand-card">
+                    <h3>Techlam</h3>
+                    <p>Porcel&aacute;nico extrafino de alto nivel. La elecci&oacute;n de arquitectos exigentes.</p>
+                </div>
+                <div class="brand-card">
+                    <h3>Navarti</h3>
+                    <p>La mejor relaci&oacute;n calidad-precio para reformas integrales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENLACES ESTRATÉGICOS -->
+    <section class="strategic-links-section adrihosan-full-width-block">
+        <div class="strategic-links-wrapper">
+            <h3>Tambi&eacute;n te puede interesar</h3>
+            <div class="strategic-links-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="strategic-link">
+                    <span class="link-icon">✨</span>
+                    <span class="link-text">Porcel&aacute;nico Extrafino</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/" class="strategic-link">
+                    <span class="link-icon">⬡</span>
+                    <span class="link-text">Azulejos Hexagonales</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-exterior-tecnico/" class="strategic-link">
+                    <span class="link-icon">🏔️</span>
+                    <span class="link-text">Suelo T&eacute;cnico Exterior</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/complementos/rodapies/" class="strategic-link">
+                    <span class="link-icon">📏</span>
+                    <span class="link-text">Rodapi&eacute;s</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- 4. CONSEJO ADRIA -->
     <div class="adria-tip-box">
         <p><strong>&iexcl;Consejo de AdrIA!</strong> Para encontrar tu suelo ideal, usa los filtros de <strong>Ubicaci&oacute;n</strong> y <strong>Acabado</strong>. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
@@ -4789,27 +4835,6 @@ function adrihosan_pavimentos_contenido_inferior() {
     }
     ?>
 
-    <!-- BLOQUE DE MARCAS ESPECIALIZADAS -->
-    <section class="brands-section adrihosan-full-width-block">
-        <div class="brands-wrapper">
-            <h2>Trabajamos con las Mejores Marcas</h2>
-            <div class="brands-grid">
-                <div class="brand-card">
-                    <h3>Cer&aacute;mica Vives</h3>
-                    <p>Para los que buscan dise&ntilde;o y tendencia. Innovaci&oacute;n espa&ntilde;ola en cada pieza.</p>
-                </div>
-                <div class="brand-card">
-                    <h3>Techlam</h3>
-                    <p>Porcel&aacute;nico extrafino de alto nivel. La elecci&oacute;n de arquitectos exigentes.</p>
-                </div>
-                <div class="brand-card">
-                    <h3>Navarti</h3>
-                    <p>La mejor relaci&oacute;n calidad-precio para reformas integrales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
@@ -4833,31 +4858,6 @@ function adrihosan_pavimentos_contenido_inferior() {
                         <p>Los <strong>azulejos en tonos claros</strong> o imitaci&oacute;n madera en colores naturales multiplican la luminosidad y la sensaci&oacute;n de amplitud en espacios reducidos. Evita tonos muy oscuros que absorben la luz y hacen el espacio m&aacute;s peque&ntilde;o visualmente.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ENLACES ESTRATÉGICOS -->
-    <section class="strategic-links-section adrihosan-full-width-block">
-        <div class="strategic-links-wrapper">
-            <h3>Tambi&eacute;n te puede interesar</h3>
-            <div class="strategic-links-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="strategic-link">
-                    <span class="link-icon">✨</span>
-                    <span class="link-text">Porcel&aacute;nico Extrafino</span>
-                </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/" class="strategic-link">
-                    <span class="link-icon">⬡</span>
-                    <span class="link-text">Azulejos Hexagonales</span>
-                </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-exterior-tecnico/" class="strategic-link">
-                    <span class="link-icon">🏔️</span>
-                    <span class="link-text">Suelo T&eacute;cnico Exterior</span>
-                </a>
-                <a href="https://www.adrihosan.com/categoria-producto/complementos/rodapies/" class="strategic-link">
-                    <span class="link-icon">📏</span>
-                    <span class="link-text">Rodapi&eacute;s</span>
-                </a>
             </div>
         </div>
     </section>
