@@ -2913,6 +2913,13 @@ function adrihosan_ceramica_superior_final() {
         </div>
     </section>
 
+    <!-- INTRO TEXT -->
+    <section class="intro-text-section adrihosan-full-width-block">
+        <div class="intro-text-wrapper">
+            <p>En Adrihosan hemos seleccionado la mejor cer&aacute;mica t&eacute;cnica y decorativa para cada rinc&oacute;n de tu hogar. Desde pavimentos porcel&aacute;nicos de alta resistencia hasta azulejos de dise&ntilde;o que transforman estancias. <strong>Selecciona el uso principal</strong> para ver las soluciones que mejor se adaptan a tu espacio.</p>
+        </div>
+    </section>
+
     <!-- 2. LOS DOS PILARES (Jerarquía Principal) -->
     <section class="pilares-section adrihosan-full-width-block" id="dos-pilares">
         <div class="pilares-wrapper">

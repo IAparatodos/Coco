@@ -124,6 +124,34 @@
 }
 
 /* ========================================================================== */
+/* 2.5 INTRO TEXT SECTION */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .intro-text-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper strong {
+    color: #102e35;
+    font-weight: 600;
+}
+
+/* ========================================================================== */
 /* 3. LOS DOS PILARES (Pavimentos y Azulejos) */
 /* ========================================================================== */
 
@@ -520,6 +548,16 @@
         width: 100%;
         max-width: 280px;
         text-align: center;
+    }
+
+    /* --- INTRO TEXT RESPONSIVE --- */
+    .tax-product_cat.term-62 .intro-text-section {
+        padding: 35px 15px;
+    }
+
+    .tax-product_cat.term-62 .intro-text-wrapper p {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
     /* --- PILARES RESPONSIVE --- */
