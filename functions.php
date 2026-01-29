@@ -3151,14 +3151,14 @@ function adrihosan_porcelanico_superior_final() {
                         <p>Lujo asequible y duradero</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" alt="Porcelánico efecto piedra">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Natural y atemporal</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Porcelánico efecto cemento">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
@@ -3219,33 +3219,51 @@ function adrihosan_porcelanico_inferior_final() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Gres Porcel&aacute;nico</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; mantenimiento requiere el gres porcel&aacute;nico?</span>
+                        <span>&iquest;Es recomendable el suelo porcel&aacute;nico para cocinas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Pr&aacute;cticamente nulo. Al no ser poroso, basta con agua y un jab&oacute;n neutro. Olv&iacute;date de ceras, pulidos o barnices para siempre. Es el suelo m&aacute;s f&aacute;cil de mantener del mercado.</p>
+                        <p>S&iacute;, es la mejor opci&oacute;n. Los <strong>suelos de cocina porcel&aacute;nicos</strong> no absorben grasas, aceites ni manchas de vino. Son higi&eacute;nicos y soportan la ca&iacute;da de objetos pesados mejor que cualquier otro material.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es compatible con suelo radiante?</span>
+                        <span>&iquest;Ten&eacute;is modelos que imiten al m&aacute;rmol pero sean resistentes?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es el mejor material para ello. Su alta conductividad t&eacute;rmica permite que el calor pase r&aacute;pidamente, optimizando el consumo energ&eacute;tico de tu calefacci&oacute;n y distribuyendo el calor de manera uniforme.</p>
+                        <p>Por supuesto. El <strong>porcel&aacute;nico imitaci&oacute;n m&aacute;rmol</strong> consigue la est&eacute;tica lujosa de la piedra natural (con sus vetas y brillo) pero sin la delicadeza ni el mantenimiento que exige el m&aacute;rmol real. No se mancha con &aacute;cidos como el lim&oacute;n.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se mancha el porcel&aacute;nico con facilidad?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre porcel&aacute;nico y gres normal?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. El porcel&aacute;nico tiene una absorci&oacute;n de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el &aacute;cido penetran en la baldosa. Es higi&eacute;nico y antibacteriano por naturaleza.</p>
+                        <p>El porcel&aacute;nico se cuece a mayor temperatura y tiene una absorci&oacute;n de agua casi nula, lo que lo hace mucho m&aacute;s duro y resistente a las heladas. Es apto para cualquier uso. El gres normal (pasta roja) es m&aacute;s blando y solo se recomienda para interiores de menor tr&aacute;nsito.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Hac&eacute;is ofertas o ten&eacute;is restos de lote?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, disponemos de una secci&oacute;n de <a href="https://www.adrihosan.com/categoria-producto/suelos-porcelanicos-ofertas/" style="color: #3f6f7b; text-decoration: underline;">suelos porcel&aacute;nicos ofertas</a> donde encontrar&aacute;s materiales de primera calidad a precios reducidos por fin de stock o promociones puntuales de f&aacute;brica.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Puedo usar el mismo suelo para la piscina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, siempre que elijas un <strong>porcel&aacute;nico antideslizante con clasificaci&oacute;n C3</strong> y resistencia al hielo. Tenemos modelos espec&iacute;ficos para coronaci&oacute;n de piscina y playa que combinan seguridad y est&eacute;tica.</p>
                     </div>
                 </div>
             </div>
