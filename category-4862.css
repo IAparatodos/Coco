@@ -355,6 +355,55 @@
     text-align: left;
 }
 
+/* --- SEO SECTION (Descripción dinámica de WooCommerce) --- */
+.tax-product_cat.term-4862 .bho-seo-section {
+    padding: 60px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica ul,
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica a {
+    color: #4dd2d0;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-4862 .bho-seo-section .term-description-dinamica a:hover {
+    color: #3f6f7b;
+}
+
 /* --- GUIDE SECTION --- */
 .tax-product_cat.term-4862 .bh-guide-section {
     padding-top: 60px;

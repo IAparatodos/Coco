@@ -2068,9 +2068,23 @@ function adrihosan_contenido_inferior_original() {
     </div>
 </section>
 
+		<?php
+        // SEO: Contenido din&aacute;mico desde WooCommerce category_description()
+        $descripcion_editor = category_description();
+        if ( ! empty( $descripcion_editor ) ) {
+        ?>
+        <section class="bho-seo-section adrihosan-full-width-block">
+            <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+                <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+                    <?php echo $descripcion_editor; ?>
+                </div>
+            </div>
+        </section>
+        <?php } ?>
+
 		<section class="bho-guide-section adrihosan-full-width-block" id="bh-guia-original">
 			<div class="bho-guide-wrapper">
-				<h2 class="bho-guide-main-title">Guía Definitiva de la Baldosa Hidráulica Original</h2>
+				<h2 class="bho-guide-main-title">Gu&iacute;a Definitiva de la Baldosa Hidr&aacute;ulica Original</h2>
 				<p>La baldosa hidráulica original es mucho más que un pavimento: es una declaración de intenciones. Es la elección para quienes buscan un producto artesanal con alma, capaz de transformar un espacio. Cada pieza es única, con esas pequeñas imperfecciones y diferencias tonales que son el sello de un producto hecho a mano. En Adrihosan, somos custodios de esta tradición.</p>
 				
                 <h3 class="bho-guide-subtitle">El Proceso: El Arte de Crear con las Manos</h3>
