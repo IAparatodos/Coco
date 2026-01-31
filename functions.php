@@ -2082,38 +2082,15 @@ function adrihosan_contenido_inferior_original() {
         </section>
         <?php } ?>
 
-		<section class="bho-guide-section adrihosan-full-width-block" id="bh-guia-original">
-			<div class="bho-guide-wrapper">
-				<h2 class="bho-guide-main-title">Gu&iacute;a Definitiva de la Baldosa Hidr&aacute;ulica Original</h2>
-				<p>La baldosa hidráulica original es mucho más que un pavimento: es una declaración de intenciones. Es la elección para quienes buscan un producto artesanal con alma, capaz de transformar un espacio. Cada pieza es única, con esas pequeñas imperfecciones y diferencias tonales que son el sello de un producto hecho a mano. En Adrihosan, somos custodios de esta tradición.</p>
-				
-                <h3 class="bho-guide-subtitle">El Proceso: El Arte de Crear con las Manos</h3>
-                <p>Para entender el valor de cada baldosa, hay que conocer su origen. Cada pieza nace en una <strong>trepa</strong>, un molde de bronce donde nuestros artesanos vierten, color a color, una mezcla de cemento blanco, polvo de mármol y pigmentos naturales. No existe la cocción; su dureza se logra mediante un prensado hidráulico que fusiona los materiales y un lento y meticuloso <strong>curado en agua</strong> durante semanas, un proceso que le otorga su resistencia y carácter inimitables.</p>
-
-				<h3 class="bho-guide-subtitle">A Considerar Antes de Comprar</h3>
-                <p>Ser honestos es parte de nuestra filosofía. Antes de decidirte, es importante que conozcas las particularidades de este material noble:</p>
-                <ul>
-                    <li><strong>Grosor y Peso:</strong> Son baldosas más gruesas (entre 1,5 y 2 cm) y pesadas que un porcelánico. Esto es un factor a tener en cuenta, especialmente en reformas de pisos antiguos donde la carga sobre el forjado es importante.</li>
-                    <li><strong>Instalación Profesional:</strong> No cualquier profesional sabe colocar baldosa hidráulica. Requiere un adhesivo específico (cemento cola flexible C2-S1) y una técnica cuidadosa para lograr una nivelación perfecta y proteger las delicadas aristas de cada pieza.</li>
-                    <li><strong>El Encanto de la Imperfección:</strong> Debes amar la variación. Nunca encontrarás dos baldosas exactamente iguales. Esa falta de uniformidad es, precisamente, su mayor virtud y lo que garantiza un suelo exclusivo.</li>
-                </ul>
-
-				<h3 class="bho-guide-subtitle">Mantenimiento y Cuidados: La Clave de su Inmortalidad</h3>
-				<p>Un suelo hidráulico bien cuidado es eterno. Su mantenimiento es más sencillo de lo que parece si se siguen unas reglas de oro, basadas en su naturaleza porosa:</p>
-				<ul>
-					<li><strong>Tratamiento Inicial OBLIGATORIO:</strong> Tras la instalación y antes de rejuntar, es imprescindible aplicar un <strong>tratamiento sellador hidrófugo y oleófugo</strong>. Este producto tapa el poro del cemento, lo impermeabiliza y lo protege de futuras manchas. Es el paso más importante de todos.</li>
-                    <li><strong>Limpieza Diaria:</strong> Para el día a día, basta con barrer, aspirar o fregar con agua y una pequeña cantidad de <strong>jabón de pH neutro</strong>. Olvídate para siempre de lejías, amoniacos o productos agresivos; dañarían químicamente la capa de color.</li>
-                    <li><strong>Nutrición Periódica:</strong> Al igual que la madera, el suelo hidráulico agradece ser "nutrido" cada 2-3 años con ceras específicas o una nueva capa de tratamiento. Esto reaviva los colores y refuerza la capa de protección.</li>
-				</ul>
-			</div>
-		</section>
 		<section class="faq-section-common adrihosan-full-width-block">
 			<div class="faq-wrapper-common">
-				<h2 class="faq-main-title-common">Dudas sobre la Baldosa Original</h2>
+				<h2 class="faq-main-title-common">Preguntas Frecuentes sobre Baldosa Hidráulica</h2>
 				<div class="faq-items-wrapper">
-					<div class="faq-item-common"><button class="faq-question-common"><span>¿Se puede instalar en exteriores?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Sí, pero con matices. Requiere un tratamiento sellador específico para exteriores y una correcta instalación para evitar problemas con heladas. Recomendamos consultar con nuestros técnicos para asegurar la mejor solución para tu proyecto.</p></div></div>
-					<div class="faq-item-common"><button class="faq-question-common"><span>¿Cómo se limpian las manchas difíciles?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Al ser un material poroso, es clave actuar rápido. Para manchas domésticas, un paño húmedo con jabón neutro suele ser suficiente. Para manchas persistentes, existen limpiadores específicos para baldosa hidráulica que no dañan el material. Consulta siempre las especificaciones del fabricante del tratamiento sellador.</p></div></div>
-					<div class="faq-item-common"><button class="faq-question-common"><span>¿Es muy frágil durante la instalación?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Es un material robusto, pero delicado durante su manipulación e instalación. Debe ser colocado por profesionales familiarizados con el producto para evitar roturas en las esquinas y asegurar una correcta nivelación y rejuntado.</p></div></div>
+					<div class="faq-item-common"><button class="faq-question-common"><span>¿Es compatible la baldosa hidráulica con el suelo radiante?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p><strong>Rotundamente sí.</strong> De hecho, es uno de los mejores materiales para ello. Al ser una pieza compacta de cemento y polvo de mármol, tiene una inercia térmica excelente: tarda un poco más en calentarse que la madera, pero retiene y irradia el calor durante mucho más tiempo, lo que mejora la eficiencia energética de tu sistema de calefacción.</p></div></div>
+					<div class="faq-item-common"><button class="faq-question-common"><span>¿Por qué las piezas tienen ligeras variaciones de color entre sí?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Porque no son un producto industrial, sino artesanal. A esto se le llama <strong>destonificación natural</strong>. Al fabricarse una a una, factores como la humedad del día o la mezcla manual de pigmentos pueden generar matices sutiles. No es un defecto; es la garantía de que has comprado un suelo auténtico y no una imitación cerámica impresa.</p></div></div>
+					<div class="faq-item-common"><button class="faq-question-common"><span>¿El suelo hidráulico resbala?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>El acabado natural de la baldosa hidráulica es mate y tiene cierta porosidad, por lo que ofrece un agarre correcto en seco (Clase 1 o 2 según el modelo). Si necesitas instalarlo en zonas que estarán habitualmente mojadas o en exteriores con pendiente, recomendamos aplicar un tratamiento líquido antideslizante específico que micro-texturiza la superficie sin alterar su estética.</p></div></div>
+					<div class="faq-item-common"><button class="faq-question-common"><span>Tengo un suelo antiguo hidráulico, ¿puedo mezclarlo con baldosas nuevas?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Es una técnica de restauración muy común llamada "parcheo" o creación de alfombras. Lo único que debes vigilar es el <strong>grosor</strong>. Las baldosas antiguas solían tener 2 cm o más, igual que las nuestras originales. Si coinciden en altura, la combinación es perfecta. Si hay diferencia, tu instalador deberá nivelar la base para que no haya escalones.</p></div></div>
+					<div class="faq-item-common"><button class="faq-question-common"><span>¿Es necesario pulir el suelo recién instalado?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Por lo general, <strong>no es necesario ni recomendable</strong> pulir una baldosa hidráulica nueva, ya que podrías desgastar la capa de rodadura (la capa de color) innecesariamente. El pulido se reserva para restauraciones de suelos con décadas de uso. Para un suelo nuevo, una buena limpieza de fin de obra y un sellado correcto son suficientes para que luzca espectacular.</p></div></div>
 				</div>
 			</div>
 		</section>
