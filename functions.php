@@ -4990,7 +4990,7 @@ function adrihosan_pavimentos_contenido_inferior() {
 function adrihosan_azulejos_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/azulejos-bano-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Azulejos-Online-Diseno-y-Calidad.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -5013,14 +5013,14 @@ function adrihosan_azulejos_contenido_superior() {
             <p class="section-subtitle">Encuentra el azulejo perfecto seg&uacute;n el acabado que buscas</p>
             <div class="ap-inspiration-grid grid-7-cols">
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejos-bano-adrihosan.jpg" alt="Azulejos Baño">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-de-bano-Adrihosan.jpg" alt="Azulejos Baño">
                     <div class="ap-card-content">
                         <h3>Azulejos Ba&ntilde;o</h3>
                         <p>Dise&ntilde;os para tu oasis</p>
                     </div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Azulejos Cocina">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-de-cocina-Adrihosan.jpg" alt="Azulejos Cocina">
                     <div class="ap-card-content">
                         <h3>Azulejos Cocina</h3>
                         <p>El coraz&oacute;n de tu hogar</p>
@@ -5041,14 +5041,14 @@ function adrihosan_azulejos_contenido_superior() {
                     </div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejo-metro-adrihosan.jpg" alt="Estilo Metro">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-metro-Adrihosan.jpg" alt="Estilo Metro">
                     <div class="ap-card-content">
                         <h3>Estilo Metro</h3>
                         <p>El cl&aacute;sico atemporal</p>
                     </div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Hidráulicos">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hidraulicos-Adrihosan.jpg" alt="Hidráulicos">
                     <div class="ap-card-content">
                         <h3>Hidr&aacute;ulicos</h3>
                         <p>Toque vintage y colorido</p>
@@ -5082,6 +5082,7 @@ function adrihosan_azulejos_contenido_superior() {
 }
 
 function adrihosan_azulejos_contenido_inferior() {
+  
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
     if ( ! empty( $descripcion_editor ) ) {
@@ -5097,37 +5098,35 @@ function adrihosan_azulejos_contenido_inferior() {
     }
     ?>
 
-    <!-- BLOQUE SEO ESTRUCTURADO: TIPOS DE AZULEJOS -->
-    <section class="seo-content-section adrihosan-full-width-block">
-        <div class="seo-content-wrapper">
-            <h2>Tipos de Azulejos: &iquest;Cu&aacute;l elegir para tu reforma?</h2>
-
-            <!-- Sub-bloque A: Por Material -->
-            <div class="material-types-grid">
-                <div class="material-card">
-                    <div class="material-icon">💎</div>
-                    <h3>Azulejos Porcel&aacute;nicos</h3>
-                    <p>M&aacute;xima resistencia y dureza. Ideales para suelos de alto tr&aacute;nsito y exteriores. Baja absorci&oacute;n de agua (inferior al 0.5%).</p>
-                </div>
-                <div class="material-card">
-                    <div class="material-icon">🎨</div>
-                    <h3>Pasta Blanca</h3>
-                    <p>El rey del revestimiento de paredes. Colores m&aacute;s vivos y acabado perfecto para ba&ntilde;os y cocinas de interior.</p>
-                </div>
-                <div class="material-card">
-                    <div class="material-icon">🏠</div>
-                    <h3>Pasta Roja</h3>
-                    <p>La opci&oacute;n econ&oacute;mica y tradicional. Resistencia y calidez para interiores.</p>
-                </div>
+   <!-- BLOQUE SEO ESTRUCTURADO: TIPOS DE AZULEJOS -->
+<section class="seo-content-section adrihosan-full-width-block">
+    <div class="seo-content-wrapper">
+        <h2>Tipos de Azulejos: &iquest;Cu&aacute;l elegir para tu reforma?</h2>
+        <!-- Sub-bloque A: Por Material -->
+        <div class="material-types-grid">
+            <div class="material-card">
+                <div class="material-icon">💎</div>
+                <h3><a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/ver-tipo-suelo-porcelanico/">Azulejos Porcel&aacute;nicos</a></h3>
+                <p>M&aacute;xima resistencia y dureza. Ideales para suelos de alto tr&aacute;nsito y exteriores. Baja absorci&oacute;n de agua (inferior al 0.5%).</p>
             </div>
-
-            <!-- Sub-bloque B: Por Acabado -->
-            <div class="finish-info-block">
-                <h3>Azulejos Rectificados vs. Normales</h3>
-                <p>Los <strong>azulejos rectificados</strong> permiten juntas m&iacute;nimas (1-2mm) para un efecto continuo y moderno. Los azulejos con <strong>borde tradicional</strong> requieren juntas de 3-5mm pero ofrecen mayor margen de error en la instalaci&oacute;n.</p>
+            <div class="material-card">
+                <div class="material-icon">🎨</div>
+                <h3><a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/ver-tipo-azulejo-pasta-blanca/">Pasta Blanca</a></h3>
+                <p>El rey del revestimiento de paredes. Colores m&aacute;s vivos y acabado perfecto para ba&ntilde;os y cocinas de interior.</p>
+            </div>
+            <div class="material-card">
+                <div class="material-icon">🏠</div>
+                <h3><a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/ver-tipo-azulejo-pasta-roja/">Pasta Roja</a></h3>
+                <p>La opci&oacute;n econ&oacute;mica y tradicional. Resistencia y calidez para interiores.</p>
             </div>
         </div>
-    </section>
+        <!-- Sub-bloque B: Por Acabado -->
+        <div class="finish-info-block">
+            <h3>Azulejos Rectificados vs. Normales</h3>
+            <p>Los <strong>azulejos rectificados</strong> permiten juntas m&iacute;nimas (1-2mm) para un efecto continuo y moderno. Los azulejos con <strong>borde tradicional</strong> requieren juntas de 3-5mm pero ofrecen mayor margen de error en la instalaci&oacute;n.</p>
+        </div>
+    </div>
+</section>
 
     <!-- TENDENCIAS EN AZULEJOS -->
     <section class="trends-section adrihosan-full-width-block">
@@ -5143,29 +5142,7 @@ function adrihosan_azulejos_contenido_inferior() {
         </div>
     </section>
 
-    <!-- BLOG RELACIONADO -->
-    <section class="blog-section adrihosan-full-width-block">
-        <div class="blog-wrapper">
-            <h2>Gu&iacute;as y Consejos</h2>
-            <div class="blog-grid">
-                <a href="https://www.adrihosan.com/blog/suelo-gres-o-porcelanico/" class="blog-card">
-                    <div class="blog-icon">📖</div>
-                    <h3>&iquest;Suelo gres o porcel&aacute;nico?</h3>
-                    <p>Descubre las diferencias clave para elegir bien</p>
-                </a>
-                <a href="https://www.adrihosan.com/blog/azulejos-hexagonales/" class="blog-card">
-                    <div class="blog-icon">⬡</div>
-                    <h3>Azulejos hexagonales</h3>
-                    <p>La tendencia geom&eacute;trica que arrasa</p>
-                </a>
-                <a href="https://www.adrihosan.com/blog/reinventa-espacios-con-azulejos/" class="blog-card">
-                    <div class="blog-icon">✨</div>
-                    <h3>Reinventa tus espacios</h3>
-                    <p>Ideas para transformar tu hogar con azulejos</p>
-                </a>
-            </div>
-        </div>
-    </section>
+ 
 
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
@@ -5186,9 +5163,9 @@ function adrihosan_azulejos_contenido_inferior() {
                         <span>&iquest;Envi&aacute;is muestras de azulejos a casa?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
-                    <div class="faq-answer-common">
-                        <p>S&iacute;, enviamos muestras a toda Espa&ntilde;a. El coste de la muestra se descuenta del pedido final. Cont&aacute;ctanos por WhatsApp o tel&eacute;fono para solicitar las tuyas.</p>
-                    </div>
+                   <div class="faq-answer-common">
+                     <p>Las muestras son <strong>gratuitas</strong>, solo cobramos un peque&ntilde;o importe testimonial por el env&iacute;o. Cont&aacute;ctanos por WhatsApp o tel&eacute;fono para solicitar las tuyas.</p>
+                </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
