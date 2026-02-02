@@ -5060,3 +5060,35 @@ function adrihosan_preload_css_critico() {
     }
 }
 add_action('wp_head', 'adrihosan_preload_css_critico', 1);
+
+/**
+ * Adrihosan: Ordenación FORZADA para diferenciar categorías
+ */
+add_action( 'woocommerce_product_query', 'adrihosan_orden_estricto_ids' );
+
+function adrihosan_orden_estricto_ids( $q ) {
+    if ( is_admin() || ! $q->is_main_query() ) {
+        return;
+    }
+
+    // 1. COCINA (ID 4866) -> POR NOMBRE (A-Z)
+    // Empezará por "Baldosa A..."
+    if ( is_product_category( 4866 ) ) {
+        $q->set( 'orderby', 'title' );
+        $q->set( 'order', 'ASC' );
+    }
+
+    // 2. BAÑO (ID 4865) -> POR NOMBRE INVERSO (Z-A)
+    // Empezará por "Baldosa V..." o la última letra.
+    // Esto garantiza que la parrilla sea 100% diferente a Cocina.
+    elseif ( is_product_category( 4865 ) ) {
+        $q->set( 'orderby', 'title' );
+        $q->set( 'order', 'DESC' );
+    }
+
+    // 3. EXTERIOR (ID 4869) -> ALEATORIO
+    // Cada vez que entres cambiará.
+    elseif ( is_product_category( 4869 ) ) {
+        $q->set( 'orderby', 'rand' );
+    }
+}
