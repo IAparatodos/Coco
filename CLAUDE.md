@@ -181,6 +181,110 @@ Para secciones a ancho completo:
 - **Decisión**: Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP
 - **Razón**: Evitar problemas de encoding
 
+### 6. Filter Everything Pro - Widget de Filtros
+- **Plugin**: Filter Everything Pro para WooCommerce
+- **Shortcode principal**: `[fe_widget id="425985"]` (general) / `[fe_widget id="426058"]` (baldosa hidráulica)
+- **Contenedor móvil**: `#destino-filtro-adria-{categoria}` con clase `.solo-movil-filtro`
+- **Nota**: Cada categoría necesita estilos CSS específicos para mostrar el botón en móvil
+
+### 7. WPC Product Filters - Configuración móvil
+- **Plugin**: WPC Product Filters para WooCommerce
+- **Decisión**: Usar modo "como escritorio" en configuración móvil
+- **Razón**: El modo móvil por defecto oculta el botón de filtros
+
+---
+
+## Sistema de Filtro Móvil
+
+### Arquitectura
+El filtro móvil funciona con 3 componentes:
+
+1. **HTML (functions.php)**: Contenedor destino + widget
+   ```php
+   <div id="destino-filtro-adria-{categoria}" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
+   <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+   ```
+
+2. **JavaScript (category-common.js)**: Función `moverBotonFiltroMovil()` que:
+   - Detecta pantallas ≤991px
+   - Mueve `.wpc-filters-open-button-container` al contenedor `.solo-movil-filtro`
+   - Personaliza texto según categoría ("FILTRAR AZULEJOS" / "FILTRAR SUELOS")
+   - Oculta botones duplicados
+
+3. **CSS (category-{ID}.css)**: Estilos específicos por categoría
+   ```css
+   @media (max-width: 768px) {
+       .tax-product_cat.term-{ID} .solo-movil-filtro {
+           display: block !important;
+           margin: 20px 0 30px 0 !important;
+       }
+       #destino-filtro-adria-{nombre} .wpc-filters-open-button-container {
+           display: block !important;
+           visibility: visible !important;
+       }
+   }
+   ```
+
+### Categorías con Filtro Móvil Configurado
+| ID | Categoría | Contenedor destino |
+|----|-----------|-------------------|
+| 63 | Azulejos | destino-filtro-adria-azulejos |
+| 64 | Pavimentos | destino-filtro-adria-pavimentos |
+| 66 | Piscinas | destino-filtro-adria-piscinas |
+| 1789 | Azulejos Baño | destino-filtro-adria-bano |
+| 1790 | Azulejos Cocina | destino-filtro-adria-cocina |
+| 2160 | Azulejos Exterior | destino-filtro-adria-exterior |
+| 4862 | Hidráulica Original | destino-filtro-adria-hidraulica |
+| 4865 | Baño Original | destino-filtro-adria-bano |
+| 4866 | Cocina Original | destino-filtro-adria-cocina |
+| 4869 | Exterior Original | destino-filtro-adria-exterior |
+| 2082 | Imitación principal | destino-filtro-adria-imitacion |
+| 2083 | Baño Imitación | destino-filtro-adria-bano-imitacion |
+| 4876 | Cocina Imitación | destino-filtro-adria-cocina-imitacion |
+
+---
+
+## Problemas Conocidos y Soluciones
+
+### WPC Product Filters - Botón no visible en móvil
+**Fecha**: 2026-02-03
+
+**Síntoma**: El contenedor `.wpc-filters-open-button-container` existe en el DOM pero no aparece visualmente en dispositivos móviles.
+
+**Diagnóstico realizado**:
+1. Se verificó HTML en functions.php ✓
+2. Se verificó CSS en category-{ID}.css ✓
+3. Se verificó JavaScript en category-common.js ✓
+4. Todo estaba correcto en el código
+
+**Causa real**: Configuración del plugin WPC Product Filters. Por defecto tiene un modo de visualización diferente para móvil que oculta el botón.
+
+**Solución**: En la configuración del plugin WPC Product Filters, cambiar la opción de visualización móvil a "como en escritorio" (desktop mode).
+
+**Lección aprendida**: Antes de investigar CSS o JS para elementos de plugins, revisar SIEMPRE la configuración del plugin para comportamientos responsivos. Los plugins suelen tener modos de visualización separados para móvil/escritorio.
+
+### Filtro móvil sin estilos CSS
+**Fecha**: 2026-02-03
+
+**Síntoma**: El botón de filtro móvil no aparece aunque el HTML y JS están correctos.
+
+**Causa**: El archivo `mobile-fixes.css` oculta globalmente `.wpc-filters-open-button-container`. Cada categoría necesita estilos CSS específicos para volver a mostrarlo.
+
+**Solución**: Añadir al CSS de la categoría:
+```css
+@media (max-width: 768px) {
+    .tax-product_cat.term-{ID} .solo-movil-filtro {
+        display: block !important;
+    }
+    #destino-filtro-adria-{nombre} .wpc-filters-open-button-container {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+```
+
+**Categorías corregidas**: 4862, 2083, 4876
+
 ---
 
 ## Categorías Configuradas
@@ -195,6 +299,16 @@ Para secciones a ancho completo:
 ---
 
 ## Changelog
+
+### 2026-02-03
+- **Filtro móvil**: Implementación completa del sistema de filtro móvil en categorías
+  - Actualizado `category-common.js` con función `moverBotonFiltroMovil()` universal
+  - Añadidos estilos inline a contenedores de pavimentos (64) y azulejos (63)
+  - Corregida ruta de carga del JS (de `/assets/js/` a raíz del tema)
+- **Categoría 4862 (Hidráulica Original)**: Añadidos estilos CSS filtro móvil
+- **Categoría 2083 (Baño Imitación)**: Añadidos estilos CSS filtro móvil  
+- **Categoría 4876 (Cocina Imitación)**: Añadidos estilos CSS filtro móvil
+- **Descubierto**: Problema de configuración del plugin WPC Product Filters que ocultaba botón en móvil (solución: usar modo escritorio)
 
 ### 2026-01-30
 - **Categoría 62 (Cerámica)**: Añadido bloque de texto introductorio antes de "Los Dos Pilares"
