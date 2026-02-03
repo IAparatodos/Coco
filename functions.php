@@ -4896,8 +4896,8 @@ function adrihosan_pavimentos_contenido_superior() {
     </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET FILTROS -->
-    <div id="destino-filtro-adria-pavimentos" class="solo-movil-filtro"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div id="destino-filtro-adria-pavimentos" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-pavimentos" class="product-loop-header">
@@ -5071,8 +5071,8 @@ function adrihosan_azulejos_contenido_superior() {
     </div>
 
     <!-- 4. DESTINO MÓVIL + WIDGET FILTROS -->
-    <div id="destino-filtro-adria-azulejos" class="solo-movil-filtro"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div id="destino-filtro-adria-azulejos" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <!-- 5. TÍTULO CATÁLOGO -->
     <div id="catalogo-azulejos" class="product-loop-header">
@@ -5266,12 +5266,12 @@ function adrihosan_cargar_css_categoria() {
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
-        // Cargar JS común (FAQs, scroll, etc.)
+        // Cargar JS común (FAQs, scroll, filtro móvil, etc.)
         wp_enqueue_script(
             'adrihosan-category-common',
-            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
+            get_stylesheet_directory_uri() . '/category-common.js',
             array('jquery'),
-            '1.0.0',
+            '1.0.1',
             true
         );
 
