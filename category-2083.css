@@ -595,8 +595,49 @@
         flex-direction: column;
         text-align: center;
     }
-    
+
     .ap-help-intro h2 {
         text-align: center;
+    }
+
+    /* --- FILTRO MÓVIL --- */
+    .tax-product_cat.term-2083 .solo-movil-filtro {
+        display: block !important;
+        margin: 20px 0 30px 0 !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion {
+        text-align: center !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container a,
+    #destino-filtro-adria-bano-imitacion a.wpc-filters-open-button {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: #4dd2d0 !important;
+        color: #ffffff !important;
+        padding: 14px 30px !important;
+        border-radius: 5px !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        letter-spacing: 0.5px !important;
+        box-shadow: 0 4px 15px rgba(77, 210, 208, 0.3) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container a:hover,
+    #destino-filtro-adria-bano-imitacion a.wpc-filters-open-button:hover {
+        background-color: #102e35 !important;
+        box-shadow: 0 6px 20px rgba(16, 46, 53, 0.3) !important;
     }
 }
