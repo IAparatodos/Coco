@@ -5272,6 +5272,32 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
         </div>
     </section>
 
+    <!-- 2. COMPARATIVA TÉCNICA: PORCELÁNICO VS MÁRMOL NATURAL -->
+    <section class="comparativa-section adrihosan-full-width-block">
+        <div class="comparativa-wrapper">
+            <h2>&iquest;Por qu&eacute; Porcel&aacute;nico y no M&aacute;rmol Natural?</h2>
+            <p class="section-subtitle">El porcel&aacute;nico imitaci&oacute;n m&aacute;rmol te ofrece la est&eacute;tica sin los sacrificios</p>
+
+            <div class="comparativa-grid">
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">🛡️</div>
+                    <h3>Porosidad Cero</h3>
+                    <p>A diferencia del m&aacute;rmol, el porcel&aacute;nico <strong>no absorbe manchas</strong> de l&iacute;quidos. Vino, caf&eacute; o aceite: se limpian sin dejar huella.</p>
+                </div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">💪</div>
+                    <h3>Resistencia al Rayado</h3>
+                    <p>Ideal para <strong>hogares con mascotas</strong> o mucho tr&aacute;nsito. Las u&ntilde;as de Coc&oacute; o los tacones no le afectan.</p>
+                </div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">🎨</div>
+                    <h3>Realismo Superior</h3>
+                    <p>Gracias a la <strong>impresi&oacute;n digital</strong>, cada pieza tiene vetas &uacute;nicas para evitar el efecto "fotocopia". M&aacute;rmol sin repetici&oacute;n.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 3. CLUSTERS DE NAVEGACIÓN -->
     <section class="clusters-section adrihosan-full-width-block">
         <div class="clusters-wrapper">
@@ -5336,33 +5362,7 @@ function adrihosan_porcelanico_marmol_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 5. COMPARATIVA TÉCNICA: PORCELÁNICO VS MÁRMOL NATURAL -->
-    <section class="comparativa-section adrihosan-full-width-block">
-        <div class="comparativa-wrapper">
-            <h2>&iquest;Por qu&eacute; Porcel&aacute;nico y no M&aacute;rmol Natural?</h2>
-            <p class="section-subtitle">El porcel&aacute;nico imitaci&oacute;n m&aacute;rmol te ofrece la est&eacute;tica sin los sacrificios</p>
-
-            <div class="comparativa-grid">
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">🛡️</div>
-                    <h3>Porosidad Cero</h3>
-                    <p>A diferencia del m&aacute;rmol, el porcel&aacute;nico <strong>no absorbe manchas</strong> de l&iacute;quidos. Vino, caf&eacute; o aceite: se limpian sin dejar huella.</p>
-                </div>
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">💪</div>
-                    <h3>Resistencia al Rayado</h3>
-                    <p>Ideal para <strong>hogares con mascotas</strong> o mucho tr&aacute;nsito. Las u&ntilde;as de Coc&oacute; o los tacones no le afectan.</p>
-                </div>
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">🎨</div>
-                    <h3>Realismo Superior</h3>
-                    <p>Gracias a la <strong>impresi&oacute;n digital</strong>, cada pieza tiene vetas &uacute;nicas para evitar el efecto "fotocopia". M&aacute;rmol sin repetici&oacute;n.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. ENLACES INTERNOS ESTRATÉGICOS -->
+    <!-- 5. ENLACES INTERNOS ESTRATÉGICOS -->
     <section class="enlaces-internos-section adrihosan-full-width-block">
         <div class="enlaces-wrapper">
             <h2>Complementa tu Proyecto</h2>
