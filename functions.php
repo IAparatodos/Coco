@@ -235,6 +235,16 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
     add_action('wp_head', function() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });
+
+    // DEBUG: Cargar CSS de la categoría
+    add_action('wp_head', 'adrihosan_porcelanico_marmol_cargar_css', 99);
+}
+
+function adrihosan_porcelanico_marmol_cargar_css() {
+    $css_file = get_stylesheet_directory() . '/category-2245.css';
+    if (file_exists($css_file)) {
+        echo '<style id="cat-2245-css">' . file_get_contents($css_file) . '</style>';
+    }
 }
 
 // FIN CONTROLADOR MAESTRO
