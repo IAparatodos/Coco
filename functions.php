@@ -236,7 +236,7 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });
 
-    // DEBUG: Cargar CSS de la categoría
+    // Cargar CSS específico de la categoría
     add_action('wp_head', 'adrihosan_porcelanico_marmol_cargar_css', 99);
 }
 
