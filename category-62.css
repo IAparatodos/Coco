@@ -455,3 +455,27 @@
         text-align: center;
     }
 }
+
+/* BLOQUE DE CONTACTO */
+.tax-product_cat.term-62 .contact-help-common { background: #102e35; padding: 80px 20px; }
+.tax-product_cat.term-62 .contact-help-wrapper { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
+.tax-product_cat.term-62 .contact-intro { display: flex; align-items: center; gap: 20px; flex: 1; min-width: 280px; }
+.tax-product_cat.term-62 .contact-intro img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 3px solid #4dd2d0; }
+.tax-product_cat.term-62 .contact-intro h2 { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0; line-height: 1.4; }
+.tax-product_cat.term-62 .contact-intro h2 span { display: block; font-size: 15px; font-weight: 400; color: #4dd2d0; margin-top: 5px; }
+.tax-product_cat.term-62 .contact-options-grid-common { display: flex; flex-wrap: wrap; gap: 15px; justify-content: flex-end; }
+.tax-product_cat.term-62 .contact-option-common { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100px; height: 90px; background: rgba(255,255,255,0.08); border-radius: 12px; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
+.tax-product_cat.term-62 .contact-option-common:hover { background: #4dd2d0; transform: translateY(-3px); }
+.tax-product_cat.term-62 .contact-option-common .icon { font-size: 28px; margin-bottom: 8px; pointer-events: none; }
+.tax-product_cat.term-62 .contact-option-common .label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; color: #fff; text-transform: uppercase; pointer-events: none; }
+
+@media (max-width: 768px) {
+  .tax-product_cat.term-62 .contact-help-common { padding: 50px 20px; }
+  .tax-product_cat.term-62 .contact-help-wrapper { flex-direction: column; text-align: center; }
+  .tax-product_cat.term-62 .contact-intro { flex-direction: column; }
+  .tax-product_cat.term-62 .contact-intro h2 { font-size: 20px; }
+  .tax-product_cat.term-62 .contact-options-grid-common { justify-content: center; width: 100%; }
+  .tax-product_cat.term-62 .contact-option-common { width: 80px; height: 75px; }
+  .tax-product_cat.term-62 .contact-option-common .icon { font-size: 24px; }
+  .tax-product_cat.term-62 .contact-option-common .label { font-size: 10px; }
+}
