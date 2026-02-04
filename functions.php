@@ -235,16 +235,6 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
     add_action('wp_head', function() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });
-
-    // DEBUG: Cargar CSS de la categoría
-    add_action('wp_head', 'adrihosan_porcelanico_marmol_cargar_css', 99);
-}
-
-function adrihosan_porcelanico_marmol_cargar_css() {
-    $css_file = get_stylesheet_directory() . '/category-2245.css';
-    if (file_exists($css_file)) {
-        echo '<style id="cat-2245-css">' . file_get_contents($css_file) . '</style>';
-    }
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -5260,8 +5250,6 @@ function adrihosan_azulejos_contenido_inferior() {
 
 function adrihosan_porcelanico_marmol_contenido_superior() {
     ?>
-    <!-- DEBUG: Función adrihosan_porcelanico_marmol_contenido_superior EJECUTADA -->
-    <div style="background:red;color:white;padding:20px;text-align:center;font-size:20px;">DEBUG: La función de contenido superior SE ESTÁ EJECUTANDO</div>
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg');">
         <div class="hero-content">
