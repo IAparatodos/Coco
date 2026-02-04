@@ -5267,7 +5267,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
             <p>La majestuosidad de la piedra natural con las ventajas t&eacute;cnicas del porcel&aacute;nico. Dise&ntilde;os de alto impacto visual que transforman tu suelo en una pieza de lujo duradera.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-marmol" class="hero-btn primary">Ver Cat&aacute;logo</a>
-                <a href="https://wa.me/34666555741?text=Hola%2C%20necesito%20asesoramiento%20sobre%20suelo%20porcel%C3%A1nico%20efecto%20m%C3%A1rmol" class="hero-btn secondary" target="_blank" rel="noopener">Hablar con un Experto</a>
+                <a href="#contacto-marmol" class="hero-btn secondary">Hablar con un Experto</a>
             </div>
         </div>
     </section>
@@ -5457,6 +5457,38 @@ function adrihosan_porcelanico_marmol_contenido_inferior() {
         </div>
     </div>
 </section>
+
+    <!-- BLOQUE DE AYUDA / CONTACTO -->
+    <section id="contacto-marmol" class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Necesitas ayuda para elegir?<span>Soy Ricardo, tu experto en porcel&aacute;nico efecto m&aacute;rmol.</span></h2></div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
+                    <div class="icon">📍</div>
+                    <div class="label">Visita Presencial</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
+                    <div class="icon">💻</div>
+                    <div class="label">Visita Virtual</div>
+                </a>
+                <a href="tel:+34961957136" class="contact-option-common">
+                    <div class="icon">📞</div>
+                    <div class="label">Tel&eacute;fono</div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20asesoramiento%20sobre%20porcel%C3%A1nico%20imitaci%C3%B3n%20m%C3%A1rmol" class="contact-option-common">
+                    <div class="icon">💬</div>
+                    <div class="label">Whatsapp</div>
+                </a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common">
+                    <div class="icon">✉️</div>
+                    <div class="label">Email</div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- SCRIPT FAQs -->
     <script>
