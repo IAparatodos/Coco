@@ -70,6 +70,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 63: // Azulejos
             adrihosan_setup_azulejos_cpu_fix();
             break;
+        case 2245: // Porcelánico Imitación Mármol
+            adrihosan_setup_porcelanico_marmol_cpu_fix();
+            break;
     }
 }
 
@@ -213,6 +216,20 @@ function adrihosan_setup_azulejos_cpu_fix() {
 
     add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_porcelanico_marmol_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_marmol_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_marmol_contenido_inferior', 99);
 
     // Ocultar filtros antiguos
     add_action('wp_head', function() {
@@ -5224,6 +5241,229 @@ function adrihosan_azulejos_contenido_inferior() {
 }
 
 // FIN CATEGORÍA 63 - AZULEJOS
+// ============================================================================
+
+
+// ============================================================================
+// CATEGORÍA 2245 - PORCELÁNICO IMITACIÓN MÁRMOL
+// ============================================================================
+
+function adrihosan_porcelanico_marmol_contenido_superior() {
+    ?>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg');">
+        <div class="hero-content">
+            <h1>Pavimento Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol: Distinci&oacute;n y M&aacute;xima Resistencia</h1>
+            <p>La majestuosidad de la piedra natural con las ventajas t&eacute;cnicas del porcel&aacute;nico. Dise&ntilde;os de alto impacto visual que transforman tu suelo en una pieza de lujo duradera.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-marmol" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="https://wa.me/34666555741?text=Hola%2C%20necesito%20asesoramiento%20sobre%20suelo%20porcel%C3%A1nico%20efecto%20m%C3%A1rmol" class="hero-btn secondary" target="_blank" rel="noopener">Hablar con un Experto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. CONSEJO DE ADRI (Texto Puente - Anti-canibalización) -->
+    <section class="consejo-adri-section adrihosan-full-width-block">
+        <div class="consejo-adri-wrapper">
+            <div class="consejo-adri-box">
+                <div class="consejo-adri-icon">💡</div>
+                <div class="consejo-adri-content">
+                    <h2>El Consejo de Adri</h2>
+                    <p>No todo el m&aacute;rmol porcel&aacute;nico es igual. &iquest;Sab&iacute;as que un <strong>acabado pulido</strong> aporta una luminosidad &uacute;nica pero requiere un mantenimiento espec&iacute;fico, mientras que un <strong>acabado mate</strong> es ideal para zonas de paso frecuente? En Adrihosan te asesoramos para que tu elecci&oacute;n sea t&eacute;cnica y est&eacute;ticamente perfecta.</p>
+                    <a href="https://wa.me/34666555741?text=Hola%2C%20necesito%20asesoramiento%20sobre%20acabados%20de%20porcel%C3%A1nico%20m%C3%A1rmol" class="consejo-btn" target="_blank" rel="noopener">Consultar a Adri</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CLUSTERS DE NAVEGACIÓN -->
+    <section class="clusters-section adrihosan-full-width-block">
+        <div class="clusters-wrapper">
+            <h2>Encuentra tu Porcel&aacute;nico Efecto M&aacute;rmol</h2>
+            <p class="section-subtitle">Gu&iacute;ate por tonalidad, formato o acabado seg&uacute;n tu proyecto</p>
+
+            <div class="clusters-grid">
+                <!-- CLUSTER 1: Por Tonalidad -->
+                <div class="cluster-column">
+                    <h3>Por Tonalidad</h3>
+                    <ul class="cluster-list">
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=blanco">Blanco Carrara / Statuario</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=negro">Negro Marquina / Dark</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=crema,marfil">Crema y Marfil</a></li>
+                    </ul>
+                </div>
+
+                <!-- CLUSTER 2: Por Formato -->
+                <div class="cluster-column">
+                    <h3>Por Formato</h3>
+                    <ul class="cluster-list">
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/">Porcel&aacute;nico Gran Formato</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_formato=60x60,60x120">Formato Est&aacute;ndar (60x60, 60x120)</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/">Porcel&aacute;nico Extrafino</a></li>
+                    </ul>
+                </div>
+
+                <!-- CLUSTER 3: Por Acabado -->
+                <div class="cluster-column">
+                    <h3>Por Acabado</h3>
+                    <ul class="cluster-list">
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=pulido">Pulido Espejo</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=mate">Mate Sedoso</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=satinado">Satinado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TÍTULO CATÁLOGO + FILTRO -->
+    <div id="catalogo-marmol" class="product-loop-header">
+        <h2 class="product-loop-title">Cat&aacute;logo: Pavimento Porcel&aacute;nico Efecto M&aacute;rmol</h2>
+    </div>
+
+    <!-- Filtro Móvil -->
+    <div id="destino-filtro-adria-marmol" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <?php
+}
+
+function adrihosan_porcelanico_marmol_contenido_inferior() {
+    // SEO: Contenido dinámico desde WooCommerce
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper">
+            <div class="term-description-dinamica">
+                <?php echo $descripcion_editor; ?>
+            </div>
+        </div>
+    </section>
+    <?php
+    }
+    ?>
+
+    <!-- 5. COMPARATIVA TÉCNICA: PORCELÁNICO VS MÁRMOL NATURAL -->
+    <section class="comparativa-section adrihosan-full-width-block">
+        <div class="comparativa-wrapper">
+            <h2>&iquest;Por qu&eacute; Porcel&aacute;nico y no M&aacute;rmol Natural?</h2>
+            <p class="section-subtitle">El porcel&aacute;nico imitaci&oacute;n m&aacute;rmol te ofrece la est&eacute;tica sin los sacrificios</p>
+
+            <div class="comparativa-grid">
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">🛡️</div>
+                    <h3>Porosidad Cero</h3>
+                    <p>A diferencia del m&aacute;rmol, el porcel&aacute;nico <strong>no absorbe manchas</strong> de l&iacute;quidos. Vino, caf&eacute; o aceite: se limpian sin dejar huella.</p>
+                </div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">💪</div>
+                    <h3>Resistencia al Rayado</h3>
+                    <p>Ideal para <strong>hogares con mascotas</strong> o mucho tr&aacute;nsito. Las u&ntilde;as de Coc&oacute; o los tacones no le afectan.</p>
+                </div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">🎨</div>
+                    <h3>Realismo Superior</h3>
+                    <p>Gracias a la <strong>impresi&oacute;n digital</strong>, cada pieza tiene vetas &uacute;nicas para evitar el efecto "fotocopia". M&aacute;rmol sin repetici&oacute;n.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. ENLACES INTERNOS ESTRATÉGICOS -->
+    <section class="enlaces-internos-section adrihosan-full-width-block">
+        <div class="enlaces-wrapper">
+            <h2>Complementa tu Proyecto</h2>
+            <div class="enlaces-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-exterior/" class="enlace-card">
+                    <span class="enlace-icon">🏡</span>
+                    <div class="enlace-content">
+                        <h4>&iquest;Buscas continuidad en el exterior?</h4>
+                        <p>Si tu terraza conecta con el sal&oacute;n, mira nuestro <strong>Suelo Exterior y Terrazas</strong>.</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" class="enlace-card">
+                    <span class="enlace-icon">🚿</span>
+                    <div class="enlace-content">
+                        <h4>&iquest;Es para la zona de aguas?</h4>
+                        <p>Para revestir las paredes de tu ducha, visita <strong>Azulejos Ba&ntilde;o</strong> con efecto m&aacute;rmol.</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-mosaico/" class="enlace-card">
+                    <span class="enlace-icon">🎯</span>
+                    <div class="enlace-content">
+                        <h4>Detalles decorativos</h4>
+                        <p>Combina tu suelo con un toque diferente usando <strong>Azulejo Mosaico</strong> en zonas puntuales.</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/" class="enlace-card enlace-padre">
+                    <span class="enlace-icon">📂</span>
+                    <div class="enlace-content">
+                        <h4>&iquest;Otros acabados adem&aacute;s del m&aacute;rmol?</h4>
+                        <p>Mira nuestra colecci&oacute;n completa de <strong>Suelos Porcel&aacute;nicos</strong>.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQs SEO -->
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; diferencia hay entre un porcel&aacute;nico rectificado y uno normal?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El <strong>porcel&aacute;nico rectificado</strong> tiene los bordes cortados con precisi&oacute;n l&aacute;ser, lo que permite colocar las piezas con juntas m&iacute;nimas (1,5-2mm). El resultado es una superficie casi continua, ideal para suelos efecto m&aacute;rmol donde buscas que las vetas fluyan entre baldosas. El porcel&aacute;nico normal tiene bordes redondeados y requiere juntas m&aacute;s anchas (3-4mm).</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo elegir el color del rejuntado para que las juntas sean invisibles?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El secreto est&aacute; en usar un rejuntado que coincida con el <strong>color base de la baldosa</strong>, no con las vetas. Para m&aacute;rmoles blancos (Carrara, Statuario), usa un rejuntado blanco o gris muy claro. Para m&aacute;rmoles oscuros (Marquina, Dark), un gris grafito o negro. Evita colores contrastantes que marquen el dibujo de las juntas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es buena idea usar porcel&aacute;nico imitaci&oacute;n m&aacute;rmol en suelos de cocina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>&iexcl;Es la mejor opci&oacute;n! A diferencia del m&aacute;rmol natural, el porcel&aacute;nico efecto m&aacute;rmol no absorbe grasas, aceites ni &aacute;cidos de lim&oacute;n. La cocina es una zona de alto tr&aacute;nsito y riesgo de manchas, por lo que la <strong>porosidad cero</strong> del porcel&aacute;nico lo convierte en un aliado perfecto. Solo te recomendamos elegir un acabado <strong>mate o satinado</strong> para evitar que el suelo sea resbaladizo con agua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT FAQs -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.tax-product_cat.term-2245 .faq-item-common');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question-common');
+            if (question) {
+                question.addEventListener('click', function() {
+                    const wasActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    if (!wasActive) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+    </script>
+    <?php
+}
+
+// FIN CATEGORÍA 2245 - PORCELÁNICO IMITACIÓN MÁRMOL
 // ============================================================================
 
 
