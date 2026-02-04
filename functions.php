@@ -5272,20 +5272,6 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
         </div>
     </section>
 
-    <!-- 2. CONSEJO DE ADRI (Texto Puente - Anti-canibalización) -->
-    <section class="consejo-adri-section adrihosan-full-width-block">
-        <div class="consejo-adri-wrapper">
-            <div class="consejo-adri-box">
-                <div class="consejo-adri-icon">💡</div>
-                <div class="consejo-adri-content">
-                    <h2>El Consejo de Adri</h2>
-                    <p>No todo el m&aacute;rmol porcel&aacute;nico es igual. &iquest;Sab&iacute;as que un <strong>acabado pulido</strong> aporta una luminosidad &uacute;nica pero requiere un mantenimiento espec&iacute;fico, mientras que un <strong>acabado mate</strong> es ideal para zonas de paso frecuente? En Adrihosan te asesoramos para que tu elecci&oacute;n sea t&eacute;cnica y est&eacute;ticamente perfecta.</p>
-                    <a href="https://wa.me/34666555741?text=Hola%2C%20necesito%20asesoramiento%20sobre%20acabados%20de%20porcel%C3%A1nico%20m%C3%A1rmol" class="consejo-btn" target="_blank" rel="noopener">Consultar a Adri</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 3. CLUSTERS DE NAVEGACIÓN -->
     <section class="clusters-section adrihosan-full-width-block">
         <div class="clusters-wrapper">
@@ -5326,7 +5312,12 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
         </div>
     </section>
 
-    <!-- 4. TÍTULO CATÁLOGO + FILTRO -->
+    <!-- 4. CONSEJO ADRIA -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;Buscas un acabado espec&iacute;fico? Selecciona <strong>&quot;Pulido&quot;</strong>, <strong>&quot;Mate&quot;</strong> o <strong>&quot;Satinado&quot;</strong> en los filtros y pulsa <strong>&quot;FILTRAR&quot;</strong>.</p>
+    </div>
+
+    <!-- 5. TÍTULO CATÁLOGO + FILTRO -->
     <div id="catalogo-marmol" class="product-loop-header">
         <h2 class="product-loop-title">Cat&aacute;logo: Pavimento Porcel&aacute;nico Efecto M&aacute;rmol</h2>
     </div>
