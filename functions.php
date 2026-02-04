@@ -3035,28 +3035,28 @@ function adrihosan_ceramica_superior_final() {
                 <p>Encuentra el acabado que mejor se adapta a tu estilo</p>
             </div>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" alt="Efecto madera">
                     <div class="ap-card-content">
                         <h3>Efecto Madera</h3>
                         <p>Calidez natural</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" alt="Efecto mármol">
                     <div class="ap-card-content">
                         <h3>Efecto M&aacute;rmol</h3>
                         <p>Lujo atemporal</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" alt="Efecto piedra">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Autenticidad r&uacute;stica</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Efecto cemento">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
