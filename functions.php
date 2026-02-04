@@ -5283,9 +5283,9 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
                 <div class="cluster-column">
                     <h3>Por Tonalidad</h3>
                     <ul class="cluster-list">
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=blanco">Blanco Carrara / Statuario</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=negro">Negro Marquina / Dark</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_tonalidad=crema,marfil">Crema y Marfil</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/tono-blanco/">Blanco Carrara / Statuario</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/tono-negro/">Negro Marquina / Dark</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/tono-beige/">Crema y Marfil</a></li>
                     </ul>
                 </div>
 
@@ -5293,9 +5293,9 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
                 <div class="cluster-column">
                     <h3>Por Formato</h3>
                     <ul class="cluster-list">
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/">Porcel&aacute;nico Gran Formato</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_formato=60x60,60x120">Formato Est&aacute;ndar (60x60, 60x120)</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/">Porcel&aacute;nico Extrafino</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-gran-formato/">Porcel&aacute;nico Gran Formato</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-60x120/">Formato Est&aacute;ndar (60x60, 60x120)</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-tipo-lamina-porcelanica/">Porcel&aacute;nico Extrafino</a></li>
                     </ul>
                 </div>
 
@@ -5303,9 +5303,9 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
                 <div class="cluster-column">
                     <h3>Por Acabado</h3>
                     <ul class="cluster-list">
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=pulido">Pulido Espejo</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=mate">Mate Sedoso</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/?swoof=1&pa_acabado=satinado">Satinado</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/textura-brillo-2/">Pulido Espejo</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/textura-mate/">Mate Sedoso</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/textura-satinado/">Satinado</a></li>
                     </ul>
                 </div>
             </div>
