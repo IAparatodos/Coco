@@ -1844,12 +1844,14 @@ html {
     line-height: 1;
     color: #4dd2d0;
     margin-bottom: 15px;
+    pointer-events: none;
 }
 .contact-option-common .label {
     font-size: 0.9rem;
     font-weight: 600;
     color: #102e35;
     text-align: center;
+    pointer-events: none;
 }
 
 /* ========================================================================== */
