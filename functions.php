@@ -5338,20 +5338,12 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
 }
 
 function adrihosan_porcelanico_marmol_contenido_inferior() {
-    // SEO: Contenido dinámico desde WooCommerce
-    $descripcion_editor = category_description();
-    if ( ! empty( $descripcion_editor ) ) {
     ?>
-    <section class="bho-guide-section">
-        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
-                <?php echo $descripcion_editor; ?>
-            </div>
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+        <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
+            <?php echo category_description( 2245 ); ?>
         </div>
     </section>
-    <?php
-    }
-    ?>
 
     <!-- 5. COMPARATIVA TÉCNICA: PORCELÁNICO VS MÁRMOL NATURAL -->
     <section class="comparativa-section adrihosan-full-width-block">
