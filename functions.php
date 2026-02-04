@@ -5399,41 +5399,64 @@ function adrihosan_porcelanico_marmol_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 7. FAQs SEO -->
-    <section class="faq-section-common adrihosan-full-width-block">
-        <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol</h2>
-            <div class="faq-items-wrapper">
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre un porcel&aacute;nico rectificado y uno normal?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>El <strong>porcel&aacute;nico rectificado</strong> tiene los bordes cortados con precisi&oacute;n l&aacute;ser, lo que permite colocar las piezas con juntas m&iacute;nimas (1,5-2mm). El resultado es una superficie casi continua, ideal para suelos efecto m&aacute;rmol donde buscas que las vetas fluyan entre baldosas. El porcel&aacute;nico normal tiene bordes redondeados y requiere juntas m&aacute;s anchas (3-4mm).</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo elegir el color del rejuntado para que las juntas sean invisibles?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>El secreto est&aacute; en usar un rejuntado que coincida con el <strong>color base de la baldosa</strong>, no con las vetas. Para m&aacute;rmoles blancos (Carrara, Statuario), usa un rejuntado blanco o gris muy claro. Para m&aacute;rmoles oscuros (Marquina, Dark), un gris grafito o negro. Evita colores contrastantes que marquen el dibujo de las juntas.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Es buena idea usar porcel&aacute;nico imitaci&oacute;n m&aacute;rmol en suelos de cocina?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>&iexcl;Es la mejor opci&oacute;n! A diferencia del m&aacute;rmol natural, el porcel&aacute;nico efecto m&aacute;rmol no absorbe grasas, aceites ni &aacute;cidos de lim&oacute;n. La cocina es una zona de alto tr&aacute;nsito y riesgo de manchas, por lo que la <strong>porosidad cero</strong> del porcel&aacute;nico lo convierte en un aliado perfecto. Solo te recomendamos elegir un acabado <strong>mate o satinado</strong> para evitar que el suelo sea resbaladizo con agua.</p>
-                    </div>
+   <section class="faq-section-common adrihosan-full-width-block">
+    <div class="faq-wrapper-common">
+        <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol</h2>
+        <div class="faq-items-wrapper">
+            
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Se nota que es una imitaci&oacute;n o parece piedra real?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Gracias a la tecnolog&iacute;a de impresi&oacute;n digital (Inkjet) de alta definici&oacute;n, es dif&iacute;cil distinguirlo a simple vista. Nuestros porcel&aacute;nicos cuentan con <strong>m&uacute;ltiples caras</strong> (dise&ntilde;os diferentes), lo que significa que las vetas cambian de una baldosa a otra para evitar patrones repetitivos y lograr el realismo ca&oacute;tico y natural del m&aacute;rmol de cantera.</p>
                 </div>
             </div>
+
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Se mancha si cae vino o lim&oacute;n como el m&aacute;rmol natural?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>Rotundamente <strong>no</strong>. El m&aacute;rmol natural es poroso y reacciona a los &aacute;cidos, pero el porcel&aacute;nico es un material vitrificado e impermeable. Puedes usarlo en cocinas sin miedo a que se caiga vinagre, lim&oacute;n, aceite o vino. Se limpia simplemente con agua y un jab&oacute;n neutro, sin necesidad de pulidos ni cristalizados peri&oacute;dicos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;El acabado pulido brillo resbala mucho?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>El acabado <strong>pulido espejo</strong> es totalmente liso para maximizar el reflejo de la luz. En seco es seguro, pero en mojado puede resbalar. Para salones, pasillos o cocinas es perfecto por su espectacularidad. Si vas a colocarlo dentro de un ba&ntilde;o o una zona h&uacute;meda, te recomendamos optar por el acabado <strong>Mate o Satinado (Silk)</strong>, que mantiene la elegancia de la veta pero con mayor seguridad.</p>
+                </div>
+            </div>
+
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Puedo colocar estas baldosas en la pared o solo sirven para suelo?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>El porcel&aacute;nico es el material m&aacute;s vers&aacute;til que existe. Al ser tan resistente, sirve perfectamente para <strong>pavimentos de alto tr&aacute;nsito</strong>, pero tambi&eacute;n es la opci&oacute;n favorita para <strong>revestir paredes</strong> de ba&ntilde;os, frentes de cocina o incluso fachadas. Colocar piezas de gran formato imitaci&oacute;n m&aacute;rmol en las paredes crea un efecto de &quot;caja de lujo&quot; muy demandado en decoraci&oacute;n.</p>
+                </div>
+            </div>
+
+            <div class="faq-item-common">
+                <button class="faq-question-common">
+                    <span>&iquest;Es resistente a los ara&ntilde;azos de mascotas o tacones?</span>
+                    <span class="faq-icon-common">+</span>
+                </button>
+                <div class="faq-answer-common">
+                    <p>S&iacute;, tiene una dureza muy superior a la piedra natural. Mientras que el m&aacute;rmol es una piedra &quot;blanda&quot; que se raya con facilidad, el gres porcel&aacute;nico se cuece a altas temperaturas para lograr una superficie compacta. Aguanta perfectamente el trote diario, las u&ntilde;as de mascotas y el movimiento de muebles sin perder su aspecto original.</p>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- SCRIPT FAQs -->
     <script>
