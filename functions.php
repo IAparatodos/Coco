@@ -3706,7 +3706,7 @@ function adrihosan_metro_superior_final() {
 
     <!-- 4. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="426239"]'); ?></div>
 
     <!-- 5. COLECCIONES / LO MÁS BUSCADO -->
     <section class="collections-section">
