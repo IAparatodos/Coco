@@ -2608,7 +2608,7 @@ function adrihosan_pilar_exterior_contenido_inferior() {
 add_action( 'wp_head', 'adrihosan_custom_category_final_fix_css', 999 );
 function adrihosan_custom_category_final_fix_css() {
     // Lista de IDs de TODAS las categorías personalizadas
-    $custom_category_ids = array(62, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4564, 2209, 1789);
+    $custom_category_ids = array(62, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4564, 2209, 1789, 2093);
 
     // Solo ejecutar si estamos en una de esas categorías
     if ( is_product_category( $custom_category_ids ) ) {
@@ -3632,9 +3632,19 @@ function adrihosan_pilar_metro_controller() {
         remove_all_actions( 'woocommerce_archive_description' );
     }
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
+
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20 );
+
+    // Cargar CSS específico de la categoría inline
+    add_action( 'wp_head', 'adrihosan_metro_cargar_css', 99 );
+}
+
+function adrihosan_metro_cargar_css() {
+    $css_file = get_stylesheet_directory() . '/category-2093.css';
+    if ( file_exists( $css_file ) ) {
+        echo '<style id="cat-2093-css">' . file_get_contents( $css_file ) . '</style>';
+    }
 }
 
 function adrihosan_metro_superior_final() {
