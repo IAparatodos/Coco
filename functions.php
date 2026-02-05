@@ -5538,15 +5538,15 @@ function adrihosan_cargar_css_categoria() {
     // Siempre cargar el CSS base global
     wp_enqueue_style(
         'adrihosan-base-global',
-        get_stylesheet_directory_uri() . '/base-global.css',
+        get_stylesheet_directory_uri() . '/assets/css/base-global.css',
         array(),
         '1.0.0'
     );
-
+    
     // Siempre cargar los fixes móviles
     wp_enqueue_style(
         'adrihosan-mobile-fixes',
-        get_stylesheet_directory_uri() . '/mobile-fixes.css',
+        get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
         array('adrihosan-base-global'),
         '1.0.0'
     );
