@@ -5490,24 +5490,7 @@ function adrihosan_porcelanico_marmol_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCRIPT FAQs -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqItems = document.querySelectorAll('.tax-product_cat.term-2245 .faq-item-common');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question-common');
-            if (question) {
-                question.addEventListener('click', function() {
-                    const wasActive = item.classList.contains('active');
-                    faqItems.forEach(i => i.classList.remove('active'));
-                    if (!wasActive) {
-                        item.classList.add('active');
-                    }
-                });
-            }
-        });
-    });
-    </script>
+    <!-- FAQs: script cargado desde category-common.js -->
     <?php
 }
 
@@ -5557,7 +5540,7 @@ function adrihosan_cargar_css_categoria() {
         // Cargar JS común (FAQs, scroll, filtro móvil, etc.)
         wp_enqueue_script(
             'adrihosan-category-common',
-            get_stylesheet_directory_uri() . '/category-common.js',
+            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
             array('jquery'),
             '1.0.1',
             true
