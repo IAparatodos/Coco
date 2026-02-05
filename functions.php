@@ -3639,103 +3639,183 @@ function adrihosan_pilar_metro_controller() {
 
 function adrihosan_metro_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.40), rgba(16, 46, 53, 0.40)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-metro-cocina-adrihosan.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
-        <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Azulejo Metro: El Icono del Diseño</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Del metro de París a tu hogar. El revestimiento biselado que aporta luz, carácter y un estilo atemporal.</p>
-            <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                <a href="#catalogo-metro-foco" class="btn-adri-master">Ver Colección</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Ver Colores</a>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-metro-cocina-adrihosan.jpg');">
+        <div class="hero-content">
+            <h1>Azulejo Metro: El Icono del Dise&ntilde;o</h1>
+            <p>Del metro de Par&iacute;s a tu hogar. El revestimiento biselado que aporta luz, car&aacute;cter y un estilo atemporal.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-metro-foco" class="hero-btn primary">Ver Colecci&oacute;n</a>
+                <a href="#estilos-metro" class="hero-btn secondary">Ver Colores</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige tu Estilo</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=blanco" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-blanco-biselado.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Blanco Clásico</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=negro" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-negro-mate.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Negro Industrial</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=verde,azul,rosa" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-colores-variados.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">A Todo Color</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-mate-moderno.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Acabado Mate</h3></a>
+    <!-- 2. NAVEGACIÓN POR ESTILO -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-metro">
+        <div class="ap-inspiration-wrapper">
+            <h2>Elige tu Estilo</h2>
+            <p class="section-subtitle">Selecciona el acabado que mejor encaje con tu proyecto</p>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=blanco" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-blanco-biselado.jpg" alt="Azulejo metro blanco biselado">
+                    <div class="ap-card-content">
+                        <h3>Blanco Cl&aacute;sico</h3>
+                        <p>El original atemporal</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=negro" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-negro-mate.jpg" alt="Azulejo metro negro mate">
+                    <div class="ap-card-content">
+                        <h3>Negro Industrial</h3>
+                        <p>Car&aacute;cter y elegancia</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=verde,azul,rosa" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-colores-variados.jpg" alt="Azulejo metro colores variados">
+                    <div class="ap-card-content">
+                        <h3>A Todo Color</h3>
+                        <p>Personaliza tu espacio</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-mate-moderno.jpg" alt="Azulejo metro acabado mate">
+                    <div class="ap-card-content">
+                        <h3>Acabado Mate</h3>
+                        <p>Tendencia actual</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- 3. CONSEJO ADRIA -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona el color, formato o acabado que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
     </div>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el color, formato o acabado que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
-    </div>
+    <!-- 4. DESTINO MÓVIL + WIDGET -->
+    <div id="destino-filtro-adria-metro" class="solo-movil-filtro"></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
-    <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
-
-    <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=7-5x15" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">7.5x15 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x20" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">10x20 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x30" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">10x30 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=brillo" class="btn-adri-master">Brillo</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="btn-adri-master">Mate</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_relieve=biselado" class="btn-adri-master">Biselado</a>
+    <!-- 5. COLECCIONES / LO MÁS BUSCADO -->
+    <section class="collections-section">
+        <h4>Lo m&aacute;s buscado</h4>
+        <div class="collections-buttons">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=7-5x15" class="hero-btn primary">7.5x15 cm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x20" class="hero-btn primary">10x20 cm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x30" class="hero-btn primary">10x30 cm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=brillo" class="hero-btn primary">Brillo</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="hero-btn primary">Mate</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_relieve=biselado" class="hero-btn primary">Biselado</a>
         </div>
+    </section>
+
+    <!-- 6. TÍTULO CATÁLOGO -->
+    <div id="catalogo-metro-foco" class="product-loop-header">
+        <h2 class="product-loop-title">Colecci&oacute;n Azulejo Metro</h2>
     </div>
-
-    <div id="catalogo-metro-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Colección Azulejo Metro</h2>
-    </div>
-
-
     <?php
 }
 
 function adrihosan_metro_inferior_final() {
+    // SEO: Contenido din&aacute;mico desde WooCommerce
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
-        <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
-            <?php echo category_description( get_queried_object_id() ); ?>
-        </div>
-    </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Azulejo Metro</h2>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Se pueden colocar en el suelo?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Por norma general, no. El azulejo metro clásico es de pasta blanca o roja, diseñado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos específicos fabricados en porcelánico que sí son aptos para pavimento. Revisa siempre la ficha técnica antes de comprar.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Son aptos para el interior de la ducha?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Sí, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones más higiénicas y duraderas para zonas mojadas.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿El biselado hace que sean difíciles de limpiar?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Es un mito común, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jabón neutro son suficientes.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué color de junta recomiendas para el azulejo blanco?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el auténtico look industrial o "tipo metro" de Nueva York, atrévete con una junta negra o gris antracita para resaltar el patrón de colocación.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Hay otras formas de colocación además de la "tipo ladrillo"?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">¡Por supuesto! Aunque la colocación trabada (tipo ladrillo) es la icónica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper">
+            <div class="term-description-dinamica">
+                <?php echo $descripcion_editor; ?>
             </div>
         </div>
     </section>
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Buscas un color específico?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Tenemos muchísimos colores.</p>
+    <?php
+    }
+    ?>
+
+    <!-- FAQs -->
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejo Metro</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se pueden colocar en el suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Por norma general, no. El azulejo metro cl&aacute;sico es de pasta blanca o roja, dise&ntilde;ado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos espec&iacute;ficos fabricados en porcel&aacute;nico que s&iacute; son aptos para pavimento. Revisa siempre la ficha t&eacute;cnica antes de comprar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Son aptos para el interior de la ducha?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones m&aacute;s higi&eacute;nicas y duraderas para zonas mojadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;El biselado hace que sean dif&iacute;ciles de limpiar?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es un mito com&uacute;n, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jab&oacute;n neutro son suficientes.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; color de junta recomiendas para el azulejo blanco?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el aut&eacute;ntico look industrial o &quot;tipo metro&quot; de Nueva York, atr&eacute;vete con una junta negra o gris antracita para resaltar el patr&oacute;n de colocaci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Hay otras formas de colocaci&oacute;n adem&aacute;s de la &quot;tipo ladrillo&quot;?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>&iexcl;Por supuesto! Aunque la colocaci&oacute;n trabada (tipo ladrillo) es la ic&oacute;nica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+                    </div>
                 </div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- CONTACTO RICARDO -->
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejo metro">
+                <div>
+                    <h2>&iquest;Buscas un color espec&iacute;fico?
+                        <span>Soy Ricardo. Tenemos much&iacute;simos colores.</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
+                    <div class="icon">&#x1F4CD;</div>
+                    <div class="label">Visita Presencial</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
+                    <div class="icon">&#x1F4BB;</div>
+                    <div class="label">Visita Virtual</div>
+                </a>
+                <a href="tel:+34961957136" class="contact-option-common">
+                    <div class="icon">&#x1F4DE;</div>
+                    <div class="label">Ll&aacute;manos</div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=34961957136" class="contact-option-common whatsapp">
+                    <div class="icon">&#x1F4AC;</div>
+                    <div class="label">WhatsApp</div>
+                </a>
             </div>
         </div>
     </section>
