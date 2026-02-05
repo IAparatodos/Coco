@@ -3650,7 +3650,7 @@ function adrihosan_metro_cargar_css() {
 function adrihosan_metro_superior_final() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-metro-cocina-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-adrihosan.jpg');">
         <div class="hero-content">
             <h1>Azulejo Metro: El Icono del Dise&ntilde;o</h1>
             <p>Del metro de Par&iacute;s a tu hogar. El revestimiento biselado que aporta luz, car&aacute;cter y un estilo atemporal.</p>
@@ -3667,29 +3667,29 @@ function adrihosan_metro_superior_final() {
             <h2>Elige tu Estilo</h2>
             <p class="section-subtitle">Selecciona el acabado que mejor encaje con tu proyecto</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=blanco" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-blanco-biselado.jpg" alt="Azulejo metro blanco biselado">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-blanco/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-blanco-adrihosan.jpg" alt="Azulejo metro blanco biselado">
                     <div class="ap-card-content">
                         <h3>Blanco Cl&aacute;sico</h3>
                         <p>El original atemporal</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=negro" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-negro-mate.jpg" alt="Azulejo metro negro mate">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-negro/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-negro-adrihosan.jpg" alt="Azulejo metro negro mate">
                     <div class="ap-card-content">
                         <h3>Negro Industrial</h3>
                         <p>Car&aacute;cter y elegancia</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=verde,azul,rosa" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-colores-variados.jpg" alt="Azulejo metro colores variados">
+                <a href="#catalogo-metro-foco" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-colores-adrihosan.jpg" alt="Azulejo metro colores variados">
                     <div class="ap-card-content">
                         <h3>A Todo Color</h3>
                         <p>Personaliza tu espacio</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-mate-moderno.jpg" alt="Azulejo metro acabado mate">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-mate-adrihosan.jpg" alt="Azulejo metro acabado mate">
                     <div class="ap-card-content">
                         <h3>Acabado Mate</h3>
                         <p>Tendencia actual</p>
@@ -3712,12 +3712,12 @@ function adrihosan_metro_superior_final() {
     <section class="collections-section">
         <h4>Lo m&aacute;s buscado</h4>
         <div class="collections-buttons">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=7-5x15" class="hero-btn primary">7.5x15 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x20" class="hero-btn primary">10x20 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x30" class="hero-btn primary">10x30 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=brillo" class="hero-btn primary">Brillo</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="hero-btn primary">Mate</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_relieve=biselado" class="hero-btn primary">Biselado</a>
+            <a href="#catalogo-metro-foco" class="hero-btn primary">7.5x15 cm</a>
+            <a href="#catalogo-metro-foco" class="hero-btn primary">10x20 cm</a>
+            <a href="#catalogo-metro-foco" class="hero-btn primary">10x30 cm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-brillo-2/" class="hero-btn primary">Brillo</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="hero-btn primary">Mate</a>
+            <a href="#catalogo-metro-foco" class="hero-btn primary">Biselado</a>
         </div>
     </section>
 
