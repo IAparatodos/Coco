@@ -34,7 +34,7 @@ function adrihosan_master_controller_cpu_fix() {
         case 2083: // Baño Imitación
             adrihosan_setup_bano_imitacion_cpu_fix();
             break;
-        case 4876: // Cocina Imitación  
+        case 4876: // Cocina Imitación
             adrihosan_setup_cocina_imitacion_cpu_fix();
             break;
         case 4862: // Hidráulica Original
@@ -73,7 +73,48 @@ function adrihosan_master_controller_cpu_fix() {
         case 2245: // Porcelánico Imitación Mármol
             adrihosan_setup_porcelanico_marmol_cpu_fix();
             break;
+        // =====================================================================
+        // CATEGORÍAS MIGRADAS AL CONTROLADOR MAESTRO (Antes tenían controladores separados)
+        // =====================================================================
+        case 62: // Cerámica (Página Pilar)
+            adrihosan_setup_ceramica_cpu_fix();
+            break;
+        case 2082: // Imitación Hidráulico
+            adrihosan_setup_imitacion_hidraulico_cpu_fix();
+            break;
+        case 2093: // Azulejo Metro
+            adrihosan_setup_metro_cpu_fix();
+            break;
+        case 2410: // Porcelánico
+            adrihosan_setup_porcelanico_cpu_fix();
+            break;
+        case 2510: // Porcelánico Extrafino
+            adrihosan_setup_extrafino_cpu_fix();
+            break;
+        case 1844: // Gran Formato
+            adrihosan_setup_gran_formato_cpu_fix();
+            break;
+        case 4564: // Baldosa Hidráulica (Página Pilar)
+            adrihosan_setup_baldosa_hidraulica_cpu_fix();
+            break;
+        case 4865: // Baño BH Original
+            adrihosan_setup_bano_bh_original_cpu_fix();
+            break;
+        case 4866: // Cocina BH Original
+            adrihosan_setup_cocina_bh_original_cpu_fix();
+            break;
+        case 4869: // Exterior BH Original
+            adrihosan_setup_exterior_bh_original_cpu_fix();
+            break;
     }
+
+    // CSS común para ocultar filtros antiguos (se aplica a TODAS las categorías del switch)
+    add_action('wp_head', 'adrihosan_ocultar_filtros_antiguos_css', 99);
+}
+
+// CSS unificado para ocultar filtros - SE EJECUTA UNA SOLA VEZ
+function adrihosan_ocultar_filtros_antiguos_css() {
+    echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
 }
 
 // Setups específicos para cada categoría
@@ -245,6 +286,114 @@ function adrihosan_porcelanico_marmol_cargar_css() {
     if (file_exists($css_file)) {
         echo '<style id="cat-2245-css">' . file_get_contents($css_file) . '</style>';
     }
+}
+
+// =====================================================================
+// NUEVAS FUNCIONES SETUP - Migradas de controladores externos
+// =====================================================================
+
+// Cat 62: Cerámica (antes en adrihosan_ceramica_definitiva_controller)
+function adrihosan_setup_ceramica_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20);
+}
+
+// Cat 2082: Imitación Hidráulico (antes en adrihosan_pilar_imitacion_controller)
+function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
+}
+
+// Cat 2093: Azulejo Metro (antes en adrihosan_pilar_metro_controller)
+function adrihosan_setup_metro_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
+    add_action('wp_head', 'adrihosan_metro_cargar_css', 99);
+}
+
+// Cat 2410: Porcelánico (antes en adrihosan_pilar_porcelanico_controller)
+function adrihosan_setup_porcelanico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20);
+}
+
+// Cat 2510: Porcelánico Extrafino (antes en adrihosan_pilar_extrafino_controller)
+function adrihosan_setup_extrafino_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20);
+}
+
+// Cat 1844: Gran Formato (antes en adrihosan_pilar_gran_formato_controller)
+function adrihosan_setup_gran_formato_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20);
+}
+
+// Cat 4564: Baldosa Hidráulica Pilar (antes en adrihosan_pilar_bh_controller)
+function adrihosan_setup_baldosa_hidraulica_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+    remove_action('woocommerce_no_products_found', 'wc_no_products_found', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99);
+}
+
+// Cat 4865: Baño BH Original (antes en adrihosan_pilar_bano_controller)
+function adrihosan_setup_bano_bh_original_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+}
+
+// Cat 4866: Cocina BH Original (antes en adrihosan_pilar_cocina_controller)
+function adrihosan_setup_cocina_bh_original_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+}
+
+// Cat 4869: Exterior BH Original (antes en adrihosan_pilar_exterior_controller)
+function adrihosan_setup_exterior_bh_original_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -855,7 +1004,8 @@ function adrihosan_pilar_imitacion_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_imitacion_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'template_redirect', 'adrihosan_pilar_imitacion_controller' );
 
 
 /**
@@ -1723,7 +1873,8 @@ function adrihosan_pilar_bh_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_bh_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'template_redirect', 'adrihosan_pilar_bh_controller' );
 
 /**
  * Inyecta el contenido superior: Hero, Características, Hub y Best Sellers.
@@ -2186,7 +2337,8 @@ function adrihosan_pilar_bano_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_bano_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'template_redirect', 'adrihosan_pilar_bano_controller' );
 
 
 /**
@@ -2320,7 +2472,8 @@ function adrihosan_pilar_cocina_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_cocina_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'template_redirect', 'adrihosan_pilar_cocina_controller' );
 
 /**
  * Inyecta el contenido superior: Hero, Características, Inspiración y Filtros.
@@ -2479,7 +2632,8 @@ function adrihosan_pilar_exterior_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_exterior_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'template_redirect', 'adrihosan_pilar_exterior_controller' );
 
 
 /**
@@ -2605,7 +2759,8 @@ function adrihosan_pilar_exterior_contenido_inferior() {
  * =============================================================================
  ********************************************************************************/
 
-add_action( 'wp_head', 'adrihosan_custom_category_final_fix_css', 999 );
+// DESACTIVADO - El CSS de filtros ahora está en el Controlador Maestro (función adrihosan_ocultar_filtros_antiguos_css)
+// add_action( 'wp_head', 'adrihosan_custom_category_final_fix_css', 999 );
 function adrihosan_custom_category_final_fix_css() {
     // Lista de IDs de TODAS las categorías personalizadas
     $custom_category_ids = array(62, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4564, 2209, 1789, 2093);
@@ -2913,7 +3068,8 @@ add_action('wp_head', function() {
 /* PÁGINA PILAR CERÁMICA (ID 62) - VERSIÓN MAESTRA TOTAL CON SEO DINÁMICO */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_ceramica_definitiva_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'wp', 'adrihosan_ceramica_definitiva_controller' );
 
 function adrihosan_ceramica_definitiva_controller() {
     if ( ! is_product_category( 62 ) || is_singular('product') ) {
@@ -3169,18 +3325,20 @@ function adrihosan_ceramica_inferior_final() {
     <?php
 }
 
-add_action( 'wp_head', 'adrihosan_kill_theme_stuff_cat62', 999 );
-function adrihosan_kill_theme_stuff_cat62() {
-    if ( is_product_category( 62 ) ) {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
-    }
-}
+// DESACTIVADO - El CSS de filtros ahora está en el Controlador Maestro (función adrihosan_ocultar_filtros_antiguos_css)
+// add_action( 'wp_head', 'adrihosan_kill_theme_stuff_cat62', 999 );
+// function adrihosan_kill_theme_stuff_cat62() {
+//     if ( is_product_category( 62 ) ) {
+//         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
+//     }
+// }
 
 /* ========================================================================== */
 /* PÁGINA PILAR PORCELÁNICO (ID 2410) - VERSIÓN MAESTRA 2026 */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_porcelanico_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'wp', 'adrihosan_pilar_porcelanico_controller' );
 
 function adrihosan_pilar_porcelanico_controller() {
     // Si NO estamos en la categoría 2410, no hacemos nada.
@@ -3439,7 +3597,8 @@ function adrihosan_porcelanico_inferior_final() {
 /* 1. PÁGINA PILAR GRAN FORMATO (ID 1844) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_gran_formato_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'wp', 'adrihosan_pilar_gran_formato_controller' );
 
 function adrihosan_pilar_gran_formato_controller() {
     // Si NO estamos en la categoría 1844, salir.
@@ -3530,7 +3689,8 @@ function adrihosan_gran_formato_inferior_final() {
 /* 2. PÁGINA PILAR PORCELÁNICO EXTRAFINO (ID 2510) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_extrafino_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'wp', 'adrihosan_pilar_extrafino_controller' );
 
 function adrihosan_pilar_extrafino_controller() {
     if ( ! is_product_category( 2510 ) || is_singular('product') ) {
@@ -3621,7 +3781,8 @@ function adrihosan_extrafino_inferior_final() {
 /* 3. PÁGINA PILAR AZULEJO METRO (ID 2093) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_metro_controller' );
+// DESACTIVADO - Migrado al Controlador Maestro (línea 33)
+// add_action( 'wp', 'adrihosan_pilar_metro_controller' );
 
 function adrihosan_pilar_metro_controller() {
     if ( ! is_product_category( 2093 ) || is_singular('product') ) {
@@ -3835,7 +3996,8 @@ function adrihosan_metro_inferior_final() {
 /* ========================================================================== */
 /* 4. LIMPIEZA GLOBAL (UNIFICADA) */
 /* ========================================================================== */
-add_action( 'wp_head', 'adrihosan_fix_category_styles_global', 99 );
+// DESACTIVADO - El CSS de filtros ahora está en el Controlador Maestro (función adrihosan_ocultar_filtros_antiguos_css)
+// add_action( 'wp_head', 'adrihosan_fix_category_styles_global', 99 );
 function adrihosan_fix_category_styles_global() {
     if ( is_product_category( array( 1844, 2510, 2093, 4862, 4865, 4866, 4869, 2082, 4876, 2083, 4806, 1789 ) ) ) {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
@@ -5692,16 +5854,18 @@ add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
 /**
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ * DESACTIVADO - La ruta /assets/css/ no existe, los CSS están en raíz como category-{ID}.css
+ * y ya se cargan inline en las funciones setup del Controlador Maestro
  */
-function adrihosan_preload_css_critico() {
-    if (is_product_category()) {
-        $cat_id = get_queried_object_id();
-        $css_file = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
-        
-        echo '<link rel="preload" href="' . esc_url($css_file) . '" as="style">' . "\n";
-    }
-}
-add_action('wp_head', 'adrihosan_preload_css_critico', 1);
+// function adrihosan_preload_css_critico() {
+//     if (is_product_category()) {
+//         $cat_id = get_queried_object_id();
+//         $css_file = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
+//
+//         echo '<link rel="preload" href="' . esc_url($css_file) . '" as="style">' . "\n";
+//     }
+// }
+// add_action('wp_head', 'adrihosan_preload_css_critico', 1);
 
 /**
  * Adrihosan: Ordenación FORZADA para diferenciar categorías
