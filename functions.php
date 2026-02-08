@@ -3307,7 +3307,7 @@ function adrihosan_porcelanico_superior_final() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
     <!-- 6. COLECCIONES ESPECIALES -->
     <section class="collections-section">
@@ -3487,7 +3487,7 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
@@ -3576,7 +3576,7 @@ function adrihosan_extrafino_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-extrafino" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
     <div id="catalogo-extrafino-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
@@ -5014,7 +5014,7 @@ function adrihosan_pavimentos_contenido_superior() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-pavimentos" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-pavimentos" class="product-loop-header">
@@ -5440,7 +5440,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
 
     <!-- Filtro Móvil -->
     <div id="destino-filtro-adria-marmol" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
     <?php
 }
 
