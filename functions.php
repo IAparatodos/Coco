@@ -11,10 +11,15 @@
  *   ├── master-controller.php - Controlador centralizado por categoría
  *   ├── category-setup.php    - Funciones setup para cada categoría
  *   ├── utilities.php         - Caché, CSS loader, ordenación, filtros
- *   └── categories.php        - Contenido de todas las categorías
+ *   └── categories/           - Contenido por categoría (26 archivos)
+ *       ├── ceramica.php
+ *       ├── pavimentos.php
+ *       ├── azulejos.php
+ *       ├── espejos.php
+ *       └── ... (ver carpeta para lista completa)
  *
  * @package Adrihosan
- * @version 2.0.0 (Refactorizado)
+ * @version 2.1.0 (Categorías divididas)
  */
 
 if (!defined('ABSPATH')) {
@@ -37,8 +42,11 @@ require_once get_stylesheet_directory() . '/includes/category-setup.php';
 // 4. Controlador maestro (switch por categoría)
 require_once get_stylesheet_directory() . '/includes/master-controller.php';
 
-// 5. Contenido de categorías (HTML de cada categoría)
-require_once get_stylesheet_directory() . '/includes/categories.php';
+// 5. Contenido de categorías (un archivo por categoría)
+$categories_dir = get_stylesheet_directory() . '/includes/categories/';
+foreach (glob($categories_dir . '*.php') as $category_file) {
+    require_once $category_file;
+}
 
 // =============================================================================
 // FIN - Todo el código está organizado en /includes/
