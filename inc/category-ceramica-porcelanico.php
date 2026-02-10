@@ -141,19 +141,19 @@ function adrihosan_ceramica_superior_final() {
     <div style="padding-top: 60px; margin-bottom:50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el efecto visual</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Mármol</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" style="text-decoration:none; text-align:center;">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Piedra</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
             </a>
