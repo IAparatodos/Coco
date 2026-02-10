@@ -29,28 +29,28 @@ function adrihosan_azulejos_bano_contenido_superior() {
             <h2>¿Qué estilo buscas para tu baño?</h2>
             <p class="section-subtitle">Explora nuestras colecciones y encuentra el acabado perfecto para tu proyecto</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Azulejos efecto madera para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Madera</h3>
                         <p>Calidez total sin el mantenimiento de la madera real</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Azulejos efecto mármol para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
                         <p>Lujo atemporal en vetas naturales</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-piedra/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Azulejos efecto piedra para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Conexión natural y textura auténtica</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos efecto cemento para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
