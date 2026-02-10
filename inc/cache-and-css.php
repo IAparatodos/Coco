@@ -7,12 +7,8 @@
 /* ========================================================================== */
 /* 4. LIMPIEZA GLOBAL (UNIFICADA) */
 /* ========================================================================== */
-add_action( 'wp_head', 'adrihosan_fix_category_styles_global', 99 );
-function adrihosan_fix_category_styles_global() {
-    if ( is_product_category( array( 1844, 2510, 2093, 4862, 4865, 4866, 4869, 2082, 4876, 2083, 4806, 1789 ) ) ) {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
-    }
-}
+// Estilos .wd-shop-tools ocultos - ahora se cargan solo desde el master controller
+// en functions.php (cada setup_*_cpu_fix añade su propio wp_head CSS)
 
 // CACHÉ INTELIGENTE PARA FILTROS - OPTIMIZACIÓN CRÍTICA
 function adrihosan_cache_filter_widget($widget_id, $cache_key) {
@@ -185,12 +181,4 @@ add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 /**
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
  */
-function adrihosan_preload_css_critico() {
-    if (is_product_category()) {
-        $cat_id = get_queried_object_id();
-        $css_file = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
-        
-        echo '<link rel="preload" href="' . esc_url($css_file) . '" as="style">' . "\n";
-    }
-}
-add_action('wp_head', 'adrihosan_preload_css_critico', 1);
+// Preload CSS - integrado en adrihosan_cargar_css_categoria() que ya tiene el check is_product_category()

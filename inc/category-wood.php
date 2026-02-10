@@ -10,36 +10,9 @@
  * =============================================================================
  ********************************************************************************/
 
-add_action( 'wp_head', 'adrihosan_custom_category_final_fix_css', 999 );
-function adrihosan_custom_category_final_fix_css() {
-    // Lista de IDs de TODAS las categorías personalizadas
-    $custom_category_ids = array(62, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4564, 2209, 1789);
-
-    // Solo ejecutar si estamos en una de esas categorías
-    if ( is_product_category( $custom_category_ids ) ) {
-        ?>
-        <style type="text/css">
-            /*
-             * PASO 1: Oculta completamente los contenedores de filtros y herramientas del tema.
-             */
-            .filter-wrapper,
-            .wd-shop-tools {
-                display: none !important;
-            }
-
-            /*
-             * PASO 2 (SOLUCIÓN MEJORADA): Fuerza a la rejilla de productos a posicionarse
-             * debajo de cualquier elemento flotante y añade un margen superior robusto.
-             * Usamos 'div.products' para aumentar la especificidad sobre las reglas del tema.
-             */
-            div.products-grid.products {
-                clear: both !important;
-                margin-top: 250px !important; /* Aumentamos el margen para asegurar el espacio */
-            }
-        </style>
-        <?php
-    }
-}
+// CSS global de categorías personalizadas - ahora se carga solo via master controller
+// Los estilos .wd-shop-tools y .filter-wrapper se inyectan desde cada setup_*_cpu_fix()
+// El margin-top de products-grid se mueve a los CSS externos por categoría
 
 // =============================================================================
 // LANDING SUELO IMITACIÓN MADERA - ID 2209 (VERSIÓN LIMPIA Y VALIDADA)

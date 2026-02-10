@@ -73,6 +73,21 @@ function adrihosan_master_controller_cpu_fix() {
         case 2245: // Porcelánico Imitación Mármol
             adrihosan_setup_porcelanico_marmol_cpu_fix();
             break;
+        case 62: // Cerámica
+            adrihosan_setup_ceramica_cpu_fix();
+            break;
+        case 2410: // Porcelánico
+            adrihosan_setup_porcelanico_cpu_fix();
+            break;
+        case 1844: // Gran Formato
+            adrihosan_setup_gran_formato_cpu_fix();
+            break;
+        case 2510: // Extrafino
+            adrihosan_setup_extrafino_cpu_fix();
+            break;
+        case 2093: // Metro
+            adrihosan_setup_metro_cpu_fix();
+            break;
     }
 }
 
@@ -232,6 +247,71 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
     add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_marmol_contenido_inferior', 99);
 
     // Ocultar filtros antiguos
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_ceramica_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20);
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_porcelanico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20);
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_gran_formato_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20);
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_extrafino_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20);
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_metro_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    if (!is_paged()) {
+        remove_all_actions('woocommerce_archive_description');
+    }
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
     add_action('wp_head', function() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });

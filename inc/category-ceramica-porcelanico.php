@@ -11,83 +11,14 @@
 /* ========================================================================== */
 /* ESTILOS FINALES PARA LA TABLA DE COMPARACIÓN (MÓVIL) */
 /* ========================================================================== */
-add_action('wp_head', function() {
-    // Solo aplicamos esto en la categoría Pilar Hidráulico (ID 4564)
-    if ( is_product_category( 4564 ) ) {
-        ?>
-        <style>
-        @media (max-width: 768px) {
-            
-            /* 1. OCULTAR EL TEXTO "VER OPCIONES" (Usando tu nueva clase) */
-            .ocultar-en-movil {
-                display: none !important;
-            }
-
-            /* 2. PONER LOS BOTONES EN FILA HORIZONTAL */
-            .bhp-comparison-table tfoot tr {
-                display: flex !important;
-                flex-direction: row !important;
-                width: 100% !important;
-                gap: 10px !important;
-                padding: 10px 0 !important;
-                border: none !important;
-            }
-
-            /* 3. QUE CADA BOTÓN OCUPE EXACTAMENTE LA MITAD */
-            .bhp-comparison-table tfoot td {
-                display: block !important;
-                width: 50% !important;
-                flex: 1 1 50% !important; 
-                padding: 0 !important;
-                margin: 0 !important;
-                border: none !important;
-                background: transparent !important;
-            }
-
-            /* 4. LIMPIEZA DE CUALQUIER TEXTO AUTOMÁTICO */
-            .bhp-comparison-table tfoot td::before {
-                content: none !important;
-                display: none !important;
-            }
-
-            /* 5. DISEÑO DE LOS BOTONES */
-            .bhp-comparison-table tfoot .boton-adrihosan {
-                width: 100% !important;
-                display: flex !important;
-                justify-content: center;
-                align-items: center;
-                height: 42px !important;
-                font-size: 11px !important;
-                margin: 0 !important;
-                text-align: center !important;
-                padding: 0 5px !important;
-            }
-        }
-        </style>
-        <?php
-    }
-}, 100);
+// Estilos tabla comparación móvil cat 4564 - se cargan solo via master controller
+// (movido a CSS externo o cargado condicionalmente)
 
 /* ========================================================================== */
 /* PÁGINA PILAR CERÁMICA (ID 62) - VERSIÓN MAESTRA TOTAL CON SEO DINÁMICO */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_ceramica_definitiva_controller' );
-
-function adrihosan_ceramica_definitiva_controller() {
-    if ( ! is_product_category( 62 ) || is_singular('product') ) {
-        return;
-    }
-
-    add_filter( 'woocommerce_show_page_title', '__return_false' );
-    if ( ! is_paged() ) {
-        remove_all_actions( 'woocommerce_archive_description' );
-    }
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
-    add_action( 'woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5 );
-    add_action( 'woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20 );
-}
+// Controller cat 62 - movido al master controller en functions.php
 
 /* ========================================================================== */
 /* EL CEREBRO SUPERIOR: HERO BLINDADO + FIX IMAGEN + TRANSPLANTE              */
@@ -249,41 +180,13 @@ function adrihosan_ceramica_inferior_final() {
     <?php
 }
 
-add_action( 'wp_head', 'adrihosan_kill_theme_stuff_cat62', 999 );
-function adrihosan_kill_theme_stuff_cat62() {
-    if ( is_product_category( 62 ) ) {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
-    }
-}
+// CSS cat 62 - movido al master controller en functions.php
 
 /* ========================================================================== */
 /* PÁGINA PILAR PORCELÁNICO (ID 2410) - VERSIÓN MAESTRA 2026 */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_porcelanico_controller' );
-
-function adrihosan_pilar_porcelanico_controller() {
-    // Si NO estamos en la categoría 2410, no hacemos nada.
-    if ( ! is_product_category( 2410 ) || is_singular('product') ) {
-        return;
-    }
-
-    // 1. LIMPIEZA TÉCNICA (Eliminar elementos por defecto)
-    add_filter( 'woocommerce_show_page_title', '__return_false' );
-    if ( ! is_paged() ) {
-        remove_all_actions( 'woocommerce_archive_description' );
-    }
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
-    // 2. INYECCIÓN DE CONTENIDO PERSONALIZADO
-    add_action( 'woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5 );
-    add_action( 'woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20 );
-    
-    // 3. CSS DE EMERGENCIA (Para ocultar filtros nativos del tema y evitar el desastre visual)
-    add_action( 'wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper { display: none !important; }</style>';
-    });
-}
+// Controller cat 2410 - movido al master controller en functions.php
 
 /**
  * BLOQUE SUPERIOR: Hero, Hubs Visuales, JS Transplante y Filtros
@@ -507,25 +410,7 @@ function adrihosan_porcelanico_inferior_final() {
 /* 1. PÁGINA PILAR GRAN FORMATO (ID 1844) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_gran_formato_controller' );
-
-function adrihosan_pilar_gran_formato_controller() {
-    // Si NO estamos en la categoría 1844, salir.
-    if ( ! is_product_category( 1844 ) || is_singular('product') ) {
-        return;
-    }
-
-    // Limpieza Técnica
-    add_filter( 'woocommerce_show_page_title', '__return_false' );
-    if ( ! is_paged() ) {
-        remove_all_actions( 'woocommerce_archive_description' );
-    }
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
-    // Inyección de Contenido
-    add_action( 'woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5 );
-    add_action( 'woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20 );
-}
+// Controller cat 1844 - movido al master controller en functions.php
 
 function adrihosan_gran_formato_superior_final() {
     ?>
@@ -598,23 +483,7 @@ function adrihosan_gran_formato_inferior_final() {
 /* 2. PÁGINA PILAR PORCELÁNICO EXTRAFINO (ID 2510) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_extrafino_controller' );
-
-function adrihosan_pilar_extrafino_controller() {
-    if ( ! is_product_category( 2510 ) || is_singular('product') ) {
-        return;
-    }
-    // Limpieza Técnica
-    add_filter( 'woocommerce_show_page_title', '__return_false' );
-    if ( ! is_paged() ) {
-        remove_all_actions( 'woocommerce_archive_description' );
-    }
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
-    // Inyección de Contenido
-    add_action( 'woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5 );
-    add_action( 'woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20 );
-}
+// Controller cat 2510 - movido al master controller en functions.php
 
 function adrihosan_extrafino_superior_final() {
     ?>
@@ -689,21 +558,7 @@ function adrihosan_extrafino_inferior_final() {
 /* 3. PÁGINA PILAR AZULEJO METRO (ID 2093) - VERSIÓN FINAL */
 /* ========================================================================== */
 
-add_action( 'wp', 'adrihosan_pilar_metro_controller' );
-
-function adrihosan_pilar_metro_controller() {
-    if ( ! is_product_category( 2093 ) || is_singular('product') ) {
-        return;
-    }
-    add_filter( 'woocommerce_show_page_title', '__return_false' );
-    if ( ! is_paged() ) {
-        remove_all_actions( 'woocommerce_archive_description' );
-    }
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-    
-    add_action( 'woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5 );
-    add_action( 'woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20 );
-}
+// Controller cat 2093 - movido al master controller en functions.php
 
 function adrihosan_metro_superior_final() {
     ?>
