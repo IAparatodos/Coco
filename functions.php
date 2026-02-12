@@ -583,12 +583,26 @@ if (is_admin()) {
  
 function dw_scripts() {
 	wp_enqueue_script( 'dw-customizer', get_template_directory_uri() . '/js/dw-customizer.js', array(), _S_VERSION, true );
+
+	// Cache doo_menu_cats() - con 1.496 categorías, esta query es muy pesada
+	// Sin cache se ejecuta en CADA página. Con cache, solo 1 vez por hora.
+	$menu_cats = get_transient('adrihosan_menu_cats_cache');
+	if ($menu_cats === false) {
+		$menu_cats = doo_menu_cats();
+		set_transient('adrihosan_menu_cats_cache', $menu_cats, 3600);
+	}
+
 	wp_localize_script('dw-customizer','var_cus', array(
 		'accordion' => get_option('dw-op-cetelem-accordion'),
-		'custom_menu_cats' => doo_menu_cats(),
+		'custom_menu_cats' => $menu_cats,
 	));
 }
 add_action( 'wp_enqueue_scripts', 'dw_scripts' );
+
+// Invalidar cache de menú cuando se crean/editan/eliminan categorías
+add_action('created_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
+add_action('edited_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
+add_action('delete_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
  
 /**
  * Custom fields for Page
