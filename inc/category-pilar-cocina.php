@@ -30,7 +30,7 @@ function adrihosan_pilar_cocina_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_cocina_controller' );
+// Controller cat 4866 - movido al master controller en functions.php
 
 /**
  * Inyecta el contenido superior: Hero, Características, Inspiración y Filtros.

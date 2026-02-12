@@ -15,7 +15,7 @@
  * BLOQUE 1: Contenido SUPERIOR para Camerinos (Antes de los productos)
  * -----------------------------------------------------------------------------
  */
-add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10 );
+// Hook movido al master controller en functions.php (cat 2626)
 function adrihosan_contenido_superior_camerinos() {
 
     if ( is_product_category( 2626 ) && ! is_singular('product') ) {
@@ -111,7 +111,7 @@ function adrihosan_contenido_superior_camerinos() {
  * BLOQUE 2: Contenido INFERIOR para Camerinos (Después de los productos)
  * -----------------------------------------------------------------------------
  */
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22 );
+// Hook movido al master controller en functions.php (cat 2626)
 function adrihosan_contenido_inferior_camerinos() {
     if ( is_product_category( 2626 ) && ! is_singular('product') ) {
         ?>

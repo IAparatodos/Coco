@@ -306,7 +306,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
         }
     }
 }
-add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8 );
+// Hook movido al master controller en functions.php (cat 4247)
 
 if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_redondo' ) ) {
     function adrihosan_contenido_inferior_espejos_redondo() {
@@ -348,4 +348,4 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_redondo' ) ) {
         }
     }
 }
-add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21 );
+// Hook movido al master controller en functions.php (cat 4247)

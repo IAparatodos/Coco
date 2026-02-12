@@ -29,7 +29,7 @@ function adrihosan_pilar_imitacion_controller() {
     add_action( 'woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5 );
     add_action( 'woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20 );
 }
-add_action( 'template_redirect', 'adrihosan_pilar_imitacion_controller' );
+// Controller cat 2082 - movido al master controller en functions.php
 
 
 /**

@@ -88,6 +88,27 @@ function adrihosan_master_controller_cpu_fix() {
         case 2093: // Metro
             adrihosan_setup_metro_cpu_fix();
             break;
+        case 4865: // Original / Baño
+            adrihosan_setup_pilar_bano_cpu_fix();
+            break;
+        case 4866: // Original / Cocina
+            adrihosan_setup_pilar_cocina_cpu_fix();
+            break;
+        case 4869: // Original / Exterior
+            adrihosan_setup_pilar_exterior_cpu_fix();
+            break;
+        case 4564: // Baldosa Hidráulica (Pilar)
+            adrihosan_setup_pilar_bh_cpu_fix();
+            break;
+        case 2082: // Imitación Hidráulico
+            adrihosan_setup_imitacion_hidraulico_cpu_fix();
+            break;
+        case 2626: // Camerino Baño
+            adrihosan_setup_camerinos_cpu_fix();
+            break;
+        case 4247: // Espejos Redondos
+            adrihosan_setup_espejos_redondo_cpu_fix();
+            break;
     }
 }
 
@@ -315,6 +336,67 @@ function adrihosan_setup_metro_cpu_fix() {
     add_action('wp_head', function() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });
+}
+
+function adrihosan_setup_pilar_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+}
+
+function adrihosan_setup_pilar_cocina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+}
+
+function adrihosan_setup_pilar_exterior_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+}
+
+function adrihosan_setup_pilar_bh_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+    remove_action('woocommerce_no_products_found', 'wc_no_products_found', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99);
+}
+
+function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
+}
+
+function adrihosan_setup_camerinos_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22);
+}
+
+function adrihosan_setup_espejos_redondo_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21);
 }
 
 // FIN CONTROLADOR MAESTRO
