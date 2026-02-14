@@ -85,51 +85,19 @@ function adrihosan_wood_contenido_superior() {
         </div>
     </section>
 
-    <!-- 4. FILTROS RÁPIDOS -->
-    <section class="wood-filtros-section adrihosan-full-width-block">
-        <div class="wood-filtros-wrapper">
-            <h2>Encuentra tu suelo porcel&aacute;nico ideal</h2>
+    <!-- 4. CONSEJO ADRIA -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Para encontrar tu suelo ideal, usa los filtros de <strong>Ubicaci&oacute;n</strong> y <strong>Acabado</strong>. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+    </div>
 
-            <div class="wood-filter-group">
-                <h3 class="wood-filter-group-title">Por Color</h3>
-                <div class="wood-filter-buttons">
-                    <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="wood-filter-btn">Gris</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'oak', $category_url)); ?>" class="wood-filter-btn">Roble</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'blanco', $category_url)); ?>" class="wood-filter-btn">Blanco</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'natural', $category_url)); ?>" class="wood-filter-btn">Beige</a>
-                    <a href="<?php echo esc_url(add_query_arg('color', 'nogal', $category_url)); ?>" class="wood-filter-btn">Nogal</a>
-                </div>
-            </div>
+    <!-- 5. DESTINO MÓVIL + WIDGET FILTROS -->
+    <div id="destino-filtro-adria-wood" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
-            <div class="wood-filter-group">
-                <h3 class="wood-filter-group-title">Por Estancia</h3>
-                <div class="wood-filter-buttons">
-                    <a href="<?php echo esc_url(add_query_arg('estancia', 'bano', $category_url)); ?>" class="wood-filter-btn">Ba&ntilde;o</a>
-                    <a href="<?php echo esc_url(add_query_arg('estancia', 'salon', $category_url)); ?>" class="wood-filter-btn">Sal&oacute;n</a>
-                    <a href="<?php echo esc_url(add_query_arg('estancia', 'terraza', $category_url)); ?>" class="wood-filter-btn">Exterior</a>
-                </div>
-            </div>
-
-            <div class="wood-filter-group">
-                <h3 class="wood-filter-group-title">Por Acabado</h3>
-                <div class="wood-filter-buttons">
-                    <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="wood-filter-btn">Rectificado</a>
-                    <a href="<?php echo esc_url(add_query_arg('acabado', 'mate', $category_url)); ?>" class="wood-filter-btn">Mate</a>
-                    <a href="<?php echo esc_url(add_query_arg('acabado', 'antideslizante', $category_url)); ?>" class="wood-filter-btn">Antideslizante</a>
-                </div>
-            </div>
-
-            <div class="wood-filter-tags">
-                <a href="<?php echo esc_url(add_query_arg('azulejo-tipo', 'suelo-porcelanico', $category_url)); ?>" class="wood-tag">Gres Imitaci&oacute;n Madera</a>
-                <a href="<?php echo esc_url(add_query_arg('uso', 'suelo-radiante', $category_url)); ?>" class="wood-tag">Suelo Radiante</a>
-                <a href="<?php echo esc_url(add_query_arg('orderby', 'price', $category_url)); ?>" class="wood-tag">Ofertas Baratas</a>
-                <a href="<?php echo esc_url(add_query_arg('formato', 'gran-formato', $category_url)); ?>" class="wood-tag">Gran Formato</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. TÍTULO CATÁLOGO -->
-    <div id="catalogo-wood" style="scroll-margin-top: 20px;"></div>
+    <!-- 6. TÍTULO CATÁLOGO -->
+    <div id="catalogo-wood" class="product-loop-header">
+        <h2 class="product-loop-title">Cat&aacute;logo de Suelos Imitaci&oacute;n Madera</h2>
+    </div>
 
     <?php
 }

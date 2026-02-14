@@ -273,101 +273,27 @@
 }
 
 /* ========================================================================== */
-/* FILTROS RAPIDOS SECTION                                                    */
+/* CONSEJO ADRIA + FILTRO (adria-tip-box ya tiene estilos globales)           */
 /* ========================================================================== */
-.tax-product_cat.term-2209 .wood-filtros-section {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    border-top: 1px solid #eef2f5;
+.tax-product_cat.term-2209 .adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0fafa;
+    border-left: 4px solid #4dd2d0;
+    border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-2209 .wood-filtros-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
+.tax-product_cat.term-2209 .adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.tax-product_cat.term-2209 .wood-filtros-wrapper h2 {
-    font-size: clamp(1.5rem, 3.5vw, 2rem);
-    font-weight: 700;
+.tax-product_cat.term-2209 .adria-tip-box strong {
     color: #102e35;
-    margin: 0 0 40px 0;
-}
-
-.tax-product_cat.term-2209 .wood-filter-group {
-    margin-bottom: 30px;
-}
-
-.tax-product_cat.term-2209 .wood-filter-group:last-of-type {
-    margin-bottom: 0;
-}
-
-.tax-product_cat.term-2209 .wood-filter-group-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #3f6f7b;
-    margin: 0 0 15px 0;
-}
-
-.tax-product_cat.term-2209 .wood-filter-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.tax-product_cat.term-2209 .wood-filter-btn,
-.tax-product_cat.term-2209 .wood-filter-btn:visited {
-    display: inline-block;
-    padding: 10px 22px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    border: 2px solid #4dd2d0;
-    background-color: #4dd2d0;
-    color: #ffffff;
-    transition: all 0.2s ease-in-out;
-}
-
-.tax-product_cat.term-2209 .wood-filter-btn:hover {
-    background-color: #ffffff;
-    color: #4dd2d0;
-    transform: translateY(-2px);
-}
-
-.tax-product_cat.term-2209 .wood-filter-tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-    padding-top: 25px;
-    border-top: 1px solid #eef2f5;
-}
-
-.tax-product_cat.term-2209 .wood-tag,
-.tax-product_cat.term-2209 .wood-tag:visited {
-    display: inline-block;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-decoration: none;
-    border: 1px solid #d0d5dd;
-    background-color: #f7f9fa;
-    color: #3f6f7b;
-    transition: all 0.2s ease;
-}
-
-.tax-product_cat.term-2209 .wood-tag:hover {
-    background-color: #4dd2d0;
-    border-color: #4dd2d0;
-    color: #ffffff;
-    transform: translateY(-2px);
 }
 
 /* ========================================================================== */
@@ -410,19 +336,8 @@
     }
 
     .tax-product_cat.term-2209 .wood-ventajas-wrapper h2,
-    .tax-product_cat.term-2209 .ap-inspiration-wrapper h2,
-    .tax-product_cat.term-2209 .wood-filtros-wrapper h2 {
+    .tax-product_cat.term-2209 .ap-inspiration-wrapper h2 {
         font-size: 1.5rem;
-    }
-
-    .tax-product_cat.term-2209 .wood-filter-btn {
-        padding: 8px 16px;
-        font-size: 0.8rem;
-    }
-
-    .tax-product_cat.term-2209 .wood-tag {
-        padding: 6px 14px;
-        font-size: 0.8rem;
     }
 }
 
