@@ -31,7 +31,7 @@ function adrihosan_contenido_superior_bano() {
 		</div>
 		
 		<div id="destino-filtro-adria-bano-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426278"]'); ?></div>
 
 		<section class="ap-product-header-section adrihosan-full-width-block"><div id="ap-productos-bano-grid" class="ap-product-header-wrapper"><h2>Nuestro Catálogo para Baños</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div></section>
 
