@@ -669,6 +669,16 @@ add_action('admin_menu','dw_register_block_reusable_menu_page');
  
  
  
+// Invalidar cache de bloques del footer al editar bloques reutilizables
+function dw_invalidate_footer_blocks_cache($post_id) {
+	$post_type = get_post_type($post_id);
+	if ($post_type === 'wp_block' || $post_type === 'page') {
+		delete_transient('dw_footer_block_html');
+		delete_transient('dw_footer_block_home_html');
+	}
+}
+add_action('save_post', 'dw_invalidate_footer_blocks_cache');
+
 //Elimina el aviso de Past-due
 add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
 /**
