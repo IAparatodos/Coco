@@ -53,7 +53,7 @@ function adrihosan_wood_contenido_superior() {
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-cocina-Adrihosan.jpg" alt="Suelos imitaci&oacute;n madera gris y tonos claros">
                     <div class="ap-card-content"><h3>Tonos Grises y Claros</h3></div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/atributo/colocacion-azulejo/col-espiga/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-piscina-Adrihosan.jpg" alt="Suelo imitaci&oacute;n madera espiga">
                     <div class="ap-card-content"><h3>Suelo en Espiga</h3></div>
                 </a>
