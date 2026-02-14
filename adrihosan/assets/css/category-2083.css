@@ -1,0 +1,643 @@
+/* ========================================================================== */
+/* CATEGORY-2083.CSS - Azulejo Hidráulico Baño                                */
+/* ========================================================================== */
+
+.tax-product_cat.term-2083 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- HERO SECTION --- */
+.ap-hero-section-bano {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    padding: 40px 20px;
+    background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ap-hero-section-bano::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.55);
+    z-index: 1;
+}
+
+.ap-hero-content-bano {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ap-hero-content-bano h1 {
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ap-hero-content-bano p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    opacity: 0.95;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ap-hero-cta-bano,
+.ap-hero-cta-bano:visited {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border: 2px solid #4dd2d0;
+    background-color: #4dd2d0;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.ap-hero-cta-bano:hover {
+    background-color: #ffffff;
+    color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* --- VALUE SECTION --- */
+.ap-value-section-bano {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f7f9fa;
+    padding: 80px 20px;
+    border-bottom: 1px solid #eef2f5;
+}
+
+.ap-value-wrapper-bano {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ap-value-wrapper-bano .section-header-bano {
+    margin-bottom: 50px;
+}
+
+.ap-value-wrapper-bano .section-header-bano h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+
+.ap-value-wrapper-bano .section-header-bano p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.ap-value-grid-bano {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.ap-value-card-bano {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    text-align: center;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ap-value-card-bano:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, .08);
+}
+
+.ap-value-card-bano .icon {
+    font-size: 3rem;
+    line-height: 1;
+    color: #4dd2d0;
+    margin-bottom: 20px;
+}
+
+.ap-value-card-bano h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 10px 0;
+}
+
+.ap-value-card-bano p {
+    font-size: .95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- INSPIRATION SECTION --- */
+.ap-inspiration-section-bano {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.ap-inspiration-wrapper-bano {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ap-inspiration-wrapper-bano h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+
+.ap-inspiration-wrapper-bano .section-subtitle-bano {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+.ap-inspiration-grid-bano {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.ap-inspiration-card-bano {
+    position: relative;
+    display: block;
+    min-height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(16, 46, 53, 0.1);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ap-inspiration-card-bano:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(16, 46, 53, 0.15);
+}
+
+.ap-inspiration-card-bano img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.ap-inspiration-card-bano:hover img {
+    transform: scale(1.05);
+}
+
+.ap-inspiration-card-bano::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 2;
+}
+
+.ap-card-content-bano {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 3;
+    text-align: left;
+}
+
+.ap-card-content-bano h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.ap-card-content-bano p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+    color: white;
+}
+
+/* --- FILTERS SECTION --- */
+.ap-filters-section {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f7f9fa;
+    padding: 60px 20px;
+    border-top: 1px solid #eef2f5;
+}
+
+.ap-filters-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.ap-filters-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ap-filters-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0;
+}
+
+.ap-filter-group {
+    margin-bottom: 30px;
+}
+
+.ap-filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.ap-filter-group-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.ap-filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ap-filter-btn,
+.ap-filter-btn:visited {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: none;
+    border: 2px solid #4dd2d0;
+    background-color: #4dd2d0;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.ap-filter-btn:hover {
+    background-color: #fff;
+    color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* --- PRODUCT HEADER SECTION --- */
+.ap-product-header-section {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    padding: 40px 20px 0 20px;
+    text-align: center;
+}
+
+.ap-product-header-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ap-product-header-wrapper h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.ap-product-header-wrapper p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- SEO CONTENT SECTION --- */
+.ap-seo-content-section {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.ap-seo-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #3f6f7b;
+}
+
+.ap-seo-content-wrapper h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ap-seo-content-wrapper h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.ap-seo-content-wrapper p {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper strong {
+    font-weight: 600;
+    color: #102e35;
+}
+
+.ap-seo-content-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ap-seo-content-wrapper li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.ap-seo-content-wrapper li::before {
+    content: '\2714\fe0f';
+    color: #4dd2d0;
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+}
+
+/* --- FAQ SECTION --- */
+.ap-faq-section {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.ap-faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ap-faq-main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.ap-faq-item {
+    border-bottom: 1px solid #eef2f5;
+}
+
+.ap-faq-item:last-child {
+    border-bottom: none;
+}
+
+.ap-faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.ap-faq-question span:first-child {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #102e35;
+    line-height: 1.6;
+    padding-right: 15px;
+}
+
+.ap-faq-question:hover span:first-child {
+    color: #4dd2d0;
+}
+
+.ap-faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #102e35;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.ap-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.ap-faq-answer p {
+    padding-bottom: 1.25rem;
+    margin: 0;
+}
+
+.ap-faq-item.active .ap-faq-question span:first-child {
+    color: #4dd2d0;
+}
+
+.ap-faq-item.active .ap-faq-answer {
+    max-height: 500px;
+}
+
+.ap-faq-item.active .ap-faq-icon {
+    transform: rotate(45deg);
+    color: #4dd2d0;
+}
+
+/* --- HELP SECTION --- */
+.ap-help-section {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f7f9fa;
+    padding: 80px 20px;
+    border-top: 1px solid #eef2f5;
+}
+
+.ap-help-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ap-help-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.ap-help-intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #4dd2d0;
+    box-shadow: 0 4px 15px rgba(16, 46, 53, .1);
+}
+
+.ap-help-intro h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0;
+    text-align: left;
+}
+
+.ap-help-intro h2 span {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+
+.ap-contact-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.ap-contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 25px 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #eef2f5;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ap-contact-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, .08);
+}
+
+.ap-contact-option .icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #4dd2d0;
+    margin-bottom: 15px;
+}
+
+.ap-contact-option .label {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #102e35;
+}
+
+@media (max-width: 768px) {
+    .ap-help-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ap-help-intro h2 {
+        text-align: center;
+    }
+
+    /* --- FILTRO MÓVIL --- */
+    .tax-product_cat.term-2083 .solo-movil-filtro {
+        display: block !important;
+        margin: 20px 0 30px 0 !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion {
+        text-align: center !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container a,
+    #destino-filtro-adria-bano-imitacion a.wpc-filters-open-button {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: #4dd2d0 !important;
+        color: #ffffff !important;
+        padding: 14px 30px !important;
+        border-radius: 5px !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        letter-spacing: 0.5px !important;
+        box-shadow: 0 4px 15px rgba(77, 210, 208, 0.3) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    #destino-filtro-adria-bano-imitacion .wpc-filters-open-button-container a:hover,
+    #destino-filtro-adria-bano-imitacion a.wpc-filters-open-button:hover {
+        background-color: #102e35 !important;
+        box-shadow: 0 6px 20px rgba(16, 46, 53, 0.3) !important;
+    }
+}

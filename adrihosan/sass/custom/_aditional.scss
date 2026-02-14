@@ -1,0 +1,670 @@
+
+// CSS adicional - extra - (no Doowebs)
+
+.bottom-menu ul li {
+	border-radius: 100px;
+	width: 20px;
+	margin: 10px 5px;
+	background: #00d1c7;
+	float: right;
+	height: 20px;
+	color: #fff;
+	font-size: 10px;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 1px 2px 8px #333;
+	transition: all .5s ease;
+}
+
+.paged .woocommerce-products-header {
+height: 95px;
+}
+
+
+.archive main .term-description {
+	margin-top: -24px;
+	position: relative;
+	z-index: 2;
+	width: auto;
+	height: auto;
+	max-height: 110px;
+	overflow: hidden;
+	text-overflow: -webkit-ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* ASISTENTES */
+.tf-v1-sidetab{display:none;}
+
+body.term-pavimentos .tf-v1-sidetab, body.escaparate-pavimentos-porcelanicos-y-de-gres .tf-v1-sidetab{display:block;}
+
+body.term-pavimentos .tf-v1-sidetab + .tf-v1-sidetab, body.term-pavimentos .tf-v1-sidetab + .tf-v1-sidetab + .tf-v1-sidetab, body.escaparate-pavimentos-porcelanicos-y-de-gres .tf-v1-sidetab + .tf-v1-sidetab, body.escaparate-pavimentos-porcelanicos-y-de-gres .tf-v1-sidetab + .tf-v1-sidetab + .tf-v1-sidetab {display:none}
+
+body.term-fregaderos .tf-v1-sidetab, body.term-fregaderos .tf-v1-sidetab + .tf-v1-sidetab + .tf-v1-sidetab {display:none}
+
+body.term-fregaderos .tf-v1-sidetab + .tf-v1-sidetab {display:block}
+
+body.term-encimeras-solid-surface .tf-v1-sidetab, body.term-encimeras-solid-surface .tf-v1-sidetab + .tf-v1-sidetab {display:none}
+
+body.term-encimeras-solid-surface .tf-v1-sidetab + .tf-v1-sidetab  + .tf-v1-sidetab {display:block}
+
+.tf-v1-sidetab-close {
+color: #4dd2d0 !important;
+}
+
+/* */
+.home-banner-2 figure {
+text-align: center;
+}
+@media (max-width: 599px) {
+
+.home-banner-1 .wp-block-column:first-child .wp-block-group {
+	padding: 16px 16px 16px 0;
+}
+
+.home-banner-2 {
+	margin: 100px auto 0;
+}	
+
+.home-banner-2 .wp-block-image img {
+	width: 100% !important;
+}	
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 781px) {
+.home-banner-2 .wp-block-column {
+margin: 0 auto 36.45px!important;
+}
+}
+.search h1 {
+font-size: 2em;
+}
+.wcssc-icons-container .fa-envelope:after, .wcssc-icons-container .fa-save:after {
+font-size: 0.4em;
+margin: 10px 0 0;
+display: block;
+}
+.wcssc-icons-container .fa-envelope:after {
+content: "Enviar";
+}
+.wcssc-icons-container .fa-save:after {
+content: "Guardar";
+}
+@media (max-width:320px){body.archive.tax-product_cat.term-pavimentos.term-64 .advanced-filter .form-inputs-content .search-content .term-value{font-size:11px!important}}
+
+@media (max-width: 800px){
+.single-post h1 {
+line-height: 30px;
+font-weight: bold;
+}
+
+.single-post h3 {
+height: inherit;
+}	
+
+}
+
+.zopim {
+z-index: 10000!important;
+}
+#pum-119037{z-index: 10002!important}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+.adrihosan-404 h1.page-title {
+font-family: 'Playfair Display', serif;
+font-style: italic;
+font-weight: 700;
+color: #4dd2d0;
+}
+
+.adrihosan-404 p {
+color: #373737 !important;
+font-weight: 600 !important;
+}
+
+@media (min-width: 768px){
+
+.adrihosan-error-404 .izqda, .adrihosan-error-404 .dcha	{
+min-height:520px;
+margin-bottom: 0
+}
+}
+
+@media (min-width: 1101px){	
+.page-content.adrihosan-404 {
+	padding-left: 20%;
+}	
+
+.adrihosan-404 h1.page-title {
+font-size: 70px;
+line-height: 28px;
+}
+
+.adrihosan-404 p {
+width: 465px;
+font-size: 33px;
+line-height: 40px;
+margin-top: 55px;
+}
+}
+
+@media (max-width: 767px){
+.adrihosan-error-404 .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:only-child)	{
+	flex-basis: unset !important;
+} 
+
+.adrihosan-error-404 .dcha	{
+display:none;
+}
+.adrihosan-error-404 .izqda img	{
+display:none;
+}	
+.adrihosan-error-404 .izqda {
+	margin-bottom: 0;
+background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/03/error-404-adrihosan.jpg');	
+background-size: cover;	
+	align-items: start;
+	background-position: 65%;
+	min-height: 548px;
+	padding: 3em 3em;
+}	
+
+	.adrihosan-error-404 .izqda::before {
+		content: '';
+		background-color: #fff;
+		opacity: 0.5;
+		display: block;
+		height: 100%;
+		width: 100%;
+position: absolute;
+	z-index: 1;
+		top: 0;
+}
+.page-content.adrihosan-404 {
+	margin-top: 0;
+}
+
+.adrihosan-404 h1.page-title {
+	font-size: 47px;
+	color: #fff;
+	text-shadow: 2px 2px #4dd2d0;
+}
+
+.adrihosan-404 p {
+	line-height: 25px;
+}
+}
+
+.woocommerce-checkout .custom-block .wp-block-group .wp-image-120055, .woocommerce-checkout .custom-block .wp-block-group .wp-image-120075 {display: none !important;}
+
+.block-map iframe {
+width: 737px;
+}
+
+#showroom p {
+margin-bottom: 0px !important;
+}
+
+#showroom .wp-block-button__link {
+margin-top: 15px !important;
+margin-bottom: 15px !important;
+}
+
+#showroom .parking {
+padding-bottom: 105px !important;
+background-color:#1a6c7a;
+}
+
+.video-presu {
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.video-presu.wp-block-cover .wp-block-embed {
+box-shadow: 0 2px 10px 0 rgba(0,0,0,20%) !important;
+}
+
+.video-presu.wp-block-cover .wp-block-embed iframe {
+margin-bottom: -9px;
+}
+
+h2.titulo-presupuesto {
+color: #fff !important;
+}
+
+h2.titulo-presupuesto strong {
+color: #4dd2d0 !important;
+}
+
+@media (min-width: 1838px) {
+h2.titulo-presupuesto {
+padding: 0 31%;
+line-height: 70px;
+}
+}
+
+@media (max-width: 1837px) and (min-width: 769px) {
+h2.titulo-presupuesto {
+padding: 0 26%;
+line-height: 70px;
+}
+}
+@media (max-width: 768px){
+h2.titulo-presupuesto {
+padding: 0 0%;
+line-height: 44px;
+font-size: 32px !important;
+}
+}
+
+.term-revestimientos.archive .products .category-title {
+color: #fff;
+}
+
+.term-revestimientos.archive .products .category-title a:last-child {
+display: none !important;
+}
+
+#consulta-virtual.block-map {
+background: #fff !important;
+color: #000 !important;
+}
+
+@media (max-width: 800px) {
+.block-map .showroom {
+	font-size: 55px;
+}
+}
+
+@media (max-width: 375px) {
+.block-map .showroom {
+	font-size: 41px;
+}
+}
+
+.oculta {display: none !important;}
+/* .page-blog .title-image .wp-block-column:not(:first-child) {
+background-color: transparent !important;
+}
+
+@media (min-width: 801px) {
+body.page-id-15237.page-blog .blog-title {
+		margin: -373px auto 77px 10%;
+	width: fit-content;
+}
+
+body.tag .page-blog .blog-title h1 {
+max-width: unset;
+}
+}
+@media (max-width: 800px) {
+body.page-id-15237.page-blog .blog-title {
+	width: min-content;
+} */
+
+.tags-links {
+
+padding: 0px 20px 19px 30px;
+font: normal normal 300 13px/18px Poppins;
+color: #4dd2d0;
+}
+
+.tags-links a:hover, .wp-block-tag-cloud a:hover {
+color: #000;
+}
+
+.wp-block-tag-cloud {
+max-width: 1190px;
+margin: 0 auto 50px;
+text-align: center;
+
+}
+
+body.single-post .wp-block-tag-cloud {
+margin-top: 30px;
+}
+
+.entry-content .last-posts{margin-bottom:30px}
+
+body.archive .page-blog .blog-title h1 {
+max-width: 100%;
+}
+
+@media (max-width: 800px) {
+.page-blog .blog-title h1 span {font: normal normal 600 45px/50px Poppins}
+}	
+
+	strong {
+	font-weight: bold;
+}
+
+/*
+body.term-pavimentos .woocommerce-products-header h1.woocommerce-products-header__title.page-title::after{content:'Bienvenido a la categoría PAVIMENTOS de Adrihosan. A la derecha de la página verás un asistente que te ayudará a encontrar el pavimento que estás buscando'; font: normal normal 300 16px/25px Poppins;color:#171717;text-transform:none;display:inline-block}*/
+/*
+body.term-pavimentos .advanced-filter {
+margin-top: -450px;
+}
+
+@media (max-width: 600px) {
+body.term-pavimentos .advanced-filter {
+	margin-top: -280px;
+}
+
+body.term-pavimentos .woocommerce-products-header h1.woocommerce-products-header__title.page-title::after	{
+ font: normal normal 300 14px/21px Poppins;
+ display: inline-flex;
+padding-right: 20px;
+}	
+}
+
+#banner-video-asistente {
+display: none;
+}*/
+
+#popmake-121481 .wp-video {
+margin: 0 auto;
+height: 400px;
+}
+
+#popmake-121481 .mejs-controls, #banner-video-asistente .mejs-controls {
+display: none;
+}
+
+#popmake-121481, #popmake-121481 .mejs-container {
+max-height: 400px;
+}
+
+#popmake-121481 .wp-video-shortcode, #banner-video-asistente  .wp-video-shortcode  {
+max-height: 335px;
+}
+
+#popmake-121481 .mejs-overlay, #banner-video-asistente .mejs-overlay {
+left: -20px;
+justify-content: flex-end;
+top: 110px;
+}
+
+.negro {
+color: #000;
+}
+
+.block-map p {
+font: normal normal 300 23px/40px Poppins;
+max-width: 900px !important;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.block-map p strong {
+font-size: 23px;
+}
+
+@media (max-width: 900px) {
+.block-map p {
+max-width: 700px !important;
+}
+}
+
+/* area de afiliados */
+
+body.page-id-122233 #affwp-register-form, body.page-id-122233 #affwp-login-form {
+text-align: center;
+}
+
+body.page-id-122233 h1{
+color: #376873;
+text-align: center;
+padding-top: 30px;
+}
+
+
+body.page-id-122233 #affwp-register-form::before {
+content: 'Regístrate';
+font-weight: 700;
+color: #4dd2d0;
+font-size: 64px;
+line-height: 91px;
+} 
+
+
+
+body.page-id-122233 #affwp-register-form::after {
+	font-weight: 400;
+color: #408aa5;
+display: block;
+margin: 0 12%;
+font-size: 11px;
+line-height: 17px;
+text-align: left;
+content: 'PROTECCIÓN DE DATOS: De conformidad con las normativas de protección de datos, le facilitamos la siguiente información del tratamiento: Responsable: Adrihosan, S.L. Fines del tratamiento: Mantener una relación comercial y el envío de comunicaciones de productos o servicios. Derechos que le asisten: acceso, rectificación, portabilidad, supresión, limitación y oposición. Más información del tratamiento en la política de privacidad.';
+} 
+
+
+
+body.page-id-122233 #affwp-login-form::before {
+content: 'Accede';
+font-weight: 700;
+color: #4dd2d0;
+font-size: 64px;
+line-height: 91px;
+} 
+
+@media (max-width: 767px) {
+body.page-id-122233 #affwp-register-form::before, body.page-id-122233 #affwp-login-form::before {
+font-size: 2em;
+}
+}
+
+body.page-id-122233 .affwp-form p {
+text-align: left;
+}
+
+body.page-id-122233 .entry-content {
+padding: 2% 10%;	
+margin-bottom: -30px;
+}
+
+body.page-id-122233 .affwp-form {
+background: transparent;
+}
+
+body.page-id-122233 #page {
+background: url('https://www.adrihosan.com/wp-content/uploads/2022/05/bg-afiliados-e1652884958518.jpg') repeat rgb(241,241,242) 50% -10% / cover;
+
+background-attachment: fixed;
+overflow-x: hidden;
+}	
+
+body.page-id-122233 .site-main{
+background-color: rgba(255,255,255,0.87);
+}
+
+body.page-id-122233 #affwp-register-form fieldset {
+max-width: 513px;
+margin-left: auto;
+margin-right: auto;
+}
+
+body.page-id-122233 #affwp-register-form {
+padding-top: 30px !important;
+}
+
+body.page-id-122233 #affwp-login-form {
+padding-top: 120px !important;
+}
+
+body.page-id-122233 .affwp-form a {
+font-weight: 700;
+font-size: 13px;
+color: #376873;
+}
+
+body.page-id-122233 .affwp-form a:hover {
+text-decoration: underline;
+}
+
+body.page-id-122233 .affwp-form input[type=submit] {
+	border: 1px solid #4dd2d0 !important;
+	border-radius: 5px;
+	background: #4dd2d0;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	line-height: 1.5;
+	padding: 0.6em 1em 0.4em;
+}
+
+body.page-id-122233 .affwp-form input[type=submit]:hover {
+color: #4dd2d0;
+	background-color: #fff;
+	border: 1px solid #4dd2d0;
+	text-decoration: none;
+}	
+
+body.page-id-122233 #affwp-afiliate-dashboard {
+background: rgba(255,255,255,63%);
+padding: 2%;
+}
+
+
+@media (max-width: 767px) {
+body.page-id-122233 .entry-content {
+padding: 2% 2%;	
+
+}
+
+body.page-id-122233 .affwp-form p {
+	text-align: center;
+}
+
+body.page-id-122233 .affwp-form fieldset {
+margin-left: 0 !important;
+margin-right: 0 !important;
+	padding: .35em 0 .625em !important;
+}
+body.page-id-122233 .affwp-form label+input, body.page-id-122233 .affwp-form label+textarea {
+	width: auto !important;
+}
+
+body.page-id-122233	.affwp-form label {display: block}
+
+body.page-id-122233 .affwp-form legend {
+	margin: 32px 0 !important;
+}
+
+body.page-id-122233 .affwp-form input[type=submit] {
+	width: 80%;		
+}
+}	
+
+/*DESTACADOS*/
+
+
+.single-product .upsells ul li a {
+	color: #767676;
+	font: normal normal 300 10px/20px Poppins;
+}
+
+/* bloque afiliación home */
+/*
+.bloque-afiliacion {
+margin-top: 90px;
+}*/
+
+@media (min-width: 769px) {
+.bloque-afiliacion.escritorio {
+display: flex;
+}
+.bloque-afiliacion.movil {
+display: none;
+}		
+}	
+
+@media (max-width: 768px) {
+.bloque-afiliacion.escritorio {
+display: none;
+}
+.bloque-afiliacion.movil {
+display: block;
+}		
+}	
+/*
+.bloque-afiliacion.escritorio {
+ margin-top: 90px;
+}*/
+
+.bloque-afiliacion.escritorio.wp-block-cover .wp-block-cover__inner-container {
+width: 750px;
+position: absolute;
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.bloque-afiliacion.movil.wp-block-cover .wp-block-cover__inner-container {
+padding: 338px 0 0 16px;
+position: absolute;
+width: 86%;
+} 
+.single-product a.email-link {
+	display: none;
+	}
+
+
+h2.titulo-afiliacion strong {
+color: #4dd2d0 !important;
+font-weight: 600;
+}
+
+h2.titulo-afiliacion {
+color: #fff !important;
+font-weight: 600;
+letter-spacing: 2px;
+font-size: 56px;
+line-height: 61px;
+}
+
+.bloque-afiliacion p {
+font-size: 27px;
+line-height: 33px;
+margin-top: 10px;
+}
+
+@media (max-width: 414px) {
+h2.titulo-afiliacion {
+font-size: 41px !important;
+line-height: 50px;
+}
+
+.bloque-afiliacion p {
+font-size: 18px !important;
+line-height: 29px;
+}
+}	
+
+@media (max-width: 375px) {
+h2.titulo-afiliacion {
+font-size: 37px !important;
+line-height: 46px;
+}
+}
+
+@media (max-width: 320px) {
+	h2.titulo-afiliacion {
+	font-size: 31px !important;
+	line-height: 38px;
+	}
+
+	.bloque-afiliacion p {
+	font-size: 14px !important;
+	line-height: 26px;
+	}
+}
+

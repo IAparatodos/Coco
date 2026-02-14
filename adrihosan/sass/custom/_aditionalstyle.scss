@@ -1,0 +1,1294 @@
+/*Art Project Group*/
+.wcssc h1{font-size:1.6em}.woocommerce-cart .coupon.enabled button,.woocommerce-cart .coupon.enabled input,.woocommerce-cart .coupon.enabled label{display:inline-block}#wcssc-button-container button,.wc-proceed-to-checkout a.button{width:auto;min-width:49%;max-width:49%;margin:26px 0 0;line-height:30px;padding:4px 0;text-align:center;display:inline-block}#wcssc-button-container button{background-color:#fff;color:#4dd2d0}#wcssc-button-container button:hover{background-color:#4dd2d0;color:#fff}.wc-proceed-to-checkout a.button{vertical-align:bottom}.popup-container .right .btn.cart{padding:4px 0}.modal-dialog{top:50%;margin:-115px auto auto}.modal-header .close{background-color:#fff;border:none;color:#333}.modal-header span{margin:0 0 0 100%}.wcssc-notice{background-color:#4dd2d0;color:#fff}.wcssc-form-row button{background-color:#fff;color:#4dd2d0}.wcssc-form-row button[type=submit]{background-color:#4dd2d0;color:#fff}.wcssc .entry-header{max-width:1060px;margin:0 auto}@media (max-width:600px){.wcssc h1{font-size:.6em}.woocommerce-cart .wc-proceed-to-checkout{padding-left:2px}.single_add_to_cart_button.button.alt{font-size:.6em}.popup-container .right .btn.cart{font-size:.9em}#wcssc-button-container button,.wc-proceed-to-checkout a.button{margin:0;font-size:11px}.wc-proceed-to-checkout a.button{font-size:15px}.wcssc-form-row button{margin-right:.4em}.wcssc-form-row button[type=submit]{margin:0}}
+
+/*Entradas en categorías de producto*/
+.woocommerce-products-blog-header h2 {
+    font: normal normal 600 60px/70px Poppins;
+    color: #171717;
+    margin: 127px 0 28px;
+    position: relative;
+    z-index: 5;
+    text-transform: uppercase;
+}
+
+/*Reiniciar filtros*/
+#woo-clear-filters {
+    color: #fff!important;
+}
+
+/*RGPD - Art Project Group*/
+.RGPD {
+    font-size: 70%;
+}
+.formulario .comment-reply-title {
+    font-size: 100% !important;
+}
+.formulario p > span {
+    cursor: pointer;
+}
+.formulario ul {
+    display: none;
+}
+.single-post .comment-form #privacy-label {
+  display: inline;
+  line-height: 60px;
+  vertical-align: text-bottom;
+}
+
+/*
+Formulario CF7 a 2 columnas responsive
+*/
+#responsive-form {
+    max-width: 1000px /*-- change this to get your desired form width --*/ ;
+    margin: 0 auto;
+    width: 100%;
+}
+.form-row {
+    width: 100%;
+}
+.column-half, .column-full {
+    float: left;
+    position: relative;
+    padding: 0.65rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) {
+    .column-half {
+        width: 50%;
+    }
+}
+
+/* videoask */
+// .videoask-embed__button--nnvG1 {
+// 	display: none !important;
+// }
+
+// body.archive.term-63 .videoask-embed__button--nnvG1, body.postid-113391 .videoask-embed__button--nnvG1 {
+// 	display: block !important;
+// }
+// .videoask-embed__modal_closeButton--35rbr {
+// 	min-width: inherit !important;
+// }
+
+/* ajustes platos de ducha */
+.term-platos-de-ducha .product-category .woocommerce-loop-category__title {
+    font: normal normal 600 22px/22px Poppins;
+}
+.term-platos-de-ducha-de-resina .product-category .woocommerce-loop-category__title, .term-136 .product-category .woocommerce-loop-category__title, .term-platos-enmarcados .product-category .woocommerce-loop-category__title, .term-88 .product-category .woocommerce-loop-category__title, .term-radiadores .product-category .woocommerce-loop-category__title {
+    font: normal normal 600 21px/22px Poppins;
+}
+
+// .term-platos-enmarcados.archive main .term-description, .term-88.archive main .term-description,
+// .term-1126.archive main .term-description,  .term-220.archive main .term-description,  .term-497.archive main .term-description,
+// .term-platos-decorados.archive main .term-description, .term-89.archive main .term-description,
+// .term-platos-de-ducha-de-resina.archive main .term-description, .term-136.archive main .term-description,
+// .term-1125.archive main .term-description,  .term-1199.archive main .term-description,  .term-1122.archive main .term-description,
+// .term-1371.archive main .term-description,  .term-221.archive main .term-description,  .term-1139.archive main .term-description,
+// .term-1128.archive main .term-description,  .term-152.archive main .term-description,  .term-216.archive main .term-description,
+// .term-305.archive main .term-description,  .term-1123.archive main .term-description,  .term-1192.archive main .term-description,
+// .term-667.archive main .term-description,  .term-154.archive main .term-description,  .term-1274.archive main .term-description,
+// .term-597.archive main .term-description,  .term-1259.archive main .term-description,  .term-1198.archive main .term-description,
+// .term-158.archive main .term-description,  .term-1372.archive main .term-description,  .term-1130.archive main .term-description,
+// .term-692.archive main .term-description,  .term-87.archive main .term-description,  .term-1187.archive main .term-description,
+// .term-137.archive main .term-description,  .term-652.archive main .term-description,  .term-222.archive main .term-description,
+// .term-1290.archive main .term-description,  .term-150.archive main .term-description,  .term-229.archive main .term-description {
+//     margin-top: -453px;
+// }
+
+// @media (max-width: 1024px) and (min-width: 601px) {
+// .term-platos-enmarcados.archive main .term-description, .term-88.archive main .term-description,
+// .term-1126.archive main .term-description,  .term-220.archive main .term-description,  .term-497.archive main .term-description,
+// .term-platos-decorados.archive main .term-description, .term-89.archive main .term-description,
+// .term-platos-de-ducha-de-resina.archive main .term-description, .term-136.archive main .term-description,
+// .term-1125.archive main .term-description,  .term-1199.archive main .term-description,  .term-1122.archive main .term-description,
+// .term-1371.archive main .term-description,  .term-221.archive main .term-description,  .term-1139.archive main .term-description,
+// .term-1128.archive main .term-description,  .term-152.archive main .term-description,  .term-216.archive main .term-description,
+// .term-305.archive main .term-description,  .term-1123.archive main .term-description,  .term-1192.archive main .term-description,
+// .term-667.archive main .term-description,  .term-154.archive main .term-description,  .term-1274.archive main .term-description,
+// .term-597.archive main .term-description,  .term-1259.archive main .term-description,  .term-1198.archive main .term-description,
+// .term-158.archive main .term-description,  .term-1372.archive main .term-description,  .term-1130.archive main .term-description,
+// .term-692.archive main .term-description,  .term-87.archive main .term-description,  .term-1187.archive main .term-description,
+// .term-137.archive main .term-description,  .term-652.archive main .term-description,  .term-222.archive main .term-description,
+// .term-1290.archive main .term-description,  .term-150.archive main .term-description,  .term-229.archive main .term-description	
+// 	{
+//     margin-top: -500px;
+// }
+// }
+
+@media (max-width: 600px) {
+.woocommerce-cart .cart_totals tr.order-total td{
+    padding: 12px 22px 0 !important;
+}
+.woocommerce-cart .cart_totals tr.order-total {
+    bottom: 77px !important;
+    padding: 0 22px 45px !important;	
+}
+.woocommerce-cart .wc-proceed-to-checkout {
+    padding-bottom: 83px !important;
+}	
+.woocommerce-checkout .checkout-btn {
+    padding-bottom: 35px;
+}	
+	
+// .term-platos-enmarcados.archive main .term-description, .term-88.archive main .term-description,
+// .term-1126.archive main .term-description,  .term-220.archive main .term-description,  .term-497.archive main .term-description,
+// .term-platos-decorados.archive main .term-description, .term-89.archive main .term-description,
+// .term-platos-de-ducha-de-resina.archive main .term-description, .term-136.archive main .term-description,
+// .term-1125.archive main .term-description,  .term-1199.archive main .term-description,  .term-1122.archive main .term-description,
+// .term-1371.archive main .term-description,  .term-221.archive main .term-description,  .term-1139.archive main .term-description,
+// .term-1128.archive main .term-description,  .term-152.archive main .term-description,  .term-216.archive main .term-description,
+// .term-305.archive main .term-description,  .term-1123.archive main .term-description,  .term-1192.archive main .term-description,
+// .term-667.archive main .term-description,  .term-154.archive main .term-description,  .term-1274.archive main .term-description,
+// .term-597.archive main .term-description,  .term-1259.archive main .term-description,  .term-1198.archive main .term-description,
+// .term-158.archive main .term-description,  .term-1372.archive main .term-description,  .term-1130.archive main .term-description,
+// .term-692.archive main .term-description,  .term-87.archive main .term-description,  .term-1187.archive main .term-description,
+// .term-137.archive main .term-description,  .term-652.archive main .term-description,  .term-222.archive main .term-description,
+// .term-1290.archive main .term-description,  .term-150.archive main .term-description,  .term-229.archive main .term-description	
+// 	{
+//     margin-top: -316px;
+// }
+}
+
+/* piscinas */
+
+
+body.single-escaparate .wp-block-cover.is-light .wp-block-cover__inner-container,
+body.postid-113389 .wp-block-cover.is-light .wp-block-cover__inner-container {
+	color: #fff !important;
+}
+
+@media (max-width: 768px) {
+body.single-escaparate .wp-container-6,
+body.postid-113389 .wp-container-6 {
+	gap: 0;
+}
+	
+	.block-piscinas-4, .block-piscinas-6, .block-piscinas-8	{
+	gap: 0 !important;	
+	}
+	
+	.block-piscinas-4 .wp-block-cover .wp-block-buttons, .block-piscinas-6 .wp-block-cover .wp-block-buttons, .block-piscinas-8 .wp-block-cover .wp-block-buttons {
+		left: -30px !important;
+	}
+	.block-piscinas-4 .wp-block-cover, .block-piscinas-6 .wp-block-cover, .block-piscinas-8 .wp-block-cover {
+		margin-left: 30px;
+	}
+}	
+@media (max-width: 767px) {
+		.block-piscinas-4 .wp-block-cover, .block-piscinas-6 .wp-block-cover, .block-piscinas-8 .wp-block-cover {
+		margin-left: 0px;
+	}
+.block-piscinas-4 .wp-block-column:not(:first-child), .block-piscinas-6 .wp-block-column:not(:first-child), .block-piscinas-8 .wp-block-column:not(:first-child) {
+	margin: 0px;    
+	flex-basis: 100%!important;
+}	
+.block-piscinas-4 .wp-block-column:not(:only-child), .block-piscinas-6 .wp-block-column:not(:only-child), .block-piscinas-8 .wp-block-column:not(:only-child) {
+	flex-basis: 100%!important;
+	}	
+.block-piscinas-4 .wp-block-column:not(:first-child) img, .block-piscinas-6 .wp-block-column:not(:first-child) img, .block-piscinas-8 .wp-block-column:not(:first-child) img{
+	width: 100%;
+}
+	.block-piscinas-4 .wp-block-column:first-child>*, .block-piscinas-6 .wp-block-column:first-child>*, .block-piscinas-8 .wp-block-column:first-child>* {
+		margin: 50px auto;
+	}
+}	
+	
+@media (max-width: 600px) {
+.block-piscinas-4 .wp-block-column:not(:first-child), .block-piscinas-6 .wp-block-column:not(:first-child), .block-piscinas-8 .wp-block-column:not(:first-child) {
+	margin-left: 0px;
+    margin-right: 0px;
+	flex-basis: 100%!important;
+}
+	.block-piscinas-4 .wp-block-column:not(:only-child), .block-piscinas-6 .wp-block-column:not(:only-child), .block-piscinas-8 .wp-block-column:not(:only-child) {
+	flex-basis: 100%!important;
+	}	
+.block-piscinas-4 .wp-block-column:not(:first-child) img, .block-piscinas-6 .wp-block-column:not(:first-child) img, .block-piscinas-8 .wp-block-column:not(:first-child) img{
+	width: 100%;
+}	
+}	
+@media (max-width: 320px) {
+.block-piscinas-4 h2, .block-piscinas-6 h2, .block-piscinas-8 h2 {
+    font-size: 35px;	
+}
+}
+	
+/* banner envio gratuito */
+
+.envio-gratuito {
+	display: none !important;
+	background-color: #37465a;
+	padding: 0 !important;
+	min-height: 170px !important;
+}
+
+.envio-gratuito img {
+	max-height: 220px !important;
+}
+
+
+/* banners asistentes */
+
+
+// .term-fregaderos .woocommerce-products-header h1, .term-pavimentos .woocommerce-products-header h1, .term-encimeras-solid-surface .woocommerce-products-header h1 {
+// 	/*background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/05/banner-asistente-compra.png');*/
+// background-repeat: no-repeat;
+//     background-position: left bottom;
+//     height: 390px;
+//     margin: 38px 0 28px;
+// }
+
+// .term-fregaderos .woocommerce-products-header,
+// .term-pavimentos .woocommerce-products-header {
+// 	/*height: 520px;*/
+//     margin-bottom: 63px;
+// }
+
+// .term-fregaderos .advanced-filter,  
+// .term-pavimentos .advanced-filter {
+//     margin-top: -165px;
+// }
+/*
+.term-revestimientos .woocommerce-products-header,
+.term-baldosa-hidraulica .woocommerce-products-header,
+.term-griferia-bano .woocommerce-products-header,
+.term-accesorios-hidromasaje .woocommerce-products-header,
+.term-columnas-hidromasaje .woocommerce-products-header,
+.term-griferia-cocina .woocommerce-products-header,
+.term-mamparas-abatibles .woocommerce-products-header,
+.term-mamparas-correderas .woocommerce-products-header,
+.term-mamparas-fijas .woocommerce-products-header,
+.term-muebles-bano-suspendidos .woocommerce-products-header,
+.term-muebles-bano-a-suelo .woocommerce-products-header,
+.term-encimeras-madera .woocommerce-products-header,
+.term-columnas-bano .woocommerce-products-header,
+.term-espejos  .woocommerce-products-header,
+.term-descalcificadores  .woocommerce-products-header,
+.term-osmosis .woocommerce-products-header,
+.tax-pa_serie .woocommerce-products-header,
+.term-stock-hidraulico .woocommerce-products-header,
+.term-exteriores .woocommerce-products-header,
+.term-techlam .woocommerce-products-header,
+.term-piscinas .woocommerce-products-header,
+.term-colocacion .woocommerce-products-header,
+.term-decorados .woocommerce-products-header,
+.term-mantenimiento .woocommerce-products-header, 
+.term-complementos-ceramica .woocommerce-products-header,
+.term-mallas-y-mosaicos .woocommerce-products-header,
+.term-azulejos .woocommerce-products-header
+{
+	height: 0px;
+}
+*/
+
+/* filtros arriba */
+.advanced-filter {
+    margin-top: 0 !important;
+    position: fixed;
+    background: rgba(255,255,255,1);
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(255,255,255,1)), color-stop(59%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+    z-index: 20;
+    width: 100%;
+}
+
+.woocommerce .site-main {
+	margin: 118px auto 0;
+}
+
+
+
+@media (min-width: 1101px) {
+.advanced-filter {
+		top: 118px;
+	}
+}	
+
+@media (max-width: 1100px) {
+.advanced-filter {
+		top: 112px;
+	}	
+
+// .woocommerce-products-header {
+// 		height: 430px;
+// 	}
+
+// .term-encimeras-solid-surface .woocommerce-products-header {
+// 	height: 150px;
+// }
+
+
+
+}
+
+@media (max-width: 800px) {
+.advanced-filter {
+		top: 80px;
+	}		
+// .advanced-filter {
+// 	/* margin-top: -41px !important;*/
+// 	}
+	
+	// .woocommerce .site-main {
+	// 				margin-top: 220px;
+	// 	}
+	// .single-product.woocommerce .site-main {
+	// 	margin-top: 80px !important;
+	// }	
+	
+// .term-accesorios-hidromasaje .woocommerce .site-main
+// 	{
+//         margin-top: 80px;
+// 	}	
+}
+
+@media (max-width: 600px) {
+.term-griferia-bano .filter-wrapper {
+    margin-top: 50px;
+}
+	
+
+}
+@media (max-width: 600px) and (min-width: 376px) {
+// .archive .filter-wrapper {
+//     margin-top: 130px;
+// }
+}
+
+@media (max-width: 320px) {
+.woocommerce .site-main {
+        margin-top: 280px;
+	}
+}	
+
+.advanced-filter .form-inputs-content .search-content.focus ul.terms {
+	height: 380px;
+	overflow: auto;	
+}
+
+/* azules */
+
+.advanced-filter {
+    margin-top: 0;
+    position: fixed;
+    background: rgba(77,210,208,1);
+background: -moz-linear-gradient(top, rgba(77,210,208,1) 39%, rgba(77,210,208,1) 59%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(77,210,208,1)), color-stop(59%, rgba(77,210,208,1)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top, rgba(77,210,208,1) 39%, rgba(77,210,208,1) 59%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top, rgba(77,210,208,1) 39%, rgba(77,210,208,1) 59%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top, rgba(77,210,208,1) 39%, rgba(77,210,208,1) 59%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(77,210,208,1) 39%, rgba(77,210,208,1) 59%, rgba(255,255,255,0) 100%);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd2d0', endColorstr='#ffffff', GradientType=0 );*/
+    z-index: 20;
+    width: 100%;
+	left: 0;
+}
+
+.advanced-filter .advanced-search {
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+
+.advanced-filter .filter-title {
+    color: rgba(255,255,255,38%);    
+}
+
+.advanced-filter .form-inputs-content .search-content .term-value:after {
+	filter: saturate(100%) brightness(10%) invert(100%);
+}
+
+@media (max-width: 414px) {
+.advanced-filter .form-inputs-content .search-content .term-value {
+	font: normal normal 300 12px/25px Poppins;
+	}
+}
+
+@media (max-width: 320px) {
+.advanced-filter .form-inputs-content .search-content .term-value {
+	font: normal normal 300 10px/25px Poppins;
+	}
+}
+
+/* fin azules */
+
+	
+@media (max-width: 800px) {
+// .woocommerce.term-accesorios-hidromasaje .site-main,
+// .woocommerce.tax-product_cat .site-main, .woocommerce-shop .site-main {
+//     margin-top: 80px !important;
+// }
+	
+// .woocommerce.term-fregaderos .site-main,
+// .woocommerce.term-pavimentos .site-main,
+// .woocommerce.term-encimeras .site-main,
+// .woocommerce.term-revestimientos .site-main,
+// .woocommerce.term-baldosa-hidraulica .site-main,
+// .woocommerce.term-stock-hidraulico .site-main,
+// .woocommerce.term-exteriores .site-main,
+// .woocommerce.term-techlam .site-main,
+// .woocommerce.term-piscinas .site-main,
+// .woocommerce.term-decorados .site-main,
+// .woocommerce.term-colocacion .site-main,
+// .woocommerce.term-complementos-ceramica .site-main	
+// 	{
+//     margin-top: 220px !important;
+// }
+	
+	// .term-lavabos-sobreencimera .woocommerce-products-header,
+	// .term-lavabos-pie .woocommerce-products-header,
+	// .term-lavabos-suspendidos .woocommerce-products-header,
+	// .term-mya .woocommerce-products-header,
+	// .term-lyra .woocommerce-products-header,
+	// .term-hidden .woocommerce-products-header, 
+	// .term-squama .woocommerce-products-header,
+	// .term-canvas .woocommerce-products-header,
+	// .term-plato-ducha-diamond .woocommerce-products-header, 
+	// .term-hexagon .woocommerce-products-header, 
+	// .term-side .woocommerce-products-header,
+	// .term-duo-slate .woocommerce-products-header,
+	// .term-focus-beton .woocommerce-products-header,
+	// .term-prisma-slate .woocommerce-products-header,
+	// .term-core-ethnic .woocommerce-products-header,
+	// .term-plato-resina-limite .woocommerce-products-header,
+	// .term-piedras-naturales .woocommerce-products-header,
+	// .term-mallas-y-mosaicos .woocommerce-products-header {
+	// 	height: 0 !important;
+	// }	
+}
+
+@media (max-width: 600px) {
+.archive.term-griferia-bano	 .filter-wrapper {
+    margin-top: 50px !important;
+}	
+}
+	
+.advanced-filter .form-inputs-content .search-content.focus ul.terms {
+		height: 380px;
+	    overflow: auto;
+	
+}	
+
+/* fin filtros arriba */
+
+@media (min-width: 1101px) {
+// .term-encimeras-solid-surface .woocommerce-products-header h1 {
+//     font: normal normal 600 58px/70px Poppins;
+// }
+}
+
+// .term-encimeras-solid-surface .woocommerce-products-header, .term-97 .woocommerce-products-header {
+// 	height: 765px !important;
+//     margin-bottom: 63px;
+// }
+
+// .term-encimeras-solid-surface.archive main .term-description, .term-97.archive main .term-description {
+//     margin-top: -458px !important;
+// }
+
+
+// .term-encimeras-solid-surface.archive main .term-description p:first-child, .term-97.archive main .term-description  p:first-child{
+// display: none !important;
+// }
+
+
+@media (max-width: 618px) {
+.term-fregaderos .woocommerce-products-header h1, .term-pavimentos .woocommerce-products-header h1, .term-encimeras-solid-surface .woocommerce-products-header h1 {
+    background-size: 86%;
+}
+// .term-encimeras-solid-surface .woocommerce-products-header h1 {
+//     height: 338px;
+// 	margin-top: 8px;
+// }
+
+// .term-fregaderos .advanced-filter,   .term-pavimentos .advanced-filter {
+//     margin-top: -165px;
+// }
+// .term-encimeras-solid-surface.archive main .term-description {
+//     margin-top: -520px;
+// }
+}
+
+@media (max-width: 425px) {
+// 	.term-fregaderos .woocommerce-products-header h1, .term-pavimentos .woocommerce-products-header h1 {
+//     height: 232px;
+// }
+// 		.term-pavimentos .woocommerce-products-header h1 {
+//     height: 270px !important;	
+// 	}
+	// .term-encimeras-solid-surface .woocommerce-products-header h1 {
+  //   height: 262px;
+	// 	margin-top: 8px;
+	// }	
+// .term-fregaderos .advanced-filter, 
+// .term-pavimentos .advanced-filter {
+//     margin-top: -340px;
+// }
+	// .term-encimeras-solid-surface.archive main .term-description {
+  //   margin-top: -601px;
+	// }	
+}	
+	
+
+
+@media (max-width: 414px) {
+// 	.term-fregaderos .woocommerce-products-header h1 {
+//     height: 232px;
+// }
+// 	.term-pavimentos .woocommerce-products-header h1 {
+//     height: 270px !important;	
+// 	}
+	// .term-pavimentos .woocommerce-products-header {
+	// 	height: 100px !important;
+	// }
+	// .woocommerce.term-pavimentos .site-main {
+	// 	margin-top: 120px !important;
+	// }
+	// .term-encimeras-solid-surface .woocommerce-products-header h1 {
+  //   height: 262px;
+	// 	margin-top: 8px;
+	// }	
+	// .term-fregaderos .advanced-filter,
+	// .term-pavimentos .advanced-filter {
+  // 	margin-top: -340px;
+	// }
+
+// 	.term-encimeras-solid-surface.archive main .term-description {
+//     margin-top: -601px;
+// }	
+	
+}
+
+@media (max-width: 375px) {
+// 	.term-fregaderos .woocommerce-products-header h1, .term-pavimentos .woocommerce-products-header h1 {
+//     height: 222px;
+// }
+// 	.term-encimeras-solid-surface .woocommerce-products-header h1 {
+//     height: 252px;
+// 	margin-top: 8px;
+// }
+// 	.term-fregaderos .advanced-filter, .term-pavimentos .advanced-filter {
+//     margin-top: -360px;
+// }
+// 	.term-encimeras-solid-surface.archive main .term-description {
+//     margin-top: -631px;
+// }	
+	
+	button.wcss-btn {
+		min-width: inherit !important;
+	}
+	.wc-proceed-to-checkout a.button {
+		min-width: 45% !important;
+        max-width: 45% !important;		
+	}
+}
+
+@media (max-width: 320px) {
+// 	.term-fregaderos .woocommerce-products-header h1, .term-pavimentos .woocommerce-products-header h1 {
+//     height: 185px;
+// }
+// .term-encimeras-solid-surface .woocommerce-products-header h1 {
+//     height: 215px;
+// 	margin-top: 8px;
+// }
+// 	.term-fregaderos .advanced-filter, .term-pavimentos .advanced-filter {
+//     margin-top: -390px;
+// }
+	
+// 	.term-encimeras-solid-surface.archive main .term-description {
+//     margin-top: -661px;
+// }	
+	
+	.wcss-btn {
+    font-size: 15px !important;
+}
+}
+
+.page-pavimentos .wp-block-image.home-banner-5.full-width.desktop figure, .page-revestimientos .wp-block-image.home-banner-5.full-width.desktop figure {
+	left: 0% !important;
+	right: 0% !important;
+}
+
+/** CONTACTO 100K **/
+
+.contacto-none {
+	display: none !important;
+}
+.cabecera-contacto {
+	width: 853px;
+	margin: 0 auto;
+}
+
+.cabecera-contacto h1 {
+	font-weight: 700;
+	color: #fff;
+	margin-top: -158px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.cabecera-contacto-h2 {
+	margin-top: 54px;
+}
+
+.page-contacto p.cabecera-contacto-texto {
+	font-weight: 300;
+	padding-left: 2% !important;
+    padding-right: 2% !important;
+	line-height: 25px;
+	margin-top: 35px !important;
+	margin-bottom: 27px !important;
+}
+
+// #formas h2 {
+// 	line-height: 40px !important;
+// }
+
+// #formas .wp-block-image {
+// 	text-align: center;
+// }
+
+// #formas .wp-block-image img {
+// 	height: 100px !important;
+// }
+
+// #formas .primarias {
+// 	height: 244px;
+// }
+
+// #formas .secundarias {
+// 	width: 737px;
+// 	margin: 0 auto;
+// 	margin-bottom: 62px;
+// }
+
+// #formas .secundarias .wp-block-image {
+//     margin-top: 48px;
+// }
+
+// #formas .wp-block-image figcaption {
+// 	color: #4dd1cf;
+// 	font-weight: 700;
+// 	font-size: 16px;
+// 	white-space: nowrap;
+//     text-align: center;
+// 	line-height: 22px;
+// }
+// .wp-block-image.atajo-presencial {
+//     margin-right: 30px;
+// }
+
+// #formas .wp-block-image:hover img {
+// 	filter: brightness(0);
+// }
+// #formas .wp-block-image:hover figcaption a {
+// 	color: #000 !important;
+// }
+
+// #visita-exposicion-presencial {
+// 	padding-top: 135px !important;
+// }
+
+// #visita-exposicion-videollamada {
+// 	padding-top: 165px !important;
+// }
+
+// #exposicion-presencial.block-map .showroom {font:normal normal 600 90px/90px Poppins;transform:translateY(-90px);margin:0 auto;max-width:unset}
+
+// #exposicion-videollamada h2 {font:normal normal 600 90px/90px Poppins;transform:translateY(-60px);margin:0 auto;max-width:unset}
+
+.fotos-expos {
+	width: 737px;
+	margin: 13px auto 25px;
+}
+
+// #exposicion-presencial .wp-block-button__link {
+//     margin-top: 0px !important;
+//     margin-bottom: 30px !important;
+// }
+
+// #exposicion-videollamada.block-map {
+//     background-color: #fff !important;
+// }
+
+
+// #exposicion-videollamada.block-map > .wp-block-group__inner-container > .wp-block-image  {
+// 	transform: translateY(-45px) !important;
+// }
+
+// #exposicion-videollamada h2 {
+//     color: #000 !important;
+// }
+
+// #exposicion-videollamada.block-map p {
+//     color: #000 !important;
+// }
+
+// #tfno-whatsapp, #formulario-email {
+// 	padding-bottom: 50px;	
+// }
+
+// #tfno-whatsapp h2, #formulario-email h2 {
+// 	line-height: 100px;
+// 	margin-bottom: 42px;	
+// }
+
+// #tfno-whatsapp .wp-block-columns, #formulario-email .wp-block-columns {
+// 	max-width: 850px !important;
+// 	margin: 0 auto !important;
+// }
+
+// #tfno-whatsapp .wp-block-image .alignleft, #formulario-email .wp-block-image .alignleft {
+// 	margin-left: 55px;
+// }
+
+// #tfno-whatsapp .wp-block-image .alignright, #formulario-email .wp-block-image .alignright {
+// 	margin-right: 55px;
+// }
+
+// #chat {
+// 	background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/10/flecha-chat.svg');
+// 	background-repeat: no-repeat;
+// 	background-size: 69px 142px;
+// 	background-position: 159px 395px;
+// }
+
+// #chat h2, #chat p {
+// 	color: #fff !important;
+// }
+
+// #chat h2 {
+// 	line-height: 60px !important;
+// 	margin-bottom: 42px;
+// 	margin-top: 14px;
+// }
+
+// #chat h2 span {
+// 	font-size: 48px !important;
+// }
+
+/** CONTACTO 100k RESPONSIVE **/
+
+@media (max-width: 853px) {
+.cabecera-contacto {
+	width: 100%;
+	min-height: 330px !important;
+}
+.cabecera-contacto img {
+	width: 100% !important;
+	height: auto !important;
+}	
+.cabecera-contacto h1 {
+	margin-top: -100px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.page-contacto p.cabecera-contacto-texto {
+	padding-left: 33px !important;
+    padding-right: 33px!important;
+}	
+	
+}
+@media (min-width: 768px) {
+	.secundarias-movil {
+		display: none !important;
+	}	
+}
+
+@media (max-width: 768px) {
+.page-contacto p {
+	max-width: 800px;
+    margin: 0 auto 50px;
+    /*padding-left: 5%;
+    padding-right: 5%;*/
+}
+	
+// #chat {
+//     background-position: 61px 442px;
+// }	
+// #chat h2 span {
+//     font-size: 42px !important;
+// }	
+}
+
+@media (max-width: 768px) and (min-width: 700px) {
+.block-map figure.wp-block-image {text-align: center; transform: translateY(0px);}
+.block-map figure.wp-block-image img {height:auto;width:700px;margin: 0 auto; transform: translateY(0px); }
+}
+
+@media (max-width: 767px) {
+.cabecera-contacto {
+	width: 100%;
+	min-height: 300px !important;
+}
+	
+.cabecera-contacto img {
+	width: 100% !important;
+	margin: 0 auto;
+}
+	
+.cabecera-contacto h1 {
+    font-size: 43px !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin-top: -70px;
+}	
+
+// #formas .primarias {
+//     margin-bottom: 50px;
+// }	
+	
+// #formas .secundarias-movil .wp-block-image {
+//     margin-top: 0px;
+// }	
+// #formas .secundarias-movil .wp-block-image img {
+//     height: 50px !important;
+// }	
+.secundarias {
+		display: none !important;
+	}	
+	
+.block-map h2 {
+	font-size: 55px !important;
+	line-height: 115%;
+}	
+	
+.fotos-expos {
+	width: 90%;
+	margin: 13px auto 25px;
+	gap: 12px;
+}
+	
+// #exposicion-presencial.block-map .fotos-expos .wp-block-image, #exposicion-videollamada.block-map .fotos-expos .wp-block-image {
+//     height: auto !important;
+// 	width: 100% !important;
+//     transform: unset !important;
+// }
+	
+// #exposicion-presencial.block-map .fotos-expos .wp-block-image img, #exposicion-videollamada.block-map .fotos-expos .wp-block-image img {
+//     width: 100% !important;    
+// }	
+	
+}
+
+@media (max-width: 618px) {
+	.cabecera-contacto {
+	min-height: 240px !important;
+}
+	.cabecera-contacto h1 {
+    margin-top: -110px;
+}
+	
+	// #formas h2 {
+	// 	font-size: 27px !important;
+	// }
+	
+// 	#exposicion-presencial.block-map .showroom {
+//     font: normal normal 600 51px/52px Poppins !important;
+//     transform: translateY(-75px);
+// }
+
+// #exposicion-videollamada h2 {
+//     font: normal normal 600 51px/52px Poppins !important;
+// }
+// 	#tfno-whatsapp h2, #formulario-email h2, #chat h2 {
+//     line-height: 52px;
+//     margin-bottom: 42px;
+//     font-size: 51px !important;
+// }
+// 	 #chat h2 {
+//     line-height: 38px !important;
+// }	
+// 	#chat h2 span {
+//     font-size: 30px !important;
+// }
+	
+// #chat {
+// 	background-position: 61px 392px;
+// }
+	.page-contacto p, .block-map p strong {
+	font-size: 16px !important;
+	line-height: 25px !important;
+}
+	
+	
+	
+}
+
+@media (max-width: 425px) {
+	
+	// #formas .wp-block-spacer {
+	// 	height: 40px !important;
+	// }	
+	
+	// #formas .primarias {	
+	// 	height: 190px;
+	// }	
+		
+	// 	#formas h2 {
+	// 		line-height: 32px !important;
+	// 	}
+
+
+.wp-block-image.atajo-presencial, .wp-block-image.atajo-videollamada  {
+    margin-top: 30px;
+}
+	
+	
+// 	#exposicion-presencial.block-map .showroom {
+//     font: normal normal 600 40px/44px Poppins;
+//     transform: translateY(-70px);
+// }		
+
+.block-map h2 {
+    font-size: 40px !important;
+}
+	
+// 	#exposicion-videollamada h2 {
+//     font: normal normal 600 40px/44px Poppins !important;
+//     transform: translateY(-52px);
+// }
+// 		#tfno-whatsapp h2, #formulario-email h2, #chat h2 {
+//     line-height: 44px;
+//     margin-bottom: 32px;
+//     font-size: 40px !important;
+// }
+// 	 #chat h2 {
+//     line-height: 38px !important;
+// }	
+// 	#chat h2 span {
+//     font-size: 23px !important;
+// }
+// 	#chat {
+//     background-position: 25px 435px;
+// 	background-size: 25% 25%;
+// }
+	
+	// #tfno-whatsapp p, #formulario-email p, #chat p {
+	// 	padding-left: 11%;
+	// 	padding-right: 11%;	
+	// }	
+	
+}
+
+@media (max-width: 414px) {
+	.cabecera-contacto {
+	min-height: 145px !important;
+}
+	.cabecera-contacto h1 {
+    margin-top: -65px;
+}
+}
+
+
+// @media (max-width: 375px) {
+// 		#formas h2 {
+// 		font-size: 24px !important;
+// 	}
+// }
+
+@media (max-width: 320px) {
+		.cabecera-contacto {
+	min-height: 105px !important;
+}
+	.cabecera-contacto h1 {
+    margin-top: -50px;
+}
+
+// 	#formas .wp-block-image figcaption {
+//     font-size: 14px;
+// }
+	
+}    
+
+/* ajustes bloques home y presu*/
+
+// .home-banner-3 .wp-block-column:first-child {
+//     z-index: 1;
+//     flex-basis: 31%!important;
+//     margin-right: -2.6%;
+// }
+
+.home-banner .wp-block-group__inner-container {
+    padding: 0px 0 0;
+    margin: 0 0 0px;
+}
+.wp-container-32.wp-block-group.home-banner .wp-block-group__inner-container {
+	margin-top: -90px;
+}
+
+body.home .video-presu {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.prefieres, .prefieres a {
+	color: #fff !important;
+}
+
+ .prefieres a {
+	text-decoration: underline !important;
+}
+ .prefieres a:hover {
+	text-decoration: none !important;
+}
+
+.wp-block-cover.is-light.has-parallax.video-presu.presu-online {
+    // margin-top: -340px;
+    z-index: 2;
+    margin-bottom: 400px;
+}
+
+.archive .archive-description > .page-description > .wp-block-cover.is-light.has-parallax.video-presu.presu-online {
+	display: none !important;
+}
+
+
+
+@media (max-width: 1439px) {
+	.main-navigation ul.menu li a, .site-cart .cart-total {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1100px) {
+.main-navigation .menu-main-menu-container ul.menu>li a {
+    font: normal normal 600 18px/22px Poppins;
+	white-space: nowrap;
+	}
+
+.main-navigation .menu-main-menu-container ul.menu>li .sub-menu li a {
+    font: normal normal 500 16px/22px Poppins;
+    white-space: normal;
+}
+
+// .main-navigation .menu-main-menu-container ul.menu>li.active .sub-menu {
+//     left: -210px;
+// }
+// .main-navigation .menu-main-menu-container ul.menu>li:nth-child(2).active .sub-menu, .main-navigation .menu-main-menu-container ul.menu>li:nth-child(2):hover .sub-menu {
+//     left: -210px;
+// }
+	
+	.main-navigation .menu-main-menu-container ul.menu>li.active .sub-menu:after, .main-navigation ul.menu li.menu-item-has-children.active:first-child .sub-menu:after, .main-navigation ul.menu li.menu-item-has-children:hover:first-child .sub-menu:after {
+    right: -55px !important;
+}
+
+}
+
+/* CABECERA HOME 100K */
+
+
+.home-banner-1a {
+	height: 967px;
+}
+
+.home-banner-1a .wp-block-column:first-child .wp-block-group__inner-container {
+    padding-left: 3%;
+}
+
+.home-banner-1a .wp-block-column:first-child .wp-block-group__inner-container p {
+	max-width: 390px;
+	margin-bottom: 1em;
+}
+
+.home-banner-1a .wp-block-column:first-child .wp-block-group {
+    max-width: 882px;
+    margin-top: -500px;
+    width: 100%;
+}
+
+.home-banner-1b {
+	height: 300px;
+	margin: -468px auto 404px;
+	max-width: 1172px;
+	position: relative;
+}
+
+.wp-block-column.videoll {
+	padding-left: 27px;
+}
+
+.home-banner-1b .wp-block-image img {
+	margin-bottom: 32px;
+}
+
+.home-banner-1b p {
+	font: normal normal 300 16px/25px Poppins;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	max-width: 429px;
+}	
+
+.home-banner-1c {
+	margin-top: -194px;
+	margin-bottom: 300px;
+	font: normal normal 300 16px/25px Poppins;
+}
+
+
+.home-banner-1c p {
+	margin-bottom: 0px;
+}
+
+.home-banner-1c p a {
+	text-decoration: underline;	
+}
+.home-banner-1c p a:hover {
+	text-decoration: none;	
+}	
+
+@media (max-width: 1300px) {
+
+	.home-banner-1a .wp-block-column:first-child .wp-block-group {
+		margin-top: -230px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.home-banner-1a {
+    height: 505px;
+	}
+	.home-banner-1a .wp-block-column:first-child .wp-block-group {
+		margin-top: 0;
+	}
+	.home-banner-1a .wp-block-column:first-child .wp-block-group {
+		padding-bottom: 0;
+	}
+	
+	.home-banner-1b {    
+    margin: 60vw auto 880px;
+    text-align: center;
+    }
+	
+	.home-banner-1b h2 {
+		max-width: 65%;
+		margin-left: auto;
+    margin-right: auto;
+	}
+	
+	.home-banner-1b p {    
+    margin-left: auto;
+    margin-right: auto;
+		max-width: 95%;
+    }
+	
+	.home-banner-1b .wp-block-button {
+		margin: 0 auto;
+	}
+
+	.home-banner-1c {
+		margin-bottom: 0px;
+	}
+	
+	// .home-banner-3 .wp-block-column:first-child {
+
+	// 	margin-right: -4.8%;
+	// }
+
+}
+
+
+@media (max-width: 618px) {
+	.wp-block-column.videoll {
+    padding-left: 0px;
+}
+	.home-banner-1a .wp-block-column:first-child .wp-block-group {
+		padding-top: 30px !important;
+	}
+}
+@media (max-width: 425px) {
+	.home-banner-1a .wp-block-column:first-child {    
+        height: 110%;
+	}	
+	.home-banner-1b a.wp-block-button__link {
+		padding: 4px 20px;
+	}
+	.home-banner-1b {
+		margin-top: 75vw;
+	}
+	.home-banner-1b h2 {
+        max-width: 95%;
+	}
+	.home-banner-1c p {    
+    max-width: 77%;
+    margin: 0 auto;
+}
+}
+@media (max-width: 414px) {
+}
+@media (max-width: 375px) {
+	.home-banner-1b a.wp-block-button__link {
+    padding: 4px 10px;
+}
+}
+@media (max-width: 320px) {
+}
+
+/* BLOQUE ENLACES */
+
+.bloque-enlaces {
+	min-height: 160px;
+	background-color: #4dd2d0 !important;
+	opacity: 1 !important;
+}
+
+.bloque-enlaces span {
+	background-color: #4dd2d0 !important;
+}
+
+.bloque-enlaces ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 0px 50px;
+    margin-top: 32px;    
+    margin: 0 auto;
+}
+
+@media (min-width: 1101px) {
+	.bloque-enlaces ul {
+	width: 1060px;
+}
+}	
+@media (max-width: 425px) {
+	.bloque-enlaces ul {
+	display: table;
+}
+}
+	
+.bloque-enlaces ul li {
+	display: flex;
+}
+
+.bloque-enlaces ul li a {
+	color: #fff !important;
+	font-size: 14px;
+}
+
+.bloque-enlaces ul li a:hover{
+	color: #000 !important;
+}
+
+body.home .custom-block .bloque-enlaces {
+	display: none !important;		
+}
+
+#cookie-law-info-bar{
+	z-index:16000002 !important;
+}

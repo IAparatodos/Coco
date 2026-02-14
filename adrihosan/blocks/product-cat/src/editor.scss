@@ -1,0 +1,15 @@
+.wp-block-doo-block-product-cat {
+	border: 1px dotted #f00;
+	min-height: 50px;
+	a {
+		pointer-events: none;
+	}
+}
+
+.editor-block-list-item-doo-block-product-cat {
+	.block-editor-block-types-list__item-icon,
+	.block-editor-block-types-list__item-title {
+		color: #3359FF;
+	}
+}
+

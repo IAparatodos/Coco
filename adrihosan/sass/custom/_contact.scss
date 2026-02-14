@@ -1,0 +1,90 @@
+
+
+.block-contact.block-contact {
+	padding: 40px 0;
+	.wp-block-heading {
+		font-size: 60px;
+	}
+	.contact-form-content-new {
+		margin: auto;
+		font: $font-16px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 24px;
+		p {
+			font: $font-18px;
+			margin: 4px 0;
+		}
+		.input-container {
+			margin-bottom: 28px;
+		}
+		input:not([type="submit"]):not([type="checkbox"]),
+		textarea {
+			border-radius: 16px;
+			border: none;
+			padding-left: 19.59px;
+			font: $font-18px;
+			width: 100%;
+			height: 70px;
+		}
+		input[type="file"] {
+			color: #FFF;
+		}
+		textarea {
+			height: 120px;
+		}
+		input[type="submit"] {
+			height: 48px;
+			border-radius: 16px;
+			margin-top: 12px;
+			font: $font-30px-medium;
+			width: 100%;
+			border: none;
+			color: #000000;
+		}
+		.wpcf7-list-item {
+			margin: 0;
+			.contact-accept {
+				font: $font-14px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.block-contact.block-contact {
+		padding: 32px 0;
+		.contact-form-content-new {
+			font: $font-14px;
+			grid-template-columns: 1fr;
+			grid-gap: 0;
+			p {
+				font: $font-16px;
+			}
+			.input-container {
+				margin-bottom: 16px;
+			}
+			input:not([type="submit"]):not([type="checkbox"]),
+			textarea {
+				border-radius: 16px;
+				height: 40px;
+				font: $font-16px;
+			}
+			textarea {
+				height: 80px;
+			}
+			input[type="submit"] {
+				height: 40px;
+				margin-top: 8px;
+				font: $font-20px-medium;
+			}
+			.wpcf7-list-item {
+				.contact-accept {
+					font: $font-12px;
+				}
+			}
+		}
+	}
+}
+

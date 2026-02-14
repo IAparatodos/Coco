@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "doo-block/banner-cat",
+  "version": "0.1.0",
+  "title": "Banner Categorias",
+  "category": "doo-blocks",
+  "icon": "grid-view",
+  "description": "Bloque de banner de categorías.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "customClassName": true
+  },
+  "attributes": {
+    "variant": {
+      "type": "string",
+      "default": ""
+    },
+    "sel_categories": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "doo",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,2573 @@
+/* ========================================================================== */
+/* ESTILOS GLOBALES DEPURADOS (Adrihosan) */
+/* ========================================================================== */
+
+
+/* ========================================================================== */
+/* BLOQUE COMÚN PARA OCULTAR CABECERAS DE CATEGORÍAS PERSONALIZADAS */
+/* ========================================================================== */
+.tax-product_cat.term-2082 .woocommerce-breadcrumb,
+.tax-product_cat.term-2082 .woocommerce-products-header,
+.tax-product_cat.term-2082 .term-description,
+.tax-product_cat.term-2082 .product-categories,
+.tax-product_cat.term-2082 .doo-category-banner,
+.tax-product_cat.term-4806 .woocommerce-breadcrumb,
+.tax-product_cat.term-4806 .woocommerce-products-header,
+.tax-product_cat.term-4806 .term-description,
+.tax-product_cat.term-4806 .product-categories,
+.tax-product_cat.term-4806 .doo-category-banner,
+.tax-product_cat.term-2083 .woocommerce-breadcrumb,
+.tax-product_cat.term-2083 .woocommerce-products-header,
+.tax-product_cat.term-2083 .term-description,
+.tax-product_cat.term-2083 .product-categories,
+.tax-product_cat.term-2083 .doo-category-banner,
+.tax-product_cat.term-4876 .woocommerce-breadcrumb,
+.tax-product_cat.term-4876 .woocommerce-products-header,
+.tax-product_cat.term-4876 .term-description,
+.tax-product_cat.term-4876 .product-categories,
+.tax-product_cat.term-4876 .doo-category-banner,
+.tax-product_cat.term-102 .woocommerce-breadcrumb,
+.tax-product_cat.term-102 .woocommerce-products-header,
+.tax-product_cat.term-102 .term-description,
+.tax-product_cat.term-102 .product-categories,
+.tax-product_cat.term-102 .doo-category-banner,
+.tax-product_cat.term-4213 .woocommerce-breadcrumb,
+.tax-product_cat.term-4213 .woocommerce-products-header,
+.tax-product_cat.term-4213 .term-description,
+.tax-product_cat.term-4213 .product-categories,
+.tax-product_cat.term-4213 .doo-category-banner,
+.tax-product_cat.term-4247 .woocommerce-breadcrumb,
+.tax-product_cat.term-4247 .woocommerce-products-header,
+.tax-product_cat.term-4247 .term-description,
+.tax-product_cat.term-4247 .product-categories,
+.tax-product_cat.term-4247 .doo-category-banner,
+.tax-product_cat.term-2626 .woocommerce-breadcrumb,
+.tax-product_cat.term-2626 .woocommerce-products-header,
+.tax-product_cat.term-2626 .term-description,
+.tax-product_cat.term-2626 .product-categories,
+.tax-product_cat.term-2626 .doo-category-banner,
+.tax-product_cat.term-4862 .woocommerce-breadcrumb,
+.tax-product_cat.term-4862 .woocommerce-products-header,
+.tax-product_cat.term-4862 .term-description,
+.tax-product_cat.term-4862 .product-categories,
+.tax-product_cat.term-4862 .doo-category-banner,
+.tax-product_cat.term-4865 .woocommerce-breadcrumb,
+.tax-product_cat.term-4865 .woocommerce-products-header,
+.tax-product_cat.term-4865 .term-description,
+.tax-product_cat.term-4865 .product-categories,
+.tax-product_cat.term-4865 .doo-category-banner,
+.tax-product_cat.term-4866 .woocommerce-breadcrumb,
+.tax-product_cat.term-4866 .woocommerce-products-header,
+.tax-product_cat.term-4866 .term-description,
+.tax-product_cat.term-4866 .product-categories,
+.tax-product_cat.term-4866 .doo-category-banner,
+.tax-product_cat.term-4869 .woocommerce-breadcrumb,
+.tax-product_cat.term-4869 .woocommerce-products-header,
+.tax-product_cat.term-4869 .term-description,
+.tax-product_cat.term-4869 .product-categories,
+.tax-product_cat.term-4869 .doo-category-banner,
+.tax-product_cat.term-4564 .woocommerce-breadcrumb,
+.tax-product_cat.term-4564 .woocommerce-products-header,
+.tax-product_cat.term-4564 .term-description,
+.tax-product_cat.term-4564 .product-categories,
+.tax-product_cat.term-4564 .doo-category-banner, 
+.tax-product_cat.term-62 .woocommerce-breadcrumb,
+.tax-product_cat.term-62 .woocommerce-products-header,
+.tax-product_cat.term-62 .term-description,
+.tax-product_cat.term-62 .product-categories,
+.tax-product_cat.term-62 .doo-category-banner, 
+.tax-product_cat.term-2410 .woocommerce-breadcrumb,
+.tax-product_cat.term-2410 .woocommerce-products-header,
+.tax-product_cat.term-2410 .term-description,
+.tax-product_cat.term-2410 .doo-category-banner,
+.tax-product_cat.term-2410 .wd-shop-tools, 
+.tax-product_cat.term-2410 .filter-wrapper,
+.tax-product_cat.term-1844 .woocommerce-breadcrumb,
+.tax-product_cat.term-1844 .woocommerce-products-header,
+.tax-product_cat.term-1844 .term-description,
+.tax-product_cat.term-1844 .doo-category-banner,
+.tax-product_cat.term-1844 .wd-shop-tools, 
+.tax-product_cat.term-1844 .filter-wrapper,
+.tax-product_cat.term-2510 .woocommerce-breadcrumb,
+.tax-product_cat.term-2510 .woocommerce-products-header,
+.tax-product_cat.term-2510 .term-description,
+.tax-product_cat.term-2510 .doo-category-banner,
+.tax-product_cat.term-2510 .wd-shop-tools, 
+.tax-product_cat.term-2510 .filter-wrapper,
+.tax-product_cat.term-2093 .woocommerce-breadcrumb,
+.tax-product_cat.term-2093 .woocommerce-products-header,
+.tax-product_cat.term-2093 .term-description,
+.tax-product_cat.term-2093 .doo-category-banner,
+.tax-product_cat.term-2093 .wd-shop-tools, 
+.tax-product_cat.term-2093 .filter-wrapper,
+.tax-product_cat.term-2209 .woocommerce-breadcrumb,
+.tax-product_cat.term-2209 .woocommerce-products-header,
+.tax-product_cat.term-2209 .term-description,
+.tax-product_cat.term-2209 .product-categories,
+.tax-product_cat.term-2209 .doo-category-banner {
+ display: none !important;
+}
+
+
+/* ========================================================================== */
+/* FIX: Evitar que el loop de productos se monte sobre el bloque superior     */
+/* ========================================================================== */
+
+/* Estilo base para escritorio: un margen superior normal */
+.tax-product_cat.term-2082 ul.products,
+.tax-product_cat.term-4806 ul.products,
+.tax-product_cat.term-2083 ul.products,
+.tax-product_cat.term-4876 ul.products,
+.tax-product_cat.term-102 ul.products,
+.tax-product_cat.term-4213 ul.products,
+.tax-product_cat.term-4247 ul.products,
+.tax-product_cat.term-2626 ul.products,
+.tax-product_cat.term-4862 ul.products,
+.tax-product_cat.term-4865 ul.products,
+.tax-product_cat.term-4866 ul.products,
+.tax-product_cat.term-4869 ul.products,
+.tax-product_cat.term-2209 ul.products,
+.tax-product_cat.term-62 ul.products,
+.tax-product_cat.term-2410 ul.products,
+.tax-product_cat.term-1844 ul.products,
+.tax-product_cat.term-2510 ul.products,
+.tax-product_cat.term-2093 ul.products,
+.tax-product_cat.term-4564 ul.products {
+  clear: both;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px !important; /* Margen superior por defecto para escritorio */
+  padding-top: 4px;
+}
+
+/* Estilos solo para móvil (hasta 768px de ancho) */
+@media (max-width: 768px) {
+  .tax-product_cat.term-2082 ul.products,
+  .tax-product_cat.term-4806 ul.products,
+  .tax-product_cat.term-2083 ul.products,
+  .tax-product_cat.term-4876 ul.products,
+  .tax-product_cat.term-102 ul.products,
+  .tax-product_cat.term-4213 ul.products,
+  .tax-product_cat.term-4247 ul.products,
+  .tax-product_cat.term-2626 ul.products,
+  .tax-product_cat.term-4862 ul.products,
+  .tax-product_cat.term-4865 ul.products,
+  .tax-product_cat.term-4866 ul.products,
+  .tax-product_cat.term-4869 ul.products,
+  .tax-product_cat.term-2209 ul.products,
+  .tax-product_cat.term-2209 ul.products,
+  .tax-product_cat.term-2410 ul.products,
+  .tax-product_cat.term-1844 ul.products,
+  .tax-product_cat.term-2510 ul.products,
+   .tax-product_cat.term-2093 ul.products,
+  .tax-product_cat.term-4564 ul.products {
+    margin-top: 450px !important; /* El gran margen superior, solo en móvil */
+  }
+}
+
+
+/* Refuerza el z-index de barras/encabezados personalizados para que queden por encima sin solapar contenido */
+.tax-product_cat .wd-shop-tools,
+.tax-product_cat .bh-products-header,
+.tax-product_cat .hero,
+.tax-product_cat .hero-content,
+.tax-product_cat .ai-hero-section,
+.tax-product_cat .ap-hero-section,
+.tax-product_cat .bhp-hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* === CONTENIDO ORIGINAL DEPURADO === */
+/* ========================================================================== */
+/* ESTILOS GLOBALES PARA CATEGORÍAS PERSONALIZADAS */
+/* ========================================================================== */
+.adrihosan-full-width-block, .adri-espejos-full-width, .adrihosan-luz-full-width-block, .adri-redondo-full-width, .ai-hero-section  {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+/* ========================================================================== */
+/* 2. IMITACIÓN HIDRÁULICO (azulejo-hidraulico, ID 2082) */
+/* ========================================================================== */
+.tax-product_cat.term-2082 .woocommerce-breadcrumb,
+.tax-product_cat.term-2082 .woocommerce-products-header,
+.tax-product_cat.term-2082 .term-description,
+.tax-product_cat.term-2082 .product-categories,
+.tax-product_cat.term-2082 .doo-category-banner { display: none !important; }
+
+.ai-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2023/11/suelo-hidraulico-adrihosan.gif);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ai-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ai-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ai-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ai-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:650px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ai-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ai-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ai-hero-btn:hover{transform:translateY(-2px)}.ai-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ai-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ai-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
+.ai-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ai-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-value-wrapper .section-header{margin-bottom:50px}.ai-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ai-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ai-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ai-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ai-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ai-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
+.ai-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ai-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ai-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ai-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ai-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ai-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ai-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ai-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ai-inspiration-card:hover img{transform:scale(1.05)}.ai-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ai-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ai-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ai-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
+.ai-filters-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:60px 20px;border-top:1px solid #eef2f5}.ai-filters-wrapper{max-width:960px;margin:0 auto}.ai-filters-header{text-align:center;margin-bottom:40px}.ai-filters-header h2{font-size:1.5rem;font-weight:600;color:#102e35;margin:0}.ai-filter-group{margin-bottom:30px}.ai-filter-group:last-child{margin-bottom:0}.ai-filter-group-title{font-size:1.1rem;font-weight:600;color:#3f6f7b;margin:0 0 15px 0;text-align:center}.ai-filter-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.ai-filter-btn, .ai-filter-btn:visited{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid #4dd2d0;background-color:#4dd2d0;color:#fff;transition:all .2s ease-in-out}.ai-filter-btn:hover{background-color:#fff;color:#4dd2d0;transform:translateY(-2px)}
+.ai-product-header-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px 40px 20px;text-align:center}.ai-product-header-wrapper{max-width:800px;margin:0 auto}.ai-product-header-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-product-header-wrapper p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;margin:0}
+.ai-guide-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5;border-bottom:1px solid #eef2f5}.ai-guide-wrapper{max-width:960px;margin:0 auto}.ai-guide-header{text-align:center;margin-bottom:50px}.ai-guide-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ai-guide-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;max-width:700px;margin:0 auto}.ai-comparison-grid{display:grid;grid-template-columns:1fr;gap:2px;background-color:#e0e6eb;border:1px solid #e0e6eb;border-radius:8px;overflow:hidden}.ai-comparison-header{background-color:#fff;padding:20px;text-align:center}.ai-comparison-header h3{font-size:1.25rem;font-weight:700;color:#102e35;margin:0}.ai-comparison-header.highlight{background-color:#102e35}.ai-comparison-header.highlight h3{color:#4dd2d0}.ai-comparison-cell{background-color:#fff;padding:25px 20px}.ai-comparison-cell h4{font-size:1rem;font-weight:600;color:#102e35;margin:0 0 8px 0}.ai-comparison-cell p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}.ai-comparison-cell .pro::before{content:'✓';color:#28a745;font-weight:700;margin-right:8px}.ai-comparison-cell .con::before{content:'✗';color:#dc3545;font-weight:700;margin-right:8px}
+.ai-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ai-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ai-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ai-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ai-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ai-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ai-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ai-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ai-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ai-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ai-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}
+@media (max-width:768px){.ai-comparison-grid{grid-template-columns:1fr}.ai-comparison-header.highlight{border-top:2px solid #e0e6eb}.ai-help-intro{flex-direction:column;text-align:center}.ai-help-intro h2{text-align:center}}
+
+/* ========================================================================== */
+/* 3. PAREDES DECORATIVAS (ID 4806) */
+/* ========================================================================== */
+.tax-product_cat.term-4806 .woocommerce-breadcrumb,
+.tax-product_cat.term-4806 .woocommerce-products-header,
+.tax-product_cat.term-4806 .term-description,
+.tax-product_cat.term-4806 .product-categories,
+.tax-product_cat.term-4806 .doo-category-banner {
+    display: none !important;
+}
+
+.ap-hero-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-image:url(https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg);background-size:cover;background-position:center center;position:relative;display:flex;align-items:center;justify-content:center;min-height:75vh;padding:80px 20px;color:#fff;text-align:center;overflow:hidden}.ap-hero-section::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(16,46,53,.6);z-index:1}.ap-hero-content{position:relative;z-index:2;max-width:850px;margin:0 auto}.ap-hero-content h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:700;line-height:1.2;margin:0 0 15px 0;text-shadow:0 2px 5px rgba(0,0,0,.5)}.ap-hero-content p{font-size:clamp(1rem,2.5vw,1.25rem);line-height:1.6;max-width:700px;margin:0 auto 30px auto;text-shadow:0 1px 3px rgba(0,0,0,.5);opacity:.95}.ap-hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}.ap-hero-btn{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid;transition:all .2s ease-in-out;cursor:pointer}.ap-hero-btn:hover{transform:translateY(-2px)}.ap-hero-btn.primary{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}.ap-hero-btn.primary:hover{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary{background-color:#fff;border-color:#fff;color:#4dd2d0}.ap-hero-btn.secondary:hover{background-color:#4dd2d0;border-color:#4dd2d0;color:#fff}
+.ap-value-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-bottom:1px solid #eef2f5}.ap-value-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-value-wrapper .section-header{margin-bottom:50px}.ap-value-wrapper .section-header h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-value-wrapper .section-header p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto;line-height:1.6}.ap-value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ap-value-card{background-color:#fff;padding:30px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}.ap-value-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-value-card .icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}.ap-value-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}.ap-value-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
+.ap-inspiration-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:80px 20px}.ap-inspiration-wrapper{max-width:1200px;margin:0 auto;text-align:center}.ap-inspiration-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0}.ap-inspiration-wrapper .section-subtitle{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;max-width:700px;margin:0 auto 50px auto;line-height:1.6}.ap-inspiration-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.ap-inspiration-card{position:relative;display:block;min-height:450px;border-radius:8px;overflow:hidden;box-shadow:0 5px 20px rgba(16,46,53,.1);text-decoration:none;color:#fff;transition:transform .3s ease,box-shadow .3s ease}.ap-inspiration-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(16,46,53,.15)}.ap-inspiration-card img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .4s ease}.ap-inspiration-card:hover img{transform:scale(1.05)}.ap-inspiration-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%);z-index:2}.ap-card-content{position:absolute;bottom:0;left:0;width:100%;padding:30px;box-sizing:border-box;z-index:3;text-align:left}.ap-card-content h3{font-size:1.5rem;font-weight:700;margin:0 0 10px 0;color:#fff}.ap-card-content p{font-size:1rem;line-height:1.6;margin:0;opacity:.9;color:#fff}
+.ap-faq-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:50px 20px;box-sizing:border-box;background-color:#fff}.ap-faq-wrapper{max-width:800px;margin:0 auto}.ap-faq-main-title{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin-top:0;margin-bottom:40px;text-align:center}.ap-faq-item{border-bottom:1px solid #e0e0e0}.ap-faq-item:last-child{border-bottom:none}.ap-faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;background:none;border:none;box-shadow:none;text-align:left;font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;color:#333;cursor:pointer;transition:color .2s ease}.ap-faq-question:hover{color:#4dd2d0}.ap-faq-icon{font-size:24px;font-weight:400;transition:transform .3s ease}.ap-faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease-in-out,padding .3s ease-in-out;color:#555;font-size:16px;line-height:1.7}.ap-faq-answer p{margin-top:0;margin-bottom:20px}.ap-faq-item.active .ap-faq-question{color:#4dd2d0}.ap-faq-item.active .ap-faq-answer{max-height:500px;padding-bottom:20px}.ap-faq-item.active .ap-faq-icon{transform:rotate(45deg)}
+.ap-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ap-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ap-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ap-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ap-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ap-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ap-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ap-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ap-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ap-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}@media (max-width:768px){.ap-help-intro{flex-direction:column;text-align:center}.ap-help-intro h2{text-align:center}}
+
+/* ========================================================================== */
+/* 4. AZULEJO HIDRÁULICO BAÑO (ID 2083) */
+/* ========================================================================== */
+.tax-product_cat.term-2083 .woocommerce-breadcrumb,
+.tax-product_cat.term-2083 .woocommerce-products-header,
+.tax-product_cat.term-2083 .term-description,
+.tax-product_cat.term-2083 .product-categories,
+.tax-product_cat.term-2083 .doo-category-banner { display: none !important; }
+
+.ap-hero-section-bano { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; position: relative; display: flex; align-items: center; justify-content: center; min-height: 550px; padding: 40px 20px; background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg'); background-size: cover; background-position: center; color: #ffffff; text-align: center; overflow: hidden; }
+.ap-hero-section-bano::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(16, 46, 53, 0.55); z-index: 1; }
+.ap-hero-content-bano { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+.ap-hero-content-bano h1 { font-size: clamp(2.25rem, 6vw, 3.25rem); font-weight: 700; color: #ffffff; line-height: 1.2; margin: 0 0 20px 0; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+.ap-hero-content-bano p { font-size: clamp(1rem, 2.5vw, 1.25rem); color: #ffffff; max-width: 650px; margin: 0 auto 30px auto; line-height: 1.6; opacity: 0.95; text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
+.ap-hero-cta-bano,
+.ap-hero-cta-bano:visited { display: inline-block; padding: 12px 28px; border-radius: 5px; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; border: 2px solid #4dd2d0; background-color: #4dd2d0; color: #ffffff; transition: all 0.2s ease-in-out; }
+.ap-hero-cta-bano:hover { background-color: #ffffff; color: #4dd2d0; transform: translateY(-2px); }
+
+.ap-value-section-bano { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f7f9fa; padding: 80px 20px; border-bottom: 1px solid #eef2f5; }
+.ap-value-wrapper-bano { max-width: 1200px; margin: 0 auto; text-align: center; }
+.ap-value-wrapper-bano .section-header-bano { margin-bottom: 50px; }
+.ap-value-wrapper-bano .section-header-bano h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-value-wrapper-bano .section-header-bano p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+.ap-value-grid-bano { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.ap-value-card-bano { background-color: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eef2f5; text-align: center; transition: transform .2s ease, box-shadow .2s ease; }
+.ap-value-card-bano:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(16, 46, 53, .08); }
+.ap-value-card-bano .icon { font-size: 3rem; line-height: 1; color: #4dd2d0; margin-bottom: 20px; }
+.ap-value-card-bano h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin: 0 0 10px 0; }
+.ap-value-card-bano p { font-size: .95rem; color: #3f6f7b; line-height: 1.7; margin: 0; }
+
+.ap-inspiration-section-bano { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; padding: 80px 20px; }
+.ap-inspiration-wrapper-bano { max-width: 1200px; margin: 0 auto; text-align: center; }
+.ap-inspiration-wrapper-bano h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-inspiration-wrapper-bano .section-subtitle-bano { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; max-width: 700px; margin: 0 auto 50px auto; line-height: 1.6; }
+.ap-inspiration-grid-bano { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.ap-inspiration-card-bano { position: relative; display: block; min-height: 450px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(16, 46, 53, 0.1); text-decoration: none; color: white; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.ap-inspiration-card-bano:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(16, 46, 53, 0.15); }
+.ap-inspiration-card-bano img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; transition: transform 0.4s ease; }
+.ap-inspiration-card-bano:hover img { transform: scale(1.05); }
+.ap-inspiration-card-bano::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%); z-index: 2; }
+.ap-card-content-bano { position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; box-sizing: border-box; z-index: 3; text-align: left; }
+.ap-card-content-bano h3 { font-size: 1.5rem; font-weight: 700; margin: 0 0 10px 0; color: white; }
+.ap-card-content-bano p { font-size: 1rem; line-height: 1.6; margin: 0; opacity: 0.9; color: white; }
+
+.ap-filters-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:60px 20px;border-top:1px solid #eef2f5}.ap-filters-wrapper{max-width:960px;margin:0 auto}.ap-filters-header{text-align:center;margin-bottom:40px}.ap-filters-header h2{font-size:1.5rem;font-weight:600;color:#102e35;margin:0}.ap-filter-group{margin-bottom:30px}.ap-filter-group:last-child{margin-bottom:0}.ap-filter-group-title{font-size:1.1rem;font-weight:600;color:#3f6f7b;margin:0 0 15px 0;text-align:center}.ap-filter-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.ap-filter-btn, .ap-filter-btn:visited{display:inline-block;padding:10px 22px;border-radius:5px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;border:2px solid #4dd2d0;background-color:#4dd2d0;color:#fff;transition:all .2s ease-in-out}.ap-filter-btn:hover{background-color:#fff;color:#4dd2d0;transform:translateY(-2px)}
+.ap-product-header-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#fff;padding:40px 20px 0 20px;text-align:center}.ap-product-header-wrapper{max-width:800px;margin:0 auto}.ap-product-header-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 15px 0;line-height:1.3}.ap-product-header-wrapper p{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;line-height:1.6;margin:0}
+
+.ap-seo-content-section { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; padding: 80px 20px; }
+.ap-seo-content-wrapper { max-width: 900px; margin: 0 auto; line-height: 1.7; color: #3f6f7b; }
+.ap-seo-content-wrapper h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; text-align: center; margin-bottom: 40px; }
+.ap-seo-content-wrapper h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 600; color: #102e35; margin-top: 40px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #4dd2d0; }
+.ap-seo-content-wrapper p { font-size: clamp(1rem, 2.5vw, 1.1rem); margin-bottom: 20px; }
+.ap-seo-content-wrapper strong { font-weight: 600; color: #102e35; }
+.ap-seo-content-wrapper ul { list-style: none; padding-left: 0; }
+.ap-seo-content-wrapper li { padding-left: 25px; position: relative; margin-bottom: 15px; }
+.ap-seo-content-wrapper li::before { content: '\2714\fe0f'; color: #4dd2d0; position: absolute; left: 0; font-size: 1.1rem; }
+
+.ap-help-section{font-family:'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:#f7f9fa;padding:80px 20px;border-top:1px solid #eef2f5}.ap-help-wrapper{max-width:960px;margin:0 auto;text-align:center}.ap-help-intro{display:flex;align-items:center;justify-content:center;gap:25px;margin-bottom:50px}.ap-help-intro img{width:100px;height:100px;border-radius:50%;border:4px solid #4dd2d0;box-shadow:0 4px 15px rgba(16,46,53,.1)}.ap-help-intro h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:#102e35;margin:0;text-align:left}.ap-help-intro h2 span{font-size:clamp(1rem,2.5vw,1.125rem);color:#3f6f7b;font-weight:400;display:block;margin-top:5px}.ap-contact-options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}.ap-contact-option{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:25px 15px;border-radius:8px;background-color:#fff;border:1px solid #eef2f5;transition:transform .2s ease,box-shadow .2s ease}.ap-contact-option:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}.ap-contact-option .icon{font-size:2.5rem;line-height:1;color:#4dd2d0;margin-bottom:15px}.ap-contact-option .label{font-size:.95rem;font-weight:600;color:#102e35}@media (max-width:768px){.ap-help-intro{flex-direction:column;text-align:center}.ap-help-intro h2{text-align:center}}
+
+/* ========================================================================== */
+/* 5. AZULEJO HIDRÁULICO COCINA (ID 4876) */
+/* ========================================================================== */
+.tax-product_cat.term-4876 .woocommerce-breadcrumb,
+.tax-product_cat.term-4876 .woocommerce-products-header,
+.tax-product_cat.term-4876 .term-description,
+.tax-product_cat.term-4876 .product-categories,
+.tax-product_cat.term-4876 .doo-category-banner { display: none !important; }
+
+.ahc-hero-section { position: relative; background-color: #102e35; color: #ffffff; text-align: center; padding: 96px 24px; overflow: hidden; font-family: 'Poppins', sans-serif; }
+.ahc-hero-section .hero-bg-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: 0; }
+.ahc-hero-section .hero-content { position: relative; z-index: 1; max-width: 896px; margin: 0 auto; }
+.ahc-hero-section h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+.ahc-hero-section p { font-size: 1.125rem; max-width: 768px; margin: 0 auto 2rem auto; color: #e5e7eb; }
+.ahc-hero-section .hero-buttons { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.ahc-boton { display: inline-block; padding: 12px 28px; border-radius: 5px; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; border: 2px solid transparent; transition: all 0.3s ease; cursor: pointer; }
+.ahc-boton.primario { background-color: #4dd2d0; border-color: #4dd2d0; color: #ffffff; }
+.ahc-boton.primario:hover { background-color: #ffffff; border-color: #ffffff; color: #4dd2d0; transform: translateY(-2px); }
+.ahc-boton.secundario { background-color: transparent; border-color: #ffffff; color: #ffffff; }
+.ahc-boton.secundario:hover { background-color: #ffffff; color: #102e35; transform: translateY(-2px); }
+
+.ahc-ventajas-section { padding: 80px 24px; background-color: #ffffff; font-family: 'Poppins', sans-serif; }
+.ahc-ventajas-section .section-header { text-align: center; margin-bottom: 3rem; }
+.ahc-ventajas-section h2 { font-size: 2rem; font-weight: 700; color: #102e35; margin-bottom: 0.75rem; }
+.ahc-ventajas-section .section-p { font-size: 1.125rem; color: #4a5568; max-width: 896px; margin: 0 auto; }
+.ahc-ventajas-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 2rem; max-width: 1152px; margin: 0 auto; }
+.ahc-ventaja-card { text-align: center; padding: 1.5rem; background-color: #f7fafc; border-radius: 0.5rem; }
+.ahc-ventaja-card .icon { font-size: 2.25rem; margin-bottom: 1rem; color: #4dd2d0; }
+.ahc-ventaja-card h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin-bottom: 0.5rem; }
+.ahc-ventaja-card p { color: #4a5568; }
+
+.ahc-inspiracion-section { padding: 80px 24px; font-family: 'Poppins', sans-serif; }
+.ahc-inspiracion-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 2rem; }
+.ahc-inspiracion-card { display: block; text-decoration: none; color: inherit; border-radius: 0.5rem; overflow: hidden; background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.ahc-inspiracion-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1); }
+.ahc-inspiracion-card img { width: 100%; height: 256px; object-fit: cover; }
+.ahc-inspiracion-card .card-content { padding: 1.5rem; }
+.ahc-inspiracion-card h3 { font-size: 1.25rem; font-weight: 700; color: #102e35; margin-bottom: 0.5rem; }
+
+.ahc-filtros-section { padding: 64px 24px 16px; background-color: #ffffff; font-family: 'Poppins', sans-serif; }
+.ahc-filtros-section h2 { font-size: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 3rem; color: #102e35; }
+.ahc-filtro-grupo { margin-bottom: 2.5rem; }
+.ahc-filtro-grupo h3 { font-size: 1.25rem; font-weight: 600; text-align: center; margin-bottom: 1.25rem; color: #1f2937; }
+.ahc-botones-filtro { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.ahc-boton-filtro, .ahc-boton-filtro:visited { display: inline-block; padding: 10px 24px; border-radius: 5px; font-size: 0.9rem; font-weight: 600; text-decoration: none; border: 2px solid #4dd2d0; background-color: #4dd2d0; color: #ffffff !important; transition: all 0.2s ease-in-out; text-align: center; }
+.ahc-boton-filtro:hover { background-color: #ffffff; color: #4dd2d0 !important; transform: translateY(-2px); }
+.ahc-filtros-section .texto-final { text-align: center; margin-top: 3rem; font-size: 1.125rem; color: #4a5568; }
+
+.ahc-ayuda-section { padding: 80px 24px; background-color: #f7fafc; border-top: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif; }
+.ahc-ayuda-wrapper { max-width: 1152px; margin: 0 auto; text-align: center; }
+.ahc-ayuda-intro { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+.ahc-ayuda-intro img { width: 96px; height: 96px; border-radius: 50%; border: 4px solid #4dd2d0; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); }
+.ahc-ayuda-intro h2 { font-size: 2rem; font-weight: 700; color: #102e35; }
+.ahc-ayuda-intro p { font-size: 1.125rem; color: #4a5568; margin-top: 0.25rem; }
+.ahc-ayuda-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 896px; margin: 0 auto; }
+.ahc-ayuda-link { display: block; background-color: #ffffff; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1); text-decoration: none; transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.ahc-ayuda-link:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
+.ahc-ayuda-link .icon { font-size: 1.875rem; }
+.ahc-ayuda-link .label { margin-top: 0.5rem; font-weight: 600; font-size: 0.875rem; color: #102e35; }
+@media (min-width: 768px) {
+    .ahc-hero-section h1 { font-size: 3rem; }
+    .ahc-ventajas-grid { grid-template-columns: repeat(2, 1fr); }
+    .ahc-inspiracion-grid { grid-template-columns: repeat(3, 1fr); }
+    .ahc-ayuda-intro { flex-direction: row; }
+    .ahc-ayuda-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1024px) {
+    .ahc-ventajas-grid { grid-template-columns: repeat(4, 1fr); }
+    .ahc-ayuda-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* ========================================================================== */
+/* 6. ESPEJOS (General, ID 102) */
+/* ========================================================================== */
+.tax-product_cat.term-102 .woocommerce-breadcrumb,
+.tax-product_cat.term-102 .woocommerce-products-header,
+.tax-product_cat.term-102 .term-description,
+.tax-product_cat.term-102 .product-categories,
+.tax-product_cat.term-102 .doo-category-banner { display: none !important; }
+
+.adri-hero-espejos { position: relative; height: 70vh; min-height: 450px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 1rem; overflow: hidden; font-family: 'Poppins', sans-serif; }
+.adri-hero-espejos__img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.adri-hero-espejos__overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(16, 46, 53, 0.7); z-index: 1; }
+.adri-hero-espejos__content { position: relative; z-index: 2; max-width: 896px; margin: 0 auto; }
+.adri-hero-espejos__title { font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; color: #FFFFFF; line-height: 1.2; }
+.adri-hero-espejos__text { font-size: 1rem; color: #e5e7eb; }
+.adri-hero-espejos__text p { margin-bottom: 1rem; }
+.adri-hero-espejos__text p:last-child { margin-bottom: 0; }
+.adri-hero-espejos__text-desktop { display: none; }
+.adri-hero-espejos__nav { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+.adri-hero-espejos__nav-link { display: inline-block; padding: 0.5rem 1rem; border: 1px solid #4dd2d0; border-radius: 5px; background-color: #4dd2d0 !important; color: #FFFFFF !important; text-decoration: none; font-size: 0.875rem; font-weight: 600; transition: all 0.2s ease-in-out; }
+.adri-hero-espejos__nav-link:hover { background-color: #ffffff !important; border-color: #ffffff; color: #4dd2d0 !important; transform: translateY(-2px); }
+.adri-hero-espejos__nav-link:focus, .adri-hero-espejos__nav-link:active { outline: none; box-shadow: 0 0 0 3px rgba(77, 210, 208, 0.5); }
+.adri-nav-visual-espejos { padding: 4rem 1rem; background-color: #f9fafb; font-family: 'Poppins', sans-serif; }
+.adri-nav-visual-espejos__container { max-width: 1152px; margin: 0 auto; }
+.adri-nav-visual-espejos__header { text-align: center; margin-bottom: 3rem; }
+.adri-nav-visual-espejos__title { font-size: 2rem; font-weight: 700; color: #102e35; margin-bottom: 0.5rem; }
+.adri-nav-visual-espejos__subtitle { font-size: 1.125rem; color: #3f6f7b; max-width: 672px; margin: 0 auto; }
+.adri-nav-visual-espejos__grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; }
+.adri-nav-visual-espejos__card { position: relative; overflow: hidden; border-radius: 8px; display: block; text-decoration: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; aspect-ratio: 3 / 2; }
+.adri-nav-visual-espejos__card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
+.adri-nav-visual-espejos__card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease-in-out; }
+.adri-nav-visual-espejos__card:hover .adri-nav-visual-espejos__card-img { transform: scale(1.05); }
+.adri-nav-visual-espejos__card-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(16, 46, 53, 0.8) 0%, rgba(16, 46, 53, 0) 60%); }
+.adri-nav-visual-espejos__card-title { position: absolute; bottom: 1rem; left: 1rem; right: 1rem; color: #ffffff; font-size: 1.5rem; font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+
+.adri-guiarapida-espejos { padding: 4rem 1rem; background-color: #102e35; font-family: 'Poppins', sans-serif; color: #ffffff; }
+.adri-guiarapida-espejos__container { max-width: 1152px; margin: 0 auto; }
+.adri-guiarapida-espejos__header { text-align: center; margin-bottom: 3rem; }
+.adri-guiarapida-espejos__title { font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; }
+.adri-guiarapida-espejos__subtitle { font-size: 1.125rem; color: #a0aec0; max-width: 672px; margin: 0 auto; }
+.adri-guiarapida-espejos__grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+.adri-guiarapida-espejos__card { text-align: center; }
+.adri-guiarapida-espejos__icon-wrapper { margin: 0 auto 1.5rem auto; width: 64px; height: 64px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: center; }
+.adri-guiarapida-espejos__icon { width: 32px; height: 32px; stroke: #4dd2d0; stroke-width: 1.5; }
+.adri-guiarapida-espejos__card-title { font-size: 1.25rem; font-weight: 600; color: #ffffff; margin-bottom: 0.75rem; }
+.adri-guiarapida-espejos__card-text { font-size: 1rem; color: #a0aec0; line-height: 1.6; }
+
+.adri-seo-espejos { padding: 4rem 1rem; background-color: #f7fafc; font-family: 'Poppins', sans-serif; border-top: 1px solid #e2e8f0;}
+.adri-seo-espejos__container { max-width: 896px; margin: 0 auto; color: #3f6f7b; line-height: 1.7; }
+.adri-seo-espejos__container h2 { text-align: center; font-size: 2rem; font-weight: 700; color: #102e35; margin-bottom: 2rem; }
+.adri-seo-espejos__container h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #4dd2d0; }
+.adri-seo-espejos__container p { margin-bottom: 1rem; }
+.adri-seo-espejos__container strong { font-weight: 600; color: #102e35; }
+
+.adri-contacto-espejos { padding: 4rem 1rem; background-color: #f7fafc; border-top: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif; }
+.adri-contacto-espejos__container { max-width: 1152px; margin: 0 auto; text-align: center; }
+.adri-contacto-espejos__intro { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 3rem; }
+.adri-contacto-espejos__img { width: 96px; height: 96px; border-radius: 50%; border: 4px solid #4dd2d0; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); }
+.adri-contacto-espejos__title { font-size: 2rem; font-weight: 700; color: #102e35; margin: 0; }
+.adri-contacto-espejos__subtitle { font-size: 1.125rem; color: #4a5568; margin-top: 0.25rem; max-width: 500px; }
+.adri-contacto-espejos__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 896px; margin: 0 auto; }
+.adri-contacto-espejos__link { display: block; background-color: #ffffff; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1); text-decoration: none; transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.adri-contacto-espejos__link:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
+.adri-contacto-espejos__link-icon { font-size: 1.875rem; line-height: 1; }
+.adri-contacto-espejos__link-label { margin-top: 0.5rem; font-weight: 600; font-size: 0.875rem; color: #102e35; }
+
+@media (min-width: 640px) { .adri-hero-espejos__text-desktop { display: block; } .adri-nav-visual-espejos__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 768px) { .adri-hero-espejos__title { font-size: 3rem; } .adri-hero-espejos__text { font-size: 1.125rem; } .adri-guiarapida-espejos__grid { grid-template-columns: repeat(3, 1fr); } .adri-contacto-espejos__intro { flex-direction: row; text-align: left; } .adri-contacto-espejos__grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .adri-hero-espejos__title { font-size: 3.75rem; } .adri-nav-visual-espejos__grid { grid-template-columns: repeat(3, 1fr); } .adri-contacto-espejos__grid { grid-template-columns: repeat(6, 1fr); } }
+/* ========================================================================== */
+/* 7. ESPEJOS CON LUZ (ID 4213) */
+/* ========================================================================== */
+.tax-product_cat.term-4213 .woocommerce-breadcrumb,
+.tax-product_cat.term-4213 .woocommerce-products-header,
+.tax-product_cat.term-4213 .term-description,
+.tax-product_cat.term-4213 .product-categories,
+.tax-product_cat.term-4213 .doo-category-banner { display: none !important; }
+
+.ap-hero-section-luz { font-family: 'Poppins', sans-serif; background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-con-luz-Adrihosan.jpg'); background-size: cover; background-position: center center; position: relative; display: flex; align-items: center; justify-content: center; min-height: 70vh; padding: 80px 20px; color: #ffffff; text-align: center; overflow: hidden; }
+.ap-hero-section-luz::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(16, 46, 53, 0.65); z-index: 1; }
+.ap-hero-content-luz { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+.ap-hero-content-luz h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 700; line-height: 1.2; margin: 0 0 15px 0; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+.ap-hero-content-luz p { font-size: clamp(1rem, 2.5vw, 1.25rem); line-height: 1.6; max-width: 650px; margin: 0 auto 30px auto; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); opacity: 0.95; }
+.ap-hero-buttons-luz { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+.boton-adrihosan-luz { display: inline-block; padding: 10px 22px; border-radius: 5px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; transition: all 0.2s ease-in-out; }
+.boton-adrihosan-luz.primary { background-color: #4dd2d0; border: 2px solid #4dd2d0; color: #ffffff; }
+.boton-adrihosan-luz.primary:hover { background-color: #ffffff; color: #4dd2d0; transform: translateY(-2px); }
+.boton-adrihosan-luz.secondary { background-color: transparent; border: 2px solid #ffffff; color: #ffffff; }
+.boton-adrihosan-luz.secondary:hover { background-color: #ffffff; color: #102e35; transform: translateY(-2px); }
+
+.ap-light-types-section { font-family: 'Poppins', sans-serif; background-color: #ffffff; padding: 80px 20px; }
+.ap-light-types-wrapper { max-width: 1200px; margin: 0 auto; text-align: center; }
+.ap-light-types-header h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-light-types-header p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; max-width: 700px; margin: 0 auto 50px auto; line-height: 1.6; }
+.ap-light-types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.ap-light-type-card { background-color: #f7f9fa; padding: 40px; border-radius: 8px; border: 1px solid #eef2f5; text-align: center; transition: transform .2s ease, box-shadow .2s ease; }
+.ap-light-type-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(16, 46, 53, .08); }
+.ap-light-type-card .icon { color: #4dd2d0; margin-bottom: 25px; }
+.ap-light-type-card h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin: 0 0 15px 0; }
+.ap-light-type-card p { font-size: .95rem; color: #3f6f7b; line-height: 1.7; margin: 0; }
+
+.ap-antifog-section { font-family: 'Poppins', sans-serif; background-color: #102e35; padding: 80px 20px; }
+.ap-antifog-wrapper { color: #ffffff; display: grid; grid-template-columns: 1fr; align-items: center; gap: 40px; max-width: 1200px; margin: 0 auto; }
+.ap-antifog-content h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; margin: 0 0 20px 0; line-height: 1.3; }
+.ap-antifog-content p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #e2e8f0; line-height: 1.7; margin: 0 0 20px 0; }
+.ap-antifog-content p:last-child { margin-bottom: 0; }
+.ap-antifog-image img { width: 100%; height: auto; border-radius: 8px; display: block; object-fit: cover; max-height: 400px; }
+@media (min-width: 768px) { .ap-antifog-wrapper { grid-template-columns: 1fr 1fr; gap: 60px; } }
+
+.ap-filters-section-luz { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; padding: 60px 20px; border-top: 1px solid #eef2f5; }
+.ap-filters-wrapper-luz { max-width: 960px; margin: 0 auto; }
+.ap-filter-group-luz { margin-bottom: 30px; } .ap-filter-group-luz:last-child { margin-bottom: 0; }
+.ap-filter-group-title-luz { font-size: 1.1rem; font-weight: 600; color: #3f6f7b; margin: 0 0 15px 0; text-align: center; }
+.ap-filter-buttons-luz { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.ap-filter-btn-luz { display: inline-block; padding: 8px 18px; border-radius: 20px; font-size: .875rem; font-weight: 500; text-decoration: none; border: 1px solid #d1d5db; background-color: #ffffff; color: #374151; transition: all .2s ease-in-out; }
+.ap-filter-btn-luz:hover { background-color: #4dd2d0; color: #ffffff; border-color: #4dd2d0; }
+
+.ap-product-header-section-luz { font-family: 'Poppins', sans-serif; background-color: #ffffff; padding: 40px 20px 0 20px; text-align: center; }
+.ap-product-header-wrapper-luz { max-width: 800px; margin: 0 auto; }
+.ap-product-header-wrapper-luz h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-product-header-wrapper-luz p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; line-height: 1.6; margin: 0; }
+
+.ap-tech-guide-section { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; padding: 80px 20px; }
+.ap-tech-guide-wrapper { max-width: 1200px; margin: 0 auto; }
+.ap-tech-guide-header { text-align: center; margin-bottom: 50px; }
+.ap-tech-guide-header h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-tech-guide-header p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+.ap-tech-guide-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+@media (min-width: 1024px) { .ap-tech-guide-grid { grid-template-columns: repeat(3, 1fr); } }
+.ap-tech-guide-card { background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #eef2f5; }
+.ap-tech-guide-card h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin: 0 0 20px 0; padding-bottom: 15px; border-bottom: 2px solid #4dd2d0; }
+.ap-tech-guide-card p { font-size: .95rem; color: #3f6f7b; line-height: 1.7; margin: 0 0 15px 0; }
+.ap-tech-guide-card strong { color: #102e35; font-weight: 600; }
+.ap-tech-guide-card ul { list-style: none; padding-left: 0; margin: 0; }
+.ap-tech-guide-card li { padding-left: 25px; position: relative; margin-bottom: 15px; font-size: .95rem; color: #3f6f7b; line-height: 1.7; text-align: left; }
+.ap-tech-guide-card li::before { content: '\2714'; color: #4dd2d0; position: absolute; left: 0; font-size: 1.1rem; font-weight: bold; }
+.ap-tech-guide-card li:last-child { margin-bottom: 0; }
+
+.ap-seo-content-section-luz { font-family: 'Poppins', sans-serif; background-color: #ffffff; padding: 80px 20px; }
+.ap-seo-content-wrapper-luz { max-width: 900px; margin: 0 auto; line-height: 1.7; color: #3f6f7b; }
+.ap-seo-content-wrapper-luz h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; text-align: center; margin-bottom: 40px; }
+.ap-seo-content-wrapper-luz h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 600; color: #102e35; margin-top: 40px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #4dd2d0; }
+.ap-seo-content-wrapper-luz p { font-size: clamp(1rem, 2.5vw, 1.1rem); margin-bottom: 20px; }
+.ap-seo-content-wrapper-luz strong { font-weight: 600; color: #102e35; }
+.ap-seo-content-wrapper-luz ul { list-style: none; padding-left: 0; }
+.ap-seo-content-wrapper-luz li { padding-left: 25px; position: relative; margin-bottom: 15px; }
+.ap-seo-content-wrapper-luz li::before { content: '\2714'; color: #4dd2d0; position: absolute; left: 0; font-size: 1.1rem; font-weight: bold; }
+
+/* ========================================================================== */
+/* 8. ESPEJO REDONDO BAÑO (ID 4247) */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .woocommerce-breadcrumb,
+.tax-product_cat.term-4247 .woocommerce-products-header,
+.tax-product_cat.term-4247 .term-description,
+.tax-product_cat.term-4247 .product-categories,
+.tax-product_cat.term-4247 .doo-category-banner { display: none !important; }
+
+.ap-hero-section-redondo { font-family: 'Poppins', sans-serif; background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/espejo-redondo-adrihosan-1-scaled.jpg'); background-size: cover; background-position: center 70%; position: relative; display: flex; align-items: center; justify-content: center; min-height: 70vh; padding: 80px 20px; color: #ffffff; text-align: center; overflow: hidden; }
+.ap-hero-section-redondo::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(16, 46, 53, 0.60); z-index: 1; }
+.ap-hero-content-redondo { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+.ap-hero-content-redondo h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 700; line-height: 1.2; margin: 0 0 15px 0; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+.ap-hero-content-redondo p { font-size: clamp(1rem, 2.5vw, 1.25rem); line-height: 1.6; max-width: 650px; margin: 0 auto 30px auto; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); opacity: 0.95; }
+.ap-hero-buttons-redondo { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+.boton-adrihosan-redondo { display: inline-block; padding: 10px 22px; border-radius: 5px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; transition: all 0.2s ease-in-out; }
+.boton-adrihosan-redondo.primary { background-color: #4dd2d0; border: 2px solid #4dd2d0; color: #ffffff; }
+.boton-adrihosan-redondo.primary:hover { background-color: #ffffff; color: #4dd2d0; transform: translateY(-2px); }
+.boton-adrihosan-redondo.secondary { background-color: transparent; border: 2px solid #ffffff; color: #ffffff; }
+.boton-adrihosan-redondo.secondary:hover { background-color: #ffffff; color: #102e35; transform: translateY(-2px); }
+
+.ap-benefits-section-redondo { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; padding: 80px 20px; }
+.ap-benefits-wrapper-redondo { max-width: 1200px; margin: 0 auto; text-align: center; }
+.ap-benefits-header-redondo h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; margin: 0 0 15px 0; }
+.ap-benefits-header-redondo p { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; max-width: 700px; margin: 0 auto 50px auto; line-height: 1.6; }
+.ap-benefits-grid-redondo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.ap-benefit-card-redondo { background-color: #ffffff; border-radius: 8px; overflow: hidden; text-align: left; box-shadow: 0 4px 6px -1px rgba(0,0,0,.05), 0 2px 4px -2px rgba(0,0,0,.05); transition: transform .2s ease, box-shadow .2s ease; border: 1px solid #eef2f5; }
+.ap-benefit-card-redondo:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(16, 46, 53, .08); }
+.ap-benefit-card-redondo img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.ap-benefit-card-content { padding: 30px; }
+.ap-benefit-card-content h3 { font-size: 1.25rem; font-weight: 600; color: #102e35; margin: 0 0 10px 0; }
+.ap-benefit-card-content p { font-size: .95rem; color: #3f6f7b; line-height: 1.7; margin: 0; }
+
+.ap-filters-section-redondo { font-family: 'Poppins', sans-serif; background-color: #ffffff; padding: 60px 20px; border-top: 1px solid #eef2f5; }
+.ap-filters-wrapper-redondo { max-width: 960px; margin: 0 auto; }
+.ap-filter-group-redondo { margin-bottom: 30px; }
+.ap-filter-group-redondo:last-child { margin-bottom: 0; }
+.ap-filter-group-title-redondo { font-size: 1.1rem; font-weight: 600; color: #3f6f7b; margin: 0 0 15px 0; text-align: center; }
+.ap-filter-buttons-redondo { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.ap-filter-btn-redondo { display: inline-block; padding: 8px 18px; border-radius: 20px; font-size: .875rem; font-weight: 500; text-decoration: none; border: 1px solid #4dd2d0; background-color: #ffffff; color: #4dd2d0; transition: all .2s ease-in-out; }
+.ap-filter-btn-redondo:hover { background-color: #4dd2d0; color: #ffffff; border-color: #4dd2d0; }
+
+.ap-seo-section-redondo { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; padding: 80px 20px; border-top: 1px solid #eef2f5; }
+.ap-seo-wrapper-redondo { max-width: 900px; margin: 0 auto; line-height: 1.7; color: #3f6f7b; }
+.ap-seo-wrapper-redondo h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 700; color: #102e35; text-align: center; margin-bottom: 40px; }
+.ap-seo-wrapper-redondo h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 600; color: #102e35; margin-top: 40px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #4dd2d0; }
+.ap-seo-wrapper-redondo p { font-size: clamp(1rem, 2.5vw, 1.1rem); margin-bottom: 20px; }
+.ap-seo-wrapper-redondo strong { font-weight: 600; color: #102e35; }
+
+.ap-help-section-redondo { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; padding: 80px 20px; border-top: 1px solid #eef2f5; }
+.ap-help-wrapper-redondo { max-width: 960px; margin: 0 auto; text-align: center; }
+.ap-help-intro-redondo { display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 50px; }
+.ap-help-intro-redondo img { width: 100px; height: 100px; border-radius: 50%; border: 4px solid #4dd2d0; box-shadow: 0 4px 15px rgba(16, 46, 53, 0.1); }
+.ap-help-intro-redondo h2 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; color: #102e35; margin: 0; text-align: left; }
+.ap-help-intro-redondo h2 span { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; font-weight: 400; display: block; margin-top: 5px; }
+.ap-contact-options-grid-redondo { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
+.ap-contact-option-redondo { display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; padding: 25px 15px; border-radius: 8px; background-color: #ffffff; border: 1px solid #eef2f5; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.ap-contact-option-redondo:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08); }
+.ap-contact-option-redondo .icon { font-size: 2.5rem; line-height: 1; color: #4dd2d0; margin-bottom: 15px; }
+.ap-contact-option-redondo .label { font-size: 0.95rem; font-weight: 600; color: #102e35; }
+@media (max-width: 768px) { .ap-help-intro-redondo { flex-direction: column; text-align: center; } .ap-help-intro-redondo h2 { text-align: center; } }
+/* ========================================================================== */
+/* 9. CAMERINOS DE BAÑO (ID 2626) - VERSIÓN FINAL CON ESTRUCTURA CORREGIDA */
+/* ========================================================================== */
+
+/* Ocultar elementos por defecto de la categoría */
+.tax-product_cat.term-2626 .woocommerce-breadcrumb,
+.tax-product_cat.term-2626 .woocommerce-products-header,
+.tax-product_cat.term-2626 .term-description,
+.tax-product_cat.term-2626 .product-categories,
+.tax-product_cat.term-2626 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- ESTILOS GENERALES Y FUENTE --- */
+.tax-product_cat.term-2626 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- HERO SECTION --- */
+.ac-hero-section {
+    background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-camerino-Adrihosan-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+.ac-hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.70);
+    z-index: 1;
+}
+.ac-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ac-hero-content h1 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.ac-hero-content p {
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.95;
+}
+.ac-hero-content .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.boton-adrihosan {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.boton-adrihosan.primary { background-color: #4dd2d0; border: 2px solid #4dd2d0; color: #ffffff !important; }
+.boton-adrihosan.primary:hover { background-color: #ffffff; color: #4dd2d0 !important; transform: translateY(-2px); }
+.boton-adrihosan.secondary { background-color: transparent; border: 2px solid #ffffff; color: #ffffff !important; }
+.boton-adrihosan.secondary:hover { background-color: #ffffff; color: #102e35 !important; transform: translateY(-2px); }
+
+
+/* --- SECCIONES CON CONTENEDOR INTERNO --- */
+.ac-benefits-section, .ac-guia-compra, .ac-filtros, .ac-faq-section, .ac-seo-section, .ac-ayuda-section {
+    padding: 80px 20px;
+}
+.ac-benefits-section { background-color: #f7f9fa; }
+.ac-guia-compra { background-color: #ffffff; }
+.ac-filtros { background-color: #f7f9fa; }
+.ac-faq-section { background-color: #ffffff; }
+.ac-seo-section { background-color: #f7f9fa; border-top: 1px solid #eef2f5; }
+.ac-ayuda-section { background-color: #f7f9fa; border-top: 1px solid #eef2f5; }
+
+.ac-benefits-wrapper, .ac-guia-wrapper, .ac-filtros-wrapper, .ac-faq-wrapper, .ac-seo-wrapper, .ac-ayuda-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ac-filtros-wrapper { max-width: 960px; }
+.ac-faq-wrapper { max-width: 800px; }
+.ac-seo-wrapper { max-width: 900px; text-align: left; }
+.ac-ayuda-wrapper { max-width: 960px; }
+
+
+/* --- CABECERAS DE SECCIÓN --- */
+.ac-benefits-header h2, .ac-guia-header h2, .ac-filtros-header h2, .ac-faq-header h2, .ac-seo-header h2, .ac-ayuda-header h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+.ac-benefits-header p, .ac-guia-header p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+/* --- GRID DE BENEFICIOS Y GUÍA --- */
+.ac-benefits-grid, .ac-guia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+.ac-benefit-card, .ac-guide-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+}
+.ac-guide-card {
+    background-color: #f9fafb;
+}
+.ac-benefit-card .text-4xl {
+    font-size: 2.5rem;
+    color: #4dd2d0;
+    margin-bottom: 1rem;
+}
+.ac-benefit-card h3, .ac-guide-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 10px 0;
+}
+.ac-benefit-card p, .ac-guide-card p {
+    font-size: .95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+.ac-guide-card h3 {
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+/* --- FILTROS --- */
+.ac-filtros-header p {
+    font-size: 1.125rem;
+    color: #3f6f7b;
+    margin-top: 2rem;
+}
+.ac-filter-group { margin-bottom: 30px; }
+.ac-filter-group:last-child { margin-bottom: 0; }
+.ac-filter-group-title { font-size: 1.1rem; font-weight: 600; color: #3f6f7b; margin: 0 0 15px 0; text-align: center; }
+.ac-filter-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.ac-filter-btn { display: inline-block; padding: 8px 18px; border-radius: 20px; font-size: .875rem; font-weight: 500; text-decoration: none; border: 1px solid #d1d5db; background-color: #ffffff; color: #374151 !important; transition: all .2s ease-in-out; }
+.ac-filter-btn:hover { background-color: #4dd2d0; color: #ffffff !important; border-color: #4dd2d0; }
+.ac-filtros-wrapper .text-sm { font-size: 0.875rem; color: #6b7280; margin-top: 1rem; }
+
+.ac-seo-wrapper h3 { font-size: 1.5rem; font-weight: 700; color: #102e35; padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #4dd2d0; }
+.ac-seo-wrapper p { margin-bottom: 1rem; }
+
+.ac-ayuda-intro { display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 50px; flex-direction: column; }
+.ac-ayuda-intro img { width: 100px; height: 100px; border-radius: 50%; border: 4px solid #4dd2d0; box-shadow: 0 4px 15px rgba(16, 46, 53, 0.1); }
+.ac-ayuda-intro h2 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; color: #102e35; margin: 0; }
+.ac-ayuda-intro h2 span { font-size: clamp(1rem, 2.5vw, 1.125rem); color: #3f6f7b; font-weight: 400; display: block; margin-top: 5px; }
+.ac-contact-options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
+.ac-contact-option { display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; padding: 25px 15px; border-radius: 8px; background-color: #ffffff; border: 1px solid #eef2f5; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.ac-contact-option:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08); }
+.ac-contact-option .icon { font-size: 2.5rem; line-height: 1; color: #4dd2d0; margin-bottom: 15px; }
+.ac-contact-option .label { font-size: 0.95rem; font-weight: 600; color: #102e35; }
+
+@media (max-width: 768px) {
+    .ac-ayuda-intro { text-align: center; }
+    .ac-ayuda-intro h2 { text-align: center; }
+}
+@media (min-width: 768px) {
+    .ac-ayuda-intro { flex-direction: row; text-align: left; }
+}
+
+/* ========================================================================== */
+/* 10. BALDOSA HIDRÁULICA ORIGINAL (ID 4862) */
+/* ========================================================================== */
+
+.tax-product_cat.term-4862 .hero-section-container {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-4862 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+.tax-product_cat.term-4862 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+.tax-product_cat.term-4862 .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.tax-product_cat.term-4862 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.tax-product_cat.term-4862 .hero-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+.tax-product_cat.term-4862 .hero-btn { padding: 12px 28px; border-radius: 5px; font-size: 16px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; border: 2px solid transparent; transition: all 0.3s ease; cursor: pointer; }
+.tax-product_cat.term-4862 .hero-btn.primary { background-color: #4dd2d0; border-color: #4dd2d0; color: #ffffff; }
+.tax-product_cat.term-4862 .hero-btn.primary:hover { background-color: #ffffff; border-color: #ffffff; color: #4dd2d0; }
+.tax-product_cat.term-4862 .hero-btn.secondary { background-color: transparent; border-color: #ffffff; color: #ffffff; }
+.tax-product_cat.term-4862 .hero-btn.secondary:hover { background-color: #ffffff; color: #333; }
+
+/* --- BLOQUE DE CARACTERÍSTICAS --- */
+.tax-product_cat.term-4862 .bh-features-section { padding: 80px 20px; background-color: #f7f9fa; font-family: 'Poppins', sans-serif; }
+.tax-product_cat.term-4862 .bh-features-section .section-header { text-align: center; max-width: 800px; margin: 0 auto 50px auto; }
+.tax-product_cat.term-4862 .bh-features-section .section-header h2 { font-size: 32px; color: #102e35; font-weight: 700; margin-bottom: 15px; }
+.tax-product_cat.term-4862 .bh-features-section .section-header p { font-size: 18px; color: #3f6f7b; line-height: 1.7; }
+.tax-product_cat.term-4862 .bh-features-grid { display: grid; gap: 30px; max-width: 1200px; margin: 0 auto; grid-template-columns: 1fr; } /* 1 columna en móvil */
+.tax-product_cat.term-4862 .bh-feature-card { text-align: center; padding: 20px; background-color: #fff; border-radius: 8px; border: 1px solid #eef2f5;}
+.tax-product_cat.term-4862 .bh-feature-card .icon { font-size: 48px; margin-bottom: 15px; color: #4dd2d0; }
+.tax-product_cat.term-4862 .bh-feature-card h3 { font-size: 20px; font-weight: 600; color: #102e35; margin-bottom: 10px; }
+.tax-product_cat.term-4862 .bh-feature-card p { font-size: 16px; color: #3f6f7b; line-height: 1.6; }
+
+/* --- BLOQUES DE INSPIRACIÓN, PRODUCTOS, ETC. --- */
+.tax-product_cat.term-4862 .inspiration-section,
+.tax-product_cat.term-4862 .bh-products-header-section,
+.tax-product_cat.term-4862 .bh-custom-section,
+.tax-product_cat.term-4862 .bh-guide-section,
+.tax-product_cat.term-4862 .bh-faq-section,
+.tax-product_cat.term-4862 .bh-ayuda-section,
+.tax-product_cat.term-4862 .bh-simulator-section {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* --- Resto de estilos específicos --- */
+.tax-product_cat.term-4862 .inspiration-section { padding-top: 50px; padding-bottom: 50px; background: #fff;}
+.tax-product_cat.term-4862 .inspiration-title { text-align: center; font-size: 28px; margin-bottom: 40px; color: #333; }
+.tax-product_cat.term-4862 .inspiration-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+.tax-product_cat.term-4862 .inspiration-card { position: relative; display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-decoration: none; color: white; transition: all 0.3s ease; min-height: 350px; }
+.tax-product_cat.term-4862 .inspiration-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); }
+.tax-product_cat.term-4862 .inspiration-card img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.tax-product_cat.term-4862 .inspiration-card::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 60%); z-index: 2; }
+.tax-product_cat.term-4862 .card-content { position: absolute; bottom: 0; left: 0; width: 100%; padding: 25px; box-sizing: border-box; z-index: 3; }
+.tax-product_cat.term-4862 .card-content h3 { font-size: 22px; margin: 0 0 10px 0; color: white !important; }
+.tax-product_cat.term-4862 .card-content p { font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.9; color: white !important; }
+
+.tax-product_cat.term-4862 .bh-products-header-wrapper { max-width: 800px; margin: 0 auto; text-align: center; }
+.tax-product_cat.term-4862 .bh-products-header-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.5; /* Aumentado para mayor separación */
+}
+.tax-product_cat.term-4862 .bh-custom-section { padding-top: 60px; padding-bottom: 60px; background-color: #fff; }
+.tax-product_cat.term-4862 .bh-custom-wrapper { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.tax-product_cat.term-4862 .bh-custom-text-content, .tax-product_cat.term-4862 .bh-custom-image-content { flex: 1; min-width: 300px; }
+.tax-product_cat.term-4862 .bh-custom-image-content img { width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.tax-product_cat.term-4862 .bh-custom-section h2 { font-size: 32px; font-weight: 700; color: #2c3e50; }
+.tax-product_cat.term-4862 .bh-custom-cta-btn { display: inline-block; padding: 12px 30px; border-radius: 5px; font-size: 16px; font-weight: 600; text-transform: uppercase; border: 2px solid #4dd2d0; background-color: #4dd2d0; color: #ffffff !important; transition: all 0.3s ease; }
+.tax-product_cat.term-4862 .bh-custom-cta-btn:hover { background-color: #ffffff !important; color: #4dd2d0 !important; }
+
+.tax-product_cat.term-4862 .bh-simulator-section { padding-top: 60px; padding-bottom: 60px; background-color: #f4f6f8; text-align: center; }
+.tax-product_cat.term-4862 .bh-simulator-wrapper { max-width: 700px; margin: 0 auto; }
+.tax-product_cat.term-4862 .bh-simulator-section h2 { font-size: 32px; font-weight: 700; color: #2c3e50; }
+.tax-product_cat.term-4862 .bh-simulator-cta-btn { display: inline-block; padding: 14px 35px; border-radius: 5px; font-size: 17px; font-weight: 600; text-transform: uppercase; border: 2px solid #4dd2d0; background-color: #4dd2d0; color: #ffffff !important; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3); }
+.tax-product_cat.term-4862 .bh-simulator-cta-btn:hover { background-color: #ffffff !important; color: #4dd2d0 !important; }
+.tax-product_cat.term-4862 .bh-simulator-device-img { margin-top: 40px; max-width: 100%; }
+
+.tax-product_cat.term-4862 .bh-guide-section { padding-top: 60px; padding-bottom: 60px; background-color: #ffffff; }
+.tax-product_cat.term-4862 .bh-guide-wrapper { max-width: 800px; margin: 0 auto; }
+.tax-product_cat.term-4862 .bh-guide-main-title { font-size: 32px; font-weight: 700; text-align: center; }
+.tax-product_cat.term-4862 .bh-guide-subtitle { font-size: 22px; font-weight: 600; border-bottom: 2px solid #4dd2d0; display: inline-block; }
+
+.tax-product_cat.term-4862 .bh-ayuda-section { padding: 60px 20px; background-color: #f4f6f8; }
+.tax-product_cat.term-4862 .bh-ayuda-wrapper { max-width: 960px; margin: 0 auto; text-align: center; }
+.tax-product_cat.term-4862 .bh-ayuda-intro { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-bottom: 40px; }
+.tax-product_cat.term-4862 .bh-ayuda-intro img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+.tax-product_cat.term-4862 .bh-ayuda-intro h2 { font-size: 28px; font-weight: 700; color: #2c3e50; }
+.tax-product_cat.term-4862 .bh-ayuda-intro h2 span { display: block; font-size: 18px; font-weight: 400; }
+.tax-product_cat.term-4862 .bh-contact-option { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background-color: #ffffff; border-radius: 8px; text-decoration: none; color: #333; transition: all 0.3s ease; }
+.tax-product_cat.term-4862 .bh-contact-option:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); color: #4dd2d0; }
+.tax-product_cat.term-4862 .bh-contact-option .icon { font-size: 28px; margin-bottom: 10px; }
+
+/* --- Media Queries Específicas para la Categoría 4862 --- */
+@media (min-width: 640px) {
+    .tax-product_cat.term-4862 .bh-features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas pequeñas */
+    }
+}
+@media (min-width: 768px) {
+    .tax-product_cat.term-4862 .bh-ayuda-intro {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+@media (min-width: 1024px) {
+    .tax-product_cat.term-4862 .bh-features-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en ordenador */
+    }
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-4862 .hero-content h1, 
+    .tax-product_cat.term-4862 .bh-products-header-title, 
+    .tax-product_cat.term-4862 .bh-custom-section h2, 
+    .tax-product_cat.term-4862 .bh-simulator-section h2, 
+    .tax-product_cat.term-4862 .bh-guide-main-title,
+    .tax-product_cat.term-4862 .bh-features-section .section-header h2 {
+        font-size: 28px;
+    }
+    .tax-product_cat.term-4862 .hero-content p, 
+    .tax-product_cat.term-4862 .bh-products-header-description,
+    .tax-product_cat.term-4862 .bh-features-section .section-header p {
+        font-size: 16px;
+    }
+    .tax-product_cat.term-4862 .bh-custom-wrapper {
+        flex-direction: column;
+    }
+    .tax-product_cat.term-4862 .bh-custom-text-content {
+        text-align: center;
+    }
+}
+
+/* ========================================================================== */
+/* 1. BALDOSA HIDRÁULICA (PÁGINA PILAR - ID 4564) */
+/* ========================================================================== */
+
+/* --- OCULTAR ELEMENTOS POR DEFECTO DE WOOCOMMERCE --- */
+.tax-product_cat.term-4564 .woocommerce-breadcrumb,
+.tax-product_cat.term-4564 .woocommerce-products-header,
+.tax-product_cat.term-4564 .term-description,
+.tax-product_cat.term-4564 .product-categories,
+.tax-product_cat.term-4564 .doo-category-banner,
+.tax-product_cat.term-4564 ul.products,
+.tax-product_cat.term-4564 .woocommerce-pagination,
+.tax-product_cat.term-4564 .shop-loop-head,
+.tax-product_cat.term-4564 .wd-shop-tools,
+.tax-product_cat.term-4564 .wd-search-form,
+.tax-product_cat.term-4564 .wd-filtered-nav {
+    display: none !important;
+}
+
+/* --- ESTILOS GENERALES PARA LA PÁGINA PILAR --- */
+.tax-product_cat.term-4564 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- HERO SECTION --- */
+.tax-product_cat.term-4564 .bhp-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.tax-product_cat.term-4564 .bhp-hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(16, 46, 53, 0.65);
+    z-index: 1;
+}
+.tax-product_cat.term-4564 .bhp-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-4564 .bhp-hero-content h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.tax-product_cat.term-4564 .bhp-hero-content p {
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
+    max-width: 650px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.tax-product_cat.term-4564 .bhp-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tax-product_cat.term-4564 .bhp-hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border: 2px solid;
+    transition: all 0.2s ease-in-out;
+}
+.tax-product_cat.term-4564 .bhp-hero-btn-primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff !important;
+}
+.tax-product_cat.term-4564 .bhp-hero-btn-primary:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+.tax-product_cat.term-4564 .bhp-hero-btn-secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+.tax-product_cat.term-4564 .bhp-hero-btn-secondary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #102e35 !important;
+}
+
+/* --- HUB SECTION --- */
+.tax-product_cat.term-4564 .bhp-hub-section {
+    padding: 80px 20px 20px; /* Reducido el padding inferior */
+}
+.tax-product_cat.term-4564 .bhp-hub-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+@media (min-width: 768px) {
+    .tax-product_cat.term-4564 .bhp-hub-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+.tax-product_cat.term-4564 .bhp-hub-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tax-product_cat.term-4564 .bhp-hub-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -10px rgba(16, 46, 53, 0.2);
+}
+.tax-product_cat.term-4564 .bhp-hub-card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.tax-product_cat.term-4564 .bhp-hub-card-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tax-product_cat.term-4564 .bhp-hub-card-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 1rem 0;
+}
+.tax-product_cat.term-4564 .bhp-hub-card-content p {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0 0 2rem 0;
+    flex-grow: 1;
+}
+.tax-product_cat.term-4564 .bhp-hub-btn {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    background-color: #4dd2d0;
+    border: 2px solid #4dd2d0;
+    color: #ffffff !important;
+    transition: all 0.2s ease-in-out;
+}
+.tax-product_cat.term-4564 .bhp-hub-btn:hover {
+    background-color: #102e35;
+    border-color: #102e35;
+}
+
+/* --- COMPARISON TABLE & SEO SECTION --- */
+.tax-product_cat.term-4564 .bhp-comparison-section {
+    padding: 60px 20px 80px;
+    background-color: #ffffff;
+}
+.tax-product_cat.term-4564 .bhp-seo-section {
+    padding: 40px 20px 80px; /* Reducido el padding superior */
+    background-color: #f7f9fa;
+}
+/* ... (El resto de estilos de la tabla y SEO son iguales y no necesitan el prefijo si son únicos) ... */
+
+/* --- FAQ SECTION (AÑADIDA Y CORREGIDA) --- */
+.tax-product_cat.term-4564 .bh-faq-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+.tax-product_cat.term-4564 .bh-faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-4564 .bh-faq-main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.tax-product_cat.term-4564 .bh-faq-item {
+    border-bottom: 1px solid #eef2f5;
+}
+.tax-product_cat.term-4564 .bh-faq-item:last-child {
+    border-bottom: none;
+}
+.tax-product_cat.term-4564 .bh-faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #102e35;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.tax-product_cat.term-4564 .bh-faq-question:hover,
+.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-question {
+    color: #4dd2d0;
+}
+.tax-product_cat.term-4564 .bh-faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+.tax-product_cat.term-4564 .bh-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.tax-product_cat.term-4564 .bh-faq-answer p {
+    padding-bottom: 1.25rem;
+}
+.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-answer {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+}
+.tax-product_cat.term-4564 .bh-faq-item.active .bh-faq-icon {
+    transform: rotate(45deg);
+}
+
+/* --- CONTACT HELP BLOCK --- */
+.tax-product_cat.term-4564 .contact-help-block {
+    background-color: #f7f9fa;
+    padding: 80px 20px;
+    border-top: 1px solid #eef2f5;
+}
+.tax-product_cat.term-4564 .contact-help-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* ... (El resto de estilos de contacto son genéricos y no necesitan prefijo) ... */
+.tax-product_cat.term-4564 .contact-options-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+}
+
+/* ========================================================================== */
+/* ESTILOS FALTANTES PARA PÁGINA PILAR (ID 4564) */
+/* ========================================================================== */
+
+/* --- COMPARISON TABLE SECTION --- */
+.tax-product_cat.term-4564 .bhp-comparison-section {
+    padding: 60px 20px 80px;
+    background-color: #ffffff;
+}
+.tax-product_cat.term-4564 .bhp-comparison-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-4564 .bhp-comparison-wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2.5rem;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07), 0 4px 6px -4px rgba(0,0,0,.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table th,
+.tax-product_cat.term-4564 .bhp-comparison-table td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eef2f5;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table thead {
+    background-color: #102e35;
+    color: #ffffff;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table th {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) {
+    background-color: #f7f9fa;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table tbody tr:hover {
+    background-color: #f0f4f6;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table td {
+    color: #3f6f7b;
+    font-size: 0.95rem;
+}
+.tax-product_cat.term-4564 .bhp-comparison-table td strong {
+    color: #102e35;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .tax-product_cat.term-4564 .bhp-comparison-table thead { display: none; }
+    .tax-product_cat.term-4564 .bhp-comparison-table,
+    .tax-product_cat.term-4564 .bhp-comparison-table tbody,
+    .tax-product_cat.term-4564 .bhp-comparison-table tr,
+    .tax-product_cat.term-4564 .bhp-comparison-table td {
+        display: block;
+        width: 100%;
+    }
+    .tax-product_cat.term-4564 .bhp-comparison-table tr { margin-bottom: 15px; border: 1px solid #eef2f5; border-radius: 8px; }
+    .tax-product_cat.term-4564 .bhp-comparison-table td { text-align: right; padding-left: 50%; position: relative; border-bottom: none; }
+    .tax-product_cat.term-4564 .bhp-comparison-table td:before { content: attr(data-label); position: absolute; left: 15px; width: calc(50% - 30px); padding-right: 10px; white-space: nowrap; text-align: left; font-weight: 600; color: #102e35; }
+    .tax-product_cat.term-4564 .bhp-comparison-table td:last-child { border-bottom: 0; }
+    .tax-product_cat.term-4564 .bhp-comparison-table tbody tr:nth-child(even) { background-color: #ffffff; }
+}
+
+/* --- SEO SECTION --- */
+.tax-product_cat.term-4564 .bhp-seo-section {
+    padding: 40px 20px 80px;
+    background-color: #f7f9fa;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2rem;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4dd2d0;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.tax-product_cat.term-4564 .bhp-seo-wrapper li::before {
+    content: '✓';
+    color: #4dd2d0;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ========================================================================== */
+/* 2. BALDOSA HIDRÁULICA ORIGINAL (SUB-PÁGINA) */
+/* ========================================================================== */
+
+/* --- !! CORREGIDO !! Oculta el banner de subcategorías del tema --- */
+.tax-product_cat.term-4862 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- CORRECCIÓN DE ANCHO COMPLETO Y MÁGENES (MÉTODO ESTABLE) --- */
+.adrihosan-full-width-block {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Esta regla elimina el espacio en blanco superior que añade el tema */
+.tax-product_cat.term-4862 .site-main 
+.tax-product_cat.term-4865 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- ESTILOS GENERALES Y FUENTE --- */
+html {
+    scroll-behavior: smooth;
+}
+.tax-product_cat.term-4862 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- HERO SECTION (BHO) --- */
+.bho-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Un poco más bajo que el principal */
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.bho-hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.6);
+    z-index: 1;
+}
+.bho-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.bho-hero-content .bho-hero-title-visual {
+    font-size: clamp(2rem, 4.3vw, 2.8rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    line-height: 1.2;
+}
+.bho-hero-content p {
+    font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+    max-width: 600px;
+    margin: 0 auto 2.5rem; /* Aumenta el margen inferior para separar de los botones */
+    opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* --- BOTONES DEL HERO --- */
+.bhp-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.bhp-hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border: 2px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.bhp-hero-btn-primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff !important;
+}
+
+.bhp-hero-btn-primary:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+
+.bhp-hero-btn-secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+
+.bhp-hero-btn-secondary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #102e35 !important;
+}
+
+
+/* --- FEATURES SECTION (BHO) --- */
+.bho-features-section {
+    padding: 60px 20px;
+    background-color: #f7f9fa;
+    position: relative; 
+    z-index: 2; 
+}
+.bho-features-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+.bho-feature-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4dd2d0;
+}
+.bho-feature-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-bottom: 10px;
+}
+.bho-feature-item p {
+    color: #3f6f7b;
+    line-height: 1.7;
+}
+
+/* --- HUB SECTION (BHO) --- */
+.bho-hub-section {
+    padding: 60px 20px 40px; 
+}
+.bho-hub-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.bho-hub-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bho-hub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -10px rgba(16, 46, 53, 0.2);
+}
+.bho-hub-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+.bho-hub-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 20px 20px;
+    background: linear-gradient(to top, rgba(16, 46, 53, 0.8) 0%, rgba(16, 46, 53, 0) 100%);
+    text-align: center;
+}
+.bho-hub-card-content h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+.bho-hub-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #4dd2d0;
+    border: 2px solid #4dd2d0;
+    color: #ffffff !important;
+    transition: all 0.2s ease-in-out;
+}
+.bho-hub-btn:hover {
+    background-color: #ffffff;
+    color: #102e35 !important;
+    border-color: #ffffff;
+}
+
+/* --- FILTERS SECTION (BHO) --- */
+.bho-filters-section {
+    padding: 60px 20px 20px;
+    background-color: #ffffff;
+}
+.bho-filters-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bho-filters-main-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2.5rem;
+}
+.bho-filter-group {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eef2f5;
+}
+.bho-filter-group:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.bho-filter-group h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 20px 0;
+}
+.bho-filter-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.bho-filter-pill {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    background-color: #f7f9fa;
+    color: #3f6f7b !important;
+    transition: all 0.2s ease-in-out;
+}
+.bho-filter-pill:hover {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3);
+}
+
+/* ========================================================================== */
+/* GUÍA TÉCNICA (BHO) - COMPARTIDA PARA 2082, 4806, 4862, 4865, 4866, 4869 */
+/* ========================================================================== */
+
+.tax-product_cat.term-2082 .bho-guide-section,
+.tax-product_cat.term-4806 .bho-guide-section,
+.tax-product_cat.term-4862 .bho-guide-section,
+.tax-product_cat.term-4865 .bho-guide-section,
+.tax-product_cat.term-2209 .bho-guide-section,
+.tax-product_cat.term-4866 .bho-guide-section,
+.tax-product_cat.term-4869 .bho-guide-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper,
+.tax-product_cat.term-4806 .bho-guide-wrapper,
+.tax-product_cat.term-4862 .bho-guide-wrapper,
+.tax-product_cat.term-4865 .bho-guide-wrapper,
+.tax-product_cat.term-2209 .bho-guide-wrapper,
+.tax-product_cat.term-4866 .bho-guide-wrapper,
+.tax-product_cat.term-4869 .bho-guide-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-4865 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-main-title,
+.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #102e35;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper p,
+.tax-product_cat.term-2209 .bho-guide-wrapper p,
+.tax-product_cat.term-4806 .bho-guide-wrapper p,
+.tax-product_cat.term-4862 .bho-guide-wrapper p,
+.tax-product_cat.term-4865 .bho-guide-wrapper p,
+.tax-product_cat.term-4866 .bho-guide-wrapper p,
+.tax-product_cat.term-4869 .bho-guide-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-4806 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-4862 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-4865 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-4866 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-2209 .bho-guide-wrapper .bho-guide-subtitle,
+.tax-product_cat.term-4869 .bho-guide-wrapper .bho-guide-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper ul,
+.tax-product_cat.term-2209 .bho-guide-wrapper ul,
+.tax-product_cat.term-4806 .bho-guide-wrapper ul,
+.tax-product_cat.term-4862 .bho-guide-wrapper ul,
+.tax-product_cat.term-4865 .bho-guide-wrapper ul,
+.tax-product_cat.term-4866 .bho-guide-wrapper ul,
+.tax-product_cat.term-4869 .bho-guide-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper li,
+.tax-product_cat.term-4806 .bho-guide-wrapper li,
+.tax-product_cat.term-2209 .bho-guide-wrapper li,
+.tax-product_cat.term-4862 .bho-guide-wrapper li,
+.tax-product_cat.term-4865 .bho-guide-wrapper li,
+.tax-product_cat.term-4866 .bho-guide-wrapper li,
+.tax-product_cat.term-4869 .bho-guide-wrapper li {
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper li::before,
+.tax-product_cat.term-4806 .bho-guide-wrapper li::before,
+.tax-product_cat.term-2209 .bho-guide-wrapper li::before,
+.tax-product_cat.term-4862 .bho-guide-wrapper li::before,
+.tax-product_cat.term-4865 .bho-guide-wrapper li::before,
+.tax-product_cat.term-4866 .bho-guide-wrapper li::before,
+.tax-product_cat.term-4869 .bho-guide-wrapper li::before {
+    content: '✓';
+    color: #4dd2d0;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.tax-product_cat.term-2082 .bho-guide-wrapper strong,
+.tax-product_cat.term-4806 .bho-guide-wrapper strong,
+.tax-product_cat.term-4862 .bho-guide-wrapper strong,
+.tax-product_cat.term-2209 .bho-guide-wrapper strong,
+.tax-product_cat.term-4865 .bho-guide-wrapper strong,
+.tax-product_cat.term-4866 .bho-guide-wrapper strong,
+.tax-product_cat.term-4869 .bho-guide-wrapper strong {
+    font-weight: 600;
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* ESTILOS UNIFICADOS Y DEFINITIVOS PARA TODOS LOS BLOQUES DE FAQ */
+/* ========================================================================== */
+.faq-section-common {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.faq-wrapper-common {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-main-title-common {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    line-height: 1.4 !important;
+}
+.faq-item-common {
+    border-bottom: 1px solid #eef2f5;
+}
+.faq-item-common:last-child {
+    border-bottom: none;
+}
+.faq-question-common {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1.6 !important;
+    color: #102e35 !important;
+    transition: color 0.2s ease;
+}
+.faq-question-common:hover {
+    color: #4dd2d0 !important;
+}
+.faq-icon-common {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+.faq-answer-common {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.faq-answer-common p {
+    padding-bottom: 1.25rem;
+    margin: 0;
+}
+.faq-item-common.active .faq-question-common {
+    color: #4dd2d0 !important;
+}
+.faq-item-common.active .faq-answer-common {
+    max-height: 500px; /* Un valor alto para permitir cualquier contenido */
+}
+.faq-item-common.active .faq-icon-common {
+    transform: rotate(45deg);
+}
+
+/* ========================================================================== */
+/* ESTILOS UNIFICADOS Y DEFINITIVOS PARA EL BLOQUE DE CONTACTO */
+/* ========================================================================== */
+.contact-help-common {
+    background-color: #f7f9fa;
+    padding: 80px 20px;
+    border-top: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-help-common .contact-help-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-help-common .contact-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .contact-help-common .contact-intro {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+.contact-help-common .contact-intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #4dd2d0;
+    box-shadow: 0 4px 15px rgba(16, 46, 53, 0.1);
+}
+.contact-help-common .contact-intro h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .contact-help-common .contact-intro h2 {
+        text-align: center;
+    }
+}
+.contact-help-common .contact-intro h2 span {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+.contact-options-grid-common {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+}
+.contact-option-common {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 25px 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #eef2f5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-option-common:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
+}
+.contact-option-common .icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #4dd2d0;
+    margin-bottom: 15px;
+}
+.contact-option-common .label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #102e35;
+    text-align: center;
+}
+
+/* ========================================================================== */
+/* TÍTULO PARA EL INICIO DEL LOOP DE PRODUCTOS */
+/* ========================================================================== */
+
+.product-loop-header {
+    max-width: 1200px; /* Usa el mismo ancho que tus otras secciones */
+    margin: 80px auto 40px auto; /* Espacio superior e inferior */
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-loop-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.25rem); /* Tamaño adaptable */
+    font-weight: 700;
+    color: #102e35; /* Color principal de tus títulos */
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* ========================================================================== */
+/* CORRECCIÓN DE ESTILOS PARA GUÍA Y FAQ EN CATEGORÍA BAÑO (ID 4865) */
+/* ========================================================================== */
+
+/* --- Estilos para la sección de la Guía --- */
+.tax-product_cat.term-4865 .bho-guide-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+.tax-product_cat.term-4865 .bho-guide-main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #102e35;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.tax-product_cat.term-4865 .bho-guide-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper li {
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper li::before {
+    content: '✓';
+    color: #4dd2d0;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.tax-product_cat.term-4865 .bho-guide-wrapper strong {
+    font-weight: 600;
+    color: #102e35;
+}
+
+/* --- Estilos para la sección de FAQ (ya que usa clases comunes, esto asegura el fondo) --- */
+.tax-product_cat.term-4865 .faq-section-common {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+/* --- Estilos para la sección de Contacto (ya que usa clases comunes, esto asegura el fondo y espaciado) --- */
+.tax-product_cat.term-4865 .contact-help-common {
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    border-top: 1px solid #eef2f5;
+}
+
+/* ========================================================================== */
+/* ESTILOS PARA LA SECCIÓN DEL SIMULADOR (bh-simulator-section) - VERSIÓN LIMPIA */
+/* ========================================================================== */
+
+.bh-simulator-section {
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fa;
+}
+
+/* --- GRID POTENTE (Imagen izq / Texto der) --- */
+/* Aplicado a: 4862 (Hidráulico), 4865 (Baño), 4866 (Cocina) */
+.tax-product_cat.term-4862 .bh-simulator-wrapper,
+.tax-product_cat.term-4865 .bh-simulator-wrapper,
+.tax-product_cat.term-4866 .bh-simulator-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Versión por defecto (centrada) */
+.bh-simulator-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bh-simulator-image { text-align: center; }
+
+.bh-simulator-device-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Margen superior solo si NO estamos en modo grid */
+.bh-simulator-device-img { margin-top: 40px; }
+.tax-product_cat.term-4862 .bh-simulator-device-img,
+.tax-product_cat.term-4865 .bh-simulator-device-img,
+.tax-product_cat.term-4866 .bh-simulator-device-img { 
+    margin-top: 0; 
+}
+
+.bh-simulator-text { text-align: left; }
+
+/* Títulos y textos */
+.bh-simulator-section h2, 
+.bh-simulator-text h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.bh-simulator-section p, 
+.bh-simulator-text p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+/* Alineación específica: Centrado por defecto, Izquierda en Grid */
+.bh-simulator-section h2, .bh-simulator-section p { text-align: center; }
+
+.tax-product_cat.term-4862 .bh-simulator-text h2,
+.tax-product_cat.term-4862 .bh-simulator-text p,
+.tax-product_cat.term-4865 .bh-simulator-text h2,
+.tax-product_cat.term-4865 .bh-simulator-text p,
+.tax-product_cat.term-4866 .bh-simulator-text h2,
+.tax-product_cat.term-4866 .bh-simulator-text p {
+    text-align: left;
+}
+
+/* Botón del simulador */
+.bh-simulator-cta-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #4dd2d0;
+    background-color: #4dd2d0;
+    color: #ffffff !important;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);
+}
+
+.bh-simulator-cta-btn:hover {
+    background-color: #ffffff;
+    color: #4dd2d0 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(77, 210, 208, 0.4);
+} 
+
+/* --- RESPONSIVE PARA MÓVIL (SIMULADOR) --- */
+@media (max-width: 992px) {
+    .tax-product_cat.term-4862 .bh-simulator-wrapper,
+    .tax-product_cat.term-4865 .bh-simulator-wrapper,
+    .tax-product_cat.term-4866 .bh-simulator-wrapper {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+    .tax-product_cat.term-4862 .bh-simulator-text h2,
+    .tax-product_cat.term-4862 .bh-simulator-text p,
+    .tax-product_cat.term-4865 .bh-simulator-text h2,
+    .tax-product_cat.term-4865 .bh-simulator-text p,
+    .tax-product_cat.term-4866 .bh-simulator-text h2,
+    .tax-product_cat.term-4866 .bh-simulator-text p {
+        text-align: center; /* Volver a centrar en móvil */
+    }
+}
+
+/* ========================================================================== */
+/* CORRECCIONES DE SOLAPAMIENTO EN MÓVIL */
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Cat 2082 */
+    .tax-product_cat.term-2082 .woocommerce-pagination,
+    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
+        clear: both; 
+        position: relative; 
+        margin-top: 40px; 
+    }
+    .tax-product_cat.term-2082 .woocommerce-products-blog-header {
+        margin-top: 80px; 
+    }
+    /* Cat 4564 */
+    .tax-product_cat.term-4564 .woocommerce-products-blog-header {
+        margin-top: 450px !important; 
+    }
+}
+
+/* ========================================================================== */
+/* SOLUCIÓN DEFINITIVA 1 COLUMNA EN MÓVIL (PRODUCTOS) */
+/* ========================================================================== */
+@media (max-width: 768px) {
+    .woocommerce .site-main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .woocommerce ul.products li.product {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* ========================================================================== */
+/* GRID FEATURES (CARACTERÍSTICAS) - RESPONSIVE */
+/* ========================================================================== */
+
+/* Ordenador: 4 columnas */
+.tax-product_cat.term-4865 .bho-features-wrapper,
+.tax-product_cat.term-4866 .bho-features-wrapper,
+.tax-product_cat.term-4869 .bho-features-wrapper {
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Tablet: 2 columnas */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-4865 .bho-features-wrapper,
+    .tax-product_cat.term-4866 .bho-features-wrapper,
+    .tax-product_cat.term-4869 .bho-features-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Móvil: 1 columna + Ajuste tabla comparativa */
+@media (max-width: 768px) {
+    .tax-product_cat.term-4865 .bho-features-wrapper,
+    .tax-product_cat.term-4866 .bho-features-wrapper,
+    .tax-product_cat.term-4869 .bho-features-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .ocultar-en-movil { display: none !important; }
+    .bhp-comparison-table tfoot tr {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        gap: 10px !important;
+        padding: 10px 0 !important;
+    }
+    .bhp-comparison-table tfoot td {
+        display: block !important;
+        width: 50% !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+    .bhp-comparison-table tfoot td::before { content: none !important; }
+    .bhp-comparison-table tfoot .boton-adrihosan {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px !important;
+        height: 42px !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+}
+
+/* ========================================================================== */
+/* ESTILOS PARA CATEGORÍA CERÁMICA (ID 62) - ESTRUCTURA PILAR */
+/* ========================================================================== */
+
+/* Ocultar elementos base */
+.tax-product_cat.term-62 .woocommerce-breadcrumb,
+.tax-product_cat.term-62 .woocommerce-products-header,
+.tax-product_cat.term-62 .term-description,
+.tax-product_cat.term-62 .doo-category-banner,
+.tax-product_cat.term-62 .wd-shop-tools,
+.tax-product_cat.term-62 .filter-wrapper { 
+    display: none !important;
+}
+
+/* Ajuste del margen superior */
+.tax-product_cat.term-62 .cer-hero-section {
+    margin-top: 0; 
+}
+
+/* HERO SECTION */
+.cer-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 80px 20px;
+    background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.cer-hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(16, 46, 53, 0.65);
+    z-index: 1;
+}
+
+.cer-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cer-hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.cer-hero-content p {
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.cer-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* HUB DE ESTANCIAS (GRID) */
+.cer-hub-section {
+    padding: 60px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cer-hub-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.cer-hub-card {
+    position: relative;
+    display: block;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cer-hub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16, 46, 53, 0.2);
+}
+
+.cer-hub-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cer-hub-card:hover .cer-hub-card-img {
+    transform: scale(1.1);
+}
+
+.cer-hub-card-content {
+    position: absolute;
+    bottom: 0; left: 0; width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(16,46,53,0.9), transparent);
+    box-sizing: border-box;
+}
+
+.cer-hub-card-content h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* SECCIÓN FEATURES */
+.cer-features-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cer-features-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cer-feature-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cer-feature-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #4dd2d0;
+}
+
+.cer-feature-item h3 {
+    color: #102e35;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cer-feature-item p {
+    color: #3f6f7b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* LOOP DE PRODUCTOS Y FILTROS */
+.tax-product_cat.term-62 ul.products {
+    margin-top: 30px !important;
+    clear: both !important;
+}
+
+.wpc-filters-range { 
+    margin-bottom: 40px; 
+}
+
+/* AJUSTE MOVIL (CERAMICA) */
+@media (max-width: 768px) {
+    .cer-hero-content h1 { font-size: 2.2rem; }
+    .cer-hub-wrapper { grid-template-columns: 1fr; }
+    .cer-features-wrapper { display: grid; grid-template-columns: 1fr 1fr; }
+    
+    .tax-product_cat.term-62 ul.products {
+        margin-top: 40px !important;
+    }
+}
+
+
+/* ==========================================================================
+   REDISEÑO FINAL: 3 COLUMNAS SIMÉTRICAS SIN DESCUADRES
+   ========================================================================== */
+
+/* 1. Contenedor General */
+@media (min-width: 992px) {
+    .wpc-filters-widget-wrapper {
+        display: grid !important;
+        /* Forzamos 3 columnas idénticas */
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 20px !important;
+        align-items: stretch !important;
+    }
+
+    /* ELIMINAMOS EL HUECO VACÍO: Si el plugin mete un div vacío al inicio, lo ocultamos */
+    .wpc-filters-widget-wrapper > div:empty,
+    .wpc-filters-widget-wrapper > span:empty {
+        display: none !important;
+    }
+
+    /* Forzamos que cada sección ocupe su lugar sin saltos */
+    .wpc-filters-section {
+        grid-column: span 1 !important;
+        margin: 0 !important;
+    }
+
+    /* BOTONES: Los bajamos a una fila nueva que ocupe las 3 columnas */
+    .wpc-filter-layout-submit-button {
+        grid-column: 1 / -1 !important;
+        display: flex !important;
+        flex-direction: row !important; /* Botones uno al lado del otro */
+        justify-content: center !important;
+        gap: 15px !important;
+        margin-top: 20px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid #eee !important;
+    }
+}
+
+/* 2. Estilo de las Cajas (Copiado de tu diseño que te gustaba) */
+.wpc-filters-section {
+    background: #ffffff !important;
+    padding: 20px !important;
+    border: 1px solid #eef2f3 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(16, 46, 53, 0.04) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* 3. Títulos y Selects */
+.wpc-filter-title {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #102e35 !important;
+    text-transform: uppercase !important;
+    border-bottom: 2px solid #4dd2d0 !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 15px !important;
+}
+
+.wpc-filters-section select {
+    width: 100% !important;
+    height: 45px !important;
+    border: 1px solid #dcdfe6 !important;
+    border-radius: 6px !important;
+    color: #3f6f7b !important;
+    background-color: #fcfcfc !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234dd2d0' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 15px center !important;
+}
+
+/* 4. Botones: Estilo Adrihosan */
+.wpc-filter-layout-submit-button button {
+    background-color: #4dd2d0 !important;
+    color: #fff !important;
+    border: 2px solid #4dd2d0 !important;
+    border-radius: 5px !important;
+    padding: 10px 30px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+}
+
+.wpc-filters-main-wrap a.wpc-filter-reset-link,
+.wpc-filters-main-wrap a.wpc-filter-reset-button {
+    background: #fff !important;
+    color: #3f6f7b !important;
+    border: 1px solid #dcdfe6 !important;
+    padding: 10px 30px !important;
+    border-radius: 5px !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+/* 5. Móvil */
+@media (max-width: 991px) {
+    .wpc-filters-widget-wrapper { display: block !important; }
+    .wpc-filters-section { margin-bottom: 15px !important; }
+    .wpc-filter-layout-submit-button { flex-direction: column !important; }
+}
+
+/* --- ARREGLO FINAL FOTO RICARDO (PROPORCIÓN REAL) --- */
+.contact-intro img {
+    width: 120px !important;
+    height: 120px !important;
+    /* ESTO ES LO MÁS IMPORTANTE: evita que la foto se estire */
+    object-fit: cover !important; 
+    object-position: center top !important; /* Centra la vista en tu cara */
+    border-radius: 50% !important; /* Círculo perfecto */
+    border: 3px solid #4dd2d0 !important; /* Tu turquesa corporativo */
+    display: block !important;
+    flex-shrink: 0 !important; /* Evita que el texto la aplaste */
+}
+
+/* Ajuste del contenedor para que respire */
+.contact-intro {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    margin-bottom: 20px !important;
+}
+
+/* FORZAR ESTILO BOTONES CORPORATIVOS ADRIHOSAN */
+.subcats-grid .boton-adrihosan {
+    display: inline-block !important;
+    padding: 12px 25px !important;
+    margin: 5px !important;
+    background-color: #4dd2d0 !important; /* Tu turquesa */
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    border: 2px solid #4dd2d0 !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+}
+
+.subcats-grid .boton-adrihosan:hover {
+    background-color: #102e35 !important; /* Tu color oscuro de contraste */
+    border-color: #102e35 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Contenedor para que no salgan desalineados como en la foto */
+.subcats-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    padding: 20px 0 !important;
+}
+
+<div class="aviso-filtros-adrihosan" style="background-color: #f0fafa; border-left: 5px solid #4dd2d0; padding: 15px 20px; margin: 20px 0; border-radius: 4px; display: flex; align-items: center; gap: 15px;">
+    <span style="font-size: 1.5rem;">💡</span>
+    <p style="margin: 0; font-family: 'Poppins', sans-serif; color: #102e35; font-size: 0.95rem; font-weight: 500;">
+        <strong>¡Consejo AdrIA!</strong> Una vez seleccionadas las características que buscas, no olvides pinchar en el botón <strong>"FILTRAR"</strong> para que se actualice el catálogo.
+    </p>
+</div>
+
+/* ELIMINAR FILTRO SUPERIOR EN MÓVIL - VERSIÓN REFORZADA */
+@media (max-width: 768px) {
+    html body div.wpc-filters-open-button-container.wpc-free-layout-button,
+    html body .wpc-filters-open-button-container {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute !important;
+        overflow: hidden !important;
+    }
+}
+
+/* FIX MARGEN SUPERIOR PARA ID 2410 (Igual que las demás) */
+.tax-product_cat.term-2410 ul.products {
+  clear: both;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px !important;
+  padding-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .tax-product_cat.term-2410 ul.products {
+    margin-top: 450px !important; /* Espacio para el filtro móvil */
+  }
+}

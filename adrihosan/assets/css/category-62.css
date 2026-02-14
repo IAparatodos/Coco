@@ -1,0 +1,667 @@
+/**
+ * ============================================================================
+ * CSS CATEGORÍA 62 - CERÁMICA (Página Pilar)
+ * Archivo independiente - Patrón estándar 2026
+ * ============================================================================
+ */
+
+/* ========================================================================== */
+/* 1. OCULTAR ELEMENTOS INNECESARIOS */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .woocommerce-breadcrumb,
+.tax-product_cat.term-62 .woocommerce-products-header,
+.tax-product_cat.term-62 .term-description,
+.tax-product_cat.term-62 .product-categories,
+.tax-product_cat.term-62 .doo-category-banner,
+.tax-product_cat.term-62 .wd-shop-tools,
+.tax-product_cat.term-62 .advanced-filter,
+.tax-product_cat.term-62 .filter-wrapper {
+    display: none !important;
+}
+
+/* ========================================================================== */
+/* 2. HERO SECTION */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-62 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(16, 46, 53, 0.5), rgba(16, 46, 53, 0.7));
+    z-index: 1;
+}
+
+.tax-product_cat.term-62 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.tax-product_cat.term-62 .hero-content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    color: #4dd2d0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tax-product_cat.term-62 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-62 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tax-product_cat.term-62 .hero-btn {
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-62 .hero-btn.primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-62 .hero-btn.primary:hover {
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
+    transform: translateY(-3px);
+}
+
+.tax-product_cat.term-62 .hero-btn.secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-62 .hero-btn.secondary:hover {
+    background-color: #ffffff;
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* 2.5 INTRO TEXT SECTION */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .intro-text-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+.tax-product_cat.term-62 .intro-text-wrapper strong {
+    color: #102e35;
+    font-weight: 600;
+}
+
+/* ========================================================================== */
+/* 3. LOS DOS PILARES (Pavimentos y Azulejos) */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .pilares-section {
+    padding: 70px 20px;
+    background-color: #f8f9fa;
+}
+
+.tax-product_cat.term-62 .pilares-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-62 .pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tax-product_cat.term-62 .pilar-card {
+    display: block;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tax-product_cat.term-62 .pilar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.tax-product_cat.term-62 .pilar-image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-62 .pilar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tax-product_cat.term-62 .pilar-card:hover .pilar-image img {
+    transform: scale(1.08);
+}
+
+.tax-product_cat.term-62 .pilar-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .pilar-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #102e35;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tax-product_cat.term-62 .pilar-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4dd2d0;
+    margin: 0 0 12px 0;
+}
+
+.tax-product_cat.term-62 .pilar-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #3f6f7b;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+.tax-product_cat.term-62 .pilar-cta {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #102e35;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.tax-product_cat.term-62 .pilar-card:hover .pilar-cta {
+    color: #4dd2d0;
+}
+
+/* ========================================================================== */
+/* 4. CONSEJO DE ADRI */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .consejo-adri-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #102e35 0%, #1a4a55 100%);
+}
+
+.tax-product_cat.term-62 .consejo-adri-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-62 .consejo-adri-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-62 .consejo-icon {
+    font-size: 48px;
+    flex-shrink: 0;
+}
+
+.tax-product_cat.term-62 .consejo-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tax-product_cat.term-62 .consejo-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.tax-product_cat.term-62 .consejo-text strong {
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-62 .consejo-btn {
+    display: inline-block;
+    background: #25d366;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.tax-product_cat.term-62 .consejo-btn:hover {
+    background: #128c7e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* ========================================================================== */
+/* 5. SECCIONES DE INSPIRACIÓN (Estancias y Efectos) */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .ap-inspiration-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-62 .ap-value-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-wrapper,
+.tax-product_cat.term-62 .ap-value-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-section h2,
+.tax-product_cat.term-62 .section-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.tax-product_cat.term-62 .section-header {
+    margin-bottom: 40px;
+}
+
+.tax-product_cat.term-62 .section-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #3f6f7b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+    min-height: 250px;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.tax-product_cat.term-62 .ap-inspiration-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.4s ease;
+}
+
+.tax-product_cat.term-62 .ap-inspiration-card:hover img {
+    transform: scale(1.05);
+}
+
+.tax-product_cat.term-62 .ap-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 60px 15px 20px;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .ap-card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+}
+
+.tax-product_cat.term-62 .ap-card-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+}
+
+/* ========================================================================== */
+/* 6. SECCIÓN DE FORMATOS (Pestañas) */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .formatos-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.tax-product_cat.term-62 .formatos-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-62 .formatos-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 40px 0;
+}
+
+.tax-product_cat.term-62 .formatos-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.tax-product_cat.term-62 .formato-group {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.tax-product_cat.term-62 .formato-group h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.tax-product_cat.term-62 .formato-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tax-product_cat.term-62 .formato-buttons .hero-btn {
+    font-size: 12px;
+    padding: 10px 18px;
+}
+
+/* ========================================================================== */
+/* 7. FILTRO MÓVIL Y CATÁLOGO */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 .solo-movil-filtro {
+    display: none;
+    text-align: center;
+    margin: 20px 0 40px 0;
+    min-height: 60px;
+}
+
+.tax-product_cat.term-62 .filter-container-master {
+    margin-bottom: 50px;
+}
+
+.tax-product_cat.term-62 .product-loop-header {
+    scroll-margin-top: 140px;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+}
+
+.tax-product_cat.term-62 .product-loop-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #102e35;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* ========================================================================== */
+/* 8. GRID DE PRODUCTOS */
+/* ========================================================================== */
+
+.tax-product_cat.term-62 ul.products {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px !important;
+}
+
+/* ========================================================================== */
+/* 9. RESPONSIVE - MÓVIL (max-width: 768px) */
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+
+    /* --- HERO RESPONSIVE --- */
+    .tax-product_cat.term-62 .hero-section-container {
+        min-height: 50vh;
+        padding: 40px 15px;
+    }
+
+    .tax-product_cat.term-62 .hero-content h1 {
+        font-size: 26px !important;
+        letter-spacing: 1px;
+    }
+
+    .tax-product_cat.term-62 .hero-content p {
+        font-size: 15px !important;
+    }
+
+    .tax-product_cat.term-62 .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tax-product_cat.term-62 .hero-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* --- INTRO TEXT RESPONSIVE --- */
+    .tax-product_cat.term-62 .intro-text-section {
+        padding: 35px 15px;
+    }
+
+    .tax-product_cat.term-62 .intro-text-wrapper p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* --- PILARES RESPONSIVE --- */
+    .tax-product_cat.term-62 .pilares-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .tax-product_cat.term-62 .pilar-image {
+        height: 200px;
+    }
+
+    .tax-product_cat.term-62 .pilar-content h2 {
+        font-size: 22px;
+    }
+
+    /* --- CONSEJO ADRI RESPONSIVE --- */
+    .tax-product_cat.term-62 .consejo-adri-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-62 .consejo-text {
+        min-width: 100%;
+    }
+
+    .tax-product_cat.term-62 .consejo-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* --- GRID CARDS RESPONSIVE --- */
+    .tax-product_cat.term-62 .ap-inspiration-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tax-product_cat.term-62 .ap-inspiration-card {
+        min-height: 180px;
+    }
+
+    .tax-product_cat.term-62 .ap-card-content h3 {
+        font-size: 14px;
+    }
+
+    /* --- FORMATOS RESPONSIVE --- */
+    .tax-product_cat.term-62 .formatos-tabs {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tax-product_cat.term-62 .formato-group {
+        padding: 20px;
+    }
+
+    .tax-product_cat.term-62 .formato-buttons {
+        flex-direction: column;
+    }
+
+    .tax-product_cat.term-62 .formato-buttons .hero-btn {
+        width: 100%;
+    }
+
+    /* --- FILTRO MÓVIL --- */
+    .tax-product_cat.term-62 .solo-movil-filtro {
+        display: block !important;
+        margin: 20px 0 30px 0 !important;
+    }
+
+    #destino-filtro-adria-ceramica .wpc-filters-open-button-container,
+    #destino-filtro-adria-ceramica a {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: #4dd2d0 !important;
+        color: #fff !important;
+        padding: 14px 30px !important;
+        border-radius: 5px !important;
+        text-decoration: none !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: 90% !important;
+        max-width: 300px !important;
+    }
+}
+
+/* ========================================================================== */
+/* 10. RESPONSIVE - TABLET (max-width: 1024px) */
+/* ========================================================================== */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tax-product_cat.term-62 .pilares-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tax-product_cat.term-62 .ap-inspiration-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tax-product_cat.term-62 .formatos-tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

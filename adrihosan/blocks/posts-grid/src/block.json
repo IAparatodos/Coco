@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "doo-block/posts-grid",
+	"version": "0.1.0",
+	"title": "Grid Entradas",
+	"category": "doo-blocks",
+	"icon": "pressthis",
+	"example": {},
+	"description": "Bloque para mostrar las entradas seleccionadas",
+	"supports": {
+		"html": false,
+		"align" : true,
+		"customClassName": true
+	},
+	"attributes": {
+    "posts": {
+      "type": "array",
+      "default": []
+    }
+  },
+	"textdomain": "doo",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}
