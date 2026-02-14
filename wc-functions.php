@@ -1376,7 +1376,12 @@ function dw_remove_checkout_coupon() {
 
  */
 
-add_filter( 'gettext', 'dw_translate_strings', 999, 3 );
+// Solo activar traducciones en páginas de WooCommerce (carrito, checkout, tienda, producto)
+add_action('template_redirect', function() {
+	if ( is_cart() || is_checkout() || is_woocommerce() ) {
+		add_filter( 'gettext', 'dw_translate_strings', 999, 3 );
+	}
+});
 
 function dw_translate_strings( $translated, $untranslated, $domain ) {
 
