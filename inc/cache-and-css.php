@@ -10,52 +10,8 @@
 // Estilos .wd-shop-tools ocultos - ahora se cargan solo desde el master controller
 // en functions.php (cada setup_*_cpu_fix añade su propio wp_head CSS)
 
-// CACHÉ INTELIGENTE PARA FILTROS - OPTIMIZACIÓN CRÍTICA
-function adrihosan_cache_filter_widget($widget_id, $cache_key) {
-    // Intentar recuperar del caché (duración: 1 hora = 3600 segundos)
-    $cached = get_transient($cache_key);
-    
-    if ($cached !== false) {
-        return $cached;
-    }
-    
-    // Si no existe caché, generar el widget
-    $output = do_shortcode("[fe_widget id='$widget_id']");
-    
-    // Guardar en caché por 1 hora
-    set_transient($cache_key, $output, 3600);
-    
-    return $output;
-}
-
-// Limpiar cachés de filtros SOLO cuando se edita/crea un producto (optimizado)
-add_action('save_post_product', 'adrihosan_limpiar_cache_filtros', 10, 1);
-function adrihosan_limpiar_cache_filtros($post_id) {
-    // Solo si es una actualización real, no autoguardado ni revisiones
-    if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
-        return;
-    }
-    
-    // Array de todas las cachés de filtros
-    $caches = array(
-        'cache_filter_metro',
-        'cache_filter_hidraulico', 
-        'cache_filter_imitacion',
-        'cache_filter_hidraulica_original',
-        'cache_filter_bano',
-        'cache_filter_bano_v2',
-        'cache_filter_cocina',
-        'cache_filter_exterior',
-        'cache_filter_imitacion_hidraulico',
-        'cache_filter_cocina_imitacion',
-        'cache_filter_bano_imitacion'
-    );
-    
-    // Limpiar todas las cachés de una vez
-    foreach ($caches as $cache) {
-        delete_transient($cache);
-    }
-}
+// NOTA: NO cachear el widget de Filter Everything Pro (fe_widget).
+// El HTML cacheado es estático y los filtros dejan de funcionar.
 
 /* ========================================================================== */
 /* 5. ENQUEUE DE ASSETS EXTERNOS (CSS Y JS) - OPTIMIZACIÓN PASO 2 */
