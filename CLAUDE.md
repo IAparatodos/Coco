@@ -8,17 +8,15 @@ Este es un tema hijo de WordPress/WooCommerce para la tienda **Adrihosan** (cer�
 
 ```
 /Coco
-├── functions.php              # Core del tema (~780 líneas): master controller + setup + requires
-├── style.css                  # Estilos base del tema hijo
+├── functions.php              # Core del tema (~970 líneas): master controller + 26 setups + requires
 ├── base-global.css            # Estilos globales compartidos (contacto, etc.)
 ├── inc/
-│   ├── category-*.php         # 18 archivos de categorías modularizados (ver tabla abajo)
-│   ├── cache-and-css.php      # Cache filtros, CSS loader, style fixes
+│   ├── category-*.php         # 20 archivos de categorías modularizados (ver tabla abajo)
+│   ├── cache-and-css.php      # Cache filtros, CSS loader
 │   ├── custom-header.php      # Cabecera personalizada
 │   ├── template-tags.php      # Template tags
 │   ├── template-functions.php # Funciones de plantilla
 │   ├── customizer.php         # Personalizador
-│   ├── wc-functions.php       # Funciones WooCommerce
 │   ├── brands.php             # Marcas
 │   ├── wc-cf.php              # Custom fields productos
 │   ├── wc-cf-cat.php          # Custom fields categorías
@@ -46,16 +44,18 @@ Este es un tema hijo de WordPress/WooCommerce para la tienda **Adrihosan** (cer�
 
 ## Controlador Maestro (functions.php)
 
-El `functions.php` (~780 líneas) contiene SOLO:
+El `functions.php` (~970 líneas) contiene:
 - Versión del tema (`_S_VERSION`)
-- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` que reemplaza 42+ llamadas a `is_product_category()`. Reduce CPU de 100% a 20-30%.
-- Funciones `adrihosan_setup_*_cpu_fix()` para cada categoría (hooks de WooCommerce)
+- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` con **26 cases**. Reduce CPU de 100% a ~20%.
+- **26 funciones `adrihosan_setup_*_cpu_fix()`** para cada categoría (hooks de WooCommerce)
 - Theme setup, scripts, enqueue
-- `require` a archivos en `inc/`
+- **Cache de `doo_menu_cats()`** con transient (1 hora) - evita query pesada en cada página
+- `require` a 20 archivos de categorías en `inc/`
 - Utilidades: paleta de colores, write_log, countdown shortcode, rewrite rules
 
+### Switch completo del Master Controller
+
 ```php
-// Patrón del Controlador Maestro (líneas 22-185)
 add_action('template_redirect', 'adrihosan_master_controller_cpu_fix', 1);
 
 function adrihosan_master_controller_cpu_fix() {
@@ -63,60 +63,104 @@ function adrihosan_master_controller_cpu_fix() {
     $cat_id = get_queried_object_id();
 
     switch($cat_id) {
-        case 63:   // Azulejos
-        case 102:  // Espejos
-        case 1789: // Azulejos Baño
-        case 1790: // Azulejos Cocina
-        case 2083: // Baño Imitación
-        case 2160: // Azulejos Exterior
-        case 2209: // Wood
-        case 4213: // Espejos con Luz
-        case 4806: // Paredes Decorativas
-        case 4862: // Hidráulica Original
-        case 4876: // Cocina Imitación
-        // ... cada case llama a su setup_*_cpu_fix()
+        // --- Cerámica y derivados ---
+        case 62:   // Cerámica (pilar)           → adrihosan_setup_ceramica_cpu_fix()
+        case 2410: // Porcelánico                 → adrihosan_setup_porcelanico_cpu_fix()
+        case 1844: // Gran Formato                → adrihosan_setup_gran_formato_cpu_fix()
+        case 2510: // Extrafino                   → adrihosan_setup_extrafino_cpu_fix()
+        case 2093: // Metro                       → adrihosan_setup_metro_cpu_fix()
+        case 2245: // Porcelánico Imita. Mármol   → adrihosan_setup_porcelanico_marmol_cpu_fix()
+
+        // --- Azulejos ---
+        case 63:   // Azulejos (pilar)            → adrihosan_setup_azulejos_cpu_fix()
+        case 1789: // Azulejos Baño               → adrihosan_setup_azulejos_bano_cpu_fix()
+        case 1790: // Azulejos Cocina             → adrihosan_setup_azulejos_cocina_cpu_fix()
+        case 2160: // Azulejos Exterior           → adrihosan_setup_azulejos_exterior_cpu_fix()
+
+        // --- Pavimentos y Piscinas ---
+        case 64:   // Pavimentos y Suelos         → adrihosan_setup_pavimentos_cpu_fix()
+        case 66:   // Piscinas                    → adrihosan_setup_piscinas_cpu_fix()
+
+        // --- Baldosa Hidráulica Original ---
+        case 4564: // Baldosa Hidráulica (pilar)  → adrihosan_setup_pilar_bh_cpu_fix()
+        case 4862: // Hidráulica Original         → adrihosan_setup_hidraulica_original_cpu_fix()
+        case 4865: // Original / Baño             → adrihosan_setup_pilar_bano_cpu_fix()
+        case 4866: // Original / Cocina           → adrihosan_setup_pilar_cocina_cpu_fix()
+        case 4869: // Original / Exterior         → adrihosan_setup_pilar_exterior_cpu_fix()
+
+        // --- Baldosa Hidráulica Imitación ---
+        case 2082: // Imitación Hidráulico        → adrihosan_setup_imitacion_hidraulico_cpu_fix()
+        case 2083: // Baño Imitación              → adrihosan_setup_bano_imitacion_cpu_fix()
+        case 4876: // Cocina Imitación            → adrihosan_setup_cocina_imitacion_cpu_fix()
+
+        // --- Baño: Espejos y Camerinos ---
+        case 102:  // Espejos (pilar)             → adrihosan_setup_espejos_cpu_fix()
+        case 4213: // Espejos con Luz             → adrihosan_setup_espejos_luz_cpu_fix()
+        case 4247: // Espejos Redondos            → adrihosan_setup_espejos_redondo_cpu_fix()
+        case 2626: // Camerino Baño               → adrihosan_setup_camerinos_cpu_fix()
+
+        // --- Otros ---
+        case 2209: // Wood                        → adrihosan_setup_wood_cpu_fix()
+        case 4806: // Paredes Decorativas         → adrihosan_setup_paredes_cpu_fix()
     }
 }
 ```
 
-**IMPORTANTE**: El controlador maestro y las funciones `setup_*_cpu_fix` DEBEN estar en `functions.php`, NO en archivos separados.
+**REGLA CRÍTICA**: El controlador maestro y las funciones `setup_*_cpu_fix` DEBEN estar en `functions.php`, NUNCA en archivos `inc/`. Los archivos `inc/category-*.php` NUNCA deben tener `add_action` a nivel de archivo (solo dentro de funciones).
 
 ---
 
-## Archivos de Categorías en `inc/` (Modularizados)
+## Archivos de Categorías en `inc/` (20 archivos)
 
-Cada archivo contiene: controller + `contenido_superior` + `contenido_inferior` de su categoría.
+Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_inferior`. El controller/setup está en `functions.php`.
 
-| Archivo | Cat ID | Descripción |
-|---------|--------|-------------|
-| `category-imitacion-hidraulico.php` | 2082 | Imitación Hidráulico |
-| `category-bano-imitacion.php` | 2083 | Azulejo Hidráulico Baño |
-| `category-cocina-imitacion.php` | 4876 | Azulejo Hidráulico Cocina |
-| `category-espejos.php` | 102, 4213, 4247 | Espejos + Espejos con Luz + Espejos Redondos |
-| `category-camerinos.php` | 2626 | Camerino Baño |
-| `category-pilar-bh.php` | 4564 | Baldosa Hidráulica (Pilar) |
-| `category-paredes.php` | 4806 | Paredes Decorativas |
-| `category-hidraulica-original.php` | 4862 | Baldosa Hidráulica Original |
-| `category-pilar-bano.php` | 4865 | Original / Baño |
-| `category-pilar-cocina.php` | 4866 | Original / Cocina |
-| `category-pilar-exterior.php` | 4869 | Original / Exterior |
-| `category-wood.php` | 2209 | Wood + CSS fix categorías |
-| `category-ceramica-porcelanico.php` | 62, 1844, 2510, 2093 | Cerámica + Porcelánico + Gran Formato + Extrafino + Metro |
-| `category-azulejos.php` | 63 | Azulejos |
-| `category-azulejos-bano.php` | 1789 | Azulejos Baño |
-| `category-azulejos-cocina.php` | 1790 | Azulejos Cocina |
-| `category-azulejos-exterior.php` | 2160 | Azulejos Exterior |
-| `cache-and-css.php` | - | Cache filtros, CSS loader, style fixes, preload crítico |
+| Archivo | Cat ID | Descripción | Filtro Widget |
+|---------|--------|-------------|---------------|
+| `category-ceramica-porcelanico.php` | 62, 2410, 1844, 2510, 2093 | Cerámica + Porcelánico + Gran Formato + Extrafino + Metro | 425985 |
+| `category-azulejos.php` | 63 | Azulejos | 425985 |
+| `category-azulejos-bano.php` | 1789 | Azulejos Baño | 425985 |
+| `category-azulejos-cocina.php` | 1790 | Azulejos Cocina | 425985 |
+| `category-azulejos-exterior.php` | 2160 | Azulejos Exterior | 425985 |
+| `category-pavimentos.php` | 64 | Pavimentos y Suelos | **426267** |
+| `category-piscinas.php` | 66 | Piscinas | 425985 |
+| `category-porcelanico-marmol.php` | 2245 | Porcelánico Imitación Mármol | 425985 |
+| `category-pilar-bh.php` | 4564 | Baldosa Hidráulica (Pilar) | sin filtro |
+| `category-hidraulica-original.php` | 4862 | Baldosa Hidráulica Original | **426058** |
+| `category-pilar-bano.php` | 4865 | Original / Baño | **426058** |
+| `category-pilar-cocina.php` | 4866 | Original / Cocina | **426058** |
+| `category-pilar-exterior.php` | 4869 | Original / Exterior | **426058** |
+| `category-imitacion-hidraulico.php` | 2082 | Imitación Hidráulico | 425985 |
+| `category-bano-imitacion.php` | 2083 | Azulejo Hidráulico Baño | 425985 |
+| `category-cocina-imitacion.php` | 4876 | Azulejo Hidráulico Cocina | 425985 |
+| `category-espejos.php` | 102, 4213, 4247 | Espejos + Espejos con Luz + Espejos Redondos | sin filtro |
+| `category-camerinos.php` | 2626 | Camerino Baño | sin filtro |
+| `category-wood.php` | 2209 | Wood | sin filtro |
+| `category-paredes.php` | 4806 | Paredes Decorativas | 425985 |
+
+---
+
+## Filter Everything Pro - Widget IDs
+
+| Widget ID | Nombre | Categorías que lo usan |
+|-----------|--------|------------------------|
+| **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2410, 1844, 2510, 4806, 4876 |
+| **426058** | Baldosa Hidráulica | 4862, 4865, 4866, 4869 |
+| **426267** | Pavimentos / Suelos | 64 |
+
+### Configuración del Filtro Móvil (IMPORTANTE)
+El widget debe estar configurado con **"The same as on a desktop"** en Mobile view.
+**NO usar** "Appear as a Pop-up" ni "Collapsed and expanded" - rompe el JS personalizado.
 
 ---
 
 ## Cómo Añadir una Nueva Categoría
 
 1. Crear `inc/category-{nombre}.php` con las funciones `contenido_superior` e `contenido_inferior`
-2. Añadir el `case {ID}:` en el master controller dentro de `functions.php`
-3. Crear la función `adrihosan_setup_{nombre}_cpu_fix()` en `functions.php`
+   - **NO poner `add_action` a nivel de archivo** - solo definir funciones
+2. Añadir el `case {ID}:` en el master controller switch dentro de `functions.php`
+3. Crear la función `adrihosan_setup_{nombre}_cpu_fix()` en `functions.php` (antes de `// FIN CONTROLADOR MAESTRO`)
 4. Añadir el `require` en la sección de categorías de `functions.php`
-5. Crear `assets/css/category-{ID}.css` con los estilos
+5. Crear `assets/css/category-{ID}.css` con los estilos (se carga automáticamente via `cache-and-css.php`)
 
 ---
 
@@ -209,18 +253,16 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 ### 2. Controlador Maestro Centralizado
 - **Decisión**: Un solo punto de entrada que decide qué cargar
 - **Razón**: Evita múltiples hooks compitiendo, mejor control de CPU
+- **NUNCA** poner `add_action('template_redirect')`, `add_action('wp')` ni `add_action('woocommerce_before_main_content')` a nivel de archivo en `inc/category-*.php`
 
 ### 3. Estilos de Contacto en base-global.css
 - **Decisión**: NO duplicar estilos de contacto en cada category-{ID}.css
 - **Razón**: Consistencia visual, mantenimiento más fácil
 
-### 4. Filter Everything Pro Widget
-- **Shortcode principal**: `[fe_widget id="425985"]` (categorías generales)
-- **Shortcode baldosa hidráulica**: `[fe_widget id="426058"]`
-
-#### Configuración del Filtro Móvil (IMPORTANTE)
-El widget debe estar configurado con **"The same as on a desktop"** en Mobile view.
-**NO usar** "Appear as a Pop-up" ni "Collapsed and expanded" - rompe el JS personalizado.
+### 4. Cache de doo_menu_cats()
+- **Decisión**: Cachear con transient (1 hora) en `dw_scripts()`
+- **Razón**: `doo_menu_cats()` (tema padre) consulta las 1.496 categorías. Sin cache = query pesada en CADA página
+- **Invalidación**: Automática al crear/editar/eliminar categorías (`created_product_cat`, `edited_product_cat`, `delete_product_cat`)
 
 ---
 
@@ -268,16 +310,19 @@ El widget debe estar configurado con **"The same as on a desktop"** en Mobile vi
 **Causa**: `mobile-fixes.css` oculta globalmente `.wpc-filters-open-button-container`.
 **Solución**: Añadir estilos específicos en el CSS de cada categoría para mostrarlo.
 
+### Servidor con CPU alta / caído
+**Causa**: Hooks (`add_action`) registrados a nivel de archivo en `inc/category-*.php` que ejecutan `is_product_category()` en CADA página.
+**Solución**: TODOS los hooks deben ir en el master controller (functions.php). Los archivos `inc/` solo contienen funciones de contenido.
+
 ---
 
-## Categorías con CSS Propio
+## Optimizaciones de Rendimiento Aplicadas
 
-| ID | Nombre | Archivo CSS |
-|----|--------|-------------|
-| 62 | Cerámica | category-62.css |
-| 64 | Pavimentos y Suelos | category-64.css |
-| 66 | Piscinas | category-66.css |
-| 2410 | Porcelánico | category-2410.css |
+1. **Master Controller**: 1 solo `is_product_category()` + 1 `get_queried_object_id()` por página. Sin el master controller eran 42+ queries por página.
+2. **Cache doo_menu_cats()**: Transient de 1 hora. Evita consultar 1.496 categorías en cada página.
+3. **Cache filtros widget**: `adrihosan_cache_filter_widget()` en `cache-and-css.php` cachea el output de `[fe_widget]` con transients de 1 hora.
+4. **CSS condicional**: `cache-and-css.php` solo carga `category-{ID}.css` en la categoría correspondiente.
+5. **Sin hooks globales en inc/**: Ningún archivo `inc/category-*.php` registra hooks a nivel de archivo.
 
 ---
 
@@ -312,10 +357,25 @@ El widget debe estar configurado con **"The same as on a desktop"** en Mobile vi
 3. **Archivos a subir al servidor**: `functions.php` + `inc/category-*.php` afectados + CSS si se modifica
 4. **El servidor usa LiteSpeed** - limpiar caché después de subir cambios
 5. **IMPORTANTE**: El `functions.php` del servidor puede tener cambios no en GitHub. SIEMPRE comparar antes de modificar.
+6. **NUNCA** poner `add_action` a nivel de archivo en `inc/category-*.php` - causa CPU al 100%
+7. **Archivos basura en raíz del repo**: `functions (6).php`, `category-ceramica-porcelanico.php`, `functions-css-loader.php`, CSS/JS sueltos. No afectan al tema pero deberían limpiarse.
 
 ---
 
 ## Changelog
+
+### 2026-02-14
+- **OPTIMIZACIÓN CRÍTICA**: Migrados 7 hooks globales restantes al master controller
+  - 5 `template_redirect`: cats 4865, 4866, 4869, 4564, 2082
+  - 4 WC hooks globales: cats 2626, 4247
+- **Cache doo_menu_cats()**: Transient 1 hora para evitar query de 1.496 categorías en cada página
+- **Total: 26 categorías** gestionadas por el master controller
+
+### 2026-02-12
+- **OPTIMIZACIÓN CRÍTICA**: Eliminadas ~10 queries BD innecesarias por página
+  - Movidas cats 62, 2410, 1844, 2510, 2093 de `add_action('wp')` al master controller
+  - Eliminados hooks `wp_head` globales de `cache-and-css.php` y `category-wood.php`
+- **Categorías nuevas**: 64 (Pavimentos), 66 (Piscinas), 2245 (Porcelánico Mármol)
 
 ### 2026-02-10
 - **REESTRUCTURACIÓN MODULAR**: `functions.php` pasa de 4.463 a ~780 líneas
