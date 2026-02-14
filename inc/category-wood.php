@@ -163,7 +163,7 @@ function adrihosan_wood_contenido_inferior() {
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
                 <div>
-                    <h2>Soy Ricardo. &iquest;Dudas sobre qu&eacute; suelo imitaci&oacute;n madera elegir?</h2>
+                    <h2>&iquest;Dudas con tu suelo imitaci&oacute;n madera?</h2>
                     <p>&iquest;No sabes si elegir rectificado o normal? &iquest;Dudas entre el tono roble o gris? Te ayudo a calcular los metros y encontrar el mejor precio sin compromiso.</p>
                 </div>
             </div>
