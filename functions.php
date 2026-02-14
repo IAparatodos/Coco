@@ -136,6 +136,9 @@ function adrihosan_setup_hidraulica_original_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_espejos_cpu_fix() {
