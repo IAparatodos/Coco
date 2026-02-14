@@ -37,23 +37,23 @@ function adrihosan_wood_contenido_superior() {
             <h2>Explora por Estilo</h2>
             <p class="section-subtitle">Segmenta tu b&uacute;squeda seg&uacute;n el ambiente que quieres crear</p>
             <div class="ap-inspiration-grid ap-grid-5">
-                <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/borde-azulejo-rectificado/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Suelo porcel&aacute;nico imitaci&oacute;n madera rectificado">
                     <div class="ap-card-content"><h3>Porcel&aacute;nico Rectificado</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'bano', $category_url)); ?>" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/estancia-bano/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-bano-Adrihosan.jpg" alt="Ba&ntilde;os con suelo imitaci&oacute;n madera">
                     <div class="ap-card-content"><h3>Ba&ntilde;os y Cocinas</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'terraza', $category_url)); ?>" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/slip-si/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-terraza-Adrihosan.jpg" alt="Pavimento imitaci&oacute;n madera exterior antideslizante">
                     <div class="ap-card-content"><h3>Exterior y Antideslizante</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/tono-gris/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-cocina-Adrihosan.jpg" alt="Suelos imitaci&oacute;n madera gris y tonos claros">
                     <div class="ap-card-content"><h3>Tonos Grises y Claros</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'espiga', $category_url)); ?>" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-piscina-Adrihosan.jpg" alt="Suelo imitaci&oacute;n madera espiga">
                     <div class="ap-card-content"><h3>Suelo en Espiga</h3></div>
                 </a>
