@@ -182,3 +182,27 @@ add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
  */
 // Preload CSS - integrado en adrihosan_cargar_css_categoria() que ya tiene el check is_product_category()
+
+// Preservar filtros de FE Pro en la paginación de WooCommerce
+add_filter( 'woocommerce_pagination_args', 'adrihosan_preservar_filtros_en_paginacion' );
+function adrihosan_preservar_filtros_en_paginacion( $args ) {
+    if ( empty( $_GET ) ) {
+        return $args;
+    }
+    $params = $_GET;
+    unset( $params['paged'] );
+    unset( $params['product-page'] );
+    if ( ! empty( $params ) ) {
+        $sanitized = array();
+        foreach ( $params as $key => $value ) {
+            $clean_key = sanitize_text_field( $key );
+            if ( is_array( $value ) ) {
+                $sanitized[ $clean_key ] = array_map( 'sanitize_text_field', $value );
+            } else {
+                $sanitized[ $clean_key ] = sanitize_text_field( $value );
+            }
+        }
+        $args['add_args'] = $sanitized;
+    }
+    return $args;
+}
