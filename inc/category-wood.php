@@ -1,225 +1,213 @@
 <?php
 /**
- * Category: Wood (ID: 2209) + CSS Fix for categories
+ * Category: Suelos Imitación Madera (ID: 2209)
  * @package Adrihosan
  */
 
-/********************************************************************************
- * =============================================================================
- * SOLUCIÓN DEFINITIVA CON CSS INYECTADO (ANTI-CACHÉ Y ANTI-TEMA)
- * =============================================================================
- ********************************************************************************/
-
-// CSS global de categorías personalizadas - ahora se carga solo via master controller
-// Los estilos .wd-shop-tools y .filter-wrapper se inyectan desde cada setup_*_cpu_fix()
-// El margin-top de products-grid se mueve a los CSS externos por categoría
-
 // =============================================================================
-// LANDING SUELO IMITACIÓN MADERA - ID 2209 (VERSIÓN LIMPIA Y VALIDADA)
+// SUELOS IMITACIÓN MADERA - ID 2209
+// Setup en functions.php → adrihosan_setup_wood_cpu_fix()
 // =============================================================================
 
 /**
- * Muestra el contenido ANTES del loop de productos para la categoría Madera.
+ * Contenido SUPERIOR (antes de productos)
  */
-// COMENTADO - Duplicado del controlador maestro (línea 112)
-// add_action('woocommerce_before_shop_loop', 'adrihosan_wood_cat_before_loop_final_validated', 5);
-function adrihosan_wood_cat_before_loop_final_validated() {
-    // Verificar si estamos en la categoría correcta ANTES de hacer nada
-    if (!is_product_category(2209)) {
-        return; // Salir temprano si no es la categoría
-    }
-    
-    // Obtener la URL base de la categoría una sola vez
+function adrihosan_wood_contenido_superior() {
     $category_url = get_term_link(2209, 'product_cat');
-    // Verificar si get_term_link dio error
     if (is_wp_error($category_url)) {
-       $category_url = '#error-getting-category-url'; // Usar un placeholder en caso de error
+        $category_url = '#';
     }
-
     ?>
-    <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg');">
-        <div class="bho-hero-content">
-            <p class="bho-hero-title-visual">Suelos Imitación Madera</p>
-            <p>La calidez y belleza de la madera con la resistencia invencible del porcelánico. Para interior y exterior.</p>
-            <div class="bhp-hero-buttons">
-                <a href="#product-loop" class="bhp-hero-btn bhp-hero-btn-primary">Ver Catálogo</a>
-                <a href="/proyectos/" class="bhp-hero-btn bhp-hero-btn-secondary">Ver Proyectos Reales</a>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg');">
+        <div class="hero-content">
+            <h1>Suelos Imitaci&oacute;n Madera y Porcel&aacute;nico Efecto Madera</h1>
+            <p>La calidez del parquet con la resistencia del gres porcel&aacute;nico. Descubre nuestra gama de baldosas y cer&aacute;mica imitaci&oacute;n madera para interior y exterior.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-wood" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>
+                <a href="#contacto-experto-wood" class="hero-btn secondary">Ver Ofertas y Precios</a>
             </div>
         </div>
     </section>
-    
-    <section class="bho-guide-section">
-    <div class="bho-guide-wrapper">
-        <h1 class="bho-guide-main-title">Suelo Porcelánico Imitación Madera: La Calidez que Perdura</h1>
-        <p>Descubre la solución definitiva para tus suelos: el <strong>suelo porcelánico imitación madera</strong>. En Adrihosan, hemos seleccionado el mejor <strong>gres efecto madera</strong> que captura la belleza y la calidez del parquet sin ninguno de sus inconvenientes. Di adiós al mantenimiento constante, a los arañazos y al miedo a la humedad.</p>
-        <p>Nuestro pavimento porcelánico es la opción ideal para cualquier estancia, desde el salón hasta la cocina y el baño, e incluso para tu terraza. Explora el catálogo y usa nuestros filtros para encontrar fácilmente el acabado, tono (como el moderno gris o el clásico roble) y formato que transformará tu espacio.</p>
-    </div>
-</section>
 
-<section class="bho-hub-section">
-             <div class="bho-hub-wrapper">
-                <?php
-                    // Obtenemos la URL base de la categoría una sola vez
-                    $category_url = get_term_link(2209, 'product_cat');
-                    // Verificar si get_term_link dio error
-                    if (is_wp_error($category_url)) {
-                       $category_url = '#error-getting-category-url'; // Usar un placeholder en caso de error
-                    }
-                ?>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'bano', $category_url)); ?>" class="bho-hub-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-bano-Adrihosan.jpg" alt="Suelo imitación madera en baños" class="bho-hub-card-img">
-                    <div class="bho-hub-card-content"><h3>Baños</h3></div>
+    <!-- 2. EXPLORA POR ESTILO (5 cards visuales) -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-madera">
+        <div class="ap-inspiration-wrapper">
+            <h2>Explora por Estilo</h2>
+            <p class="section-subtitle">Segmenta tu b&uacute;squeda seg&uacute;n el ambiente que quieres crear</p>
+            <div class="ap-inspiration-grid ap-grid-5">
+                <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Suelo porcel&aacute;nico imitaci&oacute;n madera rectificado">
+                    <div class="ap-card-content"><h3>Porcel&aacute;nico Rectificado</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'cocina', $category_url)); ?>" class="bho-hub-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-cocina-Adrihosan.jpg" alt="Suelo porcelánico imitación madera en cocinas" class="bho-hub-card-img">
-                    <div class="bho-hub-card-content"><h3>Cocinas</h3></div>
+                <a href="<?php echo esc_url(add_query_arg('estancia', 'bano', $category_url)); ?>" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-bano-Adrihosan.jpg" alt="Ba&ntilde;os con suelo imitaci&oacute;n madera">
+                    <div class="ap-card-content"><h3>Ba&ntilde;os y Cocinas</h3></div>
                 </a>
-                <a href="<?php echo esc_url(add_query_arg('estancia', 'terraza', $category_url)); ?>" class="bho-hub-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-terraza-Adrihosan.jpg" alt="Suelo imitación madera en terrazas y exterior" class="bho-hub-card-img">
-                    <div class="bho-hub-card-content"><h3>Terrazas y Exterior</h3></div>
+                <a href="<?php echo esc_url(add_query_arg('estancia', 'terraza', $category_url)); ?>" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-terraza-Adrihosan.jpg" alt="Pavimento imitaci&oacute;n madera exterior antideslizante">
+                    <div class="ap-card-content"><h3>Exterior y Antideslizante</h3></div>
                 </a>
-                 <a href="<?php echo esc_url(add_query_arg('estancia', 'piscina', $category_url)); ?>" class="bho-hub-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-piscina-Adrihosan.jpg" alt="Suelo imitación madera para piscinas" class="bho-hub-card-img">
-                    <div class="bho-hub-card-content"><h3>Piscinas</h3></div>
+                <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-cocina-Adrihosan.jpg" alt="Suelos imitaci&oacute;n madera gris y tonos claros">
+                    <div class="ap-card-content"><h3>Tonos Grises y Claros</h3></div>
                 </a>
-             </div>
-        </section>
-
-   <section class="bho-filters-section">
-            <div class="bho-filters-wrapper">
-                <h2 class="bho-filters-main-title">Tu Búsqueda, Más Fácil</h2>
-
-                <div class="bho-filter-group">
-                    <h3 class="bho-filter-group-title">Acabados y Formatos</h3>
-                    <div class="bho-filter-pills">
-                        <?php // URL Rectificado ?>
-                        <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="bho-filter-pill">Acabado Rectificado</a>
-                        <?php // URL Espiga ?>
-                        <a href="<?php echo esc_url(add_query_arg('estancia', 'espiga', $category_url)); ?>" class="bho-filter-pill">Formato Espiga</a>
-                    </div>
-                </div>
-
-                <div class="bho-filter-group">
-                    <h3 class="bho-filter-group-title">Elige tu Tono</h3>
-                    <div class="bho-filter-pills">
-                        <?php // URL Gris ?>
-                        <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="bho-filter-pill">Tonos Grises</a>
-                        <?php // URL Nogal ?>
-                        <a href="<?php echo esc_url(add_query_arg('color', 'nogal', $category_url)); ?>" class="bho-filter-pill">Tono Nogal</a>
-                        <?php // URL Antracita ?>
-                        <a href="<?php echo esc_url(add_query_arg('color', 'antracita', $category_url)); ?>" class="bho-filter-pill">Antracita</a>
-                        <?php // URL Oak ?>
-                        <a href="<?php echo esc_url(add_query_arg('color', 'oak', $category_url)); ?>" class="bho-filter-pill">Oak</a>
-                        <?php // URL Natural ?>
-                        <a href="<?php echo esc_url(add_query_arg('color', 'natural', $category_url)); ?>" class="bho-filter-pill">Natural</a>
-                    </div>
-                </div>
-
-                <div class="bho-filter-group">
-                    <h3 class="bho-filter-group-title">Elige por Material</h3>
-                    <div class="bho-filter-pills">
-                        <?php // URL Porcelánico ?>
-                        <a href="<?php echo esc_url(add_query_arg('azulejo-tipo', 'suelo-porcelanico', $category_url)); ?>" class="bho-filter-pill">Gres Porcelánico (Máx. Resistencia)</a>
-                    </div>
-                </div>
-
+                <a href="<?php echo esc_url(add_query_arg('estancia', 'espiga', $category_url)); ?>" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-piscina-Adrihosan.jpg" alt="Suelo imitaci&oacute;n madera espiga">
+                    <div class="ap-card-content"><h3>Suelo en Espiga</h3></div>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-    <div class="product-loop-header">
-         <h2 class="product-loop-title" id="product-loop">Nuestro Catálogo de Suelos Imitación Madera</h2>
-    </div>
+    <!-- 3. VENTAJAS -->
+    <section class="wood-ventajas-section adrihosan-full-width-block">
+        <div class="wood-ventajas-wrapper">
+            <h2>&iquest;Por qu&eacute; elegir un suelo porcel&aacute;nico imitaci&oacute;n madera?</h2>
+            <div class="wood-ventajas-grid">
+                <div class="wood-ventaja-card">
+                    <div class="wood-ventaja-icon">&#128170;</div>
+                    <h3>Adi&oacute;s al Mantenimiento</h3>
+                    <p>A diferencia del parquet natural, nuestro gres efecto madera no se raya ni necesita barniz.</p>
+                </div>
+                <div class="wood-ventaja-card">
+                    <div class="wood-ventaja-icon">&#128167;</div>
+                    <h3>Apto para Ba&ntilde;os</h3>
+                    <p>Cer&aacute;mica imitaci&oacute;n madera 100% impermeable, ideal para zonas h&uacute;medas.</p>
+                </div>
+                <div class="wood-ventaja-card">
+                    <div class="wood-ventaja-icon">&#127968;</div>
+                    <h3>Textura Realista</h3>
+                    <p>Acabados con relieve que imitan la veta natural. Gres porcel&aacute;nico de alta definici&oacute;n.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FILTROS RÁPIDOS -->
+    <section class="wood-filtros-section adrihosan-full-width-block">
+        <div class="wood-filtros-wrapper">
+            <h2>Encuentra tu suelo porcel&aacute;nico ideal</h2>
+
+            <div class="wood-filter-group">
+                <h3 class="wood-filter-group-title">Por Color</h3>
+                <div class="wood-filter-buttons">
+                    <a href="<?php echo esc_url(add_query_arg('color', 'gris', $category_url)); ?>" class="wood-filter-btn">Gris</a>
+                    <a href="<?php echo esc_url(add_query_arg('color', 'oak', $category_url)); ?>" class="wood-filter-btn">Roble</a>
+                    <a href="<?php echo esc_url(add_query_arg('color', 'blanco', $category_url)); ?>" class="wood-filter-btn">Blanco</a>
+                    <a href="<?php echo esc_url(add_query_arg('color', 'natural', $category_url)); ?>" class="wood-filter-btn">Beige</a>
+                    <a href="<?php echo esc_url(add_query_arg('color', 'nogal', $category_url)); ?>" class="wood-filter-btn">Nogal</a>
+                </div>
+            </div>
+
+            <div class="wood-filter-group">
+                <h3 class="wood-filter-group-title">Por Estancia</h3>
+                <div class="wood-filter-buttons">
+                    <a href="<?php echo esc_url(add_query_arg('estancia', 'bano', $category_url)); ?>" class="wood-filter-btn">Ba&ntilde;o</a>
+                    <a href="<?php echo esc_url(add_query_arg('estancia', 'salon', $category_url)); ?>" class="wood-filter-btn">Sal&oacute;n</a>
+                    <a href="<?php echo esc_url(add_query_arg('estancia', 'terraza', $category_url)); ?>" class="wood-filter-btn">Exterior</a>
+                </div>
+            </div>
+
+            <div class="wood-filter-group">
+                <h3 class="wood-filter-group-title">Por Acabado</h3>
+                <div class="wood-filter-buttons">
+                    <a href="<?php echo esc_url(add_query_arg('corte-azulejo', 'azulejo-rectificado', $category_url)); ?>" class="wood-filter-btn">Rectificado</a>
+                    <a href="<?php echo esc_url(add_query_arg('acabado', 'mate', $category_url)); ?>" class="wood-filter-btn">Mate</a>
+                    <a href="<?php echo esc_url(add_query_arg('acabado', 'antideslizante', $category_url)); ?>" class="wood-filter-btn">Antideslizante</a>
+                </div>
+            </div>
+
+            <div class="wood-filter-tags">
+                <a href="<?php echo esc_url(add_query_arg('azulejo-tipo', 'suelo-porcelanico', $category_url)); ?>" class="wood-tag">Gres Imitaci&oacute;n Madera</a>
+                <a href="<?php echo esc_url(add_query_arg('uso', 'suelo-radiante', $category_url)); ?>" class="wood-tag">Suelo Radiante</a>
+                <a href="<?php echo esc_url(add_query_arg('orderby', 'price', $category_url)); ?>" class="wood-tag">Ofertas Baratas</a>
+                <a href="<?php echo esc_url(add_query_arg('formato', 'gran-formato', $category_url)); ?>" class="wood-tag">Gran Formato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TÍTULO CATÁLOGO -->
+    <div id="catalogo-wood" style="scroll-margin-top: 20px;"></div>
+
     <?php
 }
 
 /**
- * Muestra el contenido DESPUÉS del loop de productos para la categoría Madera.
+ * Contenido INFERIOR (después de productos)
  */
-// COMENTADO - Duplicado del controlador maestro (línea 113)
-// add_action('woocommerce_after_shop_loop', 'adrihosan_wood_cat_after_loop_final', 35);
-function adrihosan_wood_cat_after_loop_final() {
-    // Verificar si estamos en la categoría correcta ANTES de hacer nada
-    if (!is_product_category(2209)) {
-        return; // Salir temprano si no es la categoría
-    }
+function adrihosan_wood_contenido_inferior() {
     ?>
 
+    <!-- 7. FAQs -->
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Suelos Imitaci&oacute;n Madera</h2>
 
-   <section class="faq-section-common">
-    <div class="faq-wrapper-common">
-        <h2 class="faq-main-title-common">Resolvemos tus Dudas sobre Suelos de Madera Cerámica</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Qu&eacute; es mejor: Tarima o Suelo Porcel&aacute;nico Imitaci&oacute;n Madera?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>El suelo porcel&aacute;nico imitaci&oacute;n madera supera a la tarima en durabilidad, resistencia a la humedad y mantenimiento. No se raya, no necesita barniz y es apto para cualquier estancia, incluidos ba&ntilde;os y cocinas. La tarima requiere lijado peri&oacute;dico, es sensible al agua y se deteriora con el tr&aacute;fico intenso. La &uacute;nica ventaja de la tarima es la sensaci&oacute;n t&eacute;rmica al tacto, pero con suelo radiante, el porcel&aacute;nico es incluso m&aacute;s eficiente.</p></div>
+                </div>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Realmente parece madera natural? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Sí. La tecnología de impresión digital HD de última generación no solo copia la veta, sino que reproduce la textura y el relieve del nudo. El realismo es excepcional, incluso al tacto.</p></div>
-        </div>
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Qué mantenimiento requiere? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Mínimo. A diferencia del parquet, no necesita lijado, barnizado ni ceras especiales. Se limpia fácilmente con agua y fregasuelos de pH neutro. Es su mayor ventaja.</p></div>
-        </div>
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Es apto para suelo radiante? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Es ideal. El material porcelánico es un excelente conductor térmico, mucho mejor que la madera natural. Optimiza la eficiencia de los sistemas de calefacción por suelo radiante. Lo más importante en estos casos es usar un </strong>cemento cola Fléxible</strong>, ya que es el que debe absorber las dilataciones y contracciones producidas por la calefacción</p></div>
-        </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Se puede poner suelo imitaci&oacute;n madera en ba&ntilde;os y cocinas?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>S&iacute;, es una de sus mayores ventajas. Al ser cer&aacute;mica, el suelo imitaci&oacute;n madera es 100% impermeable y soporta la humedad, el vapor y la limpieza agresiva sin deteriorarse. Es la soluci&oacute;n perfecta para conseguir la est&eacute;tica de la madera en zonas h&uacute;medas donde el parquet natural ser&iacute;a un riesgo.</p></div>
+                </div>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Qué es un suelo "rectificado" y por qué es importante? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Un suelo rectificado tiene los bordes cortados en un ángulo perfecto de 90 grados. Su gran ventaja es que permite una instalación con juntas mínimas (1-2 mm), logrando un efecto visual de superficie continua, mucho más realista y elegante.</p></div>
-        </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Ten&eacute;is suelo porcel&aacute;nico imitaci&oacute;n madera barato?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>S&iacute;, en Adrihosan tenemos una amplia gama de precios. Contamos con opciones econ&oacute;micas de gres imitaci&oacute;n madera que no renuncian a la calidad. Revisa nuestra secci&oacute;n de ofertas o usa el filtro de precio para encontrar suelos imitaci&oacute;n madera al mejor precio.</p></div>
+                </div>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Por qué hay tanta diferencia de precio? ¿Qué es mejor, porcelánico o gres? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>La diferencia está en el material. El <strong>Gres Porcelánico</strong> es mucho más denso, resistente a golpes y tiene una absorción de agua casi nula (<0.5%), lo que lo hace apto para todo: exterior, baños y cocinas. El gres de pasta roja es más poroso y económico, pero solo se recomienda para interiores de bajo tránsito. A largo plazo, el porcelánico es siempre una mejor inversión.</p></div>
-        </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Sirve para exterior?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>S&iacute;, pero es importante elegir el acabado correcto. Para terrazas, patios y piscinas debes seleccionar un pavimento imitaci&oacute;n madera con acabado <strong>antideslizante Clase 3 (C3)</strong>, que es la normativa que garantiza seguridad en zonas h&uacute;medas exteriores. Adem&aacute;s, el porcel&aacute;nico resiste heladas y no pierde color con el sol.</p></div>
+                </div>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Qué debo saber si lo quiero para una terraza o piscina? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Para exterior, es fundamental que el suelo sea <strong>antideslizante Clase 3 (C3)</strong>. Esta es la normativa que garantiza la máxima seguridad en zonas húmedas como terrazas descubiertas o playas de piscina. Además, el porcelánico resiste las heladas y no pierde color con el sol.</p></div>
-        </div>
-        
-        <div class="faq-item-common">
-            <button class="faq-question-common">Los tonos grises son tendencia, pero... ¿se ensucian mucho? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Los tonos grises y claros son muy populares por la luz que aportan a estilos nórdicos o minimalistas. En contra de lo que se piensa, un acabado mate y con una veta suave es un gran aliado para disimular el polvo y las pelusas del día a día, a menudo más que un tono oscuro liso.</p></div>
-        </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Es apto para suelo radiante?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>Es ideal. El porcel&aacute;nico es un excelente conductor t&eacute;rmico, muy superior a la madera natural. Optimiza la eficiencia de los sistemas de calefacci&oacute;n por suelo radiante. Lo m&aacute;s importante es usar un <strong>cemento cola flexible</strong>, ya que debe absorber las dilataciones y contracciones producidas por la calefacci&oacute;n.</p></div>
+                </div>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Es más complicado instalar un suelo en formato espiga? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Sí, la instalación del formato espiga (o <i>herringbone</i>) es más técnica y requiere un profesional experimentado, ya que los cortes y la alineación son más complejos. Sin embargo, el resultado estético es espectacular y aporta un dinamismo y una elegancia que lo diferencian de la instalación tradicional.</p></div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Qu&eacute; es un suelo rectificado y por qu&eacute; es importante?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>Un suelo rectificado tiene los bordes cortados en un &aacute;ngulo perfecto de 90 grados. Permite una instalaci&oacute;n con juntas m&iacute;nimas (1-2 mm), logrando un efecto visual de superficie continua, mucho m&aacute;s realista y elegante. Es la opci&oacute;n premium para quienes buscan un acabado impecable.</p></div>
+                </div>
+
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Realmente parece madera natural?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>S&iacute;. La tecnolog&iacute;a de impresi&oacute;n digital HD reproduce la veta, la textura y el relieve del nudo con un realismo excepcional, incluso al tacto. Es pr&aacute;cticamente indistinguible de la madera natural a simple vista.</p></div>
+                </div>
+
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Por qu&eacute; hay tanta diferencia de precio entre gres y porcel&aacute;nico?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>El <strong>gres porcel&aacute;nico</strong> es mucho m&aacute;s denso y resistente, con absorci&oacute;n de agua casi nula (&lt;0.5%), lo que lo hace apto para exterior, ba&ntilde;os y cocinas. El gres de pasta roja es m&aacute;s poroso y econ&oacute;mico, pero solo se recomienda para interiores de bajo tr&aacute;nsito. A largo plazo, el porcel&aacute;nico es siempre mejor inversi&oacute;n.</p></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Se puede poner en la pared de la ducha o en el frontal de la cocina? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>Absolutamente. Al ser porcelánico, su absorción de agua es nula, por lo que es 100% impermeable e inalterable al vapor, al agua directa y a las manchas de grasa o jabón. Es una de las soluciones más limpias y duraderas para estas zonas.</p></div>
-        </div>
-
-        <div class="faq-item-common">
-            <button class="faq-question-common">¿Puedo instalarlo sobre mi suelo antiguo? <span class="faq-icon-common">+</span></button>
-            <div class="faq-answer-common"><p>En la mayoría de los casos, sí. Si el suelo actual (terrazo, gres, etc.) está bien nivelado y firmemente adherido, se puede instalar el nuevo porcelánico encima usando un cemento cola flexible específico (tipo C2-S1). Esto ahorra los costes y el desescombro de la demolición.</p></div>
-        </div>
-
-    </div>
-</section>
-
-    <section id="contacto-experto-madera" class="contact-help-common adrihosan-full-width-block">
+    <!-- 8. CONTACTO RICARDO -->
+    <section id="contacto-experto-wood" class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
-                <div><h2>¿Necesitas ayuda con tu suelo de madera?</h2></div>
+                <div>
+                    <h2>Soy Ricardo. &iquest;Dudas sobre qu&eacute; suelo imitaci&oacute;n madera elegir?</h2>
+                    <p>&iquest;No sabes si elegir rectificado o normal? &iquest;Dudas entre el tono roble o gris? Te ayudo a calcular los metros y encontrar el mejor precio sin compromiso.</p>
+                </div>
             </div>
             <div class="contact-options-grid-common">
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposición</div></a>
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
-                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Teléfono</div></a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20ayuda%20con%20los%20suelos%20imitaci%C3%B3n%20madera" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
-                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">📝</div><div class="label">Formulario</div></a>
-                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">&#128205;</div><div class="label">Visita Presencial</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Visita Virtual</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20suelos%20imitaci%C3%B3n%20madera" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">WhatsApp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;&#65039;</div><div class="label">Email</div></a>
             </div>
-             <?php 
-             // Opcional: Descomenta la siguiente línea si quieres incluir el shortcode del formulario además de los iconos
-             // echo '<div class="contact-form-container" style="margin-top: 30px;">' . do_shortcode('[contact-form-7 id="1234" title="Formulario de Contacto 1"]') . '</div>'; 
-             ?>
         </div>
     </section>
+
     <?php
 }
-
