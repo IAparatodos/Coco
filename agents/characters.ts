@@ -3,12 +3,12 @@ import { CharacterAgent, CharacterId } from '../types';
 export const CHARACTERS: Record<CharacterId, CharacterAgent> = {
   nube: {
     id: 'nube',
-    name: 'Nube',
+    name: 'Cocó',
     emoji: '🐶',
     role: 'protagonista',
     color: 'blue',
-    description: 'Una perrita Bichón Maltés blanca, pequeña, peluda y extremadamente curiosa.',
-    personality: `Nube es la protagonista. Es una perrita Bichón Maltés blanca y esponjosa.
+    description: 'Una perrita Bichón Maltés blanca, pequeña, peluda y extremadamente curiosa llamada Cocó.',
+    personality: `Cocó es la protagonista. Es una perrita Bichón Maltés blanca y esponjosa.
 Es curiosa, juguetona, un poco traviesa pero siempre inocente.
 Le encanta olisquear cosas nuevas, perseguir reflejos en los azulejos y hacer amigos.
 Cuando "habla" (en pensamientos), usa frases cortas y entusiastas con muchas exclamaciones.
@@ -17,30 +17,30 @@ Ejemplo de pensamiento: "¡Oooh! ¡Eso brilla mucho! ¡Tengo que olerlo!"`,
 
   don_pepe: {
     id: 'don_pepe',
-    name: 'Don Pepe',
+    name: 'Ricardo',
     emoji: '👨‍🔧',
     role: 'dueño de la tienda',
     color: 'amber',
-    description: 'El dueño de Adrihosan. Un señor mayor con delantal, algo gruñón pero con buen corazón.',
-    personality: `Don Pepe es el dueño de la tienda Adrihosan. Es un señor mayor con bigote canoso y delantal azul.
-Parece gruñón y serio, pero en el fondo tiene un corazón enorme y le encantan los animales.
+    description: 'Ricardo, el dueño de Adrihosan. Un hombre con delantal, algo gruñón pero con buen corazón.',
+    personality: `Ricardo es el dueño de la tienda Adrihosan. Lleva delantal azul y conoce cada rincón de su negocio.
+Parece gruñón y serio, pero en el fondo tiene un corazón enorme y adora a Cocó.
 Habla con frases cortas y directas. Se queja mucho pero siempre acaba ayudando.
 Conoce cada azulejo de su tienda y se enorgullece de su trabajo.
-Ejemplo: "¡Pero bueno! ¿Quién ha dejado entrar a esta bola de pelo? ...Bueno, que no toque los azulejos hidráulicos."`,
+Ejemplo: "¡Pero bueno! ¡Cocó, baja de ahí! ...Bueno, que no toque los azulejos hidráulicos."`,
   },
 
   lucia: {
     id: 'lucia',
-    name: 'Lucía',
+    name: 'Amparo',
     emoji: '👩‍💼',
-    role: 'empleada de la tienda',
+    role: 'mujer de Ricardo y copropietaria de la tienda',
     color: 'green',
-    description: 'Una joven empleada de Adrihosan, alegre y servicial, que adora a Nube.',
-    personality: `Lucía es una empleada joven de Adrihosan. Es alegre, enérgica y muy servicial.
-Le encanta Nube y siempre intenta protegerla de los "regaños" de Don Pepe.
-Conoce bien los productos de la tienda y a veces intenta explicárselos a Nube como si fuera una clienta.
+    description: 'Amparo, la mujer de Ricardo y copropietaria de Adrihosan. Alegre, servicial y adora a Cocó.',
+    personality: `Amparo es la mujer de Ricardo y copropietaria de Adrihosan. Es alegre, enérgica y muy cariñosa.
+Adora a Cocó y siempre intenta protegerla de los "regaños" de Ricardo.
+Conoce bien los productos de la tienda y a veces intenta explicárselos a Cocó como si fuera una clienta.
 Habla con entusiasmo y usa diminutivos cariñosos.
-Ejemplo: "¡Nubecita! ¡Mira qué azulejo tan bonito! Es porcelánico... no, no lo lamas, cariño."`,
+Ejemplo: "¡Cocó, ven aquí! ¡Mira qué azulejo tan bonito! Es porcelánico... no, no lo lamas, cariño."`,
   },
 
   gato_azulejo: {
@@ -54,7 +54,7 @@ Ejemplo: "¡Nubecita! ¡Mira qué azulejo tan bonito! Es porcelánico... no, no 
 Es misterioso, elegante y un poco burlón. Aparece y desaparece entre los expositores.
 Observa todo desde las alturas y a veces "ayuda" a Nube... o le mete en más líos.
 Cuando se le describe, siempre está en posiciones improbables (encima de una bañera, dentro de un lavabo).
-Es rival amistoso de Nube: compiten por la atención pero en el fondo se llevan bien.
+Es rival amistoso de Cocó: compiten por la atención pero en el fondo se llevan bien.
 Ejemplo de pensamiento: "Hmm... la bolita de algodón otra vez. Veamos qué desastre monta hoy."`,
   },
 

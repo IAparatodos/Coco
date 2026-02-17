@@ -37,7 +37,7 @@ export const Panel: React.FC<PanelProps> = ({ data, onChoice, isLast, disabled }
         ) : (
           <div className="flex flex-col items-center text-gray-400">
             <LoadingSpinner />
-            <span className="mt-2 text-sm">Dibujando a Nube...</span>
+            <span className="mt-2 text-sm">Dibujando a Cocó...</span>
           </div>
         )}
 
@@ -98,7 +98,7 @@ export const Panel: React.FC<PanelProps> = ({ data, onChoice, isLast, disabled }
       {isLast && !data.selectedChoice && (
         <div className="p-6 bg-yellow-50 border-t-2 border-yellow-100">
           <h3 className="text-sm uppercase tracking-wider text-yellow-800 font-bold mb-4 text-center">
-            ¿Qué hace Nube ahora?
+            ¿Qué hace Cocó ahora?
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {data.choices.map((choice, idx) => (

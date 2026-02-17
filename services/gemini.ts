@@ -28,6 +28,7 @@ ${characterBlock}
 - El campo "dialogue" contiene las líneas de diálogo o pensamientos de cada personaje activo. Cada personaje debe hablar según su personalidad definida arriba.
 - Solo incluye diálogo de los personajes listados en "activeCharacters".
 - El campo "nextCharacters" indica qué personajes deberían aparecer en el siguiente panel (puedes añadir o quitar personajes para que la historia sea dinámica).
+- La perrita protagonista se llama Cocó. El dueño de la tienda es Ricardo y su mujer es Amparo.
 - Mantén el tono alegre, un poco travieso pero inocente.
 `;
 }
@@ -107,7 +108,7 @@ export const generateStorySegment = async (
       Personajes activos en esta escena: ${activeNames}.
 
       Genera el siguiente segmento de la historia.
-      Asegúrate de que la trama avance. Nube debe interactuar con los personajes presentes y con elementos de la tienda de azulejos (baldosas, grifos, dependientes, cajas).
+      Asegúrate de que la trama avance. Cocó debe interactuar con los personajes presentes y con elementos de la tienda de azulejos (baldosas, grifos, dependientes, cajas).
       Incluye diálogo o pensamientos de los personajes activos, cada uno con su personalidad.
     `;
 
@@ -151,7 +152,7 @@ export const generateStorySegment = async (
   } catch (error) {
     console.error("Error generating story text:", error);
     return {
-      narrative: "Nube se ha despistado un poco oliendo una baldosa hidráulica muy bonita. (Error de conexión)",
+      narrative: "Cocó se ha despistado un poco oliendo una baldosa hidráulica muy bonita. (Error de conexión)",
       imagePrompt: "Maltese puppy looking confused at a tile",
       dialogue: [
         { characterId: 'nube', text: '¡Guau! ¿Qué ha pasado?' },
