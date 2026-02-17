@@ -21,7 +21,7 @@ Ejemplo de pensamiento: "¡Oooh! ¡Eso brilla mucho! ¡Tengo que olerlo!"`,
     emoji: '👨‍🔧',
     role: 'dueño de la tienda',
     color: 'amber',
-    description: 'Ricardo, hombre de unos 50 años estilo Pixar: complexión robusta, cabeza grande y redondeada, cejas gruesas y expresivas, mandíbula cuadrada, nariz prominente, delantal azul de trabajo, manos grandes y fuertes, ojos pequeños pero cálidos, pelo canoso corto.',
+    description: 'Ricardo, hombre atractivo de unos 50 años estilo Pixar: complexión atlética y estilizada, mandíbula definida, sonrisa carismática, ojos expresivos color avellana, cejas marcadas, pelo castaño con algunas canas en las sienes que le dan un aire distinguido, nariz recta, delantal azul de trabajo sobre camiseta que marca buena forma física, manos hábiles de artesano.',
     personality: `Ricardo es el dueño de la tienda Adrihosan. Lleva delantal azul y conoce cada rincón de su negocio.
 Parece gruñón y serio, pero en el fondo tiene un corazón enorme y adora a Cocó.
 Habla con frases cortas y directas. Se queja mucho pero siempre acaba ayudando.
