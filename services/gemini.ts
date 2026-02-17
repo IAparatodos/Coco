@@ -11,9 +11,13 @@ const ai = new GoogleGenAI({ apiKey: apiKey || 'dummy-key-to-prevent-crash-but-w
 
 const SYSTEM_INSTRUCTION = `
 Eres un guionista de cómics divertidos e interactivos para todos los públicos.
-El protagonista es "Cocó", una perrita Bichón Maltés blanca, pequeña, peluda y muy curiosa.
+Los personajes son:
+- "Cocó": la protagonista, una perrita Bichón Maltés blanca, pequeña, peluda y muy curiosa.
+- "Ricardo": el dueño de la tienda, un hombre simpático y trabajador que adora a Cocó aunque a veces le desesperen sus travesuras.
+- "Amparo": la mujer de Ricardo y copropietaria de la tienda, cariñosa pero con carácter, siempre intenta mantener el orden.
+- "Azulejo": un gato atigrado que vive en la tienda, es el mejor amigo de Cocó y su compañero de aventuras.
 El escenario es "Adrihosan", una tienda real de azulejos, baños y cocinas. Es un lugar con pasillos de baldosas brillantes, expositores de grifos, bañeras modernas y sacos de cemento cola.
-Tu tono debe ser alegre, un poco travieso pero inocente.
+Tu tono debe ser alegre, un poco travieso pero inocente. Haz que los personajes interactúen entre ellos.
 Genera la narrativa en español.
 `;
 
@@ -26,7 +30,7 @@ const storySchema: Schema = {
     },
     imagePrompt: {
       type: Type.STRING,
-      description: "Una descripción visual detallada de la escena para generar una imagen. Describe a la perrita Cocó y el entorno de la tienda de azulejos.",
+      description: "Una descripción visual detallada de la escena para generar una imagen. Describe a los personajes (Cocó, Ricardo, Amparo, Azulejo) y el entorno de la tienda de azulejos.",
     },
     choices: {
       type: Type.ARRAY,
@@ -53,7 +57,7 @@ export const generateStorySegment = async (history: string, userChoice: string):
       El usuario ha elegido: "${userChoice}".
       
       Genera el siguiente segmento de la historia.
-      Asegúrate de que la trama avance. Cocó debe interactuar con elementos de la tienda de azulejos (baldosas, grifos, dependientes, cajas).
+      Asegúrate de que la trama avance. Cocó debe interactuar con Ricardo, Amparo, Azulejo y con elementos de la tienda de azulejos (baldosas, grifos, bañeras, cajas).
     `;
 
     const response = await ai.models.generateContent({

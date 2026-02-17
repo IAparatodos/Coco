@@ -4,7 +4,7 @@ import { LoadingSpinner } from './components/LoadingSpinner';
 import { generateStorySegment, generatePanelImage } from './services/gemini';
 import { StorySegment } from './types';
 
-const INITIAL_PROMPT = "Inicio de la historia: Una adorable perrita Bichón Maltés llamada 'Cocó' entra moviendo la cola en 'Adrihosan', una tienda de azulejos y reformas muy elegante. Hay muchas texturas y brillos.";
+const INITIAL_PROMPT = "Inicio de la historia: Una adorable perrita Bichón Maltés llamada 'Cocó' entra moviendo la cola en 'Adrihosan', la tienda de azulejos de Ricardo y Amparo. Su amigo el gato Azulejo la espera dentro. Hay muchas texturas y brillos.";
 
 const App: React.FC = () => {
   const [storyPanels, setStoryPanels] = useState<StorySegment[]>([]);
@@ -75,8 +75,8 @@ const App: React.FC = () => {
           <div className="p-8 text-center">
             <div className="mb-6 text-6xl animate-bounce">🐶✨</div>
             <p className="text-lg text-gray-700 mb-6">
-              Acompaña a <strong>Cocó</strong>, la Bichón Maltés más curiosa, en su visita a la tienda de azulejos. 
-              ¡Tú decides qué trastadas hará!
+              Acompaña a <strong>Cocó</strong> y su amigo <strong>Azulejo</strong> en la tienda de azulejos de <strong>Ricardo</strong> y <strong>Amparo</strong>.
+              ¡Tú decides qué trastadas harán!
             </p>
             <button
               onClick={handleStart}
