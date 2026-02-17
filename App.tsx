@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Panel } from './components/Panel';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { generateStorySegment, generatePanelImage } from './services/gemini';
-import { StorySegment } from './types';
+import { StorySegment, CharacterId } from './types';
+import { CHARACTERS, INITIAL_CHARACTERS } from './agents/characters';
 
 const INITIAL_PROMPT = "Inicio de la historia: Una adorable perrita Bichón Maltés llamada 'Cocó' entra moviendo la cola en 'Adrihosan', la tienda de azulejos de Ricardo y Amparo. Su amigo el gato Azulejo la espera dentro. Hay muchas texturas y brillos.";
 
@@ -11,6 +12,7 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [imageLoading, setImageLoading] = useState<boolean>(false);
   const [gameStarted, setGameStarted] = useState<boolean>(false);
+  const [activeCharacters, setActiveCharacters] = useState<CharacterId[]>(INITIAL_CHARACTERS);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   const handleStart = async () => {
@@ -21,30 +23,41 @@ const App: React.FC = () => {
   const advanceStory = async (userChoice: string) => {
     setLoading(true);
     try {
-      // 1. Generate Text and Image Prompt
-      const historyText = storyPanels.map(p => `Narrador: ${p.narrative}\nOpción elegida: ${p.selectedChoice || 'Inicio'}`).join('\n');
-      const segment = await generateStorySegment(historyText, userChoice);
-      
-      // Add placeholder panel while image generates
+      const historyText = storyPanels.map(p => {
+        const dialogueText = p.dialogue
+          ?.map(d => {
+            const char = CHARACTERS[d.characterId];
+            return `${char?.name || d.characterId}: "${d.text}"`;
+          })
+          .join('\n') || '';
+        return `Narrador: ${p.narrative}\n${dialogueText}\nOpción elegida: ${p.selectedChoice || 'Inicio'}`;
+      }).join('\n---\n');
+
+      const segment = await generateStorySegment(historyText, userChoice, activeCharacters);
+
       const newPanelId = Date.now();
       const partialPanel: StorySegment = {
         ...segment,
         id: newPanelId,
-        imageData: null // No image yet
+        imageData: null,
       };
 
       setStoryPanels(prev => [...prev, partialPanel]);
+      setActiveCharacters(segment.activeCharacters);
       setLoading(false);
       setImageLoading(true);
 
-      // 2. Generate Image based on the prompt from step 1
-      // We construct a prompt that ensures the character is consistent
-      const fullImagePrompt = `Cómic, estilo dibujo animado digital vibrante. Una perrita Bichón Maltés blanca y esponjosa en una tienda de azulejos (Adrihosan). ${segment.imagePrompt}`;
-      
+      const characterDescriptions = segment.activeCharacters
+        .filter(id => id !== 'narrador')
+        .map(id => CHARACTERS[id]?.description || '')
+        .filter(Boolean)
+        .join('. ');
+
+      const fullImagePrompt = `Cómic, estilo dibujo animado digital vibrante. En una tienda de azulejos (Adrihosan). Personajes: ${characterDescriptions}. ${segment.imagePrompt}`;
+
       const base64Image = await generatePanelImage(fullImagePrompt);
-      
-      // Update the panel with the real image
-      setStoryPanels(prev => prev.map(p => 
+
+      setStoryPanels(prev => prev.map(p =>
         p.id === newPanelId ? { ...p, imageData: base64Image } : p
       ));
 
@@ -57,7 +70,6 @@ const App: React.FC = () => {
     }
   };
 
-  // Auto-scroll to bottom when new panels arrive
   useEffect(() => {
     if (bottomRef.current) {
       bottomRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -73,11 +85,20 @@ const App: React.FC = () => {
             <p className="text-blue-100 font-bold text-lg">Una Aventura Interactiva</p>
           </div>
           <div className="p-8 text-center">
-            <div className="mb-6 text-6xl animate-bounce">🐶✨</div>
-            <p className="text-lg text-gray-700 mb-6">
+            <div className="mb-4 text-5xl">🐶✨</div>
+            <p className="text-lg text-gray-700 mb-4">
               Acompaña a <strong>Cocó</strong> y su amigo <strong>Azulejo</strong> en la tienda de azulejos de <strong>Ricardo</strong> y <strong>Amparo</strong>.
               ¡Tú decides qué trastadas harán!
             </p>
+            <div className="mb-6 flex flex-wrap justify-center gap-2">
+              {Object.values(CHARACTERS)
+                .filter(c => c.id !== 'narrador')
+                .map(c => (
+                  <span key={c.id} className="text-sm bg-gray-100 rounded-full px-3 py-1 text-gray-600">
+                    {c.emoji} {c.name}
+                  </span>
+                ))}
+            </div>
             <button
               onClick={handleStart}
               className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-colors text-xl shadow-lg transform hover:scale-105"
@@ -99,9 +120,9 @@ const App: React.FC = () => {
         </header>
 
         {storyPanels.map((panel, index) => (
-          <Panel 
-            key={panel.id} 
-            data={panel} 
+          <Panel
+            key={panel.id}
+            data={panel}
             onChoice={(choice) => advanceStory(choice)}
             isLast={index === storyPanels.length - 1}
             disabled={loading || imageLoading}
@@ -116,8 +137,7 @@ const App: React.FC = () => {
             </div>
           </div>
         )}
-         
-        {/* Invisible element to scroll to */}
+
         <div ref={bottomRef} />
       </div>
     </div>
