@@ -11,7 +11,7 @@ const ai = new GoogleGenAI({ apiKey: apiKey || 'dummy-key-to-prevent-crash-but-w
 
 const SYSTEM_INSTRUCTION = `
 Eres un guionista de cómics divertidos e interactivos para todos los públicos.
-El protagonista es "Nube", una perrita Bichón Maltés blanca, pequeña, peluda y muy curiosa.
+El protagonista es "Cocó", una perrita Bichón Maltés blanca, pequeña, peluda y muy curiosa.
 El escenario es "Adrihosan", una tienda real de azulejos, baños y cocinas. Es un lugar con pasillos de baldosas brillantes, expositores de grifos, bañeras modernas y sacos de cemento cola.
 Tu tono debe ser alegre, un poco travieso pero inocente.
 Genera la narrativa en español.
@@ -26,7 +26,7 @@ const storySchema: Schema = {
     },
     imagePrompt: {
       type: Type.STRING,
-      description: "Una descripción visual detallada de la escena para generar una imagen. Describe a la perrita Nube y el entorno de la tienda de azulejos.",
+      description: "Una descripción visual detallada de la escena para generar una imagen. Describe a la perrita Cocó y el entorno de la tienda de azulejos.",
     },
     choices: {
       type: Type.ARRAY,
@@ -53,7 +53,7 @@ export const generateStorySegment = async (history: string, userChoice: string):
       El usuario ha elegido: "${userChoice}".
       
       Genera el siguiente segmento de la historia.
-      Asegúrate de que la trama avance. Nube debe interactuar con elementos de la tienda de azulejos (baldosas, grifos, dependientes, cajas).
+      Asegúrate de que la trama avance. Cocó debe interactuar con elementos de la tienda de azulejos (baldosas, grifos, dependientes, cajas).
     `;
 
     const response = await ai.models.generateContent({
@@ -75,7 +75,7 @@ export const generateStorySegment = async (history: string, userChoice: string):
     console.error("Error generating story text:", error);
     // Fallback in case of error to keep app alive
     return {
-      narrative: "Nube se ha despistado un poco oliendo una baldosa hidráulica muy bonita. (Error de conexión)",
+      narrative: "Cocó se ha despistado un poco oliendo una baldosa hidráulica muy bonita. (Error de conexión)",
       imagePrompt: "Maltese puppy looking confused at a tile",
       choices: [
         { text: "Intentar de nuevo", action: "retry" },
