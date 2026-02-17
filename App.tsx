@@ -53,7 +53,7 @@ const App: React.FC = () => {
         .filter(Boolean)
         .join('. ');
 
-      const fullImagePrompt = `Cómic, estilo dibujo animado digital vibrante. En una tienda de azulejos (Adrihosan). Personajes: ${characterDescriptions}. ${segment.imagePrompt}`;
+      const fullImagePrompt = `Estilo Pixar 3D, render cinematográfico con iluminación global suave, subsurface scattering, profundidad de campo. Personajes con proporciones estilizadas, ojos grandes y expresivos, texturas hiperrealistas en pelo y ropa. Escena en una tienda de azulejos moderna y luminosa (Adrihosan). Personajes: ${characterDescriptions}. ${segment.imagePrompt}`;
 
       const base64Image = await generatePanelImage(fullImagePrompt);
 

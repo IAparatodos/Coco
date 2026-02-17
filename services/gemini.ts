@@ -30,6 +30,7 @@ ${characterBlock}
 - El campo "nextCharacters" indica qué personajes deberían aparecer en el siguiente panel (puedes añadir o quitar personajes para que la historia sea dinámica).
 - La perrita protagonista se llama Cocó. El dueño de la tienda es Ricardo y su mujer es Amparo.
 - Mantén el tono alegre, un poco travieso pero inocente.
+- Para el campo "imagePrompt": describe la escena como si fuera un fotograma de película Pixar/Disney. Incluye detalles de iluminación (luz cálida de tienda, reflejos en azulejos), expresiones faciales exageradas al estilo Pixar, y poses dinámicas y expresivas. Los personajes deben verse como personajes 3D con ojos grandes, texturas realistas en pelo/pelaje, y proporciones estilizadas.
 `;
 }
 
@@ -42,7 +43,7 @@ const storySchema: Schema = {
     },
     imagePrompt: {
       type: Type.STRING,
-      description: "Una descripción visual detallada de la escena para generar una imagen. Describe a los personajes presentes y el entorno de la tienda de azulejos.",
+      description: "Descripción visual detallada de la escena estilo Pixar/Disney 3D: iluminación cinematográfica, personajes con ojos grandes y expresivos, proporciones estilizadas, texturas hiperrealistas. Describe poses, expresiones faciales exageradas, y el entorno de la tienda de azulejos con reflejos y brillos.",
     },
     dialogue: {
       type: Type.ARRAY,

@@ -7,7 +7,7 @@ export const CHARACTERS: Record<CharacterId, CharacterAgent> = {
     emoji: '🐶',
     role: 'protagonista',
     color: 'blue',
-    description: 'Una perrita Bichón Maltés blanca, pequeña, peluda y extremadamente curiosa llamada Cocó.',
+    description: 'Cocó, una perrita Bichón Maltés blanca estilo Pixar: ojos enormes redondos y brillantes color marrón, pelo esponjoso como algodón de azúcar con volumen exagerado, nariz negra pequeña y reluciente, patas cortas y rechonchas, expresiones faciales muy humanas y exageradas.',
     personality: `Cocó es la protagonista. Es una perrita Bichón Maltés blanca y esponjosa.
 Es curiosa, juguetona, un poco traviesa pero siempre inocente.
 Le encanta olisquear cosas nuevas, perseguir reflejos en los azulejos y hacer amigos.
@@ -21,7 +21,7 @@ Ejemplo de pensamiento: "¡Oooh! ¡Eso brilla mucho! ¡Tengo que olerlo!"`,
     emoji: '👨‍🔧',
     role: 'dueño de la tienda',
     color: 'amber',
-    description: 'Ricardo, el dueño de Adrihosan. Un hombre con delantal, algo gruñón pero con buen corazón.',
+    description: 'Ricardo, hombre de unos 50 años estilo Pixar: complexión robusta, cabeza grande y redondeada, cejas gruesas y expresivas, mandíbula cuadrada, nariz prominente, delantal azul de trabajo, manos grandes y fuertes, ojos pequeños pero cálidos, pelo canoso corto.',
     personality: `Ricardo es el dueño de la tienda Adrihosan. Lleva delantal azul y conoce cada rincón de su negocio.
 Parece gruñón y serio, pero en el fondo tiene un corazón enorme y adora a Cocó.
 Habla con frases cortas y directas. Se queja mucho pero siempre acaba ayudando.
@@ -35,7 +35,7 @@ Ejemplo: "¡Pero bueno! ¡Cocó, baja de ahí! ...Bueno, que no toque los azulej
     emoji: '👩‍💼',
     role: 'mujer de Ricardo y copropietaria de la tienda',
     color: 'green',
-    description: 'Amparo, la mujer de Ricardo y copropietaria de Adrihosan. Alegre, servicial y adora a Cocó.',
+    description: 'Amparo, mujer de unos 48 años estilo Pixar: cara redonda y amable, ojos grandes y expresivos color verde, sonrisa amplia y contagiosa, pelo castaño recogido en moño con mechones sueltos, complexión menuda pero enérgica, lleva un polo verde con el logo de Adrihosan.',
     personality: `Amparo es la mujer de Ricardo y copropietaria de Adrihosan. Es alegre, enérgica y muy cariñosa.
 Adora a Cocó y siempre intenta protegerla de los "regaños" de Ricardo.
 Conoce bien los productos de la tienda y a veces intenta explicárselos a Cocó como si fuera una clienta.
@@ -49,7 +49,7 @@ Ejemplo: "¡Cocó, ven aquí! ¡Mira qué azulejo tan bonito! Es porcelánico...
     emoji: '🐱',
     role: 'gato misterioso de la tienda',
     color: 'purple',
-    description: 'Un gato atigrado gris que vive escondido entre los pasillos de la tienda. Nadie sabe cómo llegó.',
+    description: 'El Gato Azulejo, gato estilo Pixar: pelaje gris-azulado brillante con rayas más oscuras, ojos enormes amarillo-dorado con pupilas finas y mirada astuta, cuerpo estilizado y elegante, cola larga y expresiva, poses imposibles y dramáticas, siempre con una media sonrisa pícara.',
     personality: `El Gato Azulejo es un gato atigrado gris-azulado que vive escondido en la tienda.
 Es misterioso, elegante y un poco burlón. Aparece y desaparece entre los expositores.
 Observa todo desde las alturas y a veces "ayuda" a Cocó... o le mete en más líos.
