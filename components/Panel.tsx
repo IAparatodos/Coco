@@ -27,7 +27,7 @@ export const Panel: React.FC<PanelProps> = ({ data, onChoice, isLast, disabled }
   return (
     <div className="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-gray-200 transform transition-all duration-500 ease-in-out">
       {/* Image Area */}
-      <div className="relative w-full aspect-square md:aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+      <div className="w-full aspect-square md:aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
         {data.imageData ? (
           <img
             src={data.imageData}
@@ -40,13 +40,13 @@ export const Panel: React.FC<PanelProps> = ({ data, onChoice, isLast, disabled }
             <span className="mt-2 text-sm">Dibujando a Cocó...</span>
           </div>
         )}
+      </div>
 
-        {/* Comic Bubble for Narrative */}
-        <div className="absolute bottom-4 left-4 right-4 bg-white/95 p-4 rounded-lg border-2 border-black shadow-lg">
-          <p className="font-comic text-lg leading-tight text-gray-900">
-            {data.narrative}
-          </p>
-        </div>
+      {/* Narrative Text Below Image */}
+      <div className="px-4 py-3 border-b border-gray-100">
+        <p className="font-comic text-lg leading-snug text-gray-900">
+          📖 {data.narrative}
+        </p>
       </div>
 
       {/* Character Dialogue Bubbles */}
