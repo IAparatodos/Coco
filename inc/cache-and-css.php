@@ -92,24 +92,35 @@ function adrihosan_cargar_css_categoria() {
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
-        // Cargar JS común (FAQs, scroll, etc.)
+        // Cargar JS común (FAQs, scroll, fix paginación, filtro móvil)
         wp_enqueue_script(
             'adrihosan-category-common',
             get_stylesheet_directory_uri() . '/assets/js/category-common.js',
             array('jquery'),
-            '1.0.0',
+            '1.0.2',
             true
         );
 
         $cat_id = get_queried_object_id();
-        $css_file = '/assets/css/category-' . $cat_id . '.css';
-        $css_path = get_stylesheet_directory() . $css_file;
-        
+
+        // Buscar CSS primero en /assets/css/, luego en raíz del tema
+        $css_file_assets = '/assets/css/category-' . $cat_id . '.css';
+        $css_file_root   = '/category-' . $cat_id . '.css';
+        $css_path_assets = get_stylesheet_directory() . $css_file_assets;
+        $css_path_root   = get_stylesheet_directory() . $css_file_root;
+
         // Si existe el archivo CSS específico para esta categoría, cargarlo
-        if (file_exists($css_path)) {
+        if (file_exists($css_path_assets)) {
             wp_enqueue_style(
                 'adrihosan-category-' . $cat_id,
-                get_stylesheet_directory_uri() . $css_file,
+                get_stylesheet_directory_uri() . $css_file_assets,
+                array('adrihosan-base-global'),
+                '1.0.0'
+            );
+        } elseif (file_exists($css_path_root)) {
+            wp_enqueue_style(
+                'adrihosan-category-' . $cat_id,
+                get_stylesheet_directory_uri() . $css_file_root,
                 array('adrihosan-base-global'),
                 '1.0.0'
             );
@@ -146,10 +157,11 @@ function adrihosan_preservar_filtros_en_paginacion( $args ) {
         return $args;
     }
     $params = $_GET;
-    // Eliminar parámetros de paginación para que no se dupliquen
-    unset( $params['paged'] );
-    unset( $params['product-page'] );
-    unset( $params['product_page'] );
+    // Eliminar parámetros que no deben duplicarse en paginación
+    $exclude = array( 'paged', 'product-page', 'product_page', 'add-to-cart' );
+    foreach ( $exclude as $key ) {
+        unset( $params[ $key ] );
+    }
     if ( ! empty( $params ) ) {
         $args['add_args'] = adrihosan_sanitize_filter_params_recursive( $params );
     }

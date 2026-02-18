@@ -108,7 +108,14 @@ function adrihosan_wood_contenido_superior() {
 function adrihosan_wood_contenido_inferior() {
     ?>
 
-    <!-- 7. FAQs -->
+    <!-- 7. DESCRIPCIÓN SEO DINÁMICA -->
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+        <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
+            <?php echo category_description( get_queried_object_id() ); ?>
+        </div>
+    </section>
+
+    <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Suelos Imitaci&oacute;n Madera</h2>

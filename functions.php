@@ -130,9 +130,9 @@ function adrihosan_setup_cocina_imitacion_cpu_fix() {
 }
 
 function adrihosan_setup_hidraulica_original_cpu_fix() {
-    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
-    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);

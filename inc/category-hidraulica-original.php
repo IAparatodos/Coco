@@ -14,10 +14,6 @@
 // COMENTADO - Duplicado del controlador maestro (línea 89)
 // add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7 );
 function adrihosan_contenido_superior_original() {
-	if ( is_product_category( 4862 ) && ! is_singular('product') ) {
-		remove_all_actions( 'woocommerce_archive_description' );
-		add_filter( 'woocommerce_show_page_title', '__return_false' );
-		remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
 		?>
 		<section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/Baldosa-hidraulica-original-Adrihosan-1.jpg');">
 			<div class="hero-content">
@@ -60,14 +56,12 @@ function adrihosan_contenido_superior_original() {
 		
 		<div class="product-loop-header" id="bh-product-grid-anchor"><h2 class="product-loop-title">Catálogo de Baldosa Hidráulica Original</h2></div>
 		<?php
-	}
 }
 
 // --- BLOQUE 2: Contenido INFERIOR (Después de los productos) ---
 // COMENTADO - Duplicado del controlador maestro (línea 90)
 // add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20 );
 function adrihosan_contenido_inferior_original() {
-	if ( is_product_category( 4862 ) && ! is_singular('product') ) {
 		?>
 		<section class="bh-custom-section adrihosan-full-width-block">
 			<div class="bh-custom-wrapper">
@@ -142,6 +136,5 @@ function adrihosan_contenido_inferior_original() {
 			</div>
 		</section>
 		<?php
-	}
 }
 
