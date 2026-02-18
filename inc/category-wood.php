@@ -106,6 +106,20 @@ function adrihosan_wood_contenido_superior() {
  * Contenido INFERIOR (después de productos)
  */
 function adrihosan_wood_contenido_inferior() {
+
+    // SEO: Contenido din&aacute;mico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper">
+            <div class="term-description-dinamica">
+                <?php echo $descripcion_editor; ?>
+            </div>
+        </div>
+    </section>
+    <?php
+    }
     ?>
 
     <!-- 7. FAQs -->
