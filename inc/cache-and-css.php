@@ -146,19 +146,29 @@ function adrihosan_preservar_filtros_en_paginacion( $args ) {
         return $args;
     }
     $params = $_GET;
+    // Eliminar parámetros de paginación para que no se dupliquen
     unset( $params['paged'] );
     unset( $params['product-page'] );
+    unset( $params['product_page'] );
     if ( ! empty( $params ) ) {
-        $sanitized = array();
-        foreach ( $params as $key => $value ) {
-            $clean_key = sanitize_text_field( $key );
-            if ( is_array( $value ) ) {
-                $sanitized[ $clean_key ] = array_map( 'sanitize_text_field', $value );
-            } else {
-                $sanitized[ $clean_key ] = sanitize_text_field( $value );
-            }
-        }
-        $args['add_args'] = $sanitized;
+        $args['add_args'] = adrihosan_sanitize_filter_params_recursive( $params );
     }
     return $args;
+}
+
+/**
+ * Sanitiza parámetros de filtro de forma recursiva.
+ * Soporta arrays anidados que FE Pro puede usar (ej: filter[color][]=blue).
+ */
+function adrihosan_sanitize_filter_params_recursive( $params ) {
+    $sanitized = array();
+    foreach ( $params as $key => $value ) {
+        $clean_key = sanitize_text_field( $key );
+        if ( is_array( $value ) ) {
+            $sanitized[ $clean_key ] = adrihosan_sanitize_filter_params_recursive( $value );
+        } else {
+            $sanitized[ $clean_key ] = sanitize_text_field( $value );
+        }
+    }
+    return $sanitized;
 }
