@@ -354,7 +354,7 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 
 1. **Al crear nueva categoría**: Ver sección "Cómo Añadir una Nueva Categoría"
 2. **Al modificar estilos**: Usar selector `.tax-product_cat.term-{ID}`, NO tocar base-global.css para contacto
-3. **Archivos a subir al servidor**: `functions.php` + `inc/category-*.php` afectados + CSS si se modifica
+3. **Archivos a subir al servidor**: `functions-server.php` (como `functions.php`) + `inc/category-*.php` afectados + CSS si se modifica
 4. **El servidor usa LiteSpeed** - limpiar caché después de subir cambios
 5. **IMPORTANTE**: El `functions.php` del servidor puede tener cambios no en GitHub. SIEMPRE comparar antes de modificar.
 6. **NUNCA** poner `add_action` a nivel de archivo en `inc/category-*.php` - causa CPU al 100%
@@ -362,7 +362,49 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 
 ---
 
+## ERRORES COMETIDOS - NO REPETIR
+
+### 1. SIEMPRE editar `functions-server.php`, NO `functions.php`
+- **Error**: Se editó `functions.php` en vez de `functions-server.php`. El servidor usa `functions-server.php` (se sube como `functions.php`).
+- **Regla**: `functions-server.php` es el archivo de producción. `functions.php` es una versión de referencia/local. **Cualquier cambio de setup, hooks o controlador maestro SIEMPRE va en `functions-server.php`.**
+- **Al dar instrucciones de subida**: Decir `functions-server.php` → subir como `functions.php`.
+
+### 2. Ocultar filtros antiguos en TODA nueva categoría
+- **Error**: Se creó la categoría Wood (2209) sin CSS inline para ocultar filtros legacy del tema Woodmart.
+- **Regla**: TODA función `adrihosan_setup_{cat}_cpu_fix()` DEBE incluir:
+  ```php
+  add_action('wp_head', function() {
+      echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+  });
+  ```
+- **Además**: Añadir las mismas reglas en el `category-{ID}.css` como respaldo (por si LiteSpeed cachea sin el inline).
+
+### 3. Scroll post-filtro: usar `category-common.js` genérico
+- **Error**: La categoría Wood no tenía JS para scroll al catálogo después de filtrar. El usuario filtraba y se quedaba en la cabecera.
+- **Regla**: El `assets/js/category-common.js` maneja scroll genérico buscando `.product-loop-header`. TODA categoría nueva DEBE tener un `<div class="product-loop-header">` antes del loop de productos para que el scroll funcione.
+- **NO crear JS individuales por categoría** - el `category-common.js` cubre FAQs, filtro móvil y scroll para todas.
+
+### 4. Estructura de archivos en el repo vs servidor
+- **Error**: Se asumió que `assets/` existía en el repo. Los CSS estaban en la raíz, no en `assets/css/`.
+- **Regla**: En el repo los archivos pueden estar en la raíz (`category-2209.css`). En el servidor van en `assets/css/category-2209.css` y `assets/js/category-common.js`.
+- **El `functions-server.php`** busca CSS primero en `assets/css/`, luego en la raíz del tema (fallback).
+
+---
+
 ## Changelog
+
+### 2026-02-19
+- **FIX Wood (2209)**: Filtros antiguos volvían a aparecer
+  - Añadidos selectores CSS: `.woocommerce-products-header__description`, `.term-description`, `.woodmart-category-desc`, `.wd-active-filters`
+  - Añadido `remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10)`
+  - CSS respaldo en `category-2209.css` (doble protección vs cache LiteSpeed)
+- **FIX Scroll post-filtro**: Creado `assets/js/category-common.js` genérico
+  - FAQs toggle, filtro móvil, scroll a `.product-loop-header` tras filtrar
+  - Funciona para TODAS las categorías, no necesita JS individual
+- **CLAUDE.md**: Añadida sección "ERRORES COMETIDOS - NO REPETIR"
+  - Documentado: siempre editar `functions-server.php`, no `functions.php`
+  - Documentado: ocultar filtros legacy en toda nueva categoría
+  - Documentado: estructura repo vs servidor
 
 ### 2026-02-14
 - **OPTIMIZACIÓN CRÍTICA**: Migrados 7 hooks globales restantes al master controller
