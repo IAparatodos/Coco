@@ -13,6 +13,7 @@
 }
 
 /* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-2377 .woocommerce-products-header,
 .tax-product_cat.term-2377 .wd-shop-tools,
 .tax-product_cat.term-2377 .advanced-filter,
 .tax-product_cat.term-2377 .filter-wrapper,
@@ -80,17 +81,23 @@
 }
 
 /* ========================================================================== */
-/* HERO SECTION                                                               */
+/* HERO SECTION - BREAKOUT COMPLETO (Patron cat-66)                          */
 /* ========================================================================== */
 .tax-product_cat.term-2377 .hero-section-container {
     position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 65vh;
-    padding: 80px 20px;
+    padding: 60px 20px;
+    box-sizing: border-box;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -102,8 +109,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(16, 46, 53, 0.6);
     z-index: 1;
 }
@@ -111,8 +118,7 @@
 .tax-product_cat.term-2377 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 850px;
-    margin: 0 auto;
+    max-width: 800px;
 }
 
 /* --- Breadcrumb --- */
@@ -139,19 +145,19 @@
 }
 
 .tax-product_cat.term-2377 .hero-content h1 {
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .tax-product_cat.term-2377 .hero-content p {
-    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-    opacity: 0.95;
+    font-size: 18px;
     line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .tax-product_cat.term-2377 .hero-buttons {
@@ -159,12 +165,14 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    position: relative;
+    z-index: 100;
 }
 
 .tax-product_cat.term-2377 .hero-btn {
     padding: 12px 28px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -172,6 +180,9 @@
     border: 2px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
 }
 
 .tax-product_cat.term-2377 .hero-btn.primary {
