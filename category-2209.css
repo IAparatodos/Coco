@@ -48,6 +48,29 @@
     margin: 0 auto;
 }
 
+/* --- Breadcrumb --- */
+.tax-product_cat.term-2209 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-2209 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-2209 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2209 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
 .tax-product_cat.term-2209 .hero-content h1 {
     font-size: clamp(2.25rem, 5vw, 3.5rem);
     font-weight: 700;
@@ -143,7 +166,7 @@
     gap: 25px;
 }
 
-.tax-product_cat.term-2209 .ap-inspiration-grid.ap-grid-5 {
+.tax-product_cat.term-2209 .ap-inspiration-grid.grid-5-cols {
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -204,76 +227,20 @@
 .tax-product_cat.term-2209 .ap-card-content h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 5px 0;
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* ========================================================================== */
-/* VENTAJAS SECTION                                                           */
-/* ========================================================================== */
-.tax-product_cat.term-2209 .wood-ventajas-section {
-    background-color: #f7f9fa;
-    padding: 80px 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.tax-product_cat.term-2209 .wood-ventajas-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.tax-product_cat.term-2209 .wood-ventajas-wrapper h2 {
-    font-size: clamp(1.75rem, 4vw, 2.25rem);
-    font-weight: 700;
-    color: #102e35;
-    margin: 0 0 50px 0;
-}
-
-.tax-product_cat.term-2209 .wood-ventajas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.tax-product_cat.term-2209 .wood-ventaja-card {
-    background-color: #ffffff;
-    padding: 35px 25px;
-    border-radius: 8px;
-    border: 1px solid #eef2f5;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.tax-product_cat.term-2209 .wood-ventaja-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
-}
-
-.tax-product_cat.term-2209 .wood-ventaja-icon {
-    font-size: 3rem;
-    line-height: 1;
-    color: #4dd2d0;
-    margin-bottom: 20px;
-}
-
-.tax-product_cat.term-2209 .wood-ventaja-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #102e35;
-    margin: 0 0 10px 0;
-}
-
-.tax-product_cat.term-2209 .wood-ventaja-card p {
-    font-size: 0.95rem;
-    color: #3f6f7b;
-    line-height: 1.7;
+.tax-product_cat.term-2209 .ap-card-content p {
+    font-size: 0.9rem;
     margin: 0;
+    color: #ffffff;
+    opacity: 0.9;
 }
 
 /* ========================================================================== */
-/* CONSEJO ADRIA + FILTRO (adria-tip-box ya tiene estilos globales)           */
+/* CONSEJO ADRIA + FILTRO                                                     */
 /* ========================================================================== */
 .tax-product_cat.term-2209 .adria-tip-box {
     max-width: 960px;
@@ -297,12 +264,176 @@
 }
 
 /* ========================================================================== */
+/* SEO CONTENT SECTION (Tipos de suelo)                                       */
+/* ========================================================================== */
+.tax-product_cat.term-2209 .seo-content-section {
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2209 .seo-content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2209 .seo-content-wrapper > h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 50px 0;
+}
+
+.tax-product_cat.term-2209 .material-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tax-product_cat.term-2209 .material-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tax-product_cat.term-2209 .material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
+}
+
+.tax-product_cat.term-2209 .material-icon {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.tax-product_cat.term-2209 .material-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 10px 0;
+}
+
+.tax-product_cat.term-2209 .material-card h3 a {
+    color: #102e35;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tax-product_cat.term-2209 .material-card h3 a:hover {
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-2209 .material-card p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-2209 .finish-info-block {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    text-align: left;
+}
+
+.tax-product_cat.term-2209 .finish-info-block h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+
+.tax-product_cat.term-2209 .finish-info-block p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-2209 .finish-info-block strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* TRENDS SECTION (Tendencias)                                                */
+/* ========================================================================== */
+.tax-product_cat.term-2209 .trends-section {
+    padding: 60px 20px;
+    background-color: #102e35;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.tax-product_cat.term-2209 .trends-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2209 .trends-wrapper h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.tax-product_cat.term-2209 .trends-wrapper > p {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin: 0 0 35px 0;
+}
+
+.tax-product_cat.term-2209 .trends-wrapper > p a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2209 .trends-wrapper > p a:hover {
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2209 .trends-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tax-product_cat.term-2209 .trend-link {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 2px solid #4dd2d0;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-2209 .trend-link:hover {
+    background-color: #4dd2d0;
+    color: #102e35;
+}
+
+/* ========================================================================== */
 /* RESPONSIVE                                                                 */
 /* ========================================================================== */
 
 /* --- Tablet --- */
 @media (max-width: 1024px) {
-    .tax-product_cat.term-2209 .ap-inspiration-grid.ap-grid-5 {
+    .tax-product_cat.term-2209 .ap-inspiration-grid.grid-5-cols {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -314,7 +445,11 @@
         padding: 60px 20px;
     }
 
-    .tax-product_cat.term-2209 .ap-inspiration-grid.ap-grid-5 {
+    .tax-product_cat.term-2209 .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-2209 .ap-inspiration-grid.grid-5-cols {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -330,23 +465,44 @@
         font-size: 1rem;
     }
 
-    .tax-product_cat.term-2209 .wood-ventajas-section,
-    .tax-product_cat.term-2209 .ap-inspiration-section {
+    .tax-product_cat.term-2209 .ap-inspiration-section,
+    .tax-product_cat.term-2209 .seo-content-section,
+    .tax-product_cat.term-2209 .trends-section {
         padding: 60px 20px;
     }
 
-    .tax-product_cat.term-2209 .wood-ventajas-wrapper h2,
-    .tax-product_cat.term-2209 .ap-inspiration-wrapper h2 {
+    .tax-product_cat.term-2209 .ap-inspiration-wrapper h2,
+    .tax-product_cat.term-2209 .seo-content-wrapper > h2,
+    .tax-product_cat.term-2209 .trends-wrapper h2 {
         font-size: 1.5rem;
+    }
+
+    .tax-product_cat.term-2209 .material-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-2209 .finish-info-block {
+        padding: 25px 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .tax-product_cat.term-2209 .ap-inspiration-grid.ap-grid-5 {
+    .tax-product_cat.term-2209 .ap-inspiration-grid.grid-5-cols {
         grid-template-columns: 1fr;
     }
 
     .tax-product_cat.term-2209 .ap-inspiration-card {
         min-height: 250px;
+    }
+
+    .tax-product_cat.term-2209 .trends-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tax-product_cat.term-2209 .trend-link {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
     }
 }
