@@ -199,6 +199,102 @@ El widget debe estar configurado con **"The same as on a desktop"** en Mobile vi
 .hero-buttons / .hero-btn.primary / .hero-btn.secondary
 ```
 
+### Patr&oacute;n Hero para Categor&iacute;as (Woodmart) - REGLA OBLIGATORIA
+
+Toda categor&iacute;a nueva DEBE seguir estas reglas para que el hero funcione correctamente:
+
+#### 1. Ocultar `.woocommerce-products-header` (el padre)
+Woodmart genera un `<header class="woocommerce-products-header">` que envuelve la descripci&oacute;n de categor&iacute;a. Este elemento tiene un `margin-bottom: 63px` por defecto. Si solo ocultas los hijos (`.term-description`, etc.), **el padre sigue ocupando espacio**, generando una franja visible entre el hero y la siguiente secci&oacute;n donde se ve la imagen de fondo sin el overlay/velo.
+
+```css
+/* CORRECTO - Ocultar el padre completo */
+.tax-product_cat.term-XXXX .woocommerce-products-header,
+.tax-product_cat.term-XXXX .wd-shop-tools,
+.tax-product_cat.term-XXXX .advanced-filter,
+.tax-product_cat.term-XXXX .filter-wrapper,
+.tax-product_cat.term-XXXX .woocommerce-products-header__description,
+.tax-product_cat.term-XXXX .term-description,
+.tax-product_cat.term-XXXX .woodmart-category-desc,
+.tax-product_cat.term-XXXX .wd-active-filters {
+    display: none !important;
+}
+
+/* INCORRECTO - Falta el padre, el margin de 63px sigue visible */
+.tax-product_cat.term-XXXX .woocommerce-products-header__description,
+.tax-product_cat.term-XXXX .term-description {
+    display: none !important;
+}
+```
+
+#### 2. Breakout del hero (salir del contenedor del tema)
+El hero debe romper el contenedor de Woodmart para ocupar el 100% del viewport:
+```css
+.tax-product_cat.term-XXXX .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+```
+
+#### 3. Overlay / velo oscuro
+```css
+.tax-product_cat.term-XXXX .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.6);
+    z-index: 1;
+}
+```
+
+#### 4. Botones clicables sobre el overlay
+Los botones necesitan `z-index: 100` y `pointer-events: auto` para quedar por encima del `::after`:
+```css
+.tax-product_cat.term-XXXX .hero-buttons {
+    position: relative;
+    z-index: 100;
+}
+
+.tax-product_cat.term-XXXX .hero-btn {
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+```
+
+#### Checklist para cada categor&iacute;a nueva
+- [ ] `.woocommerce-products-header` est&aacute; en la lista de `display: none`
+- [ ] Hero usa breakout: `width: 100vw; left: 50%; margin-left: -50vw`
+- [ ] Overlay usa `width: 100%; height: 100%`
+- [ ] Botones tienen `z-index: 100` y `pointer-events: auto`
+- [ ] Archivo de referencia funcional: `category-66.css` (Piscinas)
+
+#### Errores comunes a evitar
+| Error | Consecuencia |
+|-------|-------------|
+| No ocultar `.woocommerce-products-header` | Franja de 63px sin velo debajo del hero |
+| Usar `margin: calc(-50vw + 50%)` en vez del patr&oacute;n `left: 50%` | No funciona en Woodmart |
+| No poner `z-index: 100` en botones | Botones no clicables (quedan bajo el overlay) |
+| Usar `background-position: center` (un solo valor) | Usar siempre `center center` (dos valores expl&iacute;citos) |
+
 #### Cards/Grid de Inspiración
 ```css
 .ap-inspiration-section / .ap-inspiration-wrapper
@@ -371,15 +467,16 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 - **Regla**: `functions-server.php` es el archivo de producción. `functions.php` es una versión de referencia/local. **Cualquier cambio de setup, hooks o controlador maestro SIEMPRE va en `functions-server.php`.**
 - **Al dar instrucciones de subida**: Decir `functions-server.php` → subir como `functions.php`.
 
-### 2. Ocultar filtros antiguos en TODA nueva categoría
-- **Error**: Se creó la categoría Wood (2209) sin CSS inline para ocultar filtros legacy del tema Woodmart.
+### 2. Ocultar filtros antiguos Y `.woocommerce-products-header` en TODA nueva categoría
+- **Error**: Se creó la categoría Wood (2209) sin CSS inline para ocultar filtros legacy del tema Woodmart. Además, no se ocultaba `.woocommerce-products-header` (el padre), lo que dejaba un `margin-bottom: 63px` visible como franja sin velo bajo el hero.
 - **Regla**: TODA función `adrihosan_setup_{cat}_cpu_fix()` DEBE incluir:
   ```php
   add_action('wp_head', function() {
-      echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+      echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
   });
   ```
 - **Además**: Añadir las mismas reglas en el `category-{ID}.css` como respaldo (por si LiteSpeed cachea sin el inline).
+- **Ver también**: Sección "Patrón Hero para Categorías (Woodmart)" en Convenciones de Código.
 
 ### 3. Scroll post-filtro: usar `category-common.js` genérico
 - **Error**: La categoría Wood no tenía JS para scroll al catálogo después de filtrar. El usuario filtraba y se quedaba en la cabecera.
@@ -396,6 +493,13 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 ## Changelog
 
 ### 2026-02-19
+- **CLAUDE.md**: Añadido "Patrón Hero para Categorías (Woodmart)" con reglas obligatorias
+  - Ocultar `.woocommerce-products-header` (padre) para evitar franja de 63px sin velo
+  - Breakout del hero con `width: 100vw; left: 50%; margin-left: -50vw`
+  - Overlay con `width/height: 100%` + botones con `z-index: 100`
+  - Checklist y tabla de errores comunes
+  - Actualizado error #2 para incluir `.woocommerce-products-header` en CSS inline obligatorio
+- **FIX Hero overlay cat 2377**: Cambiado `::after` de `width/height` a `top/left/right/bottom: 0`
 - **FIX Wood (2209)**: Filtros antiguos volvían a aparecer
   - Añadidos selectores CSS: `.woocommerce-products-header__description`, `.term-description`, `.woodmart-category-desc`, `.wd-active-filters`
   - Añadido `remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10)`
