@@ -33,36 +33,36 @@ function adrihosan_hexagonal_contenido_superior() {
             <h2>Explora por Estancia y Color</h2>
             <p class="section-subtitle">Encuentra el azulejo hexagonal perfecto seg&uacute;n d&oacute;nde vas a colocarlo o el tono que buscas</p>
             <div class="ap-inspiration-grid grid-5-cols">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/suelo-bano-hexagonal/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-hexagonal-bano-Adrihosan.jpg" alt="Suelo hexagonal para ba&ntilde;o">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/estancia-bano/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hexagonales-suelo-bano.jpg" alt="Suelo hexagonal para ba&ntilde;o">
                     <div class="ap-card-content">
                         <h3>Suelo Ba&ntilde;o</h3>
                         <p>Antideslizantes y resistentes a la humedad</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-cocina/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-hexagonal-cocina-Adrihosan.jpg" alt="Azulejo hexagonal para cocina">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/estancia-cocina/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hexagonales-suelo-cocina.jpg" alt="Azulejo hexagonal para cocina">
                     <div class="ap-card-content">
                         <h3>Cocina</h3>
                         <p>F&aacute;cil limpieza y m&aacute;xima durabilidad</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-verde/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/azulejo-hexagonal-verde-Adrihosan.jpg" alt="Azulejo hexagonal verde">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-verde/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hexagonales-suelo-verde.jpg" alt="Azulejo hexagonal verde">
                     <div class="ap-card-content">
                         <h3>Verde</h3>
                         <p>Estilo natural y vintage</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-blanco/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/azulejo-hexagonal-blanco-Adrihosan.jpg" alt="Azulejo hexagonal blanco">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-blanco/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hexagonales-suelo-blanco.jpg" alt="Azulejo hexagonal blanco">
                     <div class="ap-card-content">
                         <h3>Blanco</h3>
                         <p>Luminosidad y amplitud visual</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-gris/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/azulejo-hexagonal-gris-Adrihosan.jpg" alt="Azulejo hexagonal gris">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-gris/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejos-hexagonales-suelo-gris.jpg" alt="Azulejo hexagonal gris">
                     <div class="ap-card-content">
                         <h3>Gris</h3>
                         <p>Industrial y moderno</p>
@@ -158,11 +158,11 @@ function adrihosan_hexagonal_contenido_inferior() {
                 </div>
             </div>
             <div class="trends-links" style="margin-top:35px;">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-verde/" class="trend-link">Verde</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-blanco/" class="trend-link">Blanco</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-gris/" class="trend-link">Gris</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/suelo-bano-hexagonal/" class="trend-link">Ba&ntilde;o</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/azulejo-hexagonal-cocina/" class="trend-link">Cocina</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-verde/" class="trend-link">Verde</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-blanco/" class="trend-link">Blanco</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/tono-gris/" class="trend-link">Gris</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/estancia-bano/" class="trend-link">Ba&ntilde;o</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-hexagonales-suelo/estancia-cocina/" class="trend-link">Cocina</a>
             </div>
         </div>
     </section>
