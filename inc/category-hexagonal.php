@@ -85,10 +85,16 @@ function adrihosan_hexagonal_contenido_superior() {
     <div id="catalogo-hexagonal" class="product-loop-header">
         <h2 class="product-loop-title">Cat&aacute;logo de Azulejos Hexagonales para Suelo</h2>
     </div>
+
+    <!-- 6. WRAPPER AJAX para Filter Everything Pro (envuelve productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_hexagonal_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+    <?php
 
     // SEO: Contenido din&aacute;mico desde WooCommerce category_description()
     $descripcion_editor = category_description();
