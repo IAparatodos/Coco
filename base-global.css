@@ -78,7 +78,11 @@ html {
 .tax-product_cat.term-2209 .woocommerce-products-header,
 .tax-product_cat.term-2209 .term-description,
 .tax-product_cat.term-2209 .product-categories,
-.tax-product_cat.term-2209 .doo-category-banner {
+.tax-product_cat.term-2209 .doo-category-banner,
+.tax-product_cat.term-2209 .wd-shop-tools,
+.tax-product_cat.term-2209 .filter-wrapper,
+.tax-product_cat.term-2209 .bho-filters-section,
+.tax-product_cat.term-2209 .bho-hub-section {
     display: none !important;
 }
 
