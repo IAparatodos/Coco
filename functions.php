@@ -163,9 +163,9 @@ function adrihosan_setup_wood_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
 
-    // Ocultar filtros antiguos
+    // Ocultar filtros antiguos (Woodmart + filtros legacy bho)
     add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section { display: none !important; }</style>';
     });
 }
 
