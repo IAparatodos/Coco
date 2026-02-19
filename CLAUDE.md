@@ -102,6 +102,7 @@ function adrihosan_master_controller_cpu_fix() {
         // --- Otros ---
         case 2209: // Wood                        → adrihosan_setup_wood_cpu_fix()
         case 4806: // Paredes Decorativas         → adrihosan_setup_paredes_cpu_fix()
+        case 2377: // Azulejos Hexagonales Suelo  → adrihosan_setup_hexagonal_cpu_fix()
     }
 }
 ```
@@ -136,6 +137,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 | `category-camerinos.php` | 2626 | Camerino Baño | sin filtro |
 | `category-wood.php` | 2209 | Wood | sin filtro |
 | `category-paredes.php` | 4806 | Paredes Decorativas | 425985 |
+| `category-hexagonal.php` | 2377 | Azulejos Hexagonales Suelo | 425985 |
 
 ---
 
@@ -405,6 +407,12 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
   - Documentado: siempre editar `functions-server.php`, no `functions.php`
   - Documentado: ocultar filtros legacy en toda nueva categoría
   - Documentado: estructura repo vs servidor
+- **NUEVA Categoría 2377 (Azulejos Hexagonales Suelo)**:
+  - `inc/category-hexagonal.php`: contenido superior (hero, enlazado interno por estancia/color, filtros) + inferior (SEO largo, FAQs, contacto)
+  - Case en master controller + setup con filtros legacy ocultos
+  - `category-2377.css` con estilos completos (hero, cards, SEO, trends, responsive)
+  - Widget filtro: 425985 (Azulejos/Cerámica general)
+  - **Total: 27 categorías** gestionadas por el master controller
 
 ### 2026-02-14
 - **OPTIMIZACIÓN CRÍTICA**: Migrados 7 hooks globales restantes al master controller

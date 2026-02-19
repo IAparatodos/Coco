@@ -109,6 +109,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4247: // Espejos Redondos
             adrihosan_setup_espejos_redondo_cpu_fix();
             break;
+        case 2377: // Azulejos Hexagonales Suelo
+            adrihosan_setup_hexagonal_cpu_fix();
+            break;
     }
 }
 
@@ -163,6 +166,20 @@ function adrihosan_setup_wood_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos (Woodmart + filtros legacy bho + descripcion WC)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_hexagonal_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_hexagonal_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_hexagonal_contenido_inferior', 99);
 
     // Ocultar filtros antiguos (Woodmart + filtros legacy bho + descripcion WC)
     add_action('wp_head', function() {
@@ -1020,5 +1037,6 @@ require get_template_directory() . '/inc/category-porcelanico-marmol.php';    //
 require get_template_directory() . '/inc/category-azulejos-bano.php';        // Cat 1789
 require get_template_directory() . '/inc/category-azulejos-cocina.php';      // Cat 1790
 require get_template_directory() . '/inc/category-azulejos-exterior.php';    // Cat 2160
+require get_template_directory() . '/inc/category-hexagonal.php';            // Cat 2377
 require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
 
