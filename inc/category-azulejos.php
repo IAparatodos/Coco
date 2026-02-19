@@ -99,10 +99,16 @@ function adrihosan_azulejos_contenido_superior() {
     <div id="catalogo-azulejos" class="product-loop-header">
         <h2 class="product-loop-title">Cat&aacute;logo de Azulejos</h2>
     </div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+    <?php
 
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();

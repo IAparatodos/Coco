@@ -102,6 +102,9 @@ function adrihosan_pilar_bh_contenido_superior() {
             ?>
         </div>
     </section>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 /**
@@ -110,6 +113,7 @@ function adrihosan_pilar_bh_contenido_superior() {
 function adrihosan_pilar_bh_contenido_inferior() {
     if ( is_product_category( 4564 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="bhp-comparison-section adrihosan-full-width-block">
             <div class="bhp-comparison-wrapper">
                 <h2>Original vs. Imitaci&oacute;n: Ficha T&eacute;cnica Comparativa</h2>

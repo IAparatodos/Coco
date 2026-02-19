@@ -86,10 +86,16 @@ function adrihosan_wood_contenido_superior() {
     <div id="catalogo-wood" class="product-loop-header">
         <h2 class="product-loop-title">Cat&aacute;logo de Suelos Imitaci&oacute;n Madera</h2>
     </div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_wood_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+    <?php
 
     // SEO: Contenido din&aacute;mico desde WooCommerce category_description()
     $descripcion_editor = category_description();

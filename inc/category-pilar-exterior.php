@@ -72,6 +72,9 @@ function adrihosan_pilar_exterior_contenido_superior() {
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
 
     <div id="catalogo-exterior" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosa Hidr&aacute;ulica para Exterior</h2></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -80,6 +83,7 @@ function adrihosan_pilar_exterior_contenido_superior() {
  */
 function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
         <div class="hero-content">
             <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>

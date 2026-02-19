@@ -85,6 +85,9 @@ function adrihosan_pilar_imitacion_contenido_superior() {
             <p>Explora la colecci&oacute;n completa. Usa los filtros para afinar tu b&uacute;squeda o d&eacute;jate inspirar por la variedad de dise&ntilde;os que combinan el encanto de siempre con la tecnolog&iacute;a de ahora.</p>
         </div>
     </section>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -93,6 +96,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
  */
 function adrihosan_pilar_imitacion_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="ai-guide-section adrihosan-full-width-block">
         <div class="ai-guide-wrapper">
             <div class="ai-guide-header">

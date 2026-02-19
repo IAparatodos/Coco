@@ -92,6 +92,8 @@ function adrihosan_pilar_cocina_contenido_superior() {
 
     <div id="catalogo-cocina" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosas para Cocina</h2></div>
 
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -100,6 +102,7 @@ function adrihosan_pilar_cocina_contenido_superior() {
  */
 function adrihosan_pilar_cocina_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
    <section class="bh-simulator-section adrihosan-full-width-block" style="background-color: #3f6f7b;">
     <div class="bh-simulator-wrapper">
         <div class="bh-simulator-image">

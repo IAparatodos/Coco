@@ -64,6 +64,9 @@ function adrihosan_contenido_superior_cocina() {
         <div class="product-loop-header" id="catalogo-cocina">
             <h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Cocina</h2>
         </div>
+
+        <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+        <div id="fe-products-wrapper">
         <?php
     }
 }
@@ -73,6 +76,7 @@ function adrihosan_contenido_superior_cocina() {
 function adrihosan_contenido_inferior_cocina() {
     if ( is_product_category( 4876 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="ap-seo-content-section adrihosan-full-width-block">
             <div class="ap-seo-content-wrapper">
                 <h2>Gu&iacute;a para Elegir Azulejos Imitaci&oacute;n Hidr&aacute;ulico para tu Cocina</h2>

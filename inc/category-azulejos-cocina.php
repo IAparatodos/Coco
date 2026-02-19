@@ -115,11 +115,15 @@ function adrihosan_azulejos_cocina_contenido_superior() {
     <div id="catalogo-cocina" class="product-loop-header">
         <h2 class="product-loop-title">Catálogo de Azulejos para Cocina</h2>
     </div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_cocina_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();

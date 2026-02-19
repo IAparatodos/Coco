@@ -79,12 +79,16 @@ function adrihosan_pilar_bano_contenido_superior() {
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
     
     <div id="lista-productos" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosas para Ba&ntilde;o</h2></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_pilar_bano_contenido_inferior() {
     if ( is_product_category( 4865 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
             <div class="bho-hero-content">
                 <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>

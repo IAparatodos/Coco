@@ -101,11 +101,15 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
     <!-- Filtro Móvil -->
     <div id="destino-filtro-adria-marmol" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
     <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_porcelanico_marmol_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 2245 ); ?>

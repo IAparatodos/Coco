@@ -102,6 +102,9 @@ function adrihosan_contenido_superior_camerinos() {
                  <p>Explora nuestra selección completa. Usa los filtros para encontrar el camerino que se adapta perfectamente a tu espacio y necesidades.</p>
             </div>
         </section>
+
+        <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+        <div id="fe-products-wrapper">
         <?php
     }
 }
@@ -115,6 +118,7 @@ function adrihosan_contenido_superior_camerinos() {
 function adrihosan_contenido_inferior_camerinos() {
     if ( is_product_category( 2626 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="ac-faq-section adrihosan-full-width-block">
             <div class="ac-faq-wrapper">
                 <div class="ac-faq-header">

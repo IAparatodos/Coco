@@ -64,6 +64,9 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
                 </div>
             </section>
             <div id="catalogo-completo"></div>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -75,6 +78,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
     function adrihosan_contenido_inferior_espejos() {
         if ( is_product_category( 102 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="adri-seo-espejos adri-espejos-full-width">
                 <div class="adri-seo-espejos__container">
                     <h2>Guía Completa para Comprar el Espejo de Baño Ideal</h2>
@@ -177,6 +181,9 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
             <section class="ap-product-header-section-luz adrihosan-luz-full-width-block">
                 <div id="catalogo-luz" class="ap-product-header-wrapper-luz"><h2>Modelos de Espejos con Luz</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div>
             </section>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -188,6 +195,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
     function adrihosan_contenido_inferior_espejos_luz() {
         if ( is_product_category( 4213 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="ap-tech-guide-section adrihosan-luz-full-width-block">
                 <div class="ap-tech-guide-wrapper">
                     <div class="ap-tech-guide-header"><h2>Los Detalles que Marcan la Diferencia</h2><p>Entender la tecnología detrás de tu espejo te ayuda a elegir con total seguridad. Te explicamos los tres conceptos clave que debes conocer.</p></div>
@@ -302,6 +310,9 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
                 </div>
             </section>
             <div id="catalogo-redondos" style="scroll-margin-top: 20px;"></div>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -312,6 +323,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_redondo' ) ) {
     function adrihosan_contenido_inferior_espejos_redondo() {
         if ( is_product_category( 4247 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="ap-seo-section-redondo adri-redondo-full-width">
                 <div class="ap-seo-wrapper-redondo">
                     <h2>El Espejo Redondo: La Guía Definitiva para tu Baño</h2>

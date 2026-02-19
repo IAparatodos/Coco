@@ -153,10 +153,17 @@ function adrihosan_pavimentos_contenido_superior() {
     <div id="catalogo-pavimentos" class="product-loop-header">
         <h2 class="product-loop-title">Cat&aacute;logo de Suelos y Pavimentos</h2>
     </div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_pavimentos_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+    <?php
+
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
     if ( ! empty( $descripcion_editor ) ) {

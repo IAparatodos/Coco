@@ -83,6 +83,9 @@ function adrihosan_pilar_paredes_contenido_superior() {
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
     
     <div id="catalogo-paredes" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Pared</h2></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -91,6 +94,7 @@ function adrihosan_pilar_paredes_contenido_superior() {
  */
 function adrihosan_pilar_paredes_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();

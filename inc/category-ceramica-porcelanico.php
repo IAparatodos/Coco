@@ -121,7 +121,8 @@ function adrihosan_ceramica_superior_final() {
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Completo</h2>
     </div>
 
-
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -130,6 +131,7 @@ function adrihosan_ceramica_superior_final() {
  */
 function adrihosan_ceramica_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 62 ); ?>
@@ -355,6 +357,9 @@ function adrihosan_porcelanico_superior_final() {
 
     })(jQuery);
     </script>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -363,6 +368,7 @@ function adrihosan_porcelanico_superior_final() {
  */
 function adrihosan_porcelanico_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
@@ -460,11 +466,15 @@ function adrihosan_gran_formato_superior_final() {
 
     <style>.btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); } .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; } #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
     <script>(function($){"use strict";function moverBotonFiltroXL(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-gran-formato');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR GRAN FORMATO');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroXL);setTimeout(moverBotonFiltroXL,1500);function adrihosanFuerzaScrollXL(){var $dest=$('#catalogo-xl-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollXL,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollXL,500);});})(jQuery);</script>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_gran_formato_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
@@ -519,12 +529,14 @@ function adrihosan_extrafino_superior_final() {
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
     </div>
 
-
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_extrafino_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
@@ -606,12 +618,14 @@ function adrihosan_metro_superior_final() {
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Colección Azulejo Metro</h2>
     </div>
 
-
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_metro_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
