@@ -160,12 +160,13 @@ function adrihosan_setup_wood_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
 
-    // Ocultar filtros antiguos (Woodmart + filtros legacy bho)
+    // Ocultar filtros antiguos (Woodmart + filtros legacy bho + descripcion WC)
     add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section { display: none !important; }</style>';
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
     });
 }
 

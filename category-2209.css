@@ -12,6 +12,73 @@
     margin-top: 0 !important;
 }
 
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-2209 .wd-shop-tools,
+.tax-product_cat.term-2209 .advanced-filter,
+.tax-product_cat.term-2209 .filter-wrapper,
+.tax-product_cat.term-2209 .ai-filters-section,
+.tax-product_cat.term-2209 .bho-filters-section,
+.tax-product_cat.term-2209 .bho-hub-section,
+.tax-product_cat.term-2209 .woocommerce-products-header__description,
+.tax-product_cat.term-2209 .term-description,
+.tax-product_cat.term-2209 .woodmart-category-desc,
+.tax-product_cat.term-2209 .wd-active-filters {
+    display: none !important;
+}
+
+/* --- Estilos de la descripcion dinamica (contenido inferior) --- */
+.tax-product_cat.term-2209 .bho-guide-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2209 .bho-guide-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2209 .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-2209 .term-description-dinamica h2,
+.tax-product_cat.term-2209 .term-description-dinamica h3 {
+    color: #102e35;
+    margin-top: 1.5em;
+}
+
+.tax-product_cat.term-2209 .term-description-dinamica a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2209 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-2209 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-2209 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #102e35;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-2209 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
 /* ========================================================================== */
 /* HERO SECTION                                                               */
 /* ========================================================================== */
