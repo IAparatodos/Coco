@@ -48,7 +48,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
                         <p>Excelente relaci&oacute;n calidad-precio. Ideal para cocinas que buscan variedad de dise&ntilde;os.</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-imitacion-marmol/" class="ap-inspiration-card sc-type-card sc-featured-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" class="ap-inspiration-card sc-type-card sc-featured-card">
                     <div class="sc-type-icon">&#10024;</div>
                     <div class="ap-card-content">
                         <h3>Porcel&aacute;nico Calacatta</h3>
