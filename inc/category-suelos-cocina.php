@@ -41,7 +41,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
                         <p>M&aacute;xima dureza, absorci&oacute;n casi nula y resistencia a manchas. El rey de los suelos de cocina.</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-cocina/?_material=ceramico" class="ap-inspiration-card sc-type-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-de-cocina/ver-formato-33x33/" class="ap-inspiration-card sc-type-card">
                     <div class="sc-type-icon">&#9632;</div>
                     <div class="ap-card-content">
                         <h3>Cer&aacute;mico</h3>
