@@ -52,7 +52,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
                     <div class="sc-type-icon">&#10024;</div>
                     <div class="ap-card-content">
                         <h3>Porcel&aacute;nico Calacatta</h3>
-                        <p>Acabado marmolado premium. 140 b&uacute;squedas/mes. El toque de lujo para tu cocina.</p>
+                        <p>Acabado marmolado premium. El toque de lujo para tu cocina.</p>
                     </div>
                 </a>
             </div>
