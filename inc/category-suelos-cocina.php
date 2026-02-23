@@ -11,7 +11,7 @@
 function adrihosan_suelos_cocina_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/suelos-de-cocina-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Suelos-de-cocina-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -34,7 +34,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
             <h2>Explora por Tipolog&iacute;a</h2>
             <p class="section-subtitle">Elige el tipo de suelo de cocina que mejor se adapta a tu proyecto</p>
             <div class="ap-inspiration-grid grid-3-cols">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-cocina/?_material=gres-porcelanico" class="ap-inspiration-card sc-type-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/" class="ap-inspiration-card sc-type-card">
                     <div class="sc-type-icon">&#9670;</div>
                     <div class="ap-card-content">
                         <h3>Gres Porcel&aacute;nico</h3>
@@ -52,7 +52,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
                     <div class="sc-type-icon">&#10024;</div>
                     <div class="ap-card-content">
                         <h3>Porcel&aacute;nico Calacatta</h3>
-                        <p>Acabado marmolado premium. El toque de lujo para tu cocina.</p>
+                        <p>Acabado marmolado premium.El toque de lujo para tu cocina.</p>
                     </div>
                 </a>
             </div>
