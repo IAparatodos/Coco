@@ -107,7 +107,7 @@ function adrihosan_suelos_cocina_contenido_inferior() {
             <div class="sc-blog-banner-content">
                 <h2>&iquest;Est&aacute;s dise&ntilde;ando una cocina blanca?</h2>
                 <p>Descubre qu&eacute; materiales, colores y estilos de pavimento encajan mejor con una cocina blanca. Gu&iacute;a completa con ideas reales y combinaciones que funcionan.</p>
-                <a href="https://www.adrihosan.com/blog/suelos-para-cocinas-blancas/" class="sc-blog-btn">Leer gu&iacute;a: Suelos para cocinas blancas</a>
+                <a href="https://www.adrihosan.com/suelos-para-cocinas-blancas-como-elegir-el-pavimento-que-transforma-tu-espacio/" class="sc-blog-btn">Leer gu&iacute;a: Suelos para cocinas blancas</a>
             </div>
         </div>
     </section>
