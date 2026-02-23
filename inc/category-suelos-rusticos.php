@@ -11,7 +11,7 @@
 function adrihosan_suelos_rusticos_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/suelos-rusticos-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Suelo-exterior-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -34,21 +34,21 @@ function adrihosan_suelos_rusticos_contenido_superior() {
             <h2>Explora por Uso y Estilo</h2>
             <p class="section-subtitle">Elige el tipo de suelo r&uacute;stico seg&uacute;n d&oacute;nde vas a instalarlo</p>
             <div class="ap-inspiration-grid grid-3-cols">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/?_uso=interior" class="ap-inspiration-card sr-subcat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/ver-formato-33-3x33-3/" class="ap-inspiration-card sr-subcat-card">
                     <div class="sr-subcat-icon">&#127968;</div>
                     <div class="ap-card-content">
                         <h3>Suelo R&uacute;stico Interior</h3>
                         <p>Calidez y personalidad para salones, cocinas y dormitorios. Acabados en barro, piedra y cemento artesanal.</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/?_uso=exterior" class="ap-inspiration-card sr-subcat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/ver-formato-31x56/" class="ap-inspiration-card sr-subcat-card">
                     <div class="sr-subcat-icon">&#127795;</div>
                     <div class="ap-card-content">
                         <h3>Suelo R&uacute;stico Exterior</h3>
                         <p>Antideslizantes y resistentes a heladas. Ideales para terrazas, porches y jardines.</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/?_acabado=imitacion-madera" class="ap-inspiration-card sr-subcat-card sr-featured-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="ap-inspiration-card sr-subcat-card sr-featured-card">
                     <div class="sr-subcat-icon">&#129717;</div>
                     <div class="ap-card-content">
                         <h3>Imitaci&oacute;n Madera R&uacute;stica</h3>
