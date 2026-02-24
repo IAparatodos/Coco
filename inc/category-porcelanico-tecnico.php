@@ -11,7 +11,7 @@
 function adrihosan_porcelanico_tecnico_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/porcelanico-tecnico-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Porcelanico-tecnico-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
