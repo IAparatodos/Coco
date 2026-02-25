@@ -457,6 +457,7 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 5. **IMPORTANTE**: El `functions.php` del servidor puede tener cambios no en GitHub. SIEMPRE comparar antes de modificar.
 6. **NUNCA** poner `add_action` a nivel de archivo en `inc/category-*.php` - causa CPU al 100%
 7. **Archivos basura en raíz del repo**: `functions (6).php`, `category-ceramica-porcelanico.php`, `functions-css-loader.php`, CSS/JS sueltos. No afectan al tema pero deberían limpiarse.
+8. **PENDIENTE - Migrar Espejos a inc/**: Las funciones de contenido de Espejos (cats 102, 4213, 4247) siguen en `functions-server.php` porque `inc/category-espejos.php` está vacío. Cuando se trabaje en Espejos, migrar las 6 funciones (`adrihosan_contenido_superior/inferior_espejos`, `_espejos_luz`, `_espejos_redondo`) al archivo `inc/category-espejos.php` y eliminarlas de `functions-server.php`.
 
 ---
 
