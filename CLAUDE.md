@@ -103,6 +103,7 @@ function adrihosan_master_controller_cpu_fix() {
         case 2209: // Wood                        → adrihosan_setup_wood_cpu_fix()
         case 4806: // Paredes Decorativas         → adrihosan_setup_paredes_cpu_fix()
         case 2377: // Azulejos Hexagonales Suelo  → adrihosan_setup_hexagonal_cpu_fix()
+        case 4973: // Azulejos Imitación Cemento  → adrihosan_setup_imitacion_cemento_cpu_fix()
     }
 }
 ```
@@ -138,6 +139,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 | `category-wood.php` | 2209 | Wood | sin filtro |
 | `category-paredes.php` | 4806 | Paredes Decorativas | 425985 |
 | `category-hexagonal.php` | 2377 | Azulejos Hexagonales Suelo | 425985 |
+| `category-imitacion-cemento.php` | 4973 | Azulejos Imitación Cemento | 425985 |
 
 ---
 
@@ -145,7 +147,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 
 | Widget ID | Nombre | Categorías que lo usan |
 |-----------|--------|------------------------|
-| **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2410, 1844, 2510, 4806, 4876 |
+| **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2410, 1844, 2510, 4806, 4876, 4973 |
 | **426058** | Baldosa Hidráulica | 4862, 4865, 4866, 4869 |
 | **426267** | Pavimentos / Suelos | 64 |
 
@@ -492,6 +494,14 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 ---
 
 ## Changelog
+
+### 2026-02-25
+- **NUEVA Categoría 4973 (Azulejos Imitación Cemento)**:
+  - `inc/category-imitacion-cemento.php`: contenido superior (hero, trust bar, filtros) + inferior (bumper visual, SEO estilos cemento, tendencias, FAQs, contacto)
+  - Case en master controller + setup con filtros legacy ocultos + `.woocommerce-products-header`
+  - `category-4973.css` con estilos completos (hero, trust bar, bumper, SEO, trends, responsive)
+  - Widget filtro: 425985 (Azulejos/Cerámica general)
+  - **Total: 28 categorías** gestionadas por el master controller
 
 ### 2026-02-19
 - **CLAUDE.md**: Añadido "Patrón Hero para Categorías (Woodmart)" con reglas obligatorias
