@@ -46,8 +46,8 @@ Este es un tema hijo de WordPress/WooCommerce para la tienda **Adrihosan** (cer�
 
 El `functions.php` (~970 líneas) contiene:
 - Versión del tema (`_S_VERSION`)
-- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` con **26 cases**. Reduce CPU de 100% a ~20%.
-- **26 funciones `adrihosan_setup_*_cpu_fix()`** para cada categoría (hooks de WooCommerce)
+- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` con **29 cases**. Reduce CPU de 100% a ~20%.
+- **29 funciones `adrihosan_setup_*_cpu_fix()`** para cada categoría (hooks de WooCommerce)
 - Theme setup, scripts, enqueue
 - **Cache de `doo_menu_cats()`** con transient (1 hora) - evita query pesada en cada página
 - `require` a 20 archivos de categorías en `inc/`
@@ -104,6 +104,7 @@ function adrihosan_master_controller_cpu_fix() {
         case 4806: // Paredes Decorativas         → adrihosan_setup_paredes_cpu_fix()
         case 2377: // Azulejos Hexagonales Suelo  → adrihosan_setup_hexagonal_cpu_fix()
         case 4973: // Azulejos Imitación Cemento  → adrihosan_setup_imitacion_cemento_cpu_fix()
+        case 2516: // Zellige                     → adrihosan_setup_zellige_cpu_fix()
     }
 }
 ```
@@ -140,6 +141,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 | `category-paredes.php` | 4806 | Paredes Decorativas | 425985 |
 | `category-hexagonal.php` | 2377 | Azulejos Hexagonales Suelo | 425985 |
 | `category-imitacion-cemento.php` | 4973 | Azulejos Imitación Cemento | 425985 |
+| `category-zellige.php` | 2516 | Zellige | **426510** |
 
 ---
 
@@ -150,6 +152,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 | **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2410, 1844, 2510, 4806, 4876, 4973 |
 | **426058** | Baldosa Hidráulica | 4862, 4865, 4866, 4869 |
 | **426267** | Pavimentos / Suelos | 64 |
+| **426510** | Zellige | 2516 |
 
 ### Configuración del Filtro Móvil (IMPORTANTE)
 El widget debe estar configurado con **"The same as on a desktop"** en Mobile view.
@@ -209,7 +212,7 @@ Toda categor&iacute;a nueva DEBE seguir estas reglas para que el hero funcione c
 Woodmart genera un `<header class="woocommerce-products-header">` que envuelve la descripci&oacute;n de categor&iacute;a. Este elemento tiene un `margin-bottom: 63px` por defecto. Si solo ocultas los hijos (`.term-description`, etc.), **el padre sigue ocupando espacio**, generando una franja visible entre el hero y la siguiente secci&oacute;n donde se ve la imagen de fondo sin el overlay/velo.
 
 ```css
-/* CORRECTO - Ocultar el padre completo */
+/* CORRECTO - Ocultar el padre completo + banner "doo" plugin */
 .tax-product_cat.term-XXXX .woocommerce-products-header,
 .tax-product_cat.term-XXXX .wd-shop-tools,
 .tax-product_cat.term-XXXX .advanced-filter,
@@ -217,11 +220,12 @@ Woodmart genera un `<header class="woocommerce-products-header">` que envuelve l
 .tax-product_cat.term-XXXX .woocommerce-products-header__description,
 .tax-product_cat.term-XXXX .term-description,
 .tax-product_cat.term-XXXX .woodmart-category-desc,
-.tax-product_cat.term-XXXX .wd-active-filters {
+.tax-product_cat.term-XXXX .wd-active-filters,
+.tax-product_cat.term-XXXX .doo-category-banner {
     display: none !important;
 }
 
-/* INCORRECTO - Falta el padre, el margin de 63px sigue visible */
+/* INCORRECTO - Falta el padre y el doo-banner, el margin de 63px sigue visible */
 .tax-product_cat.term-XXXX .woocommerce-products-header__description,
 .tax-product_cat.term-XXXX .term-description {
     display: none !important;
@@ -284,6 +288,7 @@ Los botones necesitan `z-index: 100` y `pointer-events: auto` para quedar por en
 
 #### Checklist para cada categor&iacute;a nueva
 - [ ] `.woocommerce-products-header` est&aacute; en la lista de `display: none`
+- [ ] `.doo-category-banner` est&aacute; en la lista de `display: none` (plugin "doo" muestra subcategor&iacute;as como banner)
 - [ ] Hero usa breakout: `width: 100vw; left: 50%; margin-left: -50vw`
 - [ ] Overlay usa `width: 100%; height: 100%`
 - [ ] Botones tienen `z-index: 100` y `pointer-events: auto`
@@ -293,6 +298,7 @@ Los botones necesitan `z-index: 100` y `pointer-events: auto` para quedar por en
 | Error | Consecuencia |
 |-------|-------------|
 | No ocultar `.woocommerce-products-header` | Franja de 63px sin velo debajo del hero |
+| No ocultar `.doo-category-banner` | Subcategor&iacute;a del plugin "doo" visible encima del hero |
 | Usar `margin: calc(-50vw + 50%)` en vez del patr&oacute;n `left: 50%` | No funciona en Woodmart |
 | No poner `z-index: 100` en botones | Botones no clicables (quedan bajo el overlay) |
 | Usar `background-position: center` (un solo valor) | Usar siempre `center center` (dos valores expl&iacute;citos) |
@@ -410,6 +416,10 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 **Causa**: `mobile-fixes.css` oculta globalmente `.wpc-filters-open-button-container`.
 **Solución**: Añadir estilos específicos en el CSS de cada categoría para mostrarlo.
 
+### Subcategorías visibles encima del hero (plugin "doo")
+**Causa**: El plugin "doo" (tema padre) renderiza subcategorías con `<div class="doo-category-banner">`, un sistema independiente de WooCommerce/Woodmart. Los hooks `woocommerce_product_subcategories` y `wc_get_loop_display_mode` NO lo afectan.
+**Solución**: Añadir `.doo-category-banner` al CSS inline de `wp_head` y al `category-{ID}.css` con `display: none !important`.
+
 ### Servidor con CPU alta / caído
 **Causa**: Hooks (`add_action`) registrados a nivel de archivo en `inc/category-*.php` que ejecutan `is_product_category()` en CADA página.
 **Solución**: TODOS los hooks deben ir en el master controller (functions.php). Los archivos `inc/` solo contienen funciones de contenido.
@@ -475,7 +485,7 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 - **Regla**: TODA función `adrihosan_setup_{cat}_cpu_fix()` DEBE incluir:
   ```php
   add_action('wp_head', function() {
-      echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+      echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
   });
   ```
 - **Además**: Añadir las mismas reglas en el `category-{ID}.css` como respaldo (por si LiteSpeed cachea sin el inline).
@@ -491,9 +501,38 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 - **Regla**: En el repo los archivos pueden estar en la raíz (`category-2209.css`). En el servidor van en `assets/css/category-2209.css` y `assets/js/category-common.js`.
 - **El `functions-server.php`** busca CSS primero en `assets/css/`, luego en la raíz del tema (fallback).
 
+### 5. Plugin "doo" renderiza subcategorías con `.doo-category-banner` (NO es WooCommerce/Woodmart)
+- **Error**: En Zellige (2516) la subcategoría seguía visible encima del hero a pesar de ocultar todos los selectores de WooCommerce (`.wd-subcategories`, `.wd-cats`, `li.product-category`, etc.) y Woodmart. Se intentaron filtros PHP (`woocommerce_product_subcategories`, `wc_get_loop_display_mode`), `remove_action` y múltiples selectores CSS sin éxito.
+- **Causa real**: El plugin "doo" (tema padre/starter) genera un `<div class="doo-category-banner">` con su propia cuadrícula (`.doo-category-grid`, `.doo-category-item`) para mostrar subcategorías como tarjetas visuales. Este sistema es **completamente independiente** de WooCommerce y Woodmart.
+- **HTML real**:
+  ```html
+  <div class="doo-category-banner" data-offset="12" data-parent="2516" data-total="1">
+    <div class="doo-category-grid">
+      <div class="doo-category-item">
+        <a href="..."><picture>...</picture><div>Azulejo efecto zellige</div></a>
+      </div>
+    </div>
+  </div>
+  ```
+- **Regla**: SIEMPRE incluir `.doo-category-banner` en el CSS inline de `wp_head` y en el `category-{ID}.css`. Los filtros PHP de WooCommerce (`woocommerce_product_subcategories`, `wc_get_loop_display_mode`) NO afectan a este plugin.
+- **Lección**: Cuando un elemento no responde a hooks/filtros de WooCommerce, pedir al usuario el HTML real del inspector del navegador (DevTools) para identificar las clases correctas.
+
 ---
 
 ## Changelog
+
+### 2026-02-26
+- **NUEVA Categoría 2516 (Zellige)**:
+  - `inc/category-zellige.php`: contenido superior (hero, trust bar, distribuidor stock/personalizado, aviso logístico, filtros) + inferior (descripción dinámica, SEO imperfección perfecta, colores, formatos especiales, FAQs, contacto)
+  - Case en master controller + setup con filtros legacy ocultos + `.doo-category-banner`
+  - `category-2516.css` con estilos completos (hero, trust bar, distributor cards, logistics, SEO, trends, responsive)
+  - Widget filtro: 426510 (Zellige)
+  - **Total: 29 categorías** gestionadas por el master controller
+- **DESCUBRIMIENTO CRÍTICO - Plugin "doo" subcategorías**:
+  - Las subcategorías NO las renderiza WooCommerce ni Woodmart sino el plugin "doo" con `.doo-category-banner`
+  - Los filtros PHP (`woocommerce_product_subcategories`, `wc_get_loop_display_mode`) NO funcionan
+  - Solución: CSS `display: none !important` en `.doo-category-banner`
+  - Actualizado CLAUDE.md: error #5, checklist hero, tabla errores comunes, CSS inline obligatorio, problemas conocidos
 
 ### 2026-02-25
 - **NUEVA Categoría 4973 (Azulejos Imitación Cemento)**:
