@@ -87,7 +87,7 @@ function adrihosan_zellige_contenido_superior() {
     </section>
 
     <!-- 4. AVISO LOG&Iacute;STICO -->
-    <div class="zellige-logistics-notice">
+    <div id="selector-color-zellige" class="zellige-logistics-notice">
         <div class="zellige-logistics-wrapper">
             <span class="zellige-logistics-icon">&#128666;</span>
             <div class="zellige-logistics-text">
@@ -104,7 +104,7 @@ function adrihosan_zellige_contenido_superior() {
 
     <!-- 6. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-zellige" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div id="selector-color-zellige" class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426510"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426510"]'); ?></div>
 
     <!-- 7. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-zellige" class="product-loop-header">
