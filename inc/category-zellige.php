@@ -22,7 +22,7 @@ function adrihosan_zellige_contenido_superior() {
             &iquest;Buscas la est&eacute;tica sin el mantenimiento de la arcilla? Visita nuestra colecci&oacute;n de <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/" class="hero-inline-link">Imitaci&oacute;n Zellige</a>.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-zellige" class="hero-btn primary">Ver Stock</a>
-                <a href="#simulador-zellige" class="hero-btn secondary">Simulador 3D</a>
+                <a href="https://simuladorzellige.com/dist/adrihosan" class="hero-btn secondary" target="_blank" rel="noopener">Simulador 3D</a>
             </div>
         </div>
     </section>
@@ -71,7 +71,7 @@ function adrihosan_zellige_contenido_superior() {
                     <div class="zellige-dist-card-content">
                         <h2>Dise&ntilde;o Personalizado</h2>
                         <p>&iquest;Tu proyecto exige formas especiales, escamas o colores a la carta? Fabricamos tu dise&ntilde;o en exclusiva en Marruecos.</p>
-                        <a href="#simulador-zellige" class="hero-btn secondary">&#9999;&#65039; Ir al Simulador 3D</a>
+                        <a href="https://simuladorzellige.com/dist/adrihosan" class="hero-btn secondary" target="_blank" rel="noopener">&#9999;&#65039; Ir al Simulador 3D</a>
                     </div>
                 </div>
             </div>
@@ -169,10 +169,10 @@ function adrihosan_zellige_contenido_inferior() {
             <h2>Formatos Especiales: Bejmat, Hex&aacute;gonos y Escamas</h2>
             <p>M&aacute;s all&aacute; del 10x10 cl&aacute;sico, el Zellige se fabrica en formatos que transforman cualquier superficie en una obra de arte. Bejmat (rectangular alargado), hexagonales, escamas de pez y piezas de transici&oacute;n. Todos fabricados bajo pedido exclusivamente para tu proyecto.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/contacto/" class="trend-link">Bejmat</a>
-                <a href="https://www.adrihosan.com/contacto/" class="trend-link">Hex&aacute;gonos</a>
-                <a href="https://www.adrihosan.com/contacto/" class="trend-link">Escamas</a>
-                <a href="https://www.adrihosan.com/contacto/" class="trend-link">Consultar Proyecto</a>
+                <a href="https://simuladorzellige.com/dist/adrihosan" class="trend-link">Bejmat</a>
+                <a href="https://simuladorzellige.com/dist/adrihosan" class="trend-link">Hex&aacute;gonos</a>
+                <a href="https://simuladorzellige.com/dist/adrihosan" class="trend-link">Escamas</a>
+                <a href="https://simuladorzellige.com/dist/adrihosan" class="trend-link">Consultar Proyecto</a>
             </div>
         </div>
     </section>
