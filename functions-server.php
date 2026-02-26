@@ -408,6 +408,9 @@ function adrihosan_setup_zellige_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
 
+    // Eliminar subcategorías a nivel de datos (Woodmart las renderiza por su cuenta)
+    add_filter('woocommerce_product_subcategories', '__return_empty_array');
+
     // Ocultar filtros antiguos, subcategorías y elementos legacy (Woodmart)
     add_action('wp_head', function() {
         echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .wd-subcategories, .woodmart-woocommerce-layered-nav, .wd-subcats, .products.wd-subcategories, .woocommerce-product-subcategories { display: none !important; }</style>';
