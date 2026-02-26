@@ -104,7 +104,7 @@ function adrihosan_zellige_contenido_superior() {
 
     <!-- 6. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-zellige" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426510"]'); ?></div>
+    <div id="selector-color-zellige" class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426510"]'); ?></div>
 
     <!-- 7. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-zellige" class="product-loop-header">
@@ -152,21 +152,21 @@ function adrihosan_zellige_contenido_inferior() {
         <div class="seo-content-wrapper">
             <h2>Colores vibrantes: Del Blanco Nacarado al Verde Fez</h2>
             <div class="material-types-grid">
-                <div class="material-card">
+                <a href="#selector-color-zellige" class="material-card material-card-link">
                     <div class="material-icon">&#9898;</div>
                     <h3>Blanco Nacarado</h3>
                     <p>El cl&aacute;sico entre los cl&aacute;sicos. El blanco Zellige tiene una calidez que el azulejo industrial no puede imitar: matices crema, reflejos n&aacute;car y una luminosidad que cambia con la luz del d&iacute;a.</p>
-                </div>
-                <div class="material-card">
+                </a>
+                <a href="#selector-color-zellige" class="material-card material-card-link">
                     <div class="material-icon">&#129001;</div>
                     <h3>Verde Fez</h3>
                     <p>El verde profundo que define los riads marroqu&iacute;es. Una tonalidad entre esmeralda y bosque que aporta car&aacute;cter y elegancia. El color m&aacute;s ic&oacute;nico del Zellige aut&eacute;ntico.</p>
-                </div>
-                <div class="material-card">
+                </a>
+                <a href="#selector-color-zellige" class="material-card material-card-link">
                     <div class="material-icon">&#128309;</div>
                     <h3>Azul, Rosa, Negro y Turquesa</h3>
                     <p>Desde el azul profundo hasta el rosa empolvado, pasando por el negro intenso y el turquesa. Cada color es un esmalte artesanal con variaciones naturales que dan vida a la superficie.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>

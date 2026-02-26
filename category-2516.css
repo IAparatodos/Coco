@@ -539,6 +539,13 @@
     margin: 0;
 }
 
+.tax-product_cat.term-2516 a.material-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
 .tax-product_cat.term-2516 .finish-info-block {
     max-width: 800px;
     margin: 0 auto;
