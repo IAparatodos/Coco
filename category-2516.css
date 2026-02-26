@@ -370,6 +370,50 @@
 }
 
 /* ========================================================================== */
+/* INTRO TEXT SECTION (bloque SEO bajo distribuidor)                          */
+/* ========================================================================== */
+.tax-product_cat.term-2516 .zellige-intro-text-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper p {
+    font-size: 1.05rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper strong {
+    color: #102e35;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper em {
+    font-style: italic;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2516 .zellige-intro-text-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================================================== */
 /* LOGISTICS NOTICE                                                           */
 /* ========================================================================== */
 .tax-product_cat.term-2516 .zellige-logistics-notice {
