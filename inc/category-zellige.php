@@ -11,7 +11,7 @@
 function adrihosan_zellige_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/zellige-marruecos-azulejos-artesanales.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Zellige-artesanal-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -59,7 +59,7 @@ function adrihosan_zellige_contenido_superior() {
         <div class="zellige-distributor-wrapper">
             <div class="zellige-distributor-grid">
                 <div class="zellige-dist-card">
-                    <div class="zellige-dist-card-bg" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/zellige-10x10-stock.jpg');"></div>
+                    <div class="zellige-dist-card-bg" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Zellige-artesanal-Adrihosan-blanco.jpg');"></div>
                     <div class="zellige-dist-card-content">
                         <h2>Colecci&oacute;n En Stock</h2>
                         <p>El formato cl&aacute;sico 10x10 cm en los colores m&aacute;s buscados. Disponibilidad en nuestro almac&eacute;n para carga paletizada.</p>
@@ -67,7 +67,7 @@ function adrihosan_zellige_contenido_superior() {
                     </div>
                 </div>
                 <div class="zellige-dist-card">
-                    <div class="zellige-dist-card-bg" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/zellige-formatos-especiales-bejmat.jpg');"></div>
+                    <div class="zellige-dist-card-bg" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Zellige-artesanal-Adrihosan-a-medida.jpg');"></div>
                     <div class="zellige-dist-card-content">
                         <h2>Dise&ntilde;o Personalizado</h2>
                         <p>&iquest;Tu proyecto exige formas especiales, escamas o colores a la carta? Fabricamos tu dise&ntilde;o en exclusiva en Marruecos.</p>
