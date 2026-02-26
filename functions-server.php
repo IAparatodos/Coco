@@ -130,6 +130,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2626: // Camerino Baño
             adrihosan_setup_camerinos_cpu_fix();
             break;
+        case 2516: // Zellige
+            adrihosan_setup_zellige_cpu_fix();
+            break;
     }
 }
 
@@ -392,6 +395,20 @@ function adrihosan_setup_porcelanico_tecnico_cpu_fix() {
     add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_inferior', 99);
 
     // Ocultar filtros antiguos (Woodmart + filtros legacy + descripcion WC)
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_zellige_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos (Woodmart + filtros legacy bho + descripcion WC)
     add_action('wp_head', function() {
         echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
     });
@@ -1551,6 +1568,11 @@ require get_template_directory() . '/inc/category-hexagonal.php';
 // CATEGORÍA 4973 - AZULEJOS IMITACIÓN CEMENTO (Modularizado a inc/category-imitacion-cemento.php)
 // =============================================================================
 require get_template_directory() . '/inc/category-imitacion-cemento.php';
+
+// =============================================================================
+// CATEGORÍA 2516 - ZELLIGE (Modularizado a inc/category-zellige.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-zellige.php';
 
 // =============================================================================
 // CATEGORÍA 2350 - SUELO TÉCNICO EXTERIOR (Modularizado a inc/category-suelo-tecnico.php)
