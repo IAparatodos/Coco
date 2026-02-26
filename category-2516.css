@@ -28,7 +28,9 @@
 .tax-product_cat.term-2516 .woodmart-woocommerce-layered-nav,
 .tax-product_cat.term-2516 .wd-subcats,
 .tax-product_cat.term-2516 .products.wd-subcategories,
-.tax-product_cat.term-2516 .woocommerce-product-subcategories {
+.tax-product_cat.term-2516 .woocommerce-product-subcategories,
+.tax-product_cat.term-2516 li.product-category,
+.tax-product_cat.term-2516 .product-category {
     display: none !important;
 }
 
