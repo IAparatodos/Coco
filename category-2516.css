@@ -36,7 +36,8 @@
 .tax-product_cat.term-2516 .wd-categories,
 .tax-product_cat.term-2516 .subcategories-wrap,
 .tax-product_cat.term-2516 ul.products > li.product-category,
-.tax-product_cat.term-2516 .product-category.product {
+.tax-product_cat.term-2516 .product-category.product,
+.tax-product_cat.term-2516 .doo-category-banner {
     display: none !important;
 }
 
