@@ -415,9 +415,9 @@ function adrihosan_setup_zellige_cpu_fix() {
     add_filter('wc_get_loop_display_mode', function() { return 'products'; });
     add_filter('woocommerce_product_subcategories', '__return_empty_array');
 
-    // Ocultar filtros antiguos, subcategorías y elementos legacy (Woodmart + product-category items)
+    // Ocultar filtros antiguos, subcategorías y elementos legacy (Woodmart completo)
     add_action('wp_head', function() {
-        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .wd-subcategories, .woodmart-woocommerce-layered-nav, .wd-subcats, .products.wd-subcategories, .woocommerce-product-subcategories, li.product-category, .product-category { display: none !important; }</style>';
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .wd-subcategories, .woodmart-woocommerce-layered-nav, .wd-subcats, .products.wd-subcategories, .woocommerce-product-subcategories, .wd-cats, .wd-cats-design-default, .wd-cats-design-alt, .categories-grid, .wd-categories, .subcategories-wrap, ul.products > li.product-category, .product-category.product { display: none !important; }</style>';
     });
 }
 

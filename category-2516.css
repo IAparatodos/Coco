@@ -29,8 +29,14 @@
 .tax-product_cat.term-2516 .wd-subcats,
 .tax-product_cat.term-2516 .products.wd-subcategories,
 .tax-product_cat.term-2516 .woocommerce-product-subcategories,
-.tax-product_cat.term-2516 li.product-category,
-.tax-product_cat.term-2516 .product-category {
+.tax-product_cat.term-2516 .wd-cats,
+.tax-product_cat.term-2516 .wd-cats-design-default,
+.tax-product_cat.term-2516 .wd-cats-design-alt,
+.tax-product_cat.term-2516 .categories-grid,
+.tax-product_cat.term-2516 .wd-categories,
+.tax-product_cat.term-2516 .subcategories-wrap,
+.tax-product_cat.term-2516 ul.products > li.product-category,
+.tax-product_cat.term-2516 .product-category.product {
     display: none !important;
 }
 
