@@ -9,6 +9,10 @@
 // ============================================================================
 
 function adrihosan_zellige_contenido_superior() {
+    // Ocultar subcategor&iacute;as y descripci&oacute;n (Woodmart registra hooks tarde)
+    remove_all_actions( 'woocommerce_archive_description' );
+    add_filter( 'woocommerce_show_page_title', '__return_false' );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
     ?>
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/zellige-marruecos-azulejos-artesanales.jpg');">

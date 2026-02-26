@@ -401,6 +401,9 @@ function adrihosan_setup_porcelanico_tecnico_cpu_fix() {
 }
 
 function adrihosan_setup_zellige_cpu_fix() {
+    // Patrón Hidráulica Original: removes específicos + filtro datos
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
