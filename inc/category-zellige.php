@@ -79,7 +79,7 @@ function adrihosan_zellige_contenido_superior() {
     </section>
 
     <!-- 3B. BLOQUE TEXTO SEO ZELLIGE -->
-    <section class="zellige-intro-text-section adrihosan-full-width-block">
+    <section class="zellige-intro-text-section">
         <div class="zellige-intro-text-wrapper">
             <p>El <strong>Zellige</strong> (o <em>zellige marroqu&iacute;</em>) es mucho m&aacute;s que un revestimiento; es la m&aacute;xima expresi&oacute;n de la artesan&iacute;a del norte de &Aacute;frica. Fabricados pieza a pieza en Fez (Marruecos) con arcilla natural, estos azulejos destacan por sus imperfecciones intencionadas, bordes irregulares cortados a mano y un esmaltado vidriado que refleja la luz de forma &uacute;nica.</p>
             <p>En <strong>Adrihosan</strong> te ofrecemos la colecci&oacute;n <strong>Zellige 10x10 cm en stock</strong> (blanco, verde, azul, rosa...) lista para enviar desde nuestro almac&eacute;n nacional. Si buscas formatos especiales como hex&aacute;gonos o bejmat, utilizamos nuestro <a href="https://simuladorzellige.com/dist/adrihosan" target="_blank" rel="noopener">simulador</a> para fabricarlos a medida.</p>
