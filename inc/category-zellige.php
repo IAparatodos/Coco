@@ -188,42 +188,51 @@ function adrihosan_zellige_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Zellige</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre el Zellige Marroqu&iacute;</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre Zellige aut&eacute;ntico y la imitaci&oacute;n?</span>
+                        <span>&iquest;Cu&aacute;l es el precio del Zellige aut&eacute;ntico?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La diferencia es el alma del material. El Zellige es arcilla viva, moldeada y cortada a mano; tiene bordes irregulares y una superficie vibrante. La imitaci&oacute;n es un azulejo industrial plano que reproduce esa est&eacute;tica visualmente pero con la frialdad y perfecci&oacute;n de la m&aacute;quina.</p>
+                        <p>El precio de los azulejos zellige refleja su proceso 100% manual. Cada pieza ha sido moldeada, esmaltada y cortada individualmente por un artesano en Marruecos. Aunque su coste es superior al de la cer&aacute;mica industrial de producci&oacute;n masiva, su extraordinario valor est&eacute;tico y la revalorizaci&oacute;n que aporta al espacio lo convierten en una verdadera inversi&oacute;n en arte decorativo.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Por qu&eacute; los plazos son de 10 d&iacute;as si est&aacute; en stock?</span>
+                        <span>&iquest;Se puede colocar Zellige en zonas h&uacute;medas como duchas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Porque no enviamos una caja de zapatos. El Zellige es material pesado y fr&aacute;gil que requiere paletizado especial y transporte en cami&oacute;n con plataforma para garantizar que llegue intacto a pie de calle. La log&iacute;stica de materiales nobles requiere sus tiempos.</p>
+                        <p>S&iacute;, de hecho, es uno de sus usos principales y m&aacute;s espectaculares. El esmalte vidriado cocido a altas temperaturas hace que la superficie del zellige sea impermeable y muy higi&eacute;nica. Solo requiere que la instalaci&oacute;n y el rejuntado los realice un profesional para asegurar la estanqueidad total entre sus piezas irregulares.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Solo ten&eacute;is formato 10x10?</span>
+                        <span>&iquest;Cu&aacute;l es la diferencia exacta con el &quot;Efecto Zellige&quot;?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>En stock permanente para env&iacute;o nacional, s&iacute;. Es el formato m&aacute;s vers&aacute;til y econ&oacute;mico. Para Bejmat, Hex&aacute;gonos o Escamas, utilizamos nuestro Simulador para fabricarlos bajo pedido exclusivamente para tu proyecto.</p>
+                        <p>La diferencia principal radica en la materia prima y el proceso. El zellige marroqu&iacute; aut&eacute;ntico es arcilla natural moldeada a mano con imperfecciones reales (relieves, aguas, cantos irregulares). Por el contrario, el &quot;efecto zellige&quot; es un azulejo de gres o porcel&aacute;nico industrial, totalmente plano y calibrado, que lleva una impresi&oacute;n digital para imitar visualmente esa est&eacute;tica. Si buscas la vibraci&oacute;n real y el lujo t&aacute;ctil, elige el aut&eacute;ntico; si priorizas un mantenimiento nulo y un menor coste, visita nuestra secci&oacute;n de imitaci&oacute;n.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es dif&iacute;cil su instalaci&oacute;n?</span>
+                        <span>&iquest;C&oacute;mo se limpia y mantiene el Zellige aut&eacute;ntico?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Requiere manos expertas. Al tener bordes irregulares cortados a martillo, se coloca con junta m&iacute;nima o &quot;a hueso&quot; para buscar esa vibraci&oacute;n natural. No se instala igual que un azulejo rectificado est&aacute;ndar.</p>
+                        <p>Al ser una superficie esmaltada y vidriada, su mantenimiento diario es muy sencillo. Basta con utilizar agua tibia y un jab&oacute;n neutro. Es importante evitar el uso de productos qu&iacute;micos abrasivos, &aacute;cidos o estropajos met&aacute;licos que puedan da&ntilde;ar o rayar el esmalte artesanal con el paso del tiempo.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es normal que las piezas presenten diferencias de color o peque&ntilde;as imperfecciones?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Totalmente normal y es, de hecho, la se&ntilde;a de identidad m&aacute;s valorada del zellige marroqu&iacute;. Al ser modelado a mano y cocido en hornos de le&ntilde;a tradicionales, cada pieza reacciona de manera &uacute;nica al calor. Estas variaciones de tono (destonificaci&oacute;n), peque&ntilde;os poros en el esmalte o bordes irregulares son la prueba visual y t&aacute;ctil de su autenticidad artesanal.</p>
                     </div>
                 </div>
             </div>
