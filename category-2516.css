@@ -23,7 +23,12 @@
 .tax-product_cat.term-2516 .woocommerce-products-header__description,
 .tax-product_cat.term-2516 .term-description,
 .tax-product_cat.term-2516 .woodmart-category-desc,
-.tax-product_cat.term-2516 .wd-active-filters {
+.tax-product_cat.term-2516 .wd-active-filters,
+.tax-product_cat.term-2516 .wd-subcategories,
+.tax-product_cat.term-2516 .woodmart-woocommerce-layered-nav,
+.tax-product_cat.term-2516 .wd-subcats,
+.tax-product_cat.term-2516 .products.wd-subcategories,
+.tax-product_cat.term-2516 .woocommerce-product-subcategories {
     display: none !important;
 }
 
@@ -52,7 +57,7 @@
 }
 
 .tax-product_cat.term-2516 .term-description-dinamica a {
-    color: #c2956b;
+    color: #4dd2d0;
     text-decoration: none;
     font-weight: 600;
 }
@@ -140,7 +145,7 @@
 }
 
 .tax-product_cat.term-2516 .breadcrumb-nav span {
-    color: #c2956b;
+    color: #4dd2d0;
     font-weight: 600;
 }
 
@@ -162,7 +167,7 @@
 }
 
 .tax-product_cat.term-2516 .hero-inline-link {
-    color: #c2956b;
+    color: #4dd2d0;
     text-decoration: underline;
     font-weight: 600;
 }
@@ -197,15 +202,15 @@
 }
 
 .tax-product_cat.term-2516 .hero-btn.primary {
-    background-color: #c2956b;
-    border-color: #c2956b;
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
     color: #ffffff;
 }
 
 .tax-product_cat.term-2516 .hero-btn.primary:hover {
     background-color: #ffffff;
     border-color: #ffffff;
-    color: #c2956b;
+    color: #4dd2d0;
 }
 
 .tax-product_cat.term-2516 .hero-btn.secondary {
@@ -223,7 +228,7 @@
 /* TRUST BAR SECTION                                                          */
 /* ========================================================================== */
 .tax-product_cat.term-2516 .trust-bar-section {
-    background-color: #fdf8f3;
+    background-color: #f0fafa;
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -243,13 +248,13 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #ecdfd0;
+    border: 1px solid #e0f0ef;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tax-product_cat.term-2516 .trust-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(194, 149, 107, 0.12);
+    box-shadow: 0 8px 20px rgba(16, 46, 53, 0.08);
 }
 
 .tax-product_cat.term-2516 .trust-icon {
@@ -362,9 +367,9 @@
     max-width: 960px;
     margin: 40px auto 10px auto;
     padding: 20px 25px;
-    background-color: #fff8f0;
-    border: 1px solid #ecdfd0;
-    border-left: 4px solid #c2956b;
+    background-color: #f0fafa;
+    border: 1px solid #e0f0ef;
+    border-left: 4px solid #4dd2d0;
     border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
@@ -401,8 +406,8 @@
     max-width: 960px;
     margin: 30px auto 30px auto;
     padding: 20px 25px;
-    background-color: #fdf8f3;
-    border-left: 4px solid #c2956b;
+    background-color: #f0fafa;
+    border-left: 4px solid #4dd2d0;
     border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
@@ -451,14 +456,14 @@
     background-color: #ffffff;
     padding: 35px 25px;
     border-radius: 8px;
-    border: 1px solid #ecdfd0;
+    border: 1px solid #e0f0ef;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tax-product_cat.term-2516 .material-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(194, 149, 107, 0.1);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
 }
 
 .tax-product_cat.term-2516 .material-icon {
@@ -487,7 +492,7 @@
     background-color: #ffffff;
     padding: 30px 35px;
     border-radius: 8px;
-    border: 1px solid #ecdfd0;
+    border: 1px solid #e0f0ef;
     text-align: left;
 }
 
@@ -556,7 +561,7 @@
 .tax-product_cat.term-2516 .trend-link {
     display: inline-block;
     padding: 10px 22px;
-    border: 2px solid #c2956b;
+    border: 2px solid #4dd2d0;
     border-radius: 5px;
     color: #ffffff;
     text-decoration: none;
@@ -566,7 +571,7 @@
 }
 
 .tax-product_cat.term-2516 .trend-link:hover {
-    background-color: #c2956b;
+    background-color: #4dd2d0;
     color: #ffffff;
 }
 
