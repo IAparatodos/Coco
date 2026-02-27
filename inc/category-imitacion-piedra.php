@@ -69,7 +69,7 @@ function adrihosan_imitacion_piedra_contenido_superior() {
             <a href="?orderby=date#catalogo-piedra" class="quick-pill">Para Interior</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?swoof=1&pa_estilo=laja-pizarra" class="quick-pill">Tipo Laja / Pizarra</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?swoof=1&pa_color=gris,blanco" class="quick-pill">Gris &amp; Blanco</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?orderby=price" class="quick-pill pill-hot">&#128293; M&aacute;s Baratos</a>
+            <a href="?orderby=price#catalogo-piedra" class="quick-pill pill-hot">&#128293; M&aacute;s Baratos</a>
         </div>
     </section>
 
