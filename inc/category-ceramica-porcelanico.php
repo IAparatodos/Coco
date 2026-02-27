@@ -671,13 +671,13 @@ function adrihosan_metro_superior_final() {
     <!-- 2. TRUST BAR / VALORES -->
     <section class="trust-bar-section adrihosan-full-width-block">
         <div class="trust-bar-wrapper">
-            <div class="trust-item">
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/ver-estilo-biselado/" class="trust-item trust-item-link">
                 <div class="trust-icon">&#9898;</div>
                 <div class="trust-text">
                     <strong>Biselado Ic&oacute;nico</strong>
                     <span>Relieve cl&aacute;sico con car&aacute;cter</span>
                 </div>
-            </div>
+            </a>
             <div class="trust-item">
                 <div class="trust-icon">&#127912;</div>
                 <div class="trust-text">

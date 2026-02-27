@@ -243,6 +243,12 @@
     box-shadow: 0 8px 20px rgba(16, 46, 53, 0.08);
 }
 
+.tax-product_cat.term-2093 a.trust-item-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .tax-product_cat.term-2093 .trust-icon {
     font-size: 2.2rem;
     line-height: 1;
