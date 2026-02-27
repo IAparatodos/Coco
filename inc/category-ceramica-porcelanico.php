@@ -457,10 +457,9 @@ function adrihosan_gran_formato_superior_final() {
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/ver-formato-60x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">60x120 cm</a>
-            <a href="https://www.adrihosan.com/atributo/formato-azulejo/120x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">120x120 cm</a>
-            <a href="https://www.adrihosan.com/atributo/azulejo-tipo/lamina-porcelanica/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">Lámina XXL</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/ver-formato-120x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">120x120 cm</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/textura-brillo/" class="btn-adri-master">Acabado Pulido</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/?filter_acabado=mate" class="btn-adri-master">Acabado Mate</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/textura-mate/" class="btn-adri-master">Acabado Mate</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/slip-si/" class="btn-adri-master">Antideslizante (C3)</a>
         </div>
     </div>
@@ -543,6 +542,23 @@ function adrihosan_gran_formato_inferior_final() {
                         <p>Si quieres explorar m&aacute;s alternativas para tu proyecto, te invitamos a visitar nuestra <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico/">categor&iacute;a principal de suelos porcel&aacute;nicos</a>, donde encontrar&aacute;s desde mosaicos detallados hasta las piezas XL m&aacute;s impresionantes para renovar tu hogar.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
+        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan"
+                     style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+                <div>
+                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">&iquest;Dudas sobre tu reforma?</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Te ayudo a elegir el porcel&aacute;nico gran formato que mejor se adapta a tu proyecto. Ll&aacute;mame al <strong>96 195 71 36</strong>.</p>
+                </div>
+            </div>
+            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
+                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
+                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
             </div>
         </div>
     </section>
