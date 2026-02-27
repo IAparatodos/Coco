@@ -1953,10 +1953,16 @@ function adrihosan_orden_estricto_ids( $q ) {
         $q->set( 'order', 'DESC' );
     }
 
-    // 3. EXTERIOR (ID 4869) -> ALEATORIO
-    // Cada vez que entres cambiará.
+    // 3. EXTERIOR (ID 4869) -> PSEUDO-ALEATORIO POR DÍA (sin ORDER BY RAND)
+    // Cambia cada día pero NO mata MySQL. RAND() causaba picos de CPU al 100%.
+    // Estrategia: ordenar por (ID * seed_diario) % primo → orden diferente cada día.
     elseif ( is_product_category( 4869 ) ) {
-        $q->set( 'orderby', 'rand' );
+        $seed = absint( date('Ymd') ) % 9973; // Primo grande, cambia cada día
+        $q->set( 'orderby', 'ID' );
+        $q->set( 'order', ( $seed % 2 === 0 ) ? 'ASC' : 'DESC' );
+        // Offset rotativo: salta N productos según el día para variar la parrilla
+        $offset = $seed % 12;
+        $q->set( 'offset', $offset );
     }
 }
 
