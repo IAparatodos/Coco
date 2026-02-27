@@ -27,7 +27,11 @@
 
         // Toggle la actual
         $item.toggleClass('active');
-        $answer.slideToggle(300);
+        if ($item.hasClass('active')) {
+            $answer.slideDown(300);
+        } else {
+            $answer.slideUp(300);
+        }
         $icon.text($item.hasClass('active') ? '-' : '+');
     });
 
