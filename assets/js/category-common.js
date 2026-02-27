@@ -16,23 +16,12 @@
     /* ====================================================================== */
     $(document).on('click', '.faq-question-common', function() {
         var $item = $(this).closest('.faq-item-common');
-        var $answer = $item.find('.faq-answer-common');
-        var $icon = $(this).find('.faq-icon-common');
 
         // Cerrar las dem&aacute;s
-        $('.faq-item-common').not($item).removeClass('active')
-            .find('.faq-answer-common').slideUp(300);
-        $('.faq-item-common').not($item)
-            .find('.faq-icon-common').text('+');
+        $('.faq-item-common').not($item).removeClass('active');
 
-        // Toggle la actual
+        // Toggle la actual (CSS maneja la animaci&oacute;n via max-height + .active)
         $item.toggleClass('active');
-        if ($item.hasClass('active')) {
-            $answer.slideDown(300);
-        } else {
-            $answer.slideUp(300);
-        }
-        $icon.text($item.hasClass('active') ? '-' : '+');
     });
 
     /* ====================================================================== */
