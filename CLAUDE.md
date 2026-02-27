@@ -1,5 +1,11 @@
 # CLAUDE.md - Proyecto Adrihosan (Coco)
 
+## REGLA PRINCIPAL
+
+**Cada vez que modifique un archivo, DEBO indicarle a Ricardo exactamente qu&eacute; archivo(s) he cambiado y qu&eacute; l&iacute;neas se han modificado.** Esto es OBLIGATORIO en cada respuesta donde se haga un cambio.
+
+---
+
 ## Arquitectura del Proyecto
 
 Este es un tema hijo de WordPress/WooCommerce para la tienda **Adrihosan** (cerámica y materiales de construcción).
