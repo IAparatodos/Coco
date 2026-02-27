@@ -446,6 +446,12 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
+
+    <div style="max-width: 900px; margin: 0 auto 30px auto; padding: 0 20px; text-align: left; font-family: 'Poppins', sans-serif;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #102e35; margin: 0 0 15px 0;">Porcel&aacute;nico Gran Formato: La Revoluci&oacute;n del Espacio</h2>
+        <p style="font-size: 1.05rem; color: #3f6f7b; line-height: 1.8; margin: 0;">Descubre c&oacute;mo el porcel&aacute;nico gran formato est&aacute; transformando el interiorismo y la arquitectura contempor&aacute;nea. En Adrihosan, te ofrecemos una cuidada selecci&oacute;n de azulejos gran formato dise&ntilde;ados para crear superficies continuas, reducir las juntas al m&iacute;nimo y elevar la elegancia de cualquier estancia, desde salones y cocinas hasta ba&ntilde;os y terrazas.</p>
+    </div>
+
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
