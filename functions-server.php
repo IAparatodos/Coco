@@ -495,12 +495,9 @@ function adrihosan_setup_metro_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
 
-    // Cargar CSS específico inline (la cat 2093 lo necesita)
-    add_action('wp_head', 'adrihosan_metro_cargar_css', 99);
-
     // Ocultar filtros antiguos (Woodmart + filtros legacy)
     add_action('wp_head', function() {
-        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters { display: none !important; }</style>';
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
     });
 }
 
