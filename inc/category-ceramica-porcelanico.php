@@ -547,19 +547,18 @@ function adrihosan_gran_formato_inferior_final() {
         </div>
     </section>
 
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan"
-                     style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">&iquest;Dudas sobre tu reforma?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Te ayudo a elegir el porcel&aacute;nico gran formato que mejor se adapta a tu proyecto. Ll&aacute;mame al <strong>96 195 71 36</strong>.</p>
-                </div>
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Dudas sobre el Gran Formato?<span>Soy Ricardo, preg&uacute;ntame.</span></h2></div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>
