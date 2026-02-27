@@ -1960,6 +1960,25 @@ function adrihosan_orden_estricto_ids( $q ) {
     }
 }
 
+/**
+ * Adrihosan: Orderby personalizado "date-asc" (de antiguo a nuevo)
+ * Permite usar ?orderby=date-asc en URLs de categoría
+ */
+add_filter('woocommerce_get_catalog_ordering_args', 'adrihosan_orderby_date_asc');
+function adrihosan_orderby_date_asc($args) {
+    if (isset($_GET['orderby']) && $_GET['orderby'] === 'date-asc') {
+        $args['orderby'] = 'date';
+        $args['order'] = 'ASC';
+    }
+    return $args;
+}
+
+add_filter('woocommerce_catalog_orderby', 'adrihosan_add_date_asc_option');
+function adrihosan_add_date_asc_option($options) {
+    $options['date-asc'] = 'Antiguos primero';
+    return $options;
+}
+
 /* ========================================================================== */
 /* FIX: Preservar filtros de Filter Everything Pro en paginaci&oacute;n        */
 /* ========================================================================== */
