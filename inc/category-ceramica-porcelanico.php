@@ -480,10 +480,65 @@ function adrihosan_gran_formato_inferior_final() {
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gran Formato</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Es difícil la instalación?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Requiere profesionales. Usa doble encolado y cuñas de nivelación.</p></div>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Gran Formato</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es dif&iacute;cil la instalaci&oacute;n de los azulejos gran formato?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La instalaci&oacute;n de los azulejos gran formato requiere de profesionales cualificados y herramientas espec&iacute;ficas. Es obligatorio utilizar la t&eacute;cnica del doble encolado (cemento cola en el soporte y en la pieza) y sistemas de nivelaci&oacute;n (cu&ntilde;as y calzos) para evitar desniveles y asegurar un acabado continuo y perfecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; ventajas ofrece un suelo porcel&aacute;nico gran formato frente a baldosas tradicionales?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Apostar por un suelo porcel&aacute;nico gran formato transforma por completo la percepci&oacute;n espacial. Al tener muchas menos juntas, crea una sensaci&oacute;n de amplitud y continuidad visual inigualable. Adem&aacute;s, esta cer&aacute;mica gran formato es mucho m&aacute;s higi&eacute;nica, ya que la ausencia de juntas evita la acumulaci&oacute;n de suciedad, siendo ideal para ba&ntilde;os, cocinas y salones de concepto abierto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el porcel&aacute;nico gran formato precio promedio?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El porcel&aacute;nico gran formato precio var&iacute;a en funci&oacute;n de las dimensiones exactas, el acabado (pulido, mate, antideslizante) y el dise&ntilde;o (imitaci&oacute;n m&aacute;rmol, cemento, madera). En Adrihosan trabajamos para ofrecerte colecciones premium a precios muy competitivos, con opciones incre&iacute;bles que parten desde aproximadamente los 20-25&euro;/m&sup2; (como nuestra serie Ziro).</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Ten&eacute;is opciones de porcel&aacute;nico gran formato 120x120 precio competitivo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>&iexcl;Por supuesto! La medida de 120x120 cm es actualmente una de las favoritas en interiorismo y arquitectura. Si buscas un porcel&aacute;nico gran formato 120x120 precio accesible sin renunciar a la m&aacute;xima calidad y dise&ntilde;o, en nuestro cat&aacute;logo encontrar&aacute;s opciones que se ajustan a tu presupuesto. Este gran formato porcel&aacute;nico es la elecci&oacute;n perfecta para proyectos residenciales y comerciales de alto nivel.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se puede colocar gres porcel&aacute;nico gran formato en las paredes?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, el gres porcel&aacute;nico gran formato es un material extremadamente vers&aacute;til. Gracias a que muchas colecciones cuentan con un espesor reducido, estas l&aacute;minas son perfectas no solo para pavimentos, sino tambi&eacute;n para revestir paredes completas de suelo a techo sin cortes, decorar fachadas exteriores o incluso para dise&ntilde;ar encimeras y revestir mobiliario.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;D&oacute;nde puedo ver m&aacute;s opciones si busco otros tama&ntilde;os o estilos?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Si quieres explorar m&aacute;s alternativas para tu proyecto, te invitamos a visitar nuestra <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico/">categor&iacute;a principal de suelos porcel&aacute;nicos</a>, donde encontrar&aacute;s desde mosaicos detallados hasta las piezas XL m&aacute;s impresionantes para renovar tu hogar.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <?php
