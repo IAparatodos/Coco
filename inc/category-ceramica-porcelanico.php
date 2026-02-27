@@ -707,48 +707,87 @@ function adrihosan_metro_inferior_final() {
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Azulejo Metro</h2>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Se pueden colocar en el suelo?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Por norma general, no. El azulejo metro clásico es de pasta blanca o roja, diseñado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos específicos fabricados en porcelánico que sí son aptos para pavimento. Revisa siempre la ficha técnica antes de comprar.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Son aptos para el interior de la ducha?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Sí, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones más higiénicas y duraderas para zonas mojadas.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿El biselado hace que sean difíciles de limpiar?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Es un mito común, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jabón neutro son suficientes.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué color de junta recomiendas para el azulejo blanco?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el auténtico look industrial o "tipo metro" de Nueva York, atrévete con una junta negra o gris antracita para resaltar el patrón de colocación.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Hay otras formas de colocación además de la "tipo ladrillo"?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">¡Por supuesto! Aunque la colocación trabada (tipo ladrillo) es la icónica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejo Metro</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se pueden colocar en el suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Por norma general, no. El azulejo metro cl&aacute;sico es de pasta blanca o roja, dise&ntilde;ado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos espec&iacute;ficos fabricados en porcel&aacute;nico que s&iacute; son aptos para pavimento. Revisa siempre la ficha t&eacute;cnica antes de comprar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Son aptos para el interior de la ducha?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones m&aacute;s higi&eacute;nicas y duraderas para zonas mojadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;El biselado hace que sean dif&iacute;ciles de limpiar?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es un mito com&uacute;n, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jab&oacute;n neutro son suficientes.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; color de junta recomiendas para el azulejo blanco?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el aut&eacute;ntico look industrial o &ldquo;tipo metro&rdquo; de Nueva York, atr&eacute;vete con una junta negra o gris antracita para resaltar el patr&oacute;n de colocaci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Hay otras formas de colocaci&oacute;n adem&aacute;s de la &ldquo;tipo ladrillo&rdquo;?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>&iexcl;Por supuesto! Aunque la colocaci&oacute;n trabada (tipo ladrillo) es la ic&oacute;nica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+
+    <!-- CONTACTO RICARDO -->
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejo metro">
                 <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Buscas un color específico?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Tenemos muchísimos colores.</p>
+                    <h2>Soy Ricardo. &iquest;Dudas con tu proyecto de azulejo metro?
+                        <span>Te ayudo a elegir sin compromiso.</span>
+                    </h2>
                 </div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
+                    <div class="icon">&#128205;</div>
+                    <div class="label">Visita Presencial</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
+                    <div class="icon">&#128187;</div>
+                    <div class="label">Visita Virtual</div>
+                </a>
+                <a href="tel:+34961957136" class="contact-option-common">
+                    <div class="icon">&#128222;</div>
+                    <div class="label">Tel&eacute;fono</div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejo%20metro" class="contact-option-common">
+                    <div class="icon">&#128172;</div>
+                    <div class="label">Whatsapp</div>
+                </a>
             </div>
         </div>
     </section>
