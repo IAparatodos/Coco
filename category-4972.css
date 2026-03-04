@@ -262,6 +262,36 @@
 }
 
 /* ========================================================================== */
+/* INTRO TEXT SECTION (bloque SEO bajo trust bar)                             */
+/* ========================================================================== */
+.tax-product_cat.term-4972 .piedra-intro-text-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4972 .piedra-intro-text-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tax-product_cat.term-4972 .piedra-intro-text-wrapper p {
+    font-size: 1.05rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+}
+
+.tax-product_cat.term-4972 .piedra-intro-text-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+.tax-product_cat.term-4972 .piedra-intro-text-wrapper strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
 /* QUICK PILLS (ACCESO RAPIDO)                                               */
 /* ========================================================================== */
 .tax-product_cat.term-4972 .quick-pills-section {
