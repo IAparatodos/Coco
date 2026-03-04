@@ -1,0 +1,484 @@
+/* ========================================================================== */
+/* CATEGORY-2471.CSS - Porcelanico Tecnico                                   */
+/* ========================================================================== */
+
+.tax-product_cat.term-2471 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Eliminar espacio superior del tema --- */
+.tax-product_cat.term-2471 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-2471 .woocommerce-products-header,
+.tax-product_cat.term-2471 .wd-shop-tools,
+.tax-product_cat.term-2471 .advanced-filter,
+.tax-product_cat.term-2471 .filter-wrapper,
+.tax-product_cat.term-2471 .ai-filters-section,
+.tax-product_cat.term-2471 .bho-filters-section,
+.tax-product_cat.term-2471 .bho-hub-section,
+.tax-product_cat.term-2471 .woocommerce-products-header__description,
+.tax-product_cat.term-2471 .term-description,
+.tax-product_cat.term-2471 .woodmart-category-desc,
+.tax-product_cat.term-2471 .wd-active-filters {
+    display: none !important;
+}
+
+/* --- Estilos de la descripcion dinamica (contenido inferior) --- */
+.tax-product_cat.term-2471 .bho-guide-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2471 .bho-guide-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2471 .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-2471 .term-description-dinamica h2,
+.tax-product_cat.term-2471 .term-description-dinamica h3 {
+    color: #102e35;
+    margin-top: 1.5em;
+}
+
+.tax-product_cat.term-2471 .term-description-dinamica a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2471 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-2471 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-2471 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #102e35;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-2471 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+/* ========================================================================== */
+/* HERO SECTION - BREAKOUT COMPLETO (Patron cat-66)                          */
+/* ========================================================================== */
+.tax-product_cat.term-2471 .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-2471 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.65);
+    z-index: 1;
+}
+
+.tax-product_cat.term-2471 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* --- Breadcrumb --- */
+.tax-product_cat.term-2471 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-2471 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-2471 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2471 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2471 .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-2471 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-2471 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+.tax-product_cat.term-2471 .hero-btn {
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.tax-product_cat.term-2471 .hero-btn.primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2471 .hero-btn.primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-2471 .hero-btn.secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2471 .hero-btn.secondary:hover {
+    background-color: #ffffff;
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* TRUST BAR (Iconos de confianza)                                           */
+/* ========================================================================== */
+.tax-product_cat.term-2471 .pt-trust-bar {
+    background-color: #102e35;
+    padding: 25px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2471 .pt-trust-bar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.tax-product_cat.term-2471 .pt-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tax-product_cat.term-2471 .pt-trust-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.tax-product_cat.term-2471 .pt-trust-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+/* ========================================================================== */
+/* CONSEJO ADRIA + FILTRO                                                     */
+/* ========================================================================== */
+.tax-product_cat.term-2471 .adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0fafa;
+    border-left: 4px solid #4dd2d0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2471 .adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tax-product_cat.term-2471 .adria-tip-box strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* B2B BUMPER BANNER                                                          */
+/* ========================================================================== */
+.tax-product_cat.term-2471 .pt-b2b-bumper {
+    background-color: #102e35;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2471 .pt-b2b-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2471 .pt-b2b-wrapper h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.tax-product_cat.term-2471 .pt-b2b-wrapper p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-2471 .pt-b2b-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #4dd2d0;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 2px solid #4dd2d0;
+}
+
+.tax-product_cat.term-2471 .pt-b2b-btn:hover {
+    background-color: #ffffff;
+    color: #102e35;
+    border-color: #ffffff;
+}
+
+/* ========================================================================== */
+/* SEO CONTENT SECTIONS                                                       */
+/* ========================================================================== */
+.tax-product_cat.term-2471 .seo-content-section {
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2471 .seo-content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2471 .seo-content-wrapper > h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 50px 0;
+}
+
+.tax-product_cat.term-2471 .material-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tax-product_cat.term-2471 .material-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tax-product_cat.term-2471 .material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
+}
+
+.tax-product_cat.term-2471 .material-icon {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.tax-product_cat.term-2471 .material-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 10px 0;
+}
+
+.tax-product_cat.term-2471 .material-card p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-2471 .finish-info-block {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    text-align: left;
+}
+
+.tax-product_cat.term-2471 .finish-info-block p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-2471 .finish-info-block strong {
+    color: #102e35;
+}
+
+.tax-product_cat.term-2471 .finish-info-block ul {
+    color: #3f6f7b;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.tax-product_cat.term-2471 .finish-info-block li strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                 */
+/* ========================================================================== */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-2471 .pt-trust-bar-wrapper {
+        gap: 25px;
+    }
+
+    .tax-product_cat.term-2471 .pt-trust-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* --- Movil --- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2471 .hero-section-container {
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-2471 .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-2471 .pt-trust-bar {
+        padding: 20px 15px;
+    }
+
+    .tax-product_cat.term-2471 .pt-trust-bar-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tax-product_cat.term-2471 .pt-trust-icon {
+        font-size: 1.3rem;
+    }
+
+    .tax-product_cat.term-2471 .pt-trust-text {
+        font-size: 0.9rem;
+    }
+
+    .tax-product_cat.term-2471 .seo-content-section,
+    .tax-product_cat.term-2471 .pt-b2b-bumper {
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-2471 .seo-content-wrapper > h2 {
+        font-size: 1.5rem;
+    }
+
+    .tax-product_cat.term-2471 .material-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-2471 .finish-info-block {
+        padding: 25px 20px;
+    }
+
+    .tax-product_cat.term-2471 .pt-b2b-wrapper h2 {
+        font-size: 1.35rem;
+    }
+
+    .tax-product_cat.term-2471 .pt-b2b-btn {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}
