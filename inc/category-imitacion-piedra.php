@@ -124,25 +124,25 @@ function adrihosan_imitacion_piedra_contenido_inferior() {
         <div class="stone-banners-wrapper">
             <h2>Encuentra tu Estilo de Piedra</h2>
             <div class="stone-banners-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?swoof=1&pa_uso=exterior" class="stone-banner-card">
+                <a href="?orderby=date-asc#catalogo-piedra" class="stone-banner-card">
                     <div class="stone-banner-icon">&#127958;</div>
                     <h3>Fachadas y Terrazas</h3>
                     <p>Revestimiento piedra exterior para muros, fachadas y patios. Acabados antideslizantes para m&aacute;xima seguridad.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?swoof=1&pa_uso=interior" class="stone-banner-card">
+                <a href="?orderby=date#catalogo-piedra" class="stone-banner-card">
                     <div class="stone-banner-icon">&#128715;</div>
                     <h3>Paredes de Sal&oacute;n y Ba&ntilde;o</h3>
                     <p>Azulejos imitaci&oacute;n piedra interior con ambientes c&aacute;lidos. Ideal para paredes de sal&oacute;n, ba&ntilde;os y recibidores.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?swoof=1&pa_estilo=laja-pizarra" class="stone-banner-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/ver-estilo-pizarra/" class="stone-banner-card">
                     <div class="stone-banner-icon">&#129704;</div>
                     <h3>Textura Laja y Pizarra</h3>
                     <p>Revestimiento piedra laja con relieve irregular aut&eacute;ntico. El acabado m&aacute;s natural y con m&aacute;s car&aacute;cter.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/?orderby=price" class="stone-banner-card stone-banner-offer">
+                <a href="?orderby=price#catalogo-piedra" class="stone-banner-card stone-banner-offer">
                     <div class="stone-banner-icon">&#127991;</div>
                     <h3>Ofertas Especiales</h3>
                     <p>Azulejos imitaci&oacute;n piedra baratos. Descuentos y liquidaciones en revestimientos de piedra de primeras marcas.</p>
