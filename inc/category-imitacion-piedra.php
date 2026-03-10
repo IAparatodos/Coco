@@ -65,7 +65,8 @@ function adrihosan_imitacion_piedra_contenido_superior() {
     <!-- 2B. BLOQUE TEXTO SEO INTRO -->
     <section class="piedra-intro-text-section">
         <div class="piedra-intro-text-wrapper">
-            <p>Renueva tu hogar con el encanto de la naturaleza y las ventajas t&eacute;cnicas del gres porcel&aacute;nico. En <strong>Adrihosan</strong> te ofrecemos la mejor selecci&oacute;n de <strong>azulejos imitaci&oacute;n piedra</strong> para pavimentos y revestimiento de pared. Disfruta de un realismo espectacular y texturas naturales, con una ventaja clave: cero mantenimiento, f&aacute;cil limpieza y resistencia extrema. Ideales para interiores c&aacute;lidos, fachadas exteriores y zonas de agua.</p>
+            <h2>Suelos y Azulejos Imitaci&oacute;n Piedra</h2>
+            <p>Descubre nuestro cat&aacute;logo de baldosas y losas de gres porcel&aacute;nico con efecto piedra natural. La soluci&oacute;n definitiva para pavimentos interiores, terrazas y revestimiento de fachadas. Consigue el dise&ntilde;o r&uacute;stico, moderno o urbano que buscas con la ventaja de una f&aacute;cil instalaci&oacute;n, limpieza sencilla y cero mantenimiento. Explora nuestra colecci&oacute;n y transforma tus paredes y suelos al mejor precio por m&sup2;.</p>
         </div>
     </section>
 
