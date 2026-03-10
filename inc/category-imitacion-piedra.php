@@ -212,38 +212,38 @@ function adrihosan_imitacion_piedra_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; es mejor, piedra natural o cer&aacute;mica imitaci&oacute;n piedra?</span>
+                        <span>&iquest;Qu&eacute; es mejor, piedra natural o baldosas imitaci&oacute;n piedra?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para el 99% de los hogares, la cer&aacute;mica imitaci&oacute;n piedra es superior. Mientras la piedra natural es porosa (absorbe manchas, aceites y humedad) y requiere selladores, el gres porcel&aacute;nico y de pasta blanca tiene una absorci&oacute;n casi nula. Es decir, las cer&aacute;micas tipo piedra no se manchan, se limpian con cualquier producto com&uacute;n y no requieren mantenimiento anual.</p>
+                        <p>Para la mayor&iacute;a de proyectos, el gres porcel&aacute;nico imitaci&oacute;n piedra es superior. La piedra natural es porosa, absorbe manchas y necesita mantenimiento. Nuestras baldosas cer&aacute;micas tienen absorci&oacute;n casi nula, no se manchan y son mucho m&aacute;s f&aacute;ciles y econ&oacute;micas de instalar.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se puede colocar revestimiento de pared imitaci&oacute;n piedra en el ba&ntilde;o?</span>
+                        <span>&iquest;Se puede colocar revestimiento imitaci&oacute;n piedra en la ducha del ba&ntilde;o?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>&iexcl;Absolutamente! Al no ser poroso, el revestimiento de pared piedra cer&aacute;mico es perfecto para zonas h&uacute;medas, incluyendo el interior de la ducha. No desarrollar&aacute; moho ni filtrar&aacute; agua si est&aacute; bien instalado, manteniendo el aspecto de un spa natural de piedra.</p>
+                        <p>S&iacute;, es el material ideal. Al contrario que la piedra real, el azulejo porcel&aacute;nico no absorbe humedad ni genera moho. Puedes lograr un dise&ntilde;o de &ldquo;spa natural&rdquo; con la tranquilidad de que se limpia f&aacute;cilmente con tus productos habituales.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo limpiar baldosas pared imitaci&oacute;n piedra o suelos?</span>
+                        <span>&iquest;C&oacute;mo limpiar suelos y azulejos efecto piedra?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>A diferencia de la piedra real que requiere limpiadores de pH neutro espec&iacute;ficos, las paredes de cer&aacute;mica imitaci&oacute;n piedra o los suelos se pueden limpiar con tu detergente habitual o fregasuelos. Su superficie es totalmente higi&eacute;nica.</p>
+                        <p>El mantenimiento es m&iacute;nimo. No necesitas limpiadores especiales de pH neutro. Puedes usar agua y tu friegasuelos o detergente habitual, ya que su superficie no se da&ntilde;a ni pierde el color original.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Las racholas de piedra sirven tanto para suelo como para pared?</span>
+                        <span>&iquest;Sirven los mismos azulejos para pared y para suelo?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Depende del material. Si es porcel&aacute;nico, sirve tanto para pavimento como para revestimiento de pared s&iacute;mil piedra. Si es pasta blanca o pasta roja, generalmente est&aacute; dise&ntilde;ado exclusivamente como azulejo de piedra para pared debido a su peso y tracci&oacute;n. En Adrihosan te especificamos el uso ideal en cada producto.</p>
+                        <p>El gres porcel&aacute;nico es apto tanto para pavimentos (suelos) como para revestimientos (paredes). Sin embargo, si la pieza es de pasta blanca o pasta roja, estar&aacute; indicada exclusivamente para paredes debido a que soporta menos tr&aacute;nsito. En nuestro cat&aacute;logo indicamos el uso recomendado de cada modelo.</p>
                     </div>
                 </div>
             </div>
