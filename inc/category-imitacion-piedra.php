@@ -128,25 +128,25 @@ function adrihosan_imitacion_piedra_contenido_inferior() {
                 <a href="?orderby=date-asc#catalogo-piedra" class="stone-banner-card">
                     <div class="stone-banner-icon">&#127958;</div>
                     <h3>Fachadas y Terrazas</h3>
-                    <p>Revestimiento piedra exterior para muros, fachadas y patios. Acabados antideslizantes para m&aacute;xima seguridad.</p>
+                    <p>Baldosas de exterior para muros, fachadas y patios. Pavimentos antideslizantes para m&aacute;xima seguridad frente a la lluvia y piscinas.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
                 <a href="?orderby=date#catalogo-piedra" class="stone-banner-card">
                     <div class="stone-banner-icon">&#128715;</div>
                     <h3>Paredes de Sal&oacute;n y Ba&ntilde;o</h3>
-                    <p>Azulejos imitaci&oacute;n piedra interior con ambientes c&aacute;lidos. Ideal para paredes de sal&oacute;n, ba&ntilde;os y recibidores.</p>
+                    <p>Suelos y revestimientos de interior que aportan calidez. F&aacute;ciles de limpiar y resistentes a la humedad de los ba&ntilde;os.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/ver-estilo-pizarra/" class="stone-banner-card">
                     <div class="stone-banner-icon">&#129704;</div>
                     <h3>Textura Laja y Pizarra</h3>
-                    <p>Revestimiento piedra laja con relieve irregular aut&eacute;ntico. El acabado m&aacute;s natural y con m&aacute;s car&aacute;cter.</p>
+                    <p>Azulejos con relieve irregular aut&eacute;ntico. El acabado m&aacute;s r&uacute;stico y con m&aacute;s car&aacute;cter para paredes decorativas y pilares.</p>
                     <span class="stone-banner-cta">Ver Colecci&oacute;n &rarr;</span>
                 </a>
                 <a href="?orderby=price#catalogo-piedra" class="stone-banner-card stone-banner-offer">
                     <div class="stone-banner-icon">&#127991;</div>
                     <h3>Ofertas Especiales</h3>
-                    <p>Azulejos imitaci&oacute;n piedra baratos. Descuentos y liquidaciones en revestimientos de piedra de primeras marcas.</p>
+                    <p>Losas y baldosas baratas. Descuentos y liquidaciones en primeras marcas de cer&aacute;mica aspecto natural.</p>
                     <span class="stone-banner-cta">Ver Ofertas &rarr;</span>
                 </a>
             </div>
@@ -161,17 +161,17 @@ function adrihosan_imitacion_piedra_contenido_inferior() {
                 <div class="material-card">
                     <div class="material-icon">&#9968;</div>
                     <h3>Piedra Laja / Pizarra</h3>
-                    <p>Texturas con relieve irregular que reproducen fielmente la piedra laja natural. Superficie con car&aacute;cter, ideal para crear muros y fachadas con un aspecto r&uacute;stico y aut&eacute;ntico sin el peso ni la porosidad de la piedra real.</p>
+                    <p>Texturas con relieve irregular para fachadas y muros de acento. Est&eacute;tica r&uacute;stica sin el peso ni la complicaci&oacute;n de instalaci&oacute;n de la piedra real.</p>
                 </div>
                 <div class="material-card">
                     <div class="material-icon">&#127963;</div>
                     <h3>Piedra Cantera</h3>
-                    <p>Acabado suave y c&aacute;lido que evoca la piedra de cantera cl&aacute;sica. Tonos arena, beige y crema que aportan elegancia mediterr&aacute;nea a cualquier espacio, sin necesidad de mantenimiento ni sellados peri&oacute;dicos.</p>
+                    <p>Tonos arena, beige y crema. Evocan la elegancia cl&aacute;sica y c&aacute;lida sin necesitar los selladores peri&oacute;dicos que exige la piedra porosa.</p>
                 </div>
                 <div class="material-card">
                     <div class="material-icon">&#127956;</div>
                     <h3>S&iacute;mil Piedra Natural</h3>
-                    <p>Reproducci&oacute;n fiel de piedras naturales como travertino, cuarcita o arenisca. Tecnolog&iacute;a de impresi&oacute;n digital HD sobre gres porcel&aacute;nico que captura cada veta, poro y matiz del material original.</p>
+                    <p>Reproducci&oacute;n de travertino, granito o cuarcita. Impresi&oacute;n digital sobre gres porcel&aacute;nico que captura cada matiz para suelos modernos y urbanos.</p>
                 </div>
             </div>
         </div>
