@@ -165,10 +165,10 @@ function adrihosan_fachadas_contenido_inferior() {
             <h2>Tendencias en Revestimientos de Fachadas</h2>
             <p>Desde la piedra natural gris para fachadas contempor&aacute;neas, hasta las lajas claras estilo mediterr&aacute;neo. El gran formato con junta m&iacute;nima y las texturas 3D con relieve dominan los proyectos de reforma y obra nueva.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=piedra" class="trend-link">Piedra Natural</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=madera" class="trend-link">Madera Exterior</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=cemento" class="trend-link">Cemento Visto</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_formato=gran-formato" class="trend-link">Gran Formato</a>
+                <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-azulejos-imitacion-piedra/" class="trend-link">Piedra Natural</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="trend-link">Madera Exterior</a>
+                <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-cemento/" class="trend-link">Cemento Visto</a>
+                <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-cemento/ver-formato-gran-formato/" class="trend-link">Gran Formato</a>
             </div>
         </div>
     </section>
