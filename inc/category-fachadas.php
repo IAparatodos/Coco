@@ -65,11 +65,11 @@ function adrihosan_fachadas_contenido_superior() {
     <!-- 3. BOTONERA DE NAVEGACI&Oacute;N R&Aacute;PIDA (Pills) -->
     <section class="nav-pills-section adrihosan-full-width-block">
         <div class="nav-pills-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=piedra" class="nav-pill">&#129704; Efecto Piedra</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=madera" class="nav-pill">&#129717; Efecto Madera</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=cemento" class="nav-pill">&#127959; Cemento y &Oacute;xido</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_formato=gran-formato" class="nav-pill">&#128207; Gran Formato</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/fachadas-y-muros/?swoof=1&pa_estilo=laja" class="nav-pill">&#129521; Lajas y Muros</a>
+            <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-azulejos-imitacion-piedra/" class="nav-pill">&#129704; Efecto Piedra</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="nav-pill">&#129717; Efecto Madera</a>
+            <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-cemento/" class="nav-pill">&#127959; Cemento</a>
+            <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-estilo-cemento/ver-formato-gran-formato/" class="nav-pill">&#128207; Gran Formato</a>
+            <a href="https://www.adrihosan.com/categoria-producto/revestimiento-fachada-exterior/ver-formato-44x66/" class="nav-pill">&#129521; Lajas y Muros</a>
         </div>
     </section>
 
