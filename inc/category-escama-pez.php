@@ -103,7 +103,7 @@ function adrihosan_escama_pez_contenido_inferior() {
             <div class="video-bumper-text">
                 <h2>Mira c&oacute;mo brilla y transforma el espacio</h2>
                 <p>Descubre en detalle los relieves, el brillo y las posibilidades de colocaci&oacute;n de nuestra colecci&oacute;n de azulejos escama de pez. V&iacute;deo real con producto en exposici&oacute;n.</p>
-                <a href="https://www.youtube.com/@adrihosan" class="hero-btn secondary" target="_blank" rel="noopener">Suscr&iacute;bete a nuestro canal</a>
+                <a href="https://bit.ly/Adrihosan" class="hero-btn primary" target="_blank" rel="noopener">Suscr&iacute;bete a nuestro canal</a>
             </div>
         </div>
     </section>
