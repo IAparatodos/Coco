@@ -91,18 +91,7 @@ function adrihosan_ceramica_superior_final() {
         </div>
     </div>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
-            <strong>¡Consejo de AdrIA!</strong> Para encontrar tu azulejo ideal, selecciona las características y no olvides pinchar en el botón <strong>"FILTRAR"</strong>.
-        </p>
-    </div>
-
-    <div id="destino-filtro-adria" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;">
-        </div>
-
-    <div class="filter-container-master" style="margin-bottom:50px;">
-       <?php echo do_shortcode('[fe_widget id="425985"]'); ?>
-    </div>
+ 
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Selección por Colecciones y Formatos</h4>
