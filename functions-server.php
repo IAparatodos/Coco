@@ -918,7 +918,7 @@ add_action('admin_menu','dw_register_block_reusable_menu_page');
  
  
 //Elimina el aviso de Past-due
-add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
+// add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
 /**
  * Add filter shortcodes in the content
  */
