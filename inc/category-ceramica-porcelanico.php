@@ -24,6 +24,7 @@
 /* EL CEREBRO SUPERIOR: HERO BLINDADO + FIX IMAGEN + TRANSPLANTE              */
 /* ========================================================================== */
 
+if ( ! function_exists( 'adrihosan_ceramica_superior_final' ) ) {
 function adrihosan_ceramica_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="
@@ -42,12 +43,12 @@ function adrihosan_ceramica_superior_final() {
             <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-ceramica-foco" class="btn-adri-master">Ver Catálogo Completo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
+                <a href="#bloque-filtros-ceramica" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
+    <div id="bloque-filtros-ceramica" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Para qué estancia lo buscas?</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" style="text-decoration:none; text-align:center;">
@@ -114,10 +115,12 @@ function adrihosan_ceramica_superior_final() {
     <div id="fe-products-wrapper">
     <?php
 }
+} // end function_exists adrihosan_ceramica_superior_final
 
 /**
  * BLOQUE INFERIOR: SEO DINÁMICO, FAQs y Contacto
  */
+if ( ! function_exists( 'adrihosan_ceramica_inferior_final' ) ) {
 function adrihosan_ceramica_inferior_final() {
     ?>
     </div><!-- /fe-products-wrapper -->
@@ -170,6 +173,7 @@ function adrihosan_ceramica_inferior_final() {
     </section>
     <?php
 }
+} // end function_exists adrihosan_ceramica_inferior_final
 
 // CSS cat 62 - movido al master controller en functions.php
 
@@ -182,6 +186,7 @@ function adrihosan_ceramica_inferior_final() {
 /**
  * BLOQUE SUPERIOR: Hero, Hubs Visuales, JS Transplante y Filtros
  */
+if ( ! function_exists( 'adrihosan_porcelanico_superior_final' ) ) {
 function adrihosan_porcelanico_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="
@@ -201,12 +206,12 @@ function adrihosan_porcelanico_superior_final() {
             <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Resistencia extrema, diseño impecable y mantenimiento cero. El suelo definitivo.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-porcelanico-foco" class="btn-adri-master">Ver Catálogo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Uso</a>
+                <a href="#bloque-filtros-porcelanico" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Uso</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
+    <div id="bloque-filtros-porcelanico" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-cocina/" style="text-decoration:none; text-align:center;">
@@ -275,10 +280,7 @@ function adrihosan_porcelanico_superior_final() {
     </div>
 
     <style>
-        .btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; }
-        
-        #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover {
+        #bloque-filtros-porcelanico img:hover, .cer-hero-buttons img:hover {
             transform: scale(1.03);
             box-shadow: 0 8px 15px rgba(0,0,0,0.15);
         }
@@ -327,8 +329,13 @@ function adrihosan_porcelanico_superior_final() {
                 $('.wpc-filters-open-button-container').not($elElegido).hide();
             }
         }
+        var _timerMoverPorcelanico = null;
+        var _timerScrollPorcelanicoClick = null;
+        var _timerScrollPorcelanicoFilter = null;
+
         $(document).ready(moverBotonFiltroPorcelanico);
-        setTimeout(moverBotonFiltroPorcelanico, 1500);
+        clearTimeout(_timerMoverPorcelanico);
+        _timerMoverPorcelanico = setTimeout(moverBotonFiltroPorcelanico, 1500);
 
         // B. SCROLL AUTOMÁTICO
         function adrihosanFuerzaScrollPorcelanico() {
@@ -338,10 +345,12 @@ function adrihosan_porcelanico_superior_final() {
             }
         }
         $(document).on('click', '.wpc-filters-submit-button', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 1000);
+            clearTimeout(_timerScrollPorcelanicoClick);
+            _timerScrollPorcelanicoClick = setTimeout(adrihosanFuerzaScrollPorcelanico, 1000);
         });
         $(document).on('feAfterFilterApply', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 500);
+            clearTimeout(_timerScrollPorcelanicoFilter);
+            _timerScrollPorcelanicoFilter = setTimeout(adrihosanFuerzaScrollPorcelanico, 500);
         });
 
     })(jQuery);
@@ -351,10 +360,12 @@ function adrihosan_porcelanico_superior_final() {
     <div id="fe-products-wrapper">
     <?php
 }
+} // end function_exists adrihosan_porcelanico_superior_final
 
 /**
  * BLOQUE INFERIOR: SEO Dinámico, FAQs Porcelánico y Contacto
  */
+if ( ! function_exists( 'adrihosan_porcelanico_inferior_final' ) ) {
 function adrihosan_porcelanico_inferior_final() {
     ?>
     </div><!-- /fe-products-wrapper -->
@@ -400,6 +411,7 @@ function adrihosan_porcelanico_inferior_final() {
     </section>
     <?php
 }
+} // end function_exists adrihosan_porcelanico_inferior_final
 
 /* ========================================================================== */
 /* 1. PÁGINA PILAR GRAN FORMATO (ID 1844) - VERSIÓN FINAL */
@@ -407,6 +419,7 @@ function adrihosan_porcelanico_inferior_final() {
 
 // Controller cat 1844 - movido al master controller en functions.php
 
+if ( ! function_exists( 'adrihosan_gran_formato_superior_final' ) ) {
 function adrihosan_gran_formato_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/02/Porcelanico-gran-formato-negro-efecto-marmol.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
@@ -415,12 +428,12 @@ function adrihosan_gran_formato_superior_final() {
             <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">La revolución del espacio. Superficies continuas, mínimas juntas y máxima elegancia.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-xl-foco" class="btn-adri-master">Ver Catálogo XL</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
+                <a href="#bloque-filtros-gran-formato" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
+    <div id="bloque-filtros-gran-formato" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Estilo</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/ver-estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto M&aacute;rmol</h3></a>
@@ -458,14 +471,16 @@ function adrihosan_gran_formato_superior_final() {
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Gran Formato</h2>
     </div>
 
-    <style>.btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); } .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; } #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
-    <script>(function($){"use strict";function moverBotonFiltroXL(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-gran-formato');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR GRAN FORMATO');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroXL);setTimeout(moverBotonFiltroXL,1500);function adrihosanFuerzaScrollXL(){var $dest=$('#catalogo-xl-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollXL,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollXL,500);});})(jQuery);</script>
+    <style>#bloque-filtros-gran-formato img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <script>(function($){"use strict";var _tXL=null,_tXLc=null,_tXLf=null;function moverBotonFiltroXL(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-gran-formato');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR GRAN FORMATO');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroXL);clearTimeout(_tXL);_tXL=setTimeout(moverBotonFiltroXL,1500);function adrihosanFuerzaScrollXL(){var $dest=$('#catalogo-xl-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){clearTimeout(_tXLc);_tXLc=setTimeout(adrihosanFuerzaScrollXL,1000);});$(document).on('feAfterFilterApply',function(){clearTimeout(_tXLf);_tXLf=setTimeout(adrihosanFuerzaScrollXL,500);});})(jQuery);</script>
 
     <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
     <div id="fe-products-wrapper">
     <?php
 }
+} // end function_exists adrihosan_gran_formato_superior_final
 
+if ( ! function_exists( 'adrihosan_gran_formato_inferior_final' ) ) {
 function adrihosan_gran_formato_inferior_final() {
     ?>
     </div><!-- /fe-products-wrapper -->
@@ -553,6 +568,7 @@ function adrihosan_gran_formato_inferior_final() {
     </section>
     <?php
 }
+} // end function_exists adrihosan_gran_formato_inferior_final
 
 /* ========================================================================== */
 /* 2. PÁGINA PILAR PORCELÁNICO EXTRAFINO (ID 2510) - VERSIÓN FINAL */
@@ -560,6 +576,7 @@ function adrihosan_gran_formato_inferior_final() {
 
 // Controller cat 2510 - movido al master controller en functions.php
 
+if ( ! function_exists( 'adrihosan_extrafino_superior_final' ) ) {
 function adrihosan_extrafino_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.50), rgba(16, 46, 53, 0.50)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
@@ -568,12 +585,12 @@ function adrihosan_extrafino_superior_final() {
             <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Cambia tu suelo sin levantar el antiguo. Máxima dureza en mínimo espesor (3mm, 5mm, 6mm).</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-extrafino-foco" class="btn-adri-master">Ver Catálogo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
+                <a href="#bloque-filtros-extrafino" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
+    <div id="bloque-filtros-extrafino" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Acabado de tu Reforma</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
@@ -598,7 +615,9 @@ function adrihosan_extrafino_superior_final() {
     <div id="fe-products-wrapper">
     <?php
 }
+} // end function_exists adrihosan_extrafino_superior_final
 
+if ( ! function_exists( 'adrihosan_extrafino_inferior_final' ) ) {
 function adrihosan_extrafino_inferior_final() {
     ?>
     </div><!-- /fe-products-wrapper -->
@@ -630,6 +649,7 @@ function adrihosan_extrafino_inferior_final() {
     </section>
     <?php
 }
+} // end function_exists adrihosan_extrafino_inferior_final
 
 /* ========================================================================== */
 /* 3. P&Aacute;GINA PILAR AZULEJO METRO (ID 2093) - VERSI&Oacute;N MODERNA  */
@@ -637,6 +657,7 @@ function adrihosan_extrafino_inferior_final() {
 
 // Controller cat 2093 - movido al master controller en functions-server.php
 
+if ( ! function_exists( 'adrihosan_metro_superior_final' ) ) {
 function adrihosan_metro_superior_final() {
     ?>
     <!-- 1. HERO SECTION -->
@@ -742,7 +763,9 @@ function adrihosan_metro_superior_final() {
     <div id="fe-products-wrapper">
     <?php
 }
+} // end function_exists adrihosan_metro_superior_final
 
+if ( ! function_exists( 'adrihosan_metro_inferior_final' ) ) {
 function adrihosan_metro_inferior_final() {
     ?>
     </div><!-- /fe-products-wrapper -->
@@ -888,3 +911,4 @@ function adrihosan_metro_inferior_final() {
     </section>
     <?php
 }
+} // end function_exists adrihosan_metro_inferior_final
