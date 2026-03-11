@@ -1217,6 +1217,28 @@ add_action( 'template_redirect', function() {
 });
 
 // =============================================================================
+// SEO: Forzar 404 en paginaciones vacías de WooCommerce
+// Evita que Google indexe /page/99/ sin productos (crawl budget)
+// Solo se ejecuta en páginas paginadas (is_paged) de shop/categoría/tag
+// =============================================================================
+add_action( 'template_redirect', 'forzar_404_paginaciones_vacias_woo', 5 );
+function forzar_404_paginaciones_vacias_woo() {
+    // Bail rápido: solo actuar en paginaciones (/page/2/, /page/3/...)
+    if ( ! is_paged() ) return;
+
+    // Solo en contextos WooCommerce con listado de productos
+    if ( ! ( is_shop() || is_product_category() || is_product_tag() ) ) return;
+
+    global $wp_query;
+    if ( ! $wp_query->have_posts() ) {
+        $wp_query->set_404();
+        status_header( 404 );
+        nocache_headers();
+    }
+}
+
+
+// =============================================================================
 // SISTEMA ANTIGUO - DESACTIVADO (Migrado a sistema modular)
 // =============================================================================
 // function adrihosan_custom_category_assets() {
