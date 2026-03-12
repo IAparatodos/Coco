@@ -79,7 +79,7 @@ function adrihosan_azulejos_15x15_contenido_superior() {
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-15x15" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426655"]'); ?></div>
 
     <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-15x15" class="product-loop-header">
