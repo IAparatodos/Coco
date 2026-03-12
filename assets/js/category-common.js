@@ -62,26 +62,27 @@
         }
     }
 
-    // Detectar si hay filtros activos (query params, hash, o FEP pretty URLs)
+    // Detectar si la URL tiene par&aacute;metros de filtro
     function tieneParametrosFiltro() {
-        // URL con par&aacute;metros ?query
-        if (window.location.search.length > 1) return true;
-        // URL con hash tipo #catalogo-xxx
-        if (window.location.hash) return true;
-        return false;
+        return window.location.search.length > 1;
     }
 
-    // Scroll al cargar si hay filtros activos o hash en la URL
+    // Al hacer clic en una pill con enlace externo, guardar flag para scroll
+    $(document).on('click', '.quick-nav-pill', function() {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('://') > -1) {
+            sessionStorage.setItem('adrihosan_scroll_catalogo', '1');
+        }
+    });
+
+    // Scroll al cargar si hay filtros activos O si venimos de una pill
     $(document).ready(function() {
         if (tieneParametrosFiltro()) {
             setTimeout(scrollSuaveAlCatalogo, 500);
         }
-    });
-
-    // Refuerzo: scroll tras carga completa (im&aacute;genes, CSS, etc.)
-    window.addEventListener('load', function() {
-        if (window.location.hash) {
-            setTimeout(scrollSuaveAlCatalogo, 300);
+        if (sessionStorage.getItem('adrihosan_scroll_catalogo') === '1') {
+            sessionStorage.removeItem('adrihosan_scroll_catalogo');
+            setTimeout(scrollSuaveAlCatalogo, 1000);
         }
     });
 
