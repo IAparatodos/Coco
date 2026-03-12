@@ -65,9 +65,9 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="#catalogo-15x15" class="quick-nav-pill quick-nav-pill-featured">&#9898; Azulejo Blanco 15x15</a>
-            <a href="#catalogo-15x15" class="quick-nav-pill">&#128336; Estilo Antiguo / Vintage</a>
-            <a href="#catalogo-15x15" class="quick-nav-pill">&#127859; Para Cocinas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/tono-blanco/" class="quick-nav-pill quick-nav-pill-featured">&#9898; Azulejo Blanco 15x15</a>
+            <a href="#catalogo-15x15" class="quick-nav-pill">&#128204; Suelos</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
             <a href="#catalogo-15x15" class="quick-nav-pill">&#127912; Colores Lisos</a>
         </div>
     </section>
@@ -118,7 +118,7 @@ function adrihosan_azulejos_15x15_contenido_inferior() {
             <div class="bumper-content">
                 <h2>&iquest;Reformando la cocina o el ba&ntilde;o?</h2>
                 <p>El formato 15x15 es ideal para frentes de cocina (salpicaderos) y ba&ntilde;os de estilo atemporal. Pide tu muestra y compru&eacute;balo en casa.</p>
-                <a href="https://www.adrihosan.com/contacto/" class="bumper-btn">Pedir Muestras</a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="bumper-btn">Pedir Muestras</a>
             </div>
         </div>
     </section>
