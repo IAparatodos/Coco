@@ -62,26 +62,26 @@
         }
     }
 
-    // Detectar si la URL tiene par&aacute;metros de filtro (Filter Everything Pro)
+    // Detectar si hay filtros activos (query params, hash, o FEP pretty URLs)
     function tieneParametrosFiltro() {
-        var params = window.location.search;
-        return params.length > 1;
+        // URL con par&aacute;metros ?query
+        if (window.location.search.length > 1) return true;
+        // URL con hash tipo #catalogo-xxx
+        if (window.location.hash) return true;
+        return false;
     }
 
-    // Scroll al cargar si hay filtros activos en la URL
+    // Scroll al cargar si hay filtros activos o hash en la URL
     $(document).ready(function() {
         if (tieneParametrosFiltro()) {
             setTimeout(scrollSuaveAlCatalogo, 500);
         }
+    });
 
-        // Scroll al cargar si la URL tiene un hash que apunta al cat&aacute;logo
-        var hash = window.location.hash;
-        if (hash && $(hash).length) {
-            setTimeout(function() {
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 120
-                }, 800);
-            }, 800);
+    // Refuerzo: scroll tras carga completa (im&aacute;genes, CSS, etc.)
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            setTimeout(scrollSuaveAlCatalogo, 300);
         }
     });
 
