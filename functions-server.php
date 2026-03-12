@@ -668,8 +668,23 @@ function adrihosan_setup_azulejos_15x15_cpu_fix() {
 // ============================================================================
 
 // ============================================================================
-// FIN TEMPORAL DIAGNÓSTICO (eliminado - ya recopilamos los datos necesarios)
+// FIX: Proteger URLs de filtro FEP rotas en Azulejos 15x15 (y otras)
+// El filtro "Uso" (pa_colocacion-azulejo) genera URLs con "ver-destino-*"
+// que causan error crítico en FEP. Redirigimos a la categoría base.
 // ============================================================================
+add_action('template_redirect', 'adrihosan_fix_fep_broken_filter_urls', 0);
+function adrihosan_fix_fep_broken_filter_urls() {
+    $uri = $_SERVER['REQUEST_URI'] ?? '';
+    // Detectar URLs con segmentos de filtro "ver-destino-" que causan crash
+    if (strpos($uri, '/ver-destino-') !== false && strpos($uri, 'categoria-producto/') !== false) {
+        // Extraer la URL base de la categoría (todo antes de /ver-destino-*)
+        $base_url = preg_replace('#/ver-destino-[^/]+/?$#', '/', $uri);
+        if ($base_url && $base_url !== $uri) {
+            wp_safe_redirect(home_url($base_url), 302);
+            exit;
+        }
+    }
+}
 
 if ( ! function_exists( 'adrihosan_setup' ) ) :
 	/**
