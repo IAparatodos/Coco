@@ -829,89 +829,88 @@ function adrihosan_debug_fep_rewrite_rules() {
         }
     }
 
-    // 8. META DATA de los filter-fields "Uso" (426665 nuevo + 426014 viejo)
-    echo "\n8. FILTER-FIELD 426665 (Uso en widget 426655 Azulejos 15x15):\n";
-    $ff_new = get_post(426665);
-    if ($ff_new) {
-        echo "   post_title: {$ff_new->post_title}\n";
-        echo "   post_name (slug): {$ff_new->post_name}\n";
-        echo "   post_status: {$ff_new->post_status}\n";
-        echo "   post_parent: {$ff_new->post_parent}\n";
-        $meta_new = get_post_meta(426665);
-        echo "   META DATA:\n";
-        foreach ($meta_new as $mk => $mv) {
-            $val = is_array($mv) ? $mv[0] : $mv;
-            $unserialized = maybe_unserialize($val);
-            if (is_array($unserialized)) {
-                echo "     {$mk}: " . json_encode($unserialized) . "\n";
+    // 8. DUMP COMPLETO filter-fields (post_content es donde FEP guarda config)
+    foreach (array(426665 => 'Uso NUEVO (widget 426655)', 426014 => 'Uso VIEJO (widget 425985)', 426658 => 'Acabado (FUNCIONA - referencia)') as $ff_id => $ff_label) {
+        echo "\n8-{$ff_id}. FILTER-FIELD {$ff_id} ({$ff_label}):\n";
+        $ff = get_post($ff_id);
+        if ($ff) {
+            echo "   post_title: {$ff->post_title}\n";
+            echo "   post_name (slug): {$ff->post_name}\n";
+            echo "   post_status: {$ff->post_status}\n";
+            echo "   post_parent: {$ff->post_parent}\n";
+            echo "   menu_order: {$ff->menu_order}\n";
+            echo "   post_excerpt: '{$ff->post_excerpt}'\n";
+            echo "   post_content:\n";
+            $c = $ff->post_content;
+            if (!empty($c)) {
+                $json = json_decode($c, true);
+                if ($json) {
+                    echo "   " . json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . "\n";
+                } else {
+                    $ser = maybe_unserialize($c);
+                    if (is_array($ser)) {
+                        foreach ($ser as $k => $v) { echo "     {$k}: " . (is_array($v) ? json_encode($v) : $v) . "\n"; }
+                    } else {
+                        echo "   (Raw, primeros 500 chars): " . substr($c, 0, 500) . "\n";
+                    }
+                }
             } else {
-                echo "     {$mk}: {$val}\n";
+                echo "   (VACIO)\n";
             }
-        }
-    } else {
-        echo "   NO EXISTE\n";
-    }
-
-    echo "\n9. FILTER-FIELD 426014 (Uso viejo - el que colisiona):\n";
-    $ff_old = get_post(426014);
-    if ($ff_old) {
-        echo "   post_title: {$ff_old->post_title}\n";
-        echo "   post_name (slug): {$ff_old->post_name}\n";
-        echo "   post_status: {$ff_old->post_status}\n";
-        echo "   post_parent: {$ff_old->post_parent}\n";
-        $meta_old = get_post_meta(426014);
-        echo "   META DATA:\n";
-        foreach ($meta_old as $mk => $mv) {
-            $val = is_array($mv) ? $mv[0] : $mv;
-            $unserialized = maybe_unserialize($val);
-            if (is_array($unserialized)) {
-                echo "     {$mk}: " . json_encode($unserialized) . "\n";
-            } else {
-                echo "     {$mk}: {$val}\n";
+            // Raw DB check for post_content
+            $raw = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID = %d", $ff_id));
+            echo "   post_content raw length: " . strlen($raw) . " chars\n";
+            if (strlen($raw) > 0 && strlen($raw) < 2000) {
+                echo "   post_content raw: {$raw}\n";
             }
-        }
-    } else {
-        echo "   NO EXISTE\n";
-    }
-
-    // 10. TODOS los filter-fields que usan pa_colocacion-azulejo
-    echo "\n10. TODOS los filter-fields con 'colocacion' en meta:\n";
-    $ff_colocacion = $wpdb->get_results("
-        SELECT p.ID, p.post_title, p.post_name, p.post_parent, p.post_status, pm.meta_key, pm.meta_value
-        FROM {$wpdb->posts} p
-        JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
-        WHERE p.post_type = 'filter-field'
-        AND pm.meta_value LIKE '%colocacion%'
-        ORDER BY p.ID
-    ");
-    if ($ff_colocacion) {
-        foreach ($ff_colocacion as $ffc) {
-            echo "   ID:{$ffc->ID} | title:{$ffc->post_title} | slug:{$ffc->post_name} | parent:{$ffc->post_parent} | status:{$ffc->post_status}\n";
-            echo "     {$ffc->meta_key}: {$ffc->meta_value}\n";
-        }
-    } else {
-        echo "   Ninguno encontrado\n";
-    }
-
-    // 11. URL que FEP generaria - simular
-    echo "\n11. TEST: URL que deberia funcionar segun los term slugs:\n";
-    $ff_meta = get_post_meta(426665);
-    $prefix = isset($ff_meta['_slug'][0]) ? $ff_meta['_slug'][0] : (isset($ff_meta['_prefix'][0]) ? $ff_meta['_prefix'][0] : 'DESCONOCIDO');
-    echo "   Prefix del filter-field 426665: {$prefix}\n";
-    echo "   URLs esperadas:\n";
-    foreach ($terms as $t) {
-        echo "     {$prefix}-{$t->slug} => .../azulejos-15x15/{$prefix}-{$t->slug}/\n";
-    }
-
-    // 12. Comprobar si el post_name del filter-field 426665 coincide con su prefix
-    echo "\n12. CONSISTENCIA SLUG vs PREFIX:\n";
-    if ($ff_new) {
-        echo "   post_name (lo que WordPress usa en URLs): {$ff_new->post_name}\n";
-        echo "   _slug meta (lo que FEP usa como prefix): {$prefix}\n";
-        if ($ff_new->post_name !== $prefix) {
-            echo "   DESINCRONIZADO <-- El slug del post NO coincide con el prefix de FEP\n";
         } else {
-            echo "   OK - Coinciden\n";
+            echo "   NO EXISTE\n";
+        }
+    }
+
+    // 9. Tablas custom de FEP
+    echo "\n9. TABLAS DE BASE DE DATOS CON 'filter' o 'flrt':\n";
+    $all_tables = $wpdb->get_col("SHOW TABLES");
+    foreach ($all_tables as $tname) {
+        if (stripos($tname, 'filter') !== false || stripos($tname, 'flrt') !== false) {
+            $count = $wpdb->get_var("SELECT COUNT(*) FROM `{$tname}`");
+            echo "   {$tname} ({$count} filas)\n";
+            // Show first 3 rows if small table
+            if ($count > 0 && $count < 100) {
+                $sample = $wpdb->get_results("SELECT * FROM `{$tname}` LIMIT 3", ARRAY_A);
+                foreach ($sample as $row) {
+                    echo "     " . json_encode($row) . "\n";
+                }
+            }
+        }
+    }
+
+    // 10. FEP options ampliado
+    echo "\n10. WP_OPTIONS relacionadas con FEP (sin transients):\n";
+    $fep_opts = $wpdb->get_results("SELECT option_name, LEFT(option_value, 500) as val FROM {$wpdb->options} WHERE (option_name LIKE '%flrt%' OR option_name LIKE '%filter_everything%' OR option_name LIKE '%fe_pro%' OR option_name LIKE '%fep_%') AND option_name NOT LIKE '%_transient%' LIMIT 50");
+    if ($fep_opts) {
+        foreach ($fep_opts as $o) {
+            echo "   {$o->option_name}: {$o->val}\n";
+        }
+    } else {
+        echo "   Ninguna\n";
+    }
+
+    // 11. TODOS los filter-field con sus post_name y post_content summary
+    echo "\n11. TODOS LOS FILTER-FIELDS (resumen):\n";
+    $all_ff = $wpdb->get_results("SELECT ID, post_title, post_name, post_parent, post_status, LENGTH(post_content) as content_len, LEFT(post_content, 200) as content_preview FROM {$wpdb->posts} WHERE post_type = 'filter-field' AND post_status = 'publish' ORDER BY post_parent, ID");
+    foreach ($all_ff as $f) {
+        echo "   ID:{$f->ID} | '{$f->post_title}' | slug:'{$f->post_name}' | parent:{$f->post_parent} | content_len:{$f->content_len}\n";
+        if ($f->content_len > 0) {
+            echo "     content: {$f->content_preview}\n";
+        }
+    }
+
+    // 12. URLs esperadas
+    echo "\n12. URLs que probar (usando post_name 'ver-destino' como prefix):\n";
+    if ($ff_new) {
+        foreach ($terms as $t) {
+            echo "   .../azulejos-15x15/{$ff_new->post_name}-{$t->slug}/\n";
         }
     }
 
