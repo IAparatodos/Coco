@@ -523,9 +523,33 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
 - **Regla**: SIEMPRE incluir `.doo-category-banner` en el CSS inline de `wp_head` y en el `category-{ID}.css`. Los filtros PHP de WooCommerce (`woocommerce_product_subcategories`, `wc_get_loop_display_mode`) NO afectan a este plugin.
 - **Lección**: Cuando un elemento no responde a hooks/filtros de WooCommerce, pedir al usuario el HTML real del inspector del navegador (DevTools) para identificar las clases correctas.
 
+### 6. Pills de navegación rápida con enlaces externos: usar `sessionStorage` para scroll
+- **Error**: En Azulejos 15x15 (2132) las pills "Azulejo Blanco", "Para Cocinas" enlazaban a URLs filtradas de FEP (`/tono-blanco/`, `/estancia-cocina/`). Se intentó añadir `#catalogo-15x15` al final de la URL y detectar el hash con JS, pero **no funcionó** (FEP o el navegador pierde el hash al navegar a pretty URLs).
+- **Solución**: Usar `sessionStorage`. Al clic en una pill con enlace externo (`href` con `://`), se guarda `adrihosan_scroll_catalogo=1` en sessionStorage. En la página destino, el JS lee el flag, lo borra y hace scroll a `.product-loop-header` con 1s de espera.
+- **Código clave** (`category-common.js`):
+  ```javascript
+  $(document).on('click', '.quick-nav-pill', function() {
+      var href = $(this).attr('href');
+      if (href && href.indexOf('://') > -1) {
+          sessionStorage.setItem('adrihosan_scroll_catalogo', '1');
+      }
+  });
+  // En document.ready: lee flag y hace scrollSuaveAlCatalogo()
+  ```
+- **Regla**: NUNCA usar `#hash` en URLs que navegan a páginas filtradas por FEP. Usar `sessionStorage` para comunicar entre páginas.
+
 ---
 
 ## Changelog
+
+### 2026-03-12
+- **Categoría 2132 (Azulejos 15x15) - Pills de navegación**:
+  - Azulejo Blanco 15x15 → enlaza a filtro `/tono-blanco/`
+  - "Estilo Antiguo" → cambiado texto a "Suelos" (sin enlace, pendiente)
+  - Para Cocinas → enlaza a filtro `/estancia-cocina/`
+  - Colores Lisos → enlaza al loop `#catalogo-15x15` (todos son lisos)
+  - Pedir Muestras → enlaza a `/contacta-con-nosotros/`
+- **FIX Scroll pills externas**: Implementado `sessionStorage` en `category-common.js` para scroll al catálogo tras navegar a URL filtrada de FEP (el hash `#` no funciona con pretty URLs de FEP)
 
 ### 2026-02-26
 - **NUEVA Categoría 2516 (Zellige)**:
