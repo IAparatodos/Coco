@@ -666,7 +666,175 @@ function adrihosan_setup_azulejos_15x15_cpu_fix() {
 
 // FIN CONTROLADOR MAESTRO
 // ============================================================================
- 
+
+// ============================================================================
+// TEMPORAL: Diagnóstico FEP - Filtro "Uso" (pa_colocacion-azulejo) da 404
+// Acceder con: ?adrihosan_debug_fep=1 en cualquier página de categoría
+// ELIMINAR después de resolver el problema
+// ============================================================================
+add_action('wp', 'adrihosan_debug_fep_rewrite_rules');
+function adrihosan_debug_fep_rewrite_rules() {
+    if (!isset($_GET['adrihosan_debug_fep']) || !current_user_can('manage_options')) {
+        return;
+    }
+
+    header('Content-Type: text/plain; charset=utf-8');
+    echo "=== DIAGNOSTICO FEP - Filtro Uso (pa_colocacion-azulejo) ===\n";
+    echo "Fecha: " . date('Y-m-d H:i:s') . "\n\n";
+
+    // 1. Taxonomía registrada?
+    $tax = get_taxonomy('pa_colocacion-azulejo');
+    echo "1. TAXONOMIA pa_colocacion-azulejo:\n";
+    if ($tax) {
+        echo "   Registrada: SI\n";
+        echo "   Label: {$tax->label}\n";
+        echo "   Public: " . ($tax->public ? 'SI' : 'NO') . "\n";
+        echo "   Query var: " . ($tax->query_var ?: 'NO') . "\n";
+        echo "   Rewrite: " . print_r($tax->rewrite, true) . "\n";
+    } else {
+        echo "   Registrada: NO <-- PROBLEMA: la taxonomia no existe en WordPress\n";
+    }
+
+    // 2. Términos del atributo
+    echo "\n2. TERMINOS:\n";
+    $terms = get_terms(array('taxonomy' => 'pa_colocacion-azulejo', 'hide_empty' => false));
+    if (is_wp_error($terms)) {
+        echo "   Error: " . $terms->get_error_message() . "\n";
+    } elseif (empty($terms)) {
+        echo "   Sin terminos\n";
+    } else {
+        foreach ($terms as $t) {
+            echo "   - {$t->name} | slug: {$t->slug} | count: {$t->count}\n";
+        }
+    }
+
+    // 3. Atributo en WooCommerce (tabla woocommerce_attribute_taxonomies)
+    echo "\n3. ATRIBUTO WOOCOMMERCE (DB):\n";
+    global $wpdb;
+    $attrs = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}woocommerce_attribute_taxonomies WHERE attribute_name LIKE '%colocacion%' OR attribute_label LIKE '%olocaci%'");
+    if ($attrs) {
+        foreach ($attrs as $attr) {
+            echo "   ID: {$attr->attribute_id}\n";
+            echo "   attribute_name (slug): '{$attr->attribute_name}'\n";
+            echo "   attribute_label: '{$attr->attribute_label}'\n";
+            echo "   attribute_type: '{$attr->attribute_type}'\n";
+            echo "   attribute_public: '{$attr->attribute_public}'\n";
+            echo "   Taxonomy resultante: pa_{$attr->attribute_name}\n";
+            // Check for encoding issues
+            echo "   Hex dump del slug: " . bin2hex($attr->attribute_name) . "\n";
+        }
+    } else {
+        echo "   NO encontrado <-- PROBLEMA: el atributo no existe en WooCommerce\n";
+        echo "   Listando TODOS los atributos:\n";
+        $all_attrs = $wpdb->get_results("SELECT attribute_id, attribute_name, attribute_label FROM {$wpdb->prefix}woocommerce_attribute_taxonomies ORDER BY attribute_id");
+        foreach ($all_attrs as $a) {
+            echo "     ID:{$a->attribute_id} | slug:'{$a->attribute_name}' | label:'{$a->attribute_label}'\n";
+        }
+    }
+
+    // 4. FEP options (URL prefixes)
+    echo "\n4. FEP URL PREFIXES (opciones en wp_options):\n";
+    $fep_opts = $wpdb->get_results("SELECT option_name, option_value FROM {$wpdb->options} WHERE option_name LIKE '%flrt%' OR option_name LIKE '%filter_everything%' LIMIT 30");
+    foreach ($fep_opts as $opt) {
+        $val = maybe_unserialize($opt->option_value);
+        if (is_array($val)) {
+            echo "   {$opt->option_name}:\n";
+            foreach ($val as $k => $v) {
+                if (is_array($v)) {
+                    echo "     {$k}: " . json_encode($v) . "\n";
+                } else {
+                    echo "     {$k}: {$v}\n";
+                }
+            }
+        } else {
+            $display = strlen($opt->option_value) > 200 ? substr($opt->option_value, 0, 200) . '...' : $opt->option_value;
+            echo "   {$opt->option_name}: {$display}\n";
+        }
+    }
+
+    // 5. Rewrite rules que contienen 'uso', 'colocacion' o 'flrt'
+    echo "\n5. REWRITE RULES RELEVANTES:\n";
+    $rules = get_option('rewrite_rules', array());
+    echo "   Total rewrite rules en WordPress: " . count($rules) . "\n\n";
+
+    echo "   a) Reglas con 'uso' o 'colocacion':\n";
+    $found_uso = 0;
+    foreach ($rules as $regex => $query) {
+        if (stripos($regex, 'uso') !== false || stripos($query, 'uso') !== false ||
+            stripos($regex, 'colocacion') !== false || stripos($query, 'colocacion') !== false) {
+            echo "      REGEX: {$regex}\n      QUERY: {$query}\n\n";
+            $found_uso++;
+        }
+    }
+    if ($found_uso === 0) {
+        echo "      NINGUNA <-- No hay rewrite rules para este filtro. FEP no las genero.\n\n";
+    }
+
+    echo "   b) Reglas con 'flrt' (Filter Everything):\n";
+    $found_flrt = 0;
+    foreach ($rules as $regex => $query) {
+        if (stripos($regex, 'flrt') !== false || stripos($query, 'flrt') !== false) {
+            echo "      REGEX: {$regex}\n      QUERY: {$query}\n\n";
+            $found_flrt++;
+        }
+    }
+    echo "      Total reglas FEP: {$found_flrt}\n";
+
+    echo "   c) Reglas con 'textura' (filtro que SI funciona, para comparar):\n";
+    $found_tex = 0;
+    foreach ($rules as $regex => $query) {
+        if (stripos($regex, 'textura') !== false || stripos($query, 'textura') !== false) {
+            echo "      REGEX: {$regex}\n      QUERY: {$query}\n\n";
+            $found_tex++;
+        }
+    }
+    if ($found_tex === 0) {
+        echo "      NINGUNA <-- Tampoco hay para textura. FEP puede usar otro metodo.\n\n";
+    }
+
+    // 6. FEP Filter Sets (custom post type)
+    echo "\n6. FEP FILTER SETS (post types):\n";
+    $fep_types = $wpdb->get_col("SELECT DISTINCT post_type FROM {$wpdb->posts} WHERE post_type LIKE '%filter%' OR post_type LIKE '%flrt%'");
+    if ($fep_types) {
+        echo "   Post types encontrados: " . implode(', ', $fep_types) . "\n";
+        foreach ($fep_types as $pt) {
+            $sets = $wpdb->get_results($wpdb->prepare("SELECT ID, post_title, post_status FROM {$wpdb->posts} WHERE post_type = %s ORDER BY ID DESC LIMIT 10", $pt));
+            foreach ($sets as $fs) {
+                echo "   - [{$pt}] ID:{$fs->ID} | {$fs->post_title} | {$fs->post_status}\n";
+            }
+        }
+    } else {
+        echo "   No se encontraron post types de FEP\n";
+    }
+
+    // 7. Check for taxonomy name length issues
+    echo "\n7. VERIFICACIONES ADICIONALES:\n";
+    echo "   Longitud 'pa_colocacion-azulejo': " . strlen('pa_colocacion-azulejo') . " chars (max 32)\n";
+
+    // Check if there's a page/post with slug 'uso'
+    $uso_post = $wpdb->get_row("SELECT ID, post_type, post_name, post_status FROM {$wpdb->posts} WHERE post_name = 'uso' AND post_status IN ('publish','draft','private') LIMIT 1");
+    if ($uso_post) {
+        echo "   CONFLICTO: Existe un {$uso_post->post_type} con slug 'uso' (ID:{$uso_post->ID}, status:{$uso_post->post_status})\n";
+        echo "   <-- POSIBLE CAUSA: WordPress redirige /uso-* al post/page en vez de a FEP\n";
+    } else {
+        echo "   No hay post/page con slug 'uso' (bien)\n";
+    }
+
+    // Check for a term with slug 'uso' in any taxonomy
+    $uso_term = $wpdb->get_results("SELECT t.term_id, t.name, t.slug, tt.taxonomy FROM {$wpdb->terms} t JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id WHERE t.slug = 'uso' LIMIT 5");
+    if ($uso_term) {
+        echo "   POSIBLE CONFLICTO: Existe(n) termino(s) con slug 'uso':\n";
+        foreach ($uso_term as $ut) {
+            echo "     - {$ut->name} (tax: {$ut->taxonomy}, ID: {$ut->term_id})\n";
+        }
+    }
+
+    exit;
+}
+// ============================================================================
+// FIN TEMPORAL DIAGNÓSTICO
+// ============================================================================
+
 if ( ! function_exists( 'adrihosan_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
