@@ -52,8 +52,8 @@ Este es un tema hijo de WordPress/WooCommerce para la tienda **Adrihosan** (cer�
 
 El `functions.php` (~970 líneas) contiene:
 - Versión del tema (`_S_VERSION`)
-- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` con **29 cases**. Reduce CPU de 100% a ~20%.
-- **29 funciones `adrihosan_setup_*_cpu_fix()`** para cada categoría (hooks de WooCommerce)
+- **Controlador Maestro CPU** (`adrihosan_master_controller_cpu_fix`) - Un único `switch` por `cat_id` con **30 cases**. Reduce CPU de 100% a ~20%.
+- **30 funciones `adrihosan_setup_*_cpu_fix()`** para cada categoría (hooks de WooCommerce)
 - Theme setup, scripts, enqueue
 - **Cache de `doo_menu_cats()`** con transient (1 hora) - evita query pesada en cada página
 - `require` a 20 archivos de categorías en `inc/`
@@ -111,6 +111,7 @@ function adrihosan_master_controller_cpu_fix() {
         case 2377: // Azulejos Hexagonales Suelo  → adrihosan_setup_hexagonal_cpu_fix()
         case 4973: // Azulejos Imitación Cemento  → adrihosan_setup_imitacion_cemento_cpu_fix()
         case 2516: // Zellige                     → adrihosan_setup_zellige_cpu_fix()
+        case 2358: // Azulejos Antiguos y Vintage → adrihosan_setup_azulejos_antiguos_cpu_fix()
     }
 }
 ```
@@ -119,7 +120,7 @@ function adrihosan_master_controller_cpu_fix() {
 
 ---
 
-## Archivos de Categorías en `inc/` (20 archivos)
+## Archivos de Categorías en `inc/` (21 archivos)
 
 Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_inferior`. El controller/setup está en `functions.php`.
 
@@ -148,6 +149,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 | `category-hexagonal.php` | 2377 | Azulejos Hexagonales Suelo | 425985 |
 | `category-imitacion-cemento.php` | 4973 | Azulejos Imitación Cemento | 425985 |
 | `category-zellige.php` | 2516 | Zellige | **426510** |
+| `category-azulejos-antiguos.php` | 2358 | Azulejos Antiguos y Vintage | 425985 |
 
 ---
 
@@ -155,7 +157,7 @@ Cada archivo contiene SOLO las funciones `contenido_superior` + `contenido_infer
 
 | Widget ID | Nombre | Categorías que lo usan |
 |-----------|--------|------------------------|
-| **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2410, 1844, 2510, 4806, 4876, 4973 |
+| **425985** | Azulejos / Cerámica (general) | 62, 63, 66, 1789, 1790, 2082, 2083, 2093, 2160, 2245, 2358, 2410, 1844, 2510, 4806, 4876, 4973 |
 | **426058** | Baldosa Hidráulica | 4862, 4865, 4866, 4869 |
 | **426267** | Pavimentos / Suelos | 64 |
 | **426510** | Zellige | 2516 |
@@ -550,6 +552,12 @@ Usar entidades HTML (`&aacute;`, `&eacute;`, etc.) en PHP para evitar problemas 
   - Colores Lisos → enlaza al loop `#catalogo-15x15` (todos son lisos)
   - Pedir Muestras → enlaza a `/contacta-con-nosotros/`
 - **FIX Scroll pills externas**: Implementado `sessionStorage` en `category-common.js` para scroll al catálogo tras navegar a URL filtrada de FEP (el hash `#` no funciona con pretty URLs de FEP)
+- **NUEVA Categoría 2358 (Azulejos Antiguos y Vintage)**:
+  - `inc/category-azulejos-antiguos.php`: contenido superior (hero, trust bar, pills, consejo AdrIA, filtros) + inferior (bumper overlay, SEO estilos vintage/rústico/retro, usos, tendencias, FAQs, contacto)
+  - Case en master controller + setup con filtros legacy ocultos + `.doo-category-banner`
+  - `category-2358.css` con estilos completos (hero, trust bar, pills, bumper overlay, SEO, trends, responsive)
+  - Widget filtro: 425985 (Azulejos/Cerámica general)
+  - **Total: 30 categorías** gestionadas por el master controller
 
 ### 2026-02-26
 - **NUEVA Categoría 2516 (Zellige)**:
