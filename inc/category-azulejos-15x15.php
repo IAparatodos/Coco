@@ -65,9 +65,9 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/tono-blanco/" class="quick-nav-pill quick-nav-pill-featured">&#9898; Azulejo Blanco 15x15</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/tono-blanco/#catalogo-15x15" class="quick-nav-pill quick-nav-pill-featured">&#9898; Azulejo Blanco 15x15</a>
             <a href="#catalogo-15x15" class="quick-nav-pill">&#128204; Suelos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-15x15/estancia-cocina/#catalogo-15x15" class="quick-nav-pill">&#127859; Para Cocinas</a>
             <a href="#catalogo-15x15" class="quick-nav-pill">&#127912; Colores Lisos</a>
         </div>
     </section>
