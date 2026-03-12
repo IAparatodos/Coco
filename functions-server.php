@@ -665,8 +665,6 @@ function adrihosan_setup_azulejos_15x15_cpu_fix() {
 }
 
 // FIN CONTROLADOR MAESTRO
-// ============================================================================
-
 if ( ! function_exists( 'adrihosan_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
