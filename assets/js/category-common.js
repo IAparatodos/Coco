@@ -73,6 +73,16 @@
         if (tieneParametrosFiltro()) {
             setTimeout(scrollSuaveAlCatalogo, 500);
         }
+
+        // Scroll al cargar si la URL tiene un hash que apunta al cat&aacute;logo
+        var hash = window.location.hash;
+        if (hash && $(hash).length) {
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 120
+                }, 800);
+            }, 800);
+        }
     });
 
     // Scroll al hacer clic en el bot&oacute;n FILTRAR
