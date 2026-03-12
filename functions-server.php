@@ -667,25 +667,6 @@ function adrihosan_setup_azulejos_15x15_cpu_fix() {
 // FIN CONTROLADOR MAESTRO
 // ============================================================================
 
-// ============================================================================
-// FIX: Proteger URLs de filtro FEP rotas en Azulejos 15x15 (y otras)
-// El filtro "Uso" (pa_colocacion-azulejo) genera URLs con "ver-destino-*"
-// que causan error crítico en FEP. Redirigimos a la categoría base.
-// ============================================================================
-add_action('template_redirect', 'adrihosan_fix_fep_broken_filter_urls', 0);
-function adrihosan_fix_fep_broken_filter_urls() {
-    $uri = $_SERVER['REQUEST_URI'] ?? '';
-    // Detectar URLs con segmentos de filtro "ver-destino-" que causan crash
-    if (strpos($uri, '/ver-destino-') !== false && strpos($uri, 'categoria-producto/') !== false) {
-        // Extraer la URL base de la categoría (todo antes de /ver-destino-*)
-        $base_url = preg_replace('#/ver-destino-[^/]+/?$#', '/', $uri);
-        if ($base_url && $base_url !== $uri) {
-            wp_safe_redirect(home_url($base_url), 302);
-            exit;
-        }
-    }
-}
-
 if ( ! function_exists( 'adrihosan_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -866,13 +847,28 @@ if (is_admin()) {
 }
  
 function dw_scripts() {
+	// Cache doo_menu_cats() con transient (1 hora) - evita query de 1.496 categorías en cada página
+	$menu_cats = get_transient('adrihosan_menu_cats');
+	if (false === $menu_cats) {
+		$menu_cats = doo_menu_cats();
+		set_transient('adrihosan_menu_cats', $menu_cats, HOUR_IN_SECONDS);
+	}
+
 	wp_enqueue_script( 'dw-customizer', get_template_directory_uri() . '/js/dw-customizer.js', array(), _S_VERSION, true );
 	wp_localize_script('dw-customizer','var_cus', array(
 		'accordion' => get_option('dw-op-cetelem-accordion'),
-		'custom_menu_cats' => doo_menu_cats(),
+		'custom_menu_cats' => $menu_cats,
 	));
 }
 add_action( 'wp_enqueue_scripts', 'dw_scripts' );
+
+// Invalidar cache de doo_menu_cats() al crear/editar/eliminar categorías
+add_action('created_product_cat', 'adrihosan_clear_menu_cats_cache');
+add_action('edited_product_cat', 'adrihosan_clear_menu_cats_cache');
+add_action('delete_product_cat', 'adrihosan_clear_menu_cats_cache');
+function adrihosan_clear_menu_cats_cache() {
+	delete_transient('adrihosan_menu_cats');
+}
  
 /**
  * Custom fields for Page
