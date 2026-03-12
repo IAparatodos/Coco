@@ -829,6 +829,92 @@ function adrihosan_debug_fep_rewrite_rules() {
         }
     }
 
+    // 8. META DATA de los filter-fields "Uso" (426665 nuevo + 426014 viejo)
+    echo "\n8. FILTER-FIELD 426665 (Uso en widget 426655 Azulejos 15x15):\n";
+    $ff_new = get_post(426665);
+    if ($ff_new) {
+        echo "   post_title: {$ff_new->post_title}\n";
+        echo "   post_name (slug): {$ff_new->post_name}\n";
+        echo "   post_status: {$ff_new->post_status}\n";
+        echo "   post_parent: {$ff_new->post_parent}\n";
+        $meta_new = get_post_meta(426665);
+        echo "   META DATA:\n";
+        foreach ($meta_new as $mk => $mv) {
+            $val = is_array($mv) ? $mv[0] : $mv;
+            $unserialized = maybe_unserialize($val);
+            if (is_array($unserialized)) {
+                echo "     {$mk}: " . json_encode($unserialized) . "\n";
+            } else {
+                echo "     {$mk}: {$val}\n";
+            }
+        }
+    } else {
+        echo "   NO EXISTE\n";
+    }
+
+    echo "\n9. FILTER-FIELD 426014 (Uso viejo - el que colisiona):\n";
+    $ff_old = get_post(426014);
+    if ($ff_old) {
+        echo "   post_title: {$ff_old->post_title}\n";
+        echo "   post_name (slug): {$ff_old->post_name}\n";
+        echo "   post_status: {$ff_old->post_status}\n";
+        echo "   post_parent: {$ff_old->post_parent}\n";
+        $meta_old = get_post_meta(426014);
+        echo "   META DATA:\n";
+        foreach ($meta_old as $mk => $mv) {
+            $val = is_array($mv) ? $mv[0] : $mv;
+            $unserialized = maybe_unserialize($val);
+            if (is_array($unserialized)) {
+                echo "     {$mk}: " . json_encode($unserialized) . "\n";
+            } else {
+                echo "     {$mk}: {$val}\n";
+            }
+        }
+    } else {
+        echo "   NO EXISTE\n";
+    }
+
+    // 10. TODOS los filter-fields que usan pa_colocacion-azulejo
+    echo "\n10. TODOS los filter-fields con 'colocacion' en meta:\n";
+    $ff_colocacion = $wpdb->get_results("
+        SELECT p.ID, p.post_title, p.post_name, p.post_parent, p.post_status, pm.meta_key, pm.meta_value
+        FROM {$wpdb->posts} p
+        JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
+        WHERE p.post_type = 'filter-field'
+        AND pm.meta_value LIKE '%colocacion%'
+        ORDER BY p.ID
+    ");
+    if ($ff_colocacion) {
+        foreach ($ff_colocacion as $ffc) {
+            echo "   ID:{$ffc->ID} | title:{$ffc->post_title} | slug:{$ffc->post_name} | parent:{$ffc->post_parent} | status:{$ffc->post_status}\n";
+            echo "     {$ffc->meta_key}: {$ffc->meta_value}\n";
+        }
+    } else {
+        echo "   Ninguno encontrado\n";
+    }
+
+    // 11. URL que FEP generaria - simular
+    echo "\n11. TEST: URL que deberia funcionar segun los term slugs:\n";
+    $ff_meta = get_post_meta(426665);
+    $prefix = isset($ff_meta['_slug'][0]) ? $ff_meta['_slug'][0] : (isset($ff_meta['_prefix'][0]) ? $ff_meta['_prefix'][0] : 'DESCONOCIDO');
+    echo "   Prefix del filter-field 426665: {$prefix}\n";
+    echo "   URLs esperadas:\n";
+    foreach ($terms as $t) {
+        echo "     {$prefix}-{$t->slug} => .../azulejos-15x15/{$prefix}-{$t->slug}/\n";
+    }
+
+    // 12. Comprobar si el post_name del filter-field 426665 coincide con su prefix
+    echo "\n12. CONSISTENCIA SLUG vs PREFIX:\n";
+    if ($ff_new) {
+        echo "   post_name (lo que WordPress usa en URLs): {$ff_new->post_name}\n";
+        echo "   _slug meta (lo que FEP usa como prefix): {$prefix}\n";
+        if ($ff_new->post_name !== $prefix) {
+            echo "   DESINCRONIZADO <-- El slug del post NO coincide con el prefix de FEP\n";
+        } else {
+            echo "   OK - Coinciden\n";
+        }
+    }
+
     exit;
 }
 // ============================================================================
