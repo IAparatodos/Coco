@@ -69,9 +69,7 @@ function adrihosan_azulejos_antiguos_contenido_superior() {
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;os</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-rustico/" class="quick-nav-pill">&#129521; Estilo R&uacute;stico</a>
             <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="quick-nav-pill">&#127800; Hidr&aacute;ulico</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-vintage/" class="quick-nav-pill">&#128336; Vintage</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-biselado/" class="quick-nav-pill">&#9670; Biselado</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-basicos/" class="quick-nav-pill">&#9632; B&aacute;sicos</a>
+      
         </div>
     </section>
 
