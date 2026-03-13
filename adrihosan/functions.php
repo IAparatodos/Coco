@@ -109,6 +109,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4247: // Espejos Redondos
             adrihosan_setup_espejos_redondo_cpu_fix();
             break;
+        case 2358: // Azulejos Antiguos
+            adrihosan_setup_azulejos_antiguos_cpu_fix();
+            break;
     }
 }
 
@@ -403,6 +406,20 @@ function adrihosan_setup_espejos_redondo_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21);
+}
+
+function adrihosan_setup_azulejos_antiguos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_antiguos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_antiguos_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -1016,5 +1033,6 @@ require get_template_directory() . '/inc/category-porcelanico-marmol.php';    //
 require get_template_directory() . '/inc/category-azulejos-bano.php';        // Cat 1789
 require get_template_directory() . '/inc/category-azulejos-cocina.php';      // Cat 1790
 require get_template_directory() . '/inc/category-azulejos-exterior.php';    // Cat 2160
+require get_template_directory() . '/inc/category-azulejos-antiguos.php';    // Cat 2358
 require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
 
