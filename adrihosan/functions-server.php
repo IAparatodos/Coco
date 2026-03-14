@@ -1832,7 +1832,8 @@ function adrihosan_cargar_css_categoria() {
         $cache_key = 'adri_css_exists_' . $cat_id;
         $css_location = get_transient($cache_key);
 
-        if (false === $css_location) {
+        if (false === $css_location || $css_location === 'none') {
+            // Recalcular siempre si es 'none' (por si se ha subido un CSS nuevo)
             $css_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
             $css_path_root = get_stylesheet_directory() . '/category-' . $cat_id . '.css';
             $css_location = file_exists($css_path_assets) ? 'assets' : (file_exists($css_path_root) ? 'root' : 'none');
@@ -1861,7 +1862,7 @@ function adrihosan_cargar_css_categoria() {
             $parent_cache_key = 'adri_css_exists_' . $cat->parent;
             $parent_location = get_transient($parent_cache_key);
 
-            if (false === $parent_location) {
+            if (false === $parent_location || $parent_location === 'none') {
                 $parent_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat->parent . '.css';
                 $parent_path_root = get_stylesheet_directory() . '/category-' . $cat->parent . '.css';
                 $parent_location = file_exists($parent_path_assets) ? 'assets' : (file_exists($parent_path_root) ? 'root' : 'none');
