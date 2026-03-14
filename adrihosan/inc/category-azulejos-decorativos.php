@@ -11,7 +11,7 @@
 function adrihosan_azulejos_decorativos_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/azulejos-decorativos-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-decorativos-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -67,8 +67,8 @@ function adrihosan_azulejos_decorativos_contenido_superior() {
         <div class="quick-nav-wrapper">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocina</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;o</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/uso-exterior/" class="quick-nav-pill">&#127795; Para Exterior</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-estampado/" class="quick-nav-pill">&#128396; Dise&ntilde;os Estampados</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-tipo-suelo-porcelanico/" class="quick-nav-pill">&#127795; Para Exterior</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="quick-nav-pill">&#128396; Dise&ntilde;os Estampados</a>
             <a href="#bumper-personalizado" class="quick-nav-pill quick-nav-pill-highlight">&#11088; Hazlos Personalizados</a>
         </div>
     </section>
@@ -179,7 +179,7 @@ function adrihosan_azulejos_decorativos_contenido_inferior() {
             <h2>Tendencias en Azulejos Decorativos</h2>
             <p>Los azulejos decorativos est&aacute;n viviendo una &eacute;poca dorada. Desde las texturas 3D que juegan con la luz hasta los estampados maximalistas que rompen con la monoton&iacute;a del minimalismo. Combina diferentes estilos para crear espacios &uacute;nicos con personalidad.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-estampado/" class="trend-link">Estampados</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="trend-link">Estampados</a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-geometrico/" class="trend-link">Geom&eacute;tricos</a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-floral/" class="trend-link">Florales</a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-relieve/" class="trend-link">Relieve 3D</a>

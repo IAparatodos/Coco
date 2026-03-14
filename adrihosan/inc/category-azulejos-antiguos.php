@@ -11,13 +11,13 @@
 function adrihosan_azulejos_antiguos_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-decorativos-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-antiguos-Vintage-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
-                <span>Azulejos Decorativos</span>
+                <span>Azulejos Antiguos y Vintage</span>
             </nav>
             <h1>Azulejos Vintage y Antiguos</h1>
             <p>El encanto del pasado con la resistencia de hoy. Colecciones de azulejos antiguos, vintage y r&uacute;sticos fabricados en cer&aacute;mica de alta calidad. Ideal para dar alma a tu reforma sin renunciar a la durabilidad moderna.</p>
@@ -65,10 +65,10 @@ function adrihosan_azulejos_antiguos_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;os</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-tipo-suelo-porcelanico/" class="quick-nav-pill">&#127966; Exterior</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="quick-nav-pill">&#127800; Dise&ntilde;os Estampados</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;os</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-rustico/" class="quick-nav-pill">&#129521; Estilo R&uacute;stico</a>
+            <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="quick-nav-pill">&#127800; Hidr&aacute;ulico</a>
       
         </div>
     </section>
@@ -169,10 +169,10 @@ function adrihosan_azulejos_antiguos_contenido_inferior() {
             <h2>Tendencias en Azulejos Vintage</h2>
             <p>El estilo retro vuelve con fuerza. Desde los azulejos desgastados que simulan el paso del tiempo, hasta los patrones hidr&aacute;ulicos multicolor que recuerdan a las casas se&ntilde;oriales valencianas. Combina diferentes estilos para crear espacios &uacute;nicos.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-cocina/" class="trend-link">Cocina</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-bano/" class="trend-link">Ba&ntilde;o</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-tipo-suelo-porcelanico/" class="trend-link">Exterior</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="trend-link">Estampados</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-vintage/" class="trend-link">Vintage</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-rustico/" class="trend-link">R&uacute;stico</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-biselado/" class="trend-link">Biselado</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/ver-estilo-basicos/" class="trend-link">B&aacute;sicos</a>
             </div>
         </div>
     </section>
