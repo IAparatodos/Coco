@@ -170,7 +170,7 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="trend-link">Efecto M&aacute;rmol</a>
                 <a href="#encimeras-techlam" class="trend-link">Encimeras</a>
                 <a href="#catalogo-techlam" class="trend-link">Fachadas</a>
-                <a href="#" class="trend-link">Extrafino 3mm</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/esp-techlam-3-mm/" class="trend-link">Extrafino 3mm</a>
             </div>
         </div>
     </section>
