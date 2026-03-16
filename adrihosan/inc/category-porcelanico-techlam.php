@@ -64,10 +64,10 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/uso-encimera/" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm)</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/uso-fachada/" class="quick-nav-pill">&#127970; Para Fachadas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/espesor-3mm/" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/ver-estilo-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
+            <a href="#" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm)</a>
+            <a href="#" class="quick-nav-pill">&#127970; Para Fachadas</a>
+            <a href="#" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
+            <a href="#" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
         </div>
     </section>
 
@@ -114,7 +114,7 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
     <section class="bumper-video-section adrihosan-full-width-block" id="video-techlam">
         <div class="bumper-video-wrapper">
             <div class="bumper-video-player">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_TECHLAM" title="Pruebas de resistencia Techlam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/D4iOxomxMk8" title="Pruebas de resistencia Techlam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="bumper-video-text">
                 <h2>La tecnolog&iacute;a detr&aacute;s del porcel&aacute;nico extrafino</h2>
@@ -167,10 +167,10 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
             <h2>Colecciones Destacadas de Techlam</h2>
             <p>Desde los cl&aacute;sicos efecto m&aacute;rmol hasta los acabados industriales en cemento y &oacute;xido. Techlam ofrece una gama premium pensada para proyectos que buscan la excelencia.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/ver-estilo-marmol/" class="trend-link">Efecto M&aacute;rmol</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/uso-encimera/" class="trend-link">Encimeras</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/uso-fachada/" class="trend-link">Fachadas</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico-techlam/espesor-3mm/" class="trend-link">Extrafino 3mm</a>
+                <a href="#" class="trend-link">Efecto M&aacute;rmol</a>
+                <a href="#" class="trend-link">Encimeras</a>
+                <a href="#" class="trend-link">Fachadas</a>
+                <a href="#" class="trend-link">Extrafino 3mm</a>
             </div>
         </div>
     </section>
