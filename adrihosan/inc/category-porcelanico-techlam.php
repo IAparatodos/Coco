@@ -64,7 +64,7 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="#encimeras-techlam" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm)</a>
+            <a href="#encimeras-techlam" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm y 20mm)</a>
             <a href="#catalogo-techlam" class="quick-nav-pill">&#127970; Para Fachadas</a>
             <a href="#" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
@@ -73,7 +73,7 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
 
     <!-- 4. CONSEJO ADRIA (Filtros) -->
     <div class="adria-tip-box">
-        <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Espesor</strong> (3mm para paredes, 5mm para suelos, 12mm para encimeras), <strong>Acabado</strong> (Mate, Pulido, Satinado) y <strong>Color</strong> para encontrar tu l&aacute;mina Techlam ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Espesor</strong> (3mm para paredes, 5mm para suelos, 12mm y 20mm para encimeras), <strong>Acabado</strong> (Mate, Pulido, Satinado) y <strong>Color</strong> para encontrar tu l&aacute;mina Techlam ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
@@ -145,7 +145,7 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
                 <div class="material-card">
                     <div class="material-icon">&#128298;</div>
                     <h3>Encimeras de Cocina</h3>
-                    <p>Techlam Top (12mm) ofrece la est&eacute;tica del m&aacute;rmol natural sin su fragilidad. Resistente al calor directo, a las rayaduras y a las manchas. La alternativa premium al Silestone y al cuarzo compacto.</p>
+                    <p>Techlam Top (12mm y 20mm) ofrece la est&eacute;tica del m&aacute;rmol natural sin su fragilidad. Resistente al calor directo, a las rayaduras y a las manchas. La alternativa premium al Silestone y al cuarzo compacto.</p>
                 </div>
                 <div class="material-card">
                     <div class="material-icon">&#127970;</div>
@@ -216,7 +216,7 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
         <div class="encimeras-cta-wrapper">
             <div class="encimeras-cta-badge">Servicio exclusivo Comunidad Valenciana</div>
             <h2>Encimeras Techlam Top con Instalaci&oacute;n Incluida</h2>
-            <p>Nuestro servicio de encimeras Techlam Top (12mm) es exclusivo para la <strong>Comunidad Valenciana</strong> e incluye siempre la <strong>instalaci&oacute;n profesional</strong>: medici&oacute;n, corte a medida, mecanizado de huecos (vitro, fregadero) y montaje en tu cocina o ba&ntilde;o. Sin sorpresas.</p>
+            <p>Nuestro servicio de encimeras Techlam Top (12mm y 20mm) es exclusivo para la <strong>Comunidad Valenciana</strong> e incluye siempre la <strong>instalaci&oacute;n profesional</strong>: medici&oacute;n, corte a medida, mecanizado de huecos (vitro, fregadero) y montaje en tu cocina o ba&ntilde;o. Sin sorpresas.</p>
             <div class="encimeras-cta-features">
                 <div class="encimeras-feature">
                     <span>&#128207;</span>
