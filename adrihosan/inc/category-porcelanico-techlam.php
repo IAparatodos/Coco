@@ -66,7 +66,7 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
         <div class="quick-nav-wrapper">
             <a href="#encimeras-techlam" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm y 20mm)</a>
             <a href="#catalogo-techlam" class="quick-nav-pill">&#127970; Para Fachadas</a>
-            <a href="#" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/esp-techlam-3-mm/" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
         </div>
     </section>
