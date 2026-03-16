@@ -64,10 +64,10 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="#" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm)</a>
-            <a href="#" class="quick-nav-pill">&#127970; Para Fachadas</a>
+            <a href="#encimeras-techlam" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm)</a>
+            <a href="#catalogo-techlam" class="quick-nav-pill">&#127970; Para Fachadas</a>
             <a href="#" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
-            <a href="#" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
         </div>
     </section>
 
@@ -167,9 +167,9 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
             <h2>Colecciones Destacadas de Techlam</h2>
             <p>Desde los cl&aacute;sicos efecto m&aacute;rmol hasta los acabados industriales en cemento y &oacute;xido. Techlam ofrece una gama premium pensada para proyectos que buscan la excelencia.</p>
             <div class="trends-links">
-                <a href="#" class="trend-link">Efecto M&aacute;rmol</a>
-                <a href="#" class="trend-link">Encimeras</a>
-                <a href="#" class="trend-link">Fachadas</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="trend-link">Efecto M&aacute;rmol</a>
+                <a href="#encimeras-techlam" class="trend-link">Encimeras</a>
+                <a href="#catalogo-techlam" class="trend-link">Fachadas</a>
                 <a href="#" class="trend-link">Extrafino 3mm</a>
             </div>
         </div>
@@ -208,6 +208,30 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE ENCIMERAS TECHLAM - SERVICIO EXCLUSIVO COMUNIDAD VALENCIANA -->
+    <section class="encimeras-cta-section adrihosan-full-width-block" id="encimeras-techlam">
+        <div class="encimeras-cta-wrapper">
+            <div class="encimeras-cta-badge">Servicio exclusivo Comunidad Valenciana</div>
+            <h2>Encimeras Techlam Top con Instalaci&oacute;n Incluida</h2>
+            <p>Nuestro servicio de encimeras Techlam Top (12mm) es exclusivo para la <strong>Comunidad Valenciana</strong> e incluye siempre la <strong>instalaci&oacute;n profesional</strong>: medici&oacute;n, corte a medida, mecanizado de huecos (vitro, fregadero) y montaje en tu cocina o ba&ntilde;o. Sin sorpresas.</p>
+            <div class="encimeras-cta-features">
+                <div class="encimeras-feature">
+                    <span>&#128207;</span>
+                    <span>Medici&oacute;n a domicilio</span>
+                </div>
+                <div class="encimeras-feature">
+                    <span>&#128296;</span>
+                    <span>Corte y mecanizado</span>
+                </div>
+                <div class="encimeras-feature">
+                    <span>&#9989;</span>
+                    <span>Instalaci&oacute;n incluida</span>
+                </div>
+            </div>
+            <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="encimeras-cta-btn">Pedir Presupuesto de Encimera</a>
         </div>
     </section>
 
