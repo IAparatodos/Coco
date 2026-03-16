@@ -118,7 +118,7 @@ function adrihosan_azulejos_hexagonales_contenido_inferior() {
             <div class="bumper-content">
                 <h2>Crea transiciones &uacute;nicas en tu suelo</h2>
                 <p>Las cer&aacute;micas hexagonales son perfectas para fusionar ambientes, como la cocina abierta al sal&oacute;n, combin&aacute;ndolas con suelos de imitaci&oacute;n madera sin cortes rectos.</p>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/wood/" class="bumper-btn">Ver Suelos de Madera compatibles</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" class="bumper-btn">Ver Suelos de Madera compatibles</a>
             </div>
         </div>
     </section>
