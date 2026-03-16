@@ -241,9 +241,9 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en porcel&aacute;nico Techlam">
                 <div>
-                    <h2>Soy Ricardo. &iquest;Necesitas presupuesto para tu proyecto con Techlam?
-                        <span>Te asesoro sin compromiso.</span>
-                    </h2>
+                    <h2>Soy Ricardo.</h2>
+                    <h3>&iquest;Necesitas presupuesto para tu proyecto con Techlam?</h3>
+                    <p>Te asesoro sin compromiso.</p>
                 </div>
             </div>
             <div class="contact-options-grid-common">
@@ -262,6 +262,10 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20informaci%C3%B3n%20sobre%20porcel%C3%A1nico%20Techlam" class="contact-option-common">
                     <div class="icon">&#128172;</div>
                     <div class="label">Whatsapp</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common">
+                    <div class="icon">&#128221;</div>
+                    <div class="label">Formulario</div>
                 </a>
             </div>
         </div>
