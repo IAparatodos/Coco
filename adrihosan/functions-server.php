@@ -157,6 +157,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 310: // Porcel&aacute;nico Techlam
             adrihosan_setup_porcelanico_techlam_cpu_fix();
             break;
+        case 2482: // Cer&aacute;mica Vives
+            adrihosan_setup_ceramica_vives_cpu_fix();
+            break;
     }
 }
 
@@ -590,6 +593,18 @@ function adrihosan_setup_porcelanico_techlam_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_techlam_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_techlam_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ceramica_vives_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
+    });
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -1639,6 +1654,7 @@ require get_template_directory() . '/inc/category-azulejos-exterior.php';
 require get_template_directory() . '/inc/category-piscinas.php';
 require get_template_directory() . '/inc/category-pavimentos.php';
 require get_template_directory() . '/inc/category-porcelanico-marmol.php';
+require get_template_directory() . '/inc/category-ceramica-vives.php';
 
 /* ========================================================================== */
 /* ESTILOS FINALES PARA LA TABLA DE COMPARACIÓN (MÓVIL) */
