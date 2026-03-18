@@ -15,11 +15,21 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-SemiBold.woff2" crossorigin>
-	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Regular.woff2" crossorigin>
-	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Bold.woff2" crossorigin>
-	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Light.woff2" crossorigin>
-	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Medium.woff2" crossorigin>
+	<?php
+	$font_uri = get_template_directory_uri() . '/fonts/';
+	// Ficha de producto: solo precargar SemiBold (título, precio) y Regular (texto)
+	// Ahorro ~115 KiB en móvil al no precargar Light, Medium, Bold
+	if ( is_singular('product') ) : ?>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-SemiBold.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Regular.woff2" crossorigin>
+	<?php else : ?>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-SemiBold.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Regular.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Bold.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Light.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Medium.woff2" crossorigin>
+	<?php endif; ?>
+	<link rel="preconnect" href="https://mpc2-prod-26-is5qnl632q-uc.a.run.app" crossorigin>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Critical CSS: desbloquea LCP (header + hero h1) mientras style.css carga async -->

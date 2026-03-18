@@ -72,23 +72,25 @@
 // }
 
 function adrihosan_cargar_css_categoria() {
-    
-    // Siempre cargar el CSS base global
-    wp_enqueue_style(
-        'adrihosan-base-global',
-        get_stylesheet_directory_uri() . '/assets/css/base-global.css',
-        array(),
-        '1.0.0'
-    );
-    
-    // Siempre cargar los fixes móviles
-    wp_enqueue_style(
-        'adrihosan-mobile-fixes',
-        get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
-        array('adrihosan-base-global'),
-        '1.0.0'
-    );
-    
+
+    // base-global.css y mobile-fixes.css solo usan selectores .tax-product_cat.term-XXXX
+    // → No cargar en fichas de producto individual (mejora LCP: -2 CSS bloqueantes)
+    if (!is_singular('product')) {
+        wp_enqueue_style(
+            'adrihosan-base-global',
+            get_stylesheet_directory_uri() . '/assets/css/base-global.css',
+            array(),
+            '1.0.0'
+        );
+
+        wp_enqueue_style(
+            'adrihosan-mobile-fixes',
+            get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
+            array('adrihosan-base-global'),
+            '1.0.0'
+        );
+    }
+
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
@@ -156,6 +158,36 @@ function adrihosan_defer_non_critical_css($tag, $handle, $href) {
     return $tag;
 }
 add_filter('style_loader_tag', 'adrihosan_defer_non_critical_css', 10, 3);
+
+/**
+ * Ficha de producto: diferir TODOS los CSS encolados como non-render-blocking.
+ * El critical CSS inline en header.php ya cubre todo el above-the-fold:
+ * header, breadcrumb, product_title, gallery, price, box-price, add-to-cart.
+ * Esto elimina ~15 CSS bloqueantes → mejora LCP de 11.4s a ~3-4s estimado.
+ */
+function adrihosan_defer_all_css_on_product($tag, $handle, $href) {
+    if (is_admin() || !is_singular('product')) {
+        return $tag;
+    }
+
+    // Estos ya tienen su propio filtro async, no tocar
+    $skip = array('adrihosan-style', 'adrihosan-fonts', 'critical-css');
+    if (in_array($handle, $skip, true)) {
+        return $tag;
+    }
+
+    // Convertir a non-blocking: media="print" + onload="this.media='all'"
+    if (strpos($tag, "media='all'") !== false) {
+        $tag = str_replace(
+            "media='all'",
+            "media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"",
+            $tag
+        );
+    }
+
+    return $tag;
+}
+add_filter('style_loader_tag', 'adrihosan_defer_all_css_on_product', 15, 3);
 
 // Preservar filtros de FE Pro en la paginación de WooCommerce
 add_filter( 'woocommerce_pagination_args', 'adrihosan_preservar_filtros_en_paginacion' );
