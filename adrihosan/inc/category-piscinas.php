@@ -63,23 +63,23 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
             <div class="guia-color-agua" style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #87CEEB, #00CED1); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Blancos/Arena</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul caribe/celeste</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Blancos/Arena</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul caribe/celeste</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4169E1, #000080); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Grises</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul profundo/marino</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Grises</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul profundo/marino</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #3CB371, #228B22); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Verdes/Piedra</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto lago natural/tropical</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Verdes/Piedra</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto lago natural/tropical</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2F4F4F, #1a1a2e); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Negros/Antracita</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto espejo moderno</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Negros/Antracita</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto espejo moderno</p>
                 </div>
             </div>
         </div>
@@ -90,25 +90,25 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
         <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center;">
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">🛡️</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Resistencia</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Soporta cambios bruscos de temperatura (hielo/deshielo)</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Resistencia</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Soporta cambios bruscos de temperatura (hielo/deshielo)</p>
             </div>
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">👣</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Seguridad</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Certificación antideslizante obligatoria para zonas húmedas</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Seguridad</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Certificación antideslizante obligatoria para zonas húmedas</p>
             </div>
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">🧼</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Higiene</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Superficies no porosas que evitan algas y bacterias</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Higiene</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Superficies no porosas que evitan algas y bacterias</p>
             </div>
         </div>
     </section>
 
     <!-- 5. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> El porcel&aacute;nico permite usar el mismo material dentro y fuera del agua, creando continuidad visual desde la terraza hasta el vaso de la piscina.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> El porcel&aacute;nico permite usar el mismo material dentro y fuera del agua, creando continuidad visual desde la terraza hasta el vaso de la piscina.</p>
     </div>
 
     <!-- 6. DESTINO MÓVIL + WIDGET -->
@@ -131,7 +131,7 @@ function adrihosan_azulejos_piscinas_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

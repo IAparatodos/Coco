@@ -38,8 +38,8 @@ function adrihosan_ceramica_superior_final() {
         text-align: center;">
         
         <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Cerámica: El Origen de tu Reforma</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
+            <h1 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Cerámica: El Origen de tu Reforma</h1>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-ceramica-foco" class="btn-adri-master">Ver Catálogo Completo</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
@@ -48,7 +48,7 @@ function adrihosan_ceramica_superior_final() {
     </section>
 
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Para qué estancia lo buscas?</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">¿Para qué estancia lo buscas?</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
@@ -70,7 +70,7 @@ function adrihosan_ceramica_superior_final() {
     </div>
 
     <div style="padding-top: 60px; margin-bottom:50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el efecto visual</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">Elige el efecto visual</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
@@ -92,7 +92,7 @@ function adrihosan_ceramica_superior_final() {
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;">
             <strong>¡Consejo de AdrIA!</strong> Para encontrar tu azulejo ideal, selecciona las características y no olvides pinchar en el botón <strong>"FILTRAR"</strong>.
         </p>
     </div>
@@ -105,7 +105,7 @@ function adrihosan_ceramica_superior_final() {
     </div>
 
     <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Selección por Colecciones y Formatos</h4>
+        <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Selección por Colecciones y Formatos</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/" class="btn-adri-master">Suelo Porcelánico</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="btn-adri-master">Gran Formato</a>
@@ -118,7 +118,7 @@ function adrihosan_ceramica_superior_final() {
     </div>
 
     <div id="catalogo-ceramica-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Completo</h2>
+        <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Completo</h2>
     </div>
 
 
@@ -130,7 +130,7 @@ function adrihosan_ceramica_superior_final() {
  */
 function adrihosan_ceramica_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 62 ); ?>
         </div>
@@ -206,8 +206,8 @@ function adrihosan_porcelanico_superior_final() {
         text-align: center;">
         
         <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Gres Porcelánico: La Base de tu Hogar</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Resistencia extrema, diseño impecable y mantenimiento cero. El suelo definitivo.</p>
+            <h1 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Gres Porcelánico: La Base de tu Hogar</h1>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Resistencia extrema, diseño impecable y mantenimiento cero. El suelo definitivo.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-porcelanico-foco" class="btn-adri-master">Ver Catálogo</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Uso</a>
@@ -216,7 +216,7 @@ function adrihosan_porcelanico_superior_final() {
     </section>
 
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-cocina/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
@@ -238,7 +238,7 @@ function adrihosan_porcelanico_superior_final() {
     </div>
 
     <div style="padding-top: 60px; margin-bottom:50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Efecto</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">Elige el Efecto</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
@@ -260,7 +260,7 @@ function adrihosan_porcelanico_superior_final() {
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;">
             <strong>¡Consejo de AdrIA!</strong> ¿Buscas un suelo sin juntas visibles? Selecciona el filtro <strong>"Rectificado"</strong> y pulsa <strong>"FILTRAR"</strong>.
         </p>
     </div>
@@ -271,7 +271,7 @@ function adrihosan_porcelanico_superior_final() {
     <div id="fe-products-wrapper" class="filter-container-master"><?php echo do_shortcode('[fe_widget id="426770"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Colecciones Especiales</h4>
+        <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Colecciones Especiales</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="btn-adri-master">Gran Formato</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="btn-adri-master">Porcelánico Extrafino</a>
@@ -282,11 +282,11 @@ function adrihosan_porcelanico_superior_final() {
     </div>
 
     <div id="catalogo-porcelanico-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo de Gres Porcelánico</h2>
+        <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo de Gres Porcelánico</h2>
     </div>
 
     <style>
-        .btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins','Poppins Fallback',sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; }
         
         #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover {
@@ -309,7 +309,7 @@ function adrihosan_porcelanico_superior_final() {
                 width: 90% !important;
                 background: #4dd2d0 !important;
                 color: #fff !important;
-                font-family: 'Poppins', sans-serif !important;
+                font-family: 'Poppins','Poppins Fallback',sans-serif !important;
                 font-weight: 800 !important;
                 text-transform: uppercase !important;
                 border-radius: 4px !important;
@@ -365,13 +365,13 @@ function adrihosan_porcelanico_superior_final() {
  */
 function adrihosan_porcelanico_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
 
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
+    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins','Poppins Fallback',sans-serif; border-top: 1px solid #eee;">
         <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
             <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gres Porcelánico</h2>
             <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
@@ -395,8 +395,8 @@ function adrihosan_porcelanico_inferior_final() {
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" 
                      style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
                 <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Dudas sobre tu reforma?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Te ayudo a elegir el porcelánico que mejor se adapta a tu vida. Llámame al <strong>96 195 71 36</strong>.</p>
+                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins','Poppins Fallback',sans-serif;">¿Dudas sobre tu reforma?</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins','Poppins Fallback',sans-serif; opacity: 0.9;">Soy Ricardo. Te ayudo a elegir el porcelánico que mejor se adapta a tu vida. Llámame al <strong>96 195 71 36</strong>.</p>
                 </div>
             </div>
             <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
@@ -418,8 +418,8 @@ function adrihosan_gran_formato_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
         <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Porcelánico Gran Formato</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">La revolución del espacio. Superficies continuas, mínimas juntas y máxima elegancia.</p>
+            <h1 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Porcelánico Gran Formato</h1>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">La revolución del espacio. Superficies continuas, mínimas juntas y máxima elegancia.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-xl-foco" class="btn-adri-master">Ver Catálogo XL</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
@@ -428,7 +428,7 @@ function adrihosan_gran_formato_superior_final() {
     </section>
 
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Estilo</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">Elige el Estilo</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/estilo-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
@@ -438,14 +438,14 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Para encontrar tu mosaico ideal, selecciona las características que buscas y no olvides pulsar el botón <strong>"FILTRAR"</strong> para ver los resultados.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Para encontrar tu mosaico ideal, selecciona las características que buscas y no olvides pulsar el botón <strong>"FILTRAR"</strong> para ver los resultados.</p>
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
+        <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
             <a href="https://www.adrihosan.com/atributo/formato-azulejo/60x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">60x120 cm</a>
             <a href="https://www.adrihosan.com/atributo/formato-azulejo/120x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">120x120 cm</a>
@@ -457,22 +457,22 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="catalogo-xl-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Gran Formato</h2>
+        <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Gran Formato</h2>
     </div>
 
-    <style>.btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); } .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; } #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <style>.btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins','Poppins Fallback',sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); } .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; } #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins','Poppins Fallback',sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
     <script>(function($){"use strict";function moverBotonFiltroXL(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-gran-formato');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR GRAN FORMATO');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroXL);setTimeout(moverBotonFiltroXL,1500);function adrihosanFuerzaScrollXL(){var $dest=$('#catalogo-xl-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollXL,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollXL,500);});})(jQuery);</script>
     <?php
 }
 
 function adrihosan_gran_formato_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
+    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins','Poppins Fallback',sans-serif; border-top: 1px solid #eee;">
         <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
             <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gran Formato</h2>
             <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Es difícil la instalación?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Requiere profesionales. Usa doble encolado y cuñas de nivelación.</p></div>
@@ -491,8 +491,8 @@ function adrihosan_extrafino_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.50), rgba(16, 46, 53, 0.50)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
         <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Porcelánico Extrafino: Reforma Sin Escombros</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Cambia tu suelo sin levantar el antiguo. Máxima dureza en mínimo espesor (3mm, 5mm, 6mm).</p>
+            <h1 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Porcelánico Extrafino: Reforma Sin Escombros</h1>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Cambia tu suelo sin levantar el antiguo. Máxima dureza en mínimo espesor (3mm, 5mm, 6mm).</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-extrafino-foco" class="btn-adri-master">Ver Catálogo</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
@@ -501,7 +501,7 @@ function adrihosan_extrafino_superior_final() {
     </section>
 
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Acabado de tu Reforma</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">Elige el Acabado de tu Reforma</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
@@ -511,14 +511,14 @@ function adrihosan_extrafino_superior_final() {
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el acabado y espesor que necesitas, y recuerda pulsar <strong>"FILTRAR"</strong> para ver los porcelánicos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el acabado y espesor que necesitas, y recuerda pulsar <strong>"FILTRAR"</strong> para ver los porcelánicos disponibles.</p>
     </div>
 
     <div id="destino-filtro-adria-extrafino" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <div id="catalogo-extrafino-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
+        <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
     </div>
 
 
@@ -527,12 +527,12 @@ function adrihosan_extrafino_superior_final() {
 
 function adrihosan_extrafino_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
+    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins','Poppins Fallback',sans-serif; border-top: 1px solid #eee;">
         <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
             <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Lámina Porcelánica</h2>
             <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué espesor debo elegir?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Para paredes 3mm. Para suelos (pavimento), recomendamos 5mm o 6mm.</p></div>
@@ -543,8 +543,8 @@ function adrihosan_extrafino_inferior_final() {
             <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
                 <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Dudas técnicas?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. El extrafino requiere una instalación precisa. Llámame al <strong>96 195 71 36</strong>.</p>
+                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins','Poppins Fallback',sans-serif;">¿Dudas técnicas?</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins','Poppins Fallback',sans-serif; opacity: 0.9;">Soy Ricardo. El extrafino requiere una instalación precisa. Llámame al <strong>96 195 71 36</strong>.</p>
                 </div>
             </div>
             <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
@@ -566,8 +566,8 @@ function adrihosan_metro_superior_final() {
     ?>
     <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.40), rgba(16, 46, 53, 0.40)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-metro-cocina-adrihosan.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
         <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Azulejo Metro: El Icono del Diseño</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Del metro de París a tu hogar. El revestimiento biselado que aporta luz, carácter y un estilo atemporal.</p>
+            <h1 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Azulejo Metro: El Icono del Diseño</h1>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Del metro de París a tu hogar. El revestimiento biselado que aporta luz, carácter y un estilo atemporal.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-metro-foco" class="btn-adri-master">Ver Colección</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Ver Colores</a>
@@ -576,7 +576,7 @@ function adrihosan_metro_superior_final() {
     </section>
 
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige tu Estilo</h2>
+        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins','Poppins Fallback',sans-serif; margin-bottom:30px; font-weight: 800;">Elige tu Estilo</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=blanco" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-blanco-biselado.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Blanco Clásico</h3></a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=negro" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-negro-mate.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Negro Industrial</h3></a>
@@ -586,14 +586,14 @@ function adrihosan_metro_superior_final() {
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el color, formato o acabado que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el color, formato o acabado que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
     </div>
 
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>
+        <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=7-5x15" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">7.5x15 cm</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x20" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">10x20 cm</a>
@@ -605,7 +605,7 @@ function adrihosan_metro_superior_final() {
     </div>
 
     <div id="catalogo-metro-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Colección Azulejo Metro</h2>
+        <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-weight: 800; color: #102e35; text-transform: uppercase;">Colección Azulejo Metro</h2>
     </div>
 
 
@@ -614,12 +614,12 @@ function adrihosan_metro_superior_final() {
 
 function adrihosan_metro_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
+    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins','Poppins Fallback',sans-serif; border-top: 1px solid #eee;">
         <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
             <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Azulejo Metro</h2>
             

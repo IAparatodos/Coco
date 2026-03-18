@@ -1,3 +1,13 @@
+/* Fallback con métricas ajustadas para eliminar CLS durante font-swap */
+@font-face {
+	font-family: 'Poppins Fallback';
+	src: local('Arial');
+	size-adjust: 113.07%;
+	ascent-override: 92%;
+	descent-override: 23%;
+	line-gap-override: 0%;
+}
+
 @font-face {
 	font-family: 'Poppins';
 	src: url('Poppins-Bold.woff2') format('woff2'),

@@ -82,7 +82,7 @@ function adrihosan_escama_pez_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
