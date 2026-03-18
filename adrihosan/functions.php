@@ -19,6 +19,54 @@ if ( ! defined( '_S_VERSION' ) ) {
 // POR una sola llamada centralizada -> CPU baja de 100% a 20-30%
 // ============================================================================
 
+// PASO 1 (prioridad 0): Cargar SOLO el archivo PHP de la categoría visitada.
+// En páginas que no son categoría de producto, no se carga ninguno (0 archivos).
+// En una categoría, se carga solo 1 archivo en vez de 20.
+add_action('template_redirect', 'adrihosan_lazy_load_category_file', 0);
+function adrihosan_lazy_load_category_file() {
+    if (!is_product_category()) {
+        return;
+    }
+
+    $cat_id = get_queried_object_id();
+    $tpl = get_template_directory();
+
+    // Mapa: ID de categoría => archivo PHP que contiene sus funciones de contenido
+    $category_files = array(
+        2082 => '/inc/category-imitacion-hidraulico.php',
+        2083 => '/inc/category-bano-imitacion.php',
+        4876 => '/inc/category-cocina-imitacion.php',
+        102  => '/inc/category-espejos.php',
+        4213 => '/inc/category-espejos.php',
+        4247 => '/inc/category-espejos.php',
+        2626 => '/inc/category-camerinos.php',
+        4564 => '/inc/category-pilar-bh.php',
+        4806 => '/inc/category-paredes.php',
+        4862 => '/inc/category-hidraulica-original.php',
+        4865 => '/inc/category-pilar-bano.php',
+        4866 => '/inc/category-pilar-cocina.php',
+        4869 => '/inc/category-pilar-exterior.php',
+        2209 => '/inc/category-wood.php',
+        62   => '/inc/category-ceramica-porcelanico.php',
+        2410 => '/inc/category-ceramica-porcelanico.php',
+        1844 => '/inc/category-ceramica-porcelanico.php',
+        2510 => '/inc/category-ceramica-porcelanico.php',
+        2093 => '/inc/category-ceramica-porcelanico.php',
+        63   => '/inc/category-azulejos.php',
+        64   => '/inc/category-pavimentos.php',
+        66   => '/inc/category-piscinas.php',
+        2245 => '/inc/category-porcelanico-marmol.php',
+        1789 => '/inc/category-azulejos-bano.php',
+        1790 => '/inc/category-azulejos-cocina.php',
+        2160 => '/inc/category-azulejos-exterior.php',
+    );
+
+    if (isset($category_files[$cat_id])) {
+        require_once $tpl . $category_files[$cat_id];
+    }
+}
+
+// PASO 2 (prioridad 1): Configurar hooks de WooCommerce para la categoría activa.
 add_action('template_redirect', 'adrihosan_master_controller_cpu_fix', 1);
 function adrihosan_master_controller_cpu_fix() {
     // Solo procesar en categorías de productos
@@ -990,31 +1038,12 @@ add_action( 'template_redirect', function() {
 
  
 // =============================================================================
-// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Modularizado)
+// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Lazy-Load)
 // =============================================================================
-// Cada archivo contiene el controller + contenido_superior + contenido_inferior
-// de su categoría correspondiente.
+// Los archivos category-*.php se cargan SOLO cuando se visita su categoría,
+// desde adrihosan_lazy_load_category_file() (prioridad 0 en template_redirect).
+// Esto evita parsear 20 archivos PHP en páginas que no los necesitan.
 // =============================================================================
 
-require get_template_directory() . '/inc/category-imitacion-hidraulico.php';  // Cat 2082
-require get_template_directory() . '/inc/category-bano-imitacion.php';        // Cat 2083
-require get_template_directory() . '/inc/category-cocina-imitacion.php';      // Cat 4876
-require get_template_directory() . '/inc/category-espejos.php';              // Cats 102, 4213, 4247
-require get_template_directory() . '/inc/category-camerinos.php';            // Cat 2626
-require get_template_directory() . '/inc/category-pilar-bh.php';             // Cat 4564
-require get_template_directory() . '/inc/category-paredes.php';              // Cat 4806
-require get_template_directory() . '/inc/category-hidraulica-original.php';  // Cat 4862
-require get_template_directory() . '/inc/category-pilar-bano.php';           // Cat 4865
-require get_template_directory() . '/inc/category-pilar-cocina.php';         // Cat 4866
-require get_template_directory() . '/inc/category-pilar-exterior.php';       // Cat 4869
-require get_template_directory() . '/inc/category-wood.php';                 // Cat 2209 + CSS fix
-require get_template_directory() . '/inc/category-ceramica-porcelanico.php'; // Cats 62, 1844, 2510, 2093
-require get_template_directory() . '/inc/category-azulejos.php';              // Cat 63
-require get_template_directory() . '/inc/category-pavimentos.php';            // Cat 64
-require get_template_directory() . '/inc/category-piscinas.php';              // Cat 66
-require get_template_directory() . '/inc/category-porcelanico-marmol.php';    // Cat 2245
-require get_template_directory() . '/inc/category-azulejos-bano.php';        // Cat 1789
-require get_template_directory() . '/inc/category-azulejos-cocina.php';      // Cat 1790
-require get_template_directory() . '/inc/category-azulejos-exterior.php';    // Cat 2160
 require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
 
