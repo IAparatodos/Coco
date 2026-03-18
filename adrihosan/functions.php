@@ -158,6 +158,52 @@ function adrihosan_master_controller_cpu_fix() {
             adrihosan_setup_espejos_redondo_cpu_fix();
             break;
     }
+
+    // Preload de imagen hero LCP por categoría
+    adrihosan_preload_hero_image($cat_id);
+}
+
+/**
+ * Preload de la imagen hero (LCP) de cada categoría.
+ * Se inyecta <link rel="preload"> en <head> para que el navegador
+ * descargue la imagen antes de parsear el CSS/HTML que la referencia.
+ */
+function adrihosan_preload_hero_image($cat_id) {
+    $hero_images = array(
+        2083 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/suelo-hidraulico-adrihosan.jpg',
+        4876 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg',
+        4862 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/Baldosa-hidraulica-original-Adrihosan-1.jpg',
+        4806 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg',
+        2209 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg',
+        1789 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+        1790 => 'https://www.adrihosan.com/wp-content/uploads/2022/05/azulejos-para-cocinas-1.jpg',
+        2160 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-de-Exterior.jpg',
+        64   => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+        63   => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+        2245 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg',
+        4865 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg',
+        4866 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg',
+        4869 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg',
+        2093 => 'https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-adrihosan.jpg',
+    );
+
+    // Categorías con hero dinámico desde term_meta
+    $dynamic_cats = array(1844, 2510, 4564);
+
+    if (isset($hero_images[$cat_id])) {
+        $url = $hero_images[$cat_id];
+    } elseif (in_array($cat_id, $dynamic_cats, true)) {
+        $url = get_term_meta($cat_id, 'bh_hero_img_url', true);
+        if (!$url) {
+            $url = 'https://www.adrihosan.com/wp-content/uploads/2023/04/fa4a5c7e-d682-41f2-a4a3-c2eafa4fea9d.jpg';
+        }
+    } else {
+        return;
+    }
+
+    add_action('wp_head', function() use ($url) {
+        echo '<link rel="preload" as="image" href="' . esc_url($url) . '">' . "\n";
+    }, 1);
 }
 
 // Setups específicos para cada categoría
