@@ -30,83 +30,112 @@ function adrihosan_master_controller_cpu_fix() {
     $cat_id = get_queried_object_id();
     
     // Ejecutar setup específico según categoría
+    // OPTIMIZACIÓN: Solo carga el archivo PHP de la categoría visitada (lazy-load)
+    $tpl = get_template_directory();
+
     switch($cat_id) {
         case 2083: // Baño Imitación
+            require_once $tpl . '/inc/category-bano-imitacion.php';
             adrihosan_setup_bano_imitacion_cpu_fix();
             break;
-        case 4876: // Cocina Imitación  
+        case 4876: // Cocina Imitación
+            require_once $tpl . '/inc/category-cocina-imitacion.php';
             adrihosan_setup_cocina_imitacion_cpu_fix();
             break;
         case 4862: // Hidráulica Original
+            require_once $tpl . '/inc/category-hidraulica-original.php';
             adrihosan_setup_hidraulica_original_cpu_fix();
             break;
         case 102: // Espejos
+            require_once $tpl . '/inc/category-espejos.php';
             adrihosan_setup_espejos_cpu_fix();
             break;
         case 4213: // Espejos con Luz
+            require_once $tpl . '/inc/category-espejos.php';
             adrihosan_setup_espejos_luz_cpu_fix();
             break;
         case 2209: // Wood
+            require_once $tpl . '/inc/category-wood.php';
             adrihosan_setup_wood_cpu_fix();
             break;
         case 4806: // Paredes Decorativas
+            require_once $tpl . '/inc/category-paredes.php';
             adrihosan_setup_paredes_cpu_fix();
             break;
         case 1789: // Azulejos Baño
+            require_once $tpl . '/inc/category-azulejos-bano.php';
             adrihosan_setup_azulejos_bano_cpu_fix();
             break;
         case 1790: // Azulejos Cocina
+            require_once $tpl . '/inc/category-azulejos-cocina.php';
             adrihosan_setup_azulejos_cocina_cpu_fix();
             break;
         case 2160: // Azulejos Exterior
+            require_once $tpl . '/inc/category-azulejos-exterior.php';
             adrihosan_setup_azulejos_exterior_cpu_fix();
             break;
         case 63: // Azulejos
+            require_once $tpl . '/inc/category-azulejos.php';
             adrihosan_setup_azulejos_cpu_fix();
             break;
         case 64: // Pavimentos y Suelos
+            require_once $tpl . '/inc/category-pavimentos.php';
             adrihosan_setup_pavimentos_cpu_fix();
             break;
         case 66: // Azulejos Piscinas
+            require_once $tpl . '/inc/category-piscinas.php';
             adrihosan_setup_piscinas_cpu_fix();
             break;
         case 2245: // Porcelánico Imitación Mármol
+            require_once $tpl . '/inc/category-porcelanico-marmol.php';
             adrihosan_setup_porcelanico_marmol_cpu_fix();
             break;
         case 62: // Cerámica
+            require_once $tpl . '/inc/category-ceramica-porcelanico.php';
             adrihosan_setup_ceramica_cpu_fix();
             break;
         case 2410: // Porcelánico
+            require_once $tpl . '/inc/category-ceramica-porcelanico.php';
             adrihosan_setup_porcelanico_cpu_fix();
             break;
         case 1844: // Gran Formato
+            require_once $tpl . '/inc/category-ceramica-porcelanico.php';
             adrihosan_setup_gran_formato_cpu_fix();
             break;
         case 2510: // Extrafino
+            require_once $tpl . '/inc/category-ceramica-porcelanico.php';
             adrihosan_setup_extrafino_cpu_fix();
             break;
         case 2093: // Metro
+            require_once $tpl . '/inc/category-ceramica-porcelanico.php';
             adrihosan_setup_metro_cpu_fix();
             break;
         case 4865: // Original / Baño
+            require_once $tpl . '/inc/category-pilar-bano.php';
             adrihosan_setup_pilar_bano_cpu_fix();
             break;
         case 4866: // Original / Cocina
+            require_once $tpl . '/inc/category-pilar-cocina.php';
             adrihosan_setup_pilar_cocina_cpu_fix();
             break;
         case 4869: // Original / Exterior
+            require_once $tpl . '/inc/category-pilar-exterior.php';
             adrihosan_setup_pilar_exterior_cpu_fix();
             break;
         case 4564: // Baldosa Hidráulica (Pilar)
+            require_once $tpl . '/inc/category-pilar-bh.php';
             adrihosan_setup_pilar_bh_cpu_fix();
             break;
         case 2082: // Imitación Hidráulico
+            require_once $tpl . '/inc/category-imitacion-hidraulico.php';
             adrihosan_setup_imitacion_hidraulico_cpu_fix();
             break;
         case 2626: // Camerino Baño
+            require_once $tpl . '/inc/category-camerinos.php';
             adrihosan_setup_camerinos_cpu_fix();
             break;
         case 4247: // Espejos Redondos
+            require_once $tpl . '/inc/category-espejos.php';
             adrihosan_setup_espejos_redondo_cpu_fix();
             break;
     }
@@ -990,31 +1019,12 @@ add_action( 'template_redirect', function() {
 
  
 // =============================================================================
-// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Modularizado)
+// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Modularizado + Lazy-Load)
 // =============================================================================
-// Cada archivo contiene el controller + contenido_superior + contenido_inferior
-// de su categoría correspondiente.
+// Los archivos category-*.php se cargan SOLO cuando se visita su categoría,
+// desde adrihosan_master_controller_cpu_fix() (línea 33).
+// Esto evita parsear 20 archivos PHP en páginas que no los necesitan.
 // =============================================================================
 
-require get_template_directory() . '/inc/category-imitacion-hidraulico.php';  // Cat 2082
-require get_template_directory() . '/inc/category-bano-imitacion.php';        // Cat 2083
-require get_template_directory() . '/inc/category-cocina-imitacion.php';      // Cat 4876
-require get_template_directory() . '/inc/category-espejos.php';              // Cats 102, 4213, 4247
-require get_template_directory() . '/inc/category-camerinos.php';            // Cat 2626
-require get_template_directory() . '/inc/category-pilar-bh.php';             // Cat 4564
-require get_template_directory() . '/inc/category-paredes.php';              // Cat 4806
-require get_template_directory() . '/inc/category-hidraulica-original.php';  // Cat 4862
-require get_template_directory() . '/inc/category-pilar-bano.php';           // Cat 4865
-require get_template_directory() . '/inc/category-pilar-cocina.php';         // Cat 4866
-require get_template_directory() . '/inc/category-pilar-exterior.php';       // Cat 4869
-require get_template_directory() . '/inc/category-wood.php';                 // Cat 2209 + CSS fix
-require get_template_directory() . '/inc/category-ceramica-porcelanico.php'; // Cats 62, 1844, 2510, 2093
-require get_template_directory() . '/inc/category-azulejos.php';              // Cat 63
-require get_template_directory() . '/inc/category-pavimentos.php';            // Cat 64
-require get_template_directory() . '/inc/category-piscinas.php';              // Cat 66
-require get_template_directory() . '/inc/category-porcelanico-marmol.php';    // Cat 2245
-require get_template_directory() . '/inc/category-azulejos-bano.php';        // Cat 1789
-require get_template_directory() . '/inc/category-azulejos-cocina.php';      // Cat 1790
-require get_template_directory() . '/inc/category-azulejos-exterior.php';    // Cat 2160
 require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
 
