@@ -44,6 +44,12 @@
 	@media(max-width:1300px){.site-header .site-header-content{grid-template-columns:200px 1fr 200px 200px}.site-header .site-header-content img.custom-logo{height:58px;width:198px}}
 	@media(max-width:800px){.site-header{height:80px}.site-header .site-header-content{height:80px;grid-template-columns:.2fr .8fr 40px .2fr}.wp-block-cover.alignfull{min-height:250px}.wp-block-cover.alignfull .wp-block-heading{font-size:40px!important;line-height:150%}}
 	@media(max-width:600px){.wp-block-cover.alignfull{min-height:200px}.wp-block-cover.alignfull .wp-block-heading{font-size:32px!important;line-height:150%}}
+	.hero-section-container{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;box-sizing:border-box;background-size:cover;background-position:center;color:#fff;text-align:center;overflow:hidden}
+	.hero-section-container::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(63,111,123,.45);z-index:1}
+	.hero-content{position:relative;z-index:2;max-width:800px}
+	.hero-content h1{font-size:42px;font-weight:700;line-height:1.2;margin:0 0 15px;text-shadow:0 2px 4px rgba(0,0,0,.5)}
+	.hero-content p{font-size:18px;line-height:1.6;max-width:650px;margin:0 auto 30px;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+	@media(max-width:768px){.hero-section-container{min-height:50vh;padding:40px 15px}.hero-content h1{font-size:28px}.hero-content p{font-size:15px}}
 	</style>
 
 	<?php wp_head(); ?>

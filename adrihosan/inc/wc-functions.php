@@ -512,9 +512,9 @@ add_filter('woocommerce_pagination_args', 'dw_change_pagination_icons', 99, 1);
 
 function dw_change_pagination_icons( $args ) {
 
-	$args['prev_text'] = '<img src="' . get_theme_file_uri('img/load.png') . '">';
+	$args['prev_text'] = '<img src="' . get_theme_file_uri('img/load.png') . '" width="53" height="52" alt="Página anterior">';
 
-	$args['next_text'] = '<img src="' . get_theme_file_uri('img/load-right.png') . '">';
+	$args['next_text'] = '<img src="' . get_theme_file_uri('img/load-right.png') . '" width="53" height="52" alt="Página siguiente">';
 
 	$args['end_size'] = 1;
 
