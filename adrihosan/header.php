@@ -16,9 +16,35 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-SemiBold.woff2" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" media="print" onload="this.media='all'">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<!-- Critical CSS: desbloquea LCP (header + hero h1) mientras style.css carga async -->
+	<style id="critical-css">
+	*,::after,::before{box-sizing:inherit}
+	html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box}
+	body{margin:0;font-family:'Poppins',sans-serif}
+	img{height:auto;max-width:100%;border-style:none}
+	a{color:inherit;text-decoration:none}
+	.skip-link.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}
+	.custom-logo-link{display:inline-block}
+	.site-header{position:fixed;top:0;width:100%;height:118px;background-color:#fff;z-index:99;box-shadow:0 1px 5px 0 rgba(0,0,0,.18)}
+	.site-header .site-header-content{display:grid;grid-template-columns:264px 1fr 250px 250px;align-items:center;justify-content:center;max-width:1500px;margin:0 auto;height:118px}
+	.site-header .site-header-content img.custom-logo{height:77px;width:264px}
+	.full-width{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}
+	.alignfull{width:100%;margin-left:0;margin-right:0}
+	.wp-block-cover{position:relative;background-size:cover;background-position:50%;min-height:430px;display:flex;align-items:center;overflow:hidden}
+	.wp-block-cover .wp-block-cover__image-background{position:absolute;top:0;left:0;right:0;bottom:0;margin:0;padding:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover}
+	.wp-block-cover__inner-container{position:relative;z-index:1;width:100%;padding:0 20px}
+	.wp-block-cover.alignfull .wp-block-heading{font-size:44px;line-height:150%;font-weight:700;margin:0}
+	.has-text-align-center{text-align:center}
+	.has-doo-white-color{color:#fff}
+	.has-doo-white-color strong{color:#4dd2d0}
+	@media(max-width:1500px){.site-header .site-header-content{padding:0 15px}}
+	@media(max-width:1300px){.site-header .site-header-content{grid-template-columns:200px 1fr 200px 200px}.site-header .site-header-content img.custom-logo{height:58px;width:198px}}
+	@media(max-width:800px){.site-header{height:80px}.site-header .site-header-content{height:80px;grid-template-columns:.2fr .8fr 40px .2fr}.wp-block-cover.alignfull{min-height:250px}.wp-block-cover.alignfull .wp-block-heading{font-size:40px!important;line-height:150%}}
+	@media(max-width:600px){.wp-block-cover.alignfull{min-height:200px}.wp-block-cover.alignfull .wp-block-heading{font-size:32px!important;line-height:150%}}
+	</style>
 
 	<?php wp_head(); ?>
 

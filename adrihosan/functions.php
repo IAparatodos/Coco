@@ -742,6 +742,24 @@ function adrihosan_scripts() {
  
 }
 add_action( 'wp_enqueue_scripts', 'adrihosan_scripts' );
+
+/**
+ * Cargar style.css de forma asíncrona (no bloqueante) ya que el critical CSS está inline en header.php.
+ * Usa media="print" + onload para convertirlo en non-render-blocking.
+ */
+function adrihosan_async_main_css( $html, $handle ) {
+	if ( $handle === 'adrihosan-style' && ! is_admin() ) {
+		$html = str_replace(
+			" media='all'",
+			" media='print' onload=\"this.media='all'\"",
+			$html
+		);
+		$html .= '<noscript>' . str_replace( " media='print' onload=\"this.media='all'\"", " media='all'", $html ) . '</noscript>';
+	}
+	return $html;
+}
+add_filter( 'style_loader_tag', 'adrihosan_async_main_css', 10, 2 );
+
 /**
  * Implement the Custom Header feature.
  */
