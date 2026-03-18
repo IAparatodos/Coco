@@ -167,6 +167,11 @@ function adrihosan_setup_bano_imitacion_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_bano', 8);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_cocina_imitacion_cpu_fix() {
@@ -175,6 +180,11 @@ function adrihosan_setup_cocina_imitacion_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_cocina', 9);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_hidraulica_original_cpu_fix() {
@@ -184,6 +194,11 @@ function adrihosan_setup_hidraulica_original_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_espejos_cpu_fix() {
@@ -398,6 +413,11 @@ function adrihosan_setup_pilar_bano_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_pilar_cocina_cpu_fix() {
@@ -406,6 +426,11 @@ function adrihosan_setup_pilar_cocina_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_pilar_exterior_cpu_fix() {
@@ -414,6 +439,11 @@ function adrihosan_setup_pilar_exterior_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_pilar_bh_cpu_fix() {
@@ -433,6 +463,11 @@ function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
+
+    // Ocultar filtros antiguos (ya usa Filter Everything Pro en el contenido superior)
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_camerinos_cpu_fix() {
