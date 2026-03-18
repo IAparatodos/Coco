@@ -59,6 +59,7 @@ function adrihosan_lazy_load_category_file() {
         1789 => '/inc/category-azulejos-bano.php',
         1790 => '/inc/category-azulejos-cocina.php',
         2160 => '/inc/category-azulejos-exterior.php',
+        2358 => '/inc/category-azulejos-antiguos.php',
     );
 
     if (isset($category_files[$cat_id])) {
@@ -156,6 +157,9 @@ function adrihosan_master_controller_cpu_fix() {
             break;
         case 4247: // Espejos Redondos
             adrihosan_setup_espejos_redondo_cpu_fix();
+            break;
+        case 2358: // Azulejos Antiguos
+            adrihosan_setup_azulejos_antiguos_cpu_fix();
             break;
     }
 }
@@ -486,6 +490,20 @@ function adrihosan_setup_espejos_redondo_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21);
+}
+
+function adrihosan_setup_azulejos_antiguos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_antiguos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_antiguos_contenido_inferior', 99);
+
+    // Ocultar filtros antiguos
+    add_action('wp_head', function() {
+        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
+    });
 }
 
 // FIN CONTROLADOR MAESTRO
