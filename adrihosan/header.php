@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-SemiBold.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Regular.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Bold.woff2" crossorigin>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Critical CSS: desbloquea LCP (header + hero h1) mientras style.css carga async -->
@@ -44,7 +45,8 @@
 	@media(max-width:1300px){.site-header .site-header-content{grid-template-columns:200px 1fr 200px 200px}.site-header .site-header-content img.custom-logo{height:58px;width:198px}}
 	@media(max-width:800px){.site-header{height:80px}.site-header .site-header-content{height:80px;grid-template-columns:.2fr .8fr 40px .2fr}.wp-block-cover.alignfull{min-height:250px}.wp-block-cover.alignfull .wp-block-heading{font-size:40px!important;line-height:150%}}
 	@media(max-width:600px){.wp-block-cover.alignfull{min-height:200px}.wp-block-cover.alignfull .wp-block-heading{font-size:32px!important;line-height:150%}}
-	.hero-section-container{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;box-sizing:border-box;background-size:cover;background-position:center;color:#fff;text-align:center;overflow:hidden}
+	.adrihosan-full-width-block{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;box-sizing:border-box}
+	.hero-section-container{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;box-sizing:border-box;background-size:cover;background-position:center;color:#fff;text-align:center;overflow:hidden;font-family:'Poppins',sans-serif}
 	.hero-section-container::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(63,111,123,.45);z-index:1}
 	.hero-content{position:relative;z-index:2;max-width:800px}
 	.hero-content h1{font-size:42px;font-weight:700;line-height:1.2;margin:0 0 15px;text-shadow:0 2px 4px rgba(0,0,0,.5)}
