@@ -1,5 +1,9 @@
 # Adrihosan - Instrucciones para Claude
 
+## REGLA CRÍTICA: Al iniciar un nuevo chat, copia del último repositorio
+
+Al comenzar una nueva sesión/chat, **SIEMPRE** hacer `git pull` de la rama más reciente que se haya usado como base. No asumir que el código local está actualizado. Preguntar al usuario cuál fue la última rama funcional si no está claro.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
