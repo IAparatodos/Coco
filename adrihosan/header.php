@@ -19,6 +19,7 @@
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Regular.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Bold.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Light.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo get_template_directory_uri(); ?>/fonts/Poppins-Medium.woff2" crossorigin>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Critical CSS: desbloquea LCP (header + hero h1) mientras style.css carga async -->

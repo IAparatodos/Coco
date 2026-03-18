@@ -85,7 +85,7 @@
 			url('Poppins-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
-	font-display: optional;
+	font-display: swap;
 }
 
 @font-face {
@@ -148,7 +148,7 @@
 			url('Poppins-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
-	font-display: optional;
+	font-display: swap;
 }
 
 @font-face {
