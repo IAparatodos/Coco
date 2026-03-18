@@ -83,7 +83,7 @@
 	.single-product .woocommerce-product-details__short-description{font:normal normal 500 14px/20px 'Poppins','Poppins Fallback',sans-serif;color:#333}
 	.single-product .box-price{font:normal normal 500 12px/22px 'Poppins','Poppins Fallback',sans-serif;font-weight:400;line-height:25px;color:#828282;padding:12px 0 8px}
 	.single-product a.email-link{font:normal normal 300 13px/20px 'Poppins','Poppins Fallback',sans-serif;color:#333;display:flex;align-items:center}
-	.single-product a.email-link img{margin-right:8px}
+	.single-product a.email-link img{margin-right:8px;width:19px;height:16px}
 	.single-product .single_add_to_cart_button.button{height:44px;font:normal normal 500 18px/30px 'Poppins','Poppins Fallback',sans-serif;margin:45px 0 50px}
 	@media(max-width:1100px){.single-product div.product.type-product{grid-template-columns:342.15px 1fr;grid-column-gap:32px;padding:0 15px}.single-product .woocommerce-product-gallery__image{height:456.84px}}
 	@media(max-width:800px){.single-product div.product.type-product{display:block;padding:0}.single-product .product_title{height:unset;font:normal normal 600 25px/22px 'Poppins','Poppins Fallback',sans-serif;line-height:34px;padding:0 33px}.single-product .woocommerce-product-gallery__image{text-align:center}.single-product .entry-summary{padding:0 33px}.woocommerce-breadcrumb{font:normal normal 300 14px/25px 'Poppins','Poppins Fallback',sans-serif;margin-bottom:18px}.single-product .woocommerce-product-details__short-description{font:normal normal 300 16px/25px 'Poppins','Poppins Fallback',sans-serif;padding:12px 0}.single-product a.email-link{font:normal normal 300 15px/24px 'Poppins','Poppins Fallback',sans-serif}}

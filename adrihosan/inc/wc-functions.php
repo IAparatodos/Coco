@@ -880,7 +880,7 @@ function dw_mail_to_friend() {
 
 	echo '<a class="email-link" href="mailto:?subject=' . $product->get_name() . '&body=Enlace: ' . get_permalink($product->get_id()) . '">';
 
-	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '" width="19" height="16" alt="">' . __('Enviar email a un amigo','dw');
+	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '" width="19" height="16" alt="" data-no-lazy="1" class="skip-lazy no-lazyload">' . __('Enviar email a un amigo','dw');
 
 	echo '</a>';
 
