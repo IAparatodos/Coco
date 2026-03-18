@@ -22,7 +22,7 @@ function dw_shortcode_social_media() {
 			$icon=get_option('dw-op-sm-icon-'.$i);
 			if ($url) {
 				$show .= '<a href="'.$url.'" class="social-link" target="_blank" rel="nofollow">';
-				$show .=   '<img src="'.$icon.'" alt="'.$name.'" title="'.$name.'">';
+				$show .=   '<img src="'.$icon.'" alt="'.$name.'" title="'.$name.'" width="24" height="24">';
 				$show .=  '</a>';
 			}
 		}
@@ -69,7 +69,19 @@ add_shortcode('dw-social-media','dw_shortcode_social_media');
 function dw_head_script() {
 	if ( get_option('dw-op-script-head-ck') ) {
 		$html = get_option('dw-op-script-head');
-		if ($html) echo $html;
+		if ($html) {
+			// Diferir scripts de terceros (Facebook, TikTok, etc.) para no bloquear render
+			echo '<script>window.addEventListener("load", function() { setTimeout(function() {';
+			echo 'var d = document.createElement("div"); d.innerHTML = ' . wp_json_encode($html) . ';';
+			echo 'var scripts = d.querySelectorAll("script");';
+			echo 'scripts.forEach(function(s) {';
+			echo '  var ns = document.createElement("script");';
+			echo '  if (s.src) { ns.src = s.src; ns.async = true; }';
+			echo '  else { ns.textContent = s.textContent; }';
+			echo '  document.head.appendChild(ns);';
+			echo '});';
+			echo '}, 3000); });</script>';
+		}
 	}
 }
 add_action( 'wp_head', 'dw_head_script', 99 );
@@ -77,7 +89,19 @@ add_action( 'wp_head', 'dw_head_script', 99 );
 function dw_body_script() {
 	if ( get_option('dw-op-script-body-ck') ) {
 		$html = get_option('dw-op-script-body');
-		if ($html) echo $html;
+		if ($html) {
+			// Diferir scripts del body para no bloquear render
+			echo '<script>window.addEventListener("load", function() { setTimeout(function() {';
+			echo 'var d = document.createElement("div"); d.innerHTML = ' . wp_json_encode($html) . ';';
+			echo 'var scripts = d.querySelectorAll("script");';
+			echo 'scripts.forEach(function(s) {';
+			echo '  var ns = document.createElement("script");';
+			echo '  if (s.src) { ns.src = s.src; ns.async = true; }';
+			echo '  else { ns.textContent = s.textContent; }';
+			echo '  document.body.appendChild(ns);';
+			echo '});';
+			echo '}, 3500); });</script>';
+		}
 	}
 }
 add_action( 'wp_body_open', 'dw_body_script', 1 );

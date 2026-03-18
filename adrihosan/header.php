@@ -13,13 +13,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NSSDZCN');</script>
-<!-- End Google Tag Manager -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -55,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_theme_file_uri('img/menu-movil.svg');?>"></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_theme_file_uri('img/menu-movil.svg');?>" width="24" height="24" alt="Menu"></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -73,11 +66,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				$count = WC()->cart->get_cart_contents_count();
 				if ($count > 0) {
 					?>
-					<img src="<?php echo get_theme_file_uri('img/cart2.svg');?>" alt="<?php _e('Pedido','adrihosan');?>">
+					<img src="<?php echo get_theme_file_uri('img/cart2.svg');?>" alt="<?php _e('Pedido','adrihosan');?>" width="24" height="24">
 					<?php
 				} else {
 					?>
-					<img src="<?php echo get_theme_file_uri('img/cart.svg');?>" alt="<?php _e('Pedido','adrihosan');?>">
+					<img src="<?php echo get_theme_file_uri('img/cart.svg');?>" alt="<?php _e('Pedido','adrihosan');?>" width="24" height="24">
 					<?php
 				}
 				?>
@@ -85,9 +78,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php echo $count;?>
 				</div>
 				<?php
-				ob_start();
-				wc_cart_totals_order_total_html();
-				$total = ob_get_clean();
+				// Usar get_total() en vez de wc_cart_totals_order_total_html()
+				// que ejecuta queries pesadas de impuestos/cupones/envío innecesarias en el header
+				$total = WC()->cart->get_total();
 				echo '<div class="cart-total">' . __('Pedido:','adrihosan') . ' <span id="mini-cart-total">' . $total . '</span></div>';
 				?>
 			</a>

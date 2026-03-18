@@ -135,9 +135,24 @@ function adrihosan_cargar_css_categoria() {
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
 /**
- * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ * Diferir CSS no crítico: fonts.css se carga con media="print" y cambia a "all" on load.
+ * Esto evita que bloquee el render (mejora FCP/LCP).
  */
-// Preload CSS - integrado en adrihosan_cargar_css_categoria() que ya tiene el check is_product_category()
+function adrihosan_defer_non_critical_css($tag, $handle, $href) {
+    $defer_handles = array('adrihosan-fonts');
+    if (in_array($handle, $defer_handles, true)) {
+        // media="print" no bloquea render; onload cambia a "all" para aplicar estilos
+        $tag = str_replace(
+            "media='all'",
+            "media='print' onload=\"this.media='all'\"",
+            $tag
+        );
+        // Fallback noscript para usuarios sin JS
+        $tag .= '<noscript><link rel="stylesheet" href="' . esc_url($href) . '"></noscript>';
+    }
+    return $tag;
+}
+add_filter('style_loader_tag', 'adrihosan_defer_non_critical_css', 10, 3);
 
 // Preservar filtros de FE Pro en la paginación de WooCommerce
 add_filter( 'woocommerce_pagination_args', 'adrihosan_preservar_filtros_en_paginacion' );
