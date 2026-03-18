@@ -29,6 +29,12 @@
 	a{color:inherit;text-decoration:none}
 	.skip-link.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}
 	.custom-logo-link{display:inline-block}
+	.main-navigation ul{list-style:none;margin:0;padding-left:0;display:flex}
+	.main-navigation ul.menu{justify-content:space-between;margin:0 0 0 100px;padding:0}
+	.main-navigation ul.menu li{height:118px;align-items:center;display:flex;position:relative}
+	.main-navigation ul.menu li a{text-transform:uppercase;color:#000;font:normal normal 500 14px/16px Poppins;text-decoration:none;display:block}
+	.main-navigation ul ul{position:absolute;top:100%;left:-999em;z-index:99999}
+	.menu-toggle{display:none}
 	.site-header{position:fixed;top:0;width:100%;height:118px;background-color:#fff;z-index:99;box-shadow:0 1px 5px 0 rgba(0,0,0,.18)}
 	.site-header .site-header-content{display:grid;grid-template-columns:264px 1fr 250px 250px;align-items:center;justify-content:center;max-width:1500px;margin:0 auto;height:118px}
 	.site-header .site-header-content img.custom-logo{height:77px;width:264px}
@@ -43,7 +49,7 @@
 	.has-doo-white-color strong{color:#4dd2d0}
 	@media(max-width:1500px){.site-header .site-header-content{padding:0 15px}}
 	@media(max-width:1300px){.site-header .site-header-content{grid-template-columns:200px 1fr 200px 200px}.site-header .site-header-content img.custom-logo{height:58px;width:198px}}
-	@media(max-width:800px){.site-header{height:80px}.site-header .site-header-content{height:80px;grid-template-columns:.2fr .8fr 40px .2fr}.wp-block-cover.alignfull{min-height:250px}.wp-block-cover.alignfull .wp-block-heading{font-size:40px!important;line-height:150%}}
+	@media(max-width:800px){.site-header{height:80px}.site-header .site-header-content{height:80px;grid-template-columns:.2fr .8fr 40px .2fr}.main-navigation ul{display:none}.menu-toggle{display:block;min-width:unset;background-color:transparent;border:none;margin:0 auto}.main-navigation ul.menu li{height:auto}.wp-block-cover.alignfull{min-height:250px}.wp-block-cover.alignfull .wp-block-heading{font-size:40px!important;line-height:150%}}
 	@media(max-width:600px){.wp-block-cover.alignfull{min-height:200px}.wp-block-cover.alignfull .wp-block-heading{font-size:32px!important;line-height:150%}}
 	.adrihosan-full-width-block{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;box-sizing:border-box}
 	.hero-section-container{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;box-sizing:border-box;background-size:cover;background-position:center;color:#fff;text-align:center;overflow:hidden;font-family:'Poppins',sans-serif}
@@ -52,6 +58,15 @@
 	.hero-content h1{font-size:42px;font-weight:700;line-height:1.2;margin:0 0 15px;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 	.hero-content p{font-size:18px;line-height:1.6;max-width:650px;margin:0 auto 30px;text-shadow:0 1px 3px rgba(0,0,0,.5)}
 	@media(max-width:768px){.hero-section-container{min-height:50vh;padding:40px 15px}.hero-content h1{font-size:28px}.hero-content p{font-size:15px}}
+	.woocommerce-breadcrumb{padding:56px 0 12px;font:normal normal 300 16px/25px Poppins;font-weight:500;position:relative;z-index:10}
+	.woocommerce-breadcrumb .delimiter,.woocommerce-breadcrumb a{color:#767676;font-weight:300}
+	.single-product div.product.type-product{display:grid;grid-template-columns:486px 1fr;grid-column-gap:64px}
+	.single-product .product_title{height:96px;color:#171717;font:normal normal 600 30px/25px Poppins;line-height:50px;grid-column:1/span 2}
+	.single-product .woocommerce-product-gallery__image{height:648px}
+	.single-product .woocommerce-product-gallery__image img{width:100%;height:auto}
+	.single-product .price{font:normal normal 600 25px/22px Poppins;color:#4dd2d0}
+	@media(max-width:1100px){.single-product div.product.type-product{grid-template-columns:342.15px 1fr;grid-column-gap:32px;padding:0 15px}.single-product .woocommerce-product-gallery__image{height:456.84px}}
+	@media(max-width:800px){.single-product div.product.type-product{display:block;padding:0}.single-product .product_title{height:unset;font:normal normal 600 25px/22px Poppins;line-height:34px;padding:0 33px}.single-product .woocommerce-product-gallery__image{text-align:center}.single-product .entry-summary{padding:0 33px}.woocommerce-breadcrumb{font:normal normal 300 14px/25px Poppins;margin-bottom:18px}}
 	</style>
 
 	<?php wp_head(); ?>

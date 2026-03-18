@@ -880,7 +880,7 @@ function dw_mail_to_friend() {
 
 	echo '<a class="email-link" href="mailto:?subject=' . $product->get_name() . '&body=Enlace: ' . get_permalink($product->get_id()) . '">';
 
-	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '">' . __('Enviar email a un amigo','dw');
+	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '" width="19" height="16" alt="">' . __('Enviar email a un amigo','dw');
 
 	echo '</a>';
 
@@ -2086,9 +2086,9 @@ function dw_products($atts) {
 
 			?>
 
-			<div class="slider-btn left"><img src="<?php echo get_theme_file_uri('img/arrow_left_white.png');?>"></div>
+			<div class="slider-btn left"><img src="<?php echo get_theme_file_uri('img/arrow_left_white.png');?>" width="15" height="27" alt="Anterior"></div>
 
-			<div class="slider-btn right"><img src="<?php echo get_theme_file_uri('img/arrow_right_white.png');?>"></div>
+			<div class="slider-btn right"><img src="<?php echo get_theme_file_uri('img/arrow_right_white.png');?>" width="15" height="27" alt="Siguiente"></div>
 
 			<?php
 
