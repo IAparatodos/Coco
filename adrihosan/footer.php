@@ -135,6 +135,11 @@ if (!$class) {
 <!-- Playfair Display: cargado via JS para eliminarlo de la cadena crítica de render -->
 <script>
 window.addEventListener('load', function() {
+	var pc = document.createElement('link');
+	pc.rel = 'preconnect';
+	pc.href = 'https://fonts.gstatic.com';
+	pc.crossOrigin = 'anonymous';
+	document.head.appendChild(pc);
 	var l = document.createElement('link');
 	l.rel = 'stylesheet';
 	l.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap';
