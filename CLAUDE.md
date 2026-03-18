@@ -71,9 +71,14 @@ Este archivo contiene:
 
 ### Optimizaciones de rendimiento activas:
 
-- **GTM diferido** en footer.php (2s post-load)
-- **Facebook/TikTok diferidos** en dw-shortcodes.php (3s post-load)
+- **GTM diferido** en footer.php (requestIdleCallback con fallback setTimeout 2s)
+- **Facebook/TikTok diferidos** en dw-shortcodes.php (requestIdleCallback con fallback 3-3.5s)
 - **Preload Poppins-SemiBold** en header.php
-- **@import Playfair Display** movido de style.css a header.php (no bloqueante)
+- **Playfair Display cargado via JS** en footer.php (eliminado de cadena crítica de render)
+- **Preconnect** a fonts.googleapis.com y fonts.gstatic.com en header.php
+- **data-no-optimize="1"** en CSS diferidos para evitar que LiteSpeed los recombine como bloqueantes
 - **N+1 queries eliminados** en wc-search.php
 - **Cart total ligero** en header.php (get_total vs wc_cart_totals_order_total_html)
+- **Critical CSS inline** en header.php (header + hero h1 + cover + responsive)
+- **CSS async** style.css y fonts.css via media="print" + onload
+- **Cache menú categorías** en functions.php (transient 1h para 1.496 categorías)

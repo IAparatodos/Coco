@@ -70,8 +70,10 @@ function dw_head_script() {
 	if ( get_option('dw-op-script-head-ck') ) {
 		$html = get_option('dw-op-script-head');
 		if ($html) {
-			// Diferir scripts de terceros (Facebook, TikTok, etc.) para no bloquear render
-			echo '<script>window.addEventListener("load", function() { setTimeout(function() {';
+			// Diferir scripts de terceros (Facebook, TikTok, etc.) usando requestIdleCallback
+			// para ejecutarlos cuando el navegador esté libre, sin bloquear interactividad (INP)
+			echo '<script>window.addEventListener("load", function() {';
+			echo 'function _loadHeadScripts() {';
 			echo 'var d = document.createElement("div"); d.innerHTML = ' . wp_json_encode($html) . ';';
 			echo 'var scripts = d.querySelectorAll("script");';
 			echo 'scripts.forEach(function(s) {';
@@ -80,7 +82,10 @@ function dw_head_script() {
 			echo '  else { ns.textContent = s.textContent; }';
 			echo '  document.head.appendChild(ns);';
 			echo '});';
-			echo '}, 3000); });</script>';
+			echo '}';
+			echo 'if ("requestIdleCallback" in window) { requestIdleCallback(_loadHeadScripts, {timeout: 4000}); }';
+			echo 'else { setTimeout(_loadHeadScripts, 3000); }';
+			echo '});</script>';
 		}
 	}
 }
@@ -90,8 +95,9 @@ function dw_body_script() {
 	if ( get_option('dw-op-script-body-ck') ) {
 		$html = get_option('dw-op-script-body');
 		if ($html) {
-			// Diferir scripts del body para no bloquear render
-			echo '<script>window.addEventListener("load", function() { setTimeout(function() {';
+			// Diferir scripts del body usando requestIdleCallback
+			echo '<script>window.addEventListener("load", function() {';
+			echo 'function _loadBodyScripts() {';
 			echo 'var d = document.createElement("div"); d.innerHTML = ' . wp_json_encode($html) . ';';
 			echo 'var scripts = d.querySelectorAll("script");';
 			echo 'scripts.forEach(function(s) {';
@@ -100,7 +106,10 @@ function dw_body_script() {
 			echo '  else { ns.textContent = s.textContent; }';
 			echo '  document.body.appendChild(ns);';
 			echo '});';
-			echo '}, 3500); });</script>';
+			echo '}';
+			echo 'if ("requestIdleCallback" in window) { requestIdleCallback(_loadBodyScripts, {timeout: 5000}); }';
+			echo 'else { setTimeout(_loadBodyScripts, 3500); }';
+			echo '});</script>';
 		}
 	}
 }

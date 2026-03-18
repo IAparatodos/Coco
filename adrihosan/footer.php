@@ -132,18 +132,33 @@ if (!$class) {
 
 <?php wp_footer(); ?>
 
-<!-- GTM diferido: se carga tras el render para no bloquear FCP/LCP -->
+<!-- Playfair Display: cargado via JS para eliminarlo de la cadena crítica de render -->
 <script>
 window.addEventListener('load', function() {
-	setTimeout(function() {
+	var l = document.createElement('link');
+	l.rel = 'stylesheet';
+	l.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap';
+	document.head.appendChild(l);
+});
+</script>
+
+<!-- GTM diferido: se carga tras el render para no bloquear FCP/LCP -->
+<script>
+(function() {
+	function loadGTM() {
 		window.dataLayer = window.dataLayer || [];
 		window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
 		var s = document.createElement('script');
 		s.async = true;
 		s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NSSDZCN';
 		document.head.appendChild(s);
-	}, 2000);
-});
+	}
+	if ('requestIdleCallback' in window) {
+		window.addEventListener('load', function() { requestIdleCallback(loadGTM, {timeout: 3000}); });
+	} else {
+		window.addEventListener('load', function() { setTimeout(loadGTM, 2000); });
+	}
+})();
 </script>
 
 </body>

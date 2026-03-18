@@ -138,13 +138,16 @@ add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
  * Diferir CSS no crítico: fonts.css se carga con media="print" y cambia a "all" on load.
  * Esto evita que bloquee el render (mejora FCP/LCP).
  */
+/**
+ * data-no-optimize="1" evita que LiteSpeed Cache recombine el CSS como bloqueante.
+ */
 function adrihosan_defer_non_critical_css($tag, $handle, $href) {
     $defer_handles = array('adrihosan-fonts');
     if (in_array($handle, $defer_handles, true)) {
         // media="print" no bloquea render; onload cambia a "all" para aplicar estilos
         $tag = str_replace(
             "media='all'",
-            "media='print' onload=\"this.media='all'\"",
+            "media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"",
             $tag
         );
         // Fallback noscript para usuarios sin JS

@@ -746,15 +746,17 @@ add_action( 'wp_enqueue_scripts', 'adrihosan_scripts' );
 /**
  * Cargar style.css de forma asíncrona (no bloqueante) ya que el critical CSS está inline en header.php.
  * Usa media="print" + onload para convertirlo en non-render-blocking.
+ * data-no-optimize="1" evita que LiteSpeed Cache recombine el CSS como bloqueante.
  */
 function adrihosan_async_main_css( $html, $handle ) {
 	if ( $handle === 'adrihosan-style' && ! is_admin() ) {
 		$html = str_replace(
 			" media='all'",
-			" media='print' onload=\"this.media='all'\"",
+			" media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"",
 			$html
 		);
-		$html .= '<noscript>' . str_replace( " media='print' onload=\"this.media='all'\"", " media='all'", $html ) . '</noscript>';
+		$noscript_html = str_replace( " media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"", " media='all'", $html );
+		$html .= '<noscript>' . $noscript_html . '</noscript>';
 	}
 	return $html;
 }
