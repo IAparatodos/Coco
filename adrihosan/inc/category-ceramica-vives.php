@@ -11,12 +11,12 @@
 function adrihosan_ceramica_vives_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/ceramica-vives-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-ceramica-Vives-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/marcas/">Marcas</a> &gt;
+                <a href="#">Marcas</a> &gt;
                 <span>Cer&aacute;mica Vives</span>
             </nav>
             <h1>Cer&aacute;mica Vives: Cat&aacute;logo y Distribuci&oacute;n Oficial</h1>
@@ -65,9 +65,9 @@ function adrihosan_ceramica_vives_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="#catalogo-vives" class="quick-nav-pill">&#127800; Estilo Hidr&aacute;ulico (Serie 1900)</a>
-            <a href="#catalogo-vives" class="quick-nav-pill">&#129717; Maderas Porcel&aacute;nicas</a>
-            <a href="#catalogo-vives" class="quick-nav-pill">&#129521; Revestimientos de Dise&ntilde;o</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/ceramica-vives/gama-1900/" class="quick-nav-pill">&#127800; Estilo Hidr&aacute;ulico (Serie 1900)</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/ceramica-vives/ver-estilo-suelo-imitacion-madera/" class="quick-nav-pill">&#129717; Maderas Porcel&aacute;nicas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/ceramica-vives/gama-stravaganza/" class="quick-nav-pill">&#129521; Revestimientos de Dise&ntilde;o</a>
             <a href="#bumper-vives" class="quick-nav-pill quick-nav-pill-highlight">&#128172; Pedir Presupuesto Personalizado</a>
         </div>
     </section>
@@ -79,7 +79,7 @@ function adrihosan_ceramica_vives_contenido_superior() {
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-vives" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426794"]'); ?></div>
 
     <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-vives" class="product-loop-header">
