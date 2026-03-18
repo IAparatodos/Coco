@@ -17,11 +17,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php
 	$font_uri = get_template_directory_uri() . '/fonts/';
-	// Ficha de producto: solo precargar SemiBold (título, precio) y Regular (texto)
-	// Ahorro ~115 KiB en móvil al no precargar Light, Medium, Bold
+	// Producto: precargar SemiBold (título/precio), Regular, Light (breadcrumb 300), Medium (descripción 500)
+	// No precargar Bold (700) porque no se usa above-the-fold en producto
 	if ( is_singular('product') ) : ?>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-SemiBold.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Regular.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Light.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Medium.woff2" crossorigin>
 	<?php else : ?>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-SemiBold.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="<?php echo $font_uri; ?>Poppins-Regular.woff2" crossorigin>
