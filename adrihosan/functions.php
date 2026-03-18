@@ -845,6 +845,29 @@ add_action( 'wp_enqueue_scripts', 'dw_scripts' );
 add_action('created_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
 add_action('edited_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
 add_action('delete_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
+
+// Invalidar cache de posts del footer cuando se publica/edita/elimina un post
+add_action('publish_post', function() { delete_transient('adrihosan_last_2_posts'); });
+add_action('delete_post', function($post_id) {
+	if (get_post_type($post_id) === 'post') {
+		delete_transient('adrihosan_last_2_posts');
+	}
+});
+
+// Invalidar cache de hijos de categoría cuando se modifica estructura de categorías
+add_action('created_product_cat', 'adrihosan_clear_cat_children_cache');
+add_action('edited_product_cat', 'adrihosan_clear_cat_children_cache');
+add_action('delete_product_cat', 'adrihosan_clear_cat_children_cache');
+function adrihosan_clear_cat_children_cache($term_id = 0) {
+	global $wpdb;
+	$transients = $wpdb->get_col(
+		"SELECT option_name FROM {$wpdb->options} WHERE option_name LIKE '_transient_adrihosan_cat_has_children_%'"
+	);
+	foreach ($transients as $transient) {
+		$key = str_replace('_transient_', '', $transient);
+		delete_transient($key);
+	}
+}
  
 /**
  * Custom fields for Page
