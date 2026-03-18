@@ -19,55 +19,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 // POR una sola llamada centralizada -> CPU baja de 100% a 20-30%
 // ============================================================================
 
-// PASO 1 (prioridad 0): Cargar SOLO el archivo PHP de la categoría visitada.
-// En páginas que no son categoría de producto, no se carga ninguno (0 archivos).
-// En una categoría, se carga solo 1 archivo en vez de 20.
-add_action('template_redirect', 'adrihosan_lazy_load_category_file', 0);
-function adrihosan_lazy_load_category_file() {
-    if (!is_product_category()) {
-        return;
-    }
-
-    $cat_id = get_queried_object_id();
-    $tpl = get_template_directory();
-
-    // Mapa: ID de categoría => archivo PHP que contiene sus funciones de contenido
-    $category_files = array(
-        2082 => '/inc/category-imitacion-hidraulico.php',
-        2083 => '/inc/category-bano-imitacion.php',
-        4876 => '/inc/category-cocina-imitacion.php',
-        102  => '/inc/category-espejos.php',
-        4213 => '/inc/category-espejos.php',
-        4247 => '/inc/category-espejos.php',
-        2626 => '/inc/category-camerinos.php',
-        4564 => '/inc/category-pilar-bh.php',
-        4806 => '/inc/category-paredes.php',
-        4862 => '/inc/category-hidraulica-original.php',
-        4865 => '/inc/category-pilar-bano.php',
-        4866 => '/inc/category-pilar-cocina.php',
-        4869 => '/inc/category-pilar-exterior.php',
-        2209 => '/inc/category-wood.php',
-        62   => '/inc/category-ceramica-porcelanico.php',
-        2410 => '/inc/category-ceramica-porcelanico.php',
-        1844 => '/inc/category-ceramica-porcelanico.php',
-        2510 => '/inc/category-ceramica-porcelanico.php',
-        2093 => '/inc/category-ceramica-porcelanico.php',
-        63   => '/inc/category-azulejos.php',
-        64   => '/inc/category-pavimentos.php',
-        66   => '/inc/category-piscinas.php',
-        2245 => '/inc/category-porcelanico-marmol.php',
-        1789 => '/inc/category-azulejos-bano.php',
-        1790 => '/inc/category-azulejos-cocina.php',
-        2160 => '/inc/category-azulejos-exterior.php',
-        2358 => '/inc/category-azulejos-antiguos.php',
-    );
-
-    if (isset($category_files[$cat_id])) {
-        require_once $tpl . $category_files[$cat_id];
-    }
-}
-
-// PASO 2 (prioridad 1): Configurar hooks de WooCommerce para la categoría activa.
 add_action('template_redirect', 'adrihosan_master_controller_cpu_fix', 1);
 function adrihosan_master_controller_cpu_fix() {
     // Solo procesar en categorías de productos
@@ -160,6 +111,51 @@ function adrihosan_master_controller_cpu_fix() {
             break;
         case 2358: // Azulejos Antiguos
             adrihosan_setup_azulejos_antiguos_cpu_fix();
+            break;
+        case 2108: // Azulejos Decorativos
+            adrihosan_setup_azulejos_decorativos_cpu_fix();
+            break;
+        case 2173: // Azulejos Hexagonales
+            adrihosan_setup_azulejos_hexagonales_cpu_fix();
+            break;
+        case 310: // Porcelánico Techlam
+            adrihosan_setup_porcelanico_techlam_cpu_fix();
+            break;
+        case 2482: // Cerámica Vives
+            adrihosan_setup_ceramica_vives_cpu_fix();
+            break;
+        case 2377: // Azulejos Hexagonales Suelo
+            adrihosan_setup_hexagonal_cpu_fix();
+            break;
+        case 4973: // Azulejos Imitación Cemento
+            adrihosan_setup_imitacion_cemento_cpu_fix();
+            break;
+        case 2350: // Suelo Técnico Exterior
+            adrihosan_setup_suelo_tecnico_cpu_fix();
+            break;
+        case 2285: // Suelos de Cocina
+            adrihosan_setup_suelos_cocina_cpu_fix();
+            break;
+        case 2273: // Suelos Rústicos
+            adrihosan_setup_suelos_rusticos_cpu_fix();
+            break;
+        case 2471: // Porcelánico Técnico
+            adrihosan_setup_porcelanico_tecnico_cpu_fix();
+            break;
+        case 2516: // Zellige
+            adrihosan_setup_zellige_cpu_fix();
+            break;
+        case 4972: // Azulejos Imitación Piedra
+            adrihosan_setup_imitacion_piedra_cpu_fix();
+            break;
+        case 2394: // Fachadas y Muros
+            adrihosan_setup_fachadas_cpu_fix();
+            break;
+        case 2188: // Azulejo Escama de Pez
+            adrihosan_setup_escama_pez_cpu_fix();
+            break;
+        case 2132: // Azulejos 15x15
+            adrihosan_setup_azulejos_15x15_cpu_fix();
             break;
     }
 }
@@ -504,6 +500,169 @@ function adrihosan_setup_azulejos_antiguos_cpu_fix() {
     add_action('wp_head', function() {
         echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
     });
+}
+
+/**
+ * CSS para ocultar filtros legacy en categorías con landing personalizada.
+ */
+function adrihosan_ocultar_filtros_legacy() {
+    echo '<style>.woocommerce-products-header,.wd-shop-tools,.advanced-filter,.filter-wrapper,.ai-filters-section,.bho-filters-section,.bho-hub-section,.woocommerce-products-header__description,.term-description,.woodmart-category-desc,.wd-active-filters,.doo-category-banner{display:none!important}</style>';
+}
+
+function adrihosan_setup_azulejos_decorativos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_decorativos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_decorativos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_hexagonales_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_porcelanico_techlam_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_techlam_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_techlam_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ceramica_vives_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_hexagonal_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_hexagonal_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_hexagonal_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_imitacion_cemento_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_cemento_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_cemento_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_suelo_tecnico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelo_tecnico_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelo_tecnico_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_suelos_cocina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_cocina_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_cocina_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_suelos_rusticos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_rusticos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_rusticos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_porcelanico_tecnico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_zellige_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
+    add_filter('wc_get_loop_display_mode', function() { return 'products'; });
+    add_filter('woocommerce_product_subcategories', '__return_empty_array');
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_imitacion_piedra_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_piedra_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_piedra_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_fachadas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_fachadas_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_fachadas_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_escama_pez_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_escama_pez_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_escama_pez_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_15x15_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_15x15_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_15x15_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -1091,12 +1250,43 @@ add_action( 'template_redirect', function() {
 
  
 // =============================================================================
-// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Lazy-Load)
+// CATEGORÍAS DE PRODUCTO - ARCHIVOS DE CONTENIDO
 // =============================================================================
-// Los archivos category-*.php se cargan SOLO cuando se visita su categoría,
-// desde adrihosan_lazy_load_category_file() (prioridad 0 en template_redirect).
-// Esto evita parsear 20 archivos PHP en páginas que no los necesitan.
-// =============================================================================
-
-require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
+require get_template_directory() . '/inc/category-wood.php';
+// Categorías con archivos separados - se cargan solo si existen
+$_adri_cat_files = array(
+    'category-hexagonal.php', 'category-imitacion-cemento.php', 'category-zellige.php',
+    'category-imitacion-piedra.php', 'category-fachadas.php', 'category-escama-pez.php',
+    'category-porcelanico-techlam.php', 'category-azulejos-15x15.php',
+    'category-azulejos-antiguos.php', 'category-azulejos-decorativos.php',
+    'category-azulejos-hexagonales.php', 'category-suelo-tecnico.php',
+    'category-suelos-cocina.php', 'category-suelos-rusticos.php',
+    'category-porcelanico-tecnico.php',
+);
+foreach ($_adri_cat_files as $_f) {
+    $__path = get_template_directory() . '/inc/' . $_f;
+    if (file_exists($__path)) { require $__path; }
+}
+unset($_adri_cat_files, $_f, $__path);
+require get_template_directory() . '/inc/category-ceramica-porcelanico.php';
+require get_template_directory() . '/inc/category-imitacion-hidraulico.php';
+require get_template_directory() . '/inc/category-bano-imitacion.php';
+require get_template_directory() . '/inc/category-cocina-imitacion.php';
+require get_template_directory() . '/inc/category-camerinos.php';
+require get_template_directory() . '/inc/category-pilar-bh.php';
+require get_template_directory() . '/inc/category-paredes.php';
+require get_template_directory() . '/inc/category-hidraulica-original.php';
+require get_template_directory() . '/inc/category-pilar-bano.php';
+require get_template_directory() . '/inc/category-pilar-cocina.php';
+require get_template_directory() . '/inc/category-pilar-exterior.php';
+require get_template_directory() . '/inc/category-azulejos.php';
+require get_template_directory() . '/inc/category-azulejos-bano.php';
+require get_template_directory() . '/inc/category-azulejos-cocina.php';
+require get_template_directory() . '/inc/category-azulejos-exterior.php';
+require get_template_directory() . '/inc/category-piscinas.php';
+require get_template_directory() . '/inc/category-pavimentos.php';
+require get_template_directory() . '/inc/category-porcelanico-marmol.php';
+require get_template_directory() . '/inc/category-ceramica-vives.php';
+require get_template_directory() . '/inc/category-espejos.php';
+require get_template_directory() . '/inc/cache-and-css.php';
 
