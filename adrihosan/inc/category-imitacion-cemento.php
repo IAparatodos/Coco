@@ -59,7 +59,7 @@ function adrihosan_imitacion_cemento_contenido_superior() {
 
     <!-- 4. DESTINO MOVIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-cemento" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <!-- 5. TITULO CATALOGO -->
     <div id="catalogo-cemento" class="product-loop-header">

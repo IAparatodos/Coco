@@ -170,7 +170,7 @@ function adrihosan_ceramica_superior_final() {
         </div>
 
     <div class="filter-container-master" style="margin-bottom:50px;">
-       <?php echo do_shortcode('[fe_widget id="425985"]'); ?>
+       <?php echo do_shortcode('[fe_widget id="427035"]'); ?>
     </div>
 
     <div style="text-align: center; margin: 60px 0;">
@@ -555,7 +555,7 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
@@ -644,7 +644,7 @@ function adrihosan_extrafino_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-extrafino" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div id="catalogo-extrafino-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
@@ -733,7 +733,7 @@ function adrihosan_metro_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>

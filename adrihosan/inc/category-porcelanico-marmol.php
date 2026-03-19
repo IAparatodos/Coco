@@ -100,7 +100,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
 
     <!-- Filtro Móvil -->
     <div id="destino-filtro-adria-marmol" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <!-- WRAPPER AJAX para Filter Everything Pro -->
     <div id="fe-products-wrapper">
