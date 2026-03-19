@@ -1,5 +1,20 @@
 # Adrihosan - Instrucciones para Claude
 
+## REGLA OBLIGATORIA: Resumen de cambios en cada respuesta
+
+Al finalizar cada respuesta donde se hayan hecho cambios en código, **SIEMPRE** incluir un resumen con:
+1. **Rama actual**: en qué rama se han hecho los cambios
+2. **Archivos modificados**: lista de todos los archivos cambiados
+3. **Estado**: si ya se ha hecho commit y push, o si falta subirlos
+
+Formato ejemplo:
+```
+📋 Cambios pendientes de subir:
+- Rama: `claude/nombre-rama`
+- Archivos: `archivo1.php`, `archivo2.js`
+- Estado: ✅ Commit + Push realizado / ⚠️ Pendiente de push
+```
+
 ## REGLA CRÍTICA: Al iniciar un nuevo chat, copia del último repositorio
 
 Al comenzar una nueva sesión/chat, **SIEMPRE** hacer `git pull` de la rama más reciente que se haya usado como base. No asumir que el código local está actualizado. Preguntar al usuario cuál fue la última rama funcional si no está claro.
