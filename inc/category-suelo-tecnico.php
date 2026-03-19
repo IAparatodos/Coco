@@ -65,7 +65,7 @@ function adrihosan_suelo_tecnico_contenido_superior() {
 
     <!-- 4. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-suelo-tecnico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427014"]'); ?></div>
 
     <!-- 5. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-suelo-tecnico" class="product-loop-header">
