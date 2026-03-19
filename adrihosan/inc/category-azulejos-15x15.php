@@ -16,8 +16,14 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-15x15-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejo-15x15-Adrihosan.jpg');">
         <div class="hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="https://www.adrihosan.com/">Inicio</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
+                <span>Azulejos 15x15</span>
+            </nav>
             <h1>Azulejos 15x15: El Formato Cl&aacute;sico que Nunca Falla</h1>
             <p>El peque&ntilde;o formato con grandes posibilidades. Los azulejos 15x15 son vers&aacute;tiles, atemporales y perfectos para crear composiciones &uacute;nicas en ba&ntilde;os y cocinas.</p>
             <div class="hero-buttons">
@@ -28,25 +34,29 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     </section>
 
     <!-- 2. VENTAJAS -->
-    <section class="comparativa-section adrihosan-full-width-block">
-        <div class="comparativa-wrapper">
-            <h2>&iquest;Por qu&eacute; elegir azulejos 15x15?</h2>
-            <p class="section-subtitle">Peque&ntilde;o formato, infinitas posibilidades</p>
-            <div class="comparativa-grid">
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">&#127912;</div>
-                    <h3>Estilo Atemporal</h3>
-                    <p>Un cl&aacute;sico de la decoraci&oacute;n que encaja tanto en <strong>estilos vintage y r&uacute;sticos</strong> como en ambientes modernos y minimalistas.</p>
+    <section class="trust-bar-section adrihosan-full-width-block">
+        <div class="trust-bar-wrapper">
+            <h2 style="width:100%; text-align:center; margin-bottom:5px;">&iquest;Por qu&eacute; elegir azulejos 15x15?</h2>
+            <p style="width:100%; text-align:center; margin-bottom:25px; color:#6b9da8;">Peque&ntilde;o formato, infinitas posibilidades</p>
+            <div class="trust-item">
+                <div class="trust-icon">&#127912;</div>
+                <div class="trust-text">
+                    <strong>Estilo Atemporal</strong>
+                    <span>Un cl&aacute;sico que encaja en estilos vintage, r&uacute;sticos, modernos y minimalistas.</span>
                 </div>
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">&#128736;</div>
-                    <h3>F&aacute;cil Adaptaci&oacute;n</h3>
-                    <p>Su peque&ntilde;o formato se adapta a <strong>cualquier superficie</strong>, incluso las m&aacute;s irregulares. Ideal para columnas, nichos y rincones complicados.</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#128736;</div>
+                <div class="trust-text">
+                    <strong>F&aacute;cil Adaptaci&oacute;n</strong>
+                    <span>Se adapta a cualquier superficie, incluso columnas, nichos y rincones.</span>
                 </div>
-                <div class="comparativa-card">
-                    <div class="comparativa-icon">&#10024;</div>
-                    <h3>Creatividad Sin L&iacute;mites</h3>
-                    <p>Combina colores, patrones y colocaciones para crear <strong>composiciones personalizadas</strong>: damero, espiga, patchwork y mucho m&aacute;s.</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#10024;</div>
+                <div class="trust-text">
+                    <strong>Creatividad Sin L&iacute;mites</strong>
+                    <span>Damero, espiga, patchwork y composiciones personalizadas.</span>
                 </div>
             </div>
         </div>
@@ -59,7 +69,7 @@ function adrihosan_azulejos_15x15_contenido_superior() {
 
     <!-- 4. DESTINO MOVIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-15x15" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427014"]'); ?></div>
 
     <!-- 5. TITULO CATALOGO -->
     <div id="catalogo-15x15" class="product-loop-header">
