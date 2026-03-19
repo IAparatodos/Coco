@@ -218,19 +218,19 @@ function adrihosan_porcelanico_superior_final() {
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-cocina/" style="text-decoration:none; text-align:center;">
+            <a href="#" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-bano/" style="text-decoration:none; text-align:center;">
+            <a href="#" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-terraza/" style="text-decoration:none; text-align:center;">
+            <a href="#" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Exterior</h3>
             </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/salon/" style="text-decoration:none; text-align:center;">
+            <a href="#" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
                 <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Salón</h3>
             </a>
