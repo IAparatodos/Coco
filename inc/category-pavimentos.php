@@ -147,7 +147,7 @@ function adrihosan_pavimentos_contenido_superior() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-pavimentos" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427026"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426267"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-pavimentos" class="product-loop-header">
