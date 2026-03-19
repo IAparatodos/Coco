@@ -88,7 +88,7 @@ function adrihosan_imitacion_piedra_contenido_superior() {
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-piedra" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427014"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
     <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-piedra" class="product-loop-header">
