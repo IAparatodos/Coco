@@ -66,6 +66,8 @@ function adrihosan_fachadas_contenido_superior() {
         <h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Fachadas y Muros</h2>
     </div>
 
+    <!-- 6. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -74,6 +76,7 @@ function adrihosan_fachadas_contenido_superior() {
  */
 function adrihosan_fachadas_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
 
     <!-- SEO: Contenido dinamico -->
     <?php

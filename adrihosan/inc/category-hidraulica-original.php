@@ -59,6 +59,8 @@ function adrihosan_contenido_superior_original() {
 		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
 		
 		<div class="product-loop-header" id="bh-product-grid-anchor"><h2 class="product-loop-title">Catálogo de Baldosa Hidráulica Original</h2></div>
+		<!-- WRAPPER AJAX para Filter Everything Pro -->
+		<div id="fe-products-wrapper">
 		<?php
 	}
 }
@@ -69,6 +71,7 @@ function adrihosan_contenido_superior_original() {
 function adrihosan_contenido_inferior_original() {
 	if ( is_product_category( 4862 ) && ! is_singular('product') ) {
 		?>
+		</div><!-- /fe-products-wrapper -->
 		<section class="bh-custom-section adrihosan-full-width-block">
 			<div class="bh-custom-wrapper">
 				<div class="bh-custom-text-content">
