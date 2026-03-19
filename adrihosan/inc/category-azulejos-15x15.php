@@ -34,36 +34,23 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     </section>
 
     <!-- 2. VENTAJAS -->
-    <style>
-    .ventajas-15x15{padding:70px 20px;background-color:#f8f9fa}
-    .ventajas-15x15-inner{max-width:1100px;margin:0 auto;text-align:center}
-    .ventajas-15x15-inner h2{font-family:'Poppins',sans-serif;font-size:32px;font-weight:700;color:#102e35;margin:0 0 10px 0}
-    .ventajas-15x15-inner .v15-sub{font-family:'Poppins',sans-serif;font-size:16px;color:#3f6f7b;margin:0 0 50px 0}
-    .ventajas-15x15-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:30px!important}
-    .ventajas-15x15-card{background:#fff;border-radius:12px;padding:35px 25px;box-shadow:0 4px 20px rgba(0,0,0,0.08);transition:transform 0.3s ease,box-shadow 0.3s ease;text-align:center}
-    .ventajas-15x15-card:hover{transform:translateY(-5px);box-shadow:0 8px 30px rgba(0,0,0,0.12)}
-    .ventajas-15x15-card .v15-icon{font-size:48px;margin-bottom:20px}
-    .ventajas-15x15-card h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#102e35;margin:0 0 15px 0}
-    .ventajas-15x15-card p{font-family:'Poppins',sans-serif;font-size:15px;line-height:1.7;color:#3f6f7b;margin:0}
-    @media(max-width:768px){.ventajas-15x15-grid{grid-template-columns:1fr!important}}
-    </style>
-    <section class="ventajas-15x15 adrihosan-full-width-block">
-        <div class="ventajas-15x15-inner">
+    <section class="comparativa-section adrihosan-full-width-block">
+        <div class="comparativa-wrapper">
             <h2>&iquest;Por qu&eacute; elegir azulejos 15x15?</h2>
-            <p class="v15-sub">Peque&ntilde;o formato, infinitas posibilidades</p>
-            <div class="ventajas-15x15-grid">
-                <div class="ventajas-15x15-card">
-                    <div class="v15-icon">&#127912;</div>
+            <p class="section-subtitle">Peque&ntilde;o formato, infinitas posibilidades</p>
+            <div class="comparativa-grid">
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">&#127912;</div>
                     <h3>Estilo Atemporal</h3>
                     <p>Un cl&aacute;sico de la decoraci&oacute;n que encaja tanto en <strong>estilos vintage y r&uacute;sticos</strong> como en ambientes modernos y minimalistas.</p>
                 </div>
-                <div class="ventajas-15x15-card">
-                    <div class="v15-icon">&#128736;</div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">&#128736;</div>
                     <h3>F&aacute;cil Adaptaci&oacute;n</h3>
                     <p>Su peque&ntilde;o formato se adapta a <strong>cualquier superficie</strong>, incluso las m&aacute;s irregulares. Ideal para columnas, nichos y rincones complicados.</p>
                 </div>
-                <div class="ventajas-15x15-card">
-                    <div class="v15-icon">&#10024;</div>
+                <div class="comparativa-card">
+                    <div class="comparativa-icon">&#10024;</div>
                     <h3>Creatividad Sin L&iacute;mites</h3>
                     <p>Combina colores, patrones y colocaciones para crear <strong>composiciones personalizadas</strong>: damero, espiga, patchwork y mucho m&aacute;s.</p>
                 </div>
