@@ -56,7 +56,7 @@ function adrihosan_contenido_superior_original() {
 		</div>
 		
 		<div id="destino-filtro-adria-hidraulica" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
+		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427053"]'); ?></div>
 		
 		<div class="product-loop-header" id="bh-product-grid-anchor"><h2 class="product-loop-title">Catálogo de Baldosa Hidráulica Original</h2></div>
 		<!-- WRAPPER AJAX para Filter Everything Pro -->
