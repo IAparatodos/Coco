@@ -62,6 +62,18 @@ function adrihosan_wood_contenido_superior() {
     </section>
 
     <!-- 3. VENTAJAS -->
+    <style>
+    .wood-ventajas-section{background-color:#f7f9fa;padding:80px 20px;font-family:'Poppins',sans-serif}
+    .wood-ventajas-wrapper{max-width:1200px;margin:0 auto;text-align:center}
+    .wood-ventajas-wrapper h2{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;color:#102e35;margin:0 0 50px 0}
+    .wood-ventajas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+    .wood-ventaja-card{background-color:#fff;padding:35px 25px;border-radius:8px;border:1px solid #eef2f5;text-align:center;transition:transform .2s ease,box-shadow .2s ease}
+    .wood-ventaja-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(16,46,53,.08)}
+    .wood-ventaja-icon{font-size:3rem;line-height:1;color:#4dd2d0;margin-bottom:20px}
+    .wood-ventaja-card h3{font-size:1.25rem;font-weight:600;color:#102e35;margin:0 0 10px 0}
+    .wood-ventaja-card p{font-size:.95rem;color:#3f6f7b;line-height:1.7;margin:0}
+    @media(max-width:768px){.wood-ventajas-section{padding:60px 20px}.wood-ventajas-wrapper h2{font-size:1.5rem}}
+    </style>
     <section class="wood-ventajas-section adrihosan-full-width-block">
         <div class="wood-ventajas-wrapper">
             <h2>&iquest;Por qu&eacute; elegir un suelo porcel&aacute;nico imitaci&oacute;n madera?</h2>
