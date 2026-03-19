@@ -413,14 +413,24 @@ function adrihosan_setup_extrafino_cpu_fix() {
 }
 
 function adrihosan_setup_metro_cpu_fix() {
+    // Ocultar t&iacute;tulo WooCommerce
     add_filter('woocommerce_show_page_title', '__return_false');
+    // Eliminar descripci&oacute;n de archivo (solo en p&aacute;gina 1)
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     if (!is_paged()) {
         remove_all_actions('woocommerce_archive_description');
     }
+    // Eliminar breadcrumb, subcategor&iacute;as y elementos legacy
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    // Contenido personalizado
     add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
-
+    // CSS inline obligatorio: ocultar filtros legacy + doo-category-banner (protecci&oacute;n vs cache LiteSpeed)
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
+    });
 }
 
 function adrihosan_setup_pilar_bh_cpu_fix() {
