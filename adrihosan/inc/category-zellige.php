@@ -18,6 +18,12 @@ function adrihosan_zellige_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-zellige-Adrihosan.jpg');">
         <div class="hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="https://www.adrihosan.com/">Inicio</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
+                <span>Zellige</span>
+            </nav>
             <h1>Azulejos Zellige: Artesanal, Imperfecto y Absolutamente &Uacute;nico</h1>
             <p>La belleza de lo hecho a mano. Cada pieza tiene su propia personalidad: variaciones de tono, textura y brillo que convierten cualquier pared en una obra de arte.</p>
             <div class="hero-buttons">
@@ -59,7 +65,7 @@ function adrihosan_zellige_contenido_superior() {
 
     <!-- 4. DESTINO MOVIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-zellige" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427058"]'); ?></div>
 
     <!-- 5. TITULO CATALOGO -->
     <div id="catalogo-zellige" class="product-loop-header">
