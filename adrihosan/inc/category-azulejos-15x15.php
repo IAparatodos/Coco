@@ -34,29 +34,25 @@ function adrihosan_azulejos_15x15_contenido_superior() {
     </section>
 
     <!-- 2. VENTAJAS -->
-    <section class="trust-bar-section adrihosan-full-width-block">
-        <div class="trust-bar-wrapper">
-            <h2 style="width:100%; text-align:center; margin-bottom:5px;">&iquest;Por qu&eacute; elegir azulejos 15x15?</h2>
-            <p style="width:100%; text-align:center; margin-bottom:25px; color:#6b9da8;">Peque&ntilde;o formato, infinitas posibilidades</p>
-            <div class="trust-item">
-                <div class="trust-icon">&#127912;</div>
-                <div class="trust-text">
-                    <strong>Estilo Atemporal</strong>
-                    <span>Un cl&aacute;sico que encaja en estilos vintage, r&uacute;sticos, modernos y minimalistas.</span>
+    <section class="comparativa-section adrihosan-full-width-block" style="padding:70px 20px; background-color:#f8f9fa;">
+        <div class="comparativa-wrapper" style="max-width:1100px; margin:0 auto; text-align:center;">
+            <h2 style="font-family:'Poppins',sans-serif; font-size:32px; font-weight:700; color:#102e35; margin:0 0 10px 0;">&iquest;Por qu&eacute; elegir azulejos 15x15?</h2>
+            <p class="section-subtitle" style="font-family:'Poppins',sans-serif; font-size:16px; color:#3f6f7b; margin:0 0 50px 0;">Peque&ntilde;o formato, infinitas posibilidades</p>
+            <div class="comparativa-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:30px;">
+                <div class="comparativa-card" style="background:#fff; border-radius:12px; padding:35px 25px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div class="comparativa-icon" style="font-size:48px; margin-bottom:20px;">&#127912;</div>
+                    <h3 style="font-family:'Poppins',sans-serif; font-size:20px; font-weight:700; color:#102e35; margin:0 0 15px 0;">Estilo Atemporal</h3>
+                    <p style="font-family:'Poppins',sans-serif; font-size:15px; line-height:1.7; color:#3f6f7b; margin:0;">Un cl&aacute;sico de la decoraci&oacute;n que encaja tanto en <strong>estilos vintage y r&uacute;sticos</strong> como en ambientes modernos y minimalistas.</p>
                 </div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">&#128736;</div>
-                <div class="trust-text">
-                    <strong>F&aacute;cil Adaptaci&oacute;n</strong>
-                    <span>Se adapta a cualquier superficie, incluso columnas, nichos y rincones.</span>
+                <div class="comparativa-card" style="background:#fff; border-radius:12px; padding:35px 25px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div class="comparativa-icon" style="font-size:48px; margin-bottom:20px;">&#128736;</div>
+                    <h3 style="font-family:'Poppins',sans-serif; font-size:20px; font-weight:700; color:#102e35; margin:0 0 15px 0;">F&aacute;cil Adaptaci&oacute;n</h3>
+                    <p style="font-family:'Poppins',sans-serif; font-size:15px; line-height:1.7; color:#3f6f7b; margin:0;">Su peque&ntilde;o formato se adapta a <strong>cualquier superficie</strong>, incluso las m&aacute;s irregulares. Ideal para columnas, nichos y rincones complicados.</p>
                 </div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">&#10024;</div>
-                <div class="trust-text">
-                    <strong>Creatividad Sin L&iacute;mites</strong>
-                    <span>Damero, espiga, patchwork y composiciones personalizadas.</span>
+                <div class="comparativa-card" style="background:#fff; border-radius:12px; padding:35px 25px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div class="comparativa-icon" style="font-size:48px; margin-bottom:20px;">&#10024;</div>
+                    <h3 style="font-family:'Poppins',sans-serif; font-size:20px; font-weight:700; color:#102e35; margin:0 0 15px 0;">Creatividad Sin L&iacute;mites</h3>
+                    <p style="font-family:'Poppins',sans-serif; font-size:15px; line-height:1.7; color:#3f6f7b; margin:0;">Combina colores, patrones y colocaciones para crear <strong>composiciones personalizadas</strong>: damero, espiga, patchwork y mucho m&aacute;s.</p>
                 </div>
             </div>
         </div>
