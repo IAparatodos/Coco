@@ -84,6 +84,28 @@ Este archivo contiene:
 | 310 | Porcelánico Techlam | category-porcelanico-techlam.php |
 | 2482 | Cerámica Vives | category-ceramica-vives.php |
 
+### Estructura obligatoria de archivos category-*.php (Filter Everything Pro)
+
+Todos los archivos `inc/category-*.php` **DEBEN** seguir esta estructura para que el filtrado AJAX de Filter Everything Pro funcione correctamente:
+
+1. **En `_contenido_superior()`**: Después del shortcode del widget de filtros y el `<div>` del título catálogo, abrir el wrapper:
+```php
+    <div id="fe-products-wrapper">
+    <?php
+}
+```
+
+2. **En `_contenido_inferior()`**: Cerrar el wrapper como primera línea, antes de FAQs o cualquier otro contenido:
+```php
+function nombre_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+    <?php
+    // resto del contenido (FAQs, SEO, etc.)
+```
+
+**Si falta este wrapper**, los filtros AJAX de Filter Everything Pro no funcionarán y la página dará error al intentar filtrar productos.
+
 ### Optimizaciones de rendimiento activas:
 
 - **GTM diferido** en footer.php (requestIdleCallback con fallback setTimeout 2s)
