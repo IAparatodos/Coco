@@ -1,0 +1,275 @@
+
+/* WP 6.1
+------------------------------ */
+
+.is-layout-flex {
+	display: flex;
+}
+
+
+
+/* Arreglos
+------------------------------ */
+.bloque-enlaces {
+	ul {
+		padding-top: 24px;
+		padding-bottom: 24px;
+		gap: 16px;
+		justify-content: center;
+		li a {
+			color: #BDBDBD;
+			background-color: #333333;
+			border-radius: 5px;
+			padding: 8px 12px;
+			font-weight: 500;
+			transition: 0.4s;
+			&:hover {
+				color: #4dd2d0;
+				background-color: #FFFFFF;
+			}
+		} 
+	}
+}
+
+.home-banner-1b {
+	max-width: 1060px;
+	gap: 24px;
+	.wp-block-column {
+		padding: 0;
+	}
+}
+
+
+.advanced-filter {
+	position: sticky;
+	// margin-top: -420px !important;
+	background: transparent;
+	&.sticky.active{
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: calc(50% - 50vw);
+		background: linear-gradient(to bottom, #4dd2d0 39%, #4dd2d0 75%, rgba(255, 255, 255, 0) 100%);
+		min-height: 120px;
+		.filter-title {
+			color: rgba(255, 255, 255, 0.65);
+		}
+		.form-inputs-content {
+			margin-bottom: 0;
+			padding-bottom: 24px;
+			.search-content .term-value {
+				&::after {
+					filter: saturate(100%) brightness(10%) invert(100%);
+				}
+			}
+		}
+		.reset-filter {
+			img {
+				filter: saturate(100%) brightness(10%) invert(100%);
+			}
+		}
+	}
+	.filter-title {
+		color: rgba(77, 210, 208, 0.37);
+	}
+	.form-inputs-content .search-content .term-value::after {
+		filter: none;
+	}
+	.reset-filter {
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	// .filter-search-btn {
+	// 	display: none;
+	// }
+}
+
+@media (max-width: 600px) {
+	.wp-block-doo-block-product-cat {
+		.advanced-filter {
+			margin-top: 0 !important;
+		}
+	}
+	.no-header {
+		.advanced-filter.advanced-filter {
+			margin-top: 0 !important;
+		}
+		ul.products.products.columns-3 {
+			margin: 0 auto;
+		}
+	}
+	.advanced-filter.advanced-filter {
+		margin-top: -380px !important;
+		position: relative;
+		.filter-search-btn {
+			display: block;
+			position: fixed;
+			z-index: 9;
+			top: 85px;
+			right: 15px;
+			background: #FFFFFF;
+			padding: 4px;
+			border-radius: 4px;
+			cursor: pointer;
+			box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.18);
+
+			img {
+				width: 24px;
+				height: 24px;
+			}
+			.filter {
+				display: flex;
+				align-items: center;
+				color: #767676;
+				font-size: 14px;
+				padding: 0 4px;
+				img {
+					margin-left: 12px;
+				}
+			}
+			.close {
+				display: none;
+			}
+		}
+		&.active {
+			.advanced-search {
+				position: fixed;
+				width: 100vw;
+				top: 80px;
+				left: 0;
+				right: 0;
+				background: #FcFcFc;
+				min-height: 600px;
+				padding: 16px;
+			}
+			&.sticky{
+				position: sticky;
+				background: transparent;
+				.form-inputs-content {
+					.search-content .term-value {
+						&::after {
+							filter: none;
+						}
+					}
+				}
+				.reset-filter {
+					img {
+						filter: none;
+					}
+				}
+				.filter-title {
+					color: #4dd2d0;
+					margin-top: 30px;
+				}
+			}
+			.filter-title {
+				color: #4dd2d0;
+				margin-top: 30px;
+			}
+			.filter-search-btn {
+				display: block;
+				position: fixed;
+				z-index: 9;
+				top: 85px;
+				right: 15px;
+				background: #FFFFFF;
+				padding: 4px;
+				border-radius: 4px;
+				cursor: pointer;
+				box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.18);
+				img {
+					width: 24px;
+					height: 24px;
+				}
+				.filter {
+					display: flex;
+					align-items: center;
+					color: #767676;
+					font-size: 14px;
+					padding: 0 4px;
+					img {
+						margin-left: 12px;
+					}
+				}
+			}
+		}
+		.advanced-search {
+			display: none;
+		}
+	}
+
+	.woocommerce-products-blog-header h2 {
+		font: $font-30px-semibold;
+		text-align: center;
+	}
+
+}
+
+
+@media (max-width: 414px) {
+	// .advanced-filter {
+	// 	margin-top: -100px !important;
+	// }
+
+	.woocommerce-products-blog-header h2 {
+		font: $font-30px-semibold;
+		text-align: center;
+	}
+
+}
+
+@keyframes doo-spin {
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+.dw-spinner {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999999;
+	background-color: rgba(40,40,40,0.7);
+}
+.dw-spinner.active {
+	display: block;
+}
+.spin-loader {
+	position: fixed;
+	width: 42px;
+	height: 42px;
+	margin: 8px;
+	top: 48%;
+	left: 48%;
+	z-index: 9999999;
+	border: 4px solid #4DD2D0;
+	border-right-color: transparent;
+	border-radius: 50%;
+	animation: doo-spin 0.8s linear infinite
+}
+
+
+
+.product-rodapie-rectificado-blanco-total-60 {
+	.woocommerce-products-header {
+		height: unset;
+	}
+}
+
+.custom-block {
+	position: relative;
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+
+
+
+.search-results.dw-products-category {
+	ul.products {
+		margin-top: 0;
+	}
+}

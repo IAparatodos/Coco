@@ -1,0 +1,131 @@
+.main-navigation {
+	ul.menu {
+		li.menu-item.custom-menu-category.active,
+		li.menu-item.custom-menu-category:hover {
+			.sub-menu-content {
+				column-count: 4;
+				column-gap: 32px;
+				padding: 26px 60px 40px;
+				height: max-content;
+			}
+			.sub-menu {
+				padding: 0;
+				overflow-y: auto;
+				overflow-x: hidden;
+				height: auto;
+				max-height: calc(100vh - 120px);
+				min-height: unset;
+				width: 100vw;
+				max-width: min(1500px, 100vw);
+				left: -378px;
+				li {
+					// break-inside: avoid;
+					&:last-child {
+						display: list-item;
+					}
+				}
+				.menu-item.parent {
+					> a {
+						margin-bottom: 12px;
+						width: 100%;
+						padding: 0 0 4px;
+						border-bottom: 1px solid #333;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						gap: 8px;
+					}
+					.more,
+					.minus {
+						display: none;
+						border: 1px solid #444;
+						width: 20px;
+						height: 20px;
+						border-radius: 50%;
+						justify-content: center;
+						align-items: center;
+						color: #444;
+					}
+					.sub-sub-menu {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+						margin-bottom: 16px;
+					}
+
+				}
+				.menu-item.child {
+					a {
+						text-transform: none;
+						font-weight: 400;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 1300px) {
+	.main-navigation {
+		ul.menu {
+			li.menu-item.custom-menu-category.active,
+			li.menu-item.custom-menu-category:hover {
+				.sub-menu {
+					left: -274px;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 1100px) {
+	.main-navigation {
+		.menu-main-menu-container {
+			width: 100vw;
+			max-width: 450px;
+		}
+		ul.menu {
+			li.menu-item.custom-menu-category.active,
+			li.menu-item.custom-menu-category:hover {
+				.sub-menu-content {
+					column-count: 1;
+					padding: 12px 0;
+				}
+				.sub-menu {
+					left: -100px;
+					max-height: 100%;
+					margin-right: -85px;
+					&:after {
+						content: none;
+					}
+					.menu-item.parent {
+						.more {
+							display: flex;
+						} 
+						.sub-sub-menu {
+							display: none;
+						}
+						&.focus {
+							.more {
+								display: none;
+							}
+							.minus {
+								display: flex;
+							}
+							.sub-sub-menu {
+								display: flex;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
