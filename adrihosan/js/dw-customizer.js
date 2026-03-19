@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	
+
 	// Function added to see if is visible an element
 	$.fn.isVisible = function() {
 		if (!$(this).length) return false;
@@ -12,14 +12,30 @@ jQuery(document).ready(function($) {
 		return ok;
 	};
 
-	$(window).on('scroll', function() {
-		// Recaptcha visibility
-		if ($('.wpcf7-form').isVisible()) {
-			$('.grecaptcha-badge').addClass('visible');
-		} else {
-			$('.grecaptcha-badge').removeClass('visible');
-		}
-	});
+	// Throttle helper - ejecuta función máximo 1 vez cada 'limit' ms
+	function throttle(fn, limit) {
+		var waiting = false;
+		return function() {
+			if (!waiting) {
+				fn.apply(this, arguments);
+				waiting = true;
+				setTimeout(function() { waiting = false; }, limit);
+			}
+		};
+	}
+
+	// Recaptcha visibility - throttled a 200ms (antes se ejecutaba 60+ veces/seg)
+	var $wpcf7Form = $('.wpcf7-form');
+	var $recaptchaBadge = $('.grecaptcha-badge');
+	if ($wpcf7Form.length && $recaptchaBadge.length) {
+		$(window).on('scroll', throttle(function() {
+			if ($wpcf7Form.isVisible()) {
+				$recaptchaBadge.addClass('visible');
+			} else {
+				$recaptchaBadge.removeClass('visible');
+			}
+		}, 200));
+	}
 
 	// Search
 	$('.site-search .search-button,.site-search .search-submit').on('click', function() {
@@ -38,11 +54,12 @@ jQuery(document).ready(function($) {
 	var html = $('.productinfo-show-discounts').remove();
 	$('.woocommerce-product-details__short-description').append(html);
 
-	// Thumbs gallery slider
+	// Thumbs gallery slider - diferido porque no es visible inmediatamente
 	setTimeout(function() {
 		var first_thumb = 1;
 		var max_thumbs = 3;
-		var number_thumbs = $('.flex-control-thumbs li').length;
+		var $thumbItems = $('.flex-control-thumbs li');
+		var number_thumbs = $thumbItems.length;
 		if (number_thumbs > 0) {
 			$('.flex-control-thumbs').append(
 				'<div class="slider-btn-gallery left"></div>' +
@@ -50,25 +67,16 @@ jQuery(document).ready(function($) {
 			);
 		}
 		function update_slider() {
-			var i = 0;
-			$('.flex-control-thumbs li').each(function() {
-				i++;
-				if (i < first_thumb || i >= first_thumb + max_thumbs) {
-					$(this).addClass('dw-hidden');
+			$thumbItems.each(function(i) {
+				var idx = i + 1;
+				if (idx < first_thumb || idx >= first_thumb + max_thumbs) {
+					this.classList.add('dw-hidden');
 				} else {
-					$(this).removeClass('dw-hidden');
+					this.classList.remove('dw-hidden');
 				}
 			});
-			if (first_thumb > 1) {
-				$('.slider-btn-gallery.left').removeClass('dw-hidden');
-			} else {
-				$('.slider-btn-gallery.left').addClass('dw-hidden');
-			}
-			if (first_thumb > number_thumbs - max_thumbs) {
-				$('.slider-btn-gallery.right').addClass('dw-hidden');
-			} else {
-				$('.slider-btn-gallery.right').removeClass('dw-hidden');
-			}
+			$('.slider-btn-gallery.left').toggleClass('dw-hidden', first_thumb <= 1);
+			$('.slider-btn-gallery.right').toggleClass('dw-hidden', first_thumb > number_thumbs - max_thumbs);
 		}
 		update_slider();
 		$('.slider-btn-gallery.left').on('click', function() {
@@ -84,7 +92,8 @@ jQuery(document).ready(function($) {
 	// Up-sell products slider
 	var first_prod = 1;
 	var max_prods = 3;
-	var number_prods = $('.up-sells .products li').length;
+	var $upSellItems = $('.up-sells .products li');
+	var number_prods = $upSellItems.length;
 	if (number_prods > 0) {
 		$('.upsells-title').append(
 			'<div class="slider-btn-prod left"></div>' +
@@ -92,25 +101,16 @@ jQuery(document).ready(function($) {
 		);
 	}
 	function update_prods_slider() {
-		var i = 0;
-		$('.up-sells .products li').each(function() {
-			i++;
-			if (i < first_prod || i >= first_prod + max_prods) {
-				$(this).addClass('dw-hidden');
+		$upSellItems.each(function(i) {
+			var idx = i + 1;
+			if (idx < first_prod || idx >= first_prod + max_prods) {
+				this.classList.add('dw-hidden');
 			} else {
-				$(this).removeClass('dw-hidden');
+				this.classList.remove('dw-hidden');
 			}
 		});
-		if (first_prod > 1) {
-			$('.slider-btn-prod.left').removeClass('dw-hidden');
-		} else {
-			$('.slider-btn-prod.left').addClass('dw-hidden');
-		}
-		if (first_prod > number_prods - max_prods) {
-			$('.slider-btn-prod.right').addClass('dw-hidden');
-		} else {
-			$('.slider-btn-prod.right').removeClass('dw-hidden');
-		}
+		$('.slider-btn-prod.left').toggleClass('dw-hidden', first_prod <= 1);
+		$('.slider-btn-prod.right').toggleClass('dw-hidden', first_prod > number_prods - max_prods);
 	}
 	update_prods_slider();
 	$('.slider-btn-prod.left').on('click', function() {
@@ -140,27 +140,19 @@ jQuery(document).ready(function($) {
 		max_products = 1;
 	}
 	var first_product = 1;
-	var number_products = $('.slider-products li').length;
+	var $relatedItems = $('.slider-products li');
+	var number_products = $relatedItems.length;
 	function update_slider_products() {
-		var i = 0;
-		$('.slider-products li').each(function() {
-			i++;
-			if (i < first_product || i >= first_product + max_products) {
-				$(this).addClass('dw-hidden');
+		$relatedItems.each(function(i) {
+			var idx = i + 1;
+			if (idx < first_product || idx >= first_product + max_products) {
+				this.classList.add('dw-hidden');
 			} else {
-				$(this).removeClass('dw-hidden');
+				this.classList.remove('dw-hidden');
 			}
 		});
-		if (first_product > 1) {
-			$('.slider-btn.left').removeClass('dw-hidden');
-		} else {
-			$('.slider-btn.left').addClass('dw-hidden');
-		}
-		if (first_product > number_products - max_products) {
-			$('.slider-btn.right').addClass('dw-hidden');
-		} else {
-			$('.slider-btn.right').removeClass('dw-hidden');
-		}
+		$('.slider-btn.left').toggleClass('dw-hidden', first_product <= 1);
+		$('.slider-btn.right').toggleClass('dw-hidden', first_product > number_products - max_products);
 	}
 	update_slider_products();
 	$('.slider-btn.left').on('click', function() {
@@ -197,7 +189,7 @@ jQuery(document).ready(function($) {
 			var html_sm = post_social_media.wrap('<div></div>').parent().html();
 			$('article.post').append(html_sm);
 		}
-	
+
 		// Single-product brand and upsells change position
 		if (screen.width <= 800) {
 			var bu = $('.brand-upsells').remove();
@@ -205,11 +197,6 @@ jQuery(document).ready(function($) {
 			$('.woocommerce-tabs').after(html_bu);
 		}
 	}
-
-	// Add class for css
-	// $('li.product-category.product').each(function() {
-	// 	$(this).parent('ul').addClass('products-category');
-	// });
 
 	// Cart Coupon
 	function enable_coupon() {
@@ -331,7 +318,7 @@ jQuery(document).ready(function($) {
 			var input = $(this).parent().find('input.qty');
 			var oldVal = parseFloat(input.val());
 			var stepAttr = input.attr('step');
-			var step = (stepAttr && stepAttr.length) ? parseFloat(stepAttr) : 1; 
+			var step = (stepAttr && stepAttr.length) ? parseFloat(stepAttr) : 1;
 			var newVal = oldVal + parseFloat(step);
 			var maxAttr = input.attr('max');
 			var max = (maxAttr && maxAttr.length) ? parseFloat(maxAttr) : 0;
@@ -357,7 +344,7 @@ jQuery(document).ready(function($) {
 			var input = $(this).parent().find('input.qty');
 			var oldVal = parseFloat(input.val());
 			var stepAttr = input.attr('step');
-			var step = (stepAttr && stepAttr.length) ? parseFloat(stepAttr) : 1; 
+			var step = (stepAttr && stepAttr.length) ? parseFloat(stepAttr) : 1;
 			var newVal = oldVal - parseFloat(step);
 			var maxAttr = input.attr('max');
 			var max = (maxAttr && maxAttr.length) ? parseFloat(maxAttr) : 0;
@@ -443,14 +430,6 @@ jQuery(document).ready(function($) {
 		$('#search-submit').trigger('click');
 	});
 
-	// $('.woocommerce-price-suffix').each(function() {
-	// 	var content = $.trim($(this).html());
-	// 	if (content.substr(0,1) == '/') {
-	// 		content = content.substr(1, content.length - 1 );
-	// 	}
-	// 	$(this).html(content);
-	// });
-
 	const stuckClass = 'sticky';
 	const $stickyTopElements = $('.advanced-filter');
 	function determineSticky() {
@@ -464,9 +443,9 @@ jQuery(document).ready(function($) {
 		});
 	}
 	determineSticky();
-	$(window).on('resize scroll', () => {
+	$(window).on('resize scroll', throttle(function() {
 		determineSticky();
-	});
+	}, 100));
 
 
 	if ($('.advanced-search').length && !$('.dw-spinner').length ) {
@@ -541,7 +520,7 @@ jQuery(document).ready(function($) {
   $('.qty[type="number"]').on('blur change', function () {
     let $input = $(this);
     let value = parseFloat($input.val());
-    let step = parseFloat($input.attr('step')) || 1; 
+    let step = parseFloat($input.attr('step')) || 1;
     if (!isNaN(value)) {
       let roundedValue = Math.round(value / step) * step;
       $input.val(roundedValue.toFixed(2));

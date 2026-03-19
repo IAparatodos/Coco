@@ -763,6 +763,65 @@ function adrihosan_async_main_css( $html, $handle ) {
 add_filter( 'style_loader_tag', 'adrihosan_async_main_css', 10, 2 );
 
 /**
+ * Preload hero image del LCP para categorías de productos.
+ * Las imágenes hero se cargan como background-image en CSS, lo que retrasa el LCP.
+ * Con preload, el navegador empieza la descarga inmediatamente sin esperar al CSS.
+ */
+function adrihosan_preload_hero_image() {
+	if ( ! is_product_category() ) {
+		return;
+	}
+
+	$cat_id = get_queried_object_id();
+
+	// Mapa de hero images por categoría (URLs reales extraídas de los category-*.php)
+	$hero_images = array(
+		63   => 'https://www.adrihosan.com/wp-content/uploads/2026/02/Azulejos-Online-Diseno-y-Calidad.jpg',
+		2245 => 'https://www.adrihosan.com/wp-content/uploads/2026/02/suelo-porcelanico-imitacion-marmol.jpg',
+		2350 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-tecnico-exterior-Adrihosan.jpg',
+		2482 => 'https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-ceramica-Vives-Adrihosan.jpg',
+		2394 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-fachadas-muros-Adrihosan.jpg',
+		2173 => 'https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-hexagonales-Adrihosan.jpg',
+		2160 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-de-Exterior.jpg',
+		1790 => 'https://www.adrihosan.com/wp-content/uploads/2022/05/azulejos-para-cocinas-1.jpg',
+		64   => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg',
+		4806 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg',
+		2377 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-hexagonales-suelo-Adrihosan.jpg',
+		66   => 'https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas.jpg',
+		1789 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+		62   => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+		2410 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+		1844 => 'https://www.adrihosan.com/wp-content/uploads/2026/02/Porcelanico-gran-formato-negro-efecto-marmol.jpg',
+		2510 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg',
+		2093 => 'https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-adrihosan.jpg',
+		310  => 'https://www.adrihosan.com/wp-content/uploads/2026/03/porcelanico-teclam-Adrihosan.jpg',
+		2273 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelos-rusticos-Adrihosan.jpg',
+		2471 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/porcelanico-tecnico-Adrihosan.jpg',
+		4862 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/Baldosa-hidraulica-original-Adrihosan-1.jpg',
+		2358 => 'https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-antiguos-Vintage-Adrihosan.jpg',
+		2516 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-zellige-Adrihosan.jpg',
+		4869 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg',
+		2209 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg',
+		2285 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/suelos-cocina-Adrihosan.jpg',
+		4973 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-imitacion-cemento-Adrihosan.jpg',
+		2188 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-escama-pez-Adrihosan.jpg',
+		2132 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-15x15-Adrihosan.jpg',
+		4972 => 'https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-imitacion-piedra-Adrihosan.jpg',
+		2082 => 'https://www.adrihosan.com/wp-content/uploads/2026/01/suelo-hidraulico-adrihosan.jpg',
+		4866 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg',
+		4865 => 'https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg',
+		2108 => 'https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-decorativos-Adrihosan.jpg',
+	);
+
+	if ( ! isset( $hero_images[ $cat_id ] ) ) {
+		return;
+	}
+
+	echo '<link rel="preload" as="image" href="' . esc_url( $hero_images[ $cat_id ] ) . '" fetchpriority="high">' . "\n";
+}
+add_action( 'wp_head', 'adrihosan_preload_hero_image', 1 );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
