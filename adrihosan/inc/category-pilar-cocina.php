@@ -88,7 +88,7 @@ function adrihosan_pilar_cocina_contenido_superior() {
     </div>
     
     <div id="destino-filtro-adria-cocina" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427053"]'); ?></div>
 
     <div id="catalogo-cocina" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosas para Cocina</h2></div>
 
