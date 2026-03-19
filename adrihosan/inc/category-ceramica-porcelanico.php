@@ -744,7 +744,11 @@ function adrihosan_metro_superior_final() {
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427014"]'); ?></div>
 
+    <style>@media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-metro .wpc-filters-open-button-container, #destino-filtro-adria-metro .wpc-filters-open-button-container a, #destino-filtro-adria-metro a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <script>(function($){"use strict";function moverBotonFiltroMetro(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-metro');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR AZULEJOS');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroMetro);setTimeout(moverBotonFiltroMetro,1500);function adrihosanFuerzaScrollMetro(){var $dest=$('#catalogo-metro-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollMetro,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollMetro,500);});})(jQuery);</script>
+
     <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
+    <div id="catalogo-metro-foco"></div>
     <div id="catalogo-metro" class="product-loop-header">
         <h2 class="product-loop-title">Colecci&oacute;n Azulejo Metro</h2>
     </div>
