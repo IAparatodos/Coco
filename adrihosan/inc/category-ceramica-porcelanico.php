@@ -268,8 +268,6 @@ function adrihosan_porcelanico_superior_final() {
     <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;">
         </div>
 
-    <div id="fe-products-wrapper" class="filter-container-master"><?php echo do_shortcode('[fe_widget id="426770"]'); ?></div>
-
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Colecciones Especiales</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
