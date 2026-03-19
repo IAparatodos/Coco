@@ -82,3 +82,78 @@ Este archivo contiene:
 - **Critical CSS inline** en header.php (header + hero h1 + cover + responsive)
 - **CSS async** style.css y fonts.css via media="print" + onload
 - **Cache menú categorías** en functions.php (transient 1h para 1.496 categorías)
+
+## Limpieza BD - 19 marzo 2026
+
+### Tablas vaciadas con TRUNCATE (se pueden repoblar solas por los plugins):
+
+| Tabla | Tamaño antes | Plugin | Cómo se repobla |
+|-------|-------------|--------|-----------------|
+| `wpso_cmplz_statistics` | 107 MB (1.055.120 filas) | Complianz (cookies) | Se regenera automáticamente con nuevas visitas |
+| `wpso_ewwwio_images` | 290 MB (1.484.375 filas) | EWWW Image Optimizer | Se regenera al re-escanear imágenes desde el plugin |
+| `wpso_pmxi_images` | 41 MB (189.911 filas) | WP All Import | Logs de importaciones antiguas, no se necesitan |
+| `wpso_post_smtp_logs` | 11 MB (213 filas) | Post SMTP | Se regenera con nuevos emails enviados |
+
+**Total liberado: ~450 MB**
+
+### Diagnóstico BD (datos de referencia):
+
+- **Autoload:** 0.21 MB (OK, no es problema)
+- **Meta huérfanos:** 0 (limpio)
+- **Revisiones:** 8.311 (solo 0.02 MB, no vale la pena limpiar)
+- **Action Scheduler:** 2.472 complete (limpio)
+- **Base de datos:** `adrihos4n_2021` (prefijo tablas: `wpso_`)
+- **Tabla más grande:** `wpso_postmeta` 753 MB (datos reales de productos, NO tocar)
+
+## Limpieza GTM - 19 marzo 2026 (Versión 70)
+
+### Etiquetas pausadas en Google Tag Manager (NO eliminadas, se pueden reactivar):
+
+| Etiqueta | Tipo | Por qué se pausó |
+|----------|------|-------------------|
+| [ Microsoft Clarity \| Pixel seguimiento ] | HTML personalizado | Ya no se usa, generaba 15+ peticiones XHR por visita |
+| Crazy egg | Crazy Egg | Heatmap duplicado, no se usa |
+| Base Tag(UET 137032262) | Microsoft Advertising | No se hacen campañas en Bing |
+| GA - Pageview(Microsoft UET) | Microsoft Advertising | Universal Analytics cerrado julio 2023 |
+| Google Analytics Ecommerce UA Add To Cart(Microsoft UET) | Microsoft Advertising | UA cerrado |
+| Google Analytics Ecommerce UA Checkout(Microsoft UET) | Microsoft Advertising | UA cerrado |
+| Google Analytics Ecommerce UA Product Details(Microsoft UET) | Microsoft Advertising | UA cerrado |
+| Google Analytics Ecommerce UA Product Impression(Microsoft UET) | Microsoft Advertising | UA cerrado |
+| Transacciones UA(Microsoft UET) | Microsoft Advertising | UA cerrado |
+| Pixel Facebook 980396552370672 | HTML personalizado | Duplicado del [Facebook] Pixel principal |
+| TIK TOK - CNPCJJ3C77UB4F5CPU9G | HTML personalizado | No se hacen campañas en TikTok |
+
+### Para revertir:
+1. Ir a tagmanager.google.com → Adrihosan web
+2. Etiquetas → seleccionar la etiqueta pausada → Reanudar
+3. Enviar/Publicar nueva versión
+
+### Resultado de la limpieza:
+
+| Métrica | Antes | Después |
+|---------|-------|---------|
+| Solicitudes | 169 | 130 |
+| Tiempo total carga | 2.8 min | 3.30 s |
+| DOMContentLoaded | 242 ms | 306 ms |
+| TTFB | 36 ms | 36 ms |
+
+### Etiquetas GTM que SÍ siguen activas (NO tocar):
+
+- [GA4] Etiqueta de Google - Analytics principal
+- [GA4 Event] Click en email/teléfono/whatsapp - Eventos GA4
+- [GA4 Event] Ecommerce events - Ecommerce GA4
+- [GA4 Event] Formulario contacto enviado
+- [GA4 Event] Vista producto escaparate
+- [GAds] Etiqueta de Google - Google Ads principal
+- [GAds] Vinculación de conversiones
+- [GAds Conv] Clicks en teléfono/whatsapp - Conversiones Google Ads
+- [GAds Conv] Compra realizada
+- [Facebook] Pixel - Pixel principal de Meta
+- [Facebook] Addtocart/Checkout/Compra - Conversiones Meta
+- [Micro] 60 Seg en pag - Conversión micro Google Ads
+- [JS] Calendly listener / Contact Form 7 Listener
+- Complianz Config - Gestión de consentimiento
+- Mejorada [GA4 Event] Formulario contacto enviado
+- Validación Dominio Facebook
+- Vista Contacto
+- Eventos de landings (Azulejos_exposicion/llamada/video/whatsapp, etc.)
