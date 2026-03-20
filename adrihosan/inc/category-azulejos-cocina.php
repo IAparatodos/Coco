@@ -91,7 +91,7 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                         <p>Azulejos que aportan luz y sensación de espacio</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/uso-pavimento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/fmt-7-5x15/destino-az-col-suelo/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Suelos de cocina resistentes">
                     <div class="ap-card-content">
                         <h3>Suelos de Cocina</h3>
