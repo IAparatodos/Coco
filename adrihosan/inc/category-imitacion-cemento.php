@@ -16,7 +16,7 @@ function adrihosan_imitacion_cemento_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-imitacion-cemento-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Azulejo-imitacion-microcemento-Adrihosan-1.jpg');">
         <div class="hero-content">
             <h1>Azulejos Imitaci&oacute;n Cemento: Estilo Industrial con la Resistencia del Porcel&aacute;nico</h1>
             <p>Consigue el look urbano y minimalista del microcemento sin sus inconvenientes. Suelos y paredes con acabado cemento, f&aacute;ciles de mantener y ultra resistentes.</p>
