@@ -77,14 +77,14 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                 <p>Encuentra la solución perfecta para cada área de tu cocina</p>
             </div>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-hexagonal/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/asp-vintage/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-3.jpg" alt="Frentes de cocina splashbacks">
                     <div class="ap-card-content">
                         <h3>Frentes de Cocina</h3>
                         <p>Diseños decorativos para la zona de cocción</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-imitacion-bambu/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/fmt-7-5x15/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejo-imitacion-hidraulico-Adrihosan-1.jpg" alt="Azulejos para cocinas pequeñas">
                     <div class="ap-card-content">
                         <h3>Cocinas Pequeñas</h3>
