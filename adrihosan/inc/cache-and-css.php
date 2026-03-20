@@ -99,7 +99,7 @@ function adrihosan_cargar_css_categoria() {
             'adrihosan-category-common',
             get_stylesheet_directory_uri() . '/assets/js/category-common.js',
             array('jquery'),
-            '1.0.0',
+            '1.0.2',
             true
         );
 
