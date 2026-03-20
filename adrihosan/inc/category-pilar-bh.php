@@ -86,10 +86,6 @@ function adrihosan_pilar_bh_contenido_superior() {
         </div>
     </section>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;No sabes cu&aacute;l elegir? La <strong>baldosa original</strong> es para amantes de lo artesanal que disfrutan cuidando su suelo. El <strong>porcel&aacute;nico</strong> es para quienes buscan practicidad sin renunciar al dise&ntilde;o.</p>
-    </div>
-
     <section class="ap-product-header-section adrihosan-full-width-block" style="padding-bottom: 0;">
         <div class="ap-product-header-wrapper">
             <h2>Nuestros Best Sellers en Hidr&aacute;ulico</h2>
