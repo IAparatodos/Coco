@@ -65,10 +65,10 @@ function adrihosan_azulejos_decorativos_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocina</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;o</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-tipo-suelo-porcelanico/" class="quick-nav-pill">&#127795; Para Exterior</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="quick-nav-pill">&#128396; Dise&ntilde;os Estampados</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/est-prod-cocina/" class="quick-nav-pill">&#127859; Para Cocina</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/est-prod-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;o</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/est-prod-terraza/" class="quick-nav-pill">&#127795; Para Exterior</a>
+            <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="quick-nav-pill">&#128396; Dise&ntilde;os Estampados</a>
             <a href="#bumper-personalizado" class="quick-nav-pill quick-nav-pill-highlight">&#11088; Hazlos Personalizados</a>
         </div>
     </section>
@@ -179,10 +179,10 @@ function adrihosan_azulejos_decorativos_contenido_inferior() {
             <h2>Tendencias en Azulejos Decorativos</h2>
             <p>Los azulejos decorativos est&aacute;n viviendo una &eacute;poca dorada. Desde las texturas 3D que juegan con la luz hasta los estampados maximalistas que rompen con la monoton&iacute;a del minimalismo. Combina diferentes estilos para crear espacios &uacute;nicos con personalidad.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-imitacion-hidraulico/" class="trend-link">Estampados</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-geometrico/" class="trend-link">Geom&eacute;tricos</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-floral/" class="trend-link">Florales</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/ver-estilo-relieve/" class="trend-link">Relieve 3D</a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/" class="trend-link">Estampados</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/asp-precorte/" class="trend-link">Geom&eacute;tricos</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/asp-escama/" class="trend-link">Florales</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-decorativos/asp-imitacion-bambu/" class="trend-link">Relieve 3D</a>
             </div>
         </div>
     </section>
