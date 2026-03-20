@@ -16,7 +16,7 @@ function adrihosan_porcelanico_tecnico_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/porcelanico-tecnico-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/porcelanico-tecnico-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Porcel&aacute;nico T&eacute;cnico: M&aacute;xima Resistencia para Espacios Exigentes</h1>
             <p>El material m&aacute;s duro y resistente del mercado cer&aacute;mico. Dise&ntilde;ado para soportar tr&aacute;fico intenso, abrasi&oacute;n y condiciones extremas sin perder su aspecto.</p>
