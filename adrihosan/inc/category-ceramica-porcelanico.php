@@ -358,6 +358,9 @@ function adrihosan_porcelanico_superior_final() {
     })(jQuery);
     </script>
 
+    <!-- WIDGET FILTROS Filter Everything Pro -->
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
+
     <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
     <div id="fe-products-wrapper">
     <?php
