@@ -8,17 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // =========================================================================
     // SCROLL AL LOOP DE PRODUCTOS (hash #scroll-productos, delay 1s)
     // =========================================================================
-    if (window.location.hash === '#scroll-productos') {
+    function scrollToProducts() {
+        if (window.location.hash !== '#scroll-productos') return;
         setTimeout(function() {
             var target = document.querySelector('.product-loop-header') ||
-                         document.querySelector('.products') ||
-                         document.querySelector('.woocommerce-products-header');
+                         document.querySelector('ul.products') ||
+                         document.querySelector('.woocommerce-result-count');
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                var y = target.getBoundingClientRect().top + window.pageYOffset - 120;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
             history.replaceState(null, '', window.location.pathname + window.location.search);
         }, 1000);
     }
+    scrollToProducts();
+    window.addEventListener('load', scrollToProducts);
 
     // =========================================================================
     // FAQs DESPLEGABLES
