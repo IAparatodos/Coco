@@ -67,8 +67,8 @@ function adrihosan_azulejos_hexagonales_contenido_superior() {
         <div class="quick-nav-wrapper">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/tono-verde/" class="quick-nav-pill">&#129001; Hexagonal Verde</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/tono-blanco/" class="quick-nav-pill">&#9898; Hexagonal Blanco</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/estancia-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/estancia-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;os</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/est-prod-cocina/" class="quick-nav-pill">&#127859; Para Cocinas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/est-prod-bano/" class="quick-nav-pill">&#128705; Para Ba&ntilde;os</a>
         </div>
     </section>
 
@@ -170,8 +170,8 @@ function adrihosan_azulejos_hexagonales_contenido_inferior() {
             <div class="trends-links">
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/tono-verde/" class="trend-link">Hexagonal Verde</a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/tono-blanco/" class="trend-link">Hexagonal Blanco</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/estancia-cocina/" class="trend-link">Para Cocinas</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/estancia-bano/" class="trend-link">Para Ba&ntilde;os</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/est-prod-cocina/" class="trend-link">Para Cocinas</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-hexagonales/est-prod-bano/" class="trend-link">Para Ba&ntilde;os</a>
             </div>
         </div>
     </section>
