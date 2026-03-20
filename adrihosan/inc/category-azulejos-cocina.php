@@ -44,7 +44,7 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                         <p>El clásico atemporal que nunca falla</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-para-cocina-marmol.jpg" alt="Azulejos efecto mármol para cocina">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
