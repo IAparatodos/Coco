@@ -75,10 +75,14 @@
         }
     });
 
-    // Scroll al cargar si hay filtros activos O si venimos de una pill
+    // Scroll al cargar si hay filtros activos, hash #scroll-productos, o venimos de una pill
     $(document).ready(function() {
         if (tieneParametrosFiltro()) {
             setTimeout(scrollSuaveAlCatalogo, 500);
+        }
+        if (window.location.hash === '#scroll-productos') {
+            setTimeout(scrollSuaveAlCatalogo, 1000);
+            history.replaceState(null, '', window.location.pathname + window.location.search);
         }
         if (sessionStorage.getItem('adrihosan_scroll_catalogo') === '1') {
             sessionStorage.removeItem('adrihosan_scroll_catalogo');
