@@ -16,7 +16,7 @@ function adrihosan_escama_pez_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-escama-pez-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azueljo-escama-de-pez-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Azulejos Escama de Pez: El Toque Decorativo que Marca la Diferencia</h1>
             <p>Formas org&aacute;nicas inspiradas en la naturaleza. Los azulejos tipo escama o abanico aportan movimiento, textura y un car&aacute;cter &uacute;nico a tus paredes.</p>
