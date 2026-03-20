@@ -709,29 +709,29 @@ function adrihosan_metro_superior_final() {
         <div class="metro-inspiration-wrapper">
             <h2>Elige tu Estilo</h2>
             <div class="metro-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-bano/" class="metro-insp-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-blanco/" class="metro-insp-card">
                     <div class="metro-insp-card-img">
-                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-blanco-adrihosan.jpg" alt="Azulejo mosaico para ba&ntilde;o" loading="lazy">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-blanco-adrihosan.jpg" alt="Azulejo metro blanco cl&aacute;sico" loading="lazy">
                     </div>
-                    <h3>Ba&ntilde;o</h3>
+                    <h3>Blanco Cl&aacute;sico</h3>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-cocina/" class="metro-insp-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-negro/" class="metro-insp-card">
                     <div class="metro-insp-card-img">
-                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-negro-adrihosan.jpg" alt="Azulejo mosaico para cocina" loading="lazy">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-negro-adrihosan.jpg" alt="Azulejo metro negro industrial" loading="lazy">
                     </div>
-                    <h3>Cocina</h3>
+                    <h3>Negro Industrial</h3>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/tono-blanco/" class="metro-insp-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-multicolor/" class="metro-insp-card">
                     <div class="metro-insp-card-img">
-                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-colores-adrihosan.jpg" alt="Azulejo mosaico blanco" loading="lazy">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-colores-adrihosan.jpg" alt="Azulejo metro a todo color" loading="lazy">
                     </div>
-                    <h3>Blancos</h3>
+                    <h3>A Todo Color</h3>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-terraza/" class="metro-insp-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="metro-insp-card">
                     <div class="metro-insp-card-img">
-                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-mate-adrihosan.jpg" alt="Azulejo mosaico para exterior" loading="lazy">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-mate-adrihosan.jpg" alt="Azulejo metro acabado mate" loading="lazy">
                     </div>
-                    <h3>Exterior</h3>
+                    <h3>Acabado Mate</h3>
                 </a>
             </div>
         </div>
@@ -810,10 +810,10 @@ function adrihosan_metro_inferior_final() {
             <h2>Formatos y Acabados Disponibles</h2>
             <p>Desde el formato cl&aacute;sico 7,5x15 hasta el alargado 10x30. En brillo, mate o biselado. Encuentra la combinaci&oacute;n perfecta para tu proyecto.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-bano/" class="trend-link">Ba&ntilde;o</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-cocina/" class="trend-link">Cocina</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/tono-blanco/" class="trend-link">Blancos</a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejo-mosaico/est-prod-terraza/" class="trend-link">Exterior</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-blanco/" class="trend-link">Blanco</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-negro/" class="trend-link">Negro</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-multicolor/" class="trend-link">Color</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="trend-link">Mate</a>
             </div>
         </div>
     </section>
