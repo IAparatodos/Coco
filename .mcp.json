@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ClinicalTrials": {
+      "url": "https://mcp.deepsense.ai/clinical_trials/mcp"
+    }
+  }
+}
