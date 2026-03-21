@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Panel } from './components/Panel';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { generateStorySegment, generatePanelImage } from './services/gemini';
+import { notifyStoryStart, notifyNewPanel, notifyUserChoice, notifyError } from './services/telegram';
 import { StorySegment } from './types';
 
 const INITIAL_PROMPT = "Inicio de la historia: Una adorable perrita Bichón Maltés llamada 'Nube' entra moviendo la cola en 'Adrihosan', una tienda de azulejos y reformas muy elegante. Hay muchas texturas y brillos.";
@@ -15,16 +16,18 @@ const App: React.FC = () => {
 
   const handleStart = async () => {
     setGameStarted(true);
+    notifyStoryStart();
     await advanceStory(INITIAL_PROMPT);
   };
 
   const advanceStory = async (userChoice: string) => {
     setLoading(true);
+    notifyUserChoice(userChoice);
     try {
       // 1. Generate Text and Image Prompt
       const historyText = storyPanels.map(p => `Narrador: ${p.narrative}\nOpción elegida: ${p.selectedChoice || 'Inicio'}`).join('\n');
       const segment = await generateStorySegment(historyText, userChoice);
-      
+
       // Add placeholder panel while image generates
       const newPanelId = Date.now();
       const partialPanel: StorySegment = {
@@ -33,6 +36,7 @@ const App: React.FC = () => {
         imageData: null // No image yet
       };
 
+      notifyNewPanel(segment.narrative, storyPanels.length + 1);
       setStoryPanels(prev => [...prev, partialPanel]);
       setLoading(false);
       setImageLoading(true);
@@ -50,6 +54,7 @@ const App: React.FC = () => {
 
     } catch (error) {
       console.error("Error generating story:", error);
+      notifyError(error instanceof Error ? error.message : 'Error desconocido generando historia');
       alert("Hubo un error conectando con la IA. Por favor intenta de nuevo.");
     } finally {
       setLoading(false);
