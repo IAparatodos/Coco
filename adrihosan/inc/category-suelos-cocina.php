@@ -16,7 +16,7 @@ function adrihosan_suelos_cocina_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelos-cocina-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/Suelos-de-cocina-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Suelos para Cocina: Resistentes, Bonitos y F&aacute;ciles de Limpiar</h1>
             <p>Tu cocina necesita un suelo que aguante el ritmo del d&iacute;a a d&iacute;a: manchas, humedad, golpes y tr&aacute;fico constante. Descubre pavimentos que combinan dise&ntilde;o y funcionalidad.</p>
