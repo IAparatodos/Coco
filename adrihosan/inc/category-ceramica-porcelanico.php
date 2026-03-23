@@ -378,20 +378,37 @@ function adrihosan_porcelanico_inferior_final() {
         </div>
     </section>
 
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gres Porcelánico</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué mantenimiento requiere?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Prácticamente nulo. Al no ser poroso, basta con agua y un jabón neutro. Olvídate de ceras, pulidos o barnices para siempre.</p>
-            </div>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Es compatible con suelo radiante?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Es el mejor material para ello. Su alta conductividad térmica permite que el calor pase rápidamente, optimizando el consumo energético de tu calefacción.</p>
-            </div>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Se mancha con facilidad?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">No. El porcelánico tiene una absorción de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el ácido penetran en la baldosa. Es higiénico y antibacteriano.</p>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Gres Porcel&aacute;nico</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; mantenimiento requiere?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Pr&aacute;cticamente nulo. Al no ser poroso, basta con agua y un jab&oacute;n neutro. Olv&iacute;date de ceras, pulidos o barnices para siempre.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es compatible con suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es el mejor material para ello. Su alta conductividad t&eacute;rmica permite que el calor pase r&aacute;pidamente, optimizando el consumo energ&eacute;tico de tu calefacci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se mancha con facilidad?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No. El porcel&aacute;nico tiene una absorci&oacute;n de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el &aacute;cido penetran en la baldosa. Es higi&eacute;nico y antibacteriano.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
