@@ -122,6 +122,21 @@ function adrihosan_wood_contenido_superior() {
 function adrihosan_wood_contenido_inferior() {
     ?>
     </div><!-- /fe-products-wrapper -->
+    <?php
+    // SEO: Contenido dinámico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $descripcion_editor; ?>
+            </div>
+        </div>
+    </section>
+    <?php
+    }
+    ?>
 
     <!-- 7. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
