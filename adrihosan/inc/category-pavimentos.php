@@ -182,24 +182,51 @@ function adrihosan_pavimentos_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Pavimentos Cer&aacute;micos</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Pavimentos y Suelos Cer&aacute;micos</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre un pavimento cer&aacute;mico y un suelo porcel&aacute;nico?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre un suelo de cer&aacute;mica y uno de porcelana (porcel&aacute;nico)?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El <strong>suelo porcel&aacute;nico</strong> es una evoluci&oacute;n t&eacute;cnica del gres convencional, con una absorci&oacute;n de agua casi nula (inferior al 0.5%). Esto lo hace mucho m&aacute;s resistente, impermeable y apto para cualquier estancia, incluyendo exteriores y zonas h&uacute;medas.</p>
+                        <p>El gres cer&aacute;mico tradicional (pasta roja o blanca) es m&aacute;s poroso y apto para interiores est&aacute;ndar. El <strong>suelo de porcel&aacute;nico</strong> o gres porcel&aacute;nico se cuece a mayor temperatura, es extremadamente denso, casi no absorbe agua y es perfecto para alto tr&aacute;nsito, zonas de desgaste frecuente, exteriores y fachadas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo elegir el color del suelo para una casa peque&ntilde;a?</span>
+                        <span>&iquest;Qu&eacute; es un suelo porcel&aacute;nico rectificado?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Los <strong>azulejos en tonos claros</strong> o imitaci&oacute;n madera en colores naturales multiplican la luminosidad y la sensaci&oacute;n de amplitud en espacios reducidos. Evita tonos muy oscuros que absorben la luz y hacen el espacio m&aacute;s peque&ntilde;o visualmente.</p>
+                        <p>Es un tipo de baldosa porcel&aacute;nica cuyos bordes han sido cortados mec&aacute;nicamente para que queden totalmente rectos (a 90&ordm;). Esto permite instalarlos con una junta m&iacute;nima de 1-2 mm, creando un efecto de superficie continua, muy valorado en dise&ntilde;os modernos y en la <strong>cer&aacute;mica suelos imitaci&oacute;n madera</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se pueden usar los suelos porcel&aacute;nicos si tengo suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, de hecho, el <strong>porcel&aacute;nico suelo</strong> es el material ideal y m&aacute;s eficiente para instalar sobre suelo radiante o refrescante. Al ser un excelente conductor t&eacute;rmico, transmite el calor (o el fr&iacute;o) a la habitaci&oacute;n de forma mucho m&aacute;s r&aacute;pida y eficiente que la madera natural o el suelo laminado.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;El suelo de exterior antideslizante es dif&iacute;cil de limpiar?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Al tener una textura m&aacute;s rugosa (Clase 3) para evitar resbalones, un <strong>suelo exterior antideslizante</strong> retiene un poco m&aacute;s la suciedad que un azulejo liso de interior. Sin embargo, al ser porcel&aacute;nico, no absorbe las manchas. Se limpia f&aacute;cilmente con manguera a presi&oacute;n, agua jabonosa o limpiadores espec&iacute;ficos para exteriores.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el precio del suelo porcel&aacute;nico?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El <strong>precio suelo porcel&aacute;nico</strong> var&iacute;a seg&uacute;n el tama&ntilde;o (el gran formato requiere mayor tecnolog&iacute;a), el acabado (rectificado o no) y el efecto. En Adrihosan contamos con <strong>suelo porcel&aacute;nico barato</strong> y baldosas de gres de primer precio para presupuestos ajustados, hasta colecciones exclusivas de lujo.</p>
                     </div>
                 </div>
             </div>
