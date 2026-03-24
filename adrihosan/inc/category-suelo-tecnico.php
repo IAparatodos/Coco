@@ -18,8 +18,8 @@ function adrihosan_suelo_tecnico_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-tecnico-exterior-Adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Suelo T&eacute;cnico Exterior: Porcel&aacute;nico de 20mm para Terrazas y Jardines</h1>
-            <p>El pavimento profesional para exteriores. Piezas de alto espesor dise&ntilde;adas para soportar las condiciones m&aacute;s exigentes: heladas, tr&aacute;fico pesado y exposici&oacute;n continua.</p>
+            <h1>Suelo T&eacute;cnico Exterior: Porcel&aacute;nico de Altas Prestaciones</h1>
+            <p>El pavimento profesional para exteriores. Piezas de alto espesor y gran formato dise&ntilde;adas para soportar las condiciones m&aacute;s exigentes: heladas, tr&aacute;fico pesado y exposici&oacute;n continua.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-suelo-tecnico" class="hero-btn primary">Ver Cat&aacute;logo</a>
                 <a href="#contacto-suelo-tecnico" class="hero-btn secondary">Hablar con un Experto</a>
@@ -30,23 +30,23 @@ function adrihosan_suelo_tecnico_contenido_superior() {
     <!-- 2. VENTAJAS -->
     <section class="comparativa-section adrihosan-full-width-block">
         <div class="comparativa-wrapper">
-            <h2>&iquest;Por qu&eacute; elegir suelo t&eacute;cnico de 20mm?</h2>
+            <h2>&iquest;Por qu&eacute; elegir suelo t&eacute;cnico exterior?</h2>
             <p class="section-subtitle">La soluci&oacute;n profesional para exteriores exigentes</p>
             <div class="comparativa-grid">
                 <div class="comparativa-card">
                     <div class="comparativa-icon">&#128170;</div>
                     <h3>Resistencia Extrema</h3>
-                    <p>20mm de espesor que soportan <strong>cargas elevadas, tr&aacute;fico vehicular</strong> y condiciones clim&aacute;ticas adversas sin fisurarse.</p>
+                    <p>Soportan <strong>cargas elevadas</strong> y condiciones adversas.</p>
                 </div>
                 <div class="comparativa-card">
                     <div class="comparativa-icon">&#10052;&#65039;</div>
                     <h3>Antihielo</h3>
-                    <p>Absorci&oacute;n de agua pr&aacute;cticamente nula. <strong>No se agrieta con las heladas</strong> ni con los ciclos de hielo-deshielo m&aacute;s extremos.</p>
+                    <p>Absorci&oacute;n de agua pr&aacute;cticamente nula. <strong>No se agrieta</strong>.</p>
                 </div>
                 <div class="comparativa-card">
                     <div class="comparativa-icon">&#128736;</div>
                     <h3>Instalaci&oacute;n Vers&aacute;til</h3>
-                    <p>Se puede colocar <strong>sobre plots (pedestales), sobre grava, hierba o pegado</strong> con cemento cola. M&aacute;xima flexibilidad en la obra.</p>
+                    <p>Sobre <strong>plots, grava, hierba</strong> o pegado con cemento cola.</p>
                 </div>
             </div>
         </div>
@@ -78,6 +78,18 @@ function adrihosan_suelo_tecnico_contenido_inferior() {
     ?>
     </div><!-- /fe-products-wrapper -->
 
+    <!-- 4. BANNER CAPTACIÓN DE LEADS -->
+    <section class="adrihosan-full-width-block" style="background: #102e35; padding: 60px 20px; margin: 40px 0;">
+        <div style="max-width: 850px; margin: 0 auto; text-align: center;">
+            <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #4dd2d0; font-weight: 800; font-size: 1.8rem; margin: 0 0 20px;">&iquest;Buscas Suelo Elevado de 20mm sobre &quot;plots&quot;?</h2>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #fff; font-size: 1.1rem; line-height: 1.7; margin: 0 0 30px; opacity: 0.9;">Si tu proyecto requiere nivelar pendientes, crear un drenaje r&aacute;pido u ocultar instalaciones en tu terraza, el sistema de baldosas espesoradas de 20mm es la soluci&oacute;n perfecta.</p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-tecnico/" class="hero-btn primary" style="background: #4dd2d0; color: #102e35; font-weight: 700;">Ver Cat&aacute;logo de Espesorados 20mm</a>
+                <a href="https://www.adrihosan.com/contacto/" class="hero-btn secondary" style="border-color: #4dd2d0; color: #4dd2d0;">Solicitar Presupuesto Personalizado</a>
+            </div>
+        </div>
+    </section>
+
     <!-- SEO: Contenido dinamico -->
     <?php
     $descripcion_editor = category_description();
@@ -101,29 +113,29 @@ function adrihosan_suelo_tecnico_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre suelo t&eacute;cnico de 20mm y porcel&aacute;nico normal?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre el porcel&aacute;nico t&eacute;cnico est&aacute;ndar y el de 20mm?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El suelo t&eacute;cnico tiene el <strong>doble de espesor</strong> que un porcel&aacute;nico convencional (20mm vs 9-10mm). Esto le confiere una resistencia mec&aacute;nica muy superior, permitiendo su instalaci&oacute;n sobre plots, grava o hierba sin necesidad de una base de hormig&oacute;n.</p>
+                        <p>El porcel&aacute;nico t&eacute;cnico de grosor est&aacute;ndar (aprox. 9-10mm) ofrece una dureza superficial incre&iacute;ble y propiedades antibacterianas, pero debe ir pegado al suelo con cemento cola. El <strong>porcel&aacute;nico de 20mm</strong> (espesorado) tiene el doble de masa, lo que lo hace autoportante: puede apoyarse &uacute;nicamente por las esquinas sobre plots (soportes) soportando el peso de personas y mobiliario sin romperse.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se puede instalar sobre plots sin obra?</span>
+                        <span>&iquest;El porcel&aacute;nico t&eacute;cnico de gran formato es apto para fachadas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, es una de sus grandes ventajas. La <strong>instalaci&oacute;n sobre plots (pedestales regulables)</strong> es r&aacute;pida, limpia y reversible. Permite crear terrazas elevadas sobre cubiertas planas, adem&aacute;s de facilitar el paso de instalaciones por debajo.</p>
+                        <p>S&iacute;, es la opci&oacute;n ideal. El <strong>gran formato</strong> minimiza el n&uacute;mero de juntas en la fachada, creando una est&eacute;tica limpia y moderna. Gracias a su resistencia a los rayos UV, el color se mantendr&aacute; inalterable durante d&eacute;cadas frente a la radiaci&oacute;n solar.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Soporta el paso de veh&iacute;culos?</span>
+                        <span>&iquest;Por qu&eacute; elegir un suelo t&eacute;cnico para exterior en lugar de piedra natural?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, siempre que se instale correctamente sobre una <strong>base de hormig&oacute;n con cemento cola flexible</strong>. El suelo t&eacute;cnico de 20mm est&aacute; dise&ntilde;ado para soportar cargas puntuales elevadas, por lo que es apto para garajes y zonas de paso de veh&iacute;culos ligeros.</p>
+                        <p>El <strong>suelo t&eacute;cnico en gres porcel&aacute;nico</strong> imita la belleza de la piedra natural con total realismo, pero elimina todos sus inconvenientes. La piedra requiere mantenimientos anuales y suele generar verd&iacute;n. El porcel&aacute;nico es impermeable, antideslizante y su coste de mantenimiento es cero.</p>
                     </div>
                 </div>
             </div>
