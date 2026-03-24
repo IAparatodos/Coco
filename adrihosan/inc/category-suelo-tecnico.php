@@ -16,7 +16,7 @@ function adrihosan_suelo_tecnico_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-tecnico-exterior-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/porcelanico-tecnico-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Suelo T&eacute;cnico Exterior: Porcel&aacute;nico de Altas Prestaciones</h1>
             <p>El pavimento profesional para exteriores. Piezas de alto espesor y gran formato dise&ntilde;adas para soportar las condiciones m&aacute;s exigentes: heladas, tr&aacute;fico pesado y exposici&oacute;n continua.</p>
