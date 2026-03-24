@@ -97,33 +97,51 @@ function adrihosan_hexagonal_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos Hexagonales</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos Hexagonales Suelo</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Los azulejos hexagonales son dif&iacute;ciles de colocar?</span>
+                        <span>&iquest;Son dif&iacute;ciles de instalar los azulejos hexagonales para suelo?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Requieren algo m&aacute;s de planificaci&oacute;n que un formato rectangular, especialmente en los cortes perimetrales. Un instalador con experiencia no tendr&aacute; problemas, pero es importante <strong>replantear bien</strong> antes de empezar para minimizar desperdicios y conseguir un resultado profesional.</p>
+                        <p>No, su instalaci&oacute;n es similar a la de otros tipos de azulejos, aunque recomendamos contar con un profesional para un acabado perfecto.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se pueden combinar hexagonales con otros formatos?</span>
+                        <span>&iquest;C&oacute;mo puedo limpiar mis azulejos hexagonales para suelo?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, de hecho es una de las tendencias m&aacute;s populares. La combinaci&oacute;n de hexagonales con suelos de imitaci&oacute;n madera o cemento crea transiciones org&aacute;nicas espectaculares, ideales para conectar visualmente cocina y sal&oacute;n o crear &quot;alfombras cer&aacute;micas&quot;.</p>
+                        <p>La limpieza es sencilla: agua, jab&oacute;n neutro y un pa&ntilde;o suave son suficientes para mantenerlos impecables.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Son aptos para zonas h&uacute;medas como ba&ntilde;os?</span>
+                        <span>&iquest;Puedo combinar diferentes colores y texturas en los azulejos hexagonales?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Absolutamente. Al ser cer&aacute;mica o porcel&aacute;nico, los hexagonales son impermeables y resistentes a la humedad. Son una opci&oacute;n excelente para suelos y paredes de ba&ntilde;os, aportando un toque de dise&ntilde;o diferenciador.</p>
+                        <p>&iexcl;Claro! Una de las grandes ventajas de estos azulejos es su capacidad para crear combinaciones &uacute;nicas y personalizadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Los azulejos hexagonales para suelo son resistentes al agua?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, son altamente resistentes al agua, lo que los hace ideales para ba&ntilde;os y cocinas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; tipo de ambiente puedo crear con azulejos hexagonales para suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Desde ambientes modernos y atrevidos hasta espacios cl&aacute;sicos y elegantes, todo depende de tu elecci&oacute;n de colores y patrones.</p>
                     </div>
                 </div>
             </div>
