@@ -84,7 +84,7 @@ function adrihosan_suelo_tecnico_contenido_inferior() {
             <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #4dd2d0; font-weight: 800; font-size: 1.8rem; margin: 0 0 20px;">&iquest;Buscas Suelo Elevado de 20mm sobre &quot;plots&quot;?</h2>
             <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #fff; font-size: 1.1rem; line-height: 1.7; margin: 0 0 30px; opacity: 0.9;">Si tu proyecto requiere nivelar pendientes, crear un drenaje r&aacute;pido u ocultar instalaciones en tu terraza, el sistema de baldosas espesoradas de 20mm es la soluci&oacute;n perfecta.</p>
             <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-tecnico/" class="hero-btn primary" style="background: #4dd2d0; color: #102e35; font-weight: 700;">Ver Cat&aacute;logo de Espesorados 20mm</a>
+                <a href="https://www.adrihosan.com/wp-content/uploads/2026/03/ESPESORADOS-2025.pdf" target="_blank" rel="noopener" class="hero-btn primary" style="background: #4dd2d0; color: #102e35; font-weight: 700;">Ver Cat&aacute;logo de Espesorados 20mm</a>
                 <a href="https://www.adrihosan.com/contacto/" class="hero-btn secondary" style="border-color: #4dd2d0; color: #4dd2d0;">Solicitar Presupuesto Personalizado</a>
             </div>
         </div>
