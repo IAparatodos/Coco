@@ -16,7 +16,7 @@ function adrihosan_hexagonal_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-hexagonales-suelo-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-hexagonales-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Azulejos Hexagonales para Suelo: Geometr&iacute;a con Car&aacute;cter</h1>
             <p>Rompe con lo convencional. Los pavimentos hexagonales aportan personalidad y dinamismo a cualquier estancia, desde ba&ntilde;os hasta salones.</p>
