@@ -79,7 +79,7 @@ function adrihosan_suelo_tecnico_contenido_inferior() {
     </div><!-- /fe-products-wrapper -->
 
     <!-- 4. BANNER CAPTACIÓN DE LEADS -->
-    <section class="adrihosan-full-width-block" style="background: #102e35; padding: 60px 20px; margin: 40px 0;">
+    <section class="adrihosan-full-width-block" style="background: #102e35; padding: 60px 20px; margin-top: 40px; margin-bottom: 40px;">
         <div style="max-width: 850px; margin: 0 auto; text-align: center;">
             <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #4dd2d0; font-weight: 800; font-size: 1.8rem; margin: 0 0 20px;">&iquest;Buscas Suelo Elevado de 20mm sobre &quot;plots&quot;?</h2>
             <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #fff; font-size: 1.1rem; line-height: 1.7; margin: 0 0 30px; opacity: 0.9;">Si tu proyecto requiere nivelar pendientes, crear un drenaje r&aacute;pido u ocultar instalaciones en tu terraza, el sistema de baldosas espesoradas de 20mm es la soluci&oacute;n perfecta.</p>
