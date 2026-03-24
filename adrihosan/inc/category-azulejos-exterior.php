@@ -150,33 +150,51 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
     <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos de Exterior</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos de Exterior (FAQs)</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué diferencia hay entre un azulejo de interior y una baldosa exterior?</span>
+                        <span>&iquest;Cu&aacute;l es el mejor material para azulejos de exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La clave es la absorción de agua y la resistencia al deslizamiento. Un azulejo para exterior es mucho más denso y rugoso. El porcelánico exterior tiene una absorción prácticamente nula, lo que evita que el agua penetre y lo dañe con las heladas.</p>
+                        <p>Sin duda, el gres porcel&aacute;nico. Su baja absorci&oacute;n de agua (menor al 0,5%) lo hace resistente a las heladas y a los cambios bruscos de temperatura, a diferencia de la cer&aacute;mica convencional o el barro cocido.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es difícil limpiar el gres porcelánico exterior antideslizante?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre un azulejo de exterior C2 y C3?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para nada. Aunque sea rugoso, si es un material de calidad, el poro está cerrado. Una manguera y listo. En Adrihosan solo trabajamos con porcelánicos de baja porosidad que no retienen la suciedad.</p>
+                        <p>La diferencia radica en el grado de adherencia. Un azulejo C3 es el de mayor agarre, obligatorio en zonas de piscina o rampas. Un C2 es un antideslizante suave, ideal para terrazas cubiertas o balcones donde se busca una limpieza m&aacute;s sencilla.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo poner azulejos de pared en el suelo de la terraza?</span>
+                        <span>&iquest;Se pueden usar azulejos de interior en una pared exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nunca. El revestimiento de muros exteriores no está diseñado para soportar peso ni tránsito. Acabaría agrietado. Para suelos siempre porcelánico con clasificación PEI 4 o superior y antideslizante C3.</p>
+                        <p>No es recomendable. Aunque sea para una pared, el material debe ser resistente a los rayos UV y a la dilataci&oacute;n t&eacute;rmica. Usar un material de interior en fachada puede provocar que el esmalte se cuartee o la pieza se desprenda con el tiempo.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo se limpian los azulejos de exterior antideslizantes?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Al tener una superficie rugosa, lo ideal es usar agua a presi&oacute;n o una fregona de hilos de microfibra con detergentes neutros. Evita ceras o productos que creen capas, ya que anular&iacute;an el efecto antideslizante del material.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; es el suelo t&eacute;cnico de exterior de 20mm?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es un porcel&aacute;nico espesorado que permite su colocaci&oacute;n sobre &quot;plots&quot; (soportes regulables). Es la soluci&oacute;n perfecta para terrazas donde se quiere ocultar el desag&uuml;e o cables, permitiendo un suelo totalmente nivelado y drenante.</p>
                     </div>
                 </div>
             </div>
