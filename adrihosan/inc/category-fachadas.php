@@ -16,7 +16,7 @@ function adrihosan_fachadas_contenido_superior() {
     ?>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/azulejos-fachadas-muros-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Revestimiento-de-Fachada-Exterior-y-Muros.jpg');">
         <div class="hero-content">
             <h1>Azulejos para Fachadas y Muros: Protecci&oacute;n y Est&eacute;tica Exterior</h1>
             <p>Revestimientos cer&aacute;micos dise&ntilde;ados para resistir la intemperie. Dale a tu fachada un acabado duradero, elegante y libre de mantenimiento.</p>
@@ -97,33 +97,51 @@ function adrihosan_fachadas_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos para Fachadas</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Revestimiento de Fachada Exterior</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; tipo de cer&aacute;mica es la m&aacute;s adecuada para fachadas?</span>
+                        <span>&iquest;Cu&aacute;l es el mejor revestimiento para una fachada exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El <strong>gres porcel&aacute;nico</strong> es la opci&oacute;n t&eacute;cnica m&aacute;s recomendable por su absorci&oacute;n de agua pr&aacute;cticamente nula (inferior al 0.5%). Esto lo hace resistente a las heladas, ya que el agua no penetra en la pieza y no puede dilatarse al congelarse.</p>
+                        <p>Sin duda, el gres porcel&aacute;nico para fachadas exteriores es el material superior. A diferencia de la pintura, el monocapa o la piedra natural porosa, el porcel&aacute;nico tiene una absorci&oacute;n de agua casi nula (&lt;0,1%). Esto significa que no se mancha, no crea moho, no se agrieta con las heladas y sus colores permanecen inalterables bajo los rayos UV del sol durante d&eacute;cadas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se puede colocar cer&aacute;mica directamente sobre un muro existente?</span>
+                        <span>&iquest;Se puede usar cualquier porcel&aacute;nico para fachadas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, siempre que el soporte est&eacute; limpio, firme y seco. Es fundamental usar un <strong>cemento cola flexible espec&iacute;fico para exteriores</strong> (tipo C2TE) que absorba las dilataciones t&eacute;rmicas. Para piezas de gran formato, se recomienda el sistema de doble encolado.</p>
+                        <p>T&eacute;cnicamente, cualquier porcel&aacute;nico sirve para exterior por su baja porosidad, pero para revestir paredes y fachadas exteriores recomendamos piezas de masa coloreada o esmaltes de alta resistencia, preferiblemente en formatos adaptados a las dimensiones de tu muro. Adem&aacute;s, en edificios de cierta altura, es crucial utilizar anclajes mec&aacute;nicos combinados con adhesivo qu&iacute;mico.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;La cer&aacute;mica de fachada pierde color con el sol?</span>
+                        <span>&iquest;Qu&eacute; tipo de adhesivo necesito para pegar baldosas en la fachada?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. Los esmaltes cer&aacute;micos <strong>no se decoloran con la radiaci&oacute;n UV</strong>, a diferencia de las pinturas o revestimientos pl&aacute;sticos. Tu fachada mantendr&aacute; su color original durante toda su vida &uacute;til.</p>
+                        <p>La elecci&oacute;n del adhesivo es cr&iacute;tica. Para instalar porcel&aacute;nico para fachadas exteriores, es obligatorio utilizar un cemento cola de altas prestaciones, flexible y deformable, clasificado como C2TES1 o C2TES2. Al estar expuesto al sol y al fr&iacute;o, el muro sufrir&aacute; dilataciones, y este tipo de adhesivo evitar&aacute; que la baldosa para fachada se desprenda con los cambios bruscos de temperatura.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es mejor usar gran formato o baldosas peque&ntilde;as para el muro exterior?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Depende del dise&ntilde;o arquitect&oacute;nico. El porcel&aacute;nico de gran formato (ej. 60x120 cm o 120x120 cm) ofrece una est&eacute;tica muy moderna, vanguardista y reduce el n&uacute;mero de juntas, lo que facilita el mantenimiento. Por otro lado, las baldosas m&aacute;s peque&ntilde;as o tipo &quot;laja&quot; son ideales para crear z&oacute;calos, resaltar vol&uacute;menes concretos de la vivienda o conseguir un estilo m&aacute;s r&uacute;stico y tradicional.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Requiere alg&uacute;n mantenimiento el revestimiento de fachada porcel&aacute;nico?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Una de las mayores ventajas del revestimiento de fachada exterior en material porcel&aacute;nico es que tiene un mantenimiento pr&aacute;cticamente nulo. Al no ser poroso, la suciedad, el polvo o el humo de los coches no penetran en la baldosa. Habitualmente, el agua de la lluvia es suficiente para mantenerla limpia, o en su defecto, un manguerazo ocasional. Adi&oacute;s a pintar la casa cada cinco a&ntilde;os.</p>
                     </div>
                 </div>
             </div>
