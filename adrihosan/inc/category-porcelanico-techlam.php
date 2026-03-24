@@ -67,7 +67,7 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
             <a href="#encimeras-techlam" class="quick-nav-pill">&#128298; Para Encimeras (Top 12mm y 20mm)</a>
             <a href="#catalogo-techlam" class="quick-nav-pill">&#127970; Para Fachadas</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/esp-techlam-3-mm/" class="quick-nav-pill">&#128296; Reformas sin Obras (3mm)</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/asp-suelos-imitacion-marmol/" class="quick-nav-pill">&#127912; Colecci&oacute;n M&aacute;rmoles</a>
         </div>
     </section>
 
@@ -167,7 +167,7 @@ function adrihosan_porcelanico_techlam_contenido_inferior() {
             <h2>Colecciones Destacadas de Techlam</h2>
             <p>Desde los cl&aacute;sicos efecto m&aacute;rmol hasta los acabados industriales en cemento y &oacute;xido. Techlam ofrece una gama premium pensada para proyectos que buscan la excelencia.</p>
             <div class="trends-links">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/ver-estilo-suelos-imitacion-marmol/" class="trend-link">Efecto M&aacute;rmol</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/asp-suelos-imitacion-marmol/" class="trend-link">Efecto M&aacute;rmol</a>
                 <a href="#encimeras-techlam" class="trend-link">Encimeras</a>
                 <a href="#catalogo-techlam" class="trend-link">Fachadas</a>
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/techlam/esp-techlam-3-mm/" class="trend-link">Extrafino 3mm</a>
