@@ -66,11 +66,9 @@ function adrihosan_navarti_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N POR TIPOLOG&Iacute;A -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti/asp-suelo-imitacion-madera/" class="quick-nav-pill">&#129717; Maderas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti/asp-suelos-imitacion-marmol/" class="quick-nav-pill">&#128142; Pulidos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti/ver-material-gres-porcelanico/" class="quick-nav-pill">&#127959; Gravita 20mm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti/ver-material-pasta-blanca/" class="quick-nav-pill">&#128705; Pasta Blanca</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti/ver-material-pasta-roja/" class="quick-nav-pill">&#128176; Pasta Roja</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/asp-suelo-imitacion-madera/" class="quick-nav-pill">&#129717; Maderas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/textura-brillo/" class="quick-nav-pill">&#128142; Pulidos</a>
+            <a href="#" class="quick-nav-pill">&#127959; Gravita 20mm</a>
         </div>
     </section>
 
