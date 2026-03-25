@@ -58,7 +58,7 @@ function adrihosan_contenido_superior_cocina() {
         </div>
         
         <div id="destino-filtro-adria-cocina-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
+        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427137"]'); ?></div>
         
         <?php // --- TÍTULO H2 ANTES DEL LOOP --- ?>
         <div class="product-loop-header" id="catalogo-cocina">
