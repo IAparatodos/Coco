@@ -75,7 +75,7 @@ function adrihosan_navarti_contenido_superior() {
 
     <!-- 4. CONSEJO ADRIA -->
     <div class="adria-tip-box">
-        <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Tipo</strong> (Pavimento, Revestimiento, Porcel&aacute;nico), <strong>Estilo</strong> y <strong>Formato</strong> para encontrar tu cer&aacute;mica Navarti ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Aspecto</strong>, <strong>Color</strong>, <strong>Estancia</strong>, <strong>Corte</strong> y <strong>Antideslizante</strong> para encontrar tu cer&aacute;mica Navarti ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
