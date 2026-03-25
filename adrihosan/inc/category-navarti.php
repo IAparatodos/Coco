@@ -69,6 +69,7 @@ function adrihosan_navarti_contenido_superior() {
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/asp-suelo-imitacion-madera/" class="quick-nav-pill">&#129717; Maderas</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/textura-brillo/" class="quick-nav-pill">&#128142; Pulidos</a>
             <a href="#" class="quick-nav-pill">&#127959; Gravita 20mm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/navarti-ceramica/fmt-30x90/" class="quick-nav-pill">&#128705; Pasta Blanca</a>
         </div>
     </section>
 
