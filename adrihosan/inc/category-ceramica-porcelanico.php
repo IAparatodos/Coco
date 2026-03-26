@@ -608,10 +608,10 @@ function adrihosan_extrafino_superior_final() {
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Acabado de tu Reforma</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/?filter_efecto=piedra" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Piedra</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-basicos/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/porcelanico-gran-formato-colores-puros.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Colores Puros</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto M&aacute;rmol</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-azulejos-imitacion-piedra/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Piedra</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-basicos/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/porcelanico-gran-formato-colores-puros.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Colores Puros</h3></a>
         </div>
     </div>
 
@@ -639,24 +639,35 @@ function adrihosan_extrafino_inferior_final() {
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Lámina Porcelánica</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué espesor debo elegir?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Para paredes 3mm. Para suelos (pavimento), recomendamos 5mm o 6mm.</p></div>
-        </div>
-    </section>
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Dudas técnicas?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. El extrafino requiere una instalación precisa. Llámame al <strong>96 195 71 36</strong>.</p>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre L&aacute;mina Porcel&aacute;nica</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; espesor debo elegir?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para paredes 3mm. Para suelos (pavimento), recomendamos 5mm o 6mm.</p>
+                    </div>
                 </div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Dudas sobre el Extrafino?<span>Soy Ricardo, preg&uacute;ntame.</span></h2></div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">&#128205;</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>
