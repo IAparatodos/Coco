@@ -278,6 +278,8 @@ function adrihosan_porcelanico_superior_final() {
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" class="btn-adri-master">Antideslizante C3</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/textura-brillo-2/" class="btn-adri-master">Acabado Pulido</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-tecnico/" class="btn-adri-master">Porcelánico técnico</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-60x120/" class="btn-adri-master">60x120</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-120x120/" class="btn-adri-master">120x120</a>
         </div>
     </div>
 
