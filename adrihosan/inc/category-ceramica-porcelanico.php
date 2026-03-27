@@ -140,24 +140,78 @@ function adrihosan_ceramica_inferior_final() {
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Cerámica</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Cer&aacute;mica y Azulejos</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué mantenimiento requiere el suelo porcelánico?</span>
+                        <span>&iquest;Cu&aacute;l es la diferencia entre pasta roja, pasta blanca y porcel&aacute;nico?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Solo requiere limpieza regular con agua y detergente neutro. No necesita ceras ni barnices.</p>
+                        <p>La pasta roja es m&aacute;s econ&oacute;mica y cl&aacute;sica, ideal para interiores residenciales. La pasta blanca ofrece colores m&aacute;s vivos y esmaltes m&aacute;s limpios, siendo la favorita para azulejos de ba&ntilde;o y cocina de alta gama. El porcel&aacute;nico es el material m&aacute;s resistente de todos, apto para suelos, paredes, exteriores y zonas de alto tr&aacute;nsito por su baja porosidad.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es necesario dejar junta en azulejos rectificados?</span>
+                        <span>&iquest;Qu&eacute; significa que un azulejo sea &quot;rectificado&quot;?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Sí, es vital dejar una junta mínima de entre 1.5mm y 2mm para absorber dilataciones.</p>
+                        <p>Un azulejo rectificado es aquel cuyos bordes han sido cortados mec&aacute;nicamente para que sean totalmente rectos (a 90&ordm;). Esto permite una instalaci&oacute;n con juntas m&iacute;nimas (de apenas 1-2 mm), lo que visualmente crea una superficie continua y mucho m&aacute;s elegante.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo elijo el azulejo adecuado para mi ba&ntilde;o o cocina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para el ba&ntilde;o, busca materiales con baja absorci&oacute;n de humedad y, si es para el suelo de la ducha, que sean antideslizantes. En la cocina, lo m&aacute;s importante es la facilidad de limpieza; elige esmaltes que no absorban la grasa y que resistan los productos de limpieza habituales.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; mantenimiento requiere la cer&aacute;mica?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es uno de los materiales m&aacute;s f&aacute;ciles de mantener. Para la limpieza diaria, basta con agua y un jab&oacute;n neutro. Al ser un material inerte, no atrae el polvo ni los &aacute;caros, lo que lo convierte en la opci&oacute;n m&aacute;s higi&eacute;nica para el hogar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es mejor comprar cer&aacute;mica de primera calidad?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, siempre. La cer&aacute;mica de primera calidad garantiza que las piezas tengan el mismo tono (tonalidad) y el mismo tama&ntilde;o exacto (calibre). Esto evita problemas visuales y de nivelaci&oacute;n durante la instalaci&oacute;n, asegurando un acabado perfecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Puedo poner el mismo azulejo en la pared y en el suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Puedes poner un pavimento (suelo) en la pared sin problemas, pero nunca debes poner un azulejo de pared (revestimiento) en el suelo. Los revestimientos no est&aacute;n dise&ntilde;ados para soportar peso ni fricci&oacute;n y se romper&iacute;an o rayar&iacute;an r&aacute;pidamente.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;La cer&aacute;mica es apta para suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Absolutamente. La cer&aacute;mica es una de las mejores conductoras t&eacute;rmicas que existen. Transmite el calor de forma eficiente y lo mantiene por m&aacute;s tiempo, optimizando el rendimiento de tu sistema de calefacci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo influye el formato del azulejo en la percepci&oacute;n del espacio?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Los formatos grandes y los rectificados ayudan a que los espacios peque&ntilde;os parezcan m&aacute;s amplios al reducir el n&uacute;mero de juntas visuales. Por el contrario, los formatos peque&ntilde;os o decorativos (como el tipo metro o hidr&aacute;ulico) aportan textura y car&aacute;cter, ideales para resaltar zonas concretas como el frente de una cocina.</p>
                     </div>
                 </div>
             </div>
