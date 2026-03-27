@@ -941,51 +941,51 @@ function adrihosan_metro_inferior_final() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejo Metro</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos Tipo Metro</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se pueden colocar en el suelo?</span>
+                        <span>&iquest;Qu&eacute; es exactamente un azulejo biselado?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Por norma general, no. El azulejo metro cl&aacute;sico es de pasta blanca o roja, dise&ntilde;ado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos espec&iacute;ficos fabricados en porcel&aacute;nico que s&iacute; son aptos para pavimento. Revisa siempre la ficha t&eacute;cnica antes de comprar.</p>
+                        <p>Un azulejo biselado es aquel cuyos bordes terminan en un &aacute;ngulo inclinado en lugar de ser totalmente rectos. Este dise&ntilde;o se cre&oacute; originalmente para que los azulejos del metro reflejaran mejor la escasa luz de los t&uacute;neles. Hoy en d&iacute;a, el bisel aporta un relieve est&eacute;tico muy valorado que da profundidad a las paredes.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Son aptos para el interior de la ducha?</span>
+                        <span>&iquest;C&oacute;mo puedo colocar mis azulejos de metro?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones m&aacute;s higi&eacute;nicas y duraderas para zonas mojadas.</p>
+                        <p>Existen tres formas principales que cambian totalmente el look:<br><br><strong>Trabado (Matajunta):</strong> La colocaci&oacute;n cl&aacute;sica de ladrillo, perfecta para estilos vintage.<br><br><strong>Lineal:</strong> Alineando las juntas vertical y horizontalmente para un look m&aacute;s moderno.<br><br><strong>En Espiga (Herringbone):</strong> Coloc&aacute;ndolos en &aacute;ngulo de 45&ordm; para crear un patr&oacute;n din&aacute;mico y sofisticado, ideal para frentes de cocina.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;El biselado hace que sean dif&iacute;ciles de limpiar?</span>
+                        <span>&iquest;Qu&eacute; color de junta es mejor para el alicatado metro?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es un mito com&uacute;n, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jab&oacute;n neutro son suficientes.</p>
+                        <p>Si buscas un estilo industrial aut&eacute;ntico, utiliza una junta gris oscura o negra con el azulejo metro blanco. Si prefieres algo m&aacute;s sutil y atemporal, usa una junta blanca para que el relieve del bisel sea el &uacute;nico protagonista.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; color de junta recomiendas para el azulejo blanco?</span>
+                        <span>&iquest;Son f&aacute;ciles de limpiar los azulejos estilo metro en la cocina?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el aut&eacute;ntico look industrial o &ldquo;tipo metro&rdquo; de Nueva York, atr&eacute;vete con una junta negra o gris antracita para resaltar el patr&oacute;n de colocaci&oacute;n.</p>
+                        <p>S&iacute;, son de los m&aacute;s sencillos de mantener. Al ser piezas cer&aacute;micas esmaltadas, la grasa y las salpicaduras no penetran. Un pa&ntilde;o h&uacute;medo con jab&oacute;n neutro es suficiente para que el biselado blanco brillo luzca como el primer d&iacute;a.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Hay otras formas de colocaci&oacute;n adem&aacute;s de la &ldquo;tipo ladrillo&rdquo;?</span>
+                        <span>&iquest;Se pueden usar los azulejos metro en el suelo?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>&iexcl;Por supuesto! Aunque la colocaci&oacute;n trabada (tipo ladrillo) es la ic&oacute;nica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+                        <p>No se recomienda. El azulejo tipo metro es un revestimiento de pared (pasta blanca o roja). No est&aacute; dise&ntilde;ado para soportar el peso ni la fricci&oacute;n del calzado. Para el suelo, te recomendamos explorar nuestra secci&oacute;n de pavimentos con efectos similares pero mayor resistencia.</p>
                     </div>
                 </div>
             </div>
