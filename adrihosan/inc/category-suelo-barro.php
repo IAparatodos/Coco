@@ -150,51 +150,51 @@ function adrihosan_barro_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Suelos de Barro y Terracota</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre el Suelo de Barro y Terracota</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre barro manual y mec&aacute;nico?</span>
+                        <span>&iquest;Cu&aacute;l es la diferencia entre barro manual y barro mec&aacute;nico?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El barro manual se moldea a mano, lo que genera variaciones &uacute;nicas de tono y textura en cada pieza. El mec&aacute;nico se fabrica con prensas hidr&aacute;ulicas, ofreciendo mayor uniformidad dimensional y resistencia, pero conservando la calidez natural del material.</p>
+                        <p>El barro manual se moldea pieza a pieza, por lo que presenta bordes ligeramente irregulares y variaciones de tono (destonificaci&oacute;n) que le dan su aspecto &uacute;nico. El barro mec&aacute;nico o extruido es m&aacute;s uniforme en tama&ntilde;o y color. En Adrihosan priorizamos el barro manual por su autenticidad y valor artesanal.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es necesario tratar el suelo de barro?</span>
+                        <span>&iquest;Es dif&iacute;cil de limpiar un suelo de terracota?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, es imprescindible. El barro cocido es poroso y absorbe l&iacute;quidos y manchas si no se protege. El tratamiento consiste en aplicar un hidrofugante y un sellador que impermeabilizan la pieza sin alterar su aspecto natural. Una vez tratado, el mantenimiento es sencillo.</p>
+                        <p>Para nada. La clave est&aacute; en el tratamiento inicial. Al ser un material poroso, el barro cocido debe ser sellado tras su colocaci&oacute;n con productos hidr&oacute;fugos u ole&oacute;fugos. Una vez realizado este proceso, se limpia simplemente con agua y un jab&oacute;n neutro, manteniendo su belleza intacta.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se puede instalar suelo de barro con calefacci&oacute;n radiante?</span>
+                        <span>&iquest;Por qu&eacute; salen manchas blancas en el barro exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>&iexcl;S&iacute;, y es una combinaci&oacute;n excelente! El barro tiene una gran inercia t&eacute;rmica: absorbe el calor lentamente y lo libera de forma progresiva, manteniendo la temperatura del hogar estable durante m&aacute;s tiempo. Es uno de los mejores pavimentos para suelo radiante.</p>
+                        <p>Esas manchas son eflorescencias salinas causadas por la evaporaci&oacute;n del agua. Se evitan f&aacute;cilmente con una correcta impermeabilizaci&oacute;n de la solera y utilizando productos de limpieza espec&iacute;ficos tras la obra para eliminar los restos de cemento.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;El suelo de barro es apto para exteriores?</span>
+                        <span>&iquest;Se puede poner barro en una cocina o ba&ntilde;o?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, pero debe ser barro cocido a alta temperatura (tipo gres r&uacute;stico) con baja absorci&oacute;n de agua para resistir heladas. Adem&aacute;s, es fundamental aplicar un tratamiento hidrofugante espec&iacute;fico para exterior. Consulta con nuestro equipo para asegurarte de elegir la pieza correcta.</p>
+                        <p>S&iacute;, es muy com&uacute;n. Al ser un material esmaltado por la propia naturaleza (especialmente si se trata de terracota esmaltada), resiste perfectamente el uso diario. En cocinas, recomendamos un tratamiento antimanchas extra para facilitar la limpieza de aceites.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo se limpia un suelo de barro tratado?</span>
+                        <span>&iquest;Qu&eacute; formatos de baldosas de barro son tendencia?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Una vez tratado correctamente, la limpieza diaria se realiza con agua y jab&oacute;n neutro (pH 7). Evita productos &aacute;cidos (vinagre, lej&iacute;a) que pueden da&ntilde;ar el sellador. Para una limpieza profunda peri&oacute;dica, existen productos espec&iacute;ficos para suelos de barro que nutren y protegen la superficie.</p>
+                        <p>Aunque la baldosa barro cocido 40x40 es el est&aacute;ndar, el suelo barro espiga y el formato hexagonal est&aacute;n ganando mucha fuerza en proyectos de interiorismo de vanguardia por su dinamismo visual.</p>
                     </div>
                 </div>
             </div>
