@@ -641,15 +641,51 @@ function adrihosan_extrafino_inferior_final() {
     </section>
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre L&aacute;mina Porcel&aacute;nica</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre el Porcel&aacute;nico Extrafino</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; espesor debo elegir?</span>
+                        <span>&iquest;Se rompe el porcel&aacute;nico por ser tan fino?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para paredes 3mm. Para suelos (pavimento), recomendamos 5mm o 6mm.</p>
+                        <p>Rotundamente no. Una vez instalado correctamente sobre una base s&oacute;lida y sin huecos de aire (t&eacute;cnica del doble encolado), el porcel&aacute;nico extrafino es tan resistente o m&aacute;s que un azulejo convencional. Su flexibilidad en el manejo es precisamente lo que evita que se parta durante la instalaci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; significa C1 en un suelo porcel&aacute;nico extrafino?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La clasificaci&oacute;n C1 se refiere al nivel de adherencia o resistencia al deslizamiento en seco. La mayor&iacute;a de nuestros modelos extrafinos para interior cuentan con esta clasificaci&oacute;n, ofreciendo una superficie suave al tacto y muy f&aacute;cil de limpiar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo se corta el porcel&aacute;nico de fino espesor?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>A pesar de su dureza, se corta con suma facilidad utilizando herramientas de corte manual con gu&iacute;a (similares a las de un cristalero) o discos de diamante espec&iacute;ficos. Su ligereza permite que un solo operario pueda manipular piezas de gran tama&ntilde;o.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Puedo ponerlo sobre un suelo de madera o parquet?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No se recomienda. El porcel&aacute;nico extrafino requiere una base totalmente r&iacute;gida y estable (cer&aacute;mica antigua, terrazo o cemento). La madera tiene dilataciones que podr&iacute;an comprometer la adherencia de la pieza cer&aacute;mica.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el precio del porcel&aacute;nico extrafino?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El precio m2 del porcel&aacute;nico extrafino refleja la alta tecnolog&iacute;a necesaria para su fabricaci&oacute;n. Aunque el material puede tener un coste superior al gres convencional, el ahorro total en la reforma (al no haber demolici&oacute;n, retirada de escombros ni transporte de residuos) suele compensar la inversi&oacute;n, resultando en una obra m&aacute;s econ&oacute;mica y r&aacute;pida.</p>
                     </div>
                 </div>
             </div>
