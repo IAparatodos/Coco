@@ -247,6 +247,10 @@ function adrihosan_mosaico_contenido_inferior() {
                     <div class="icon">&#128172;</div>
                     <div class="label">Whatsapp</div>
                 </a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common">
+                    <div class="icon">&#9993;&#65039;</div>
+                    <div class="label">Email</div>
+                </a>
             </div>
         </div>
     </section>
