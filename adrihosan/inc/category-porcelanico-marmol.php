@@ -69,9 +69,9 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
                 <div class="cluster-column">
                     <h3>Por Formato</h3>
                     <ul class="cluster-list">
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-gran-formato/">Porcel&aacute;nico Gran Formato</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-60x120/">Formato Est&aacute;ndar (60x60, 60x120)</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-tipo-lamina-porcelanica/">Porcel&aacute;nico Extrafino</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/">Porcel&aacute;nico Gran Formato</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/fmt-60x120/">L&iacute;der de ventas 60x120 cm</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-suelos-imitacion-marmol/">Porcel&aacute;nico Extrafino</a></li>
                     </ul>
                 </div>
 
