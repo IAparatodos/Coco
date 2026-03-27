@@ -26,7 +26,7 @@ function adrihosan_wood_contenido_superior() {
             <p>La calidez del parquet con la resistencia del gres porcel&aacute;nico. Descubre nuestra gama de baldosas y cer&aacute;mica imitaci&oacute;n madera para interior y exterior.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-wood" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>
-                <a href="#contacto-experto-wood" class="hero-btn secondary">Ver Ofertas y Precios</a>
+                <a href="#estilos-madera" class="hero-btn secondary">Estilos</a>
             </div>
         </div>
     </section>
