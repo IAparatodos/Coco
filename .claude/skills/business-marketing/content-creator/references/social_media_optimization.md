@@ -1,317 +1,283 @@
-# Social Media Optimization Guide
+# Guía de Optimización en Redes Sociales — Adrihosan
 
-## Platform-Specific Best Practices
+## Plataformas Activas y Estrategia
 
-### LinkedIn
-**Audience**: B2B professionals, decision-makers, thought leaders
-**Best Times**: Tuesday-Thursday, 8-10 AM and 5-6 PM
-**Optimal Length**: 1,300-2,000 characters for posts
+### Instagram (Plataforma Principal)
+**Audiencia**: Particulares renovando, amantes del diseño, interioristas
+**Mejores horarios**: Lunes a viernes 12:00-14:00 y 19:00-21:00
+**Frecuencia**: 4-5 posts/semana + Stories diarios
 
-#### Content Formats
-- **Text Posts**: 1,300 characters optimal, use line breaks
-- **Articles**: 1,900-2,000 words, include 5+ images
-- **Videos**: 30 seconds - 10 minutes, native upload preferred
-- **Documents**: PDF carousels, 10-15 slides
-- **Polls**: 4 options max, 1-2 week duration
+#### Formatos de Contenido
+- **Feed Posts**: Vertical (4:5) — fotos de ambientes reales con producto instalado
+- **Carruseles**: 5-10 slides — guías de estilo, comparativas, errores comunes (mayor engagement)
+- **Reels**: 15-60 segundos — procesos artesanales, antes/después, tours showroom
+- **Stories**: Tips rápidos de AdrIA, encuestas, "esto o lo otro", links a producto
 
-#### Optimization Tips
-- First 2 lines are crucial (shown in preview)
-- Use emoji sparingly for visual breaks 
-- Include 3-5 relevant hashtags
-- Tag people and companies when relevant
-- Native video gets 5x more engagement
-- Post consistently (3-5x per week optimal)
+#### Tipos de Post por Pilar
 
-#### Algorithm Factors
-- Dwell time (time spent reading)
-- Comments valued over likes
-- Early engagement (first hour) crucial
-- Creator mode boosts reach
-- Replies to comments increase visibility
+**Inspiración (35%)**
+- Foto de ambiente completo (baño, cocina, exterior)
+- Antes/después de proyectos reales
+- Moodboards de estilo (nórdico, mediterráneo, industrial)
+- Tendencias de temporada
 
-### Twitter/X
-**Audience**: News junkies, tech enthusiasts, real-time conversation
-**Best Times**: Weekdays 9-10 AM and 7-9 PM
-**Optimal Length**: 100-250 characters
+**Educación (30%)**
+- Carrusel: "X errores al elegir azulejos para tu [estancia]"
+- Carrusel: "[Material A] vs [Material B] — guía rápida"
+- Reel: Proceso de fabricación de baldosa hidráulica
+- Reel: Cómo se sella una baldosa hidráulica
 
-#### Content Formats
-- **Single Tweets**: 250 characters, 1-2 hashtags
-- **Threads**: 5-15 tweets, numbered format
-- **Images**: 16:9 ratio, up to 4 per tweet
-- **Videos**: Up to 2:20, square or landscape
-- **Polls**: 2-4 options, 5 minutes - 7 days
+**Cercanía (25%)**
+- Stories: Ricardo en el showroom
+- Encuesta: "¿Qué estilo prefieres para tu baño?"
+- Reel: Nube explorando el showroom (cross-promo con Coco)
+- Repost de proyectos de clientes
 
-#### Optimization Tips
-- Front-load important information
-- Use threads for complex topics
-- Include visuals (2-3x more engagement)
-- Retweet with comment > regular RT
-- Schedule threads for consistency
-- Engage genuinely with replies
+**Producto (10%)**
+- Nuevas colecciones con foto de ambiente
+- Producto destacado de la semana
+- Stock limitado (solo si es real)
 
-#### Algorithm Factors
-- Engagement rate (likes, RTs, replies)
-- Relationship (mutual follows prioritized)
-- Recency over evergreen
-- Topic relevance to user interests
-- Link posts receive less reach
+#### Hashtags Adrihosan
+**Marca (siempre incluir)**:
+`#adrihosan #ceramicaespañola`
 
-### Instagram
-**Audience**: Visual-first, millennials & Gen Z, lifestyle focused
-**Best Times**: Weekdays 11 AM - 1 PM and 7-9 PM
-**Optimal Length**: 138-150 characters shown in preview
+**Producto (según contenido)**:
+`#baldosahidraulica #azulejosdiseño #porcelanico #azulejosbaño #azulejoscocina #suelohidraulico #baldosahidraulicaoriginal #azulejosefectomadera #azulejosefectomarmol`
 
-#### Content Formats
-- **Feed Posts**: Square (1:1) or vertical (4:5)
-- **Stories**: 15 seconds max, vertical (9:16)
-- **Reels**: 15-90 seconds, vertical (9:16)
-- **Carousels**: 2-10 images/videos
-- **IGTV/Video**: 1-60 minutes
+**Estilo/Decoración (3-5 por post)**:
+`#diseñointerior #decoracion #interiorismo #reformas #reformabaño #reformacocina #hogar #decoracioninteriores #bañosmodernos #cocinasmodernas`
 
-#### Optimization Tips
-- First sentence crucial (caption preview)
-- Use up to 30 hashtags (5-10 in caption, rest in comment)
-- Carousel posts get highest engagement
-- Stories with polls/questions boost views
-- Reels get maximum organic reach
-- Post consistently (1-2 feed posts daily)
+**Nicho (2-3 por post)**:
+`#tendenciasdecoración #inspiracionhogar #antesydespues #tipsreforma #suelosbonitos #revestimientos`
 
-#### Algorithm Factors
-- Relationship (DMs, comments, tags)
-- Interest (based on past interactions)
-- Timeliness (newer posts prioritized)
-- Frequency of app usage
-- Time spent on posts (saves valuable)
+#### Optimización de Caption
+- **Primera línea**: Gancho que engancha (visible en preview sin expandir)
+- **Cuerpo**: Historia corta o valor educativo
+- **Consejo de AdrIA**: Si el post es educativo
+- **CTA**: Pregunta para engagement o "link en bio"
+- **Contacto**: "Ricardo te asesora sin compromiso" (no en todos, 1 de cada 3)
+- **Hashtags**: 15-25, mezcla de marca + producto + nicho
 
-### Facebook
-**Audience**: Broad demographic, community-focused, local businesses
-**Best Times**: Wednesday-Friday, 11 AM - 2 PM
-**Optimal Length**: 50-80 characters for posts
+### Facebook (Comunidad)
+**Audiencia**: Familias, público 35-65, clientes existentes
+**Mejores horarios**: Miércoles a viernes, 11:00-14:00
+**Frecuencia**: 3-4 posts/semana
 
-#### Content Formats
-- **Text Posts**: 50-80 characters optimal
-- **Images**: 1200x630px for links
-- **Videos**: 1-3 minutes, square format
-- **Stories**: Same as Instagram
-- **Live Videos**: Minimum 10 minutes
+#### Formatos de Contenido
+- **Posts con imagen**: Ambientes y proyectos terminados (mayor alcance)
+- **Álbumes**: Colecciones por estilo o estancia
+- **Videos nativos**: Tours, procesos, testimonios
+- **Encuestas**: "¿Cuál prefieres?" con dos opciones visuales
 
-#### Optimization Tips
-- Native video gets priority
-- Ask questions to boost comments
-- Share to relevant groups
-- Use Facebook Creator Studio
-- Tag locations for local reach
-- Post 1-2 times per day max
+#### Tipos de Post
 
-#### Algorithm Factors
-- Meaningful interactions (comments > reactions)
-- Video completion rate
-- Friends and family prioritized
-- Group posts get high visibility
-- Live videos get 6x engagement
+**Comunidad y Opinión (40%)**
+- "¿Qué estilo elegirías para tu cocina?" + 2 fotos comparativas
+- Proyectos terminados pidiendo opinión
+- Preguntas abiertas sobre decoración
+- Compartir tips de mantenimiento
 
-### TikTok
-**Audience**: Gen Z, entertainment-focused, trend-driven
-**Best Times**: 6-10 AM and 7-11 PM
-**Optimal Length**: 15-30 seconds
+**Inspiración (30%)**
+- Antes/después de proyectos
+- Foto de ambiente + descripción del estilo
+- Tendencias de diseño
 
-#### Content Formats
-- **Videos**: 15 seconds - 10 minutes
-- **Aspect Ratio**: 9:16 vertical
-- **Sounds**: Trending audio crucial
-- **Effects**: Filters and transitions
+**Educación (20%)**
+- Guías compartidas del blog
+- "¿Sabías que...?" sobre materiales
+- Vídeos cortos explicativos
 
-#### Optimization Tips
-- Hook viewers in first 3 seconds
-- Use trending sounds and hashtags
-- Create content for FYP, not followers
-- Post 1-4 times daily
-- Engage with comments quickly
-- Jump on trends within 24-48 hours
+**Producto (10%)**
+- Novedades con contexto (por qué son interesantes)
+- Promociones reales (sin urgencia artificial)
 
-#### Algorithm Factors
-- Completion rate most important
-- Shares and saves valued
-- Comment engagement
-- Following similar creators
-- Time spent on app
+#### Tono en Facebook
+Más conversacional que en Instagram. Invitar siempre a comentar. Responder todos los comentarios con cercanía. Usar el nombre de Ricardo cuando se ofrece ayuda.
 
-## Content Optimization Strategies
+### WhatsApp Business (Atención Directa)
+**Uso**: Canal de venta y asesoramiento principal
+**Tono**: Como un amigo experto — cercano, rápido, útil
 
-### Hashtag Strategy
+#### Tipos de Mensaje
+- **Respuesta a consulta**: Directa, con foto de producto si aplica
+- **Envío de presupuesto**: Profesional pero cálido
+- **Seguimiento**: "Hola [nombre], ¿pudiste ver las muestras?"
+- **Catálogo**: Links directos a producto o categoría
 
-#### Research Methods
-1. **Competitor Analysis**: Study successful competitors
-2. **Platform Search**: Use native search for suggestions
-3. **Hashtag Tools**: RiteTag, Hashtagify, All Hashtag
-4. **Trending Topics**: Monitor daily/weekly trends
-5. **Brand Hashtags**: Create unique campaign tags
-
-#### Hashtag Mix Formula
-- 30% High-volume (1M+ posts)
-- 40% Medium-volume (100K-1M posts)
-- 30% Low-volume/Niche (<100K posts)
-
-#### Platform-Specific Guidelines
-- **Instagram**: 10-30 hashtags (mix in caption and first comment)
-- **LinkedIn**: 3-5 professional hashtags
-- **Twitter**: 1-2 hashtags max
-- **Facebook**: 1-3 hashtags
-- **TikTok**: 3-5 trending + niche tags
-
-### Visual Content Optimization
-
-#### Image Best Practices
-- **Resolution**: Minimum 1080px width
-- **File Size**: Under 5MB for faster loading
-- **Alt Text**: Always include for accessibility
-- **Branding**: Consistent filters/overlays
-- **Text Overlay**: Less than 20% of image
-
-#### Video Optimization
-- **Captions**: Always include (85% watch without sound)
-- **Thumbnail**: Custom, eye-catching
-- **Length**: Platform-specific optimal duration
-- **Format**: MP4 for best compatibility
-- **Aspect Ratio**: Vertical for stories/reels, square for feed
-
-### Caption Writing Formulas
-
-#### AIDA Formula
-- **Attention**: Hook in first line
-- **Interest**: Expand on the hook
-- **Desire**: Benefits and value
-- **Action**: Clear CTA
-
-#### PAS Formula
-- **Problem**: Identify pain point
-- **Agitate**: Emphasize consequences
-- **Solution**: Present your answer
-
-#### Before-After-Bridge
-- **Before**: Current situation
-- **After**: Desired outcome
-- **Bridge**: How to get there
-
-### Engagement Tactics
-
-#### Conversation Starters
-- Ask open-ended questions
-- Create polls and surveys
-- "Fill in the blank" posts
-- "This or that" choices
-- Caption contests
-- Opinion requests
-
-#### Community Building
-- Respond to comments within 2 hours
-- Like and reply to user comments
-- Share user-generated content
-- Create branded hashtags
-- Host Q&A sessions
-- Run challenges or contests
-
-### Analytics & KPIs
-
-#### Vanity Metrics (Track but don't obsess)
-- Follower count
-- Like count
-- View count
-
-#### Performance Metrics (Focus here)
-- Engagement rate: (Likes + Comments + Shares) / Reach × 100
-- Click-through rate: Clicks / Impressions × 100
-- Conversion rate: Conversions / Clicks × 100
-- Share/Save rate: Shares / Reach × 100
-
-#### Business Metrics (Ultimate goal)
-- Website traffic from social
-- Lead generation
-- Sales attribution
-- Customer acquisition cost
-- Customer lifetime value
-
-### Content Calendar Planning
-
-#### Weekly Posting Schedule Template
+#### Plantilla de Primer Contacto
 ```
-Monday: Motivational (Quote/Inspiration)
-Tuesday: Educational (How-to/Tips)
-Wednesday: Promotional (Product/Service)
-Thursday: Engaging (Poll/Question)
-Friday: Fun (Behind-scenes/Casual)
-Saturday: User-Generated Content
-Sunday: Curated Content/Rest
+¡Hola! Soy Ricardo, de Adrihosan 👋
+¿En qué puedo ayudarte?
+
+Si me cuentas qué estancia vas a reformar y qué estilo te gusta,
+te puedo enviar opciones que encajen con tu proyecto.
+
+Sin compromiso, por supuesto 😊
 ```
 
-#### Monthly Theme Structure
-- Week 1: Awareness content
-- Week 2: Consideration content
-- Week 3: Decision content
-- Week 4: Retention/Community
+### Google Business Profile
+**Uso**: SEO local, reseñas, visibilidad en Maps
+**Frecuencia**: 2-3 publicaciones/semana
 
-### Crisis Management Protocol
+#### Tipos de Publicación
+- **Novedades**: Nuevas colecciones, blog posts
+- **Ofertas**: Promociones reales con fecha
+- **Eventos**: Jornadas de puertas abiertas en showroom
+- **Fotos**: Showroom, productos instalados, equipo
 
-#### Response Timeline
-- **0-15 minutes**: Acknowledge awareness
-- **15-60 minutes**: Gather facts
-- **1-2 hours**: Official response
-- **24 hours**: Follow-up update
-- **48-72 hours**: Resolution summary
+#### Respuesta a Reseñas
+- **Positivas**: Agradecer personalmente, mencionar detalle específico
+- **Negativas**: Empatizar, ofrecer solución, invitar a contacto directo
+- **Siempre**: Firmado como "Ricardo — Adrihosan"
 
-#### Response Guidelines
-1. Acknowledge quickly
-2. Take responsibility if appropriate
-3. Show empathy
-4. Provide facts only
-5. Outline action steps
-6. Follow up publicly
+---
 
-## Tool Stack Recommendations
+## Estrategias de Optimización
 
-### Content Creation
-- **Design**: Canva, Adobe Creative Suite
-- **Video**: CapCut, InShot, Adobe Premiere
-- **Copy**: Grammarly, Hemingway Editor
-- **AI Assistance**: ChatGPT, Claude, Jasper
+### Estrategia de Hashtags
 
-### Scheduling & Management
-- **All-in-One**: Hootsuite, Buffer, Sprout Social
-- **Visual-First**: Later, Planoly
-- **Enterprise**: Sprinklr, Khoros
-- **Free Options**: Meta Business Suite, TweetDeck
+#### Fórmula de Mix
+- 20% Alta competencia (500K+ posts): #decoracion, #interiorismo, #hogar
+- 40% Media competencia (50K-500K): #reformabaño, #azulejosbaño, #ceramica
+- 40% Nicho/Marca (<50K): #adrihosan, #baldosahidraulicaoriginal, #ceramicaespañola
 
-### Analytics & Monitoring
-- **Native**: Platform Insights/Analytics
-- **Third-Party**: Socialbakers, Brandwatch
-- **Listening**: Mention, Brand24
-- **Competitor Analysis**: Social Blade, Rival IQ
+#### Hashtags Prohibidos
+- No usar hashtags en inglés salvo que el post sea bilingüe
+- No usar hashtags genéricos sin relación (#love, #beautiful, #inspo)
+- No usar hashtags de competidores
 
-### Influencer & UGC
-- **Discovery**: AspireIQ, GRIN
-- **Management**: CreatorIQ, Klear
-- **UGC Curation**: TINT, Stackla
-- **Rights Management**: Rights Manager
+### Optimización Visual
 
-## Compliance & Best Practices
+#### Fotografía de Producto/Ambiente
+- **Siempre en contexto**: Producto instalado en un espacio real, nunca suelto sobre fondo blanco (salvo fichas técnicas)
+- **Iluminación**: Natural preferiblemente, que muestre textura real
+- **Composición**: Mostrar el espacio completo, no solo el primer plano del azulejo
+- **Coherencia**: Filtro/edición consistente en todo el feed
+- **Alt text**: Siempre descriptivo ("Baño moderno con azulejo efecto mármol Calacatta en formato 60x120")
 
-### Legal Considerations
-- Include #ad or #sponsored for paid partnerships
-- Respect copyright and attribution
-- Follow GDPR for data collection
-- Comply with platform terms of service
-- Get permission for UGC usage
+#### Dimensiones
+- Instagram Feed: 1080x1350px (4:5)
+- Instagram Stories/Reels: 1080x1920px (9:16)
+- Facebook: 1200x630px
+- Google Business: 1200x900px (4:3)
 
-### Accessibility Guidelines
-- Add alt text to all images
-- Include captions on videos
-- Use CamelCase for hashtags (#LikeThis)
-- Avoid text-only images
-- Ensure color contrast compliance
+### Fórmulas de Caption
 
-### Brand Safety
-- Moderate comments regularly
-- Set up keyword filters
-- Have crisis management plan
-- Monitor brand mentions
-- Establish posting permissions
+#### Para Adrihosan usar principalmente:
+
+**Antes-Después-Puente (proyectos)**
+- **Antes**: Estado previo del espacio
+- **Después**: Resultado con producto Adrihosan
+- **Puente**: Cómo lo logramos (producto + asesoramiento)
+
+**Problema-Consejo-Solución (educativo)**
+- **Problema**: Duda común del cliente ("¿Madera o efecto madera en el baño?")
+- **Consejo**: Tip de AdrIA con criterio técnico
+- **Solución**: Producto concreto que resuelve
+
+**Emoción-Dato-CTA (inspiracional)**
+- **Emoción**: Frase evocadora ("Imagina entrar cada mañana a este baño")
+- **Dato**: Detalle del producto (material, formato, acabado)
+- **CTA**: Invitación a explorar o contactar
+
+### Tácticas de Engagement
+
+#### Iniciar Conversación
+- "¿Madera o mármol para el baño? Cuéntanos en comentarios"
+- "Original o imitación — ¿de cuál eres?"
+- "Si pudieras reformar una estancia este mes, ¿cuál sería?"
+- "¿Qué os parece este baño? Puntuad del 1 al 10"
+
+#### Construir Comunidad
+- Responder TODOS los comentarios en menos de 2 horas
+- Repostear proyectos de clientes (con permiso)
+- Crear stories con encuestas y "esto o lo otro"
+- Mencionar a Ricardo por nombre en respuestas de ayuda
+- Agradecer opiniones y sugerencias públicamente
+
+#### Contenido Generado por Usuarios (UGC)
+- Animar a clientes a compartir sus reformas con #adrihosan
+- Repostear en Stories los mejores resultados
+- Crear álbum/highlight de "Proyectos de nuestros clientes"
+- Pedir permiso siempre antes de republicar
+
+---
+
+## Métricas y KPIs
+
+### Métricas de Rendimiento (foco principal)
+- **Engagement rate**: (Likes + Comentarios + Guardados) / Alcance x 100
+- **Guardados**: Métrica clave — indica contenido de valor que se consulta después
+- **Mensajes directos generados**: Cuántas consultas llegan por redes
+- **Clicks a web**: Tráfico desde redes a adrihosan.com
+- **Consultas por WhatsApp**: Atribuidas a redes sociales
+
+### Métricas de Negocio (objetivo final)
+- Leads desde redes sociales
+- Presupuestos solicitados vía WhatsApp/email desde redes
+- Ventas atribuidas a contenido social
+- Coste por lead
+- Reseñas generadas en Google Business
+
+### Métricas Secundarias (seguir pero no obsesionarse)
+- Seguidores
+- Likes
+- Alcance de publicaciones
+
+---
+
+## Calendario Semanal Tipo — Adrihosan
+
+```
+Lunes:    Instagram Feed (Inspiración — ambiente de la semana)
+          Facebook (Compartir post Instagram)
+
+Martes:   Instagram Stories (Consejo de AdrIA)
+          Google Business (Novedad o blog)
+
+Miércoles:Instagram Carrusel (Educativo — guía o comparativa)
+          Facebook (Pregunta a la comunidad)
+
+Jueves:   Instagram Stories (Encuesta o "esto o lo otro")
+
+Viernes:  Instagram Reel (Proceso, antes/después, o showroom)
+          Facebook (Proyecto terminado / antes-después)
+
+Sábado:   Instagram Stories (Repost UGC o ambiente inspiracional)
+
+Domingo:  Descanso o programación de la semana siguiente
+```
+
+---
+
+## Gestión de Crisis en Redes
+
+### Protocolo de Respuesta
+- **0-30 min**: Reconocer públicamente ("Hemos visto tu mensaje, lo estamos revisando")
+- **30-60 min**: Respuesta concreta con solución o invitación a contacto privado
+- **24h**: Seguimiento público si se resolvió
+
+### Principios
+- Nunca borrar comentarios negativos legítimos
+- Empatizar primero, solucionar después
+- Llevar a privado las quejas específicas (DM, WhatsApp, email)
+- Responder siempre con nombre: "Ricardo" o "Equipo Adrihosan"
+- Mantener el tono de marca incluso bajo presión
+
+---
+
+## Cumplimiento y Buenas Prácticas
+
+### Legal
+- Marcar publicaciones patrocinadas con #ad o #publi
+- Respetar derechos de imagen en fotos de proyectos (pedir permiso)
+- RGPD: No compartir datos de clientes sin consentimiento
+- Cumplir términos de servicio de cada plataforma
+
+### Accesibilidad
+- Alt text en TODAS las imágenes
+- Subtítulos en TODOS los vídeos
+- CamelCase en hashtags (#BaldosaHidraulica)
+- No usar imágenes solo con texto superpuesto
+- Contraste suficiente en gráficos y carruseles

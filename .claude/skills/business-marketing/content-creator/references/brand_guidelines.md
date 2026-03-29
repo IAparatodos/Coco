@@ -1,199 +1,216 @@
-# Brand Voice & Style Guidelines
+# Guía de Voz y Estilo de Marca — Adrihosan
 
-## Brand Voice Framework
+## Identidad de Marca
 
-### 1. Voice Dimensions
+**Adrihosan** es una tienda online y showroom de cerámica, azulejos, baldosa hidráulica y equipamiento de baño y cocina. Con raíces en la fabricación española, Adrihosan transforma espacios cotidianos en declaraciones de estilo a través de productos artesanales, asesoramiento experto y una experiencia de compra cercana.
 
-#### Formality Spectrum
-- **Formal**: Legal documents, investor communications, crisis responses
-- **Professional**: B2B content, whitepapers, case studies
-- **Conversational**: Blog posts, social media, email newsletters
-- **Casual**: Community engagement, behind-the-scenes content
+### Personajes de Marca
+- **Ricardo**: Asesor personal. La cara humana de Adrihosan. Ofrece ayuda "sin compromiso" por WhatsApp, videollamada, teléfono o email. Transmite confianza y cercanía.
+- **AdrIA**: Asistente inteligente. Da consejos prácticos dentro de la web ("¡Consejo de AdrIA!"). Tono útil y directo.
+- **Nube**: Mascota. Un Bichón Maltés curioso y aventurero. Protagonista de la experiencia interactiva "Aventuras en Adrihosan" (app Coco). Transmite diversión y humaniza la marca.
 
-#### Tone Attributes
-Choose 3-5 primary attributes for your brand:
-- **Authoritative**: Position as industry expert
-- **Friendly**: Approachable and warm
-- **Innovative**: Forward-thinking and creative
-- **Trustworthy**: Reliable and transparent
-- **Inspiring**: Motivational and uplifting
-- **Educational**: Informative and helpful
-- **Witty**: Clever and entertaining (use sparingly)
+---
 
-#### Perspective
-- **First Person Plural (We/Our)**: Creates partnership feeling
-- **Second Person (You/Your)**: Direct and engaging
-- **Third Person**: Objective and professional
+## Marco de Voz de Marca
 
-### 2. Brand Personality Archetypes
+### 1. Dimensiones de Voz
 
-Choose one primary and one secondary archetype:
+#### Nivel de Formalidad
+- **Profesional-Conversacional**: El punto exacto entre el saber técnico y la cercanía. Nunca corporativo frío, nunca coloquial excesivo.
+- **Páginas de producto/categoría**: Profesional con toque poético
+- **Blog**: Conversacional y educativo
+- **Redes sociales**: Cercano y visual
+- **Atención al cliente**: Cálido y resolutivo
 
-**The Expert**
-- Tone: Knowledgeable, confident, informative
-- Content: Data-driven, research-backed, educational
-- Example: "Our research shows that 87% of businesses..."
+#### Atributos de Tono (los 5 de Adrihosan)
+1. **Inspirador**: Evocamos la transformación del hogar como algo emocionante
+2. **Cercano**: Hablamos de tú, usamos nombres propios (Ricardo), no ponemos barreras
+3. **Experto**: Conocemos cada material, cada técnica, cada acabado
+4. **Artesanal**: Valoramos lo hecho a mano, lo único, lo que tiene alma
+5. **Confiable**: Sin compromiso, sin presión, con honestidad
 
-**The Friend**
-- Tone: Warm, supportive, conversational
-- Content: Relatable, helpful, encouraging
-- Example: "We get it - marketing can be overwhelming..."
+#### Perspectiva
+- **Segunda persona (Tú/Tu)**: Siempre. "Tu baño", "tu cocina", "tu hogar"
+- **Primera persona plural (Nosotros)** para hablar del equipo: "Diseñamos juntos", "Nuestros artesanos"
+- **Nunca tercera persona** salvo en textos legales
 
-**The Innovator**
-- Tone: Visionary, bold, forward-thinking
-- Content: Cutting-edge, disruptive, trendsetting
-- Example: "The future of marketing is here..."
+### 2. Arquetipos de Personalidad
 
-**The Guide**
-- Tone: Wise, patient, instructive
-- Content: Step-by-step, clear, actionable
-- Example: "Let's walk through this together..."
+**Primario: El Guía (The Guide)**
+- Tono: Sabio, paciente, acompañante
+- Contenido: Paso a paso, claro, accionable
+- Ejemplo: "Vamos a encontrar juntos el azulejo perfecto para tu proyecto"
 
-**The Motivator**
-- Tone: Energetic, positive, inspiring
-- Content: Empowering, action-oriented, transformative
-- Example: "You have the power to transform your business..."
+**Secundario: El Artesano (The Craftsman)**
+- Tono: Apasionado, detallista, orgulloso del oficio
+- Contenido: Historia del material, proceso de fabricación, valor de lo hecho a mano
+- Ejemplo: "Cada baldosa es una pequeña obra de arte, con la textura y las variaciones que solo un producto hecho a mano puede ofrecer"
 
-### 3. Writing Principles
+### 3. Principios de Escritura
 
-#### Clarity First
-- Use simple words when possible
-- Break complex ideas into digestible pieces
-- Lead with the main point
-- Use active voice (80% of the time)
+#### Elegancia con Alma
+- Describimos materiales como si tuvieran vida: "un material con alma", "suelos que no se reemplazan, se heredan"
+- Usamos metáforas sensoriales: "textura sedosa", "profundidad de color", "calidez total"
+- Evitamos lo genérico: no "bonito azulejo" sino "lujo atemporal en vetas naturales"
 
-#### Customer-Centric
-- Focus on benefits, not features
-- Address pain points directly
-- Use "you" more than "we"
-- Include customer success stories
+#### Orientación al Espacio (no al producto)
+- No vendemos azulejos, vendemos transformaciones: "tu zona de relax", "declaración de estilo"
+- Siempre conectamos producto → espacio → emoción
+- Ejemplo: "Conexión natural y textura auténtica" (no "azulejo de piedra gris")
 
-#### Consistency
-- Maintain voice across all channels
-- Use approved terminology
-- Follow formatting standards
-- Apply style rules uniformly
+#### Confianza sin Presión
+- Siempre ofrecemos ayuda "sin compromiso"
+- Múltiples canales: "¿Necesitas ayuda? Ricardo te asesora por WhatsApp, videollamada, email o en tienda"
+- No usamos urgencia artificial ("¡Últimas unidades!", "¡Solo hoy!")
 
-### 4. Language Guidelines
+### 4. Directrices de Lenguaje
 
-#### Words We Use
-- **Action verbs**: Transform, accelerate, optimize, unlock, elevate
-- **Positive descriptors**: Seamless, powerful, intuitive, strategic
-- **Outcome-focused**: Results, growth, success, impact, ROI
+#### Palabras y Expresiones Adrihosan
+- **Verbos**: Transforma, diseña, descubre, siente, celebra, crea, encuentra, explora
+- **Adjetivos**: Artesanal, auténtico/a, único/a, atemporal, irrepetible, evocador/a, personalizado/a
+- **Sustantivos**: Artesanía, carácter, alma, pátina, esencia, belleza, estilo, inspiración
+- **Frases marca**: "Diseñamos juntos", "sin compromiso", "encuentra tu estilo", "tu zona de relax"
 
-#### Words We Avoid
-- **Jargon**: Synergy, leverage (as verb), bandwidth (for availability)
-- **Overused**: Innovative, disruptive, cutting-edge (unless truly applicable)
-- **Weak**: Very, really, just, maybe, hopefully
-- **Negative**: Can't, won't, impossible, problem (use "challenge")
+#### Expresiones de AdrIA
+- "¡Consejo de AdrIA!" (tips rápidos)
+- "AdrIA recomienda..." (sugerencias de producto)
+- Tono: directo, útil, conciso
 
-### 5. Content Structure Templates
+#### Expresiones de Ricardo
+- "Ricardo te ayuda a elegir..."
+- "¿Tienes dudas? Pregunta a Ricardo sin compromiso"
+- Tono: cercano, personal, de confianza
 
-#### Blog Post Structure
-1. **Hook** (1-2 sentences): Grab attention with a question, statistic, or bold statement
-2. **Context** (1 paragraph): Explain why this matters now
-3. **Main Content** (3-5 sections): Deliver value with clear subheadings
-4. **Conclusion** (1 paragraph): Summarize key points
-5. **Call to Action**: Clear next step for readers
+#### Palabras a Evitar
+- **Jerga vacía**: Sinergias, disruptivo, innovador (salvo que sea real), líder del sector
+- **Presión comercial**: ¡No te lo pierdas!, Oferta irresistible, Solo quedan X
+- **Palabras débiles**: Muy, bastante, un poco, quizás, tal vez
+- **Negatividad**: Imposible, no se puede, problema (usamos "reto" o "desafío")
+- **Anglicismos innecesarios**: Usamos español salvo términos establecidos del sector (showroom, look)
 
-#### Social Media Framework
-- **LinkedIn**: Professional insights, industry news, thought leadership
-- **Twitter/X**: Quick tips, engaging questions, thread stories
-- **Instagram**: Visual storytelling, behind-the-scenes, inspiration
-- **Facebook**: Community building, longer narratives, events
+### 5. Pilares de Mensaje
 
-### 6. Messaging Pillars
+#### 1. Artesanía y Autenticidad
+- Fabricación española, cemento pigmentado, hecho a mano
+- "Cada baldosa es única"
+- La pátina del tiempo como valor, no como defecto
+- Personalización: "Pide tu baldosa personalizada"
 
-Define 3-4 core themes that appear consistently:
+#### 2. Diseño y Transformación
+- El hogar como reflejo de tu personalidad
+- Estilos: efecto madera, mármol, piedra, cemento, hidráulico, vintage
+- Inspiración por estancia: baño, cocina, exterior, salón
+- Herramientas: simulador online, asesoramiento visual
 
-1. **Innovation & Technology**
-   - AI-powered solutions
-   - Data-driven insights
-   - Future-ready strategies
+#### 3. Experiencia y Confianza
+- Ricardo como guía personal
+- AdrIA como asistente inteligente
+- Múltiples canales de contacto (WhatsApp, videollamada, email, showroom)
+- "Sin compromiso" como promesa constante
 
-2. **Customer Success**
-   - Real results and ROI
-   - Partnership approach
-   - Tailored solutions
+#### 4. Conocimiento Técnico
+- Guías de instalación, sellado y mantenimiento
+- Comparativas entre materiales (original vs imitación, cerámica vs porcelánico)
+- Consejos prácticos: antideslizante para ducha, resistencia al calor en cocina
+- "Protege tu inversión" (mantenimiento como valor)
 
-3. **Expertise & Trust**
-   - Industry leadership
-   - Proven methodologies
-   - Transparent communication
+### 6. Audiencias
 
-4. **Growth & Transformation**
-   - Scaling businesses
-   - Digital transformation
-   - Continuous improvement
+#### Particular Renovando (audiencia principal)
+- **Tono**: Inspirador, acompañante, visual
+- **Contenido**: Fotos de ambientes, guías de estilo, antes/después, calculadoras
+- **Dolor**: No saber elegir, miedo a equivocarse, presupuesto
+- **Mensaje**: "Te ayudamos a hacer realidad tu idea, paso a paso"
 
-### 7. Audience Personas
+#### Profesional (arquitecto, interiorista, reformista)
+- **Tono**: Técnico, eficiente, directo
+- **Contenido**: Fichas técnicas, muestrarios, precios por m², disponibilidad
+- **Dolor**: Plazo de entrega, stock, variedad
+- **Mensaje**: "Material de calidad española para tus proyectos, con stock y asesoramiento técnico"
 
-#### Decision Makers (C-Suite)
-- **Tone**: Professional, strategic, ROI-focused
-- **Content**: High-level insights, business impact, competitive advantages
-- **Pain Points**: Growth, efficiency, competition
+#### Amante del Diseño (busca algo especial)
+- **Tono**: Poético, aspiracional, exclusivo
+- **Contenido**: Historia del material, piezas únicas, tendencias, baldosa personalizada
+- **Dolor**: Quiere algo que no sea "lo de siempre"
+- **Mensaje**: "Un material con alma que transforma tu espacio en algo irrepetible"
 
-#### Practitioners (Marketing Managers)
-- **Tone**: Practical, supportive, educational
-- **Content**: How-to guides, best practices, tools
-- **Pain Points**: Time, resources, skills
+### 7. Directrices por Canal
 
-#### Innovators (Early Adopters)
-- **Tone**: Exciting, cutting-edge, visionary
-- **Content**: Trends, new features, future predictions
-- **Pain Points**: Staying ahead, differentiation
+#### Web (Categorías y Fichas de Producto)
+- Título H1: Descriptivo + beneficio emocional ("Azulejos de Baño: Diseños que crean tu zona de relax")
+- Subtítulos: Beneficio específico ("Calidez total sin el mantenimiento de la madera real")
+- Bloques: Hero → Estilos → Soluciones por espacio → Consejo AdrIA → Catálogo → Guía SEO → FAQ → Contacto Ricardo
+- CTA principales: "Ver Catálogo", "Ayuda por WhatsApp", "Solicitar Diseño"
 
-### 8. Channel-Specific Guidelines
-
-#### Website Copy
-- Headlines: 6-12 words, benefit-focused
-- Body: Short paragraphs (2-3 sentences)
-- CTAs: Action-oriented, specific
+#### Blog
+- Título: Keyword + ángulo útil (< 60 caracteres)
+- Tono: Educativo y cercano
+- Estructura: Problema → Solución → Ejemplos → Consejos prácticos → CTA
+- Incluir siempre: imágenes reales, links a categorías, consejo de AdrIA
 
 #### Email Marketing
-- Subject Lines: 30-50 characters, personalized
-- Preview Text: Complement subject, add urgency
-- Body: Scannable, one main message
+- Asunto: Directo + beneficio (< 50 caracteres)
+- Tono: Personal, como un mensaje de Ricardo
+- Estructura: Saludo → Contenido de valor → Producto destacado → CTA
+- Firma: Ricardo + foto + canales de contacto
 
-#### Blog Content
-- Title: Include primary keyword, under 60 characters
-- Introduction: Hook within first 50 words
-- Sections: 200-300 words each
-- Lists: 5-7 items optimal
+#### Redes Sociales
+- Instagram: Visual primero. Ambientes, antes/después, procesos artesanales
+- Facebook: Comunidad. Proyectos terminados, preguntas, opiniones de clientes
+- WhatsApp: Atención directa. Respuesta rápida, envío de muestras, presupuestos
 
-### 9. Grammar & Mechanics
+### 8. Gramática y Mecánica
 
-#### Punctuation
-- Oxford comma: Always use
-- Em dashes: For emphasis—like this
-- Exclamation points: Maximum one per piece
+#### Puntuación
+- Coma de Oxford: Sí, siempre
+- Signos de exclamación: Máximo uno por pieza (salvo AdrIA que puede usar "¡Consejo de AdrIA!")
+- Puntos suspensivos: Con moderación, para crear intriga o invitar a descubrir
 
-#### Capitalization
-- Headlines: Title Case for H1, Sentence case for H2-H6
-- Product names: As trademarked
-- Job titles: Lowercase unless before name
+#### Mayúsculas
+- Títulos H1: Title Case ("Baldosa Hidráulica Original")
+- Subtítulos H2-H6: Sentence case ("Encuentra tu estilo")
+- Nombres propios de marca: Siempre capitalizados (Adrihosan, AdrIA, Ricardo, Nube)
+- Nombres de producto: Como estén registrados por el fabricante
 
-#### Numbers
-- Spell out one through nine
-- Use numerals for 10 and above
-- Always use numerals for percentages
+#### Números
+- Escribir del uno al nueve
+- Numerales del 10 en adelante
+- Siempre numerales para: medidas (20x20 cm), precios (12,50 €/m²), porcentajes (15%)
+- Formato español: coma decimal (12,50 €), punto para miles (1.500)
 
-### 10. Inclusivity Guidelines
+### 9. Directrices de Inclusividad
 
-- Use gender-neutral language
-- Avoid idioms that don't translate
-- Consider global audience
-- Ensure accessibility in formatting
-- Represent diverse perspectives
+- Lenguaje neutro cuando sea posible
+- "Cliente" en vez de "clienta/cliente"
+- Mostrar diversidad en ambientes (hogares diferentes, estilos de vida variados)
+- Accesibilidad en imágenes: siempre alt text descriptivo
+- Considerar audiencia hispanohablante internacional (evitar modismos muy locales)
 
-## Quick Reference Checklist
+### 10. Identidad Visual (referencias para contenido)
 
-Before publishing any content, verify:
-- [ ] Matches brand voice and tone
-- [ ] Free of jargon and complex terms
-- [ ] Includes clear value proposition
-- [ ] Has appropriate CTA
-- [ ] Follows grammar guidelines
-- [ ] Mobile-friendly formatting
-- [ ] Accessible to all audiences
-- [ ] Proofread and fact-checked
+#### Paleta de Colores
+- **Principal**: #102E35 (verde oscuro profundo — el color de marca)
+- **Acento**: #4DD2D0 (turquesa — AdrIA, elementos interactivos)
+- **Fondo claro**: #F0FAFA (verde agua suave — cajas de consejo)
+- **Texto**: #333333 (gris oscuro para legibilidad)
+- **CTA**: Botones en color principal (#102E35) o turquesa
+
+#### Tipografía
+- **Títulos**: Poppins (sans-serif, moderna, elegante)
+- **Cuerpo**: Sistema sans-serif legible
+
+---
+
+## Checklist Rápido Pre-Publicación
+
+Antes de publicar cualquier contenido de Adrihosan, verificar:
+- [ ] ¿Habla de "tú" al cliente?
+- [ ] ¿Conecta el producto con una transformación del espacio?
+- [ ] ¿Incluye CTA claro y "sin compromiso"?
+- [ ] ¿Mantiene el tono elegante pero cercano?
+- [ ] ¿Evita presión comercial agresiva?
+- [ ] ¿Incluye vía de contacto (Ricardo/WhatsApp)?
+- [ ] ¿Es coherente con los pilares de mensaje?
+- [ ] ¿Está libre de anglicismos innecesarios?
+- [ ] ¿Tiene formato mobile-friendly?
+- [ ] ¿Imágenes con alt text descriptivo?

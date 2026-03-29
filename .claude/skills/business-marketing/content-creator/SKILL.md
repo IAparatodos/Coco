@@ -1,248 +1,233 @@
 ---
 name: content-creator
-description: Create SEO-optimized marketing content with consistent brand voice. Includes brand voice analyzer, SEO optimizer, content frameworks, and social media templates. Use when writing blog posts, creating social media content, analyzing brand voice, optimizing SEO, planning content calendars, or when user mentions content creation, brand voice, SEO optimization, social media marketing, or content strategy.
+description: Crea contenido de marketing optimizado para SEO con la voz de marca de Adrihosan. Incluye analizador de voz de marca, optimizador SEO, frameworks de contenido y plantillas de redes sociales adaptadas al sector cerámico y de reformas. Usar para escribir posts de blog, crear contenido para redes sociales, analizar voz de marca, optimizar SEO, planificar calendarios de contenido, o cuando el usuario mencione creación de contenido, voz de marca, SEO, redes sociales, marketing de contenidos, estrategia de contenido, Adrihosan, azulejos, baldosa hidráulica, cerámica, reformas de baño o cocina.
 license: MIT
 metadata:
-  version: 1.0.0
-  author: Alireza Rezvani
+  version: 2.0.0
+  author: Adrihosan / Art Project Group
   category: marketing
   domain: content-marketing
-  updated: 2025-10-20
+  updated: 2026-03-29
   python-tools: brand_voice_analyzer.py, seo_optimizer.py
-  tech-stack: SEO, social-media-platforms
+  tech-stack: SEO, social-media-platforms, WooCommerce, WordPress
+  brand: Adrihosan
+  language: es
 ---
 
-# Content Creator
+# Content Creator — Adrihosan
 
-Professional-grade brand voice analysis, SEO optimization, and platform-specific content frameworks.
+Creación de contenido profesional con la voz de marca de Adrihosan: análisis de voz de marca, optimización SEO, frameworks de contenido por canal y plantillas de redes sociales para el sector cerámico y de reformas del hogar.
+
+## Identidad de Marca
+
+**Adrihosan** — Tienda online y showroom de cerámica, azulejos, baldosa hidráulica y equipamiento de baño y cocina. Fabricación española, artesanía, diseño y asesoramiento experto.
+
+**Personajes**:
+- **Ricardo**: Asesor personal. Cercanía y confianza. "Sin compromiso."
+- **AdrIA**: Asistente inteligente. Tips prácticos y directos.
+- **Nube**: Mascota Bichón Maltés. Aventuras en Adrihosan (app Coco).
+
+**Tono**: Elegante pero cercano. Inspirador. Experto sin presión. Artesanal. En español.
+
+**Arquetipos**: El Guía (primario) + El Artesano (secundario).
 
 ## Keywords
-content creation, blog posts, SEO, brand voice, social media, content calendar, marketing content, content strategy, content marketing, brand consistency, content optimization, social media marketing, content planning, blog writing, content frameworks, brand guidelines, social media strategy
 
-## Quick Start
+creación de contenido, blog, SEO, voz de marca, redes sociales, calendario de contenido, marketing de contenidos, estrategia de contenido, optimización de contenido, Adrihosan, azulejos, baldosa hidráulica, cerámica española, reformas baño, reformas cocina, porcelánico, diseño interior, revestimientos, pavimentos
 
-### For Brand Voice Development
-1. Run `scripts/brand_voice_analyzer.py` on existing content to establish baseline
-2. Review `references/brand_guidelines.md` to select voice attributes
-3. Apply chosen voice consistently across all content
+## Inicio Rápido
 
-### For Blog Content Creation
-1. Choose template from `references/content_frameworks.md`
-2. Research keywords for topic
-3. Write content following template structure
-4. Run `scripts/seo_optimizer.py [file] [primary-keyword]` to optimize
-5. Apply recommendations before publishing
+### Para Contenido de Blog
+1. Elegir plantilla de `references/content_frameworks.md` (guía estilo, how-to, comparativa, caso éxito)
+2. Investigar keywords del tema
+3. Escribir siguiendo la plantilla y la voz de marca de `references/brand_guidelines.md`
+4. Optimizar SEO: `python scripts/seo_optimizer.py [archivo] [keyword-principal]`
+5. Verificar tono Adrihosan con checklist de brand_guidelines
+6. Publicar
 
-### For Social Media Content
-1. Review platform best practices in `references/social_media_optimization.md`
-2. Use appropriate template from `references/content_frameworks.md`
-3. Optimize based on platform-specific guidelines
-4. Schedule using `assets/content_calendar_template.md`
+### Para Redes Sociales
+1. Revisar estrategia por plataforma en `references/social_media_optimization.md`
+2. Usar plantilla correspondiente de `references/content_frameworks.md`
+3. Aplicar hashtags Adrihosan (ver guía de redes)
+4. Programar según calendario en `assets/content_calendar_template.md`
 
-## Core Workflows
+### Para Analizar Voz de Marca
+1. Ejecutar `python scripts/brand_voice_analyzer.py [archivo]` sobre contenido existente
+2. Comparar resultados con atributos definidos en `references/brand_guidelines.md`
+3. Ajustar texto para alinear con la voz de Adrihosan
 
-### Establishing Brand Voice (First Time Setup)
+## Workflows Principales
 
-When creating content for a new brand or client:
+### Crear Artículo de Blog para Adrihosan
 
-1. **Analyze Existing Content** (if available)
+1. **Investigar Keywords**
+   - Keyword principal (volumen 500-5000/mes)
+   - 3-5 keywords secundarias
+   - 10-15 keywords LSI relacionadas con cerámica/reformas
+
+2. **Seleccionar Plantilla**
+   - Guía de estilo/inspiración: ambientes y tendencias
+   - Guía técnica: instalación, sellado, mantenimiento
+   - Comparativa: original vs imitación, cerámica vs porcelánico
+   - Caso de éxito: proyecto real con antes/después
+
+3. **Escribir con Voz Adrihosan**
+   - Hablar de "tú" al cliente
+   - Conectar producto con espacio con emoción
+   - Incluir Consejo de AdrIA
+   - CTA con Ricardo "sin compromiso"
+   - Tono elegante-cercano, nunca presión comercial
+
+4. **Optimizar SEO**
    ```bash
-   python scripts/brand_voice_analyzer.py existing_content.txt
-   ```
-   
-2. **Define Voice Attributes**
-   - Review brand personality archetypes in `references/brand_guidelines.md`
-   - Select primary and secondary archetypes
-   - Choose 3-5 tone attributes
-   - Document in brand guidelines
-
-3. **Create Voice Sample**
-   - Write 3 sample pieces in chosen voice
-   - Test consistency using analyzer
-   - Refine based on results
-
-### Creating SEO-Optimized Blog Posts
-
-1. **Keyword Research**
-   - Identify primary keyword (search volume 500-5000/month)
-   - Find 3-5 secondary keywords
-   - List 10-15 LSI keywords
-
-2. **Content Structure**
-   - Use blog template from `references/content_frameworks.md`
-   - Include keyword in title, first paragraph, and 2-3 H2s
-   - Aim for 1,500-2,500 words for comprehensive coverage
-
-3. **Optimization Check**
-   ```bash
-   python scripts/seo_optimizer.py blog_post.md "primary keyword" "secondary,keywords,list"
+   python scripts/seo_optimizer.py articulo.md "keyword principal" "keywords,secundarias"
    ```
 
-4. **Apply SEO Recommendations**
-   - Adjust keyword density to 1-3%
-   - Ensure proper heading structure
-   - Add internal and external links
-   - Optimize meta description
+5. **Verificar Checklist Pre-Publicación** (ver brand_guidelines.md)
 
-### Social Media Content Creation
+### Crear Contenido para Instagram
 
-1. **Platform Selection**
-   - Identify primary platforms based on audience
-   - Review platform-specific guidelines in `references/social_media_optimization.md`
+1. **Determinar tipo de post** según pilar:
+   - Inspiración (35%): Foto ambiente + caption evocador
+   - Educación (30%): Carrusel con tips/guía
+   - Cercanía (25%): Stories, encuestas, UGC
+   - Producto (10%): Novedad con contexto
 
-2. **Content Adaptation**
-   - Start with blog post or core message
-   - Use repurposing matrix from `references/content_frameworks.md`
-   - Adapt for each platform following templates
+2. **Aplicar fórmula de caption**:
+   - Antes-Después-Puente (proyectos)
+   - Problema-Consejo-Solución (educativo)
+   - Emoción-Dato-CTA (inspiracional)
 
-3. **Optimization Checklist**
-   - Platform-appropriate length
-   - Optimal posting time
-   - Correct image dimensions
-   - Platform-specific hashtags
-   - Engagement elements (polls, questions)
+3. **Hashtags**: Mezcla marca + producto + nicho (15-25 total)
 
-### Content Calendar Planning
+4. **Verificar**: Primera línea engancha, alt text, tono coherente
 
-1. **Monthly Planning**
-   - Copy `assets/content_calendar_template.md`
-   - Set monthly goals and KPIs
-   - Identify key campaigns/themes
+### Planificar Calendario Mensual
 
-2. **Weekly Distribution**
-   - Follow 40/25/25/10 content pillar ratio
-   - Balance platforms throughout week
-   - Align with optimal posting times
+1. Copiar `assets/content_calendar_template.md`
+2. Definir objetivos del mes y campaña clave
+3. Distribuir contenido por pilares (35/30/25/10)
+4. Asignar temas semanales
+5. Crear contenido en batch
+6. Programar publicaciones
+7. Revisar rendimiento al final del mes
 
-3. **Batch Creation**
-   - Create all weekly content in one session
-   - Maintain consistent voice across pieces
-   - Prepare all visual assets together
-
-## Key Scripts
+## Scripts
 
 ### brand_voice_analyzer.py
-Analyzes text content for voice characteristics, readability, and consistency.
+Analiza texto para características de voz, legibilidad y consistencia.
 
-**Usage**: `python scripts/brand_voice_analyzer.py <file> [json|text]`
+**Uso**: `python scripts/brand_voice_analyzer.py <archivo> [json|text]`
 
-**Returns**:
-- Voice profile (formality, tone, perspective)
-- Readability score
-- Sentence structure analysis
-- Improvement recommendations
+**Devuelve**:
+- Perfil de voz (formalidad, tono, perspectiva)
+- Puntuación de legibilidad
+- Análisis de estructura de oraciones
+- Recomendaciones de mejora
 
 ### seo_optimizer.py
-Analyzes content for SEO optimization and provides actionable recommendations.
+Analiza contenido para optimización SEO con recomendaciones accionables.
 
-**Usage**: `python scripts/seo_optimizer.py <file> [primary_keyword] [secondary_keywords]`
+**Uso**: `python scripts/seo_optimizer.py <archivo> [keyword_principal] [keywords_secundarias]`
 
-**Returns**:
-- SEO score (0-100)
-- Keyword density analysis
-- Structure assessment
-- Meta tag suggestions
-- Specific optimization recommendations
+**Devuelve**:
+- Puntuación SEO (0-100)
+- Análisis de densidad de keywords
+- Evaluación de estructura
+- Sugerencias de meta tags
+- Recomendaciones específicas de optimización
 
-## Reference Guides
+## Guías de Referencia
 
-### When to Use Each Reference
+### Cuándo Usar Cada Referencia
 
 **references/brand_guidelines.md**
-- Setting up new brand voice
-- Ensuring consistency across content
-- Training new team members
-- Resolving voice/tone questions
+- Al crear cualquier contenido para Adrihosan
+- Para verificar tono y voz de marca
+- Para consultar palabras/expresiones aprobadas
+- Para revisar directrices por canal
+- Para consultar identidad visual (colores, tipografía)
 
 **references/content_frameworks.md**
-- Starting any new content piece
-- Structuring different content types
-- Creating content templates
-- Planning content repurposing
+- Al empezar cualquier pieza de contenido nueva
+- Para estructurar blogs, posts sociales, emails
+- Para planificar reutilización de contenido
+- Para seguir checklists de calidad
 
 **references/social_media_optimization.md**
-- Platform-specific optimization
-- Hashtag strategy development
-- Understanding algorithm factors
-- Setting up analytics tracking
+- Para optimización específica por plataforma (Instagram, Facebook, WhatsApp, Google Business)
+- Para estrategia de hashtags
+- Para fórmulas de caption
+- Para planificar calendario semanal
+- Para métricas y KPIs
 
-## Best Practices
+## Buenas Prácticas Adrihosan
 
-### Content Creation Process
-1. Always start with audience need/pain point
-2. Research before writing
-3. Create outline using templates
-4. Write first draft without editing
-5. Optimize for SEO
-6. Edit for brand voice
-7. Proofread and fact-check
-8. Optimize for platform
-9. Schedule strategically
+### Proceso de Creación
+1. Empezar siempre por la necesidad del cliente (no el producto)
+2. Investigar keywords antes de escribir
+3. Elegir plantilla de content_frameworks
+4. Escribir primer borrador sin editar
+5. Optimizar para SEO
+6. Verificar voz de marca Adrihosan
+7. Revisar y corregir
+8. Adaptar al canal específico
+9. Programar estratégicamente
 
-### Quality Indicators
-- SEO score above 75/100
-- Readability appropriate for audience
-- Consistent brand voice throughout
-- Clear value proposition
-- Actionable takeaways
-- Proper visual formatting
-- Platform-optimized
+### Indicadores de Calidad
+- Puntuación SEO > 75/100
+- Legibilidad adecuada para la audiencia
+- Voz de marca consistente (elegante + cercana)
+- Conexión producto con espacio con emoción
+- CTA claro con "sin compromiso"
+- Presencia de Ricardo o AdrIA donde corresponda
+- Formato optimizado para móvil
+- Alt text en todas las imágenes
 
-### Common Pitfalls to Avoid
-- Writing before researching keywords
-- Ignoring platform-specific requirements
-- Inconsistent brand voice
-- Over-optimizing for SEO (keyword stuffing)
-- Missing clear CTAs
-- Publishing without proofreading
-- Ignoring analytics feedback
+### Errores a Evitar
+- Escribir sin investigar keywords
+- Usar presión comercial agresiva
+- Descripción de producto sin contexto de espacio
+- Tono corporativo frío o excesivamente formal
+- Ignorar requisitos específicos de cada plataforma
+- Inconsistencia en la voz de marca
+- Publicar sin revisar en móvil
+- Olvidar CTA o vía de contacto
+- Usar anglicismos innecesarios
 
-## Performance Metrics
+## Métricas de Éxito
 
-Track these KPIs for content success:
+### Contenido
+- Tráfico orgánico a adrihosan.com
+- Tiempo medio en página
+- Posición media en buscadores
+- Guardados en Instagram (indica valor)
 
-### Content Metrics
-- Organic traffic growth
-- Average time on page
-- Bounce rate
-- Social shares
-- Backlinks earned
+### Engagement
+- Comentarios y conversaciones generadas
+- Mensajes directos desde redes
+- Consultas por WhatsApp atribuidas a contenido
+- Compartidos y guardados
 
-### Engagement Metrics
-- Comments and discussions
-- Email click-through rates
-- Social media engagement rate
-- Content downloads
-- Form submissions
+### Negocio
+- Leads generados (WhatsApp + email + formulario)
+- Presupuestos solicitados
+- Ventas atribuidas a contenido
+- Coste por lead
+- Reseñas en Google Business
 
-### Business Metrics
-- Leads generated
-- Conversion rate
-- Customer acquisition cost
-- Revenue attribution
-- ROI per content piece
-
-## Integration Points
-
-This skill works best with:
-- Analytics platforms (Google Analytics, social media insights)
-- SEO tools (for keyword research)
-- Design tools (for visual content)
-- Scheduling platforms (for content distribution)
-- Email marketing systems (for newsletter content)
-
-## Quick Commands
+## Comandos Rápidos
 
 ```bash
-# Analyze brand voice
-python scripts/brand_voice_analyzer.py content.txt
+# Analizar voz de marca de un texto
+python scripts/brand_voice_analyzer.py contenido.txt
 
-# Optimize for SEO
-python scripts/seo_optimizer.py article.md "main keyword"
+# Optimizar SEO de un artículo
+python scripts/seo_optimizer.py articulo.md "azulejos baño"
 
-# Check content against brand guidelines
-grep -f references/brand_guidelines.md content.txt
+# Optimizar con keywords secundarias
+python scripts/seo_optimizer.py articulo.md "baldosa hidraulica" "baldosa,hidraulica original,suelo hidraulico"
 
-# Create monthly calendar
-cp assets/content_calendar_template.md this_month_calendar.md
+# Crear calendario mensual
+cp assets/content_calendar_template.md calendario-abril-2026.md
 ```

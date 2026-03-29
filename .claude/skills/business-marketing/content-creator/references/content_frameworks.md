@@ -1,534 +1,501 @@
-# Content Creation Frameworks & Templates
+# Frameworks de Creación de Contenido — Adrihosan
 
-## Content Types & Templates
+## Tipos de Contenido y Plantillas
 
-### 1. Blog Post Templates
+### 1. Plantillas de Blog
 
-#### How-To Guide Template
+#### Guía de Estilo / Inspiración
 ```markdown
-# How to [Achieve Desired Outcome] in [Timeframe]
+# [Estilo] para [Estancia]: [Beneficio Emocional]
+# Ejemplo: "Azulejos Efecto Madera para Baño: Calidez sin Mantenimiento"
 
-## Introduction
-- Hook: Question or surprising fact
-- Problem statement
-- What reader will learn
-- Why it matters now
+## Introducción
+- Hook: Pregunta o escenario aspiracional ("¿Imaginas un baño que te transporte a un spa nórdico?")
+- Qué va a descubrir el lector
+- Por qué este estilo está en tendencia
 
-## Prerequisites/What You'll Need
-- Tool/Resource 1
-- Tool/Resource 2
-- Estimated time
+## ¿Qué es [Estilo]?
+- Descripción del material/acabado
+- Origen y fabricación (conexión española si aplica)
+- Diferencia con el material real (efecto madera vs madera, etc.)
+- Ventajas prácticas
 
-## Step 1: [Action]
-- Clear instruction
-- Why this step matters
-- Common mistakes to avoid
-- Visual aid or example
+## [Estilo] en tu [Estancia]: Ideas de Diseño
+### Opción 1: [Subestilo — ej: Nórdico Minimalista]
+- Descripción del ambiente
+- Productos recomendados (con links a categoría)
+- Combinaciones sugeridas
+- Imagen inspiracional
 
-## Step 2: [Action]
-[Repeat structure]
+### Opción 2: [Subestilo — ej: Rústico Cálido]
+[Repetir estructura]
 
-## Step 3: [Action]
-[Repeat structure]
+### Opción 3: [Subestilo — ej: Moderno Industrial]
+[Repetir estructura]
 
-## Troubleshooting Common Issues
-### Issue 1: [Problem]
-**Solution**: [Fix]
+## Guía Práctica: Cómo Elegir tu [Estilo]
+- Criterios técnicos (formato, antideslizante, uso)
+- Criterios estéticos (color, veta, textura)
+- Errores comunes y cómo evitarlos
 
-### Issue 2: [Problem]
-**Solution**: [Fix]
+## Consejo de AdrIA
+> [Tip práctico y directo sobre instalación, mantenimiento o elección]
 
-## Results You Can Expect
-- Immediate outcomes
-- Long-term benefits
-- Success metrics
+## Mantenimiento y Cuidado
+- Limpieza diaria
+- Protección a largo plazo
+- "Protege tu inversión"
 
-## Next Steps
-- Advanced techniques
-- Related guides
-- CTA for product/service
-
-## Conclusion
-- Recap key points
-- Reinforce value
-- Final encouragement
+## Encuentra tu Estilo
+- Link a categoría
+- CTA: "¿Necesitas ayuda? Ricardo te asesora sin compromiso"
+- Canales de contacto (WhatsApp, email, videollamada)
 ```
 
-#### Listicle Template
+#### Guía Técnica / How-To
 ```markdown
-# [Number] [Adjective] Ways to [Achieve Goal] in [Year]
+# Cómo [Acción] tu [Estancia] con [Material/Técnica]
+# Ejemplo: "Cómo Sellar tu Baldosa Hidráulica: Guía Paso a Paso"
 
-## Introduction
-- Context/trend driving this topic
-- Promise of what reader gains
-- Credibility statement
+## Introducción
+- Por qué es importante este proceso
+- Qué conseguirás siguiendo esta guía
+- Tiempo estimado y materiales necesarios
 
-## 1. [First Item - Most Important]
-**Why it matters**: [Brief explanation]
-**How to implement**: [2-3 actionable steps]
-**Pro tip**: [Expert insight]
-**Example**: [Real-world application]
+## Lo que Necesitas
+- Material 1 (con recomendación de marca si aplica)
+- Material 2
+- Herramientas
+- Tiempo estimado
 
-## 2. [Second Item]
-[Repeat structure]
+## Paso 1: [Preparación]
+- Instrucción clara
+- Por qué es importante
+- Error común a evitar
+- Foto o referencia visual
 
-[Continue for all items]
+## Paso 2: [Ejecución]
+[Repetir estructura]
 
-## Bonus Tip: [Overdelivery]
-[Something extra valuable]
+## Paso 3: [Acabado]
+[Repetir estructura]
 
-## Bringing It All Together
-- How items work synergistically
-- Priority order for implementation
-- Expected timeline for results
+## Consejo de AdrIA
+> [Tip de experto que marca la diferencia]
 
-## Your Action Plan
-1. Start with [easiest item]
-2. Progress to [next steps]
-3. Measure [metrics]
+## Problemas Frecuentes
+### Problema 1: [Descripción]
+**Solución**: [Explicación clara]
 
-## Conclusion & CTA
+### Problema 2: [Descripción]
+**Solución**: [Explicación clara]
+
+## Resultado Final
+- Qué esperar a corto plazo
+- Cómo evoluciona con el tiempo (pátina, asentamiento)
+- Mantenimiento periódico
+
+## ¿Dudas con tu Proyecto?
+- Ricardo te ayuda: [canales de contacto]
+- "Sin compromiso"
 ```
 
-#### Case Study Template
+#### Comparativa de Materiales
 ```markdown
-# How [Company] Achieved [Result] Using [Solution]
+# [Material A] vs [Material B]: ¿Cuál Elegir para tu [Estancia]?
+# Ejemplo: "Baldosa Hidráulica Original vs Imitación: ¿Cuál es para Ti?"
 
-## Executive Summary
-- Company overview
-- Challenge faced
-- Solution implemented
-- Key results (3 metrics)
+## Introducción
+- El dilema del cliente (ambos son buena opción)
+- Qué criterios vamos a comparar
+- "No hay opción mala, hay la opción correcta para ti"
 
-## The Challenge
-### Background
-- Industry context
-- Company situation
-- Previous attempts
+## ¿Qué es [Material A]?
+- Origen y fabricación
+- Características principales
+- Para quién es ideal
 
-### Specific Pain Points
-- Pain point 1
-- Pain point 2
-- Pain point 3
+## ¿Qué es [Material B]?
+- Origen y fabricación
+- Características principales
+- Para quién es ideal
 
-## The Solution
-### Strategy Development
-- Discovery process
-- Strategic approach
-- Why this solution
+## Comparativa Detallada
 
-### Implementation
-- Phase 1: [Timeline & Actions]
-- Phase 2: [Timeline & Actions]
-- Phase 3: [Timeline & Actions]
+| Criterio | [Material A] | [Material B] |
+|----------|-------------|-------------|
+| Fabricación | | |
+| Precio/m² | | |
+| Mantenimiento | | |
+| Durabilidad | | |
+| Personalización | | |
+| Instalación | | |
+| Estética | | |
 
-## The Results
-### Quantitative Outcomes
-- Metric 1: X% increase
-- Metric 2: $Y saved
-- Metric 3: Z improvement
+## Nuestra Recomendación
+### Elige [Material A] si...
+- Criterio 1
+- Criterio 2
+- Criterio 3
 
-### Qualitative Benefits
-- Team feedback
-- Customer response
-- Market position
+### Elige [Material B] si...
+- Criterio 1
+- Criterio 2
+- Criterio 3
 
-## Key Takeaways
-1. Lesson learned
-2. Best practice discovered
-3. Unexpected benefit
+## Consejo de AdrIA
+> [Insight que ayuda a decidir]
 
-## How You Can Achieve Similar Results
-- Prerequisite conditions
-- Implementation roadmap
-- Success factors
-
-## CTA: Start Your Success Story
+## ¿Todavía con Dudas?
+- "Ricardo puede enviarte muestras de ambos materiales. Sin compromiso."
+- Canales de contacto
 ```
 
-#### Thought Leadership Template
+#### Caso de Éxito / Proyecto Real
 ```markdown
-# [Provocative Statement About Industry Future]
+# [Tipo de Proyecto] en [Ubicación]: De [Antes] a [Después]
+# Ejemplo: "Reforma de Baño en Valencia: De Anticuado a Spa Nórdico"
 
-## The Current State
-- Industry snapshot
-- Prevailing wisdom
-- Why status quo is insufficient
+## El Proyecto en Resumen
+- Tipo de vivienda
+- Estancia reformada
+- Estilo elegido
+- Productos utilizados
 
-## The Emerging Trend
-### What's Changing
-- Driver 1: [Technology/Market/Behavior]
-- Driver 2: [Technology/Market/Behavior]
-- Driver 3: [Technology/Market/Behavior]
+## El Reto
+- Estado previo del espacio
+- Qué buscaba el cliente
+- Condiciones especiales (espacio pequeño, humedad, etc.)
 
-### Evidence & Examples
-- Data point 1
-- Case example
-- Expert validation
+## La Solución
+### Diseño
+- Estilo elegido y por qué
+- Combinación de materiales
+- Paleta cromática
 
-## Implications for [Industry]
-### Short-term (6-12 months)
-- Immediate adjustments needed
-- Quick wins available
-- Risks of inaction
+### Productos Seleccionados
+- Producto 1: [Nombre + link] — por qué se eligió
+- Producto 2: [Nombre + link] — por qué se eligió
+- Producto 3: [Nombre + link] — por qué se eligió
 
-### Long-term (2-5 years)
-- Fundamental shifts
-- New opportunities
-- Competitive landscape
+### Proceso
+- Preparación
+- Instalación
+- Acabados
 
-## Strategic Recommendations
-### For Leaders
-- Strategic priorities
-- Investment areas
-- Organizational changes
+## El Resultado
+- Fotos del antes y después
+- Palabras del cliente (si disponibles)
+- Datos: m² utilizados, tiempo de obra
 
-### For Practitioners
-- Skill development
-- Process adaptation
-- Tool adoption
+## Consejo de AdrIA
+> [Aprendizaje de este proyecto aplicable a otros]
 
-## The Path Forward
-- Call for industry action
-- Your organization's role
-- Next steps for readers
-
-## Join the Conversation
-- Thought-provoking question
-- Invitation to share perspectives
-- CTA for deeper engagement
+## ¿Quieres un Resultado Similar?
+- "Cuéntanos tu proyecto y diseñamos juntos"
+- Canales de contacto
 ```
 
-### 2. Social Media Templates
+### 2. Plantillas de Redes Sociales
 
-#### LinkedIn Post Framework
+#### Instagram — Post de Producto/Ambiente
 ```
-🎯 Hook/Pattern Interrupt
+[Primera línea que engancha — aparece en preview]
+Ejemplo: "Este baño antes era un simple aseo de 4m². Mira ahora."
 
-Context paragraph explaining the situation or challenge.
+[Historia breve del espacio o del material — 2-3 frases]
+Ejemplo: "Azulejo efecto mármol Calacatta en formato 60x120.
+La clave fue usar el mismo azulejo en suelo y pared
+para ampliar visualmente el espacio."
 
-Key insight or lesson learned:
+💡 Consejo de AdrIA:
+[Tip práctico relacionado]
 
-• Bullet point 1 (specific detail)
-• Bullet point 2 (measurable outcome)
-• Bullet point 3 (unexpected discovery)
+📐 Producto: [Nombre + referencia]
+📍 Disponible en adrihosan.com
 
-Brief story or example that illustrates the point.
+¿Estás pensando en reformar tu baño?
+Ricardo te asesora sin compromiso 👇
+🔗 Link en bio
 
-Takeaway message with clear value.
-
-Question to encourage engagement?
-
-#Hashtag1 #Hashtag2 #Hashtag3
-```
-
-#### Twitter/X Thread Template
-```
-1/ Bold opening statement or question that stops the scroll
-
-2/ Context - why this matters right now
-
-3/ Problem most people face
-
-4/ Conventional solution (and why it falls short)
-
-5/ Better approach - introduction
-
-6/ Step 1 of better approach
-   • Specific action
-   • Why it works
-
-7/ Step 2 of better approach
-   [Continue pattern]
-
-8/ Real example or case study
-
-9/ Common objection addressed
-
-10/ Results you can expect
-
-11/ One powerful tip most people miss
-
-12/ Recap in 3 key points:
-    - Point 1
-    - Point 2  
-    - Point 3
-
-13/ CTA: If you found this helpful, [action]
-
-14/ P.S. - Bonus insight or resource
+#azulejos #reformabaño #adrihosan #baldosahidraulica
+#diseñointerior #bañosmodernos #ceramicaespañola
+#decoracion #hogar #reforma
 ```
 
-#### Instagram Caption Template
+#### Instagram — Carrusel Educativo
 ```
-[Attention-grabbing first line - appears in preview]
+Slide 1 (Portada):
+"[Número] errores al elegir [producto] para tu [estancia]"
+Ejemplo: "5 errores al elegir azulejos para tu ducha"
 
-[Story or relatable scenario - 2-3 sentences]
+Slide 2-6 (Un error por slide):
+❌ Error [N]: [Descripción corta]
+✅ Lo correcto: [Solución]
+[Imagen ilustrativa]
 
-Here's what I learned:
+Slide 7 (Cierre):
+"¿Necesitas ayuda para elegir?"
+Ricardo te asesora gratis y sin compromiso
+📱 WhatsApp: [número]
+🌐 adrihosan.com
 
-[Key insight or lesson]
+Caption:
+"Elegir azulejos para la ducha no es solo cuestión de que te gusten.
+Hay factores técnicos que pueden arruinar el resultado... o hacerlo perfecto.
 
-3 things that changed everything:
-1️⃣ [First point]
-2️⃣ [Second point]
-3️⃣ [Third point]
+Guarda este post para cuando empieces tu reforma 🔖
 
-[Call-out or question to audience]
-
-Drop a [emoji] if you've experienced this too!
-
-What's your biggest challenge with [topic]? Let me know below 👇
-
--
-#hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5
-[10-30 relevant hashtags total]
-```
-
-### 3. Email Marketing Templates
-
-#### Newsletter Template
-```
-Subject: [Benefit] + [Urgency/Curiosity]
-Preview: [Complements subject, doesn't repeat]
-
-Hi [Name],
-
-[Personal observation or timely hook - 1-2 sentences]
-
-[Transition to main topic - why reading this matters]
-
-## Main Content Section
-
-[Key points in scannable format]
-• Point 1: [Benefit-focused]
-• Point 2: [Specific example]
-• Point 3: [Actionable tip]
-
-[Brief elaboration on most important point - 2-3 sentences]
-
-## Resource of the Week
-
-[Title with link]
-[One sentence on why it's valuable]
-
-## Quick Win You Can Implement Today
-
-[Specific, actionable tip - 2-3 steps max]
-
-[Closing thought or question]
-
-[Signature]
-[Name]
-
-P.S. [Additional value or soft CTA]
+#adrihosan #azulejosducha #reformabaño #consejosreforma"
 ```
 
-#### Promotional Email Template
+#### Facebook — Post de Comunidad
 ```
-Subject: [Specific benefit] by [deadline/timeframe]
-Preview: [Scarcity or exclusivity element]
+[Pregunta o reflexión que invite a participar]
+Ejemplo: "¿Baldosa hidráulica original o imitación?
+Cada una tiene su encanto y aquí no juzgamos 😊"
 
-Hi [Name],
+[Contexto breve — por qué es interesante]
+Ejemplo: "La original es artesanal, evoluciona con el tiempo y cada pieza es única.
+La imitación es más fácil de mantener y tiene un precio más accesible."
 
-[Acknowledge pain point or aspiration]
+[Invitación a opinar]
+"¿Tú de cuál eres? Cuéntanos en comentarios 👇"
 
-[Agitate - why this problem persists]
+[Imagen: composición con ambas opciones]
 
-I've got something that can help:
-
-[Solution introduction - what it is]
-
-Here's what you get:
-✓ Benefit 1 (not feature)
-✓ Benefit 2 (not feature)
-✓ Benefit 3 (not feature)
-
-[Social proof - testimonial or results]
-
-[Handle main objection]
-
-[Clear CTA button: "Get Started" / "Claim Yours"]
-
-[Urgency element - deadline or limited availability]
-
-[Signature]
-
-P.S. [Reinforce urgency or add bonus]
+#adrihosan #baldosahidraulica #decoracion #reformas
 ```
 
-### 4. Content Planning Frameworks
+### 3. Plantillas de Email Marketing
 
-#### Content Pillar Strategy
+#### Newsletter Mensual — Adrihosan
 ```
-Pillar 1: Educational (40%)
-- How-to guides
-- Tutorials
-- Best practices
-- Tips & tricks
+Asunto: [Beneficio directo] — [tema del mes]
+Ejemplo: "Nuevos azulejos efecto mármol — y una guía para elegir el tuyo"
 
-Pillar 2: Inspirational (25%)
-- Success stories
-- Case studies
-- Transformations
-- Vision pieces
+Preview: [Complemento del asunto, no repetir]
 
-Pillar 3: Conversational (25%)
-- Behind-the-scenes
-- Team spotlights
-- Q&As
-- Polls/questions
+Hola [Nombre],
 
-Pillar 4: Promotional (10%)
-- Product updates
-- Offers
-- Event announcements
-- CTAs
-```
+[Apertura personal o estacional — 1-2 frases]
+Ejemplo: "Con la primavera llegan las ganas de cambiar cosas en casa.
+Y tenemos novedades que te van a gustar."
 
-#### Monthly Content Calendar Structure
-```
-Week 1:
-- Monday: Educational (blog post)
-- Wednesday: Inspirational (social)
-- Friday: Conversational (email)
+---
 
-Week 2:
-- Monday: Educational (video/guide)
-- Wednesday: Case study
-- Friday: Curated content
+🆕 Lo Nuevo en Adrihosan
+[Producto/colección destacada con imagen]
+[Beneficio principal — 1 frase]
+[Link: "Ver colección"]
 
-Week 3:
-- Monday: Educational (infographic)
-- Wednesday: Behind-the-scenes
-- Friday: Community spotlight
+---
 
-Week 4:
-- Monday: Monthly roundup
-- Wednesday: Thought leadership
-- Friday: Promotional
+💡 Consejo de AdrIA
+[Tip práctico del mes — 2-3 líneas]
+
+---
+
+📸 Proyecto del Mes
+[Foto antes/después o ambiente]
+[Descripción breve — 1-2 frases]
+[Link: "Ver proyecto completo"]
+
+---
+
+¿Tienes un proyecto en mente?
+Ricardo te ayuda a elegir, sin compromiso.
+📱 WhatsApp | ✉️ Email | 📹 Videollamada
+
+Un saludo,
+El equipo de Adrihosan
 ```
 
-### 5. SEO Content Framework
-
-#### SEO-Optimized Article Structure
+#### Email Promocional — Adrihosan
 ```
-URL: /primary-keyword-secondary-keyword
+Asunto: [Producto] a precio especial — [beneficio]
+Preview: [Elemento de escasez real, no inventada]
 
-Title Tag: Primary Keyword - Secondary Benefit | Brand
-Meta Description: Action verb + primary keyword + benefit + CTA (155 chars)
+Hola [Nombre],
 
-# H1: Primary Keyword + Unique Angle
+[Conectar con necesidad real — 1-2 frases]
 
-Introduction (50-100 words)
-- Include primary keyword in first 100 words
-- State what reader will learn
-- Why it matters
+Hemos seleccionado [productos/colección] con condiciones especiales:
 
-## H2: Secondary Keyword Variation 1
+✓ [Beneficio 1 — no solo precio, también valor]
+✓ [Beneficio 2]
+✓ [Beneficio 3]
 
-[Content with LSI keywords naturally integrated]
+[Imagen del producto/ambiente]
 
-### H3: Specific subtopic
-- Detail point 1
-- Detail point 2
-- Detail point 3
+[CTA: "Ver selección"]
 
-## H2: Secondary Keyword Variation 2
+[Nota de confianza: "Envío de muestras gratuito"]
 
-[Content continues...]
+¿Dudas? Ricardo te atiende:
+📱 WhatsApp: [número]
 
-## H2: Related Questions (FAQ Schema)
-
-### Question 1?
-[Concise answer with keyword]
-
-### Question 2?
-[Concise answer with keyword]
-
-## Conclusion
-- Recap main points
-- Include primary keyword
-- Clear next action
-
-Internal Links: 2-3 relevant articles
-External Links: 1-2 authoritative sources
+Un saludo,
+Adrihosan
 ```
 
-### 6. Video Script Templates
-
-#### Educational Video Script
-```
-[0-5 seconds: Hook]
-"What if I told you [surprising statement]?"
-
-[5-15 seconds: Introduction]
-"Hi, I'm [Name] and today we're solving [problem]"
-
-[15-30 seconds: Context]
-- Why this matters
-- What you'll learn
-- What you'll achieve
-
-[30 seconds - 2 minutes: Main Content]
-Section 1: [Key Point]
-- Explanation
-- Example
-- Visual aid
-
-Section 2: [Key Point]
-[Repeat structure]
-
-Section 3: [Key Point]
-[Repeat structure]
-
-[Final 15-30 seconds]
-- Quick recap
-- Call to action
-- End screen elements
-```
-
-### 7. Content Repurposing Matrix
+### 4. Estrategia de Pilares de Contenido — Adrihosan
 
 ```
-Original: Blog Post (2000 words)
-├── Social Media
-│   ├── 5 Twitter posts (key quotes)
-│   ├── 1 LinkedIn article (executive summary)
-│   ├── 3 Instagram carousels (main points)
-│   └── 1 Facebook post (intro + link)
+Pilar 1: Inspiración y Diseño (35%)
+- Ambientes y estilos (efecto madera, mármol, hidráulico...)
+- Antes/después de proyectos reales
+- Tendencias en interiorismo
+- Combinaciones de materiales
+
+Pilar 2: Educación y Conocimiento Técnico (30%)
+- Guías de instalación y mantenimiento
+- Comparativas de materiales
+- Cómo elegir según tu espacio
+- Consejos de AdrIA
+
+Pilar 3: Cercanía y Comunidad (25%)
+- Historias de clientes
+- Detrás de las cámaras (showroom, artesanos)
+- Preguntas y encuestas
+- Ricardo responde
+
+Pilar 4: Producto y Novedades (10%)
+- Nuevas colecciones
+- Productos destacados
+- Ofertas reales (no artificiales)
+- Stock y disponibilidad
+```
+
+### 5. Framework SEO — Adrihosan
+
+#### Estructura de Artículo SEO para Adrihosan
+```
+URL: /keyword-principal-keyword-secundaria
+Ejemplo: /azulejos-bano-efecto-marmol
+
+Title Tag: Keyword Principal — Beneficio | Adrihosan
+Ejemplo: Azulejos Baño Efecto Mármol — Lujo Atemporal | Adrihosan
+
+Meta Description: Verbo + keyword + beneficio + CTA (< 155 chars)
+Ejemplo: Descubre azulejos de baño efecto mármol. Porcelánico de calidad española con vetas naturales. Envío de muestras gratis. Consulta sin compromiso.
+
+# H1: Keyword Principal + Ángulo Emocional
+Ejemplo: Azulejos de Baño Efecto Mármol: Lujo Atemporal en Vetas Naturales
+
+## Introducción (50-100 palabras)
+- Incluir keyword en las primeras 100 palabras
+- Conectar con la transformación del espacio
+- Anticipar lo que el lector va a encontrar
+
+## H2: Variación de Keyword Secundaria 1
+Ejemplo: "Tipos de Porcelánico Imitación Mármol para Baño"
+
+### H3: Subtema específico
+- Detalle con keywords LSI integradas naturalmente
+- Imágenes de producto con alt text optimizado
+- Links internos a categorías relacionadas
+
+## H2: Variación de Keyword Secundaria 2
+Ejemplo: "Cómo Combinar Azulejos Mármol en Baños Pequeños"
+
+## H2: Consejo de AdrIA
+> Tip práctico con keyword integrada
+
+## H2: Preguntas Frecuentes (Schema FAQ)
+
+### ¿[Pregunta con keyword]?
+[Respuesta concisa y directa]
+
+### ¿[Pregunta con keyword]?
+[Respuesta concisa y directa]
+
+## Conclusión
+- Recapitular puntos principales
+- Incluir keyword principal
+- CTA: "Ricardo te ayuda a elegir. Sin compromiso."
+
+Links internos: 3-4 categorías o artículos relacionados
+Links externos: 1-2 fuentes técnicas si aportan valor
+```
+
+### 6. Plantilla de Descripción de Categoría — Adrihosan
+
+```markdown
+<!-- HERO -->
+<h1>[Producto]: [Beneficio emocional]</h1>
+<p>[Frase aspiracional que conecte producto con transformación del espacio]</p>
+[CTA: Ver Catálogo] [CTA: Ayuda por WhatsApp]
+
+<!-- ESTILOS -->
+<h2>¿Qué estilo buscas para tu [estancia]?</h2>
+<p>Explora nuestras colecciones y encuentra el acabado perfecto para tu proyecto</p>
+[Grid de tarjetas con imagen + estilo + frase corta de beneficio]
+
+<!-- SOLUCIONES POR ESPACIO -->
+<h2>Diseñamos según tu espacio</h2>
+<p>Encuentra la solución perfecta para cada zona de tu [estancia]</p>
+[Grid de soluciones específicas]
+
+<!-- CONSEJO DE ADRIA -->
+¡Consejo de AdrIA! [Tip práctico para usar los filtros o elegir]
+
+<!-- CATÁLOGO -->
+<h2>Catálogo de [Producto]</h2>
+[Productos con filtros]
+
+<!-- GUÍA SEO -->
+[Contenido educativo largo con H2/H3, keywords, links internos]
+
+<!-- FAQ -->
+[Preguntas frecuentes con Schema]
+
+<!-- CONTACTO RICARDO -->
+¿Necesitas ayuda? Ricardo te asesora sin compromiso.
+[WhatsApp] [Email] [Videollamada] [Formulario]
+```
+
+### 7. Matriz de Reutilización de Contenido — Adrihosan
+
+```
+Original: Artículo de Blog (1.500-2.000 palabras)
+├── Redes Sociales
+│   ├── 3-5 posts Instagram (ambiente + tip)
+│   ├── 1 carrusel educativo (puntos principales)
+│   ├── 1-2 posts Facebook (pregunta + comunidad)
+│   └── 3-5 Stories (tips rápidos visuales)
 ├── Email
-│   └── Newsletter feature (summary + CTA)
-├── Video
-│   ├── YouTube explainer (script from post)
-│   └── TikTok/Reels (quick tips)
-├── Audio
-│   └── Podcast talking points
+│   └── Sección de newsletter (resumen + CTA)
+├── Web
+│   ├── Actualización de descripción de categoría
+│   └── FAQ nuevas si aplica
+├── WhatsApp
+│   └── Mensaje de valor para clientes interesados
 └── Visual
-    ├── Infographic (data points)
-    └── Slide deck (presentation)
+    ├── Infografía (comparativa o pasos)
+    └── Antes/después (si hay proyecto)
 ```
 
-## Quick-Start Checklists
+## Checklists Rápidos
 
-### Pre-Publishing Checklist
-- [ ] Keyword research completed
-- [ ] Title under 60 characters
-- [ ] Meta description written (155 chars)
-- [ ] Headers properly structured (H1, H2, H3)
-- [ ] Internal links added (2-3)
-- [ ] Images optimized with alt text
-- [ ] CTA included and clear
-- [ ] Proofread and fact-checked
-- [ ] Mobile preview checked
+### Pre-Publicación Blog
+- [ ] Keyword research completado
+- [ ] Título < 60 caracteres con keyword
+- [ ] Meta description escrita (< 155 chars)
+- [ ] Headers estructurados (H1, H2, H3)
+- [ ] Links internos a categorías (3-4)
+- [ ] Imágenes optimizadas con alt text descriptivo
+- [ ] Consejo de AdrIA incluido
+- [ ] CTA claro con contacto de Ricardo
+- [ ] "Sin compromiso" presente
+- [ ] Revisado en móvil
+- [ ] Tono Adrihosan verificado (elegante + cercano)
 
-### Content Quality Checklist
-- [ ] Addresses specific audience need
-- [ ] Provides unique value/perspective
-- [ ] Includes actionable takeaways
-- [ ] Uses appropriate brand voice
-- [ ] Contains supporting data/examples
-- [ ] Free of jargon and complex terms
-- [ ] Scannable format (bullets, headers)
-- [ ] Engaging hook in introduction
-- [ ] Clear conclusion and next steps
+### Pre-Publicación Social
+- [ ] Primera línea engancha (visible en preview)
+- [ ] Imagen de calidad con producto/ambiente real
+- [ ] Hashtags Adrihosan incluidos (#adrihosan + nicho)
+- [ ] CTA o pregunta para engagement
+- [ ] Canales de contacto mencionados
+- [ ] Tono coherente con la marca
+- [ ] Alt text en imágenes

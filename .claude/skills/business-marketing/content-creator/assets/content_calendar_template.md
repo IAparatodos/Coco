@@ -1,99 +1,176 @@
-# Content Calendar Template - [Month Year]
+# Calendario de Contenido Adrihosan — [Mes Año]
 
-## Monthly Goals
-- **Traffic Goal**: 
-- **Lead Generation Goal**: 
-- **Engagement Goal**: 
-- **Key Campaign**: 
+## Objetivos del Mes
+- **Tráfico web**:
+- **Leads (WhatsApp + email)**:
+- **Engagement Instagram**:
+- **Campaña clave**:
+- **Estilo/producto destacado**:
 
-## Week 1: [Date Range]
+## Semana 1: [Rango de fechas]
 
-### Monday [Date]
-**Platform**: Blog
-**Topic**: 
-**Keywords**: 
-**Status**: [ ] Planned [ ] Written [ ] Reviewed [ ] Published
-**Owner**: 
-**Notes**: 
+### Lunes [Fecha]
+**Instagram Feed** — Inspiración
+- Tipo: Foto de ambiente
+- Estancia:
+- Estilo:
+- Producto destacado:
+- Caption: [Primera línea gancho]
+- Hashtags: #adrihosan + [10-15 relevantes]
+- Hora: 12:30
+- Estado: [ ] Foto [ ] Caption [ ] Programado [ ] Publicado
 
-**Platform**: LinkedIn
-**Type**: Article Share
-**Caption**: 
-**Hashtags**: 
-**Time**: 10:00 AM
+**Facebook** — Compartir
+- Adaptar caption para Facebook (más conversacional)
+- Hora: 13:00
 
-### Tuesday [Date]
-**Platform**: Instagram
-**Type**: Carousel
-**Topic**: 
-**Visuals**: [ ] Created [ ] Approved
-**Caption**: 
-**Hashtags**: 
-**Time**: 12:00 PM
+### Martes [Fecha]
+**Instagram Stories** — Consejo de AdrIA
+- Tip:
+- Formato: Imagen + texto o vídeo corto
+- Incluir: Encuesta o pregunta
+- Estado: [ ] Creado [ ] Publicado
 
-### Wednesday [Date]
-**Platform**: Email Newsletter
-**Subject Line**: 
-**Segment**: 
-**CTA**: 
-**Status**: [ ] Drafted [ ] Designed [ ] Scheduled
+**Google Business** — Novedad
+- Tipo: [ ] Post [ ] Oferta [ ] Evento
+- Contenido:
+- Link a:
+- Estado: [ ] Creado [ ] Publicado
 
-### Thursday [Date]
-**Platform**: Twitter/X
-**Type**: Thread
-**Topic**: 
-**Thread Length**: 
-**Media**: [ ] Images [ ] GIFs [ ] None
-**Time**: 2:00 PM
+### Miércoles [Fecha]
+**Instagram Carrusel** — Educativo
+- Tema:
+- Slides: [Número]
+- Slide 1 (portada):
+- Slides 2-N:
+- Slide final: CTA + contacto Ricardo
+- Keywords SEO:
+- Caption:
+- Hashtags:
+- Hora: 12:30
+- Estado: [ ] Diseño [ ] Caption [ ] Programado [ ] Publicado
 
-### Friday [Date]
-**Platform**: Multi-channel
-**Campaign**: 
-**Assets Needed**:
-- [ ] Blog post
-- [ ] Social graphics
-- [ ] Email
-- [ ] Video
+**Facebook** — Comunidad
+- Tipo: Pregunta / Encuesta
+- Tema:
+- Imagen: [ ] Sí [ ] No
+- Hora: 11:00
+- Estado: [ ] Creado [ ] Publicado
 
-## Week 2: [Date Range]
-[Repeat structure]
+### Jueves [Fecha]
+**Instagram Stories** — Engagement
+- Formato: [ ] Encuesta [ ] Esto o lo otro [ ] Quiz [ ] Pregunta abierta
+- Tema:
+- Estado: [ ] Creado [ ] Publicado
 
-## Week 3: [Date Range]
-[Repeat structure]
+### Viernes [Fecha]
+**Instagram Reel** — Visual
+- Tema: [ ] Proceso artesanal [ ] Antes/después [ ] Tour showroom [ ] Tips rápidos
+- Duración objetivo: [15-60 seg]
+- Audio: [ ] Original [ ] Trending
+- Script/Guión:
+- CTA final:
+- Hashtags:
+- Hora: 19:00
+- Estado: [ ] Grabado [ ] Editado [ ] Caption [ ] Publicado
 
-## Week 4: [Date Range]
-[Repeat structure]
+**Facebook** — Proyecto/Inspiración
+- Contenido:
+- Imagen:
+- Estado: [ ] Creado [ ] Publicado
 
-## Content Bank (Ideas for Future)
-1. 
-2. 
-3. 
-4. 
-5. 
+### Sábado [Fecha]
+**Instagram Stories** — UGC / Repost
+- Contenido: [ ] Proyecto cliente [ ] Repost mención [ ] Ambiente inspiracional
+- Fuente:
+- Estado: [ ] Permiso obtenido [ ] Publicado
 
-## Performance Review (End of Month)
+---
 
-### Top Performing Content
-1. **Title/Topic**: 
-   - **Metric**: 
-   - **Why it worked**: 
+## Semana 2: [Rango de fechas]
+[Repetir estructura]
 
-2. **Title/Topic**: 
-   - **Metric**: 
-   - **Why it worked**: 
+## Semana 3: [Rango de fechas]
+[Repetir estructura]
 
-### Lessons Learned
-- 
-- 
-- 
+## Semana 4: [Rango de fechas]
+[Repetir estructura]
 
-### Adjustments for Next Month
-- 
-- 
-- 
+---
 
-## Resource Links
-- Brand Guidelines: [Link]
-- Asset Library: [Link]
-- Analytics Dashboard: [Link]
-- Team Calendar: [Link]
+## Blog del Mes
+### Artículo 1
+- **Título**:
+- **Keyword principal**:
+- **Keywords secundarias**:
+- **Tipo**: [ ] Guía estilo [ ] How-to [ ] Comparativa [ ] Caso éxito
+- **Fecha publicación**:
+- **Estado**: [ ] Investigado [ ] Escrito [ ] SEO optimizado [ ] Revisado [ ] Publicado
+- **Reutilización**: [ ] Carrusel IG [ ] Newsletter [ ] Facebook [ ] Stories
+
+### Artículo 2
+[Repetir estructura]
+
+---
+
+## Email / Newsletter del Mes
+- **Fecha envío**:
+- **Asunto**:
+- **Contenido principal**:
+- **Producto destacado**:
+- **Consejo de AdrIA**:
+- **CTA**:
+- **Estado**: [ ] Borrador [ ] Diseño [ ] Test [ ] Enviado
+
+---
+
+## Banco de Ideas (para próximos meses)
+1.
+2.
+3.
+4.
+5.
+
+---
+
+## Revisión de Rendimiento (fin de mes)
+
+### Top 3 Contenido con Mejor Rendimiento
+1. **Título/Tema**:
+   - Plataforma:
+   - Métrica destacada:
+   - Por qué funcionó:
+
+2. **Título/Tema**:
+   - Plataforma:
+   - Métrica destacada:
+   - Por qué funcionó:
+
+3. **Título/Tema**:
+   - Plataforma:
+   - Métrica destacada:
+   - Por qué funcionó:
+
+### Leads Generados
+- WhatsApp:
+- Email:
+- Formulario web:
+- Total:
+
+### Lecciones Aprendidas
+-
+-
+-
+
+### Ajustes para el Próximo Mes
+-
+-
+-
+
+---
+
+## Links de Referencia
+- Brand Guidelines: `.claude/skills/business-marketing/content-creator/references/brand_guidelines.md`
+- Content Frameworks: `.claude/skills/business-marketing/content-creator/references/content_frameworks.md`
+- Social Media Guide: `.claude/skills/business-marketing/content-creator/references/social_media_optimization.md`
+- Web Adrihosan: https://www.adrihosan.com
