@@ -170,7 +170,7 @@
 ---
 
 ## Links de Referencia
-- Brand Guidelines: `.claude/skills/business-marketing/content-creator/references/brand_guidelines.md`
-- Content Frameworks: `.claude/skills/business-marketing/content-creator/references/content_frameworks.md`
+- Brand Voice Guide: `.claude/skills/business-marketing/content-creator/references/adrihosan-brand-voice-guide.md`
+- Content Framework: `.claude/skills/business-marketing/content-creator/references/adrihosan-content-framework.md`
 - Social Media Guide: `.claude/skills/business-marketing/content-creator/references/social_media_optimization.md`
 - Web Adrihosan: https://www.adrihosan.com

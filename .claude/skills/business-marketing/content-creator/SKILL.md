@@ -38,22 +38,22 @@ creación de contenido, blog, SEO, voz de marca, redes sociales, calendario de c
 ## Inicio Rápido
 
 ### Para Contenido de Blog
-1. Elegir plantilla de `references/content_frameworks.md` (guía estilo, how-to, comparativa, caso éxito)
+1. Elegir plantilla de `references/adrihosan-content-framework.md` (guía estilo, how-to, comparativa, caso éxito)
 2. Investigar keywords del tema
-3. Escribir siguiendo la plantilla y la voz de marca de `references/brand_guidelines.md`
+3. Escribir siguiendo la plantilla y la voz de marca de `references/adrihosan-brand-voice-guide.md`
 4. Optimizar SEO: `python scripts/seo_optimizer.py [archivo] [keyword-principal]`
 5. Verificar tono Adrihosan con checklist de brand_guidelines
 6. Publicar
 
 ### Para Redes Sociales
 1. Revisar estrategia por plataforma en `references/social_media_optimization.md`
-2. Usar plantilla correspondiente de `references/content_frameworks.md`
+2. Usar plantilla correspondiente de `references/adrihosan-content-framework.md`
 3. Aplicar hashtags Adrihosan (ver guía de redes)
 4. Programar según calendario en `assets/content_calendar_template.md`
 
 ### Para Analizar Voz de Marca
 1. Ejecutar `python scripts/brand_voice_analyzer.py [archivo]` sobre contenido existente
-2. Comparar resultados con atributos definidos en `references/brand_guidelines.md`
+2. Comparar resultados con atributos definidos en `references/adrihosan-brand-voice-guide.md`
 3. Ajustar texto para alinear con la voz de Adrihosan
 
 ## Workflows Principales
@@ -141,14 +141,14 @@ Analiza contenido para optimización SEO con recomendaciones accionables.
 
 ### Cuándo Usar Cada Referencia
 
-**references/brand_guidelines.md**
+**references/adrihosan-brand-voice-guide.md**
 - Al crear cualquier contenido para Adrihosan
 - Para verificar tono y voz de marca
 - Para consultar palabras/expresiones aprobadas
 - Para revisar directrices por canal
 - Para consultar identidad visual (colores, tipografía)
 
-**references/content_frameworks.md**
+**references/adrihosan-content-framework.md**
 - Al empezar cualquier pieza de contenido nueva
 - Para estructurar blogs, posts sociales, emails
 - Para planificar reutilización de contenido
