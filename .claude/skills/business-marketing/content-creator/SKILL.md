@@ -18,6 +18,15 @@ metadata:
 
 Creación de contenido profesional con la voz de marca de Adrihosan: análisis de voz de marca, optimización SEO, frameworks de contenido por canal y plantillas de redes sociales para el sector cerámico y de reformas del hogar.
 
+## Referencias obligatorias
+
+**IMPORTANTE**: Antes de crear cualquier contenido para Adrihosan, LEER SIEMPRE estos archivos:
+- `references/adrihosan-brand-voice-guide.md` — voz, tono, buyer personas, posicionamiento y reglas de estilo
+- `references/adrihosan-content-framework.md` — plantillas por canal, estructuras de blog, redes sociales y email
+- `references/social_media_optimization.md` — estrategia por plataforma, hashtags y calendario
+
+No generar contenido sin haber consultado estos documentos. Son la fuente de verdad de la marca.
+
 ## Identidad de Marca
 
 **Adrihosan** — Tienda online y showroom de cerámica, azulejos, baldosa hidráulica y equipamiento de baño y cocina. Fabricación española, artesanía, diseño y asesoramiento experto.
