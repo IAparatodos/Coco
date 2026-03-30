@@ -106,7 +106,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
 
 function adrihosan_porcelanico_marmol_contenido_inferior() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 2245 ); ?>
         </div>

@@ -512,9 +512,9 @@ add_filter('woocommerce_pagination_args', 'dw_change_pagination_icons', 99, 1);
 
 function dw_change_pagination_icons( $args ) {
 
-	$args['prev_text'] = '<img src="' . get_theme_file_uri('img/load.png') . '">';
+	$args['prev_text'] = '<img src="' . get_theme_file_uri('img/load.png') . '" width="53" height="52" alt="Página anterior">';
 
-	$args['next_text'] = '<img src="' . get_theme_file_uri('img/load-right.png') . '">';
+	$args['next_text'] = '<img src="' . get_theme_file_uri('img/load-right.png') . '" width="53" height="52" alt="Página siguiente">';
 
 	$args['end_size'] = 1;
 
@@ -880,7 +880,7 @@ function dw_mail_to_friend() {
 
 	echo '<a class="email-link" href="mailto:?subject=' . $product->get_name() . '&body=Enlace: ' . get_permalink($product->get_id()) . '">';
 
-	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '">' . __('Enviar email a un amigo','dw');
+	echo '<img src="' . get_theme_file_uri('img/email-green.png') . '" width="19" height="16" alt="" data-no-lazy="1" class="skip-lazy no-lazyload">' . __('Enviar email a un amigo','dw');
 
 	echo '</a>';
 
@@ -1194,6 +1194,8 @@ function dw_wc_cross_products() {
 
 		echo '<div class="title-related-products">' . $title . '</div>';
 
+		$max_slider = get_option('dw-op-max-products-slider') ?: 9;
+
 		echo dw_products(array(
 
 			'columns'  => 0,
@@ -1204,9 +1206,9 @@ function dw_wc_cross_products() {
 
 			'post__in' => $cross_sells,
 
-			'number'   => get_option('dw-op-max-products-slider') ? get_option('dw-op-max-products-slider') : 9,
+			'number'   => $max_slider,
 
-			'orderby'  => 'rand',
+			'orderby'  => 'date',
 
 		));
 
@@ -1894,6 +1896,8 @@ function dw_wc_related_products() {
 
 		echo '<div class="title-related-products">' . $title . '</div>';
 
+		$max_slider = get_option('dw-op-max-products-slider') ?: 9;
+
 		echo dw_products(array(
 
 			'category' => $cat,
@@ -1906,9 +1910,9 @@ function dw_wc_related_products() {
 
 			'post__not_in' => array($product->get_id()),
 
-			'number'   => get_option('dw-op-max-products-slider') ? get_option('dw-op-max-products-slider') : 9,
+			'number'   => $max_slider,
 
-			'orderby'  => 'rand',
+			'orderby'  => 'date',
 
 		));
 
@@ -2086,9 +2090,9 @@ function dw_products($atts) {
 
 			?>
 
-			<div class="slider-btn left"><img src="<?php echo get_theme_file_uri('img/arrow_left_white.png');?>"></div>
+			<div class="slider-btn left"><img src="<?php echo get_theme_file_uri('img/arrow_left_white.png');?>" width="15" height="27" alt="Anterior"></div>
 
-			<div class="slider-btn right"><img src="<?php echo get_theme_file_uri('img/arrow_right_white.png');?>"></div>
+			<div class="slider-btn right"><img src="<?php echo get_theme_file_uri('img/arrow_right_white.png');?>" width="15" height="27" alt="Siguiente"></div>
 
 			<?php
 
@@ -2358,21 +2362,39 @@ function dw_wc_product_cats_css_body_class( $classes ){
 
 	if ( is_tax( 'product_cat' ) || is_shop() ) {
 
-		$cat = get_queried_object();
-
 		$term = get_queried_object();
 
-		$children = get_terms( $term->taxonomy, array(
+		if ( $term && isset($term->term_id) ) {
 
-			'parent'    => $term->term_id,
+			$cache_key = 'adrihosan_cat_has_children_' . $term->term_id;
 
-			'hide_empty' => false
+			$has_children = get_transient($cache_key);
 
-		) );
+			if ($has_children === false) {
 
-		if ($children && !is_wp_error($children)) { 
+				$children = get_terms( $term->taxonomy, array(
 
-			$classes[] = 'dw-products-category';
+					'parent'    => $term->term_id,
+
+					'hide_empty' => false,
+
+					'number'    => 1,
+
+					'fields'    => 'ids',
+
+				) );
+
+				$has_children = ($children && !is_wp_error($children)) ? '1' : '0';
+
+				set_transient($cache_key, $has_children, DAY_IN_SECONDS);
+
+			}
+
+			if ($has_children === '1') {
+
+				$classes[] = 'dw-products-category';
+
+			}
 
 		}
 

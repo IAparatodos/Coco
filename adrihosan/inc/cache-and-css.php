@@ -72,23 +72,25 @@
 // }
 
 function adrihosan_cargar_css_categoria() {
-    
-    // Siempre cargar el CSS base global
-    wp_enqueue_style(
-        'adrihosan-base-global',
-        get_stylesheet_directory_uri() . '/assets/css/base-global.css',
-        array(),
-        '1.0.0'
-    );
-    
-    // Siempre cargar los fixes móviles
-    wp_enqueue_style(
-        'adrihosan-mobile-fixes',
-        get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
-        array('adrihosan-base-global'),
-        '1.0.0'
-    );
-    
+
+    // base-global.css y mobile-fixes.css solo usan selectores .tax-product_cat.term-XXXX
+    // → No cargar en fichas de producto individual (mejora LCP: -2 CSS bloqueantes)
+    if (!is_singular('product')) {
+        wp_enqueue_style(
+            'adrihosan-base-global',
+            get_stylesheet_directory_uri() . '/assets/css/base-global.css',
+            array(),
+            '1.0.0'
+        );
+
+        wp_enqueue_style(
+            'adrihosan-mobile-fixes',
+            get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
+            array('adrihosan-base-global'),
+            '1.0.0'
+        );
+    }
+
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
@@ -135,9 +137,70 @@ function adrihosan_cargar_css_categoria() {
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
 /**
- * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ * Diferir CSS no crítico: fonts.css se carga con media="print" y cambia a "all" on load.
+ * Esto evita que bloquee el render (mejora FCP/LCP).
  */
-// Preload CSS - integrado en adrihosan_cargar_css_categoria() que ya tiene el check is_product_category()
+/**
+ * data-no-optimize="1" evita que LiteSpeed Cache recombine el CSS como bloqueante.
+ */
+function adrihosan_defer_non_critical_css($tag, $handle, $href) {
+    $defer_handles = array('adrihosan-fonts');
+    if (in_array($handle, $defer_handles, true)) {
+        // media="print" no bloquea render; onload cambia a "all" para aplicar estilos
+        $tag = str_replace(
+            "media='all'",
+            "media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"",
+            $tag
+        );
+        // Fallback noscript para usuarios sin JS
+        $tag .= '<noscript><link rel="stylesheet" href="' . esc_url($href) . '"></noscript>';
+    }
+    return $tag;
+}
+add_filter('style_loader_tag', 'adrihosan_defer_non_critical_css', 10, 3);
+
+/**
+ * Ficha de producto: diferir solo CSS que NO afecta al layout del producto.
+ * Diferir TODO causaba CLS 1.002 porque woocommerce.css/wcss.css aplicaban
+ * estilos de layout tarde. Solo diferimos CSS claramente below-fold o decorativo.
+ * Ahorro: ~670ms de render-blocking (los CSS de 670ms duration del informe).
+ */
+function adrihosan_defer_safe_css_on_product($tag, $handle, $href) {
+    if (is_admin() || !is_singular('product')) {
+        return $tag;
+    }
+
+    // Solo diferir CSS que sabemos que NO causa layout shifts
+    $safe_patterns = array(
+        'wprevpro',           // Reviews plugin (21.5 KiB, below fold)
+        'photoswipe',         // Lightbox (solo al abrir)
+        'default-skin',       // Lightbox skin (solo al abrir)
+        'joinchat',           // Chat button (no afecta layout)
+        'cookieblocker',      // Cookie consent (overlay)
+        'block-library',      // WP blocks (14.9 KiB, mayormente sin usar)
+        'wc-blocks',          // WC blocks (below fold)
+        'widget.css',         // Widget styles (sidebar/footer)
+    );
+
+    $should_defer = false;
+    foreach ($safe_patterns as $pattern) {
+        if (strpos($href, $pattern) !== false) {
+            $should_defer = true;
+            break;
+        }
+    }
+
+    if ($should_defer && strpos($tag, "media='all'") !== false) {
+        $tag = str_replace(
+            "media='all'",
+            "media='print' onload=\"this.media='all'\" data-no-optimize=\"1\"",
+            $tag
+        );
+    }
+
+    return $tag;
+}
+add_filter('style_loader_tag', 'adrihosan_defer_safe_css_on_product', 15, 3);
 
 // Preservar filtros de FE Pro en la paginación de WooCommerce
 add_filter( 'woocommerce_pagination_args', 'adrihosan_preservar_filtros_en_paginacion' );

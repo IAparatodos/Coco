@@ -256,7 +256,7 @@ input[type="range"] {
 	} @else if $type == small {
 		height: 30px;
 	}
-  transition: 0.4s;
+  transition: background-color 0.4s, border-color 0.4s, color 0.4s;
   cursor: pointer;
   display: flex;
 	align-items: center;
@@ -265,7 +265,7 @@ input[type="range"] {
 	&:focus,
 	&:visited {
 		color: $col;
-	} 
+	}
 	&:hover {
 		color: $colhover;
 		background-color: $backhover;

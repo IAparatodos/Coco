@@ -65,11 +65,11 @@ function adrihosan_azulejos_exterior_contenido_superior() {
   <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
-            <h2 style="font-family: 'Poppins', sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
-            <p style="font-family: 'Poppins', sans-serif; color: #3f6f7b;">Cada zona exterior tiene sus necesidades específicas de resistencia y seguridad</p>
+            <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b;">Cada zona exterior tiene sus necesidades específicas de resistencia y seguridad</p>
         </div>
         <div class="tabla-comparativa-exterior" style="max-width: 1000px; margin: 0 auto; overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins', sans-serif; font-size: 14px;">
+            <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px;">
                 <thead>
                     <tr style="background: #102e35; color: #fff;">
                         <th style="padding: 15px; text-align: left;">Tipo de Material</th>
@@ -111,7 +111,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 
    <!-- 4. CONSEJO ADRIA -->
 <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-    <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
+    <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
 </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
@@ -134,7 +134,7 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
