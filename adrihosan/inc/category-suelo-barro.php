@@ -11,7 +11,7 @@
 function adrihosan_barro_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/suelo-barro-terracota-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Suelo-de-barro-y-terracota-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -65,10 +65,10 @@ function adrihosan_barro_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-de-barro/est-prod-interior/" class="quick-nav-pill">&#127969; Barro Interior</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-de-barro/est-prod-terraza/" class="quick-nav-pill">&#9728;&#65039; Barro Exterior</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-de-barro/acabado-esmaltado/" class="quick-nav-pill">&#127912; Terracota Esmaltada</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-de-barro/fmt-40x40/" class="quick-nav-pill">&#129521; Formato 40x40</a>
+            <a href="#catalogo-barro" class="quick-nav-pill">&#127969; Barro Interior</a>
+            <a href="#catalogo-barro" class="quick-nav-pill">&#9728;&#65039; Barro Exterior</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/" class="quick-nav-pill">&#127912; Terracota Esmaltada</a>
+            <a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/fto-br-40x40/" class="quick-nav-pill">&#129521; Formato 40x40</a>
         </div>
     </section>
 
