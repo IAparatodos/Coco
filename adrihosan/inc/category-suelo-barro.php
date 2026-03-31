@@ -65,7 +65,7 @@ function adrihosan_barro_contenido_superior() {
     <!-- 3. PILLS / NAVEGACI&Oacute;N R&Aacute;PIDA -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="#catalogo-barro" class="quick-nav-pill">&#127969; Barro Interior</a>
+            <a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/?orderby=price&amp;order=ASC#catalogo-barro" class="quick-nav-pill">&#127969; Barro Interior</a>
             <a href="#catalogo-barro" class="quick-nav-pill">&#9728;&#65039; Barro Exterior</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/" class="quick-nav-pill">&#127912; Terracota Esmaltada</a>
             <a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/fto-br-40x40/" class="quick-nav-pill">&#129521; Formato 40x40</a>
