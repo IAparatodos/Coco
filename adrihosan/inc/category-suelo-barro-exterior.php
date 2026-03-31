@@ -11,7 +11,7 @@
 function adrihosan_barro_exterior_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Suelo-barro-exterior-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Suelo-de-barro-exterior-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -22,7 +22,6 @@ function adrihosan_barro_exterior_contenido_superior() {
             <h1>Suelo de Barro Exterior de Alta Densidad</h1>
             <p>Resistencia extrema a heladas y m&aacute;xima seguridad antideslizante. La evoluci&oacute;n del barro artesanal para proyectos que exigen durabilidad sin renunciar a la esencia mediterr&aacute;nea.</p>
             <div class="hero-buttons">
-                <a href="#catalogo-barro-exterior" class="hero-btn primary">Ver Modelos con Tratamiento en F&aacute;brica</a>
                 <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="hero-btn secondary">Solicitar Presupuesto T&eacute;cnico</a>
             </div>
         </div>
@@ -42,7 +41,7 @@ function adrihosan_barro_exterior_contenido_superior() {
                 <div class="trust-icon">&#128167;</div>
                 <div class="trust-text">
                     <strong>Hidrofugado en Origen</strong>
-                    <span>Piezas protegidas desde f&aacute;brica contra manchas de obra y salitre</span>
+                    <span>Piezas protegidas desde f&aacute;brica contra manchas de obra y salitre (opcional)</span>
                 </div>
             </div>
             <div class="trust-item">
