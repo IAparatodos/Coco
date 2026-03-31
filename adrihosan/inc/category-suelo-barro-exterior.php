@@ -63,7 +63,7 @@ function adrihosan_barro_exterior_contenido_superior() {
 
     <!-- 3. CONSEJO ADRIA (Filtros) -->
     <div class="adria-tip-box">
-        <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Acabado</strong> (Natural, Lavado, Envejecido), <strong>Tonalidad</strong> y <strong>Formato</strong> para encontrar el barro exterior perfecto para tu proyecto. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Usa el filtro de <strong>Tama&ntilde;o</strong> para encontrar r&aacute;pidamente el formato de barro exterior que necesitas. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>
 
     <!-- 4. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
