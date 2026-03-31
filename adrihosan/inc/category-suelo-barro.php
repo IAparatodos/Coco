@@ -74,7 +74,7 @@ function adrihosan_barro_contenido_superior() {
 
     <!-- 4. CONSEJO ADRIA (Filtros) -->
     <div class="adria-tip-box">
-        <p><strong>&iexcl;Consejo de AdrIA!</strong> Usa los filtros de <strong>Acabado</strong> (Natural, Esmaltado, Envejecido), <strong>Formato</strong> y <strong>Color</strong> para encontrar tu suelo de barro ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Usa el filtro de <strong>Tama&ntilde;o</strong> para encontrar r&aacute;pidamente el formato de barro que necesitas. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>
 
     <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
