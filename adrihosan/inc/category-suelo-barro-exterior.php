@@ -20,7 +20,7 @@ function adrihosan_barro_exterior_contenido_superior() {
                 <span>Barro Exterior</span>
             </nav>
             <h1>Suelo de Barro Exterior de Alta Densidad</h1>
-            <p>Resistencia extrema a heladas y seguridad Clase 3. La evoluci&oacute;n del barro artesanal para proyectos que exigen durabilidad sin renunciar a la esencia mediterr&aacute;nea.</p>
+            <p>Resistencia extrema a heladas y m&aacute;xima seguridad antideslizante. La evoluci&oacute;n del barro artesanal para proyectos que exigen durabilidad sin renunciar a la esencia mediterr&aacute;nea.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-barro-exterior" class="hero-btn primary">Ver Modelos con Tratamiento en F&aacute;brica</a>
                 <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="hero-btn secondary">Solicitar Presupuesto T&eacute;cnico</a>
