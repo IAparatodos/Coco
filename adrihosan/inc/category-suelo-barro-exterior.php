@@ -147,7 +147,7 @@ function adrihosan_barro_exterior_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nuestras colecciones espec&iacute;ficas para exterior est&aacute;n fabricadas con una textura natural que garantiza un agarre Clase 3. Esto significa que son seguras incluso para pies descalzos en zonas de piscina o bajo la lluvia.</p>
+                        <p>El barro manual tiene una porosidad y rugosidad natural que lo hace intr&iacute;nsecamente seguro para zonas h&uacute;medas. Su textura mineral proporciona un agarre excelente incluso para pies descalzos en zonas de piscina, sin necesidad de las clasificaciones t&eacute;cnicas requeridas para azulejos industriales.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
