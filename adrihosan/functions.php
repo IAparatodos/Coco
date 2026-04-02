@@ -2093,3 +2093,14 @@ function adrihosan_preservar_filtros_en_paginacion( $args ) {
 
     return $args;
 }
+
+/**
+ * Canonical para paginación del custom post type Escaparate
+ * Evita soft 404 en páginas paginadas profundas del escaparate
+ */
+add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
+    if ( is_post_type_archive( 'escaparate' ) && is_paged() ) {
+        $canonical = get_post_type_archive_link( 'escaparate' );
+    }
+    return $canonical;
+} );
