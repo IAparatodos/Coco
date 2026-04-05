@@ -53,14 +53,14 @@ function adrihosan_muebles_bano_contenido_superior() {
     <!-- 3. PILLS / ACCESO DIRECTO A SUBCATEGOR&Iacute;AS -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-suspendido/" class="quick-nav-pill">&#9729;&#65039; Suspendidos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-pequeno/" class="quick-nav-pill">&#128208; Ba&ntilde;os Peque&ntilde;os</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-con-patas/" class="quick-nav-pill">&#129717; Con Patas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-barato/" class="quick-nav-pill">&#128176; Baratos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-diseno/" class="quick-nav-pill">&#10024; Dise&ntilde;o</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-rustico/" class="quick-nav-pill">&#127994; R&uacute;sticos</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-auxiliar-bano/" class="quick-nav-pill">&#128230; Auxiliares / Columnas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/bano/espejos-bano/espejo-camerino/" class="quick-nav-pill">&#129668; Camerinos</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-suspendidos/" class="quick-nav-pill">&#9729;&#65039; Suspendidos</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-lavabo-pequeno/" class="quick-nav-pill">&#128208; Ba&ntilde;os Peque&ntilde;os</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-con-patas/" class="quick-nav-pill">&#129717; Con Patas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-de-bano-baratos/" class="quick-nav-pill">&#128176; Baratos</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-de-bano-de-diseno/" class="quick-nav-pill">&#10024; Dise&ntilde;o</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-de-bano-rusticos/" class="quick-nav-pill">&#127994; R&uacute;sticos</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/columnas-de-bano/" class="quick-nav-pill">&#128230; Auxiliares / Columnas</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/camerino-bano/" class="quick-nav-pill">&#129668; Camerinos</a>
         </div>
     </section>
 
@@ -110,7 +110,7 @@ function adrihosan_muebles_bano_contenido_inferior() {
             <div class="bumper-content">
                 <h2>&iquest;Poco espacio? Optimiza cada cent&iacute;metro.</h2>
                 <p>Descubre nuestros muebles de fondo reducido y soluciones inteligentes para ba&ntilde;os peque&ntilde;os. Funcionalidad y dise&ntilde;o en cada detalle.</p>
-                <a href="https://www.adrihosan.com/categoria-producto/bano/muebles-de-bano/mueble-bano-pequeno/" class="bumper-btn">Ver soluciones para ba&ntilde;os peque&ntilde;os</a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-lavabo-pequeno/" class="bumper-btn">Ver soluciones para ba&ntilde;os peque&ntilde;os</a>
             </div>
         </div>
     </section>
