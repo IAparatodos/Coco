@@ -115,6 +115,51 @@ function adrihosan_muebles_bano_contenido_inferior() {
         </div>
     </section>
 
+    <!-- FAQs -->
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles de Ba&ntilde;o</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es mejor comprar el mueble con lavabo o por separado?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Con lavabo incluido siempre es la opci&oacute;n m&aacute;s recomendada. Te garantiza que el seno encaja al mil&iacute;metro y que la fontaner&iacute;a queda perfectamente alineada, facilitando la instalaci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; medidas son las m&aacute;s habituales?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>En Espa&ntilde;a las m&aacute;s vendidas son 60 cm y 80 cm de ancho, con fondo est&aacute;ndar de 45-46 cm. Para ba&ntilde;os principales, 100 cm y 120 cm son la tendencia actual.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>Mi aseo es muy estrecho, &iquest;qu&eacute; opciones tengo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Disponemos de muebles desde 40 cm y 50 cm de ancho, con fondos de 35-40 cm para no obstaculizar el paso ni la apertura de la puerta.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Suspendido o a suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El suspendido es ideal para ba&ntilde;os modernos y peque&ntilde;os &mdash; genera sensaci&oacute;n de amplitud y facilita la limpieza. El mueble a suelo es perfecto si tus paredes son de pladur o necesitas maximizar el almacenaje interior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
