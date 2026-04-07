@@ -84,6 +84,8 @@
     }
 
     /* 2. PRODUCTO: 1 COLUMNA ANCHA, SIN PADDING LATERAL */
+    /* Selector reforzado (.tax-product_cat) para ganar especificidad sobre CSS individuales */
+    .tax-product_cat ul.products li.product,
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
         float: none !important;
@@ -101,6 +103,9 @@
     }
 
     /* 3. IMAGEN: Full-width edge-to-edge */
+    /* Selector reforzado para ganar especificidad sobre CSS individuales */
+    .tax-product_cat ul.products li.product a img,
+    .tax-product_cat ul.products li.product img,
     .woocommerce ul.products li.product a img,
     .woocommerce ul.products li.product img,
     .woocommerce ul.products li.product .attachment-woocommerce_thumbnail,
