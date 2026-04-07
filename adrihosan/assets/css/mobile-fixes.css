@@ -72,6 +72,17 @@
         box-sizing: border-box !important;
     }
 
+    /* 1b. FORZAR 1 COLUMNA EN EL GRID DE PRODUCTOS */
+    .woocommerce ul.products,
+    .woocommerce-page ul.products,
+    ul.products.columns-2,
+    ul.products.columns-3,
+    ul.products.columns-4 {
+        display: block !important;
+        grid-template-columns: 1fr !important;
+        columns: 1 !important;
+    }
+
     /* 2. PRODUCTO: 1 COLUMNA ANCHA */
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
