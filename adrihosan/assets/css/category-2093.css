@@ -430,6 +430,27 @@
         padding: 20px 0;
     }
 
+    /* --- PRODUCTO: imagen full-width en móvil --- */
+    .tax-product_cat.term-2093 ul.products li.product {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tax-product_cat.term-2093 ul.products li.product a img,
+    .tax-product_cat.term-2093 ul.products li.product img,
+    .tax-product_cat.term-2093 ul.products li.product .product-element-top,
+    .tax-product_cat.term-2093 ul.products li.product .product-image-link,
+    .tax-product_cat.term-2093 ul.products li.product .product-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tax-product_cat.term-2093 ul.products li.product a img,
+    .tax-product_cat.term-2093 ul.products li.product img {
+        height: auto !important;
+        display: block !important;
+    }
+
     /* --- FILTRO MÓVIL --- */
     .tax-product_cat.term-2093 .solo-movil-filtro {
         display: block !important;
