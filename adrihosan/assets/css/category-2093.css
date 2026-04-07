@@ -163,44 +163,85 @@
 }
 
 /* ========================================================================== */
-/* 4. SECCIÓN INSPIRACIÓN / NAVEGACIÓN POR ESTILO */
+/* 3b. TRUST BAR / VALORES                                                   */
 /* ========================================================================== */
 
-.tax-product_cat.term-2093 .ap-inspiration-section {
-    padding: 60px 20px;
-    background-color: #ffffff;
+.tax-product_cat.term-2093 .trust-bar-section {
+    padding: 30px 20px;
+    background-color: #f7f9fa;
+    border-bottom: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-wrapper {
+.tax-product_cat.term-2093 .trust-bar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tax-product_cat.term-2093 .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tax-product_cat.term-2093 .trust-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.tax-product_cat.term-2093 .trust-text strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #102e35;
+}
+
+.tax-product_cat.term-2093 .trust-text span {
+    font-size: 0.85rem;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-2093 a.trust-item-link:hover {
+    opacity: 0.8;
+}
+
+/* ========================================================================== */
+/* 4. SECCIÓN INSPIRACIÓN / ELIGE TU ESTILO                                  */
+/* ========================================================================== */
+
+.tax-product_cat.term-2093 .metro-inspiration-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2093 .metro-inspiration-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-section h2 {
-    font-family: 'Poppins', sans-serif;
+.tax-product_cat.term-2093 .metro-inspiration-section h2 {
     font-size: 32px;
     font-weight: 700;
     color: #102e35;
-    margin: 0 0 15px 0;
+    margin: 0 0 40px 0;
     text-transform: uppercase;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-section .section-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #3f6f7b;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-}
-
-.tax-product_cat.term-2093 .ap-inspiration-grid {
+.tax-product_cat.term-2093 .metro-inspiration-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-card {
+.tax-product_cat.term-2093 .metro-insp-card {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -211,26 +252,31 @@
     min-height: 280px;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-card:hover {
+.tax-product_cat.term-2093 .metro-insp-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 35px rgba(0,0,0,0.15);
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.tax-product_cat.term-2093 .metro-insp-card-img {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tax-product_cat.term-2093 .metro-insp-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.tax-product_cat.term-2093 .ap-inspiration-card:hover img {
+.tax-product_cat.term-2093 .metro-insp-card:hover .metro-insp-card-img img {
     transform: scale(1.05);
 }
 
-.tax-product_cat.term-2093 .ap-card-content {
+.tax-product_cat.term-2093 .metro-insp-card h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -238,23 +284,11 @@
     background: linear-gradient(transparent, rgba(0,0,0,0.8));
     padding: 60px 15px 20px;
     text-align: center;
-}
-
-.tax-product_cat.term-2093 .ap-card-content h3 {
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
-    margin: 0 0 5px 0;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-
-.tax-product_cat.term-2093 .ap-card-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    color: rgba(255,255,255,0.9);
     margin: 0;
-    line-height: 1.4;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 /* ========================================================================== */
@@ -386,26 +420,31 @@
         text-align: center;
     }
 
+    /* --- TRUST BAR RESPONSIVE --- */
+    .tax-product_cat.term-2093 .trust-bar-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
     /* --- GRID CARDS RESPONSIVE --- */
-    .tax-product_cat.term-2093 .ap-inspiration-grid {
+    .tax-product_cat.term-2093 .metro-inspiration-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    .tax-product_cat.term-2093 .ap-inspiration-card {
+    .tax-product_cat.term-2093 .metro-insp-card {
         min-height: 200px;
     }
 
-    .tax-product_cat.term-2093 .ap-card-content h3 {
+    .tax-product_cat.term-2093 .metro-insp-card h3 {
         font-size: 15px;
-    }
-
-    .tax-product_cat.term-2093 .ap-card-content p {
-        font-size: 12px;
+        padding: 40px 10px 15px;
     }
 
     /* --- SECCIONES RESPONSIVE --- */
-    .tax-product_cat.term-2093 .ap-inspiration-section h2 {
+    .tax-product_cat.term-2093 .metro-inspiration-section h2 {
         font-size: 24px;
     }
 
@@ -428,21 +467,6 @@
     .tax-product_cat.term-2093 .faq-question-common {
         font-size: 15px;
         padding: 20px 0;
-    }
-
-    /* --- PRODUCTO: imagen full-width en móvil --- */
-    .tax-product_cat.term-2093 ul.products li.product {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    .tax-product_cat.term-2093 ul.products li.product a img,
-    .tax-product_cat.term-2093 ul.products li.product img,
-    .tax-product_cat.term-2093 ul.products li.product .product-element-top,
-    .tax-product_cat.term-2093 ul.products li.product .product-image-link,
-    .tax-product_cat.term-2093 ul.products li.product .product-wrapper {
-        width: 100% !important;
-        max-width: 100% !important;
     }
 
     .tax-product_cat.term-2093 ul.products li.product a img,
@@ -483,7 +507,7 @@
 /* ========================================================================== */
 
 @media (max-width: 1024px) and (min-width: 769px) {
-    .tax-product_cat.term-2093 .ap-inspiration-grid {
+    .tax-product_cat.term-2093 .metro-inspiration-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
