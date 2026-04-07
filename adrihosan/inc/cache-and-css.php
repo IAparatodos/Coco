@@ -113,7 +113,7 @@ function adrihosan_cargar_css_categoria() {
                 'adrihosan-category-' . $cat_id,
                 get_stylesheet_directory_uri() . $css_file,
                 array('adrihosan-base-global'),
-                '1.0.0'
+                filemtime($css_path)
             );
         }
         
