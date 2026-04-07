@@ -163,9 +163,159 @@
 }
 
 /* ========================================================================== */
-/* 3b-5. TRUST BAR, INSPIRACIÓN, CONSEJO → Usan clases genéricas .ap-*      */
-/*        definidas en category-styles.css (no necesitan CSS individual)      */
+/* 3b. VALUE SECTION (Trust Bar / Valores)                                    */
 /* ========================================================================== */
+
+.tax-product_cat.term-2093 .ap-value-section {
+    padding: 60px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2093 .ap-value-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2093 .ap-value-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tax-product_cat.term-2093 .ap-value-card {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #eef2f5;
+    transition: all 0.3s ease;
+    color: inherit;
+}
+
+.tax-product_cat.term-2093 .ap-value-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.tax-product_cat.term-2093 .ap-value-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.tax-product_cat.term-2093 .ap-value-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 8px 0;
+}
+
+.tax-product_cat.term-2093 .ap-value-card p {
+    font-size: 14px;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================================================== */
+/* 4. INSPIRATION SECTION (Elige tu Estilo)                                   */
+/* ========================================================================== */
+
+.tax-product_cat.term-2093 .ap-inspiration-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 40px 0;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+    min-height: 280px;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.tax-product_cat.term-2093 .ap-inspiration-card:hover img {
+    transform: scale(1.05);
+}
+
+.tax-product_cat.term-2093 .ap-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 60px 15px 20px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2093 .ap-card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* ========================================================================== */
+/* 5. CONSEJO ADRIA                                                           */
+/* ========================================================================== */
+
+.tax-product_cat.term-2093 .adria-tip-box {
+    background: #f0fafa;
+    border-left: 5px solid #4dd2d0;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 950px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.tax-product_cat.term-2093 .adria-tip-box p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #102e35;
+    font-size: 1.1rem;
+}
 
 /* ========================================================================== */
 /* 6. COLECCIONES / LO MÁS BUSCADO */
@@ -273,6 +423,38 @@
         width: 100%;
         max-width: 280px;
         text-align: center;
+    }
+
+    /* --- VALUE SECTION RESPONSIVE --- */
+    .tax-product_cat.term-2093 .ap-value-section {
+        padding: 40px 20px;
+    }
+
+    .tax-product_cat.term-2093 .ap-value-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .tax-product_cat.term-2093 .ap-value-card {
+        padding: 20px 15px;
+    }
+
+    /* --- INSPIRATION RESPONSIVE --- */
+    .tax-product_cat.term-2093 .ap-inspiration-section {
+        padding: 40px 20px;
+    }
+
+    .tax-product_cat.term-2093 .ap-inspiration-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tax-product_cat.term-2093 .ap-inspiration-card {
+        min-height: 200px;
+    }
+
+    .tax-product_cat.term-2093 .ap-inspiration-section h2 {
+        font-size: 24px;
     }
 
     /* --- COLECCIONES RESPONSIVE --- */
