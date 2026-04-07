@@ -83,7 +83,7 @@
         columns: 1 !important;
     }
 
-    /* 2. PRODUCTO: 1 COLUMNA ANCHA */
+    /* 2. PRODUCTO: 1 COLUMNA ANCHA, SIN PADDING LATERAL */
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
         float: none !important;
@@ -91,6 +91,8 @@
         max-width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         margin-bottom: 40px !important;
         text-align: center !important;
         border-bottom: 1px solid #eee;
@@ -98,13 +100,17 @@
         clear: both !important;
     }
 
-    /* 3. IMAGEN: Grande y centrada */
+    /* 3. IMAGEN: Full-width edge-to-edge */
     .woocommerce ul.products li.product a img,
-    .woocommerce ul.products li.product img {
+    .woocommerce ul.products li.product img,
+    .woocommerce ul.products li.product .attachment-woocommerce_thumbnail,
+    .woocommerce ul.products li.product .woocommerce-loop-product__link img {
         width: 100% !important;
+        max-width: 100% !important;
         height: auto !important;
         display: block !important;
-        margin: 0 auto 15px auto !important;
+        margin: 0 0 15px 0 !important;
+        object-fit: cover !important;
     }
 
     /* 4. ARREGLO DEL TEXTO GIGANTE - Títulos completos sin cortar */
