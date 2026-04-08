@@ -1943,30 +1943,33 @@ function adrihosan_limpiar_cache_filtros($post_id) {
 function adrihosan_cargar_css_categoria() {
     
     // Siempre cargar el CSS base global
+    $base_global_path = get_stylesheet_directory() . '/assets/css/base-global.css';
     wp_enqueue_style(
         'adrihosan-base-global',
         get_stylesheet_directory_uri() . '/assets/css/base-global.css',
         array(),
-        '1.0.0'
+        file_exists($base_global_path) ? filemtime($base_global_path) : '1.0.0'
     );
-    
+
     // Siempre cargar los fixes móviles
+    $mobile_fixes_path = get_stylesheet_directory() . '/assets/css/mobile-fixes.css';
     wp_enqueue_style(
         'adrihosan-mobile-fixes',
         get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
         array('adrihosan-base-global'),
-        '1.0.0'
+        file_exists($mobile_fixes_path) ? filemtime($mobile_fixes_path) : '1.0.0'
     );
     
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
         // Cargar JS común (FAQs, scroll, filtro móvil, etc.)
+        $common_js_path = get_stylesheet_directory() . '/assets/js/category-common.js';
         wp_enqueue_script(
             'adrihosan-category-common',
             get_stylesheet_directory_uri() . '/assets/js/category-common.js',
             array('jquery'),
-            '1.0.2',
+            file_exists($common_js_path) ? filemtime($common_js_path) : '1.0.2',
             true
         );
 
@@ -1985,18 +1988,20 @@ function adrihosan_cargar_css_categoria() {
         }
 
         if ($css_location === 'assets') {
+            $css_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
             wp_enqueue_style(
                 'adrihosan-category-' . $cat_id,
                 get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css',
                 array('adrihosan-base-global'),
-                '1.0.0'
+                filemtime($css_path_assets)
             );
         } elseif ($css_location === 'root') {
+            $css_path_root = get_stylesheet_directory() . '/category-' . $cat_id . '.css';
             wp_enqueue_style(
                 'adrihosan-category-' . $cat_id,
                 get_stylesheet_directory_uri() . '/category-' . $cat_id . '.css',
                 array('adrihosan-base-global'),
-                '1.0.0'
+                filemtime($css_path_root)
             );
         }
 
@@ -2014,18 +2019,20 @@ function adrihosan_cargar_css_categoria() {
             }
 
             if ($parent_location === 'assets') {
+                $parent_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat->parent . '.css';
                 wp_enqueue_style(
                     'adrihosan-category-parent-' . $cat->parent,
                     get_stylesheet_directory_uri() . '/assets/css/category-' . $cat->parent . '.css',
                     array('adrihosan-base-global'),
-                    '1.0.0'
+                    filemtime($parent_path_assets)
                 );
             } elseif ($parent_location === 'root') {
+                $parent_path_root = get_stylesheet_directory() . '/category-' . $cat->parent . '.css';
                 wp_enqueue_style(
                     'adrihosan-category-parent-' . $cat->parent,
                     get_stylesheet_directory_uri() . '/category-' . $cat->parent . '.css',
                     array('adrihosan-base-global'),
-                    '1.0.0'
+                    filemtime($parent_path_root)
                 );
             }
         }
