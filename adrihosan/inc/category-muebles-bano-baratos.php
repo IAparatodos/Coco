@@ -19,8 +19,9 @@ function adrihosan_muebles_bano_baratos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o Baratos</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o Baratos: Dise&ntilde;o a tu Alcance</h1>
-            <p>Renueva tu ba&ntilde;o sin castigar tu bolsillo. Descubre nuestra selecci&oacute;n de muebles de ba&ntilde;o econ&oacute;micos con dise&ntilde;os modernos, materiales resistentes y la garant&iacute;a de Adrihosan. Calidad de f&aacute;brica directa a tu hogar.</p>
+            <h1>Muebles de Ba&ntilde;o Baratos</h1>
+            <p class="hero-tagline">Dise&ntilde;o y calidad a tu alcance con precios directos de f&aacute;brica.</p>
+            <p>Renueva tu aseo sin complicaciones. Accede a nuestra selecci&oacute;n de muebles de ba&ntilde;o econ&oacute;micos: soluciones funcionales, materiales resistentes a la humedad y el ahorro real de comprar sin intermediarios.</p>
         </div>
     </section>
 
@@ -28,24 +29,24 @@ function adrihosan_muebles_bano_baratos_contenido_superior() {
     <section class="trust-bar-section adrihosan-full-width-block">
         <div class="trust-bar-wrapper">
             <div class="trust-item">
-                <div class="trust-icon">&#128176;</div>
+                <div class="trust-icon">&#127981;</div>
                 <div class="trust-text">
-                    <strong>Mejor Precio Garantizado</strong>
-                    <span>Selecci&oacute;n de modelos low-cost</span>
+                    <strong>Precios de F&aacute;brica</strong>
+                    <span>Tarifas competitivas por venta directa</span>
                 </div>
             </div>
             <div class="trust-item">
                 <div class="trust-icon">&#128666;</div>
                 <div class="trust-text">
-                    <strong>Env&iacute;o Express</strong>
-                    <span>Disponibilidad inmediata en stock</span>
+                    <strong>Stock Real</strong>
+                    <span>Env&iacute;o express en 48/72 horas</span>
                 </div>
             </div>
             <div class="trust-item">
                 <div class="trust-icon">&#9989;</div>
                 <div class="trust-text">
-                    <strong>Calidad Adrihosan</strong>
-                    <span>Materiales tratados contra la humedad</span>
+                    <strong>Garant&iacute;a Adrihosan</strong>
+                    <span>Herrajes y materiales testados</span>
                 </div>
             </div>
         </div>

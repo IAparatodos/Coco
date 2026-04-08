@@ -153,6 +153,15 @@
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+.tax-product_cat.term-2143 .hero-content .hero-tagline {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    max-width: 650px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
 .tax-product_cat.term-2143 .hero-content p {
     font-size: 18px;
     line-height: 1.6;
