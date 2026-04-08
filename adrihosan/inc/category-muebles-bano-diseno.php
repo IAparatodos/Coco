@@ -52,7 +52,44 @@ function adrihosan_muebles_bano_diseno_contenido_superior() {
         </div>
     </section>
 
-    <!-- 3. CONSEJO ADRIA (Filtros) -->
+    <!-- 3. COLECCIONES DESTACADAS -->
+    <section class="featured-collections adrihosan-full-width-block">
+        <div class="featured-collections-wrapper">
+            <h2>Colecciones Destacadas</h2>
+            <p class="featured-collections-subtitle">Descubre las l&iacute;neas m&aacute;s exclusivas de muebles de ba&ntilde;o de dise&ntilde;o</p>
+            <div class="featured-collections-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/sr-psc-sinergy-fiora/" class="featured-collection-card">
+                    <div class="featured-collection-img">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-diseno-Sinergy-Adrihosan.jpg" alt="Colecci&oacute;n Sinergy - Muebles de ba&ntilde;o de dise&ntilde;o" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="featured-collection-info">
+                        <h3>Sinergy</h3>
+                        <span class="featured-collection-cta">Ver Colecci&oacute;n &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/sr-psc-vica/" class="featured-collection-card">
+                    <div class="featured-collection-img">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-diseno-Vica-Adrihosan.jpg" alt="Colecci&oacute;n Vica - Muebles de ba&ntilde;o de dise&ntilde;o" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="featured-collection-info">
+                        <h3>Vica</h3>
+                        <span class="featured-collection-cta">Ver Colecci&oacute;n &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano-de-diseno/sr-psc-kurve-dlux/" class="featured-collection-card">
+                    <div class="featured-collection-img">
+                        <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-diseno-kurve-d-lux-Adrihosan.jpg" alt="Colecci&oacute;n Kurve de Lux - Muebles de ba&ntilde;o de dise&ntilde;o" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="featured-collection-info">
+                        <h3>Kurve de Lux</h3>
+                        <span class="featured-collection-cta">Ver Colecci&oacute;n &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONSEJO ADRIA (Filtros) -->
     <div class="adria-tip-box">
         <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Material</strong>, <strong>Acabado</strong> y <strong>Estilo</strong> para encontrar el mueble de dise&ntilde;o perfecto para tu proyecto. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>

@@ -225,6 +225,94 @@
 }
 
 /* ========================================================================== */
+/* COLECCIONES DESTACADAS                                                     */
+/* ========================================================================== */
+.tax-product_cat.term-2433 .featured-collections {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2433 .featured-collections-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2433 .featured-collections-wrapper > h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1a3a4a;
+    margin-bottom: 10px;
+}
+
+.tax-product_cat.term-2433 .featured-collections-subtitle {
+    font-size: 1rem;
+    color: #3a5a6a;
+    margin-bottom: 45px;
+}
+
+.tax-product_cat.term-2433 .featured-collections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tax-product_cat.term-2433 .featured-collection-card {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f0f5fa;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tax-product_cat.term-2433 .featured-collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tax-product_cat.term-2433 .featured-collection-img {
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+}
+
+.tax-product_cat.term-2433 .featured-collection-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tax-product_cat.term-2433 .featured-collection-card:hover .featured-collection-img img {
+    transform: scale(1.05);
+}
+
+.tax-product_cat.term-2433 .featured-collection-info {
+    padding: 20px;
+}
+
+.tax-product_cat.term-2433 .featured-collection-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #1a3a4a;
+    margin: 0 0 8px 0;
+}
+
+.tax-product_cat.term-2433 .featured-collection-cta {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4dd2d0;
+    transition: color 0.2s ease;
+}
+
+.tax-product_cat.term-2433 .featured-collection-card:hover .featured-collection-cta {
+    color: #1a3a4a;
+}
+
+/* ========================================================================== */
 /* CONSEJO ADRIA + FILTRO                                                     */
 /* ========================================================================== */
 .tax-product_cat.term-2433 .adria-tip-box {
@@ -397,6 +485,16 @@
     .tax-product_cat.term-2433 .material-types-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .tax-product_cat.term-2433 .featured-collections-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tax-product_cat.term-2433 .featured-collections-grid .featured-collection-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 /* --- Movil --- */
@@ -449,6 +547,23 @@
 
     .tax-product_cat.term-2433 .material-types-grid {
         grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-2433 .featured-collections {
+        padding: 50px 20px;
+    }
+
+    .tax-product_cat.term-2433 .featured-collections-wrapper > h2 {
+        font-size: 1.5rem;
+    }
+
+    .tax-product_cat.term-2433 .featured-collections-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tax-product_cat.term-2433 .featured-collections-grid .featured-collection-card:last-child {
+        max-width: 100%;
     }
 
     .tax-product_cat.term-2433 .bumper-section {
