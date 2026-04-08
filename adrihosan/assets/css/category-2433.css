@@ -366,7 +366,7 @@
 .tax-product_cat.term-2433 .bumper-btn {
     display: inline-block;
     padding: 14px 32px;
-    background-color: #2a7a8a;
+    background-color: #4dd2d0;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -375,12 +375,12 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    border: 2px solid #2a7a8a;
+    border: 2px solid #4dd2d0;
 }
 
 .tax-product_cat.term-2433 .bumper-btn:hover {
     background-color: #ffffff;
-    color: #1a3a4a;
+    color: #4dd2d0;
     border-color: #ffffff;
 }
 
