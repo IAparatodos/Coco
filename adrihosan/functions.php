@@ -181,6 +181,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2143: // Muebles de Baño Baratos
             adrihosan_setup_muebles_bano_baratos_cpu_fix();
             break;
+        case 2433: // Muebles de Baño de Diseño
+            adrihosan_setup_muebles_bano_diseno_cpu_fix();
+            break;
     }
 }
 
@@ -697,6 +700,16 @@ function adrihosan_setup_muebles_bano_baratos_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_diseno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1719,6 +1732,7 @@ require get_template_directory() . '/inc/category-suelo-barro-exterior.php';
 require get_template_directory() . '/inc/category-muebles-bano.php';
 require get_template_directory() . '/inc/category-muebles-bano-pequeno.php';
 require get_template_directory() . '/inc/category-muebles-bano-baratos.php';
+require get_template_directory() . '/inc/category-muebles-bano-diseno.php';
 
 // =============================================================================
 // CATEGORÍA 2350 - SUELO TÉCNICO EXTERIOR (Modularizado a inc/category-suelo-tecnico.php)
