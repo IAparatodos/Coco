@@ -45,4 +45,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // FAQs con clases BEM (espejos, etc.)
+    document.querySelectorAll('.adri-faq-espejos__question').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var item = this.closest('.adri-faq-espejos__item');
+            var accordion = item.closest('.adri-faq-espejos__accordion');
+            var wasActive = item.classList.contains('active');
+
+            accordion.querySelectorAll('.adri-faq-espejos__item').forEach(function(i) {
+                i.classList.remove('active');
+                i.querySelector('.adri-faq-espejos__answer').style.maxHeight = null;
+            });
+
+            if (!wasActive) {
+                item.classList.add('active');
+                var answer = item.querySelector('.adri-faq-espejos__answer');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
 });
