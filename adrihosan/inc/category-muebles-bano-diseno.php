@@ -117,8 +117,7 @@ function adrihosan_muebles_bano_diseno_contenido_inferior() {
 
     <!-- BANNER ASESORAMIENTO PREMIER -->
     <section class="bumper-section adrihosan-full-width-block">
-        <div class="bumper-wrapper" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/asesoramiento-bano-diseno-adrihosan.jpg');">
-            <div class="bumper-overlay"></div>
+        <div class="bumper-wrapper" style="background-color: #1a3a4a;">
             <div class="bumper-content">
                 <h2>Tu Proyecto de Dise&ntilde;o, en Manos de Expertos</h2>
                 <p>Nuestro equipo de interioristas te acompa&ntilde;a desde la idea inicial hasta la instalaci&oacute;n final. Servicio de asesoramiento personalizado para proyectos de alta gama.</p>
