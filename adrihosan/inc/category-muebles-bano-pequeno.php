@@ -115,47 +115,29 @@ function adrihosan_muebles_bano_pequeno_contenido_inferior() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; se considera un mueble de ba&ntilde;o de fondo reducido?</span>
+                        <span>&iquest;Cu&aacute;l es el mueble de ba&ntilde;o m&aacute;s peque&ntilde;o que puedo instalar?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Un mueble de fondo reducido es aquel que tiene una profundidad menor a la est&aacute;ndar (que suele ser de 45-46 cm). Habitualmente, estos muebles tienen entre 35 y 40 cm de fondo, ideales para ba&ntilde;os estrechos.</p>
+                        <p>Los modelos m&aacute;s compactos arrancan en 45 cm de ancho con fondo de 35 cm. Incluyen lavabo y un caj&oacute;n con capacidad suficiente para lo esencial. Son la soluci&oacute;n perfecta para aseos de cortes&iacute;a o segundos ba&ntilde;os.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es mejor un mueble suspendido o con patas para un ba&ntilde;o peque&ntilde;o?</span>
+                        <span>&iquest;Mueble suspendido o con pie para un ba&ntilde;o peque&ntilde;o?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>En ba&ntilde;os muy reducidos, recomendamos los suspendidos porque visualmente cargan menos la estancia y permiten ver todo el suelo, lo que da sensaci&oacute;n de amplitud.</p>
+                        <p>Suspendido, siempre que la pared lo permita. Al no tocar el suelo, el ba&ntilde;o gana amplitud visual y facilita la limpieza. Si tu pared no soporta carga o prefieres evitar obra, los modelos con pie cumplen igual de bien.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;El lavabo y el espejo vienen incluidos?</span>
+                        <span>&iquest;Puedo a&ntilde;adir almacenaje extra en un ba&ntilde;o peque&ntilde;o?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>En Adrihosan puedes configurar tu compra. Ofrecemos el mueble solo o conjuntos completos que incluyen lavabo y espejo. Para espacios peque&ntilde;os, los lavabos de encastre fino son la mejor opci&oacute;n.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo puedo hacer que mi ba&ntilde;o peque&ntilde;o parezca m&aacute;s grande?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Usa colores claros, espejos de gran tama&ntilde;o y muebles suspendidos. Mantener el orden es clave, por lo que un mueble con cajones organizadores te ayudar&aacute; a despejar las encimeras.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Tienen stock para env&iacute;o r&aacute;pido?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>S&iacute;, contamos con una amplia gama de muebles de ba&ntilde;o peque&ntilde;os en stock con env&iacute;o en 48/72 horas para que no tengas que esperar para terminar tu reforma.</p>
+                        <p>S&iacute;. Una columna auxiliar de 25-30 cm de ancho aprovecha la altura sin ocupar superficie &uacute;til. Combinada con un espejo camerino con almacenaje integrado, resuelves el almacenaje sin saturar el espacio.</p>
                     </div>
                 </div>
             </div>
