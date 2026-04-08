@@ -121,51 +121,15 @@ function adrihosan_muebles_bano_baratos_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles de Ba&ntilde;o Baratos</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles de Ba&ntilde;o Econ&oacute;micos</h2>
             <div class="faq-items-wrapper">
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;A partir de qu&eacute; precio puedo encontrar un mueble de ba&ntilde;o completo?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Disponemos de conjuntos de mueble + lavabo desde menos de 150&nbsp;&euro;. Son modelos funcionales con acabados modernos y materiales resistentes a la humedad. Si a&ntilde;ades espejo, los packs arrancan desde unos 200&nbsp;&euro;.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Los muebles de ba&ntilde;o baratos son de buena calidad?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>S&iacute;. Trabajamos con f&aacute;bricas de confianza y eliminamos intermediarios para ofrecer el mejor precio. Todos nuestros muebles econ&oacute;micos utilizan tablero hidr&oacute;fugo, gu&iacute;as de extracci&oacute;n y acabados lacados o melamina de alta resistencia.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; incluye un pack ahorro?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Depende del modelo: el pack b&aacute;sico incluye mueble + lavabo. El pack completo a&ntilde;ade espejo y, en algunos casos, aplique LED. Todos los elementos vienen coordinados en acabado y medida para facilitar la instalaci&oacute;n.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;nto tarda el env&iacute;o de un mueble barato?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>La mayor&iacute;a de nuestros muebles econ&oacute;micos est&aacute;n en stock y se env&iacute;an en 24-48 horas laborables. El plazo de entrega habitual es de 3 a 5 d&iacute;as en pen&iacute;nsula, con opci&oacute;n de env&iacute;o express si lo necesitas antes.</p>
-                    </div>
-                </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
                         <span>&iquest;Cu&aacute;nto cuesta un mueble de ba&ntilde;o con lavabo incluido?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>En Adrihosan los conjuntos de mueble con lavabo cer&aacute;mico arrancan desde 149&euro; en medida de 60&nbsp;cm. Los modelos de 80&nbsp;cm con dos cajones y lavabo se mueven entre 180&euro; y 250&euro;. El precio var&iacute;a seg&uacute;n acabado, n&uacute;mero de cajones y si incluye espejo.</p>
+                        <p>En Adrihosan, los conjuntos de mueble con lavabo cer&aacute;mico arrancan desde los 149&euro; en la medida de 60&nbsp;cm. Los modelos de 80&nbsp;cm con dos cajones y lavabo suelen oscilar entre los 180&euro; y 250&euro;. El precio final var&iacute;a seg&uacute;n el acabado seleccionado y si decides incluir el espejo o el aplique LED en el pack.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
@@ -174,7 +138,7 @@ function adrihosan_muebles_bano_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No si eliges bien. Nuestros muebles econ&oacute;micos usan los mismos materiales que gamas superiores: melamina de alta presi&oacute;n, herrajes met&aacute;licos con cierre amortiguado y lavabos de cer&aacute;mica sanitaria. La diferencia de precio viene de dise&ntilde;os m&aacute;s sencillos y de nuestra relaci&oacute;n directa con los fabricantes, no de recortar en calidad.</p>
+                        <p>No si eliges el proveedor adecuado. Nuestros muebles econ&oacute;micos utilizan los mismos materiales base que gamas superiores: melamina de alta presi&oacute;n, herrajes met&aacute;licos con sistema de cierre amortiguado y lavabos de cer&aacute;mica sanitaria. La reducci&oacute;n del precio proviene de dise&ntilde;os m&aacute;s estandarizados y de nuestra relaci&oacute;n directa con los fabricantes, nunca de recortar en la calidad del tablero.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
@@ -183,7 +147,16 @@ function adrihosan_muebles_bano_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Un modelo suspendido de 60&nbsp;cm de ancho con fondo reducido de 35-40&nbsp;cm. Libera suelo, aprovecha el espacio y los encuentras desde 149&euro; con lavabo incluido. Para m&aacute;s opciones espec&iacute;ficas, visita nuestra categor&iacute;a de <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/">muebles de ba&ntilde;o peque&ntilde;os</a>.</p>
+                        <p>La opci&oacute;n ganadora es un modelo suspendido de 60&nbsp;cm de ancho con un fondo reducido (entre 35 y 40&nbsp;cm). Estos muebles liberan el espacio del suelo y optimizan la zona de paso. Los encontrar&aacute;s en nuestra categor&iacute;a de <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/">muebles de ba&ntilde;o peque&ntilde;os</a> con precios muy competitivos.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Realiz&aacute;is env&iacute;os de muebles de ba&ntilde;o a Valencia y resto de Espa&ntilde;a?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, como especialistas en muebles de ba&ntilde;o en Valencia, gestionamos env&iacute;os diarios a toda la pen&iacute;nsula. El env&iacute;o es gratuito y cuenta con un seguro de transporte total para garantizar que tu mueble llegue impecable a su destino.</p>
                     </div>
                 </div>
             </div>
