@@ -11,7 +11,7 @@
 function adrihosan_muebles_bano_diseno_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION - Exclusividad y Vanguardia -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/muebles-bano-diseno-adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-diseno-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
