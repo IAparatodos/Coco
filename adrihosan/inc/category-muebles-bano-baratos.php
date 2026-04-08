@@ -54,9 +54,9 @@ function adrihosan_muebles_bano_baratos_contenido_superior() {
     <!-- 3. CATEGOR&Iacute;AS COMPLEMENTARIAS -->
     <section class="quick-nav-section adrihosan-full-width-block">
         <div class="quick-nav-wrapper">
-            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/outlet/" class="quick-nav-pill">&#127991;&#65039; Outlet / Liquidaci&oacute;n</a>
+            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/ofertas-muebles-de-bano/" class="quick-nav-pill">&#127991;&#65039; Oportunidades</a>
             <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/columnas-de-bano/" class="quick-nav-pill">&#128230; Columnas Auxiliares Baratas</a>
-            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/" class="quick-nav-pill">&#128208; Muebles Compactos</a>
+            <a href="#catalogo-muebles-bano-baratos" class="quick-nav-pill">&#128208; Muebles Compactos</a>
         </div>
     </section>
 
