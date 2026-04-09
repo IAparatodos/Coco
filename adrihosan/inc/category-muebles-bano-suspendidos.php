@@ -49,11 +49,15 @@ function adrihosan_muebles_bano_suspendidos_contenido_superior() {
                     <span>Pen&iacute;nsula con seguro de transporte</span>
                 </div>
             </div>
-            <div class="trust-item">
+            <div class="trust-item trust-item-badge">
                 <div class="trust-icon">&#127919;</div>
                 <div class="trust-text">
-                    <strong>Stock y Fabricaci&oacute;n</strong>
-                    <span>Modelos en stock r&aacute;pidos; resto, hasta 4 semanas</span>
+                    <strong>Garant&iacute;as Adrihosan</strong>
+                    <span class="trust-badge-list">
+                        <span class="trust-badge-check">&#10003; Stock disponible</span>
+                        <span class="trust-badge-check">&#10003; Fabricaci&oacute;n a medida</span>
+                        <span class="trust-badge-check">&#10003; Asesoramiento gratuito</span>
+                    </span>
                 </div>
             </div>
         </div>

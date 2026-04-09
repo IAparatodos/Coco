@@ -226,6 +226,22 @@
     line-height: 1.4;
 }
 
+/* Badge compacto con checkmarks (4o trust-item) */
+.tax-product_cat.term-101 .trust-badge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.tax-product_cat.term-101 .trust-badge-check {
+    display: inline-block;
+    font-size: 0.82rem;
+    color: #3f6f7b;
+    line-height: 1.35;
+    font-weight: 500;
+}
+
 /* ========================================================================== */
 /* CONSEJO ADRIA + FILTRO                                                     */
 /* ========================================================================== */
