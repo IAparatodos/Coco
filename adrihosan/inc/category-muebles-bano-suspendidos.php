@@ -50,10 +50,10 @@ function adrihosan_muebles_bano_suspendidos_contenido_superior() {
                 </div>
             </div>
             <div class="trust-item">
-                <div class="trust-icon">&#128736;&#65039;</div>
+                <div class="trust-icon">&#127919;</div>
                 <div class="trust-text">
-                    <strong>Muebles Premontados</strong>
-                    <span>Listos para instalar al recibirlos</span>
+                    <strong>Muebles de Dise&ntilde;o</strong>
+                    <span>Fabricaci&oacute;n cuidada, plazo de 4 a 6 semanas</span>
                 </div>
             </div>
         </div>
@@ -190,6 +190,15 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
                         <p>Tres principales: suelo libre (el ba&ntilde;o parece m&aacute;s grande y se limpia antes), ajuste de altura (adaptable a cada usuario) y est&eacute;tica moderna (l&iacute;neas flotantes sin interrupci&oacute;n visual en el pavimento). El mueble con patas, en cambio, destaca por su facilidad de instalaci&oacute;n en cualquier tipo de pared y por ofrecer un aire m&aacute;s c&aacute;lido y tradicional.</p>
                     </div>
                 </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el plazo de entrega de un mueble suspendido?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Trabajamos con <strong>muebles de dise&ntilde;o fabricados a medida</strong>, no con stock r&aacute;pido de 48/72&nbsp;horas. El plazo habitual es de <strong>4 a 6 semanas</strong> desde la confirmaci&oacute;n del pedido, dependiendo del fabricante, del acabado elegido y de si el modelo es configuraci&oacute;n est&aacute;ndar o personalizada. Esta espera nos permite garantizar la calidad del tablero hidr&oacute;fugo, el tratamiento antihumedad y los herrajes de cierre amortiguado que distinguen nuestros muebles. Si necesitas conocer el plazo exacto de un modelo concreto, cont&aacute;ctanos y te lo confirmamos antes de realizar el pedido.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -230,6 +239,14 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Suelo libre (el ba&ntilde;o parece m&aacute;s grande y se limpia antes), ajuste de altura (adaptable a cada usuario) y est&eacute;tica moderna con l&iacute;neas flotantes sin interrupci&oacute;n visual en el pavimento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Cu&aacute;l es el plazo de entrega de un mueble suspendido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabajamos con muebles de dise&ntilde;o fabricados a medida, no con stock r&aacute;pido de 48/72 horas. El plazo habitual es de 4 a 6 semanas desde la confirmaci&oacute;n del pedido, dependiendo del fabricante y del acabado elegido."
           }
         }
       ]
