@@ -250,175 +250,117 @@ function adrihosan_ceramica_inferior_final() {
  */
 function adrihosan_porcelanico_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="
-        position: relative;
-        background-color: #102e35;
-        /* IMPORTANTE: Cambia esta URL por la imagen específica de Porcelánico */
-        background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #fff;
-        padding: 80px 20px;
-        text-align: center;">
-        
-        <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Gres Porcelánico: La Base de tu Hogar</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Resistencia extrema, diseño impecable y mantenimiento cero. El suelo definitivo.</p>
-            <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                <a href="#catalogo-porcelanico-foco" class="btn-adri-master">Ver Catálogo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Uso</a>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+        <div class="hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="https://www.adrihosan.com/">Inicio</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/">Pavimentos</a> &gt;
+                <span>Gres Porcel&aacute;nico</span>
+            </nav>
+            <h1>Gres Porcel&aacute;nico: La Base de tu Hogar</h1>
+            <p>Resistencia extrema, dise&ntilde;o impecable y mantenimiento cero. El suelo definitivo.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-porcelanico" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#instalacion-porcelanico" class="hero-btn secondary">D&oacute;nde Instalar</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-cocina/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-bano/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/slip-si/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Exterior</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-salon/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Salón</h3>
-            </a>
+    <!-- 2. ¿DÓNDE LO VAS A INSTALAR? -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="instalacion-porcelanico">
+        <div class="ap-inspiration-wrapper">
+            <h2>&iquest;D&oacute;nde lo vas a instalar?</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-cocina/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" alt="Porcel&aacute;nicos para cocina" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Cocina</h3>
+                        <p>Porcel&aacute;nicos para cocina</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-bano/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" alt="Porcel&aacute;nicos para ba&ntilde;o" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Ba&ntilde;o</h3>
+                        <p>Porcel&aacute;nicos para ba&ntilde;o</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/slip-si/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" alt="Porcel&aacute;nicos para exterior" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Exterior</h3>
+                        <p>Suelos porcel&aacute;nicos de exterior</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-salon/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Porcel&aacute;nicos para sal&oacute;n" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Sal&oacute;n</h3>
+                        <p>Porcel&aacute;nicos para sal&oacute;n</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div style="padding-top: 60px; margin-bottom:50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Efecto</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto M&aacute;rmol</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-cemento/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-basicos/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Lisos</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
-            </a>
+    <!-- 3. ELIGE EL EFECTO -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="efectos-porcelanico">
+        <div class="ap-inspiration-wrapper">
+            <h2>Elige el Efecto</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n m&aacute;rmol" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto M&aacute;rmol</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n m&aacute;rmol</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-cemento/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n cemento" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto Cemento</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n cemento</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-basicos/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" alt="Porcel&aacute;nicos lisos" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Lisos</h3>
+                        <p>Porcel&aacute;nicos lisos</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelo-imitacion-madera/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n madera" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto Madera</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n madera</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- 4. CONSEJO ADRIA -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;Buscas un suelo sin juntas visibles? Selecciona el filtro <strong>&quot;Rectificado&quot;</strong> y pulsa <strong>&quot;FILTRAR&quot;</strong>.</p>
     </div>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
-            <strong>¡Consejo de AdrIA!</strong> ¿Buscas un suelo sin juntas visibles? Selecciona el filtro <strong>"Rectificado"</strong> y pulsa <strong>"FILTRAR"</strong>.
-        </p>
-    </div>
-
-    <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;">
-        </div>
-
-    <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Colecciones Especiales</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="btn-adri-master">Gran Formato</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="btn-adri-master">Porcelánico Extrafino</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" class="btn-adri-master">Antideslizante C3</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/textura-brillo-2/" class="btn-adri-master">Acabado Pulido</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-tecnico/" class="btn-adri-master">Porcelánico técnico</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-60x120/" class="btn-adri-master">60x120</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-120x120/" class="btn-adri-master">120x120</a>
-        </div>
-    </div>
-
-    <div id="catalogo-porcelanico-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo de Gres Porcelánico</h2>
-    </div>
-
-    <style>
-        .btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; }
-        
-        #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-        }
-
-        @media (max-width: 768px) {
-            .solo-movil-filtro { display: block !important; }
-
-            /* FORZAMOS EL DISEÑO BONITO AL BOTÓN QUE VENGA */
-            #destino-filtro-adria-porcelanico .wpc-filters-open-button-container,
-            #destino-filtro-adria-porcelanico .wpc-filters-open-button-container a,
-            #destino-filtro-adria-porcelanico a.wpc-filters-open-button {
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-                position: static !important;
-                margin: 0 auto !important;
-                width: 90% !important;
-                background: #4dd2d0 !important;
-                color: #fff !important;
-                font-family: 'Poppins', sans-serif !important;
-                font-weight: 800 !important;
-                text-transform: uppercase !important;
-                border-radius: 4px !important;
-                padding: 15px 0 !important;
-                text-align: center !important;
-                border: none !important;
-                box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important;
-            }
-        }
-    </style>
-
-    <script>
-    (function($) {
-        "use strict";
-
-        // A. TRANSPLANTE DE BOTÓN (Con ID específico para esta categoría)
-        function moverBotonFiltroPorcelanico() {
-            var $botonesOriginales = $('.wpc-filters-open-button-container');
-            var $nuevoHogar = $('#destino-filtro-adria-porcelanico');
-
-            if ($botonesOriginales.length && $nuevoHogar.length) {
-                if ($nuevoHogar.children().length > 0) return;
-                var $elElegido = $botonesOriginales.first();
-                $elElegido.appendTo($nuevoHogar);
-                $elElegido.find('a').text('FILTRAR PORCELÁNICOS'); // Texto personalizado
-                $('.wpc-filters-open-button-container').not($elElegido).hide();
-            }
-        }
-        $(document).ready(moverBotonFiltroPorcelanico);
-        setTimeout(moverBotonFiltroPorcelanico, 1500);
-
-        // B. SCROLL AUTOMÁTICO
-        function adrihosanFuerzaScrollPorcelanico() {
-            var $destino = $('#catalogo-porcelanico-foco');
-            if ($destino.length) {
-                $('html, body').animate({ scrollTop: $destino.offset().top - 120 }, 800);
-            }
-        }
-        $(document).on('click', '.wpc-filters-submit-button', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 1000);
-        });
-        $(document).on('feAfterFilterApply', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 500);
-        });
-
-    })(jQuery);
-    </script>
-
-    <!-- WIDGET FILTROS Filter Everything Pro -->
+    <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
+    <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
     <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
-    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <style>@media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-porcelanico .wpc-filters-open-button-container, #destino-filtro-adria-porcelanico .wpc-filters-open-button-container a, #destino-filtro-adria-porcelanico a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <script>(function($){"use strict";function moverBotonFiltroPorcelanico(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-porcelanico');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR PORCEL\u00c1NICOS');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroPorcelanico);setTimeout(moverBotonFiltroPorcelanico,1500);function adrihosanFuerzaScrollPorcelanico(){var $dest=$('#catalogo-porcelanico-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollPorcelanico,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollPorcelanico,500);});})(jQuery);</script>
+
+    <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
+    <div id="catalogo-porcelanico-foco"></div>
+    <div id="catalogo-porcelanico" class="product-loop-header">
+        <h2 class="product-loop-title">Cat&aacute;logo de Gres Porcel&aacute;nico</h2>
+    </div>
+
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
     <div id="fe-products-wrapper">
     <?php
 }

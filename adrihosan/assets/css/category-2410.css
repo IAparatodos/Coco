@@ -96,6 +96,30 @@
     max-width: 800px;
 }
 
+/* --- Breadcrumb --- */
+.tax-product_cat.term-2410 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2410 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-2410 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2410 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
 .tax-product_cat.term-2410 .hero-content h1 {
     font-size: 42px;
     font-weight: 700;
@@ -169,6 +193,12 @@
 .tax-product_cat.term-2410 .ap-inspiration-section {
     padding: 60px 20px;
     background-color: #ffffff;
+    scroll-margin-top: 100px;
+}
+
+.tax-product_cat.term-2410 #efectos-porcelanico {
+    background-color: #f8f9fa;
+    scroll-margin-top: 100px;
 }
 
 .tax-product_cat.term-2410 .ap-inspiration-wrapper {
