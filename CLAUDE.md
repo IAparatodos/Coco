@@ -37,12 +37,13 @@ Este archivo contiene:
 3. Si añades un lazy-load o cualquier sistema de carga condicional, asegúrate de que cubre TODAS las categorías, no solo las que existían antes
 4. **Consultar la rama `claude/update-category-2358-links-VWjok`** como referencia de la versión funcional
 
-### Categorías registradas (44 total):
+### Categorías registradas (45 total):
 
 | ID | Nombre | Archivo contenido | CSS individual |
 |----|--------|-------------------|----------------|
 | 99 | Muebles de Baño | category-muebles-bano.php | category-99.css |
 | 2421 | Muebles Baño Pequeños | category-muebles-bano-pequeno.php | category-2421.css |
+| 2428 | Muebles Baño Rústicos | category-muebles-bano-rusticos.php | category-2428.css |
 | 2083 | Baño Imitación | category-bano-imitacion.php | category-2083.css |
 | 4876 | Cocina Imitación | category-cocina-imitacion.php | category-4876.css |
 | 4862 | Hidráulica Original | category-hidraulica-original.php | category-4862.css |
@@ -175,6 +176,7 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 #### Nuevas categorías creadas
 - **99 - Muebles de Baño**: PHP (`category-muebles-bano.php`) + CSS (`category-99.css`) + FAQs
 - **2421 - Muebles Baño Pequeños**: PHP (`category-muebles-bano-pequeno.php`) + CSS (`category-2421.css`)
+- **2428 - Muebles Baño Rústicos**: PHP (`category-muebles-bano-rusticos.php`) + CSS (`category-2428.css`) + FAQs + JSON-LD schema. Paleta cálida (#3a2616, #8b5a2b, #faf6f0). Incluye banner mediterráneo de venta cruzada con barro y grid de 4 categorías relacionadas.
 
 #### Fix global: imágenes de producto en móvil
 - **Problema**: En móvil, las imágenes del loop de productos se veían a `max-width: 300px` (muy pequeñas)
