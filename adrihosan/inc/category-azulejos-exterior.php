@@ -63,8 +63,8 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 </section>
 
   <!-- TEXTO INTRODUCTORIO CATALOGO -->
-  <div class="ap-intro-catalogo adrihosan-full-width-block" style="max-width: 900px; margin: 30px auto; padding: 0 20px; text-align: center;">
-      <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; font-size: 1.15rem; line-height: 1.7; margin: 0;">Encuentra la mejor selecci&oacute;n de suelos para patios y terrazas con ofertas exclusivas y la mejor relaci&oacute;n calidad-precio.</p>
+  <div class="ap-intro-catalogo" style="max-width: 900px; margin: 30px auto; padding: 0 20px; text-align: center;">
+      <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; font-size: 1.15rem; line-height: 1.7; margin: 0; text-align: center;">Encuentra la mejor selecci&oacute;n de suelos para patios y terrazas con ofertas exclusivas y la mejor relaci&oacute;n calidad-precio.</p>
   </div>
 
   <section class="ap-value-section adrihosan-full-width-block">
