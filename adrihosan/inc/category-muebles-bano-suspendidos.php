@@ -156,51 +156,42 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles de Ba&ntilde;o Suspendidos</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles Suspendidos</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; peso soporta un mueble de ba&ntilde;o suspendido?</span>
+                        <span>&iquest;Un mueble suspendido se puede instalar en Pladur?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Sobre una pared de ladrillo o bloque macizo, nuestros muebles suspendidos soportan el conjunto completo (mueble + lavabo + agua + productos) sin ning&uacute;n problema, ya que el sistema de colgadores met&aacute;licos est&aacute; dimensionado con un amplio margen de seguridad. Para paredes de pladur se recomiendan anclajes espec&iacute;ficos tipo molly o placa de refuerzo detr&aacute;s del yeso.</p>
+                        <p>S&iacute;, pero necesita refuerzo. Lo habitual es colocar un travesa&ntilde;o de madera o una placa met&aacute;lica entre los montantes del tabique antes de cerrarlo. Si la pared ya est&aacute; terminada, existen anclajes especiales de paraguas o de alta resistencia para cargas pesadas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;A qu&eacute; altura debe instalarse un mueble suspendido?</span>
+                        <span>&iquest;Qu&eacute; altura es la correcta para colgar un mueble de ba&ntilde;o?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La altura est&aacute;ndar del borde superior del lavabo es de <strong>85&nbsp;cm</strong> desde el suelo acabado, aunque puede ajustarse entre 80 y 90&nbsp;cm seg&uacute;n la estatura del usuario. El sistema de colgadores regulables permite modificar esta altura sin herramientas especiales, algo imposible con un mueble con patas fijas.</p>
+                        <p>La medida est&aacute;ndar sit&uacute;a la parte superior del mueble a <strong>85-90&nbsp;cm</strong> del suelo. No obstante, al ser un mueble flotante, tienes la libertad de ajustarlo a tu estatura para lograr la m&aacute;xima comodidad ergon&oacute;mica.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Puedo instalarlo yo mismo o necesito un profesional?</span>
+                        <span>&iquest;Los muebles suspendidos soportan mucho peso?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nuestros muebles llegan premontados, as&iacute; que la instalaci&oacute;n se reduce a colocar los colgadores en la pared, nivelarlos y colgar el mueble. Si tienes experiencia en bricolaje y una pared s&oacute;lida, puedes hacerlo t&uacute; mismo en un par de horas. Si el lavabo requiere conexi&oacute;n a un desag&uuml;e con posici&oacute;n distinta a la anterior, conviene contar con un fontanero.</p>
+                        <p>Absolutamente. Nuestros muebles est&aacute;n equipados con herrajes de suspensi&oacute;n certificados para soportar el peso de la estructura, el lavabo lleno y el contenido de los cajones. Los fabricantes los testean bajo condiciones extremas para garantizar una seguridad total.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; ventajas tiene un mueble suspendido frente a uno con patas?</span>
+                        <span>&iquest;Qu&eacute; medidas son las m&aacute;s vendidas en muebles colgados?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Tres principales: suelo libre (el ba&ntilde;o parece m&aacute;s grande y se limpia antes), ajuste de altura (adaptable a cada usuario) y est&eacute;tica moderna (l&iacute;neas flotantes sin interrupci&oacute;n visual en el pavimento). El mueble con patas, en cambio, destaca por su facilidad de instalaci&oacute;n en cualquier tipo de pared y por ofrecer un aire m&aacute;s c&aacute;lido y tradicional.</p>
-                    </div>
-                </div>
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;l es el plazo de entrega de un mueble suspendido?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Depende del modelo. Algunos de nuestros muebles suspendidos est&aacute;n <strong>disponibles en stock</strong> y se env&iacute;an en pocos d&iacute;as. El resto son muebles de dise&ntilde;o fabricados seg&uacute;n el acabado y las medidas seleccionadas, con un plazo habitual de <strong>hasta 4 semanas</strong> desde la confirmaci&oacute;n del pedido. Si necesitas conocer el plazo exacto de un modelo concreto, cont&aacute;ctanos y te lo confirmamos antes de realizar el pedido.</p>
+                        <p>Los anchos de <strong>80&nbsp;cm</strong> y <strong>100&nbsp;cm</strong> son los m&aacute;s populares para ba&ntilde;os est&aacute;ndar. Para aseos o ba&ntilde;os peque&ntilde;os, los modelos de <strong>60&nbsp;cm</strong> son la soluci&oacute;n perfecta para optimizar el espacio sin perder funcionalidad.</p>
                     </div>
                 </div>
             </div>
@@ -215,42 +206,34 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "&iquest;Qu&eacute; peso soporta un mueble de ba&ntilde;o suspendido?",
+          "name": "&iquest;Un mueble suspendido se puede instalar en Pladur?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sobre una pared de ladrillo o bloque macizo, nuestros muebles suspendidos soportan el conjunto completo (mueble + lavabo + agua + productos) sin ning&uacute;n problema. Para paredes de pladur se recomiendan anclajes espec&iacute;ficos tipo molly o placa de refuerzo."
+            "text": "S&iacute;, pero necesita refuerzo. Lo habitual es colocar un travesa&ntilde;o de madera o una placa met&aacute;lica entre los montantes del tabique antes de cerrarlo. Si la pared ya est&aacute; terminada, existen anclajes especiales de paraguas o de alta resistencia para cargas pesadas."
           }
         },
         {
           "@type": "Question",
-          "name": "&iquest;A qu&eacute; altura debe instalarse un mueble suspendido?",
+          "name": "&iquest;Qu&eacute; altura es la correcta para colgar un mueble de ba&ntilde;o?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La altura est&aacute;ndar del borde superior del lavabo es de 85 cm desde el suelo acabado, aunque puede ajustarse entre 80 y 90 cm seg&uacute;n la estatura del usuario."
+            "text": "La medida est&aacute;ndar sit&uacute;a la parte superior del mueble a 85-90 cm del suelo. No obstante, al ser un mueble flotante, tienes la libertad de ajustarlo a tu estatura para lograr la m&aacute;xima comodidad ergon&oacute;mica."
           }
         },
         {
           "@type": "Question",
-          "name": "&iquest;Puedo instalarlo yo mismo o necesito un profesional?",
+          "name": "&iquest;Los muebles suspendidos soportan mucho peso?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nuestros muebles llegan premontados. La instalaci&oacute;n consiste en colocar los colgadores en la pared, nivelarlos y colgar el mueble. Si tienes experiencia en bricolaje y una pared s&oacute;lida, puedes hacerlo t&uacute; mismo en un par de horas."
+            "text": "Absolutamente. Nuestros muebles est&aacute;n equipados con herrajes de suspensi&oacute;n certificados para soportar el peso de la estructura, el lavabo lleno y el contenido de los cajones. Los fabricantes los testean bajo condiciones extremas para garantizar una seguridad total."
           }
         },
         {
           "@type": "Question",
-          "name": "&iquest;Qu&eacute; ventajas tiene un mueble suspendido frente a uno con patas?",
+          "name": "&iquest;Qu&eacute; medidas son las m&aacute;s vendidas en muebles colgados?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Suelo libre (el ba&ntilde;o parece m&aacute;s grande y se limpia antes), ajuste de altura (adaptable a cada usuario) y est&eacute;tica moderna con l&iacute;neas flotantes sin interrupci&oacute;n visual en el pavimento."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Cu&aacute;l es el plazo de entrega de un mueble suspendido?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende del modelo. Algunos est&aacute;n disponibles en stock y se env&iacute;an en pocos d&iacute;as. El resto son muebles de dise&ntilde;o fabricados seg&uacute;n el acabado y las medidas, con un plazo habitual de hasta 4 semanas desde la confirmaci&oacute;n del pedido."
+            "text": "Los anchos de 80 cm y 100 cm son los m&aacute;s populares para ba&ntilde;os est&aacute;ndar. Para aseos o ba&ntilde;os peque&ntilde;os, los modelos de 60 cm son la soluci&oacute;n perfecta para optimizar el espacio sin perder funcionalidad."
           }
         }
       ]
