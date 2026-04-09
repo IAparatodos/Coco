@@ -39,7 +39,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/suelo-hidraulico-adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico Porcel&aacute;nico</h1>
+            <h1>Suelos Hidr&aacute;ulicos de Imitaci&oacute;n: Porcel&aacute;nico de Alta Resistencia</h1>
             <p>Consigue la est&eacute;tica atemporal del mosaico hidr&aacute;ulico sin preocuparte por manchas, ceras o cuidados especiales. La soluci&oacute;n perfecta para el d&iacute;a a d&iacute;a.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-imitacion" class="hero-btn primary">Ver Cat&aacute;logo</a>
