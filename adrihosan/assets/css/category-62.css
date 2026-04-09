@@ -6,6 +6,42 @@
  */
 
 /* ========================================================================== */
+/* 0. TIPOGRAFÍA CORPORATIVA POPPINS (force en todas las secciones)           */
+/* ========================================================================== */
+
+.tax-product_cat.term-62,
+.tax-product_cat.term-62 h1,
+.tax-product_cat.term-62 h2,
+.tax-product_cat.term-62 h3,
+.tax-product_cat.term-62 h4,
+.tax-product_cat.term-62 h5,
+.tax-product_cat.term-62 h6,
+.tax-product_cat.term-62 p,
+.tax-product_cat.term-62 a,
+.tax-product_cat.term-62 li,
+.tax-product_cat.term-62 span,
+.tax-product_cat.term-62 div,
+.tax-product_cat.term-62 button,
+.tax-product_cat.term-62 input,
+.tax-product_cat.term-62 select,
+.tax-product_cat.term-62 textarea,
+.tax-product_cat.term-62 .cer-hero-section,
+.tax-product_cat.term-62 .cer-hero-content,
+.tax-product_cat.term-62 .cer-hero-buttons,
+.tax-product_cat.term-62 .btn-adri-master,
+.tax-product_cat.term-62 .adrihosan-seo-long-content,
+.tax-product_cat.term-62 .adrihosan-seo-long-content *,
+.tax-product_cat.term-62 .faq-section-common,
+.tax-product_cat.term-62 .faq-section-common *,
+.tax-product_cat.term-62 .faq-question-common,
+.tax-product_cat.term-62 .faq-answer-common,
+.tax-product_cat.term-62 .faq-answer-common *,
+.tax-product_cat.term-62 .contact-help-common,
+.tax-product_cat.term-62 .contact-help-common * {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* ========================================================================== */
 /* 1. OCULTAR ELEMENTOS INNECESARIOS */
 /* ========================================================================== */
 

@@ -35,11 +35,12 @@ function adrihosan_ceramica_superior_final() {
         background-repeat: no-repeat;
         color: #fff;
         padding: 80px 20px;
-        text-align: center;">
-        
+        text-align: center;
+        font-family: 'Poppins', sans-serif;">
+
         <div class="cer-hero-content">
             <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Cerámica: El Origen de tu Reforma</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
+            <p style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-ceramica-foco" class="btn-adri-master">Ver Catálogo Completo</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
