@@ -11,7 +11,7 @@
 function adrihosan_muebles_bano_rusticos_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-rusticos-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-rustico-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -100,7 +100,7 @@ function adrihosan_muebles_bano_rusticos_contenido_inferior() {
 
     <!-- BANNER INSPIRACI&Oacute;N MEDITERR&Aacute;NEA -->
     <section class="bumper-section adrihosan-full-width-block">
-        <div class="bumper-wrapper" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Mueble-rustico-suelo-barro-Adrihosan.jpg');">
+        <div class="bumper-wrapper" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-rustico-Adrihosan.jpg');">
             <div class="bumper-overlay"></div>
             <div class="bumper-content">
                 <h2>El maridaje perfecto: madera y barro</h2>
