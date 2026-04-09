@@ -52,8 +52,8 @@ function adrihosan_muebles_bano_suspendidos_contenido_superior() {
             <div class="trust-item">
                 <div class="trust-icon">&#127919;</div>
                 <div class="trust-text">
-                    <strong>Muebles de Dise&ntilde;o</strong>
-                    <span>Fabricaci&oacute;n cuidada, plazo de 4 a 6 semanas</span>
+                    <strong>Stock y Fabricaci&oacute;n</strong>
+                    <span>Modelos en stock r&aacute;pidos; resto, hasta 4 semanas</span>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Trabajamos con <strong>muebles de dise&ntilde;o fabricados a medida</strong>, no con stock r&aacute;pido de 48/72&nbsp;horas. El plazo habitual es de <strong>4 a 6 semanas</strong> desde la confirmaci&oacute;n del pedido, dependiendo del fabricante, del acabado elegido y de si el modelo es configuraci&oacute;n est&aacute;ndar o personalizada. Esta espera nos permite garantizar la calidad del tablero hidr&oacute;fugo, el tratamiento antihumedad y los herrajes de cierre amortiguado que distinguen nuestros muebles. Si necesitas conocer el plazo exacto de un modelo concreto, cont&aacute;ctanos y te lo confirmamos antes de realizar el pedido.</p>
+                        <p>Depende del modelo. Algunos de nuestros muebles suspendidos est&aacute;n <strong>disponibles en stock</strong> y se env&iacute;an en pocos d&iacute;as. El resto son muebles de dise&ntilde;o fabricados seg&uacute;n el acabado y las medidas seleccionadas, con un plazo habitual de <strong>hasta 4 semanas</strong> desde la confirmaci&oacute;n del pedido. Si necesitas conocer el plazo exacto de un modelo concreto, cont&aacute;ctanos y te lo confirmamos antes de realizar el pedido.</p>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
           "name": "&iquest;Cu&aacute;l es el plazo de entrega de un mueble suspendido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Trabajamos con muebles de dise&ntilde;o fabricados a medida, no con stock r&aacute;pido de 48/72 horas. El plazo habitual es de 4 a 6 semanas desde la confirmaci&oacute;n del pedido, dependiendo del fabricante y del acabado elegido."
+            "text": "Depende del modelo. Algunos est&aacute;n disponibles en stock y se env&iacute;an en pocos d&iacute;as. El resto son muebles de dise&ntilde;o fabricados seg&uacute;n el acabado y las medidas, con un plazo habitual de hasta 4 semanas desde la confirmaci&oacute;n del pedido."
           }
         }
       ]
