@@ -19,6 +19,42 @@ Formato ejemplo:
 
 Al comenzar una nueva sesión/chat, **SIEMPRE** hacer `git pull` de la rama más reciente que se haya usado como base. No asumir que el código local está actualizado. Preguntar al usuario cuál fue la última rama funcional si no está claro.
 
+## REGLA CRÍTICA: Paleta de colores corporativa (OBLIGATORIA en TODAS las categorías)
+
+**NUNCA** uses paletas de colores temáticas (marrones para "rústico", dorados para "premium", verdes para "natural", etc.). **TODAS** las categorías deben usar la paleta corporativa de Adrihosan, sin excepciones, independientemente del tema visual de la categoría.
+
+### Paleta corporativa oficial
+
+| Color | Hex | Uso |
+|-------|-----|-----|
+| Azul oscuro corporativo | `#1a3a4a` | Headings, títulos, texto destacado, fondos hero/bumper |
+| Azul medio | `#3a5a6a` | Body text, descripciones, párrafos |
+| Teal oscuro | `#2a7a8a` | Enlaces, acentos primarios, borders destacados, hover de tarjetas |
+| Azul claro | `#7cc8e8` | Acentos secundarios sobre fondos oscuros (taglines, breadcrumbs, etc.) |
+| **Turquesa corporativo** | `#4dd2d0` | **CTAs principales (botones .bumper-btn, asesoramiento, conversión)** |
+| Fondo claro | `#f0f5fa` | Backgrounds de secciones (trust bar, seo content, related cats, etc.) |
+| Borders | `#d8e3ef` | Borders de tarjetas y elementos sobre fondo claro |
+| Overlay | `rgba(26, 58, 74, 0.55-0.7)` | Overlays sobre imágenes hero/bumper |
+| Sombras | `rgba(26, 58, 74, 0.08-0.10)` | Box-shadows |
+
+### Reglas estrictas
+
+1. **Categoría de referencia**: `category-2433.css` (Muebles de Baño de Diseño) es la implementación canónica de la paleta corporativa. Cópiala como base al crear nuevas categorías.
+2. **Botones CTA**: Los `.bumper-btn` y otros botones de conversión SIEMPRE deben usar `#4dd2d0` (turquesa corporativo), nunca `#2a7a8a` ni otros colores.
+3. **NO inventar paletas**: Aunque el tema sea "rústico", "natural", "imitación madera" o "vintage", los colores del diseño (NO de las imágenes de productos) siempre son los corporativos. La calidez visual viene de las imágenes, no del CSS.
+4. **Comentario obligatorio**: Cada `category-{ID}.css` debe llevar al inicio el comentario `/* Paleta corporativa: #1a3a4a, #3a5a6a, #2a7a8a, #7cc8e8, #4dd2d0, #f0f5fa */`
+5. **Verificación previa al commit**: Antes de cerrar cualquier cambio en CSS de categorías, ejecuta:
+   ```bash
+   grep -E "#[0-9a-fA-F]{3,6}" assets/css/category-{ID}.css
+   ```
+   y revisa que SOLO aparezcan los hex de la paleta corporativa (más `#ffffff` y los rgba permitidos).
+
+### Errores históricos a evitar
+- Categoría 2433 creada con dorado `#c9a96e` y navy `#0d1b2a` → corregido a paleta corporativa.
+- Categoría 2433 con `.bumper-btn` en `#2a7a8a` (azul oscuro) en vez de `#4dd2d0` (turquesa) → corregido.
+- Categoría 2428 creada con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, etc.) → corregido a paleta corporativa.
+- Categoría Zellige perdiendo `#4dd2d0` corporativo → corregido.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
@@ -176,7 +212,7 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 #### Nuevas categorías creadas
 - **99 - Muebles de Baño**: PHP (`category-muebles-bano.php`) + CSS (`category-99.css`) + FAQs
 - **2421 - Muebles Baño Pequeños**: PHP (`category-muebles-bano-pequeno.php`) + CSS (`category-2421.css`)
-- **2428 - Muebles Baño Rústicos**: PHP (`category-muebles-bano-rusticos.php`) + CSS (`category-2428.css`) + FAQs + JSON-LD schema. Paleta cálida (#3a2616, #8b5a2b, #faf6f0). Incluye banner mediterráneo de venta cruzada con barro y grid de 4 categorías relacionadas.
+- **2428 - Muebles Baño Rústicos**: PHP (`category-muebles-bano-rusticos.php`) + CSS (`category-2428.css`) + FAQs + JSON-LD schema. **Paleta corporativa** (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`, `#4dd2d0`, `#f0f5fa`) — NO usa marrones a pesar del estilo rústico, los tonos cálidos provienen exclusivamente de las imágenes de productos. Incluye banner mediterráneo de venta cruzada y grid de 4 categorías relacionadas.
 
 #### Fix global: imágenes de producto en móvil
 - **Problema**: En móvil, las imágenes del loop de productos se veían a `max-width: 300px` (muy pequeñas)
@@ -196,6 +232,11 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 #### Cache-busting CSS
 - **Problema**: CSS versión hardcodeada `'1.0.0'` no se invalidaba al actualizar archivos
 - **Solución**: Cambiado a `filemtime()` en `cache-and-css.php` para invalidación automática
+
+#### Fix Muebles Baño Rústicos (2428): paleta de colores incorrecta
+- **Problema**: La categoría se creó con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, `#5a3a1f`, `#6b5340`, `#e6d9c4`) en lugar de la paleta corporativa. Mismo error que se cometió ayer con la categoría 2433.
+- **Solución**: Reemplazados todos los colores temáticos por la paleta corporativa (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`, `#4dd2d0`, `#f0f5fa`, `#d8e3ef`). Botón `.bumper-btn` ahora usa el turquesa corporativo `#4dd2d0`.
+- **Lección aprendida**: El estilo "rústico" lo aportan las **imágenes de productos**, NUNCA el CSS. Documentado en la nueva regla "Paleta de colores corporativa" al inicio de este archivo.
 
 ### Categorías pendientes de migración CSS
 

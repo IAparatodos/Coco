@@ -1,5 +1,6 @@
 /* ========================================================================== */
 /* CATEGORY-2428.CSS - Muebles de Bano Rusticos                               */
+/* Paleta corporativa: #1a3a4a, #3a5a6a, #2a7a8a, #7cc8e8, #4dd2d0, #f0f5fa  */
 /* ========================================================================== */
 
 .tax-product_cat.term-2428 {
@@ -42,18 +43,18 @@
 
 .tax-product_cat.term-2428 .term-description-dinamica {
     font-size: 1rem;
-    color: #4a3a2a;
+    color: #3a5a6a;
     line-height: 1.8;
 }
 
 .tax-product_cat.term-2428 .term-description-dinamica h2,
 .tax-product_cat.term-2428 .term-description-dinamica h3 {
-    color: #3a2616;
+    color: #1a3a4a;
     margin-top: 1.5em;
 }
 
 .tax-product_cat.term-2428 .term-description-dinamica a {
-    color: #8b5a2b;
+    color: #2a7a8a;
     text-decoration: none;
     font-weight: 600;
 }
@@ -71,7 +72,7 @@
 .tax-product_cat.term-2428 .product-loop-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
-    color: #3a2616;
+    color: #1a3a4a;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -99,7 +100,7 @@
     box-sizing: border-box;
     background-size: cover;
     background-position: center center;
-    background-color: #5a3a1f;
+    background-color: #1a3a4a;
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -113,7 +114,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(58, 38, 22, 0.6);
+    background-color: rgba(26, 58, 74, 0.55);
     z-index: 1;
 }
 
@@ -142,7 +143,7 @@
 }
 
 .tax-product_cat.term-2428 .breadcrumb-nav span {
-    color: #e8c89a;
+    color: #7cc8e8;
     font-weight: 600;
 }
 
@@ -157,7 +158,7 @@
 .tax-product_cat.term-2428 .hero-content .hero-tagline {
     font-size: 1.2rem;
     font-style: italic;
-    color: #e8c89a;
+    color: #7cc8e8;
     margin: 0 0 20px 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
@@ -174,7 +175,7 @@
 /* TRUST BAR SECTION                                                          */
 /* ========================================================================== */
 .tax-product_cat.term-2428 .trust-bar-section {
-    background-color: #faf6f0;
+    background-color: #f0f5fa;
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -194,13 +195,13 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #e6d9c4;
+    border: 1px solid #d8e3ef;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tax-product_cat.term-2428 .trust-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(58, 38, 22, 0.1);
+    box-shadow: 0 8px 20px rgba(26, 58, 74, 0.08);
 }
 
 .tax-product_cat.term-2428 .trust-icon {
@@ -212,13 +213,13 @@
 .tax-product_cat.term-2428 .trust-text strong {
     display: block;
     font-size: 0.95rem;
-    color: #3a2616;
+    color: #1a3a4a;
     margin-bottom: 3px;
 }
 
 .tax-product_cat.term-2428 .trust-text span {
     font-size: 0.85rem;
-    color: #6b5340;
+    color: #3a5a6a;
     line-height: 1.4;
 }
 
@@ -229,21 +230,21 @@
     max-width: 960px;
     margin: 40px auto 30px auto;
     padding: 20px 25px;
-    background-color: #faf6f0;
-    border-left: 4px solid #8b5a2b;
+    background-color: #f0f5fa;
+    border-left: 4px solid #2a7a8a;
     border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
 
 .tax-product_cat.term-2428 .adria-tip-box p {
     font-size: 0.95rem;
-    color: #4a3a2a;
+    color: #3a5a6a;
     line-height: 1.6;
     margin: 0;
 }
 
 .tax-product_cat.term-2428 .adria-tip-box strong {
-    color: #3a2616;
+    color: #1a3a4a;
 }
 
 /* ========================================================================== */
@@ -262,7 +263,7 @@
     justify-content: center;
     background-size: cover;
     background-position: center center;
-    background-color: #5a3a1f;
+    background-color: #1a3a4a;
     overflow: hidden;
 }
 
@@ -272,7 +273,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(58, 38, 22, 0.7);
+    background-color: rgba(26, 58, 74, 0.7);
     z-index: 1;
 }
 
@@ -302,7 +303,7 @@
 .tax-product_cat.term-2428 .bumper-btn {
     display: inline-block;
     padding: 14px 32px;
-    background-color: #8b5a2b;
+    background-color: #4dd2d0;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -311,12 +312,12 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    border: 2px solid #8b5a2b;
+    border: 2px solid #4dd2d0;
 }
 
 .tax-product_cat.term-2428 .bumper-btn:hover {
     background-color: #ffffff;
-    color: #3a2616;
+    color: #4dd2d0;
     border-color: #ffffff;
 }
 
@@ -337,7 +338,7 @@
 .tax-product_cat.term-2428 .related-cats-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
-    color: #3a2616;
+    color: #1a3a4a;
     text-align: center;
     margin: 0 0 40px 0;
 }
@@ -355,20 +356,20 @@
     justify-content: center;
     gap: 12px;
     padding: 30px 20px;
-    background-color: #faf6f0;
-    border: 1px solid #e6d9c4;
+    background-color: #f0f5fa;
+    border: 1px solid #d8e3ef;
     border-radius: 10px;
     text-decoration: none;
-    color: #3a2616;
+    color: #1a3a4a;
     transition: all 0.3s ease;
 }
 
 .tax-product_cat.term-2428 .related-cat-card:hover {
-    background-color: #8b5a2b;
-    border-color: #8b5a2b;
+    background-color: #2a7a8a;
+    border-color: #2a7a8a;
     color: #ffffff;
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(139, 90, 43, 0.25);
+    box-shadow: 0 10px 25px rgba(42, 122, 138, 0.25);
 }
 
 .tax-product_cat.term-2428 .related-cat-icon {
@@ -387,7 +388,7 @@
 /* ========================================================================== */
 .tax-product_cat.term-2428 .seo-content-section {
     padding: 80px 20px;
-    background-color: #faf6f0;
+    background-color: #f0f5fa;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -399,33 +400,33 @@
 .tax-product_cat.term-2428 .seo-content-wrapper > h2 {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
-    color: #3a2616;
+    color: #1a3a4a;
     margin: 0 0 30px 0;
     text-align: center;
 }
 
 .tax-product_cat.term-2428 .seo-content-wrapper > p {
     font-size: 1.05rem;
-    color: #4a3a2a;
+    color: #3a5a6a;
     line-height: 1.8;
     margin: 0 0 18px 0;
 }
 
 .tax-product_cat.term-2428 .seo-content-wrapper > p strong {
-    color: #3a2616;
+    color: #1a3a4a;
 }
 
 .tax-product_cat.term-2428 .seo-content-wrapper > p a {
-    color: #8b5a2b;
+    color: #2a7a8a;
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 1px solid rgba(139, 90, 43, 0.3);
+    border-bottom: 1px solid rgba(42, 122, 138, 0.3);
     transition: all 0.2s ease;
 }
 
 .tax-product_cat.term-2428 .seo-content-wrapper > p a:hover {
-    color: #5a3a1f;
-    border-bottom-color: #5a3a1f;
+    color: #1a3a4a;
+    border-bottom-color: #1a3a4a;
 }
 
 /* ========================================================================== */
