@@ -19,41 +19,61 @@ Formato ejemplo:
 
 Al comenzar una nueva sesión/chat, **SIEMPRE** hacer `git pull` de la rama más reciente que se haya usado como base. No asumir que el código local está actualizado. Preguntar al usuario cuál fue la última rama funcional si no está claro.
 
-## REGLA CRÍTICA: Paleta de colores corporativa (OBLIGATORIA en TODAS las categorías)
+## REGLA CRÍTICA: Identidad corporativa Adrihosan (OBLIGATORIA en TODAS las categorías)
 
-**NUNCA** uses paletas de colores temáticas (marrones para "rústico", dorados para "premium", verdes para "natural", etc.). **TODAS** las categorías deben usar la paleta corporativa de Adrihosan, sin excepciones, independientemente del tema visual de la categoría.
+**NUNCA** uses paletas de colores temáticas (marrones para "rústico", dorados para "premium", verdes para "natural", etc.) ni paletas ampliadas con variaciones de azules. **TODAS** las categorías deben usar **únicamente** la identidad corporativa estricta de Adrihosan, sin excepciones, independientemente del tema visual de la categoría.
 
-### Paleta corporativa oficial
+### Identidad corporativa oficial
+
+La identidad corporativa real de Adrihosan se compone de **solo 2 colores + tipografía**:
+
+| Elemento | Valor | Uso |
+|----------|-------|-----|
+| **Color corporativo CTA** | `#4dd2d0` | **Turquesa.** CTAs principales (`.bumper-btn`, asesoramiento, conversión), acentos sobre fondos oscuros (taglines, breadcrumbs, highlights en hero), hover states |
+| **Color corporativo texto** | `#3f6f7b` | **Azul corporativo.** Headings, títulos, body text, descripciones, enlaces, borders destacados, fondos hero/bumper, overlays (`rgba(63, 111, 123, ...)`) |
+| **Tipografía corporativa** | `Poppins` | Única fuente permitida en toda la web. `font-family: 'Poppins', sans-serif;` en cada bloque estructural |
+
+### Neutros complementarios (tintes de #3f6f7b)
+
+Para backgrounds y borders de secciones se permiten **solo** estos neutros derivados del azul corporativo:
 
 | Color | Hex | Uso |
 |-------|-----|-----|
-| Azul oscuro corporativo | `#1a3a4a` | Headings, títulos, texto destacado, fondos hero/bumper |
-| Azul medio | `#3a5a6a` | Body text, descripciones, párrafos |
-| Teal oscuro | `#2a7a8a` | Enlaces, acentos primarios, borders destacados, hover de tarjetas |
-| Azul claro | `#7cc8e8` | Acentos secundarios sobre fondos oscuros (taglines, breadcrumbs, etc.) |
-| **Turquesa corporativo** | `#4dd2d0` | **CTAs principales (botones .bumper-btn, asesoramiento, conversión)** |
-| Fondo claro | `#f0f5fa` | Backgrounds de secciones (trust bar, seo content, related cats, etc.) |
-| Borders | `#d8e3ef` | Borders de tarjetas y elementos sobre fondo claro |
-| Overlay | `rgba(26, 58, 74, 0.55-0.7)` | Overlays sobre imágenes hero/bumper |
-| Sombras | `rgba(26, 58, 74, 0.08-0.10)` | Box-shadows |
+| Blanco | `#ffffff` | Fondos principales, textos sobre `#3f6f7b` |
+| Tinte claro | `#f0f7f8` | Backgrounds de secciones (trust bar, seo content, related cats, adria-tip-box) |
+| Border sutil | `#d4e3e6` | Borders de tarjetas y elementos sobre fondo claro |
+| Overlay | `rgba(63, 111, 123, 0.55-0.7)` | Overlays sobre imágenes hero/bumper |
+| Sombras | `rgba(63, 111, 123, 0.08-0.10)` | Box-shadows |
 
 ### Reglas estrictas
 
-1. **Categoría de referencia**: `category-2433.css` (Muebles de Baño de Diseño) es la implementación canónica de la paleta corporativa. Cópiala como base al crear nuevas categorías.
-2. **Botones CTA**: Los `.bumper-btn` y otros botones de conversión SIEMPRE deben usar `#4dd2d0` (turquesa corporativo), nunca `#2a7a8a` ni otros colores.
-3. **NO inventar paletas**: Aunque el tema sea "rústico", "natural", "imitación madera" o "vintage", los colores del diseño (NO de las imágenes de productos) siempre son los corporativos. La calidez visual viene de las imágenes, no del CSS.
-4. **Comentario obligatorio**: Cada `category-{ID}.css` debe llevar al inicio el comentario `/* Paleta corporativa: #1a3a4a, #3a5a6a, #2a7a8a, #7cc8e8, #4dd2d0, #f0f5fa */`
-5. **Verificación previa al commit**: Antes de cerrar cualquier cambio en CSS de categorías, ejecuta:
+1. **SOLO 2 colores**: Cualquier CSS de categoría debe contener **únicamente** `#4dd2d0`, `#3f6f7b`, `#ffffff`, y los neutros derivados (`#f0f7f8`, `#d4e3e6`) más los rgba de overlay/sombra. **NADA MÁS.**
+2. **Categoría de referencia**: `category-2428.css` (Muebles de Baño Rústicos) es la implementación canónica de la identidad corporativa real. Cópiala como base al crear nuevas categorías.
+3. **Botones CTA**: Los `.bumper-btn` y otros botones de conversión SIEMPRE deben usar `#4dd2d0` (turquesa corporativo), nunca `#3f6f7b` ni otros colores.
+4. **NO inventar paletas**: Aunque el tema sea "rústico", "natural", "imitación madera", "premium" o "vintage", los colores del diseño (NO de las imágenes de productos) siempre son los corporativos. La calidez o frialdad visual viene exclusivamente de las imágenes, no del CSS.
+5. **NO usar azules antiguos**: Los hex `#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`, `#f0f5fa`, `#d8e3ef` son **paleta antigua incorrecta** y están prohibidos. Si los encuentras en cualquier categoría, reemplázalos por los corporativos.
+6. **Tipografía obligatoria**: Toda sección estructural debe declarar `font-family: 'Poppins', sans-serif;`. No se permiten Playfair, Georgia, serif ni ninguna otra fuente.
+7. **Comentario obligatorio**: Cada `category-{ID}.css` debe llevar al inicio el bloque:
+   ```css
+   /* ========================================================================== */
+   /* CATEGORY-{ID}.CSS - Nombre de la categoria                                 */
+   /* Identidad corporativa Adrihosan:                                           */
+   /*   - Color corporativo CTA: #4dd2d0                                         */
+   /*   - Color corporativo texto: #3f6f7b                                       */
+   /*   - Tipografia corporativa: Poppins                                        */
+   /* ========================================================================== */
+   ```
+8. **Verificación previa al commit**: Antes de cerrar cualquier cambio en CSS de categorías, ejecuta:
    ```bash
    grep -E "#[0-9a-fA-F]{3,6}" assets/css/category-{ID}.css
    ```
-   y revisa que SOLO aparezcan los hex de la paleta corporativa (más `#ffffff` y los rgba permitidos).
+   y revisa que SOLO aparezcan: `#4dd2d0`, `#3f6f7b`, `#ffffff`, `#f0f7f8`, `#d4e3e6`. Cualquier otro hex es un error que debe corregirse antes del commit.
 
 ### Errores históricos a evitar
-- Categoría 2433 creada con dorado `#c9a96e` y navy `#0d1b2a` → corregido a paleta corporativa.
-- Categoría 2433 con `.bumper-btn` en `#2a7a8a` (azul oscuro) en vez de `#4dd2d0` (turquesa) → corregido.
-- Categoría 2428 creada con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, etc.) → corregido a paleta corporativa.
+- Categoría 2433 creada con dorado `#c9a96e` y navy `#0d1b2a` → corregido a paleta corporativa antigua (pendiente de migración a identidad real `#4dd2d0`/`#3f6f7b`).
+- Categoría 2428 creada con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, etc.) → corregido temporalmente a paleta antigua → **corregido definitivamente a identidad corporativa real `#4dd2d0`/`#3f6f7b`** (categoría de referencia).
 - Categoría Zellige perdiendo `#4dd2d0` corporativo → corregido.
+- **Error generalizado**: múltiples categorías usan la paleta antigua ampliada de azules (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`). Deben migrarse progresivamente a la identidad corporativa real de 2 colores.
 
 ## REGLA CRÍTICA: No romper categorías existentes
 
@@ -233,10 +253,18 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 - **Problema**: CSS versión hardcodeada `'1.0.0'` no se invalidaba al actualizar archivos
 - **Solución**: Cambiado a `filemtime()` en `cache-and-css.php` para invalidación automática
 
-#### Fix Muebles Baño Rústicos (2428): paleta de colores incorrecta
-- **Problema**: La categoría se creó con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, `#5a3a1f`, `#6b5340`, `#e6d9c4`) en lugar de la paleta corporativa. Mismo error que se cometió ayer con la categoría 2433.
-- **Solución**: Reemplazados todos los colores temáticos por la paleta corporativa (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`, `#4dd2d0`, `#f0f5fa`, `#d8e3ef`). Botón `.bumper-btn` ahora usa el turquesa corporativo `#4dd2d0`.
-- **Lección aprendida**: El estilo "rústico" lo aportan las **imágenes de productos**, NUNCA el CSS. Documentado en la nueva regla "Paleta de colores corporativa" al inicio de este archivo.
+#### Fix Muebles Baño Rústicos (2428): paleta de colores incorrecta (DOBLE CORRECCIÓN)
+- **Problema inicial**: La categoría se creó con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, `#5a3a1f`, `#6b5340`, `#e6d9c4`) en lugar de la paleta corporativa. Mismo error que se cometió con la categoría 2433.
+- **Primera solución**: Reemplazados los colores marrones por paleta corporativa ampliada (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`, `#4dd2d0`, `#f0f5fa`, `#d8e3ef`).
+- **Problema detectado después**: La "paleta corporativa ampliada" tampoco era correcta. La identidad real de Adrihosan es **solo 2 colores**: `#4dd2d0` (turquesa CTA) y `#3f6f7b` (azul corporativo), más Poppins como fuente.
+- **Corrección definitiva**: Reemplazados los azules ampliados por la identidad corporativa real:
+  - `#1a3a4a`, `#3a5a6a`, `#2a7a8a` → `#3f6f7b`
+  - `#7cc8e8` → `#4dd2d0`
+  - `#f0f5fa` → `#f0f7f8` (tinte neutro derivado)
+  - `#d8e3ef` → `#d4e3e6` (tinte neutro derivado)
+  - `rgba(26, 58, 74, ...)`, `rgba(42, 122, 138, ...)` → `rgba(63, 111, 123, ...)`
+- **Categoría 2428 ahora es la referencia canónica** de la identidad corporativa real.
+- **Lección aprendida**: El estilo "rústico" lo aportan las **imágenes de productos**, NUNCA el CSS. La identidad corporativa de Adrihosan es estricta: solo `#4dd2d0` + `#3f6f7b` + Poppins. Documentado en la regla "Identidad corporativa Adrihosan" al inicio de este archivo.
 
 ### Categorías pendientes de migración CSS
 
