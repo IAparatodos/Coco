@@ -251,16 +251,34 @@
 }
 
 /* ========================================================================== */
-/* INSTALL BANNER SECTION - Sin imagen, fondo corporativo                     */
+/* INSTALL BANNER SECTION - Imagen de fondo + overlay corporativo             */
 /* ========================================================================== */
 .tax-product_cat.term-101 .install-banner-section {
+    position: relative;
     padding: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #3f6f7b;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-101 .install-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, 0.7);
+    z-index: 1;
 }
 
 .tax-product_cat.term-101 .install-banner-wrapper {
-    background-color: #3f6f7b;
-    padding: 60px 30px;
+    position: relative;
+    z-index: 2;
+    padding: 80px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,13 +295,15 @@
     font-weight: 700;
     margin: 0 0 15px 0;
     color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
 
 .tax-product_cat.term-101 .install-banner-content p {
     font-size: 1.05rem;
     line-height: 1.7;
     margin: 0 0 25px 0;
-    color: rgba(255, 255, 255, 0.92);
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
 .tax-product_cat.term-101 .install-banner-content .bumper-btn {
@@ -413,6 +433,34 @@
 .tax-product_cat.term-101 .seo-content-wrapper > p a:hover {
     color: #3f6f7b;
     border-bottom-color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* CONTACT HELP - Fix circulo Ricardo achatado                                */
+/* ========================================================================== */
+.tax-product_cat.term-101 .contact-help-common .contact-intro {
+    gap: 30px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tax-product_cat.term-101 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-101 .contact-help-common .contact-intro-text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.tax-product_cat.term-101 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
 }
 
 /* ========================================================================== */

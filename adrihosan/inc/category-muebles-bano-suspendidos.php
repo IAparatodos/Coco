@@ -98,8 +98,8 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
     }
     ?>
 
-    <!-- BANNER INSTALACI&Oacute;N (sin imagen, fondo color corporativo) -->
-    <section class="install-banner-section adrihosan-full-width-block">
+    <!-- BANNER INSTALACI&Oacute;N (con imagen de fondo + overlay corporativo) -->
+    <section class="install-banner-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-suspendidos-Adrihosan.jpg');">
         <div class="install-banner-wrapper">
             <div class="install-banner-content">
                 <h2>&iquest;Pared de pladur? No hay problema.</h2>
@@ -241,8 +241,8 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
         <div class="contact-help-wrapper">
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en muebles de ba&ntilde;o suspendidos">
-                <div>
-                    <h2>Soy Ricardo. &iquest;Necesitas ayuda para elegir tu mueble de ba&ntilde;o suspendido?
+                <div class="contact-intro-text">
+                    <h2>Soy Ricardo.<br>&iquest;Necesitas ayuda con tu mueble suspendido?
                         <span>Te asesoro sin compromiso.</span>
                     </h2>
                 </div>
