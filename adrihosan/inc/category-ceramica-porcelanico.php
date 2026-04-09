@@ -65,7 +65,7 @@ function adrihosan_ceramica_superior_final() {
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Piscina</h3>
+                <h3 style="color:#102e35; font-family:'Poppins', sans-serif; margin-top:15px; font-weight: 700;">Porcel&aacute;nico para Piscinas</h3>
             </a>
         </div>
     </div>
