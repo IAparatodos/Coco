@@ -118,7 +118,7 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
                     <div class="related-cat-icon">&#129462;</div>
                     <div class="related-cat-label">Con Patas</div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/" class="related-cat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-lavabo-pequeno/" class="related-cat-card">
                     <div class="related-cat-icon">&#128208;</div>
                     <div class="related-cat-label">Ba&ntilde;os Peque&ntilde;os</div>
                 </a>
