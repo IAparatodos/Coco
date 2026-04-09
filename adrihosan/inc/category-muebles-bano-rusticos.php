@@ -178,6 +178,15 @@ function adrihosan_muebles_bano_rusticos_contenido_inferior() {
                         <p>Es una de las combinaciones m&aacute;s efectivas. Un mueble con acabado roble y patas vistas sobre un suelo porcel&aacute;nico liso o con azulejos en formato grande crea un contraste c&aacute;lido-contempor&aacute;neo que aporta personalidad sin sobrecargar el espacio.</p>
                     </div>
                 </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; espejo queda mejor con un mueble r&uacute;stico?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Tienes dos caminos: un espejo con marco de madera en el mismo tono del mueble para un conjunto uniforme, o un espejo redondo con luz LED sin marco para crear un contraste r&uacute;stico-moderno que funciona muy bien visualmente.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -210,6 +219,14 @@ function adrihosan_muebles_bano_rusticos_contenido_inferior() {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Es una de las combinaciones m&aacute;s efectivas. Un mueble con acabado roble y patas vistas sobre un suelo porcel&aacute;nico liso o con azulejos en formato grande crea un contraste c&aacute;lido-contempor&aacute;neo que aporta personalidad sin sobrecargar el espacio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Qu&eacute; espejo queda mejor con un mueble r&uacute;stico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tienes dos caminos: un espejo con marco de madera en el mismo tono del mueble para un conjunto uniforme, o un espejo redondo con luz LED sin marco para crear un contraste r&uacute;stico-moderno que funciona muy bien visualmente."
           }
         }
       ]
