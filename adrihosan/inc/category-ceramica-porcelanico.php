@@ -53,15 +53,15 @@ function adrihosan_ceramica_superior_final() {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Azulejos para Baños</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Azulejos de Cocina</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Terraza</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Suelos para Patios y Terrazas</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
@@ -75,19 +75,19 @@ function adrihosan_ceramica_superior_final() {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Suelos Imitación Madera</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Mármol</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Porcelánico Efecto Mármol</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Piedra</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Azulejos Imitación Piedra</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Azulejos Efecto Cemento</h3>
             </a>
         </div>
     </div>
