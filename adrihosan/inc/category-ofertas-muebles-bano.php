@@ -93,7 +93,7 @@ function adrihosan_ofertas_muebles_bano_contenido_inferior() {
             <h2>Tambi&eacute;n te puede interesar</h2>
             <p class="related-cats-intro">Explora otras categor&iacute;as de muebles de ba&ntilde;o seg&uacute;n tus necesidades.</p>
             <div class="related-cats-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-baratos/" class="related-cat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-de-bano-baratos/" class="related-cat-card">
                     <div class="related-cat-icon">&#128176;</div>
                     <h3>Baratos</h3>
                     <p>Muebles de ba&ntilde;o con la mejor relaci&oacute;n calidad-precio.</p>
@@ -105,7 +105,7 @@ function adrihosan_ofertas_muebles_bano_contenido_inferior() {
                     <p>Muebles flotantes para un ba&ntilde;o amplio y moderno.</p>
                     <span class="related-cat-cta">Ver suspendidos &rarr;</span>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/" class="related-cat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-lavabo-pequeno/" class="related-cat-card">
                     <div class="related-cat-icon">&#128208;</div>
                     <h3>Ba&ntilde;os Peque&ntilde;os</h3>
                     <p>Soluciones a medida para aseos y ba&ntilde;os reducidos.</p>
@@ -186,8 +186,8 @@ function adrihosan_ofertas_muebles_bano_contenido_inferior() {
             <p>Estos son los anchos y estilos que m&aacute;s se est&aacute;n llevando nuestros clientes esta temporada.</p>
             <div class="trends-links">
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-suspendidos/" class="trend-link">Suspendidos</a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-baratos/" class="trend-link">Baratos</a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-pequenos/" class="trend-link">Ba&ntilde;os peque&ntilde;os</a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-de-bano-baratos/" class="trend-link">Baratos</a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-lavabo-pequeno/" class="trend-link">Ba&ntilde;os peque&ntilde;os</a>
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/columnas-de-bano/" class="trend-link">Columnas</a>
                 <a href="https://www.adrihosan.com/categoria-producto/espejos/" class="trend-link">Espejos LED</a>
             </div>
