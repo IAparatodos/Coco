@@ -422,6 +422,29 @@
 }
 
 /* ========================================================================== */
+/* CONTACT HELP - Fix circulo Ricardo achatado                                */
+/* ========================================================================== */
+.tax-product_cat.term-100 .contact-help-common .contact-intro {
+    gap: 30px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tax-product_cat.term-100 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-100 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ========================================================================== */
 /* RESPONSIVE                                                                 */
 /* ========================================================================== */
 
