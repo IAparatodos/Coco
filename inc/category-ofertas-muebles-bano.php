@@ -69,9 +69,8 @@ function adrihosan_ofertas_muebles_bano_contenido_superior() {
     </div>
 
     <!-- 4. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
-    <!-- TODO Ricardo: Crear widget en Filter Everything Pro con filtros Ancho + Tipo + Rango Precio y actualizar el ID abajo -->
     <div id="destino-filtro-adria-ofertas-muebles" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="428001"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427306"]'); ?></div>
 
     <!-- 5. T&Iacute;TULO CAT&Aacute;LOGO -->
     <div id="catalogo-ofertas-muebles" class="product-loop-header">
