@@ -151,6 +151,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2358: // Azulejos Antiguos y Vintage
             adrihosan_setup_azulejos_antiguos_cpu_fix();
             break;
+        case 2528: // Ofertas Muebles de Baño
+            adrihosan_setup_ofertas_muebles_bano_cpu_fix();
+            break;
     }
 }
 
@@ -226,6 +229,21 @@ function adrihosan_setup_imitacion_cemento_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_cemento_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_cemento_contenido_inferior', 99);
 
+}
+
+function adrihosan_setup_ofertas_muebles_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_inferior', 99);
+
+    // Badge -XX% sobre productos en oferta (solo en esta categoría)
+    add_filter('woocommerce_sale_flash', 'adrihosan_ofertas_muebles_bano_sale_flash', 10, 3);
+
+    // Nota: el ocultado de filtros legacy + .doo-category-banner lo aplica
+    // `adrihosan_ocultar_filtros_legacy` globalmente vía master controller.
 }
 
 function adrihosan_setup_paredes_cpu_fix() {
@@ -1549,6 +1567,11 @@ require get_template_directory() . '/inc/category-hexagonal.php';
 // CATEGORÍA 4973 - AZULEJOS IMITACIÓN CEMENTO (Modularizado a inc/category-imitacion-cemento.php)
 // =============================================================================
 require get_template_directory() . '/inc/category-imitacion-cemento.php';
+
+// =============================================================================
+// CATEGORÍA 2528 - OFERTAS MUEBLES DE BAÑO (Modularizado a inc/category-ofertas-muebles-bano.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
 
 // =============================================================================
 // CATEGORÍA 2516 - ZELLIGE (Modularizado a inc/category-zellige.php)
