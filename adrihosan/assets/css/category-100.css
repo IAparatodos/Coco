@@ -1,0 +1,503 @@
+/* ========================================================================== */
+/* CATEGORY-100.CSS - Muebles de Bano con Patas                               */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* ========================================================================== */
+
+.tax-product_cat.term-100 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Eliminar espacio superior del tema --- */
+.tax-product_cat.term-100 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-100 .woocommerce-products-header,
+.tax-product_cat.term-100 .wd-shop-tools,
+.tax-product_cat.term-100 .advanced-filter,
+.tax-product_cat.term-100 .filter-wrapper,
+.tax-product_cat.term-100 .ai-filters-section,
+.tax-product_cat.term-100 .bho-filters-section,
+.tax-product_cat.term-100 .bho-hub-section,
+.tax-product_cat.term-100 .woocommerce-products-header__description,
+.tax-product_cat.term-100 .term-description,
+.tax-product_cat.term-100 .woodmart-category-desc,
+.tax-product_cat.term-100 .wd-active-filters,
+.tax-product_cat.term-100 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- Estilos de la descripcion dinamica (contenido inferior) --- */
+.tax-product_cat.term-100 .bho-guide-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .bho-guide-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-100 .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-100 .term-description-dinamica h2,
+.tax-product_cat.term-100 .term-description-dinamica h3 {
+    color: #3f6f7b;
+    margin-top: 1.5em;
+}
+
+.tax-product_cat.term-100 .term-description-dinamica a {
+    color: #3f6f7b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-100 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-100 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-100 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-100 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+/* ========================================================================== */
+/* HERO SECTION - BREAKOUT COMPLETO                                           */
+/* ========================================================================== */
+.tax-product_cat.term-100 .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-color: #3f6f7b;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-100 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, 0.55);
+    z-index: 1;
+}
+
+.tax-product_cat.term-100 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* --- Breadcrumb --- */
+.tax-product_cat.term-100 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-100 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-100 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-100 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-100 .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-100 .hero-content .hero-tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4dd2d0;
+    margin: 0 0 20px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-100 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* ========================================================================== */
+/* TRUST BAR SECTION                                                          */
+/* ========================================================================== */
+.tax-product_cat.term-100 .trust-bar-section {
+    background-color: #f0f7f8;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .trust-bar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tax-product_cat.term-100 .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4e3e6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tax-product_cat.term-100 .trust-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(63, 111, 123, 0.08);
+}
+
+.tax-product_cat.term-100 .trust-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.tax-product_cat.term-100 .trust-text strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    margin-bottom: 3px;
+}
+
+.tax-product_cat.term-100 .trust-text span {
+    font-size: 0.85rem;
+    color: #3f6f7b;
+    line-height: 1.4;
+}
+
+/* ========================================================================== */
+/* CONSEJO ADRIA + FILTRO                                                     */
+/* ========================================================================== */
+.tax-product_cat.term-100 .adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0f7f8;
+    border-left: 4px solid #3f6f7b;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tax-product_cat.term-100 .adria-tip-box strong {
+    color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* RELATED CATEGORIES (Tarjetas visuales)                                     */
+/* ========================================================================== */
+.tax-product_cat.term-100 .related-cats-section {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .related-cats-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-100 .related-cats-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.tax-product_cat.term-100 .related-cats-subtitle {
+    font-size: 1rem;
+    color: #3f6f7b;
+    text-align: center;
+    margin: 0 0 40px 0;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-100 .related-cats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.tax-product_cat.term-100 .related-cat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 20px;
+    background-color: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3f6f7b;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-100 .related-cat-card:hover {
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(63, 111, 123, 0.25);
+}
+
+.tax-product_cat.term-100 .related-cat-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.tax-product_cat.term-100 .related-cat-label {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ========================================================================== */
+/* SEO CONTENT SECTION                                                        */
+/* ========================================================================== */
+.tax-product_cat.term-100 .seo-content-section {
+    padding: 80px 20px;
+    background-color: #f0f7f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper > h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper > p {
+    font-size: 1.05rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper > p strong {
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper > p a {
+    color: #3f6f7b;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(63, 111, 123, 0.3);
+    transition: all 0.2s ease;
+}
+
+.tax-product_cat.term-100 .seo-content-wrapper > p a:hover {
+    color: #3f6f7b;
+    border-bottom-color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* TRENDS / LO MAS BUSCADO                                                    */
+/* ========================================================================== */
+.tax-product_cat.term-100 .trends-section {
+    padding: 70px 20px;
+    background-color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-100 .trends-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-100 .trends-wrapper h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.tax-product_cat.term-100 .trends-wrapper > p {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.85;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-100 .trends-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tax-product_cat.term-100 .trend-link {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #4dd2d0;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.tax-product_cat.term-100 .trend-link:hover {
+    background-color: #4dd2d0;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                 */
+/* ========================================================================== */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-100 .trust-bar-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tax-product_cat.term-100 .related-cats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- Movil --- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-100 .hero-section-container {
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-100 .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .tax-product_cat.term-100 .hero-content .hero-tagline {
+        font-size: 1.05rem;
+    }
+
+    .tax-product_cat.term-100 .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-100 .trust-bar-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-100 .trust-item {
+        padding: 15px;
+    }
+
+    .tax-product_cat.term-100 .related-cats-section {
+        padding: 50px 20px;
+    }
+
+    .tax-product_cat.term-100 .related-cats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .tax-product_cat.term-100 .related-cat-card {
+        padding: 22px 12px;
+    }
+
+    .tax-product_cat.term-100 .related-cat-icon {
+        font-size: 2rem;
+    }
+
+    .tax-product_cat.term-100 .related-cat-label {
+        font-size: 0.88rem;
+    }
+
+    .tax-product_cat.term-100 .seo-content-section {
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-100 .seo-content-wrapper > h2 {
+        font-size: 1.5rem;
+    }
+
+    .tax-product_cat.term-100 .trends-section {
+        padding: 50px 20px;
+    }
+
+    .tax-product_cat.term-100 .trend-link {
+        padding: 9px 18px;
+        font-size: 0.88rem;
+    }
+}
