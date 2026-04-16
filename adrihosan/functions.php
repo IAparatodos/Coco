@@ -788,10 +788,8 @@ function adrihosan_setup_espejos_negros_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    // Usamos before/after_main_content (siempre se ejecutan, haya o no productos)
-    // en lugar de before/after_shop_loop (no disparan si la categoria esta vacia).
-    add_action('woocommerce_before_main_content', 'adrihosan_espejos_negros_contenido_superior', 15);
-    add_action('woocommerce_after_main_content', 'adrihosan_espejos_negros_contenido_inferior', 5);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_negros_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_negros_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
