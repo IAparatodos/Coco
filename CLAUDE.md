@@ -85,6 +85,16 @@ WooCommerce **NO dispara** los hooks `woocommerce_before_shop_loop` y `woocommer
 
 **Solución correcta**: asignar al menos 1 producto a la categoría desde WooCommerce. NO modificar los hooks a `before/after_main_content` para evitarlo, porque rompe la coherencia con las otras 44+ categorías que usan el patrón estándar.
 
+## REGLA: URLs en el código PHP de categorías
+
+Cuando generes enlaces en los archivos `inc/category-*.php` y **no tengas claro** la URL exacta de una categoría, producto o página, usa siempre la home como fallback:
+
+```
+https://www.adrihosan.com/
+```
+
+**NUNCA** inventes slugs ni URLs que no hayas verificado que existen. Es preferible enlazar a la home que generar un 404.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
