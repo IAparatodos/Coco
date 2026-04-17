@@ -75,6 +75,16 @@ Para backgrounds y borders de secciones se permiten **solo** estos neutros deriv
 - Categoría Zellige perdiendo `#4dd2d0` corporativo → corregido.
 - **Error generalizado**: múltiples categorías usan la paleta antigua ampliada de azules (`#1a3a4a`, `#3a5a6a`, `#2a7a8a`, `#7cc8e8`). Deben migrarse progresivamente a la identidad corporativa real de 2 colores.
 
+## REGLA CRÍTICA: Categorías nuevas necesitan al menos 1 producto asignado
+
+WooCommerce **NO dispara** los hooks `woocommerce_before_shop_loop` y `woocommerce_after_shop_loop` cuando la categoría está vacía. Como el patrón estándar de Adrihosan engancha `_contenido_superior()` y `_contenido_inferior()` a esos hooks, si la categoría no tiene productos asignados la página solo muestra **header + footer** (más bloques globales de reseñas/envíos).
+
+**Síntoma**: visitas `/categoria-producto/{slug}/`, la categoría existe en WP, no hay error PHP, pero el contenido (hero, trust bar, filtros, FAQs, etc.) no aparece.
+
+**Causa**: 0 productos asignados a esa categoría.
+
+**Solución correcta**: asignar al menos 1 producto a la categoría desde WooCommerce. NO modificar los hooks a `before/after_main_content` para evitarlo, porque rompe la coherencia con las otras 44+ categorías que usan el patrón estándar.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
@@ -93,13 +103,18 @@ Este archivo contiene:
 3. Si añades un lazy-load o cualquier sistema de carga condicional, asegúrate de que cubre TODAS las categorías, no solo las que existían antes
 4. **Consultar la rama `claude/update-category-2358-links-VWjok`** como referencia de la versión funcional
 
-### Categorías registradas (45 total):
+### Categorías registradas (50 total):
 
 | ID | Nombre | Archivo contenido | CSS individual |
 |----|--------|-------------------|----------------|
 | 99 | Muebles de Baño | category-muebles-bano.php | category-99.css |
+| 100 | Muebles de Baño con Patas | category-muebles-bano-patas.php | category-100.css |
+| 101 | Muebles de Baño Suspendidos | category-muebles-bano-suspendidos.php | category-101.css |
+| 103 | Columnas de Baño | category-columnas-bano.php | category-103.css |
 | 2421 | Muebles Baño Pequeños | category-muebles-bano-pequeno.php | category-2421.css |
 | 2428 | Muebles Baño Rústicos | category-muebles-bano-rusticos.php | category-2428.css |
+| 2528 | Ofertas Muebles de Baño | category-ofertas-muebles-bano.php | category-2528.css |
+| 5141 | Espejos de Baño Negros | category-espejos-negros.php | category-5141.css |
 | 2083 | Baño Imitación | category-bano-imitacion.php | category-2083.css |
 | 4876 | Cocina Imitación | category-cocina-imitacion.php | category-4876.css |
 | 4862 | Hidráulica Original | category-hidraulica-original.php | category-4862.css |
@@ -207,6 +222,39 @@ Cada archivo CSS de categoría debe contener (en este orden):
 8. **Responsive móvil** - `@media (max-width: 768px)`
 9. **Responsive tablet** - `@media (max-width: 1024px)`
 
+### Widget Filter Everything Pro: ID compartidos por familia
+
+Para mantener consistencia de filtros dentro de una misma familia de productos, varias categorías comparten el mismo widget FE:
+
+| Familia | ID widget FE | Categorías que lo usan |
+|---------|--------------|------------------------|
+| Muebles de baño | `427306` | 99, 100, 101, 103, 2421, 2428, 2528 |
+
+**Nota**: Si una nueva categoría de la familia "muebles de baño" necesita filtros, reusar `427306` por defecto. Solo crear un widget nuevo si los atributos filtrables son distintos (p. ej. **espejos negros (5141)** usa hoy `427306` con un `TODO` para sustituirlo por un widget propio cuando Ricardo lo cree, ya que los espejos no comparten todos los atributos con los muebles).
+
+### Patrón: Fix círculo de contacto Ricardo (deformación en flex)
+
+Cuando el bloque `contact-help-common .contact-intro` tiene un `<h2>` largo (más de una línea), el `<img>` de Ricardo se deforma horizontalmente porque el contenedor flex le aplica `flex: 1` por defecto.
+
+**Solución estándar** (replicar en cada `category-{ID}.css` que use `contact-help-common`):
+
+```css
+.tax-product_cat.term-{ID} .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-{ID} .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+```
+
+Aplicado ya en: 100, 101, 103, 5141.
+
 ### Categorías con FAQs de clases BEM (no comunes)
 
 La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) en vez de las comunes (`faq-section-common`). El JS de `category-common.js` ya soporta ambos sistemas. Si se crean nuevas categorías, usar las clases comunes (`faq-section-common`, `faq-item-common`, `faq-question-common`).
@@ -265,6 +313,18 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
   - `rgba(26, 58, 74, ...)`, `rgba(42, 122, 138, ...)` → `rgba(63, 111, 123, ...)`
 - **Categoría 2428 ahora es la referencia canónica** de la identidad corporativa real.
 - **Lección aprendida**: El estilo "rústico" lo aportan las **imágenes de productos**, NUNCA el CSS. La identidad corporativa de Adrihosan es estricta: solo `#4dd2d0` + `#3f6f7b` + Poppins. Documentado en la regla "Identidad corporativa Adrihosan" al inicio de este archivo.
+
+#### Nuevas categorías rama `claude/fix-category-2093-error-2BnHs`
+- **100 - Muebles de Baño con Patas**: PHP + CSS + 4 trust items + 5 related cards + FAQs + Ricardo. Hero `muebles-de-bano-con-patas-Adrihosan.jpg`. Widget FE `427306`.
+- **103 - Columnas de Baño**: PHP + CSS + 4 trust items + 5 related cards + FAQs + Ricardo. Hero `columnas-de-bano-Adrihosan.jpg`. Widget FE `427306`.
+- **2528 - Ofertas Muebles de Baño**: PHP + CSS + slugs corregidos (`muebles-de-bano-baratos`, `mueble-lavabo-pequeno`) + sale_flash badge `-XX%`. Widget FE `427306`.
+- **5141 - Espejos de Baño Negros**: PHP + CSS + 4 trust items + bumper a grifería negra + 4 related cards (LED, Redondos, Todos Espejos, Mamparas Negras) + 5 trends + 5 FAQs + Ricardo. Hero `espejos-de-bano-negros-Adrihosan.jpg`. Widget FE `427306` con `TODO` para widget propio de espejos.
+
+#### Aprendizaje crítico (cat 5141): hooks vacíos
+- **Síntoma**: tras crear cat 5141 con el patrón estándar, la página solo mostraba header + footer. Sin error PHP.
+- **Causa**: la categoría no tenía productos asignados → WooCommerce omite `woocommerce_before_shop_loop` y `woocommerce_after_shop_loop`.
+- **Solución NO recomendada**: cambiar a `woocommerce_before_main_content` / `woocommerce_after_main_content` (rompe coherencia con las otras 49 categorías).
+- **Solución correcta**: asignar al menos un producto desde WooCommerce admin. Documentado como regla crítica al inicio del archivo.
 
 ### Categorías pendientes de migración CSS
 
