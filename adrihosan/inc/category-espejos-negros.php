@@ -106,7 +106,7 @@ function adrihosan_espejos_negros_contenido_inferior() {
             <div class="bumper-content">
                 <h2>El conjunto contempor&aacute;neo: espejo negro + griferia negra</h2>
                 <p>Combina tu espejo negro con grifer&iacute;a a juego para un conjunto contempor&aacute;neo y coherente. La l&iacute;nea oscura unifica el ba&ntilde;o y multiplica la sensaci&oacute;n de dise&ntilde;o.</p>
-                <a href="https://www.adrihosan.com/categoria-producto/grifos/grifos-negros/" class="bumper-btn">Ver Grifer&iacute;a Negra</a>
+                <a href="https://www.adrihosan.com/categoria-producto/griferia/griferia-bano/griferia-negra-para-bano/" class="bumper-btn">Ver Grifer&iacute;a Negra</a>
             </div>
         </div>
     </section>
@@ -129,7 +129,7 @@ function adrihosan_espejos_negros_contenido_inferior() {
                     <div class="related-cat-icon">&#129685;</div>
                     <div class="related-cat-label">Todos los Espejos</div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/mamparas/mamparas-negras/" class="related-cat-card">
+                <a href="https://www.adrihosan.com/categoria-producto/mamparas/mampara-negra/" class="related-cat-card">
                     <div class="related-cat-icon">&#128703;</div>
                     <div class="related-cat-label">Mamparas Negras</div>
                 </a>
@@ -143,7 +143,7 @@ function adrihosan_espejos_negros_contenido_inferior() {
             <h2>Espejos de ba&ntilde;o negros: el acento decorativo que define un ba&ntilde;o moderno</h2>
             <p>Los <strong>espejos de ba&ntilde;o negros</strong> son una de las apuestas decorativas con mayor impacto visual a m&iacute;nimo coste. Un marco negro mate o satinado convierte un elemento puramente funcional en un acento gr&aacute;fico que define el car&aacute;cter del ba&ntilde;o entero. Funcionan especialmente bien en <strong>ambientes modernos, industriales y minimalistas</strong>, pero combinan tambi&eacute;n con propuestas n&oacute;rdicas, japandi y estilos boho-mediterr&aacute;neos. La clave est&aacute; en la versatilidad: el negro nunca compite con el resto de la decoraci&oacute;n, simplemente la enmarca.</p>
             <p>En la categor&iacute;a encontrar&aacute;s las dos grandes familias: <strong>espejos negros con luz LED integrada</strong> (la mayor&iacute;a con funci&oacute;n antivaho activable por interruptor t&aacute;ctil) y <strong>espejos negros sin iluminaci&oacute;n</strong> para ba&ntilde;os que ya cuentan con buena luz cenital o como complemento decorativo en zonas de paso. Las formas dominantes son el redondo (perfecto para romper la geometr&iacute;a de muebles rectangulares), el rectangular (aporta amplitud visual sobre encimeras alargadas) y el ovalado (suaviza l&iacute;neas y funciona en ba&ntilde;os m&aacute;s cl&aacute;sicos). Disponemos de anchos desde <strong>60&nbsp;cm</strong> para ba&ntilde;os peque&ntilde;os hasta <strong>120&nbsp;cm</strong> para configuraciones de doble seno.</p>
-            <p>Para sacar el m&aacute;ximo partido a un espejo negro, conviene cuidar la <strong>coordinaci&oacute;n del conjunto</strong>: a&ntilde;ade <a href="https://www.adrihosan.com/categoria-producto/grifos/grifos-negros/">grifer&iacute;a negra</a> a juego, valora una <a href="https://www.adrihosan.com/categoria-producto/mamparas/mamparas-negras/">mampara con perfiles negros</a> y completa con peque&ntilde;os accesorios (toallero, portarrollos, dosificador) en el mismo tono. Si tu ba&ntilde;o es peque&ntilde;o, mant&eacute;n el resto de la paleta en blancos, beiges o grises claros para que el negro funcione como acento sin restar amplitud. Y si tu mueble es un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-suspendidos/">suspendido blanco</a> o un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-con-patas/">con patas en roble</a>, el contraste con el espejo negro genera la combinaci&oacute;n m&aacute;s buscada esta temporada.</p>
+            <p>Para sacar el m&aacute;ximo partido a un espejo negro, conviene cuidar la <strong>coordinaci&oacute;n del conjunto</strong>: a&ntilde;ade <a href="https://www.adrihosan.com/categoria-producto/griferia/griferia-bano/griferia-negra-para-bano/">grifer&iacute;a negra</a> a juego, valora una <a href="https://www.adrihosan.com/categoria-producto/mamparas/mampara-negra/">mampara con perfiles negros</a> y completa con peque&ntilde;os accesorios (toallero, portarrollos, dosificador) en el mismo tono. Si tu ba&ntilde;o es peque&ntilde;o, mant&eacute;n el resto de la paleta en blancos, beiges o grises claros para que el negro funcione como acento sin restar amplitud. Y si tu mueble es un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-suspendidos/col-mbl-blanco/">suspendido blanco</a> o un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-con-patas/col-mbl-roble/">con patas en roble</a>, el contraste con el espejo negro genera la combinaci&oacute;n m&aacute;s buscada esta temporada.</p>
         </div>
     </section>
 
