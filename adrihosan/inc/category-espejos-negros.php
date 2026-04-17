@@ -157,7 +157,7 @@ function adrihosan_espejos_negros_contenido_inferior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/" class="trend-link">Redondos</a>
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-dorado-bano/" class="trend-link">Dorados</a>
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-antivaho/" class="trend-link">Antivaho</a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-sin-marco/" class="trend-link">Sin Marco</a>
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/" class="trend-link">Sin Marco</a>
             </div>
         </div>
     </section>
