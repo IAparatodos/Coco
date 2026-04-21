@@ -64,6 +64,15 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
                 </div>
             </section>
             <div id="catalogo-completo"></div>
+
+            <!-- CONSEJO ADRIA (Filtros) -->
+            <div class="adria-tip-box">
+                <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Forma</strong> (Redondo, Rectangular, Ovalado, Irregular), <strong>Iluminaci&oacute;n</strong> (Con luz LED o Sin luz), <strong>Ancho</strong> y <strong>Funciones</strong> (Antivaho, Bluetooth) para encontrar el espejo ideal para tu ba&ntilde;o. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+            </div>
+
+            <!-- WIDGET FILTROS Filter Everything Pro -->
+            <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
+
             <!-- WRAPPER AJAX para Filter Everything Pro -->
             <div id="fe-products-wrapper">
             <?php
