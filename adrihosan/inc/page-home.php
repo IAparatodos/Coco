@@ -11,6 +11,7 @@
 function adrihosan_home_contenido() {
     ob_start();
     ?>
+    <div class="home-adrihosan">
     <!-- 1. HERO SECTION -->
     <section class="home-hero" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/08/home-Adrihosan.jpg');">
         <div class="home-hero-content">
@@ -204,6 +205,7 @@ function adrihosan_home_contenido() {
             </div>
         </div>
     </section>
+    </div><!-- /.home-adrihosan -->
     <?php
     return ob_get_clean();
 }
