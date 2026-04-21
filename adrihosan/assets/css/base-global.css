@@ -698,3 +698,28 @@ html {
     padding-right: 20px;
     box-sizing: border-box;
 }
+
+/* ========================================================================== */
+/* CONSEJO ADRIA (bloque comun de ayuda sobre filtros)                        */
+/* Usar en cualquier categoria con <div class="adria-tip-box">                */
+/* ========================================================================== */
+.adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0f7f8;
+    border-left: 4px solid #3f6f7b;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.adria-tip-box strong {
+    color: #3f6f7b;
+}
