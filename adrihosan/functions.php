@@ -1819,6 +1819,19 @@ require get_template_directory() . '/inc/category-muebles-bano-patas.php';
 require get_template_directory() . '/inc/category-columnas-bano.php';
 require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
 require get_template_directory() . '/inc/category-espejos-negros.php';
+require get_template_directory() . '/inc/page-home.php';
+
+// ============================================================================
+// PAGE 164094 - HOME ADRIHOSAN
+// Reemplaza el contenido Gutenberg con nuestro PHP limpio (inc/page-home.php)
+// ============================================================================
+add_filter('the_content', 'adrihosan_home_reemplazar_contenido', 99);
+function adrihosan_home_reemplazar_contenido($content) {
+    if (is_page(164094) && in_the_loop() && is_main_query()) {
+        return adrihosan_home_contenido();
+    }
+    return $content;
+}
 
 // =============================================================================
 // CATEGORÍA 2350 - SUELO TÉCNICO EXTERIOR (Modularizado a inc/category-suelo-tecnico.php)
