@@ -133,6 +133,19 @@ function adrihosan_cargar_css_categoria() {
             }
         }
     }
+
+    // Home Adrihosan (page ID 164094)
+    if (is_page(164094)) {
+        $home_css_path = get_stylesheet_directory() . '/assets/css/page-home.css';
+        if (file_exists($home_css_path)) {
+            wp_enqueue_style(
+                'adrihosan-page-home',
+                get_stylesheet_directory_uri() . '/assets/css/page-home.css',
+                array(),
+                filemtime($home_css_path)
+            );
+        }
+    }
 }
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
