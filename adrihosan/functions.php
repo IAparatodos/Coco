@@ -1828,7 +1828,7 @@ include get_template_directory() . '/inc/page-home.php';
 
 add_filter('the_content', 'adrihosan_home_reemplazar_contenido', 99);
 function adrihosan_home_reemplazar_contenido($content) {
-    if (is_page(164094) && in_the_loop() && is_main_query() && function_exists('adrihosan_home_contenido')) {
+    if ((is_page(164094) || is_front_page()) && in_the_loop() && is_main_query() && function_exists('adrihosan_home_contenido')) {
         return adrihosan_home_contenido();
     }
     return $content;

@@ -134,8 +134,8 @@ function adrihosan_cargar_css_categoria() {
         }
     }
 
-    // Home Adrihosan (page ID 164094)
-    if (is_page(164094)) {
+    // Home Adrihosan (page ID 164094 o front page)
+    if (is_page(164094) || is_front_page()) {
         $home_css_path = get_stylesheet_directory() . '/assets/css/page-home.css';
         if (file_exists($home_css_path)) {
             wp_enqueue_style(
