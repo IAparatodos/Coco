@@ -95,6 +95,70 @@ https://www.adrihosan.com/
 
 **NUNCA** inventes slugs ni URLs que no hayas verificado que existen. Es preferible enlazar a la home que generar un 404.
 
+## REGLA CRÍTICA: Páginas estáticas (no categorías) se migran con `front-page.php` o template propio
+
+Para migrar páginas normales de WordPress (no categorías de producto) de Gutenberg a PHP+CSS, **NO** usar el filtro `the_content`. Este filtro puede fallar por múltiples razones (caché LiteSpeed, condiciones `is_page()`/`in_the_loop()` que no se cumplen, plugins que rompen el flujo, etc.).
+
+**En su lugar, usar un template de WordPress que sobrescriba la jerarquía:**
+
+### Patrón para la portada estática (Home Adrihosan, page 164094)
+
+1. Crear `adrihosan/inc/page-home.php` con la función `adrihosan_home_contenido()` que devuelve HTML vía `ob_start()` / `ob_get_clean()`.
+2. `include` esa función en `functions.php` (no require, por seguridad):
+   ```php
+   include get_template_directory() . '/inc/page-home.php';
+   ```
+3. Crear `adrihosan/front-page.php` en la **raíz del tema** (al nivel de `functions.php`, `header.php`, `footer.php`). WordPress lo usa automáticamente para la portada estática, sin filtros ni condicionales:
+   ```php
+   <?php
+   $home_css_path = get_stylesheet_directory() . '/assets/css/page-home.css';
+   if ( file_exists( $home_css_path ) ) {
+       wp_enqueue_style(
+           'adrihosan-page-home',
+           get_stylesheet_directory_uri() . '/assets/css/page-home.css',
+           array(),
+           filemtime( $home_css_path )
+       );
+   }
+
+   get_header();
+   ?>
+       <main id="primary" class="site-main">
+           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+               <div class="entry-content">
+                   <?php
+                   if ( function_exists( 'adrihosan_home_contenido' ) ) {
+                       echo adrihosan_home_contenido();
+                   } else {
+                       while ( have_posts() ) : the_post(); the_content(); endwhile;
+                   }
+                   ?>
+               </div>
+           </article>
+       </main>
+   <?php
+   get_footer();
+   ```
+4. El CSS se encola **directamente desde el template** — no depende de `is_page()` ni de funciones hookeadas a `wp_enqueue_scripts`.
+5. El CSS usa un wrapper `.home-adrihosan` (no `.page-id-164094`) para no depender de que WP añada el body class correcto.
+
+### Patrón para otras páginas estáticas (no portada)
+
+Para páginas que **no** son la portada estática, usar templates específicos por slug o ID:
+- `page-{slug}.php` (ej: `page-contacto.php`)
+- `page-{ID}.php` (ej: `page-123.php`)
+
+Mismo patrón: encolar CSS directamente en el template, llamar a la función de contenido vía `function_exists()`.
+
+### Por qué NO usar `the_content` filter
+
+- **Caché LiteSpeed**: sirve HTML antiguo sin la inyección del filtro.
+- **Condiciones frágiles**: `is_page(ID)`, `in_the_loop()`, `is_main_query()` pueden fallar en combinaciones concretas.
+- **Prioridad de filtros**: otros plugins/themes pueden interferir.
+- **Fallback complejo**: si falla silenciosamente, no hay forma clara de debuggear.
+
+Con `front-page.php` o `page-{slug}.php`, WordPress **siempre** usa ese template — es más predecible y robusto.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
