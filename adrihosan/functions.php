@@ -1456,6 +1456,9 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
 
             <!-- WIDGET FILTROS Filter Everything Pro -->
             <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -1465,6 +1468,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
     function adrihosan_contenido_inferior_espejos() {
         if ( is_product_category( 102 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="adri-seo-espejos adri-espejos-full-width">
                 <div class="adri-seo-espejos__container">
                     <h2>Guía Completa para Comprar el Espejo de Baño Ideal</h2>
