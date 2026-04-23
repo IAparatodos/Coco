@@ -221,6 +221,70 @@ html {
 }
 
 /* ========================================================================== */
+/* ESTILOS UNIFICADOS PARA BLOQUE SEO                                         */
+/* ========================================================================== */
+.ap-seo-content-section {
+    padding: 60px 20px;
+    background-color: #f0f7f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ap-seo-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.ap-seo-content-wrapper h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ap-seo-content-wrapper h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 600;
+    color: #3f6f7b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.ap-seo-content-wrapper p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper strong {
+    font-weight: 600;
+    color: #3f6f7b;
+}
+
+.ap-seo-content-wrapper ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.ap-seo-content-wrapper a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ap-seo-content-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================================================== */
 /* ESTILOS UNIFICADOS PARA FAQ                                                */
 /* ========================================================================== */
 .faq-section-common {
