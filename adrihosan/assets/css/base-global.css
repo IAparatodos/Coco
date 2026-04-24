@@ -221,6 +221,56 @@ html {
 }
 
 /* ========================================================================== */
+/* ESTILOS UNIFICADOS PARA BLOQUES PILL/TAG                                   */
+/* ========================================================================== */
+.ap-pill-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ap-pill-wrapper {
+    max-width: 1152px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ap-pill-wrapper h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin-bottom: 20px;
+}
+
+.ap-pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ap-pill-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #d4e3e6;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.ap-pill-tag:hover {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ========================================================================== */
 /* ESTILOS UNIFICADOS PARA BLOQUE SEO                                         */
 /* ========================================================================== */
 .ap-seo-content-section {
