@@ -1847,6 +1847,7 @@ include get_template_directory() . '/inc/reservas-google-auth.php';
 include get_template_directory() . '/inc/reservas-google-api.php';
 include get_template_directory() . '/inc/reservas-api.php';
 include get_template_directory() . '/inc/reservas-rest-routes.php';
+include get_template_directory() . '/inc/reservas-pipedrive.php';
 
 /* ========================================================================== */
 /* ESTILOS FINALES PARA LA TABLA DE COMPARACIÓN (MÓVIL) */

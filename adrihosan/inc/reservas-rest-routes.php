@@ -172,5 +172,9 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
         )
     );
 
+    if ( function_exists( 'adrihosan_pipedrive_process_booking' ) ) {
+        adrihosan_pipedrive_process_booking( $data );
+    }
+
     return new WP_REST_Response( [ 'ok' => true ], 200 );
 }
