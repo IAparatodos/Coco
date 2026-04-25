@@ -6,11 +6,10 @@
  *   ADRIA_PIPEDRIVE_API_TOKEN
  *
  * Optional:
- *   ADRIA_PIPEDRIVE_PIPELINE_ID   (pipeline donde crear el deal)
- *   ADRIA_PIPEDRIVE_STAGE_ID      (stage inicial del deal)
- *   ADRIA_PIPEDRIVE_OWNER_ID      (usuario asignado)
- *   ADRIA_PIPEDRIVE_LABEL_PRESENCIAL  (label para visitas presenciales, ej: "Visita Showroom")
- *   ADRIA_PIPEDRIVE_LABEL_VIRTUAL     (label para visitas virtuales, ej: "Web/Visita Showroom")
+ *   ADRIA_PIPEDRIVE_PIPELINE_ID       (pipeline "Leds web")
+ *   ADRIA_PIPEDRIVE_STAGE_PRESENCIAL  (stage ID de "Visita Showroom")
+ *   ADRIA_PIPEDRIVE_STAGE_VIRTUAL     (stage ID de "Visita Virtual")
+ *   ADRIA_PIPEDRIVE_OWNER_ID          (usuario asignado)
  */
 
 function adrihosan_pipedrive_api_token() {
@@ -119,14 +118,7 @@ function adrihosan_pipedrive_create_person( $name, $email, $phone ) {
 }
 
 function adrihosan_pipedrive_create_deal( $person_id, $data ) {
-    $visit_label = $data['visitType'] === 'presencial' ? 'Visita Showroom' : 'Web/Visita Showroom';
-
-    if ( $data['visitType'] === 'presencial' && defined( 'ADRIA_PIPEDRIVE_LABEL_PRESENCIAL' ) ) {
-        $visit_label = ADRIA_PIPEDRIVE_LABEL_PRESENCIAL;
-    }
-    if ( $data['visitType'] === 'virtual' && defined( 'ADRIA_PIPEDRIVE_LABEL_VIRTUAL' ) ) {
-        $visit_label = ADRIA_PIPEDRIVE_LABEL_VIRTUAL;
-    }
+    $visit_label = $data['visitType'] === 'presencial' ? 'Visita Showroom' : 'Visita Virtual';
 
     $title = sprintf(
         '%s – %s – %s',
@@ -142,14 +134,16 @@ function adrihosan_pipedrive_create_deal( $person_id, $data ) {
     ];
 
     $pipeline_id = defined( 'ADRIA_PIPEDRIVE_PIPELINE_ID' ) ? (int) ADRIA_PIPEDRIVE_PIPELINE_ID : 0;
-    $stage_id    = defined( 'ADRIA_PIPEDRIVE_STAGE_ID' ) ? (int) ADRIA_PIPEDRIVE_STAGE_ID : 0;
     $owner_id    = defined( 'ADRIA_PIPEDRIVE_OWNER_ID' ) ? (int) ADRIA_PIPEDRIVE_OWNER_ID : 0;
+
+    if ( $data['visitType'] === 'presencial' && defined( 'ADRIA_PIPEDRIVE_STAGE_PRESENCIAL' ) ) {
+        $body['stage_id'] = (int) ADRIA_PIPEDRIVE_STAGE_PRESENCIAL;
+    } elseif ( $data['visitType'] === 'virtual' && defined( 'ADRIA_PIPEDRIVE_STAGE_VIRTUAL' ) ) {
+        $body['stage_id'] = (int) ADRIA_PIPEDRIVE_STAGE_VIRTUAL;
+    }
 
     if ( $pipeline_id ) {
         $body['pipeline_id'] = $pipeline_id;
-    }
-    if ( $stage_id ) {
-        $body['stage_id'] = $stage_id;
     }
     if ( $owner_id ) {
         $body['owner_id'] = $owner_id;
