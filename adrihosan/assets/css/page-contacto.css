@@ -1,0 +1,891 @@
+/* ========================================================================== */
+/* PAGE-CONTACTO.CSS - Pagina de contacto Adrihosan                          */
+/* Identidad corporativa Adrihosan:                                          */
+/*   - Color corporativo CTA: #4dd2d0                                        */
+/*   - Color corporativo texto: #3f6f7b                                      */
+/*   - Tipografia corporativa: Poppins                                       */
+/* ========================================================================== */
+
+.contacto-page {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+}
+
+.contacto-shell {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+/* ─── HERO ─── */
+.contacto-hero {
+    padding: 60px 0 44px;
+    background: linear-gradient(135deg, #3f6f7b 0%, #4dd2d0 100%);
+    color: #ffffff;
+}
+
+.contacto-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    opacity: 0.85;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-lead {
+    max-width: 680px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.92;
+}
+
+/* ─── CONTACT METHODS GRID ─── */
+.contacto-methods {
+    padding: 48px 0;
+    background: #f0f7f8;
+}
+
+.contacto-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.contacto-method-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px 16px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.contacto-method-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(63, 111, 123, 0.1);
+}
+
+.contacto-method-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+    object-fit: contain;
+}
+
+.contacto-method-card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 6px;
+}
+
+.contacto-method-card p {
+    font-size: 0.8rem;
+    color: #3f6f7b;
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0.75;
+}
+
+/* ─── SECTION HEADERS ─── */
+.contacto-section-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contacto-section-header h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-section-header p {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #3f6f7b;
+    opacity: 0.85;
+}
+
+.contacto-meta-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.contacto-meta-pills span {
+    background: rgba(63, 111, 123, 0.08);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3f6f7b;
+}
+
+/* ─── RESERVATION SECTION ─── */
+.contacto-reservas {
+    padding: 56px 0 64px;
+    background: #ffffff;
+}
+
+/* Reservation components inherit from contacto-reservas.css */
+.contacto-reservas .reservas-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 32px;
+}
+
+.contacto-reservas .reservas-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.5;
+}
+
+.contacto-reservas .reservas-step:disabled {
+    cursor: default;
+}
+
+.contacto-reservas .reservas-step.is-active {
+    border-color: #4dd2d0;
+    background: #4dd2d0;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contacto-reservas .reservas-step.is-done {
+    border-color: #4dd2d0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contacto-reservas .reservas-step-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(63, 111, 123, 0.1);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.contacto-reservas .reservas-step.is-active .reservas-step-num {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+.contacto-reservas .reservas-step.is-done .reservas-step-num {
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.contacto-reservas .reservas-step-line {
+    width: 40px;
+    height: 2px;
+    background: #d4e3e6;
+    flex-shrink: 0;
+}
+
+.contacto-reservas .reservas-panel {
+    background: #f0f7f8;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(63, 111, 123, 0.08);
+}
+
+.contacto-reservas .reservas-panel h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-reservas .reservas-back-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.contacto-reservas .reservas-back {
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4dd2d0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contacto-reservas .reservas-back:hover {
+    text-decoration: underline;
+}
+
+.contacto-reservas .reservas-type-badge {
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(63, 111, 123, 0.08);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #3f6f7b;
+}
+
+/* Type cards */
+.contacto-reservas .reservas-type-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contacto-reservas .reservas-type-card {
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.contacto-reservas .reservas-type-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(63, 111, 123, 0.1);
+}
+
+.contacto-reservas .reservas-type-card.is-selected {
+    border-color: #4dd2d0;
+    background: rgba(77, 210, 208, 0.08);
+}
+
+.contacto-reservas .reservas-type-icon {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.contacto-reservas .reservas-type-svg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.contacto-reservas .reservas-type-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 8px;
+}
+
+.contacto-reservas .reservas-type-card p {
+    font-size: 0.9rem;
+    color: #3f6f7b;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.contacto-reservas .reservas-type-card ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.85rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+}
+
+/* Calendar */
+.contacto-reservas .reservas-calendar {
+    margin-top: 8px;
+}
+
+.contacto-reservas .reservas-week-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.contacto-reservas .reservas-week-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #d4e3e6;
+    background: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.contacto-reservas .reservas-week-btn:hover:not(:disabled) {
+    border-color: #4dd2d0;
+    color: #4dd2d0;
+}
+
+.contacto-reservas .reservas-week-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.contacto-reservas .reservas-week-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+}
+
+.contacto-reservas .reservas-days {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.contacto-reservas .reservas-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 8px;
+    border: 2px solid #d4e3e6;
+    border-radius: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.contacto-reservas .reservas-day:hover:not(.is-disabled) {
+    border-color: #4dd2d0;
+}
+
+.contacto-reservas .reservas-day.is-selected {
+    border-color: #4dd2d0;
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.contacto-reservas .reservas-day.is-disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.contacto-reservas .reservas-day-name {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contacto-reservas .reservas-day-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contacto-reservas .reservas-day-month {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.contacto-reservas .reservas-day-count {
+    margin-top: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 50px;
+    background: rgba(77, 210, 208, 0.15);
+    color: #3f6f7b;
+}
+
+.contacto-reservas .reservas-day.is-selected .reservas-day-count {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+.contacto-reservas .reservas-day.is-disabled .reservas-day-count {
+    display: none;
+}
+
+.contacto-reservas .reservas-day-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    margin-bottom: 12px;
+}
+
+/* Slots */
+.contacto-reservas .reservas-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.contacto-reservas .reservas-slot {
+    padding: 10px 18px;
+    border: 2px solid #d4e3e6;
+    border-radius: 10px;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.contacto-reservas .reservas-slot:hover {
+    border-color: #4dd2d0;
+    background: rgba(77, 210, 208, 0.06);
+}
+
+.contacto-reservas .reservas-slot.is-selected {
+    border-color: #4dd2d0;
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.contacto-reservas .reservas-slots-empty,
+.contacto-reservas .reservas-slots-loading {
+    padding: 24px;
+    text-align: center;
+    color: #3f6f7b;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* Summary */
+.contacto-reservas .reservas-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.contacto-reservas .reservas-summary-tag {
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: rgba(63, 111, 123, 0.08);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3f6f7b;
+}
+
+/* Form */
+.contacto-reservas .reservas-form {
+    display: grid;
+    gap: 16px;
+}
+
+.contacto-reservas .reservas-form-row {
+    display: grid;
+    gap: 16px;
+}
+
+.contacto-reservas .reservas-form-row--half {
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-reservas .reservas-form input[type="text"],
+.contacto-reservas .reservas-form input[type="email"],
+.contacto-reservas .reservas-form input[type="tel"],
+.contacto-reservas .reservas-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #d4e3e6;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    background: #ffffff;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.contacto-reservas .reservas-form input:focus,
+.contacto-reservas .reservas-form textarea:focus {
+    outline: none;
+    border-color: #4dd2d0;
+}
+
+.contacto-reservas .reservas-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contacto-reservas .reservas-submit {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    background: #4dd2d0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contacto-reservas .reservas-submit:hover {
+    background: #3f6f7b;
+    transform: translateY(-2px);
+}
+
+.contacto-reservas .reservas-submit:disabled {
+    opacity: 0.5;
+    cursor: default;
+    transform: none;
+}
+
+/* Confirmation */
+.contacto-reservas .reservas-confirmation {
+    text-align: center;
+    padding: 48px 32px;
+}
+
+.contacto-reservas .reservas-done-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 16px;
+    background: #4dd2d0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contacto-reservas .reservas-confirmation h2 {
+    text-align: center;
+}
+
+.contacto-reservas .reservas-confirmation p {
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.contacto-reservas .reservas-done-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ─── SHOWROOM ─── */
+.contacto-showroom {
+    padding: 56px 0 64px;
+    background: #f0f7f8;
+}
+
+.contacto-showroom-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.contacto-showroom-photo img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
+
+.contacto-showroom-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.contacto-info-card {
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 16px;
+    padding: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-info-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 12px;
+}
+
+.contacto-info-card p {
+    font-size: 0.9rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0 0 6px;
+}
+
+.contacto-info-card a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacto-info-card a:hover {
+    text-decoration: underline;
+}
+
+.contacto-parking {
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: rgba(77, 210, 208, 0.1);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4dd2d0;
+}
+
+.contacto-map {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #d4e3e6;
+}
+
+.contacto-map iframe {
+    display: block;
+}
+
+/* ─── VIDEOLLAMADA ─── */
+.contacto-videollamada {
+    padding: 56px 0 64px;
+    background: #ffffff;
+}
+
+.contacto-videollamada-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.contacto-videollamada-photo img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+.contacto-videollamada-cta {
+    text-align: center;
+}
+
+/* ─── PHONE & WHATSAPP ─── */
+.contacto-telefono {
+    padding: 56px 0 64px;
+    background: #3f6f7b;
+    color: #ffffff;
+}
+
+.contacto-telefono .contacto-section-header h2 {
+    color: #ffffff;
+}
+
+.contacto-telefono .contacto-section-header p {
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+.contacto-telefono-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ─── FORM & EMAIL ─── */
+.contacto-formulario {
+    padding: 56px 0 64px;
+    background: #f0f7f8;
+}
+
+/* ─── BUTTONS ─── */
+.contacto-btn-cta {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 12px;
+    background: #4dd2d0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contacto-btn-cta:hover {
+    background: #3f6f7b;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.contacto-telefono .contacto-btn-cta {
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.contacto-btn-outline {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #4dd2d0;
+    color: #4dd2d0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contacto-btn-outline:hover {
+    background: #4dd2d0;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contacto-telefono .contacto-btn-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.contacto-telefono .contacto-btn-outline:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+    .contacto-hero {
+        padding: 40px 0 30px;
+    }
+
+    .contacto-methods-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .contacto-method-card {
+        padding: 18px 10px;
+    }
+
+    .contacto-method-card h3 {
+        font-size: 0.8rem;
+    }
+
+    .contacto-method-card p {
+        display: none;
+    }
+
+    .contacto-reservas .reservas-step-label {
+        display: none;
+    }
+
+    .contacto-reservas .reservas-step-line {
+        width: 24px;
+    }
+
+    .contacto-reservas .reservas-type-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-reservas .reservas-panel {
+        padding: 24px 18px;
+    }
+
+    .contacto-reservas .reservas-days {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacto-reservas .reservas-form-row--half {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-showroom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-showroom-photo img {
+        height: 200px;
+    }
+
+    .contacto-showroom-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-videollamada-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-videollamada-photo img {
+        height: 200px;
+    }
+
+    .contacto-telefono-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-btn-cta,
+    .contacto-btn-outline {
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .contacto-section-header h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
