@@ -1841,6 +1841,14 @@ require get_template_directory() . '/inc/category-ceramica-vives.php';
 require get_template_directory() . '/inc/category-navarti.php';             // Cat 4722
 
 /* ========================================================================== */
+/* SISTEMA DE RESERVAS                                                        */
+/* ========================================================================== */
+include get_template_directory() . '/inc/reservas-google-auth.php';
+include get_template_directory() . '/inc/reservas-google-api.php';
+include get_template_directory() . '/inc/reservas-api.php';
+include get_template_directory() . '/inc/reservas-rest-routes.php';
+
+/* ========================================================================== */
 /* ESTILOS FINALES PARA LA TABLA DE COMPARACIÓN (MÓVIL) */
 /* ========================================================================== */
 add_action('wp_head', function() {
