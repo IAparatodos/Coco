@@ -181,37 +181,63 @@
     transition: all 0.2s ease;
 }
 
-.cancelar-btn {
+/* Selectores .cancelar-page X para subir especificidad por encima de
+ * cualquier regla del tema en a, .entry-content a, main a, etc. */
+.cancelar-page .cancelar-btn,
+.cancelar-page a.cancelar-btn {
     background: #4dd2d0;
     color: #ffffff !important;
     border: 2px solid #4dd2d0;
 }
 
-.cancelar-btn:hover {
+.cancelar-page .cancelar-btn:hover,
+.cancelar-page a.cancelar-btn:hover {
     background: #3f6f7b;
     border-color: #3f6f7b;
     color: #ffffff !important;
 }
 
-.cancelar-btn-outline {
+.cancelar-page .cancelar-btn-outline,
+.cancelar-page a.cancelar-btn-outline {
     background: transparent;
     border: 2px solid #4dd2d0;
     color: #4dd2d0 !important;
 }
 
-.cancelar-btn-outline:hover {
+.cancelar-page .cancelar-btn-outline:hover,
+.cancelar-page a.cancelar-btn-outline:hover {
     background: #4dd2d0;
     color: #ffffff !important;
 }
 
-.cancelar-btn-danger {
+.cancelar-page .cancelar-btn-danger,
+.cancelar-page button.cancelar-btn-danger {
     background: #3f6f7b;
     color: #ffffff !important;
     border: 2px solid #3f6f7b;
 }
 
-.cancelar-btn-danger:hover {
+.cancelar-page .cancelar-btn-danger:hover,
+.cancelar-page button.cancelar-btn-danger:hover {
     opacity: 0.85;
+    color: #ffffff !important;
+}
+
+/* Cubrir tambien hijos por si el tema mete span alrededor del texto */
+.cancelar-page .cancelar-btn,
+.cancelar-page .cancelar-btn *,
+.cancelar-page .cancelar-btn-danger,
+.cancelar-page .cancelar-btn-danger * {
+    color: #ffffff !important;
+}
+
+.cancelar-page .cancelar-btn-outline,
+.cancelar-page .cancelar-btn-outline * {
+    color: #4dd2d0 !important;
+}
+
+.cancelar-page .cancelar-btn-outline:hover,
+.cancelar-page .cancelar-btn-outline:hover * {
     color: #ffffff !important;
 }
 
