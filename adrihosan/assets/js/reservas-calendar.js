@@ -141,11 +141,15 @@
             var disabled = past || closed || slotCount === 0;
             var selected = state.selectedDate === dateStr;
 
-            var btn = document.createElement('button');
+            var btn = document.createElement('div');
             btn.className = 'reservas-day';
             if (selected) btn.className += ' is-selected';
             if (disabled) btn.className += ' is-disabled';
             btn.setAttribute('data-date', dateStr);
+            if (!disabled) {
+                btn.setAttribute('role', 'button');
+                btn.setAttribute('tabindex', '0');
+            }
 
             btn.innerHTML =
                 '<span class="reservas-day-name">' + DAYS_SHORT[d.getDay()] + '</span>' +
@@ -154,9 +158,15 @@
                 '<span class="reservas-day-count">' + slotCount + ' huecos</span>';
 
             if (!disabled) {
-                btn.addEventListener('click', (function (ds) {
-                    return function () { selectDay(ds); };
-                })(dateStr));
+                (function (ds) {
+                    btn.addEventListener('click', function () { selectDay(ds); });
+                    btn.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            selectDay(ds);
+                        }
+                    });
+                })(dateStr);
             }
 
             strip.appendChild(btn);
