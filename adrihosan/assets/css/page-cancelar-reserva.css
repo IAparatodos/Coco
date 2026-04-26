@@ -183,35 +183,36 @@
 
 .cancelar-btn {
     background: #4dd2d0;
-    color: #ffffff;
+    color: #ffffff !important;
     border: 2px solid #4dd2d0;
 }
 
 .cancelar-btn:hover {
     background: #3f6f7b;
     border-color: #3f6f7b;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .cancelar-btn-outline {
     background: transparent;
     border: 2px solid #4dd2d0;
-    color: #4dd2d0;
+    color: #4dd2d0 !important;
 }
 
 .cancelar-btn-outline:hover {
     background: #4dd2d0;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .cancelar-btn-danger {
     background: #3f6f7b;
-    color: #ffffff;
+    color: #ffffff !important;
     border: 2px solid #3f6f7b;
 }
 
 .cancelar-btn-danger:hover {
     opacity: 0.85;
+    color: #ffffff !important;
 }
 
 .cancelar-btn-danger:disabled {
