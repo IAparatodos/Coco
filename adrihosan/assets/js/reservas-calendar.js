@@ -276,25 +276,32 @@
 
     function initStepNavigation() {
         var typeCards = document.querySelectorAll('.reservas-type-card');
+        var handleTypeCardActivate = function () {
+            state.visitType = this.getAttribute('data-type');
+
+            for (var j = 0; j < typeCards.length; j++) {
+                typeCards[j].classList.remove('is-selected');
+            }
+            this.classList.add('is-selected');
+
+            var badge = $('type-badge');
+            if (badge) {
+                badge.textContent = state.visitType === 'presencial' ? 'Presencial' : 'Virtual';
+            }
+
+            goToStep(2);
+            state.weekOffset = 0;
+            state.selectedDate = null;
+            state.selectedSlot = null;
+            fetchWeekAvailability();
+        };
         for (var i = 0; i < typeCards.length; i++) {
-            typeCards[i].addEventListener('click', function () {
-                state.visitType = this.getAttribute('data-type');
-
-                for (var j = 0; j < typeCards.length; j++) {
-                    typeCards[j].classList.remove('is-selected');
+            typeCards[i].addEventListener('click', handleTypeCardActivate);
+            typeCards[i].addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleTypeCardActivate.call(this);
                 }
-                this.classList.add('is-selected');
-
-                var badge = $('type-badge');
-                if (badge) {
-                    badge.textContent = state.visitType === 'presencial' ? 'Presencial' : 'Virtual';
-                }
-
-                goToStep(2);
-                state.weekOffset = 0;
-                state.selectedDate = null;
-                state.selectedSlot = null;
-                fetchWeekAvailability();
             });
         }
 

@@ -100,7 +100,7 @@ function adrihosan_contacto_contenido() {
             <div class="reservas-panel" id="step-1">
                 <h2>&iquest;C&oacute;mo prefieres tu visita?</h2>
                 <div class="reservas-type-cards">
-                    <button class="reservas-type-card" data-type="presencial">
+                    <div class="reservas-type-card" data-type="presencial" role="button" tabindex="0">
                         <span class="reservas-type-icon"><img src="https://www.adrihosan.com/wp-content/uploads/2021/09/Localizador-contacto.svg" alt="" class="reservas-type-svg"></span>
                         <h3>Visita presencial</h3>
                         <p>En el showroom de Valencia. Ideal para ver materiales, comparar acabados y resolver dudas en persona.</p>
@@ -109,8 +109,8 @@ function adrihosan_contacto_contenido() {
                             <li>C/ Los Centelles, 48</li>
                             <li>Parking gratuito enfrente</li>
                         </ul>
-                    </button>
-                    <button class="reservas-type-card" data-type="virtual">
+                    </div>
+                    <div class="reservas-type-card" data-type="virtual" role="button" tabindex="0">
                         <span class="reservas-type-icon"><img src="https://www.adrihosan.com/wp-content/uploads/2022/04/video.svg" alt="" class="reservas-type-svg"></span>
                         <h3>Visita virtual</h3>
                         <p>Videollamada con Ricardo para ver cat&aacute;logo, resolver dudas y avanzar sin desplazarte.</p>
@@ -119,7 +119,7 @@ function adrihosan_contacto_contenido() {
                             <li>Online desde casa</li>
                             <li>Enlace por email</li>
                         </ul>
-                    </button>
+                    </div>
                 </div>
             </div>
 
