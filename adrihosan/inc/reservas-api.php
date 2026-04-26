@@ -10,7 +10,7 @@ function adrihosan_reservas_horarios() {
         2 => [ [ 'start' => '08:00', 'end' => '15:00' ] ], // Martes
         3 => [ [ 'start' => '08:00', 'end' => '15:00' ] ], // Miércoles
         4 => [ [ 'start' => '08:00', 'end' => '15:00' ] ], // Jueves
-        5 => [ [ 'start' => '08:00', 'end' => '13:30' ] ], // Viernes
+        5 => [ [ 'start' => '08:00', 'end' => '13:00' ] ], // Viernes
         6 => [ [ 'start' => '09:00', 'end' => '13:00' ] ], // Sábado
         0 => [],                                             // Domingo
     ];
@@ -24,8 +24,14 @@ function adrihosan_reservas_min_advance_hours() {
     return 12;
 }
 
+/**
+ * Buffer (en minutos) entre reserva y reserva. Se usa en dos sitios:
+ *  - Como separacion entre slots: paso = duration + buffer = 60 min.
+ *  - Como margen tras el ultimo slot antes del cierre: el ultimo slot
+ *    debe terminar buffer minutos antes del cierre.
+ */
 function adrihosan_reservas_last_slot_buffer() {
-    return 50;
+    return 15;
 }
 
 function adrihosan_reservas_max_weeks_ahead() {
@@ -90,7 +96,10 @@ function adrihosan_reservas_generar_slots( $date_str, $busy = [] ) {
                 ];
             }
 
-            $current += 15;
+            // Paso = duracion + buffer (= 45 + 15 = 60 min). Asi se respeta
+            // el margen entre reservas y los slots quedan en horas redondas
+            // a partir del inicio del horario.
+            $current += $duration + $buffer;
         }
     }
 
