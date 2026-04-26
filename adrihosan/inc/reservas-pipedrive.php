@@ -215,7 +215,10 @@ function adrihosan_pipedrive_create_deal( $person_id, $data ) {
         $body['pipeline_id'] = $pipeline_id;
     }
     if ( $owner_id ) {
-        $body['owner_id'] = $owner_id;
+        // Pipedrive API v1: en /deals el campo de propietario es user_id,
+        // no owner_id (que es el de /persons). Mezclar los nombres devuelve
+        // 'Invalid field(s) in the payload: owner_id' (HTTP 400).
+        $body['user_id'] = $owner_id;
     }
 
     $result = adrihosan_pipedrive_request( 'POST', '/deals', $body );
