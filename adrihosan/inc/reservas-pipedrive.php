@@ -16,12 +16,65 @@ function adrihosan_pipedrive_api_token() {
     return defined( 'ADRIA_PIPEDRIVE_API_TOKEN' ) ? ADRIA_PIPEDRIVE_API_TOKEN : '';
 }
 
-function adrihosan_pipedrive_log( $msg, $extra = null ) {
+/**
+ * Buffer de logs de la integracion durante la request actual.
+ * Si al terminar process_booking() hay algun error, se envia el buffer
+ * por email al admin para diagnostico (asi no hace falta mirar el log
+ * del servidor).
+ */
+function &adrihosan_pipedrive_log_buffer() {
+    static $buf = [];
+    return $buf;
+}
+
+function adrihosan_pipedrive_log( $msg, $extra = null, $is_error = false ) {
     $line = '[Adrihosan Pipedrive] ' . $msg;
     if ( $extra !== null ) {
         $line .= ' :: ' . wp_json_encode( $extra );
     }
     error_log( $line );
+
+    $buf =& adrihosan_pipedrive_log_buffer();
+    $buf[] = [
+        'time'     => gmdate( 'H:i:s' ),
+        'msg'      => $msg,
+        'extra'    => $extra,
+        'is_error' => (bool) $is_error,
+    ];
+}
+
+function adrihosan_pipedrive_send_error_email() {
+    $buf = adrihosan_pipedrive_log_buffer();
+    if ( empty( $buf ) ) {
+        return;
+    }
+    $has_error = false;
+    foreach ( $buf as $entry ) {
+        if ( ! empty( $entry['is_error'] ) ) {
+            $has_error = true;
+            break;
+        }
+    }
+    if ( ! $has_error ) {
+        return;
+    }
+
+    $body = "La integracion con Pipedrive ha fallado tras una reserva.\n\n";
+    $body .= "Traza completa de la request:\n\n";
+    foreach ( $buf as $entry ) {
+        $body .= '[' . $entry['time'] . '] ' . ( $entry['is_error'] ? 'ERROR: ' : '' ) . $entry['msg'] . "\n";
+        if ( $entry['extra'] !== null ) {
+            $body .= '  ' . wp_json_encode( $entry['extra'] ) . "\n";
+        }
+    }
+    $body .= "\nLa reserva en si ha funcionado (los emails al cliente y a comercial@ se han enviado),";
+    $body .= "\nsolo falta crear la persona/deal en Pipedrive manualmente o reintentar.";
+
+    wp_mail( 'comercial@adrihosan.com', '[Adrihosan] Fallo Pipedrive en reserva', $body );
+
+    // Limpiar buffer para que no se reenvie en otra request
+    $buf =& adrihosan_pipedrive_log_buffer();
+    $buf = [];
 }
 
 function adrihosan_pipedrive_request( $method, $endpoint, $body = null ) {
@@ -47,7 +100,7 @@ function adrihosan_pipedrive_request( $method, $endpoint, $body = null ) {
     if ( is_wp_error( $response ) ) {
         adrihosan_pipedrive_log( 'HTTP transport error in ' . $method . ' ' . $endpoint, [
             'msg' => $response->get_error_message(),
-        ] );
+        ], true );
         return $response;
     }
 
@@ -59,7 +112,7 @@ function adrihosan_pipedrive_request( $method, $endpoint, $body = null ) {
         adrihosan_pipedrive_log( 'API error ' . $code . ' in ' . $method . ' ' . $endpoint, [
             'response' => is_array( $data ) ? $data : substr( $raw, 0, 500 ),
             'sent'     => $body,
-        ] );
+        ], true );
         return new WP_Error( 'pipedrive_api_error', $data['error'] ?? 'API error', [ 'status' => $code ] );
     }
 
@@ -213,7 +266,8 @@ function adrihosan_pipedrive_add_note( $deal_id, $person_id, $data ) {
  */
 function adrihosan_pipedrive_process_booking( $data ) {
     if ( empty( adrihosan_pipedrive_api_token() ) ) {
-        adrihosan_pipedrive_log( 'Aborted: ADRIA_PIPEDRIVE_API_TOKEN not defined in wp-config.php' );
+        adrihosan_pipedrive_log( 'Aborted: ADRIA_PIPEDRIVE_API_TOKEN not defined in wp-config.php', null, true );
+        adrihosan_pipedrive_send_error_email();
         return;
     }
 
@@ -230,7 +284,8 @@ function adrihosan_pipedrive_process_booking( $data ) {
     } else {
         $new_person = adrihosan_pipedrive_create_person( $data['name'], $data['email'], $data['phone'] );
         if ( ! $new_person ) {
-            adrihosan_pipedrive_log( 'Failed to create person, aborting' );
+            adrihosan_pipedrive_log( 'Failed to create person, aborting', null, true );
+            adrihosan_pipedrive_send_error_email();
             return;
         }
         $person_id = $new_person['id'];
@@ -239,11 +294,16 @@ function adrihosan_pipedrive_process_booking( $data ) {
 
     $deal = adrihosan_pipedrive_create_deal( $person_id, $data );
     if ( ! $deal ) {
-        adrihosan_pipedrive_log( 'Failed to create deal, aborting' );
+        adrihosan_pipedrive_log( 'Failed to create deal, aborting', null, true );
+        adrihosan_pipedrive_send_error_email();
         return;
     }
     adrihosan_pipedrive_log( 'Created deal', [ 'deal_id' => $deal['id'] ] );
 
     adrihosan_pipedrive_add_note( $deal['id'], $person_id, $data );
     adrihosan_pipedrive_log( 'Added note to deal' );
+
+    // Por si alguna sub-llamada (busqueda, nota) tuvo error de API aunque
+    // el flujo principal haya seguido: enviar email igualmente.
+    adrihosan_pipedrive_send_error_email();
 }
