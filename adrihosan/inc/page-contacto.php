@@ -12,9 +12,9 @@ function adrihosan_contacto_contenido() {
     ob_start();
     ?>
 
-    <!-- HERO -->
-    <section class="contacto-hero">
-        <div class="contacto-shell">
+    <!-- HERO (mismo estilo que home, imagen provisional) -->
+    <section class="contacto-hero" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/08/home-Adrihosan.jpg');">
+        <div class="contacto-hero-content">
             <p class="contacto-eyebrow">Adrihosan &middot; Contacto</p>
             <h1>Elige c&oacute;mo quieres que te ayude Ricardo</h1>
             <p class="contacto-lead">Vis&iacute;tanos en el showroom, haz una videollamada, ll&aacute;manos o escr&iacute;benos. Estamos aqu&iacute; para ayudarte con tu proyecto.</p>
