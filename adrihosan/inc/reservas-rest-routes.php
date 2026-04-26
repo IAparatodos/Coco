@@ -88,11 +88,19 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
 
     $ip  = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
     $key = 'adria_booking_rate_' . md5( $ip );
-    $count = (int) get_transient( $key );
-    if ( $count >= 3 ) {
-        return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'rate_limited' ] ], 429 );
+
+    // Bypass del rate limit para administradores logueados: asi pruebas
+    // internas no nos bloquean. Para visitantes anonimos seguimos
+    // limitando a 6 reservas/hora por IP (anti-spam suave).
+    $is_admin_user = is_user_logged_in() && current_user_can( 'manage_options' );
+
+    if ( ! $is_admin_user ) {
+        $count = (int) get_transient( $key );
+        if ( $count >= 6 ) {
+            return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'rate_limited' ] ], 429 );
+        }
+        set_transient( $key, $count + 1, HOUR_IN_SECONDS );
     }
-    set_transient( $key, $count + 1, HOUR_IN_SECONDS );
 
     $data = [
         'name'      => sanitize_text_field( $request->get_param( 'name' ) ),
