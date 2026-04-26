@@ -363,11 +363,22 @@
 /* Type cards */
 .contacto-reservas .reservas-type-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* minmax(0, 1fr) evita que los <button> hijos desborden el grid:
+     * por defecto los grid items tienen min-width: auto = ancho del contenido,
+     * lo que rompe el reparto 50/50 cuando hay textos largos dentro. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
 .contacto-reservas .reservas-type-card {
+    /* Reset boton: que se comporte como contenedor vertical, no como
+     * inline-block con hijos en linea */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;
+
     background: #ffffff;
     border: 2px solid #d4e3e6;
     border-radius: 16px;
@@ -376,6 +387,12 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     transition: all 0.2s ease;
+}
+
+/* Forzar a los hijos del boton a ser block (evita display:inline heredado del tema) */
+.contacto-reservas .reservas-type-card > * {
+    display: block;
+    width: 100%;
 }
 
 .contacto-reservas .reservas-type-card:hover {
