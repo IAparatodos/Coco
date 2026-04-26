@@ -360,24 +360,28 @@
     color: #3f6f7b;
 }
 
-/* Type cards */
-.contacto-reservas .reservas-type-cards {
-    display: grid;
-    /* minmax(0, 1fr) evita que los <button> hijos desborden el grid:
-     * por defecto los grid items tienen min-width: auto = ancho del contenido,
-     * lo que rompe el reparto 50/50 cuando hay textos largos dentro. */
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+/* Type cards
+ * Selectores blindados: el tema mete reglas en button[type] / .site-main button
+ * que ganaban por especificidad. Forzamos con !important + selector triple. */
+.contacto-page .contacto-reservas .reservas-type-cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
-.contacto-reservas .reservas-type-card {
-    /* Reset boton: que se comporte como contenedor vertical, no como
-     * inline-block con hijos en linea */
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    min-width: 0;
+.contacto-page .contacto-reservas button.reservas-type-card,
+.contacto-page .contacto-reservas .reservas-type-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 
     background: #ffffff;
     border: 2px solid #d4e3e6;
@@ -389,10 +393,16 @@
     transition: all 0.2s ease;
 }
 
-/* Forzar a los hijos del boton a ser block (evita display:inline heredado del tema) */
-.contacto-reservas .reservas-type-card > * {
-    display: block;
-    width: 100%;
+/* Hijos del boton: bloque + ancho 100% (evita display:inline / float del tema) */
+.contacto-page .contacto-reservas .reservas-type-card > .reservas-type-icon,
+.contacto-page .contacto-reservas .reservas-type-card > h3,
+.contacto-page .contacto-reservas .reservas-type-card > p,
+.contacto-page .contacto-reservas .reservas-type-card > ul {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    box-sizing: border-box !important;
 }
 
 .contacto-reservas .reservas-type-card:hover {
