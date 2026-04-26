@@ -159,6 +159,54 @@ Mismo patrón: encolar CSS directamente en el template, llamar a la función de 
 
 Con `front-page.php` o `page-{slug}.php`, WordPress **siempre** usa ese template — es más predecible y robusto.
 
+## REGLA CRÍTICA: Secciones full-bleed (ancho completo) — usar el patrón corporativo
+
+Cuando una sección (hero, trust-bar, bumper, FAQs, contacto Ricardo, etc.) tenga que ocupar el **ancho completo del viewport** rompiendo el contenedor centrado del template, **SIEMPRE** usa la clase corporativa **`.adrihosan-full-width-block`** definida en `assets/css/base-global.css`. No repliques el truco a mano.
+
+### Patrón obligatorio
+
+```html
+<section class="hero-section-container adrihosan-full-width-block" style="background-image: url('...');">
+    <div class="hero-content">
+        <h1>Titulo</h1>
+        <p>Descripcion</p>
+    </div>
+</section>
+```
+
+Y en el CSS de la página/categoría **solo** los estilos visuales (overlay, tipografía, padding interno, layout del contenido). Nada de `width: 100vw`, `left: 50%`, `margin-left: -50vw` — eso ya lo hace `.adrihosan-full-width-block`.
+
+### NUNCA escribir reglas que sobrescriban el ancho de TODAS las secciones
+
+Patrón que **rompe el full-bleed** y debe evitarse:
+
+```css
+/* ❌ MAL — sobrescribe el width:100vw de .adrihosan-full-width-block */
+.contacto-page section {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+```
+
+Si necesitas un reset de secciones (para anular max-width del tema), **excluye explícitamente** las full-bleed con `:not()`:
+
+```css
+/* ✅ BIEN — el reset no toca las secciones full-bleed */
+.contacto-page section:not(.adrihosan-full-width-block) {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+```
+
+### Síntoma típico de este bug
+
+Hero/sección desplazada hacia la derecha, ocupando solo media página o cortando el texto por la derecha. Casi siempre la causa es una regla `section { width: 100% !important }` con mayor especificidad que vence al `width: 100vw` del full-bleed.
+
+### Histórico
+
+- **2026-04-26 (cat 102, 99, 100, 101, 103, etc.)**: ya resuelto en categorías con `adrihosan-full-width-block`.
+- **2026-04-26 (page-contacto)**: el hero salía desplazado a la derecha. Causa: regla `.contacto-page section { width: 100% !important }` sobrescribía el full-bleed. Solución: añadir `:not(.adrihosan-full-width-block)` y usar la clase corporativa en el hero. Documentado aquí para no repetir el error.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
