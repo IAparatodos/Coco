@@ -7,8 +7,34 @@
 /* ========================================================================== */
 
 .contacto-page {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     color: #3f6f7b;
+}
+
+.contacto-page h1,
+.contacto-page h2,
+.contacto-page h3,
+.contacto-page p,
+.contacto-page span,
+.contacto-page a,
+.contacto-page li,
+.contacto-page label,
+.contacto-page button,
+.contacto-page input,
+.contacto-page textarea {
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+.contacto-page section {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
 }
 
 .contacto-shell {
@@ -24,12 +50,12 @@
 }
 
 .contacto-eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
     font-size: 0.8rem;
     margin-bottom: 12px;
     opacity: 0.85;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .contacto-hero h1 {
@@ -408,8 +434,8 @@
 .contacto-reservas .reservas-day-name {
     font-size: 0.7rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
 }
 
 .contacto-reservas .reservas-day-number {

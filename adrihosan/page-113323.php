@@ -1,7 +1,6 @@
 <?php
 /**
- * Template for Contact page (page ID 113323, slug "contacto")
- * WordPress automatically uses this file for /contacto/
+ * Template Name: Contacto Adrihosan
  */
 
 $css_path = get_stylesheet_directory() . '/assets/css/page-contacto.css';

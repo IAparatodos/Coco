@@ -7,8 +7,23 @@
 /* ========================================================================== */
 
 .reservas-page {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     color: #3f6f7b;
+}
+
+.reservas-page h1,
+.reservas-page h2,
+.reservas-page h3,
+.reservas-page p,
+.reservas-page span,
+.reservas-page a,
+.reservas-page li,
+.reservas-page button,
+.reservas-page input,
+.reservas-page textarea {
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
 }
 
 /* HERO */
