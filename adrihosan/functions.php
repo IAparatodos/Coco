@@ -1845,6 +1845,7 @@ require get_template_directory() . '/inc/category-navarti.php';             // C
 /* ========================================================================== */
 include get_template_directory() . '/inc/reservas-google-auth.php';
 include get_template_directory() . '/inc/reservas-google-api.php';
+include get_template_directory() . '/inc/reservas-emails.php';
 include get_template_directory() . '/inc/reservas-api.php';
 include get_template_directory() . '/inc/reservas-rest-routes.php';
 include get_template_directory() . '/inc/reservas-pipedrive.php';

@@ -45,76 +45,71 @@ function adrihosan_reminders_process() {
 }
 
 function adrihosan_reminder_send_client( $booking, $comercial ) {
-    $tipo_label = $booking->visit_type === 'presencial'
-        ? 'presencial en el showroom'
-        : 'virtual por videollamada';
+    $tipo_label_full  = $booking->visit_type === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
+    $tipo_label_short = $booking->visit_type === 'presencial' ? 'Presencial (Showroom)' : 'Virtual (Videollamada)';
+    $fecha_human      = adrihosan_email_format_date( $booking->start_date );
+    $cancel_url       = adrihosan_bookings_cancel_url( $booking->cancellation_token );
 
-    $location_info = $booking->visit_type === 'presencial'
-        ? "Dirección: C/ Los Centelles, 48, 46006 Valencia (Ruzafa)\nParking gratuito: Los Centelles, 45"
-        : "Recibirás un enlace de videollamada por email antes de la cita.";
+    $details = [
+        'Tipo de visita' => esc_html( $tipo_label_short ),
+        'Fecha'          => esc_html( $fecha_human ),
+        'Hora'           => esc_html( $booking->start_time ) . ' h',
+        'Duracion'       => '45 minutos',
+    ];
 
-    $cancel_url  = adrihosan_bookings_cancel_url( $booking->cancellation_token );
+    if ( $booking->visit_type === 'presencial' ) {
+        $details['Direccion'] = 'C/ Los Centelles, 48 &middot; 46006 Valencia (Ruzafa)<br><span style="font-size:12px;opacity:0.75;">Parking gratuito enfrente: Los Centelles, 45</span>';
+    } else {
+        $details['Como conectar'] = 'Te enviaremos el enlace de la videollamada por email antes de la cita.';
+    }
 
-    $subject = sprintf(
-        'Recordatorio: tu cita %s mañana a las %s – Adrihosan',
-        $tipo_label,
-        $booking->start_time
+    adrihosan_email_send(
+        $booking->email,
+        sprintf( 'Recordatorio: manana tienes cita %s a las %s - Adrihosan', $tipo_label_full, $booking->start_time ),
+        [
+            'eyebrow'   => 'Recordatorio',
+            'title'     => 'Manana tienes tu cita con nosotros',
+            'intro'     => sprintf( 'Hola <strong>%s</strong>, te recordamos que manana tienes reservada tu visita %s.', esc_html( $booking->name ), esc_html( $tipo_label_full ) ),
+            'details'   => $details,
+            'extra'     => '<p style="margin:0;font-family:inherit;font-size:13px;line-height:1.5;color:#3f6f7b;opacity:0.85;">Si necesitas cancelarla, usa el enlace de abajo.</p>',
+            'cta_url'   => $cancel_url,
+            'cta_label' => 'Cancelar mi cita',
+            'signoff'   => '&iexcl;Te esperamos!<br>Equipo Adrihosan',
+        ],
+        [ 'Cc: ' . $comercial ]
     );
-
-    $body = sprintf(
-        "Hola %s,\n\n" .
-        "Te recordamos que mañana tienes tu visita %s:\n\n" .
-        "Fecha: %s\n" .
-        "Hora: %s\n" .
-        "Duración: 45 minutos\n\n" .
-        "%s\n\n" .
-        "Si necesitas cancelar tu cita:\n" .
-        "%s\n\n" .
-        "¡Te esperamos!\n" .
-        "Equipo Adrihosan",
-        $booking->name,
-        $tipo_label,
-        $booking->start_date,
-        $booking->start_time,
-        $location_info,
-        $cancel_url
-    );
-
-    $headers = [ 'Cc: ' . $comercial ];
-
-    wp_mail( $booking->email, $subject, $body, $headers );
 }
 
 function adrihosan_reminder_send_internal( $booking, $comercial ) {
-    $tipo_label = $booking->visit_type === 'presencial' ? 'Presencial' : 'Virtual';
-    $cancel_url = adrihosan_bookings_cancel_url( $booking->cancellation_token );
+    $tipo_label_short = $booking->visit_type === 'presencial' ? 'Presencial (Showroom)' : 'Virtual (Videollamada)';
+    $fecha_human      = adrihosan_email_format_date( $booking->start_date );
+    $cancel_url       = adrihosan_bookings_cancel_url( $booking->cancellation_token );
 
-    $subject = sprintf(
-        'Recordatorio cita mañana: %s – %s %s',
-        $booking->name,
-        $booking->start_date,
-        $booking->start_time
+    $details = [
+        'Cliente'  => esc_html( $booking->name ),
+        'Email'    => '<a href="mailto:' . esc_attr( $booking->email ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $booking->email ) . '</a>',
+        'Telefono' => '<a href="tel:' . esc_attr( $booking->phone ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $booking->phone ) . '</a>',
+        'Tipo'     => esc_html( $tipo_label_short ),
+        'Fecha'    => esc_html( $fecha_human ) . ' &middot; ' . esc_html( $booking->start_time ) . ' h',
+    ];
+
+    $extra = '';
+    if ( ! empty( $booking->needs ) ) {
+        $extra = '<div style="padding:14px 16px;background:#f0f7f8;border-left:3px solid #4dd2d0;border-radius:6px;"><strong style="display:block;margin-bottom:6px;color:#3f6f7b;">Que quiere ver:</strong>' . nl2br( esc_html( $booking->needs ) ) . '</div>';
+    }
+
+    adrihosan_email_send(
+        $comercial,
+        sprintf( 'Recordatorio cita manana: %s - %s %s', $booking->name, $booking->start_date, $booking->start_time ),
+        [
+            'eyebrow'   => 'Recordatorio interno',
+            'title'     => 'Cita prevista para manana',
+            'intro'     => 'Resumen de la cita que tendras manana:',
+            'details'   => $details,
+            'extra'     => $extra,
+            'cta_url'   => $cancel_url,
+            'cta_label' => $cancel_url ? 'Ver / cancelar reserva' : '',
+            'signoff'   => '',
+        ]
     );
-
-    $body = sprintf(
-        "Recordatorio de cita para mañana:\n\n" .
-        "Nombre: %s\n" .
-        "Email: %s\n" .
-        "Teléfono: %s\n" .
-        "Tipo: %s\n" .
-        "Fecha: %s\n" .
-        "Hora: %s\n" .
-        "Qué quiere ver: %s\n\n" .
-        "Enlace para cancelar:\n%s",
-        $booking->name,
-        $booking->email,
-        $booking->phone,
-        $tipo_label,
-        $booking->start_date,
-        $booking->start_time,
-        $booking->needs,
-        $cancel_url
-    );
-
-    wp_mail( $comercial, $subject, $body );
 }

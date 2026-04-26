@@ -72,49 +72,57 @@ function adrihosan_rest_cancel_booking( WP_REST_Request $request ) {
 
     adrihosan_bookings_cancel( $token, $reason );
 
-    $comercial  = 'comercial@adrihosan.com';
-    $tipo_label = $booking->visit_type === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
+    $comercial        = 'comercial@adrihosan.com';
+    $tipo_label_full  = $booking->visit_type === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
+    $tipo_label_short = $booking->visit_type === 'presencial' ? 'Presencial (Showroom)' : 'Virtual (Videollamada)';
+    $fecha_human      = adrihosan_email_format_date( $booking->start_date );
 
-    wp_mail(
+    /* === Email cliente: confirmacion de cancelacion === */
+    $cli_details = [
+        'Tipo de visita' => esc_html( $tipo_label_short ),
+        'Fecha'          => esc_html( $fecha_human ),
+        'Hora'           => esc_html( $booking->start_time ) . ' h',
+        'Motivo'         => nl2br( esc_html( $reason ) ),
+    ];
+
+    adrihosan_email_send(
         $booking->email,
-        'Cita cancelada – Adrihosan',
-        sprintf(
-            "Hola %s,\n\n" .
-            "Tu cita %s del %s a las %s ha sido cancelada.\n\n" .
-            "Motivo: %s\n\n" .
-            "Si quieres reservar una nueva cita, puedes hacerlo en:\n" .
-            "%s\n\n" .
-            "Un saludo,\n" .
-            "Equipo Adrihosan",
-            $booking->name,
-            $tipo_label,
-            $booking->start_date,
-            $booking->start_time,
-            $reason,
-            home_url( '/contacto/' )
-        ),
+        'Cita cancelada - Adrihosan',
+        [
+            'eyebrow'   => 'Cita cancelada',
+            'title'     => 'Tu cita ha sido cancelada',
+            'intro'     => sprintf( 'Hola <strong>%s</strong>, te confirmamos que tu cita %s ha quedado cancelada.', esc_html( $booking->name ), esc_html( $tipo_label_full ) ),
+            'details'   => $cli_details,
+            'extra'     => '<p style="margin:0;font-family:inherit;font-size:14px;line-height:1.6;color:#3f6f7b;">Si quieres reservar una nueva cita, puedes hacerlo desde el siguiente enlace.</p>',
+            'cta_url'   => home_url( '/contacto/' ),
+            'cta_label' => 'Reservar nueva cita',
+            'signoff'   => 'Un saludo,<br>Equipo Adrihosan',
+        ],
         [ 'Cc: ' . $comercial ]
     );
 
-    wp_mail(
+    /* === Email interno: aviso a comercial@ === */
+    $admin_details = [
+        'Cliente'  => esc_html( $booking->name ),
+        'Email'    => '<a href="mailto:' . esc_attr( $booking->email ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $booking->email ) . '</a>',
+        'Telefono' => '<a href="tel:' . esc_attr( $booking->phone ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $booking->phone ) . '</a>',
+        'Tipo'     => esc_html( $tipo_label_short ),
+        'Fecha'    => esc_html( $fecha_human ) . ' &middot; ' . esc_html( $booking->start_time ) . ' h',
+    ];
+
+    $admin_extra = '<div style="padding:14px 16px;background:#fff5f4;border-left:3px solid #c0392b;border-radius:6px;"><strong style="display:block;margin-bottom:6px;color:#c0392b;">Motivo de la cancelacion:</strong>' . nl2br( esc_html( $reason ) ) . '</div>';
+
+    adrihosan_email_send(
         $comercial,
-        sprintf( 'Cita CANCELADA: %s – %s %s', $booking->name, $booking->start_date, $booking->start_time ),
-        sprintf(
-            "Se ha cancelado una cita:\n\n" .
-            "Nombre: %s\n" .
-            "Email: %s\n" .
-            "Teléfono: %s\n" .
-            "Tipo: %s\n" .
-            "Fecha: %s %s\n\n" .
-            "Motivo de cancelación: %s",
-            $booking->name,
-            $booking->email,
-            $booking->phone,
-            ucfirst( $booking->visit_type ),
-            $booking->start_date,
-            $booking->start_time,
-            $reason
-        )
+        sprintf( 'Cita CANCELADA: %s - %s %s', $booking->name, $booking->start_date, $booking->start_time ),
+        [
+            'eyebrow' => 'Notificacion interna',
+            'title'   => 'Una cita ha sido cancelada',
+            'intro'   => 'El cliente ha cancelado su reserva. La hora ha quedado libre.',
+            'details' => $admin_details,
+            'extra'   => $admin_extra,
+            'signoff' => '',
+        ]
     );
 
     return new WP_REST_Response( [ 'ok' => true ], 200 );

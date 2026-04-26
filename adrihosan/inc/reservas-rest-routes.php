@@ -156,52 +156,77 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
     }
 
     $cancel_url  = $cancel_token ? adrihosan_bookings_cancel_url( $cancel_token ) : '';
-    $cancel_line = $cancel_url ? "\n\nSi necesitas cancelar tu cita:\n" . $cancel_url : '';
 
-    $tipo_label = $data['visitType'] === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
+    $tipo_label_full  = $data['visitType'] === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
+    $tipo_label_short = $data['visitType'] === 'presencial' ? 'Presencial (Showroom)' : 'Virtual (Videollamada)';
+    $fecha_human      = adrihosan_email_format_date( $data['startDate'] );
 
-    wp_mail(
-        $data['email'],
-        'Confirmación de tu cita – Adrihosan',
-        sprintf(
-            "Hola %s,\n\n" .
-            "Tu visita %s ha quedado reservada para el %s a las %s.\n\n" .
-            "Duración: 45 minutos\n" .
-            "%s" .
-            "%s\n\n" .
-            "¡Te esperamos!\n" .
-            "Equipo Adrihosan",
-            $data['name'],
-            $tipo_label,
-            $data['startDate'],
-            $data['startTime'],
-            $data['visitType'] === 'presencial'
-                ? "Dirección: Calle Los Centelles, 48, Valencia\nParking gratuito: Los Centelles, 45"
-                : "Recibirás un enlace de videollamada por email antes de la cita.",
-            $cancel_line
-        )
+    /* === Email cliente: confirmacion === */
+    $cliente_intro = sprintf(
+        'Hola <strong>%s</strong>, hemos recibido tu solicitud y tu visita %s ha quedado reservada.',
+        esc_html( $data['name'] ),
+        esc_html( $tipo_label_full )
     );
 
-    wp_mail(
+    $cliente_details = [
+        'Tipo de visita' => esc_html( $tipo_label_short ),
+        'Fecha'          => esc_html( $fecha_human ),
+        'Hora'           => esc_html( $data['startTime'] ) . ' h',
+        'Duracion'       => '45 minutos',
+    ];
+
+    if ( $data['visitType'] === 'presencial' ) {
+        $cliente_details['Direccion'] = 'C/ Los Centelles, 48 &middot; 46006 Valencia (Ruzafa)<br><span style="font-size:12px;opacity:0.75;">Parking gratuito enfrente: Los Centelles, 45</span>';
+    } else {
+        $cliente_details['Como conectar'] = 'Te enviaremos el enlace de la videollamada por email antes de la cita.';
+    }
+
+    $cliente_extra = $cancel_url
+        ? '<p style="margin:0;font-family:inherit;font-size:13px;line-height:1.5;color:#3f6f7b;opacity:0.85;">Si necesitas cancelar tu cita, puedes hacerlo desde el siguiente enlace.</p>'
+        : '';
+
+    adrihosan_email_send(
+        $data['email'],
+        'Confirmacion de tu cita - Adrihosan',
+        [
+            'eyebrow'   => 'Cita confirmada',
+            'title'     => 'Tu cita esta reservada',
+            'intro'     => $cliente_intro,
+            'details'   => $cliente_details,
+            'extra'     => $cliente_extra,
+            'cta_url'   => $cancel_url,
+            'cta_label' => $cancel_url ? 'Cancelar mi cita' : '',
+            'signoff'   => '&iexcl;Te esperamos!<br>Equipo Adrihosan',
+        ]
+    );
+
+    /* === Email interno: nueva reserva para comercial@ === */
+    $admin_details = [
+        'Cliente'  => esc_html( $data['name'] ),
+        'Email'    => '<a href="mailto:' . esc_attr( $data['email'] ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $data['email'] ) . '</a>',
+        'Telefono' => '<a href="tel:' . esc_attr( $data['phone'] ) . '" style="color:#4dd2d0;text-decoration:none;">' . esc_html( $data['phone'] ) . '</a>',
+        'Tipo'     => esc_html( $tipo_label_short ),
+        'Fecha'    => esc_html( $fecha_human ) . ' &middot; ' . esc_html( $data['startTime'] ) . ' h',
+    ];
+
+    $admin_extra = '';
+    if ( ! empty( $data['needs'] ) ) {
+        $admin_extra = '<div style="padding:14px 16px;background:#f0f7f8;border-left:3px solid #4dd2d0;border-radius:6px;"><strong style="display:block;margin-bottom:6px;color:#3f6f7b;">Que quiere ver:</strong>' . nl2br( esc_html( $data['needs'] ) ) . '</div>';
+    }
+
+    adrihosan_email_send(
         'comercial@adrihosan.com',
-        sprintf( 'Nueva reserva: %s – %s %s', $data['name'], $data['startDate'], $data['startTime'] ),
-        sprintf(
-            "Nombre: %s\n" .
-            "Email: %s\n" .
-            "Teléfono: %s\n" .
-            "Tipo: %s\n" .
-            "Fecha: %s %s\n" .
-            "Qué quiere ver: %s" .
-            "%s",
-            $data['name'],
-            $data['email'],
-            $data['phone'],
-            ucfirst( $data['visitType'] ),
-            $data['startDate'],
-            $data['startTime'],
-            $data['needs'],
-            $cancel_url ? "\n\nEnlace para cancelar:\n" . $cancel_url : ''
-        )
+        sprintf( 'Nueva reserva: %s - %s %s', $data['name'], $data['startDate'], $data['startTime'] ),
+        [
+            'eyebrow'   => 'Notificacion interna',
+            'title'     => 'Nueva reserva desde la web',
+            'intro'     => 'Acaba de entrar una nueva cita por la web.',
+            'details'   => $admin_details,
+            'extra'     => $admin_extra,
+            'cta_url'   => $cancel_url,
+            'cta_label' => $cancel_url ? 'Ver / cancelar reserva' : '',
+            'signoff'   => '',
+        ]
     );
 
     if ( function_exists( 'adrihosan_pipedrive_process_booking' ) ) {
