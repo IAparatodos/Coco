@@ -152,41 +152,51 @@
     gap: 12px;
     margin-top: 20px;
     justify-content: flex-end;
+    align-items: stretch;
 }
 
-.cancelar-btn {
-    display: inline-block;
-    padding: 14px 28px;
+/* Base comun de los 3 botones para que tengan el mismo alto, ancho
+ * minimo y tipografia. Importante: text-transform: none para anular
+ * el uppercase que el tema mete a <button>, y border 2px transparente
+ * en los rellenos para que casen en altura con el outline (que tiene
+ * border: 2px solid). */
+.cancelar-btn,
+.cancelar-btn-outline,
+.cancelar-btn-danger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 160px;
+    padding: 12px 28px;
     border-radius: 12px;
-    background: #4dd2d0;
-    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border: none;
+    line-height: 1.2;
+    text-decoration: none !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cancelar-btn {
+    background: #4dd2d0;
+    color: #ffffff;
+    border: 2px solid #4dd2d0;
 }
 
 .cancelar-btn:hover {
     background: #3f6f7b;
+    border-color: #3f6f7b;
     color: #ffffff;
 }
 
 .cancelar-btn-outline {
-    display: inline-block;
-    padding: 14px 28px;
-    border-radius: 12px;
     background: transparent;
     border: 2px solid #4dd2d0;
     color: #4dd2d0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    cursor: pointer;
 }
 
 .cancelar-btn-outline:hover {
@@ -195,18 +205,9 @@
 }
 
 .cancelar-btn-danger {
-    display: inline-block;
-    padding: 14px 28px;
-    border-radius: 12px;
     background: #3f6f7b;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border: none;
-    cursor: pointer;
+    border: 2px solid #3f6f7b;
 }
 
 .cancelar-btn-danger:hover {
