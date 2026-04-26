@@ -57,6 +57,12 @@ function adrihosan_reservas_generar_slots( $date_str, $busy = [] ) {
     $slots     = [];
     $now       = time();
 
+    /* Convertir busy de Google Calendar (ISO-8601 con timezone offset, ej.
+     * "2026-05-01T09:30:00+02:00") a minutos en hora LOCAL de la web.
+     * Antes se usaba gmdate() que devuelve UTC: 09:30 CEST se transformaba
+     * en 07:30 UTC y descuadraba la comparacion con los slots, que sí
+     * estan en hora local (08:00, 09:00, ...). */
+    $tz = function_exists( 'wp_timezone' ) ? wp_timezone() : new DateTimeZone( 'Europe/Madrid' );
     $busy_minutes = [];
     foreach ( $busy as $b ) {
         $bs = isset( $b['start'] ) ? $b['start'] : '';
@@ -64,9 +70,17 @@ function adrihosan_reservas_generar_slots( $date_str, $busy = [] ) {
         if ( empty( $bs ) || empty( $be ) ) {
             continue;
         }
+        try {
+            $dt_start = new DateTime( $bs );
+            $dt_end   = new DateTime( $be );
+            $dt_start->setTimezone( $tz );
+            $dt_end->setTimezone( $tz );
+        } catch ( Exception $e ) {
+            continue;
+        }
         $busy_minutes[] = [
-            'start' => (int) gmdate( 'G', strtotime( $bs ) ) * 60 + (int) gmdate( 'i', strtotime( $bs ) ),
-            'end'   => (int) gmdate( 'G', strtotime( $be ) ) * 60 + (int) gmdate( 'i', strtotime( $be ) ),
+            'start' => (int) $dt_start->format( 'G' ) * 60 + (int) $dt_start->format( 'i' ),
+            'end'   => (int) $dt_end->format( 'G' ) * 60 + (int) $dt_end->format( 'i' ),
         ];
     }
 
