@@ -66,14 +66,44 @@
         var form = $('cancel-form');
         if (!form) return;
 
+        var textarea = $('cancel-reason');
+        var errorBox = $('cancel-reason-error');
+
+        function showReasonError() {
+            if (errorBox) errorBox.hidden = false;
+            if (textarea) {
+                textarea.classList.add('is-invalid');
+                textarea.setAttribute('aria-invalid', 'true');
+                textarea.focus();
+            }
+        }
+
+        function clearReasonError() {
+            if (errorBox) errorBox.hidden = true;
+            if (textarea) {
+                textarea.classList.remove('is-invalid');
+                textarea.removeAttribute('aria-invalid');
+            }
+        }
+
+        // Limpiar el aviso en cuanto el usuario empieza a escribir
+        if (textarea) {
+            textarea.addEventListener('input', function () {
+                if (textarea.value.trim()) {
+                    clearReasonError();
+                }
+            });
+        }
+
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
-            var reason = $('cancel-reason').value.trim();
+            var reason = textarea ? textarea.value.trim() : '';
             if (!reason) {
-                $('cancel-reason').focus();
+                showReasonError();
                 return;
             }
+            clearReasonError();
 
             var btn = $('cancel-submit');
             btn.disabled = true;

@@ -66,7 +66,8 @@ get_header();
                 <div class="cancelar-details" id="cancel-details"></div>
                 <form class="cancelar-form" id="cancel-form" novalidate>
                     <label for="cancel-reason">Motivo de la cancelaci&oacute;n</label>
-                    <textarea id="cancel-reason" name="reason" placeholder="Cu&eacute;ntanos por qu&eacute; necesitas cancelar tu cita..." rows="4" required></textarea>
+                    <textarea id="cancel-reason" name="reason" placeholder="Cu&eacute;ntanos por qu&eacute; necesitas cancelar tu cita..." rows="4" required aria-describedby="cancel-reason-error"></textarea>
+                    <div class="cancelar-form-error" id="cancel-reason-error" role="alert" hidden>Por favor, ind&iacute;canos el motivo de la cancelaci&oacute;n antes de continuar.</div>
                     <div class="cancelar-form-actions">
                         <a href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>" class="cancelar-btn-outline">Mantener cita</a>
                         <button type="submit" class="cancelar-btn-danger" id="cancel-submit">Cancelar cita</button>
