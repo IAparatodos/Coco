@@ -4,6 +4,10 @@
  * Page ID 113323, slug "contacto"
  */
 
+if ( function_exists( 'adrihosan_contacto_contenido' ) ) {
+    return;
+}
+
 function adrihosan_contacto_contenido() {
     ob_start();
     ?>
