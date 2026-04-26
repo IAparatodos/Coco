@@ -57,3 +57,27 @@ function adrihosan_google_calendar_create_event( $calendar_id, $event, $access_t
 
     return json_decode( $body, true );
 }
+
+function adrihosan_google_calendar_delete_event( $calendar_id, $event_id, $access_token ) {
+    $response = wp_remote_request(
+        "https://www.googleapis.com/calendar/v3/calendars/" . urlencode( $calendar_id ) . "/events/" . urlencode( $event_id ),
+        [
+            'method'  => 'DELETE',
+            'headers' => [
+                'Authorization' => 'Bearer ' . $access_token,
+            ],
+            'timeout' => 20,
+        ]
+    );
+
+    if ( is_wp_error( $response ) ) {
+        return $response;
+    }
+
+    $code = wp_remote_retrieve_response_code( $response );
+    if ( $code >= 200 && $code < 300 ) {
+        return true;
+    }
+
+    return new WP_Error( 'delete_event_failed', wp_remote_retrieve_body( $response ), [ 'status' => $code ] );
+}

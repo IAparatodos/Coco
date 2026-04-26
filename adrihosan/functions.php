@@ -1849,6 +1849,7 @@ include get_template_directory() . '/inc/reservas-api.php';
 include get_template_directory() . '/inc/reservas-rest-routes.php';
 include get_template_directory() . '/inc/reservas-pipedrive.php';
 include get_template_directory() . '/inc/reservas-storage.php';
+include get_template_directory() . '/inc/reservas-cancellation.php';
 include get_template_directory() . '/inc/reservas-reminders.php';
 include get_template_directory() . '/inc/page-contacto.php';
 

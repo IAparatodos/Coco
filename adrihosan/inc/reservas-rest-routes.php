@@ -140,20 +140,37 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
         return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'calendar_error' ] ], 500 );
     }
 
+    $google_event_id = $result['id'] ?? null;
+
+    $cancel_token = null;
+    if ( function_exists( 'adrihosan_bookings_save' ) ) {
+        $cancel_token = adrihosan_bookings_save( $data, $google_event_id );
+    }
+
+    $cancel_url  = $cancel_token ? adrihosan_bookings_cancel_url( $cancel_token ) : '';
+    $cancel_line = $cancel_url ? "\n\nSi necesitas cancelar tu cita:\n" . $cancel_url : '';
+
     $tipo_label = $data['visitType'] === 'presencial' ? 'presencial en el showroom' : 'virtual por videollamada';
 
     wp_mail(
         $data['email'],
         'Confirmación de tu cita – Adrihosan',
         sprintf(
-            "Hola %s,\n\nTu visita %s ha quedado reservada para el %s a las %s.\n\nDuración: 45 minutos\n%s\n\n¡Te esperamos!\nEquipo Adrihosan",
+            "Hola %s,\n\n" .
+            "Tu visita %s ha quedado reservada para el %s a las %s.\n\n" .
+            "Duración: 45 minutos\n" .
+            "%s" .
+            "%s\n\n" .
+            "¡Te esperamos!\n" .
+            "Equipo Adrihosan",
             $data['name'],
             $tipo_label,
             $data['startDate'],
             $data['startTime'],
             $data['visitType'] === 'presencial'
-                ? "Dirección: Calle Los Centelles, 48, Valencia"
-                : "Recibirás un enlace de videollamada por email antes de la cita."
+                ? "Dirección: Calle Los Centelles, 48, Valencia\nParking gratuito: Los Centelles, 45"
+                : "Recibirás un enlace de videollamada por email antes de la cita.",
+            $cancel_line
         )
     );
 
@@ -161,20 +178,23 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
         'comercial@adrihosan.com',
         sprintf( 'Nueva reserva: %s – %s %s', $data['name'], $data['startDate'], $data['startTime'] ),
         sprintf(
-            "Nombre: %s\nEmail: %s\nTeléfono: %s\nTipo: %s\nFecha: %s %s\nQué quiere ver: %s",
+            "Nombre: %s\n" .
+            "Email: %s\n" .
+            "Teléfono: %s\n" .
+            "Tipo: %s\n" .
+            "Fecha: %s %s\n" .
+            "Qué quiere ver: %s" .
+            "%s",
             $data['name'],
             $data['email'],
             $data['phone'],
             ucfirst( $data['visitType'] ),
             $data['startDate'],
             $data['startTime'],
-            $data['needs']
+            $data['needs'],
+            $cancel_url ? "\n\nEnlace para cancelar:\n" . $cancel_url : ''
         )
     );
-
-    if ( function_exists( 'adrihosan_bookings_save' ) ) {
-        adrihosan_bookings_save( $data );
-    }
 
     if ( function_exists( 'adrihosan_pipedrive_process_booking' ) ) {
         adrihosan_pipedrive_process_booking( $data );

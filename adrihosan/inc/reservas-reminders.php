@@ -4,6 +4,7 @@
  *
  * Runs every hour, finds bookings in the next 24-25h window,
  * sends reminder to client + copy to comercial@adrihosan.com.
+ * Includes cancellation link.
  */
 
 function adrihosan_reminders_cron_schedule( $schedules ) {
@@ -52,6 +53,8 @@ function adrihosan_reminder_send_client( $booking, $comercial ) {
         ? "Dirección: C/ Los Centelles, 48, 46006 Valencia (Ruzafa)\nParking gratuito: Los Centelles, 45"
         : "Recibirás un enlace de videollamada por email antes de la cita.";
 
+    $cancel_url  = adrihosan_bookings_cancel_url( $booking->cancellation_token );
+
     $subject = sprintf(
         'Recordatorio: tu cita %s mañana a las %s – Adrihosan',
         $tipo_label,
@@ -65,16 +68,16 @@ function adrihosan_reminder_send_client( $booking, $comercial ) {
         "Hora: %s\n" .
         "Duración: 45 minutos\n\n" .
         "%s\n\n" .
-        "Si necesitas cambiar la cita, contacta con nosotros:\n" .
-        "Teléfono/WhatsApp: +34 961 957 136\n" .
-        "Email: comercial@adrihosan.com\n\n" .
+        "Si necesitas cancelar tu cita:\n" .
+        "%s\n\n" .
         "¡Te esperamos!\n" .
         "Equipo Adrihosan",
         $booking->name,
         $tipo_label,
         $booking->start_date,
         $booking->start_time,
-        $location_info
+        $location_info,
+        $cancel_url
     );
 
     $headers = [ 'Cc: ' . $comercial ];
@@ -84,6 +87,7 @@ function adrihosan_reminder_send_client( $booking, $comercial ) {
 
 function adrihosan_reminder_send_internal( $booking, $comercial ) {
     $tipo_label = $booking->visit_type === 'presencial' ? 'Presencial' : 'Virtual';
+    $cancel_url = adrihosan_bookings_cancel_url( $booking->cancellation_token );
 
     $subject = sprintf(
         'Recordatorio cita mañana: %s – %s %s',
@@ -100,14 +104,16 @@ function adrihosan_reminder_send_internal( $booking, $comercial ) {
         "Tipo: %s\n" .
         "Fecha: %s\n" .
         "Hora: %s\n" .
-        "Qué quiere ver: %s",
+        "Qué quiere ver: %s\n\n" .
+        "Enlace para cancelar:\n%s",
         $booking->name,
         $booking->email,
         $booking->phone,
         $tipo_label,
         $booking->start_date,
         $booking->start_time,
-        $booking->needs
+        $booking->needs,
+        $cancel_url
     );
 
     wp_mail( $comercial, $subject, $body );
