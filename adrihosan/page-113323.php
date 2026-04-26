@@ -10,16 +10,23 @@
 
 get_header();
 ?>
-<main id="primary" class="site-main contacto-page">
-    <?php
-    if ( function_exists( 'adrihosan_contacto_contenido' ) ) {
-        echo adrihosan_contacto_contenido();
-    } else {
-        while ( have_posts() ) : the_post();
-            the_content();
-        endwhile;
-    }
-    ?>
-</main>
+
+	<main id="primary" class="site-main contacto-page">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div class="entry-content">
+				<?php
+				if ( function_exists( 'adrihosan_contacto_contenido' ) ) {
+					echo adrihosan_contacto_contenido();
+				} else {
+					while ( have_posts() ) :
+						the_post();
+						the_content();
+					endwhile;
+				}
+				?>
+			</div>
+		</article>
+	</main>
+
 <?php
 get_footer();

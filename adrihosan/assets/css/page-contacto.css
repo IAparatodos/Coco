@@ -11,6 +11,35 @@
     color: #3f6f7b;
 }
 
+/* Resets para que el truco full-bleed (width:100vw + margin-left:-50vw)
+ * funcione igual que en la home: nada de padding/margin externo en el
+ * contenedor principal. */
+.contacto-page,
+.contacto-page > article,
+.contacto-page > article > .entry-content {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.contacto-page > article > .entry-content > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Ocultar el header WP por defecto (titulo + breadcrumb) en esta pagina */
+.contacto-page .entry-header,
+.contacto-page .page-title,
+.contacto-page .woocommerce-breadcrumb,
+.contacto-page .breadcrumbs {
+    display: none !important;
+}
+
 .contacto-page h1,
 .contacto-page h2,
 .contacto-page h3,
