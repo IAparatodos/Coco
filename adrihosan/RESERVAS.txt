@@ -1,0 +1,35 @@
+si ya coge el css pero hay que arrgrarlo
+Mándame un pantallazo de cómo se ve ahora y lo arreglamos.
+Error de API
+API Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.54.content.1.text: cache_control cannot be set for empty text blocks"},"request_id":"req_011CaS9vG7cf9q2QkJWcVywC"}
+
+Turno fallido
+Intenta enviarlo de nuevo
+
+ya carga pero hay que arreglar el css se ve como el culo
+Error de API
+API Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages: text content blocks must be non-empty"},"request_id":"req_011CaS9wxXkYK3zmm7naczWP"}
+
+Turno fallido
+Intenta enviarlo de nuevo
+
+ya carga pero hay que arreglar el css
+Error de API
+API Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages: text content blocks must be non-empty"},"request_id":"req_011CaS9ybxJJDdgj5QEvzsyT"}
+
+Turno fallido
+Intenta enviarlo de nuevo
+
+dasd
+Error de API
+API Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages: text content blocks must be non-empty"},"request_id":"req_011CaSA7bCNyhWr1cerHCvqB"}
+
+Turno fallido
+Intenta enviarlo de nuevo
+
+HAZME UN RESUMEN DE LO QUE HEMOS HECHO EN LA PAGINA DE RESERVAS
+Error de API
+API Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages: text content blocks must be non-empty"},"request_id":"req_011CaSB5VtTUw4mcN8ZLgWAs"}
+
+Turno fallido
+Intenta enviarlo de nuevo
