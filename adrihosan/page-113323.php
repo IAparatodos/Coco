@@ -3,8 +3,9 @@
  * Template Name: Contacto Adrihosan
  *
  * El CSS (page-contacto.css) y el JS (reservas-calendar.js) se encolan via
- * wp_enqueue_scripts en inc/cache-and-css.php cuando is_page(113323).
- * Esto garantiza compatibilidad con LiteSpeed Cache y demas optimizadores.
+ * wp_enqueue_scripts dentro de adrihosan_cargar_css_categoria() en
+ * functions.php, detectando con is_page_template('page-113323.php') o
+ * is_page(113323). Eso garantiza compatibilidad con LiteSpeed Cache.
  */
 
 get_header();
