@@ -75,7 +75,7 @@ function adrihosan_contacto_contenido() {
                 <p>Elige tipo de visita, selecciona d&iacute;a y hora, y cu&eacute;ntanos qu&eacute; quieres ver.</p>
                 <div class="contacto-meta-pills">
                     <span>45 min</span>
-                    <span>L-J 08-15h &middot; V 08-13:30h &middot; S 09-13h</span>
+                    <span>L-J 08-15h &middot; V 08-13h &middot; S 09-13h</span>
                 </div>
             </div>
 
@@ -205,7 +205,7 @@ function adrihosan_contacto_contenido() {
                 <div class="contacto-info-card">
                     <h3>Horario</h3>
                     <p>Lunes a Jueves: 8:00 &ndash; 15:00</p>
-                    <p>Viernes: 8:00 &ndash; 13:30</p>
+                    <p>Viernes: 8:00 &ndash; 13:00</p>
                     <p>S&aacute;bados: 9:00 &ndash; 13:00</p>
                 </div>
                 <div class="contacto-info-card">
