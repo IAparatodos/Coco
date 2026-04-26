@@ -16,6 +16,14 @@ function adrihosan_pipedrive_api_token() {
     return defined( 'ADRIA_PIPEDRIVE_API_TOKEN' ) ? ADRIA_PIPEDRIVE_API_TOKEN : '';
 }
 
+function adrihosan_pipedrive_log( $msg, $extra = null ) {
+    $line = '[Adrihosan Pipedrive] ' . $msg;
+    if ( $extra !== null ) {
+        $line .= ' :: ' . wp_json_encode( $extra );
+    }
+    error_log( $line );
+}
+
 function adrihosan_pipedrive_request( $method, $endpoint, $body = null ) {
     $token = adrihosan_pipedrive_api_token();
     if ( empty( $token ) ) {
@@ -37,13 +45,21 @@ function adrihosan_pipedrive_request( $method, $endpoint, $body = null ) {
     $response = wp_remote_request( $url, $args );
 
     if ( is_wp_error( $response ) ) {
+        adrihosan_pipedrive_log( 'HTTP transport error in ' . $method . ' ' . $endpoint, [
+            'msg' => $response->get_error_message(),
+        ] );
         return $response;
     }
 
     $code = wp_remote_retrieve_response_code( $response );
-    $data = json_decode( wp_remote_retrieve_body( $response ), true );
+    $raw  = wp_remote_retrieve_body( $response );
+    $data = json_decode( $raw, true );
 
     if ( $code < 200 || $code >= 300 ) {
+        adrihosan_pipedrive_log( 'API error ' . $code . ' in ' . $method . ' ' . $endpoint, [
+            'response' => is_array( $data ) ? $data : substr( $raw, 0, 500 ),
+            'sent'     => $body,
+        ] );
         return new WP_Error( 'pipedrive_api_error', $data['error'] ?? 'API error', [ 'status' => $code ] );
     }
 
@@ -197,25 +213,37 @@ function adrihosan_pipedrive_add_note( $deal_id, $person_id, $data ) {
  */
 function adrihosan_pipedrive_process_booking( $data ) {
     if ( empty( adrihosan_pipedrive_api_token() ) ) {
+        adrihosan_pipedrive_log( 'Aborted: ADRIA_PIPEDRIVE_API_TOKEN not defined in wp-config.php' );
         return;
     }
+
+    adrihosan_pipedrive_log( 'Processing booking', [
+        'email' => $data['email'] ?? null,
+        'phone' => $data['phone'] ?? null,
+    ] );
 
     $person = adrihosan_pipedrive_find_person( $data['email'], $data['phone'] );
 
     if ( $person ) {
         $person_id = $person['id'];
+        adrihosan_pipedrive_log( 'Found existing person', [ 'person_id' => $person_id ] );
     } else {
         $new_person = adrihosan_pipedrive_create_person( $data['name'], $data['email'], $data['phone'] );
         if ( ! $new_person ) {
+            adrihosan_pipedrive_log( 'Failed to create person, aborting' );
             return;
         }
         $person_id = $new_person['id'];
+        adrihosan_pipedrive_log( 'Created new person', [ 'person_id' => $person_id ] );
     }
 
     $deal = adrihosan_pipedrive_create_deal( $person_id, $data );
     if ( ! $deal ) {
+        adrihosan_pipedrive_log( 'Failed to create deal, aborting' );
         return;
     }
+    adrihosan_pipedrive_log( 'Created deal', [ 'deal_id' => $deal['id'] ] );
 
     adrihosan_pipedrive_add_note( $deal['id'], $person_id, $data );
+    adrihosan_pipedrive_log( 'Added note to deal' );
 }
