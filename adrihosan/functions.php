@@ -208,6 +208,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4410: // Espejo Baño 120 cm
             adrihosan_setup_espejo_bano_120_cpu_fix();
             break;
+        case 4415: // Espejo Baño 140x80 cm
+            adrihosan_setup_espejo_bano_140_cpu_fix();
+            break;
     }
 }
 
@@ -816,6 +819,16 @@ function adrihosan_setup_espejo_bano_120_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_120_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_120_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_140_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_140_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_140_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1825,6 +1838,7 @@ require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
 require get_template_directory() . '/inc/category-espejos-negros.php';
 require get_template_directory() . '/inc/category-espejo-bano-100.php';
 require get_template_directory() . '/inc/category-espejo-bano-120.php';
+require get_template_directory() . '/inc/category-espejo-bano-140.php';
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
