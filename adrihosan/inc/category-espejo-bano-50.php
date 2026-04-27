@@ -102,7 +102,7 @@ function adrihosan_espejo_bano_50_contenido_inferior() {
     <!-- 4a. Subcategorias hijas de 50 cm (pills destacados) -->
     <section class="ap-pill-section adrihosan-full-width-block">
         <div class="ap-pill-wrapper">
-            <h2>Subcategor&iacute;as de 50&nbsp;cm</h2>
+            <h2>Espejos de Ba&ntilde;o de 50&nbsp;cm por Formato</h2>
             <div class="ap-pill-grid">
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-50/espejo-bano-50-x-70/" class="ap-pill-tag ap-pill-tag--featured">50x70&nbsp;cm</a>
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-50/espejo-bano-50-x-80/" class="ap-pill-tag ap-pill-tag--featured">50x80&nbsp;cm</a>
