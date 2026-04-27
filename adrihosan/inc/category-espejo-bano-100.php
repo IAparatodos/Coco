@@ -113,15 +113,9 @@ function adrihosan_espejo_bano_100_contenido_inferior() {
         </div>
     </section>
 
-    <!-- BLOQUE SEO -->
-    <section class="seo-content-section adrihosan-full-width-block">
-        <div class="seo-content-wrapper">
-            <h2>Espejos de ba&ntilde;o de 100&nbsp;cm: la medida que equilibra cualquier mueble principal</h2>
-            <p>El <strong>espejo de ba&ntilde;o de 100&nbsp;cm</strong> es probablemente la medida m&aacute;s vers&aacute;til del cat&aacute;logo. Encaja perfectamente sobre <strong>muebles de doble seno</strong> de 120-140&nbsp;cm dejando un margen visual elegante a los lados, y tambi&eacute;n funciona como protagonista en ba&ntilde;os principales con encimeras anchas. A diferencia de medidas m&aacute;s peque&ntilde;as (60-80&nbsp;cm), un espejo de 100&nbsp;cm aporta amplitud real al espacio y multiplica la sensaci&oacute;n de luz. Y a diferencia de las medidas grandes (120-140&nbsp;cm), sigue siendo manejable en cuanto a transporte e instalaci&oacute;n &mdash; cabe por puertas est&aacute;ndar y no requiere refuerzos especiales en pared.</p>
-            <p>En esta categor&iacute;a tienes las dos grandes familias: <strong>espejos de 100&nbsp;cm con luz LED integrada</strong> (la mayor&iacute;a con funci&oacute;n antivaho activable por interruptor t&aacute;ctil, perfectos para evitar el empa&ntilde;ado tras la ducha) y <strong>espejos de 100&nbsp;cm sin iluminaci&oacute;n</strong> para ba&ntilde;os con buena luz cenital o como complemento decorativo. Las formas dominantes en este ancho son el <strong>rectangular 100&times;80&nbsp;cm</strong> (la opci&oacute;n m&aacute;s equilibrada visualmente), el <strong>redondo de 100&nbsp;cm</strong> (rompe geometr&iacute;as y aporta car&aacute;cter) y el <strong>ovalado</strong> (suaviza l&iacute;neas para estilos m&aacute;s cl&aacute;sicos). Tambi&eacute;n encontrar&aacute;s versiones con <strong>marco negro</strong>, <strong>marco dorado</strong> o sin marco para integraciones m&aacute;s minimalistas.</p>
-            <p>Para que tu espejo de 100&nbsp;cm encaje en el conjunto, c&uacute;ralo con el resto de elementos del ba&ntilde;o: si tu mueble es un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-suspendidos/col-mbl-blanco/">suspendido blanco</a>, un espejo redondo o uno con marco negro genera contraste; si tienes un <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/muebles-bano-con-patas/col-mbl-roble/">mueble con patas en roble</a>, un rectangular sin marco resalta la calidez de la madera. Y si necesitas otra medida, mira los <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-80/">espejos de 80&nbsp;cm</a> para muebles m&aacute;s peque&ntilde;os o los <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-120/">de 120&nbsp;cm</a> para configuraciones de doble lavabo amplias.</p>
-        </div>
-    </section>
+    <!-- BLOQUE SEO: lo gestiona Ricardo desde la descripcion de la categoria
+         en WooCommerce admin. Se renderiza arriba via category_description() y
+         se estiliza con .bho-guide-section (ver category-4406.css). -->
 
     <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
