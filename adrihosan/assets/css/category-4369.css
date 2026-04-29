@@ -1,0 +1,437 @@
+/* ========================================================================== */
+/* CATEGORY-4369.CSS - Espejo Bano 60 cm                                     */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* ========================================================================== */
+
+.tax-product_cat.term-4369 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Eliminar espacio superior del tema --- */
+.tax-product_cat.term-4369 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-4369 .woocommerce-products-header,
+.tax-product_cat.term-4369 .wd-shop-tools,
+.tax-product_cat.term-4369 .advanced-filter,
+.tax-product_cat.term-4369 .filter-wrapper,
+.tax-product_cat.term-4369 .ai-filters-section,
+.tax-product_cat.term-4369 .bho-filters-section,
+.tax-product_cat.term-4369 .bho-hub-section,
+.tax-product_cat.term-4369 .woocommerce-products-header__description,
+.tax-product_cat.term-4369 .term-description,
+.tax-product_cat.term-4369 .woodmart-category-desc,
+.tax-product_cat.term-4369 .wd-active-filters,
+.tax-product_cat.term-4369 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- Estilos de la descripcion dinamica (contenido inferior) --- */
+.tax-product_cat.term-4369 .bho-guide-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4369 .bho-guide-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-4369 .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-4369 .term-description-dinamica h2,
+.tax-product_cat.term-4369 .term-description-dinamica h3 {
+    color: #3f6f7b;
+    margin-top: 1.5em;
+}
+
+.tax-product_cat.term-4369 .term-description-dinamica a {
+    color: #3f6f7b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-4369 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-4369 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-4369 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-4369 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+/* ========================================================================== */
+/* HERO SECTION - BREAKOUT COMPLETO                                           */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-color: #3f6f7b;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-4369 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, 0.55);
+    z-index: 1;
+}
+
+.tax-product_cat.term-4369 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* --- Breadcrumb --- */
+.tax-product_cat.term-4369 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-4369 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-4369 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-4369 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-4369 .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-4369 .hero-content .hero-tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4dd2d0;
+    margin: 0 0 20px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-4369 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* ========================================================================== */
+/* TRUST BAR SECTION                                                          */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .trust-bar-section {
+    background-color: #f0f7f8;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4369 .trust-bar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tax-product_cat.term-4369 .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4e3e6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tax-product_cat.term-4369 .trust-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(63, 111, 123, 0.08);
+}
+
+.tax-product_cat.term-4369 .trust-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.tax-product_cat.term-4369 .trust-text strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    margin-bottom: 3px;
+}
+
+.tax-product_cat.term-4369 .trust-text span {
+    font-size: 0.85rem;
+    color: #3f6f7b;
+    line-height: 1.4;
+}
+
+/* ========================================================================== */
+/* CONSEJO ADRIA + FILTRO                                                     */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0f7f8;
+    border-left: 4px solid #3f6f7b;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4369 .adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tax-product_cat.term-4369 .adria-tip-box strong {
+    color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* PILLS DESTACADAS (subcategorias hijas)                                     */
+/* Modificador local: relleno turquesa para diferenciar de los pills          */
+/* secundarios (outline blanco). Scoped a esta categoria.                     */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .ap-pill-tag--featured {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-4369 .ap-pill-tag--featured:hover {
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
+    color: #ffffff;
+}
+
+/* ========================================================================== */
+/* INSPIRATION SECTION - 3 tarjetas visuales con overlay                      */
+/* Patron canonico: ver category-1789.css. Aqui adaptado a 3 columnas y       */
+/* paleta corporativa (azul corporativo en lugar de la antigua paleta).       */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .ap-inspiration-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 12px 0;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-section .section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #3f6f7b;
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto 36px auto;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(63, 111, 123, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+    min-height: 280px;
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(63, 111, 123, 0.18);
+}
+
+.tax-product_cat.term-4369 .ap-inspiration-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tax-product_cat.term-4369 .ap-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(63, 111, 123, 0.85));
+    padding: 60px 18px 22px;
+    text-align: center;
+}
+
+.tax-product_cat.term-4369 .ap-card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tax-product_cat.term-4369 .ap-card-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .tax-product_cat.term-4369 .ap-inspiration-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-4369 .ap-inspiration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-4369 .ap-inspiration-card {
+        min-height: 220px;
+    }
+}
+
+/* ========================================================================== */
+/* CONTACT HELP - Fix circulo Ricardo achatado                                */
+/* ========================================================================== */
+.tax-product_cat.term-4369 .contact-help-common .contact-intro {
+    gap: 30px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tax-product_cat.term-4369 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-4369 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                 */
+/* ========================================================================== */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-4369 .trust-bar-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- Movil --- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-4369 .hero-section-container {
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-4369 .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .tax-product_cat.term-4369 .hero-content .hero-tagline {
+        font-size: 1.05rem;
+    }
+
+    .tax-product_cat.term-4369 .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-4369 .trust-bar-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-4369 .trust-item {
+        padding: 15px;
+    }
+}
