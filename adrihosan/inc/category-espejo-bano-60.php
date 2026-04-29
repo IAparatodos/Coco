@@ -148,7 +148,7 @@ function adrihosan_espejo_bano_60_contenido_inferior() {
                     </div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/griferia/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/bano-negro-griferia-Adrihosan.jpg" alt="Griferia a juego con tu espejo de 60 cm">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/grifo-lavabo-Adrihosan.jpg" alt="Griferia a juego con tu espejo de 60 cm">
                     <div class="ap-card-content">
                         <h3>Griferia + espejo</h3>
                         <p>Griferia a juego con tu espejo</p>
