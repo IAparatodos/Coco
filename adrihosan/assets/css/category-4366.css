@@ -255,7 +255,9 @@
 /* Modificador local: relleno turquesa para diferenciar de los pills          */
 /* secundarios (outline blanco). Solo aplica en cat 4366.                     */
 /* ========================================================================== */
-.tax-product_cat.term-4366 .ap-pill-tag--featured {
+.tax-product_cat.term-4366 .ap-pill-tag--featured,
+.tax-product_cat.term-4366 .ap-pill-tag--featured:link,
+.tax-product_cat.term-4366 .ap-pill-tag--featured:visited {
     background-color: #4dd2d0;
     border-color: #4dd2d0;
     color: #ffffff;
