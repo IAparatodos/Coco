@@ -18,6 +18,10 @@ const App: React.FC = () => {
     await advanceStory(INITIAL_PROMPT);
   };
 
+  const handlePetCommand = async () => {
+    await advanceStory("Acariciar a Nube con cariño (/pet)");
+  };
+
   const advanceStory = async (userChoice: string) => {
     setLoading(true);
     try {
@@ -96,6 +100,16 @@ const App: React.FC = () => {
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold text-blue-600">Las Aventuras de Nube</h1>
           <p className="text-gray-500">En la tienda Adrihosan</p>
+          <button
+            onClick={handlePetCommand}
+            disabled={loading || imageLoading || storyPanels.length === 0}
+            className={`
+              mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-white shadow-md transition-all
+              ${loading || imageLoading ? 'bg-gray-400 cursor-not-allowed' : 'bg-pink-500 hover:bg-pink-600 hover:-translate-y-0.5'}
+            `}
+          >
+            🐾 /pet
+          </button>
         </header>
 
         {storyPanels.map((panel, index) => (
