@@ -89,7 +89,7 @@ function adrihosan_espejo_bano_60x90_contenido_inferior() {
             <h2>Combina tu espejo de 60x90&nbsp;cm</h2>
             <p class="section-subtitle">Inspiraci&oacute;n para coordinar tu espejo con el resto del ba&ntilde;o.</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/anc-mb-60/ins-lavb-centro/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/Muebles-de-bano-Adrihosan.jpg" alt="Mueble de ba&ntilde;o de 60 cm con espejo de 60x90 cm">
                     <div class="ap-card-content">
                         <h3>Mueble 60 + espejo 60x90</h3>
