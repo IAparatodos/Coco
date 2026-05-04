@@ -96,7 +96,7 @@ function adrihosan_espejo_bano_60x90_contenido_inferior() {
                         <p>Mueble de ba&ntilde;o de 60&nbsp;cm a juego</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-negros/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-negros/espancho-60-cm/espalto-90-cm/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-de-bano-negro-Adrihosan.jpg" alt="Espejo negro vertical de 60x90 cm">
                     <div class="ap-card-content">
                         <h3>Espejo negro 60x90</h3>
