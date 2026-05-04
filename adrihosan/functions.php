@@ -269,20 +269,22 @@ function adrihosan_setup_espejos_cpu_fix() {
 }
 
 function adrihosan_setup_espejos_luz_cpu_fix() {
-    // Migrado al patron moderno (igual que cat 4290, 4369, etc.):
-    // - Hooks: woocommerce_before_shop_loop / after_shop_loop (no
-    //   before_main_content como la version antigua).
-    // - Funciones nuevas en inc/category-espejo-bano-con-luz.php.
-    // - Las funciones antiguas adrihosan_contenido_*_espejos_luz quedan
-    //   como dead code en este mismo archivo (function_exists guard
-    //   evita conflictos).
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Si esta cargada la nueva implementacion (inc/category-espejo-bano-con-luz.php)
+    // usamos el patron moderno. Si no, caemos al patron antiguo inline para no romper
+    // la categoria.
+    if ( function_exists( 'adrihosan_espejo_bano_con_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
+    } else {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8);
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21);
+    }
 }
 
 function adrihosan_setup_wood_cpu_fix() {
@@ -1915,7 +1917,11 @@ require get_template_directory() . '/inc/category-espejo-bano-50x80.php';
 require get_template_directory() . '/inc/category-espejo-bano-60.php';
 require get_template_directory() . '/inc/category-espejo-bano-60x90.php';
 require get_template_directory() . '/inc/category-espejo-bano-antivaho.php';
-require get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
+$_adri_cat_4213 = get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
+if ( file_exists( $_adri_cat_4213 ) ) {
+    require $_adri_cat_4213;
+}
+unset( $_adri_cat_4213 );
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
