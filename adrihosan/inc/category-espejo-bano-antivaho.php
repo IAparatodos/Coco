@@ -88,14 +88,14 @@ function adrihosan_espejo_bano_antivaho_contenido_inferior() {
             <h2>Combina tu espejo antivaho</h2>
             <p class="section-subtitle">Inspiraci&oacute;n para coordinar tu espejo con el resto del ba&ntilde;o.</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-negros/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-antivaho/espmarco-negro-mate/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-de-bano-negro-Adrihosan.jpg" alt="Espejo antivaho con marco negro">
                     <div class="ap-card-content">
                         <h3>Espejo antivaho negro</h3>
                         <p>Espejos antivaho con marco negro</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-antivaho/espform-redondo/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-bano-redondo-Adrihosan.jpg" alt="Espejo redondo con sistema antivaho">
                     <div class="ap-card-content">
                         <h3>Espejo redondo antivaho</h3>
