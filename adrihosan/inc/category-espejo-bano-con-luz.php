@@ -88,14 +88,14 @@ function adrihosan_espejo_bano_con_luz_contenido_inferior() {
             <h2>Combina tu espejo con luz LED</h2>
             <p class="section-subtitle">Inspiraci&oacute;n para coordinar tu espejo con el resto del ba&ntilde;o.</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/espform-redondo/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-bano-redondo-Adrihosan.jpg" alt="Espejo redondo con luz LED integrada">
                     <div class="ap-card-content">
                         <h3>Espejo redondo con luz</h3>
                         <p>Espejos redondos con luz LED</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-negros/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/espmarco-negro-mate/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-de-bano-negro-Adrihosan.jpg" alt="Espejo negro con luz LED integrada">
                     <div class="ap-card-content">
                         <h3>Espejo negro con luz</h3>
