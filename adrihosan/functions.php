@@ -226,6 +226,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4290: // Espejo Baño Antivaho
             adrihosan_setup_espejo_bano_antivaho_cpu_fix();
             break;
+        case 4404: // Espejo Baño 90x100 cm
+            adrihosan_setup_espejo_bano_90x100_cpu_fix();
+            break;
     }
 }
 
@@ -901,6 +904,16 @@ function adrihosan_setup_espejo_bano_antivaho_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_90x100_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1916,6 +1929,7 @@ require get_template_directory() . '/inc/category-espejo-bano-60.php';
 require get_template_directory() . '/inc/category-espejo-bano-60x90.php';
 require get_template_directory() . '/inc/category-espejo-bano-antivaho.php';
 require get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
+require get_template_directory() . '/inc/category-espejo-bano-90x100.php';
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
