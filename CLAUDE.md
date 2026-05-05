@@ -287,6 +287,17 @@ LiteSpeed Cache ≠ OPcache. Son dos cachés distintas. OPcache cachea **bytecod
 3. Mira el tamaño en bytes del último inc/CSS subido vs local. Si difieren → resubir.
 4. Pide al usuario el contenido de `wp-content/debug.log` (con `WP_DEBUG_LOG=true`). Sin él vamos a ciegas.
 
+### Trampa sutil: "una categoría carga bien y otra rompe"
+
+Cuando el síntoma es "algunas categorías cargan, otras dan error crítico" (en lugar de toda la web caída), parece que el bug es categoría-específico. **Casi nunca lo es**. Lo que ocurre:
+
+- LiteSpeed Cache **sirve HTML cacheado sin tocar PHP** para las categorías que ya tenía guardadas. Por eso esas "cargan bien" — pero NO están ejecutando el código nuevo.
+- Las categorías que LiteSpeed NO tiene cacheadas tienen que ejecutar PHP. Si hay un fatal a nivel de carga del theme (típico: un `require` apuntando a un archivo que **no se subió** al server), esas dan error crítico.
+
+**Diagnóstico**: si añadiste recientemente un `require` de un nuevo inc, comprueba en FTP que ese archivo **existe y pesa lo correcto**. La causa #1 de este patrón es que el `require` está en `functions.php` (subido) pero el inc no se subió.
+
+**Solución**: subir los archivos que faltan + purgar LiteSpeed Cache para que las cats cacheadas se regeneren con el código actualizado.
+
 ### Histórico
 
 - **2026-05-05 (cat 4333)**: web caída tras subir cat 4333. Mi `functions.php` local lint clean e idéntico al de ayer (`a11fc1f..1116c92` diff vacío). Causa real: alguno de los inc files de espejos modernos se subió corrupto en alguna iteración FTP, OPcache cacheó el parse error. Solución que funcionó: requires defensivos con `file_exists` + `function_exists` guards en setup functions + resubir el inc + reiniciar OPcache. Documentado aquí para no repetir.
