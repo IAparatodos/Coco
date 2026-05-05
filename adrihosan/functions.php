@@ -278,28 +278,13 @@ function adrihosan_setup_espejos_cpu_fix() {
 }
 
 function adrihosan_setup_espejos_luz_cpu_fix() {
-    // Migrado al patron moderno (igual que cat 4290, 4369, etc.).
-    // Hooks: woocommerce_before_shop_loop / after_shop_loop.
-    // Funciones nuevas en inc/category-espejo-bano-con-luz.php.
-    // Funciones antiguas adrihosan_contenido_*_espejos_luz: dead code.
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
-
-    // Guards: si el inc file no cargo, fallback al patron antiguo
-    // (que sigue presente como dead code) o no enganchar nada.
-    if ( function_exists( 'adrihosan_espejo_bano_con_luz_contenido_superior' ) ) {
-        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
-    } elseif ( function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
-        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8);
-    }
-    if ( function_exists( 'adrihosan_espejo_bano_con_luz_contenido_inferior' ) ) {
-        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
-    } elseif ( function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
-        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21);
-    }
 }
 
 function adrihosan_setup_wood_cpu_fix() {
@@ -936,17 +921,9 @@ function adrihosan_setup_espejo_bano_sin_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
-
-    // Guard defensivo: solo enganchamos los callbacks si el inc file
-    // ha cargado correctamente. Si la subida fallo o OPcache cachea
-    // bytecode roto, evitamos que se caiga toda la web.
-    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_superior' ) ) {
-        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
-    }
-    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_inferior' ) ) {
-        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
-    }
 }
 
 function adrihosan_setup_espejos_aumento_cpu_fix() {
@@ -954,16 +931,9 @@ function adrihosan_setup_espejos_aumento_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_aumento_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_aumento_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
-
-    // Guards defensivos (regla CLAUDE.md): si el inc no cargo, no
-    // enganchamos callbacks inexistentes y la web sigue viva.
-    if ( function_exists( 'adrihosan_espejos_aumento_contenido_superior' ) ) {
-        add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_aumento_contenido_superior', 5);
-    }
-    if ( function_exists( 'adrihosan_espejos_aumento_contenido_inferior' ) ) {
-        add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_aumento_contenido_inferior', 99);
-    }
 }
 
 // FIN CONTROLADOR MAESTRO
@@ -1969,34 +1939,20 @@ require get_template_directory() . '/inc/category-muebles-bano-patas.php';
 require get_template_directory() . '/inc/category-columnas-bano.php';
 require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
 
-/* === Categorias modernas de espejos (require defensivo) ===
- * Cada categoria se carga con file_exists guard. Si un archivo se sube
- * corrupto o falta, esa categoria deja de funcionar pero la web NO se
- * cae. Las setup functions correspondientes en functions.php usan
- * function_exists para no enganchar callbacks que no existan.
- */
-$_adri_espejo_incs = [
-    '/inc/category-espejos-negros.php',          // 5141
-    '/inc/category-espejo-bano-100.php',         // 4406
-    '/inc/category-espejo-bano-120.php',         // 4410
-    '/inc/category-espejo-bano-140.php',         // 4415
-    '/inc/category-espejo-bano-50.php',          // 4366
-    '/inc/category-espejo-bano-50x80.php',       // 4368
-    '/inc/category-espejo-bano-60.php',          // 4369
-    '/inc/category-espejo-bano-60x90.php',       // 4374
-    '/inc/category-espejo-bano-antivaho.php',    // 4290
-    '/inc/category-espejo-bano-con-luz.php',     // 4213
-    '/inc/category-espejo-bano-90x100.php',      // 4404
-    '/inc/category-espejo-bano-sin-luz.php',     // 4333
-    '/inc/category-espejos-aumento.php',         // 4299
-];
-foreach ( $_adri_espejo_incs as $_adri_inc_file ) {
-    $_adri_inc_path = get_template_directory() . $_adri_inc_file;
-    if ( file_exists( $_adri_inc_path ) ) {
-        require $_adri_inc_path;
-    }
-}
-unset( $_adri_espejo_incs, $_adri_inc_file, $_adri_inc_path );
+// === Categorias modernas de espejos (patron plano, igual que el resto del archivo)
+require get_template_directory() . '/inc/category-espejos-negros.php';
+require get_template_directory() . '/inc/category-espejo-bano-100.php';
+require get_template_directory() . '/inc/category-espejo-bano-120.php';
+require get_template_directory() . '/inc/category-espejo-bano-140.php';
+require get_template_directory() . '/inc/category-espejo-bano-50.php';
+require get_template_directory() . '/inc/category-espejo-bano-50x80.php';
+require get_template_directory() . '/inc/category-espejo-bano-60.php';
+require get_template_directory() . '/inc/category-espejo-bano-60x90.php';
+require get_template_directory() . '/inc/category-espejo-bano-antivaho.php';
+require get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
+require get_template_directory() . '/inc/category-espejo-bano-90x100.php';
+require get_template_directory() . '/inc/category-espejo-bano-sin-luz.php';
+require get_template_directory() . '/inc/category-espejos-aumento.php';
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
