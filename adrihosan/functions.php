@@ -925,9 +925,17 @@ function adrihosan_setup_espejo_bano_sin_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Guard defensivo: solo enganchamos los callbacks si el inc file
+    // ha cargado correctamente. Si la subida fallo o OPcache cachea
+    // bytecode roto, evitamos que se caiga toda la web.
+    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
+    }
 }
 
 // FIN CONTROLADOR MAESTRO
