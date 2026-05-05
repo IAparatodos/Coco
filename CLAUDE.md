@@ -207,6 +207,90 @@ Hero/sección desplazada hacia la derecha, ocupando solo media página o cortand
 - **2026-04-26 (cat 102, 99, 100, 101, 103, etc.)**: ya resuelto en categorías con `adrihosan-full-width-block`.
 - **2026-04-26 (page-contacto)**: el hero salía desplazado a la derecha. Causa: regla `.contacto-page section { width: 100% !important }` sobrescribía el full-bleed. Solución: añadir `:not(.adrihosan-full-width-block)` y usar la clase corporativa en el hero. Documentado aquí para no repetir el error.
 
+## REGLA CRÍTICA: Subidas FTP corruptas tiran la web — `require` defensivo OBLIGATORIO
+
+### El problema (caso real 2026-05-05)
+
+Cuando se sube un archivo PHP por FTP y la subida se corrompe (corte de conexión, encoding mal, CRLF/LF, BOM añadido por editor), el archivo queda en el servidor con **parse error**. Un `require` directo sobre ese archivo **tira toda la web** con "Error crítico". Síntomas característicos:
+
+1. Web caída con "Ha habido un error crítico en esta web".
+2. El código local hace `php -l` clean, no hay sintaxis rota localmente.
+3. Revertir el último cambio de `functions.php` **NO** arregla nada → indica que un archivo OTRO (un inc) está corrupto en el server.
+4. `file_exists()` devuelve `true` porque el archivo SÍ existe — solo está corrupto. **`file_exists` NO detecta corrupción**.
+5. Aunque resubas el archivo bueno, OPcache puede seguir sirviendo el bytecode roto cacheado.
+
+### Patrón obligatorio para `require` de categorías nuevas
+
+NUNCA hacer `require` directo plano cuando se añade una categoría nueva al `functions.php`. Patrón correcto:
+
+```php
+$_adri_inc_path = get_template_directory() . '/inc/category-XXXX.php';
+if ( file_exists( $_adri_inc_path ) ) {
+    require $_adri_inc_path;
+}
+```
+
+O agrupado en bucle (preferido si añadimos varias):
+
+```php
+$_adri_incs = [
+    '/inc/category-XXXX.php',
+    '/inc/category-YYYY.php',
+];
+foreach ( $_adri_incs as $f ) {
+    $p = get_template_directory() . $f;
+    if ( file_exists( $p ) ) { require $p; }
+}
+unset( $_adri_incs, $f, $p );
+```
+
+> **Aviso:** esto solo protege contra archivos **faltantes**. No protege contra archivos corruptos (parse error). Para eso necesitamos también el siguiente patrón.
+
+### Patrón obligatorio para `add_action` en setup functions
+
+En la setup function que se llama desde el master controller, **TODO `add_action`** que enganche un callback definido en un inc file debe ir envuelto en `function_exists` guard:
+
+```php
+function adrihosan_setup_categoria_XXXX_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_XXXX_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_XXXX_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_XXXX_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_XXXX_contenido_inferior', 99);
+    }
+}
+```
+
+Si el inc no se cargó (por estar corrupto, faltante o por OPcache roto), simplemente la categoría no muestra contenido custom — pero la web sigue viva.
+
+### Protocolo de subida de una categoría nueva al servidor
+
+Cuando indiques al usuario qué archivos subir, SIEMPRE en este orden y con verificación:
+
+1. **PRIMERO**: el(los) archivo(s) `inc/category-*.php` y `assets/css/category-*.css`.
+2. **VERIFICAR EN FTP** que los archivos subidos pesan lo mismo que los locales (si pesan menos, la subida se cortó → resubir).
+3. **DESPUÉS**: `functions.php` (que es el que carga los anteriores).
+4. **POR ÚLTIMO**: purgar **LiteSpeed Cache + OPcache** (el segundo se olvida con frecuencia y suele ser la causa de "tras purgar caché ahora peta").
+
+LiteSpeed Cache ≠ OPcache. Son dos cachés distintas. OPcache cachea **bytecode PHP compilado**. Si una vez se compiló un archivo con parse error, OPcache puede seguir sirviendo ese bytecode hasta que se resetee PHP-FPM o se invalide explícitamente.
+
+### Diagnóstico rápido cuando peta tras una subida
+
+1. ¿La web peta también con la versión revertida del último cambio? → Sí: archivo corrupto en otro sitio (no en lo que tocaste). No: tu último cambio rompió algo, revisa.
+2. ¿Has reiniciado OPcache? Si solo purgaste LiteSpeed, hazlo.
+3. Mira el tamaño en bytes del último inc/CSS subido vs local. Si difieren → resubir.
+4. Pide al usuario el contenido de `wp-content/debug.log` (con `WP_DEBUG_LOG=true`). Sin él vamos a ciegas.
+
+### Histórico
+
+- **2026-05-05 (cat 4333)**: web caída tras subir cat 4333. Mi `functions.php` local lint clean e idéntico al de ayer (`a11fc1f..1116c92` diff vacío). Causa real: alguno de los inc files de espejos modernos se subió corrupto en alguna iteración FTP, OPcache cacheó el parse error. Solución que funcionó: requires defensivos con `file_exists` + `function_exists` guards en setup functions + resubir el inc + reiniciar OPcache. Documentado aquí para no repetir.
+
 ## REGLA CRÍTICA: No romper categorías existentes
 
 **NUNCA** modifiques la estructura del master controller ni el sistema de carga de archivos de categoría sin verificar que TODAS las categorías siguen funcionando.
