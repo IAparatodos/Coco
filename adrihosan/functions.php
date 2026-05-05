@@ -1988,10 +1988,7 @@ $_adri_espejo_incs = [
     '/inc/category-espejo-bano-con-luz.php',     // 4213
     '/inc/category-espejo-bano-90x100.php',      // 4404
     '/inc/category-espejo-bano-sin-luz.php',     // 4333
-    // '/inc/category-espejos-aumento.php',      // 4299 - DESACTIVADO temporalmente
-                                                  //        (re-activar tras verificar
-                                                  //        que el inc se subio integro
-                                                  //        al server, ~8898 bytes)
+    '/inc/category-espejos-aumento.php',         // 4299
 ];
 foreach ( $_adri_espejo_incs as $_adri_inc_file ) {
     $_adri_inc_path = get_template_directory() . $_adri_inc_file;
