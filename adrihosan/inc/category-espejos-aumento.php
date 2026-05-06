@@ -125,32 +125,6 @@ function adrihosan_espejos_aumento_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Espejo de aumento x5 o x10 para maquillaje?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El x5 es suficiente para maquillaje general: base, sombras, colorete. El x10 es mejor para delineador, pesta&ntilde;as y cejas donde necesitas ver cada pelo. Si solo vas a tener uno, el x5 es m&aacute;s polivalente."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Los espejos de aumento llevan luz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Algunos modelos incluyen LED integrado en el aro del espejo. Los que no llevan luz se benefician de la iluminaci&oacute;n del espejo principal o de los apliques del ba&ntilde;o."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

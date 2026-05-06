@@ -198,48 +198,6 @@ function adrihosan_muebles_bano_patas_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un mueble con patas es m&aacute;s f&aacute;cil de instalar que uno suspendido?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;. No necesitas taladrar la pared ni verificar que soporte peso. Colocas el mueble, ajustas las patas hasta que quede nivelado, conectas el sif&oacute;n y el agua. En la mayor&iacute;a de los casos se resuelve sin necesidad de instalador profesional."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Las patas se pueden regular en altura?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;. Todos nuestros modelos llevan patas regulables que permiten nivelar el mueble en suelos irregulares. El rango de regulaci&oacute;n suele ser de 1 a 3 cm, suficiente para compensar desniveles habituales."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; mueble con patas elegir para un ba&ntilde;o peque&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Un modelo de 60 cm de ancho con 3 cajones. Ofrece m&aacute;s almacenaje que un suspendido de 2 cajones en la misma medida y no necesita obra. Para m&aacute;s opciones compactas, visita nuestra secci&oacute;n de muebles de ba&ntilde;o peque&ntilde;os."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Se puede poner un mueble con patas en un ba&ntilde;o con suelo radiante?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;. Al apoyar sobre patas y no directamente sobre el suelo con toda la base, el mueble no interfiere con la distribuci&oacute;n del calor. El espacio entre las patas permite la circulaci&oacute;n de aire bajo el mueble."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

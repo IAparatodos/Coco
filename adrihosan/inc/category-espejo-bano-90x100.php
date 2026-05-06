@@ -140,32 +140,6 @@ function adrihosan_espejo_bano_90x100_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; diferencia hay entre un espejo de 90x100 y uno de 100x100?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El de 100x100 es cuadrado perfecto o redondo de 100 cm de di&aacute;metro. El de 90x100 es ligeramente m&aacute;s estrecho, lo que lo hace m&aacute;s compatible con muebles de 80-90 cm sin que sobresalga en exceso. En funcionalidad son similares."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;El espejo de 90x100 se puede colgar en horizontal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende del modelo. Si es reversible, quedar&iacute;a un espejo de 100x90 cm: formato panor&aacute;mico horizontal. Consulta la ficha del producto."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

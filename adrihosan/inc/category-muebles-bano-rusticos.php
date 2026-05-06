@@ -191,48 +191,6 @@ function adrihosan_muebles_bano_rusticos_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un mueble r&uacute;stico resiste bien la humedad del ba&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;. Nuestros muebles utilizan acabados de melamina tratada y lacados resistentes a la humedad y al vapor. No requieren mantenimiento especial m&aacute;s all&aacute; de la limpieza habitual con pa&ntilde;o h&uacute;medo y jab&oacute;n neutro."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; medidas est&aacute;n disponibles en estilo r&uacute;stico?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Desde 80 cm hasta 140 cm de ancho. Los modelos de 80 y 100 cm funcionan bien para ba&ntilde;os est&aacute;ndar, mientras que los de 120 y 140 cm son ideales como mueble principal en ba&ntilde;os amplios o para configuraciones de doble seno."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Puedo combinar un mueble r&uacute;stico con un ba&ntilde;o moderno?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Es una de las combinaciones m&aacute;s efectivas. Un mueble con acabado roble y patas vistas sobre un suelo porcel&aacute;nico liso o con azulejos en formato grande crea un contraste c&aacute;lido-contempor&aacute;neo que aporta personalidad sin sobrecargar el espacio."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; espejo queda mejor con un mueble r&uacute;stico?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tienes dos caminos: un espejo con marco de madera en el mismo tono del mueble para un conjunto uniforme, o un espejo redondo con luz LED sin marco para crear un contraste r&uacute;stico-moderno que funciona muy bien visualmente."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

@@ -180,40 +180,6 @@ function adrihosan_espejo_bano_sin_luz_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un espejo sin luz es peor que uno con LED?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Es diferente. El espejo sin luz cumple la misma funci&oacute;n de reflejo con la misma calidad de cristal. La diferencia es solo la iluminaci&oacute;n integrada. Si tu ba&ntilde;o ya est&aacute; bien iluminado, no necesitas LED en el espejo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Los espejos sin luz son m&aacute;s baratos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Generalmente s&iacute;. Al no llevar componentes electr&oacute;nicos (LED, driver, antivaho, interruptor t&aacute;ctil), el precio es inferior al modelo equivalente con luz. La diferencia var&iacute;a entre 50 y 150 EUR seg&uacute;n la medida y el fabricante."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Puedo a&ntilde;adir luz a un espejo sin iluminaci&oacute;n despu&eacute;s?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No directamente al espejo, pero s&iacute; puedes instalar apliques LED a los lados o un plafón cenital encima. Es la soluci&oacute;n cl&aacute;sica y sigue funcionando perfectamente. La ventaja es que eliges el tipo de aplique, la temperatura de luz y la posici&oacute;n que prefieras."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

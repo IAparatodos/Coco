@@ -194,40 +194,6 @@ function adrihosan_espejo_bano_60_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un espejo redondo de 60 cm es suficiente para un ba&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Para ba&ntilde;os de hasta 5 m&sup2; y uso individual, s&iacute;. Ofrece un reflejo c&oacute;modo para la rutina diaria. Si necesitas m&aacute;s superficie, el formato rectangular de 60x80 o 60x90 cm amplia la visibilidad sin cambiar de ancho."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; diferencia hay entre un espejo de 60 cm redondo y rectangular?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El redondo aporta contraste org&aacute;nico frente a las l&iacute;neas rectas del mueble y los azulejos. El rectangular maximiza la superficie de reflejo y se alinea visualmente con el mueble. Ambos funcionan: es cuesti&oacute;n de estilo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;El espejo de 60 cm queda bien sobre un mueble de 80 cm?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;, aunque queda m&aacute;s peque&ntilde;o que el mueble. Es una opci&oacute;n v&aacute;lida si el ba&ntilde;o tiene elementos laterales (toallero, columna) que ocupan la pared. Para un conjunto m&aacute;s proporcionado, sube a un espejo de 80 cm."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

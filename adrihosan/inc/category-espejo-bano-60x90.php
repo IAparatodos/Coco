@@ -174,40 +174,6 @@ function adrihosan_espejo_bano_60x90_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; diferencia hay entre un espejo de 60x80 y uno de 60x90?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "10 cm de altura. Parece poco pero se nota: el 60x90 permite verse el peinado completo y parte del torso, mientras que el 60x80 cubre hasta la barbilla en la mayor&iacute;a de alturas de instalaci&oacute;n. El ancho es el mismo, as&iacute; que el espacio en pared no cambia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;El espejo de 60x90 se puede colgar en horizontal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende del modelo. Los que son reversibles s&iacute;: quedar&iacute;a un espejo de 90x60 cm, un formato horizontal ancho y bajo. Consulta la ficha del producto para confirmar si el modelo que te interesa es reversible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Un espejo de 60x90 cm pesa mucho?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 12 y 20 kg seg&uacute;n el modelo y si incluye sistema LED. Se instala con dos puntos de anclaje est&aacute;ndar en pared de obra. No necesita instalaci&oacute;n especial."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

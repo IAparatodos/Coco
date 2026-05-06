@@ -190,48 +190,6 @@ function adrihosan_espejo_bano_con_luz_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Cu&aacute;nto consume un espejo con luz LED?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 15 y 40 vatios seg&uacute;n el tama&ntilde;o: equivalente a una o dos bombillas LED dom&eacute;sticas. El consumo es muy bajo y no impacta en la factura el&eacute;ctrica."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Necesito un electricista para instalar un espejo LED?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Si ya tienes un punto de luz detr&aacute;s del espejo (donde iba el antiguo aplique), no. La conexi&oacute;n es directa. Si no tienes punto de luz, un electricista necesita llevar un cable desde la caja de derivaci&oacute;n m&aacute;s cercana: un trabajo sencillo de menos de una hora."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Se puede regular la intensidad de la luz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La mayor&iacute;a de nuestros modelos regulan la temperatura de color (c&aacute;lida, neutra, fr&iacute;a) pero no la intensidad. Algunos modelos premium s&iacute; incluyen dimmer t&aacute;ctil. Consulta la ficha del producto para verificar."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Espejo retroiluminado o frontal, cu&aacute;l es mejor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Para uso pr&aacute;ctico (maquillaje, afeitado), el frontal ilumina mejor el rostro sin sombras. Para ambiente y est&eacute;tica, el retroiluminado crea un efecto halo m&aacute;s elegante. La mayor&iacute;a de nuestros modelos combinan ambos sistemas, as&iacute; que no tienes que elegir."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

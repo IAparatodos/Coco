@@ -198,48 +198,6 @@ function adrihosan_muebles_bano_suspendidos_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un mueble suspendido se puede instalar en Pladur?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;, pero necesita refuerzo. Lo habitual es colocar un travesa&ntilde;o de madera o una placa met&aacute;lica entre los montantes del tabique antes de cerrarlo. Si la pared ya est&aacute; terminada, existen anclajes especiales de paraguas o de alta resistencia para cargas pesadas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; altura es la correcta para colgar un mueble de ba&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La medida est&aacute;ndar sit&uacute;a la parte superior del mueble a 85-90 cm del suelo. No obstante, al ser un mueble flotante, tienes la libertad de ajustarlo a tu estatura para lograr la m&aacute;xima comodidad ergon&oacute;mica."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Los muebles suspendidos soportan mucho peso?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutamente. Nuestros muebles est&aacute;n equipados con herrajes de suspensi&oacute;n certificados para soportar el peso de la estructura, el lavabo lleno y el contenido de los cajones. Los fabricantes los testean bajo condiciones extremas para garantizar una seguridad total."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; medidas son las m&aacute;s vendidas en muebles colgados?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Los anchos de 80 cm y 100 cm son los m&aacute;s populares para ba&ntilde;os est&aacute;ndar. Para aseos o ba&ntilde;os peque&ntilde;os, los modelos de 60 cm son la soluci&oacute;n perfecta para optimizar el espacio sin perder funcionalidad."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

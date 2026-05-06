@@ -216,56 +216,6 @@ function adrihosan_espejos_negros_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; tipo de negro tienen los espejos de Adrihosan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Trabajamos marcos en negro mate principalmente, que es el acabado m&aacute;s demandado por su elegancia y porque no refleja luz de forma agresiva. Algunos modelos incluyen marcos en negro satinado o con textura. Todos resisten la humedad y el vapor del ba&ntilde;o sin perder color ni brillo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;El marco negro se ve muy oscuro en un ba&ntilde;o peque&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No necesariamente. El marco negro se percibe como un elemento gr&aacute;fico, no como un volumen pesado. En ba&ntilde;os peque&ntilde;os funciona muy bien si se mantiene el resto de la paleta en tonos claros, porque act&uacute;a como acento decorativo sin restar amplitud. Los espejos negros redondos de 60-70 cm son la mejor elecci&oacute;n para espacios reducidos."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Puedo combinar un espejo negro con un mueble de ba&ntilde;o blanco?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Es una de las combinaciones m&aacute;s elegantes y demandadas actualmente. El contraste negro-blanco aporta frescura y modernidad sin complicaciones est&eacute;ticas. Para reforzar la l&iacute;nea, a&ntilde;ade grifer&iacute;a negra o peque&ntilde;os detalles en ese tono (toallero, portarrollos) y el conjunto queda perfectamente resuelto."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Los espejos negros con luz LED tienen funci&oacute;n antivaho?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La mayor&iacute;a de nuestros modelos con LED incluyen funci&oacute;n antivaho integrada, que se activa con el interruptor t&aacute;ctil. Es una ventaja pr&aacute;ctica importante: el espejo no se empa&ntilde;a tras la ducha, manteniendo la visibilidad siempre. Consulta la ficha de cada producto para confirmar si ese modelo concreto lo incluye."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; forma de espejo negro queda mejor en un ba&ntilde;o moderno?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende del resto del ba&ntilde;o. En ba&ntilde;os con l&iacute;neas rectas y muebles rectangulares, un espejo negro redondo rompe la geometr&iacute;a y aporta equilibrio visual. En ba&ntilde;os m&aacute;s org&aacute;nicos o con curvas, el rectangular negro aporta estructura. Los modelos irregulares son la apuesta m&aacute;s arriesgada pero tambi&eacute;n la m&aacute;s memorable: funcionan como pieza de dise&ntilde;o en ba&ntilde;os donde el espejo es protagonista declarado."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

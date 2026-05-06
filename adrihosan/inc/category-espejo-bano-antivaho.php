@@ -180,40 +180,6 @@ function adrihosan_espejo_bano_antivaho_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;El antivaho consume mucha electricidad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. La l&aacute;mina calefactora consume entre 20 y 50 vatios seg&uacute;n el tama&ntilde;o del espejo: comparable a una bombilla. Se activa solo cuando la enciendes y se apaga autom&aacute;ticamente con el interruptor t&aacute;ctil."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;El antivaho se puede estropear con el tiempo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La l&aacute;mina calefactora tiene una vida &uacute;til muy larga: superior a 50.000 horas de uso. No requiere mantenimiento. Si el espejo LED funciona, el antivaho funciona."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Todos los espejos con luz LED llevan antivaho?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. El antivaho es una funci&oacute;n adicional que no todos los modelos incluyen. Consulta la ficha de cada producto: los que lo llevan lo indican claramente en las especificaciones."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

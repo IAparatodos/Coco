@@ -164,40 +164,6 @@ function adrihosan_espejo_bano_50_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un espejo de 50 cm es suficiente para un ba&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Para un aseo o ba&ntilde;o de cortes&iacute;a, s&iacute;. La superficie de reflejo de un espejo de 50x70 cm cubre las necesidades de una persona sin problema. Para ba&ntilde;os principales donde dos personas usan el lavabo, conviene subir a 80 cm o m&aacute;s."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; forma de espejo de 50 cm queda mejor en un aseo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El redondo de 50 cm funciona muy bien en aseos porque suaviza las l&iacute;neas rectas del espacio y no necesita alinearse con el mueble de forma exacta. El rectangular vertical de 50x70 cm es la opci&oacute;n segura si buscas m&aacute;xima superficie de reflejo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Ten&eacute;is espejos de 50 cm con luz LED?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "S&iacute;. Trabajamos modelos redondos y rectangulares de 50 cm con retroiluminaci&oacute;n LED, interruptor t&aacute;ctil y regulaci&oacute;n de temperatura de luz. Son ideales para aseos sin punto de luz directo sobre el lavabo."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">

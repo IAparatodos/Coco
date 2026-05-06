@@ -194,7 +194,7 @@ function adrihosan_ofertas_muebles_bano_contenido_inferior() {
         </div>
     </section>
 
-    <!-- FAQs con schema FAQPage -->
+    <!-- FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Muebles de Ba&ntilde;o en Oferta</h2>
@@ -229,40 +229,6 @@ function adrihosan_ofertas_muebles_bano_contenido_inferior() {
             </div>
         </div>
     </section>
-
-    <!-- Schema.org FAQPage (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "\u00bfLos muebles de oferta tienen la misma garant\u00eda?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "S\u00ed. Todos los productos de esta secci\u00f3n tienen exactamente la misma garant\u00eda del fabricante que si los compraras a precio completo. El descuento viene del stock, no de la calidad."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "\u00bfPor qu\u00e9 cambian los productos de esta secci\u00f3n?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Porque son \u00faltimas unidades, modelos de exposici\u00f3n o liquidaciones puntuales. Cuando se agotan no se reponen al mismo precio. Actualizamos el outlet peri\u00f3dicamente con nuevas entradas."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "\u00bfPuedo devolver un mueble comprado en oferta?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "S\u00ed, las mismas condiciones de devoluci\u00f3n aplican a todos los productos independientemente de si est\u00e1n en oferta o a precio regular. Consulta nuestra pol\u00edtica de devoluciones para los plazos y condiciones."
-                }
-            }
-        ]
-    }
-    </script>
 
     <!-- CONTACTO RICARDO -->
     <section id="contacto-ofertas-muebles" class="contact-help-common adrihosan-full-width-block">

@@ -152,40 +152,6 @@ function adrihosan_espejo_bano_140_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Un espejo de 140 cm cabe en un ba&ntilde;o normal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende de la pared libre. Necesitas al menos 160 cm de pared sin obst&aacute;culos (esquinas, columnas, toalleros). En ba&ntilde;os de 5-6 m&sup2; suele ser complicado. A partir de 8 m&sup2; es donde esta medida encaja con holgura."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Cu&aacute;nto pesa un espejo de 140x80 cm?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 25 y 40 kg seg&uacute;n el modelo y si lleva sistema LED integrado. Es importante tenerlo en cuenta para el anclaje: pared de obra directa o pladur con refuerzo obligatorio."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Existe espejo redondo de 140 cm?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Los espejos redondos de gran formato llegan hasta 100 cm de di&aacute;metro. A partir de ah&iacute; el formato es rectangular. Si buscas el redondo m&aacute;s grande, el de 100 cm de di&aacute;metro es el m&aacute;ximo disponible."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
