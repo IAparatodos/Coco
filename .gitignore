@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Backups locales generados por mantenimiento (no se commitean)
+*.bak
+*.orig
