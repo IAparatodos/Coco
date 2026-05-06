@@ -15,6 +15,29 @@ Formato ejemplo:
 - Estado: ✅ Commit + Push realizado / ⚠️ Pendiente de push
 ```
 
+## REGLA OBLIGATORIA — SCHEMA FAQ (NO MODIFICAR)
+
+**NUNCA** añadir `<script type="application/ld+json">` con `"@type": "FAQPage"` en archivos PHP del tema (especialmente en `inc/category-*.php`).
+
+El schema FAQ se gestiona **EXCLUSIVAMENTE** desde Rank Math en el panel de WordPress: editar categoría → Schema → FAQ.
+
+En los archivos PHP solo va el HTML visible del acordeón (`<section class="faq-section-common">`), **sin schema adyacente**.
+
+### Razón histórica
+
+El JSON-LD hardcodeado en PHP duplicaba el FAQPage que ya emite Rank Math, generando errores de "FAQ duplicado" en Search Console. **17 URLs afectadas en mayo 2026**, limpieza realizada en commits `d2799dc` (sample cat 103) y `93143cd` (14 archivos restantes).
+
+### Implicación al crear categorías nuevas
+
+Cuando se cree una categoría nueva copiando un archivo `inc/category-*.php` existente:
+- ✅ Copiar el bloque HTML `<section class="faq-section-common">` con sus FAQs visibles.
+- ❌ **NO incluir** ningún `<script type="application/ld+json">` con `FAQPage` ni comentario `<!-- SCHEMA FAQPage -->`.
+- ✅ Después, crear la entrada FAQ correspondiente en Rank Math (panel WP → editar categoría → Schema → FAQ) con las mismas preguntas/respuestas que el HTML.
+
+### Síntoma típico de regresión
+
+Si Search Console reporta "FAQ duplicado" en una URL de categoría → revisar si el `inc/category-*.php` correspondiente tiene un bloque `<script ld+json>` FAQPage. Si lo tiene, eliminarlo siguiendo el patrón del commit `93143cd` (borrar comentario `<!-- SCHEMA FAQPage -->` + bloque `<script>...</script>` + línea en blanco redundante).
+
 ## REGLA CRÍTICA: Al iniciar un nuevo chat, copia del último repositorio
 
 Al comenzar una nueva sesión/chat, **SIEMPRE** hacer `git pull` de la rama más reciente que se haya usado como base. No asumir que el código local está actualizado. Preguntar al usuario cuál fue la última rama funcional si no está claro.
