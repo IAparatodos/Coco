@@ -198,48 +198,6 @@ function adrihosan_columnas_bano_contenido_inferior() {
         </div>
     </section>
 
-    <!-- SCHEMA FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; ancho de columna necesito para un ba&ntilde;o peque&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 25 y 30 cm. Son lo bastante estrechas para caber en el hueco lateral que queda entre el mueble de lavabo y la pared o la mampara, y altas suficientes (140-180 cm) para ofrecer un almacenaje que marca la diferencia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Columna suspendida o con patas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende de tu mueble de lavabo. Si es suspendido, columna suspendida: el conjunto queda uniforme y el suelo libre. Si tu mueble va con patas o a suelo, columna con patas para mantener la misma l&iacute;nea. En caso de duda, la suspendida siempre gana amplitud visual."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Se puede instalar una columna de ba&ntilde;o sin taladrar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Las columnas con patas s&iacute;: simplemente las apoyas y nivelan. Las suspendidas necesitan anclaje a pared con tacos, que es una instalaci&oacute;n sencilla con taladro. En paredes de pladur, consulta con nuestro equipo las opciones de fijaci&oacute;n adecuadas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "&iquest;Qu&eacute; diferencia hay entre una columna y un armario alto de ba&ntilde;o?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En la pr&aacute;ctica, son lo mismo. Columna de ba&ntilde;o, armario alto de ba&ntilde;o y mueble auxiliar de ba&ntilde;o se refieren al mismo tipo de mueble: un m&oacute;dulo vertical alto y estrecho pensado para almacenaje. La diferencia est&aacute; en el nombre comercial, no en el producto."
-          }
-        }
-      ]
-    }
-    </script>
-
     <!-- CONTACTO RICARDO -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
