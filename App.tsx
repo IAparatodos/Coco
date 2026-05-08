@@ -4,7 +4,7 @@ import { LoadingSpinner } from './components/LoadingSpinner';
 import { generateStorySegment, generatePanelImage } from './services/gemini';
 import { StorySegment } from './types';
 
-const INITIAL_PROMPT = "Inicio de la historia: Una adorable perrita Bichón Maltés llamada 'Nube' entra moviendo la cola en 'Adrihosan', una tienda de azulejos y reformas muy elegante. Hay muchas texturas y brillos.";
+const INITIAL_PROMPT = "Inicio de la historia: Un hurón explorador llamado 'Pixel' entra con un mini chaleco de arquitecto en 'Adrihosan', una tienda de azulejos y reformas de diseño. Le fascinan los mosaicos, los renders y las texturas brillantes.";
 
 const App: React.FC = () => {
   const [storyPanels, setStoryPanels] = useState<StorySegment[]>([]);
@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
       // 2. Generate Image based on the prompt from step 1
       // We construct a prompt that ensures the character is consistent
-      const fullImagePrompt = `Cómic, estilo dibujo animado digital vibrante. Una perrita Bichón Maltés blanca y esponjosa en una tienda de azulejos (Adrihosan). ${segment.imagePrompt}`;
+      const fullImagePrompt = `Cómic, estilo dibujo animado digital vibrante. Un hurón marrón y crema llamado Pixel, con mini chaleco de arquitecto, en una tienda de azulejos (Adrihosan). ${segment.imagePrompt}`;
       
       const base64Image = await generatePanelImage(fullImagePrompt);
       
@@ -69,14 +69,14 @@ const App: React.FC = () => {
       <div className="min-h-screen flex flex-col items-center justify-center bg-blue-50 p-4">
         <div className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-blue-400">
           <div className="bg-blue-500 p-6 text-white text-center">
-            <h1 className="text-4xl font-bold mb-2">Nube en Adrihosan</h1>
+            <h1 className="text-4xl font-bold mb-2">Pixel en Adrihosan</h1>
             <p className="text-blue-100 font-bold text-lg">Una Aventura Interactiva</p>
           </div>
           <div className="p-8 text-center">
-            <div className="mb-6 text-6xl animate-bounce">🐶✨</div>
+            <div className="mb-6 text-6xl animate-bounce">🦦✨</div>
             <p className="text-lg text-gray-700 mb-6">
-              Acompaña a <strong>Nube</strong>, la Bichón Maltés más curiosa, en su visita a la tienda de azulejos. 
-              ¡Tú decides qué trastadas hará!
+              Acompaña a <strong>Pixel</strong>, un hurón creativo fan de los proyectos de reformas, en su visita a la tienda de azulejos. 
+              ¡Tú decides qué travesuras hará!
             </p>
             <button
               onClick={handleStart}
@@ -94,7 +94,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-slate-100 py-8 px-4 md:px-0">
       <div className="max-w-2xl mx-auto space-y-8 pb-32">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-blue-600">Las Aventuras de Nube</h1>
+          <h1 className="text-3xl font-bold text-blue-600">Las Aventuras de Pixel</h1>
           <p className="text-gray-500">En la tienda Adrihosan</p>
         </header>
 
@@ -112,7 +112,7 @@ const App: React.FC = () => {
           <div className="flex justify-center items-center p-12 bg-white rounded-lg shadow border-2 border-dashed border-gray-300 animate-pulse">
             <div className="text-center">
               <LoadingSpinner />
-              <p className="mt-4 text-gray-500 font-medium">Nube está pensando...</p>
+              <p className="mt-4 text-gray-500 font-medium">Pixel está ideando...</p>
             </div>
           </div>
         )}
