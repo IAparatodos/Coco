@@ -241,6 +241,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4344: // Espejos Baño con Marco
             adrihosan_setup_espejos_con_marco_cpu_fix();
             break;
+        case 4288: // Espejo Ovalado con Luz LED
+            adrihosan_setup_espejo_ovalado_luz_cpu_fix();
+            break;
     }
 }
 
@@ -959,6 +962,16 @@ function adrihosan_setup_espejos_con_marco_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_con_marco_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_con_marco_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_ovalado_luz_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1981,6 +1994,7 @@ require get_template_directory() . '/inc/category-espejo-bano-90x80.php';
 require get_template_directory() . '/inc/category-espejo-redondo-70-luz.php';
 require get_template_directory() . '/inc/category-espejo-redondo-100.php';
 require get_template_directory() . '/inc/category-espejos-con-marco.php';
+require get_template_directory() . '/inc/category-espejo-ovalado-luz.php';
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
