@@ -244,6 +244,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4288: // Espejo Ovalado con Luz LED
             adrihosan_setup_espejo_ovalado_luz_cpu_fix();
             break;
+        case 4336: // Espejos Ledimex
+            adrihosan_setup_ledimex_cpu_fix();
+            break;
     }
 }
 
@@ -972,6 +975,20 @@ function adrihosan_setup_espejo_ovalado_luz_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ledimex_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    if ( function_exists( 'adrihosan_ledimex_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ledimex_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_ledimex_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ledimex_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1995,6 +2012,11 @@ require get_template_directory() . '/inc/category-espejo-redondo-70-luz.php';
 require get_template_directory() . '/inc/category-espejo-redondo-100.php';
 require get_template_directory() . '/inc/category-espejos-con-marco.php';
 require get_template_directory() . '/inc/category-espejo-ovalado-luz.php';
+$_adri_ledimex_path = get_template_directory() . '/inc/category-ledimex.php';
+if ( file_exists( $_adri_ledimex_path ) ) {
+    require $_adri_ledimex_path;
+}
+unset( $_adri_ledimex_path );
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
