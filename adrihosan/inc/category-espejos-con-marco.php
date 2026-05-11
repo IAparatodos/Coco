@@ -32,7 +32,7 @@ function adrihosan_espejos_con_marco_contenido_superior() {
                 <div class="trust-icon">&#128444;&#65039;</div>
                 <div class="trust-text">
                     <strong>Marco en varios acabados</strong>
-                    <span>Mat&aacute;lico y plexiglass</span>
+                    <span>Met&aacute;lico y plexiglass</span>
                 </div>
             </div>
             <div class="trust-item">
