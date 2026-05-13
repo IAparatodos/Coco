@@ -2504,3 +2504,5 @@ add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
     }
     return $canonical;
 } );
+
+require_once get_stylesheet_directory() . '/inc/helpers-h1.php';

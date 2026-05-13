@@ -18,7 +18,7 @@ function adrihosan_azulejos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
                 <span>Azulejos</span>
             </nav>
-            <h1>Azulejos Online: Dise&ntilde;o y Calidad &quot;Made in Spain&quot;</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Online: Dise&ntilde;o y Calidad &quot;Made in Spain&quot;' ); ?></h1>
             <p>Descubre nuestra selecci&oacute;n de azulejos de fabricaci&oacute;n espa&ntilde;ola. Desde la resistencia del porcel&aacute;nico hasta la delicadeza de la pasta blanca. Viste tus suelos y paredes con las &uacute;ltimas tendencias en cer&aacute;mica: imitaci&oacute;n madera, m&aacute;rmol, estilo metro o hidr&aacute;ulico. Calidad premium directa a tu obra.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-azulejos" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>
