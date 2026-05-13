@@ -2,11 +2,12 @@
 /**
  * Diagnostico del sistema de reservas (Google Calendar token + freeBusy).
  *
- * GET /wp-json/adrihosan/v1/debug-token
+ * Dos vias de acceso, ambas solo para administradores:
  *
- * Solo accesible para administradores logueados. No imprime el access_token
- * completo: solo longitud y prefijo de 8 chars para verificar que se ha
- * renovado.
+ *   1) wp-admin > Herramientas > Debug Reservas (UI nativa, sin nonce)
+ *   2) GET /wp-json/adrihosan/v1/debug-token  (requiere X-WP-Nonce wp_rest)
+ *
+ * No imprime el access_token completo: solo longitud y prefijo de 8 chars.
  *
  * Cuando terminemos de diagnosticar el problema borra este archivo y la
  * linea correspondiente en functions.php.
@@ -23,6 +24,10 @@ add_action( 'rest_api_init', function () {
 } );
 
 function adrihosan_rest_debug_token( WP_REST_Request $request ) {
+    return new WP_REST_Response( adrihosan_reservas_debug_payload(), 200 );
+}
+
+function adrihosan_reservas_debug_payload() {
     $out = [
         'server_time_utc'   => gmdate( 'c' ),
         'server_time_local' => date( 'c' ),
@@ -47,7 +52,7 @@ function adrihosan_rest_debug_token( WP_REST_Request $request ) {
             'message' => $token->get_error_message(),
             'data'    => $token->get_error_data(),
         ];
-        return new WP_REST_Response( $out, 200 );
+        return $out;
     }
 
     $out['token_refresh'] = [
@@ -73,7 +78,7 @@ function adrihosan_rest_debug_token( WP_REST_Request $request ) {
             'message' => $busy->get_error_message(),
             'data'    => $busy->get_error_data(),
         ];
-        return new WP_REST_Response( $out, 200 );
+        return $out;
     }
 
     $out['freebusy_test'] = [
@@ -107,5 +112,53 @@ function adrihosan_rest_debug_token( WP_REST_Request $request ) {
         $current = strtotime( '+1 day', $current );
     }
 
-    return new WP_REST_Response( $out, 200 );
+    return $out;
+}
+
+/* ============================================================ */
+/* wp-admin > Herramientas > Debug Reservas                     */
+/* ============================================================ */
+
+add_action( 'admin_menu', function () {
+    add_management_page(
+        'Debug Reservas',
+        'Debug Reservas',
+        'manage_options',
+        'adrihosan-debug-reservas',
+        'adrihosan_admin_page_debug_reservas'
+    );
+} );
+
+function adrihosan_admin_page_debug_reservas() {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        wp_die( 'No tienes permisos.' );
+    }
+
+    $payload = adrihosan_reservas_debug_payload();
+    $json    = wp_json_encode( $payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
+
+    echo '<div class="wrap">';
+    echo '<h1>Debug Reservas - Google Calendar</h1>';
+    echo '<p>Diagnostico en vivo del token de Google y de la respuesta freeBusy. Pega este JSON en el chat con Claude para diagnosticar.</p>';
+    echo '<p><strong>Resumen rapido:</strong></p>';
+    echo '<ul style="margin-left:20px;">';
+    echo '<li>Refresh OK: <strong>' . ( ! empty( $payload['token_refresh']['ok'] ) ? 'SI' : 'NO' ) . '</strong></li>';
+    if ( isset( $payload['freebusy_test']['ok'] ) ) {
+        echo '<li>FreeBusy OK: <strong>' . ( $payload['freebusy_test']['ok'] ? 'SI' : 'NO' ) . '</strong></li>';
+        if ( $payload['freebusy_test']['ok'] ) {
+            echo '<li>Eventos ocupados (7 dias): <strong>' . intval( $payload['freebusy_test']['busy_count'] ) . '</strong></li>';
+        }
+    }
+    if ( ! empty( $payload['slots_generated'] ) ) {
+        $total_slots = 0;
+        foreach ( $payload['slots_generated'] as $d ) {
+            $total_slots += intval( $d['slots_count'] );
+        }
+        echo '<li>Slots totales generados (7 dias): <strong>' . $total_slots . '</strong></li>';
+    }
+    echo '<li>Zona horaria WP: <strong>' . esc_html( $payload['wp_timezone'] ) . '</strong></li>';
+    echo '</ul>';
+    echo '<h2>JSON completo</h2>';
+    echo '<textarea readonly style="width:100%;height:500px;font-family:monospace;font-size:12px;">' . esc_textarea( $json ) . '</textarea>';
+    echo '</div>';
 }
