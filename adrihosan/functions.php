@@ -2072,7 +2072,7 @@ include get_template_directory() . '/inc/reservas-pipedrive.php';
 include get_template_directory() . '/inc/reservas-storage.php';
 include get_template_directory() . '/inc/reservas-cancellation.php';
 include get_template_directory() . '/inc/reservas-reminders.php';
-include get_template_directory() . '/inc/reservas-debug.php';
+include get_template_directory() . '/inc/reservas-healthcheck.php';
 include get_template_directory() . '/inc/page-contacto.php';
 
 /* ========================================================================== */

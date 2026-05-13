@@ -230,6 +230,66 @@ Hero/sección desplazada hacia la derecha, ocupando solo media página o cortand
 - **2026-04-26 (cat 102, 99, 100, 101, 103, etc.)**: ya resuelto en categorías con `adrihosan-full-width-block`.
 - **2026-04-26 (page-contacto)**: el hero salía desplazado a la derecha. Causa: regla `.contacto-page section { width: 100% !important }` sobrescribía el full-bleed. Solución: añadir `:not(.adrihosan-full-width-block)` y usar la clase corporativa en el hero. Documentado aquí para no repetir el error.
 
+## REGLA CRÍTICA: Sistema de reservas — endpoints REST NUNCA se cachean
+
+### El problema (caso real 2026-05-13)
+
+El sistema de reservas (`/wp-json/adrihosan/v1/availability`) mostraba **todos los slots como "no disponible"** en producción aunque el Google Calendar de `comercial@adrihosan.com` estaba completamente libre. Síntomas:
+
+1. Calendario de la web pintaba "0 huecos" en todos los días.
+2. Google Calendar admin: vacío, sin eventos all-day bloqueantes.
+3. Token OAuth funcionando bien (no era el problema).
+4. Tras purgar **LiteSpeed Cache + OPcache**, la disponibilidad volvió correcta al instante.
+
+### Causa raíz
+
+LiteSpeed Cache estaba cacheando la respuesta JSON del endpoint REST `/availability`. En algún momento anterior el calendario sí tuvo eventos bloqueantes (o el token falló) y LiteSpeed guardó la respuesta "sin slots". Esa respuesta cacheada se sirvió durante horas/días aunque el código y Google ya hubieran cambiado.
+
+### Solución obligatoria
+
+**Cualquier endpoint REST dinámico en el tema** (reservas, disponibilidad, carrito, formularios) **debe** enviar headers anti-cache al inicio del callback:
+
+```php
+function mi_endpoint_dinamico( WP_REST_Request $request ) {
+    nocache_headers();
+    header( 'Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0' );
+    header( 'Pragma: no-cache' );
+    if ( function_exists( 'do_action' ) ) {
+        do_action( 'litespeed_control_set_nocache', 'razon' );
+    }
+    // ... resto del callback
+}
+```
+
+Aplicado en `inc/reservas-rest-routes.php → adrihosan_rest_availability` (commit `cac6b5c` y posterior).
+
+### Síntoma típico de regresión
+
+Si vuelve a aparecer "todo no disponible" o "datos antiguos" en cualquier endpoint dinámico del tema:
+1. Purga **LiteSpeed Cache** (no solo browser cache).
+2. Si tras purgar funciona pero al cabo de un rato vuelve a romperse → falta `nocache_headers()` en ese endpoint.
+3. Si tras purgar sigue roto → mirar token de Google, ver "Healthcheck" abajo.
+
+### Healthcheck activo
+
+Existe un WP-Cron diario en `inc/reservas-healthcheck.php` que:
+1. Fuerza refresh del access_token de Google.
+2. Llama a freeBusy.
+3. Si algo falla, manda email a `comercial@adrihosan.com` con la causa.
+
+Si comercial@ recibe el email "[Adrihosan] FALLO en sistema de reservas":
+- `[TOKEN] token_refresh_failed`: el refresh_token está revocado → regenerar desde Google Cloud Console y actualizar `ADRIA_GOOGLE_REFRESH_TOKEN` en `wp-config.php`.
+- `[TOKEN] missing_credentials`: falta alguna constante `ADRIA_GOOGLE_*` en `wp-config.php`.
+- `[FREEBUSY] *`: Google rechaza la petición. Revisar Google Cloud Console (cuota, API habilitada, calendar_id correcto).
+
+### Gotcha OAuth: modo "Testing"
+
+Si el OAuth consent screen del proyecto Google Cloud está en modo **"Testing"** en vez de **"In production"**, los refresh tokens caducan automáticamente a los **7 días**. Verificar en `https://console.cloud.google.com/apis/credentials/consent` que el estado sea "In production".
+
+### Auto-renovación del access_token
+
+`inc/reservas-google-auth.php` cachea el access_token en transient durante ~55 min. Cuando Google rechaza un token cacheado con 401 (raro pero posible), `inc/reservas-google-api.php` detecta el 401, fuerza un refresh (`get_access_token(true)`) y reintenta una vez. Antes de esto, el sistema podía servir un token muerto hasta 55 min sin auto-recuperarse.
+
 ## REGLA CRÍTICA: Subidas FTP corruptas tiran la web — `require` defensivo OBLIGATORIO
 
 ### El problema (caso real 2026-05-05)

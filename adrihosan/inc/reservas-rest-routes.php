@@ -23,6 +23,17 @@ add_action( 'rest_api_init', function () {
 } );
 
 function adrihosan_rest_availability( WP_REST_Request $request ) {
+    /* Disponibilidad NUNCA debe cachearse: cambia segun token, eventos
+     * de Google y la hora actual (regla min_advance_hours). Si LiteSpeed
+     * o cualquier CDN guarda una respuesta antigua, la web muestra
+     * "todo no disponible" durante horas aunque ya este libre. */
+    nocache_headers();
+    header( 'Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0' );
+    header( 'Pragma: no-cache' );
+    if ( function_exists( 'do_action' ) ) {
+        do_action( 'litespeed_control_set_nocache', 'adrihosan reservas availability dynamic' );
+    }
+
     $start = sanitize_text_field( $request->get_param( 'start' ) );
     $end   = sanitize_text_field( $request->get_param( 'end' ) );
 
