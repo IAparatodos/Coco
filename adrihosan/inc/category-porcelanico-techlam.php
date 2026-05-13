@@ -18,7 +18,7 @@ function adrihosan_porcelanico_techlam_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
                 <span>Porcel&aacute;nico Techlam</span>
             </nav>
-            <h1>Porcel&aacute;nico Techlam: Gran Formato y M&iacute;nimo Espesor</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Porcel&aacute;nico Techlam: Gran Formato y M&iacute;nimo Espesor' ); ?></h1>
             <p>Distribuidor oficial de Techlam de Levantina. Descubre la revoluci&oacute;n del porcel&aacute;nico extrafino. L&aacute;minas gigantes de hasta 3 metros con tan solo 3mm de espesor. Colores inalterables, m&aacute;xima resistencia y cero porosidad para encimeras, fachadas y suelos sin obras.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-techlam" class="hero-btn primary">Ver Cat&aacute;logo</a>

@@ -19,7 +19,7 @@ function adrihosan_ofertas_muebles_bano_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Ofertas Muebles de Ba&ntilde;o</span>
             </nav>
-            <h1>Ofertas en Muebles de Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Ofertas en Muebles de Ba&ntilde;o' ); ?></h1>
             <p class="hero-tagline">&Uacute;ltimas unidades y descuentos exclusivos.</p>
             <p>Muebles de ba&ntilde;o en oferta con descuentos reales sobre el precio original. Modelos de exposici&oacute;n, &uacute;ltimas unidades y liquidaci&oacute;n de temporada. Stock limitado &mdash; cuando se acaban, se acaban.</p>
             <div class="hero-buttons">

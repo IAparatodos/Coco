@@ -19,7 +19,7 @@ function adrihosan_azulejos_hexagonales_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejos Hexagonales</span>
             </nav>
-            <h1>Azulejos Hexagonales</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Hexagonales' ); ?></h1>
             <p>Su forma geom&eacute;trica rompe con la monoton&iacute;a de las baldosas rectangulares y permite crear composiciones &uacute;nicas. Descubre nuestras colecciones de cer&aacute;mica hexagonal para suelos y paredes, y dise&ntilde;a espacios llenos de personalidad.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-hexagonales" class="hero-btn primary">Ver Cat&aacute;logo</a>

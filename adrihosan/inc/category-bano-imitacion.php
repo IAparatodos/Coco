@@ -18,7 +18,7 @@ function adrihosan_contenido_superior_bano() {
 		?>
 
 		<section class="ap-hero-section-bano adrihosan-full-width-block"><div class="ap-hero-content-bano">
-		   		    <h1>Azulejos Hidráulicos: Inspira tu Baño con Carácter</h1>
+		   		    <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Hidráulicos: Inspira tu Baño con Carácter' ); ?></h1>
 		    <p>Elige un diseño que hable de ti. Aquí encontrarás la guía visual definitiva para transformar tu baño en un espacio único con la personalidad del azulejo hidráulico.</p><a href="#ap-filtros-visuales-bano" class="ap-hero-cta-bano">Ver diseños</a></div></section>
 
 		<section class="ap-value-section-bano adrihosan-full-width-block"><div class="ap-value-wrapper-bano"><div class="section-header-bano"><h2>La Belleza del Hidráulico, la Resistencia del Porcelánico</h2><p>Consigue el look artesanal que te enamora con todas las ventajas técnicas para la zona más exigente de la casa: el baño.</p></div><div class="ap-value-grid-bano"><div class="ap-value-card-bano"><div class="icon">💧</div><h3>100% Impermeable</h3><p>Gracias a su nula absorción de agua, el gres porcelánico es la única opción segura para el interior de la ducha. Cero filtraciones, cero problemas.</p></div><div class="ap-value-card-bano"><div class="icon">🧼</div><h3>Limpieza sin Esfuerzo</h3><p>Su superficie no porosa resiste las manchas de cal, gel o cualquier producto de limpieza. Se mantiene como el primer día sin mantenimiento.</p></div><div class="ap-value-card-bano"><div class="icon">🛡️</div><h3>Diseño que Perdura</h3><p>A diferencia del hidráulico de cemento, el color del porcelánico no se desgasta con el uso ni se altera. Un suelo y pared para toda la vida.</p></div></div></div></section>

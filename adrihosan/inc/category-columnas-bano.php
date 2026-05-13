@@ -19,7 +19,7 @@ function adrihosan_columnas_bano_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Columnas de Ba&ntilde;o</span>
             </nav>
-            <h1>Columnas de Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Columnas de Ba&ntilde;o' ); ?></h1>
             <p class="hero-tagline">Almacenaje vertical sin ocupar suelo.</p>
             <p>Columnas auxiliares de ba&ntilde;o para multiplicar el almacenaje aprovechando la altura. Suspendidas o con patas, desde 25 hasta 60&nbsp;cm de ancho. Con puertas, cajones o combinadas. Env&iacute;o gratis a toda Espa&ntilde;a.</p>
         </div>

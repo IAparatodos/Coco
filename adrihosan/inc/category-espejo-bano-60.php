@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_60_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o 60</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o de 60&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o de 60&nbsp;cm' ); ?></h1>
             <p class="hero-tagline">La medida m&aacute;s polivalente.</p>
             <p>Espejos de ba&ntilde;o de 60&nbsp;cm de ancho: la medida m&aacute;s polivalente. Encaja en aseos, ba&ntilde;os secundarios y como complemento en ba&ntilde;os principales. Con luz LED, antivaho, redondos, rectangulares y con marco negro.</p>
         </div>

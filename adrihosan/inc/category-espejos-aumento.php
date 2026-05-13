@@ -19,7 +19,7 @@ function adrihosan_espejos_aumento_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejos de aumento</span>
             </nav>
-            <h1>Espejos de Aumento para Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Aumento para Ba&ntilde;o' ); ?></h1>
             <p class="hero-tagline">Para maquillaje, afeitado y cuidado facial.</p>
             <p>Espejos de aumento de pared para maquillaje, afeitado y cuidado facial. Aumento x5 y x10 con brazo extensible. Env&iacute;o gratis.</p>
         </div>

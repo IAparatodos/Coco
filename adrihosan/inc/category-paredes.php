@@ -40,7 +40,7 @@ function adrihosan_pilar_paredes_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg');">
         <div class="hero-content">
-            <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared' ); ?></h1>
             <p>Redecora sin obras y transforma tus espacios. Descubre c&oacute;mo un simple cambio de azulejos en la pared puede darle una nueva vida a tu hogar.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-paredes" class="hero-btn primary">Ver Cat&aacute;logo</a>

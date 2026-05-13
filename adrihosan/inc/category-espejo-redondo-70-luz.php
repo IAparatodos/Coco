@@ -21,7 +21,7 @@ function adrihosan_espejo_redondo_70_luz_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/">Espejo redondo ba&ntilde;o</a> &gt;
                 <span>Espejo redondo 70&nbsp;cm con luz</span>
             </nav>
-            <h1>Espejos Redondos de 70&nbsp;cm con Luz LED</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos Redondos de 70&nbsp;cm con Luz LED' ); ?></h1>
             <p class="hero-tagline">La medida estrella para ba&ntilde;os est&aacute;ndar.</p>
             <p>El espejo redondo de 70&nbsp;cm con luz LED: la medida estrella para ba&ntilde;os est&aacute;ndar. Retroiluminaci&oacute;n perimetral, interruptor t&aacute;ctil, antivaho y regulaci&oacute;n de temperatura. 25 modelos con env&iacute;o gratis.</p>
         </div>

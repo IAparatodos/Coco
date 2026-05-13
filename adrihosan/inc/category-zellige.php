@@ -24,7 +24,7 @@ function adrihosan_zellige_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Zellige</span>
             </nav>
-            <h1>Azulejos Zellige: Artesanal, Imperfecto y Absolutamente &Uacute;nico</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Zellige: Artesanal, Imperfecto y Absolutamente &Uacute;nico' ); ?></h1>
             <p>La belleza de lo hecho a mano. Cada pieza tiene su propia personalidad: variaciones de tono, textura y brillo que convierten cualquier pared en una obra de arte.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-zellige" class="hero-btn primary">Ver Cat&aacute;logo</a>

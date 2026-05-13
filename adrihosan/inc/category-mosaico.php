@@ -19,7 +19,7 @@ function adrihosan_mosaico_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejo Mosaico</span>
             </nav>
-            <h1>Azulejos Mosaico: Dise&ntilde;o en Peque&ntilde;o Formato</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Mosaico: Dise&ntilde;o en Peque&ntilde;o Formato' ); ?></h1>
             <p>Transforma tus paredes y suelos con el encanto del azulejo mosaico. Piezas enmalladas listas para instalar que aportan textura, color y dinamismo. Descubre colecciones exclusivas para ba&ntilde;os modernos, frentes de cocina y revestimientos exteriores.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-mosaico" class="hero-btn primary">Ver Cat&aacute;logo</a>

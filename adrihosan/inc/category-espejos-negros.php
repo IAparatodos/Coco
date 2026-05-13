@@ -19,7 +19,7 @@ function adrihosan_espejos_negros_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejos Negros</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o Negros</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o Negros' ); ?></h1>
             <p class="hero-tagline">La elegancia del marco negro en tu ba&ntilde;o.</p>
             <p>Espejos de ba&ntilde;o con marco o acabado negro para ba&ntilde;os con car&aacute;cter. Redondos, rectangulares, con luz LED o sin iluminaci&oacute;n. El negro combina con cualquier mueble y genera contraste visual que destaca en ba&ntilde;os modernos, industriales o minimalistas.</p>
         </div>

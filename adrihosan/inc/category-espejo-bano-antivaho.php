@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_antivaho_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o antivaho</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o Antivaho</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o Antivaho' ); ?></h1>
             <p class="hero-tagline">Sin vaho tras la ducha, sin esperar.</p>
             <p>Espejos de ba&ntilde;o con funci&oacute;n antivaho integrada. Con luz LED, redondos, rectangulares y con marco negro. M&aacute;s de 200 modelos con env&iacute;o gratis.</p>
         </div>

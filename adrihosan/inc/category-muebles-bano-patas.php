@@ -19,7 +19,7 @@ function adrihosan_muebles_bano_patas_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o con Patas</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o con Patas</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o con Patas' ); ?></h1>
             <p class="hero-tagline">Tres cajones, patas al suelo y sin complicaciones.</p>
             <p>Muebles de ba&ntilde;o a suelo con patas y 3 cajones de cierre amortiguado. La soluci&oacute;n m&aacute;s pr&aacute;ctica: no necesitan anclaje en pared, se instalan en minutos y ofrecen el m&aacute;ximo almacenaje. Desde 60 hasta 140&nbsp;cm con lavabo cer&aacute;mico incluido.</p>
         </div>

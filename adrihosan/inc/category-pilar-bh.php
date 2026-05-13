@@ -47,7 +47,7 @@ function adrihosan_pilar_bh_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('<?php echo esc_url( $hero_img_url ); ?>');">
         <div class="hero-content">
-            <h1>Baldosa Hidr&aacute;ulica</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica' ); ?></h1>
             <p>Descubre el universo del suelo hidr&aacute;ulico. Elige entre la autenticidad de la baldosa artesanal o la resistencia del porcel&aacute;nico de imitaci&oacute;n. La soluci&oacute;n perfecta para tu proyecto est&aacute; aqu&iacute;.</p>
             <div class="hero-buttons">
                 <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="hero-btn primary">Ver Colecci&oacute;n Original</a>

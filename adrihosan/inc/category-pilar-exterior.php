@@ -38,7 +38,7 @@ function adrihosan_pilar_exterior_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
         <div class="hero-content">
 
-            <h1>Baldosa Hidr&aacute;ulica Original para Exterior</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Exterior' ); ?></h1>
             <p>Descubre nuestra colecci&oacute;n de baldosa hidr&aacute;ulica original para exterior. La soluci&oacute;n artesanal y duradera para crear terrazas, patios y porches con un car&aacute;cter inigualable.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo Exterior</a>

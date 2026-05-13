@@ -22,7 +22,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
                 <div class="adri-hero-espejos__overlay"></div>
                 <div class="adri-hero-espejos__content">
                     
-            <h1>Espejos de Baño: El Reflejo de tu Estilo</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Baño: El Reflejo de tu Estilo' ); ?></h1>
                     <div class="adri-hero-espejos__text">
                         <p>Un espejo de baño es mucho más que un simple cristal. Es una pieza clave que define el carácter de tu espacio, amplifica la luz y añade un toque de diseño inconfundible.</p>
                         <p class="adri-hero-espejos__text-desktop">¿Buscas un <strong>espejo con luz LED</strong>, la calidez de un <strong>marco de madera</strong> o la funcionalidad del <strong>sistema antivaho</strong>? Descubre todas las opciones a continuación.</p>
@@ -273,7 +273,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
             <section class="ap-hero-section-redondo adri-redondo-full-width">
                 <div class="ap-hero-content-redondo">
                     
-                <h1>Espejos Redondos para Baño</h1>
+                <h1><?php echo adrihosan_h1_dinamico( 'Espejos Redondos para Baño' ); ?></h1>
                 
                     <p>Rompe con la rigidez de las líneas rectas. Un espejo redondo suaviza el ambiente, crea un punto focal de diseño y aporta un equilibrio único a tu espacio.</p>
                     <div class="ap-hero-buttons-redondo">

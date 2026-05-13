@@ -22,7 +22,7 @@ function adrihosan_wood_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Suelos Imitaci&oacute;n Madera y Porcel&aacute;nico Efecto Madera</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos Imitaci&oacute;n Madera y Porcel&aacute;nico Efecto Madera' ); ?></h1>
             <p>La calidez del parquet con la resistencia del gres porcel&aacute;nico. Descubre nuestra gama de baldosas y cer&aacute;mica imitaci&oacute;n madera para interior y exterior.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-wood" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>

@@ -19,7 +19,7 @@ function adrihosan_muebles_bano_suspendidos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o Suspendidos</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o Suspendidos</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o Suspendidos' ); ?></h1>
             <p class="hero-tagline">Suelo libre, ba&ntilde;o limpio, est&eacute;tica moderna.</p>
             <p>Muebles de lavabo suspendidos con cajones de cierre amortiguado, lavabo cer&aacute;mico incluido y acabados resistentes a la humedad. Desde 60 hasta 140&nbsp;cm en m&aacute;s de 15 colores y acabados.</p>
         </div>

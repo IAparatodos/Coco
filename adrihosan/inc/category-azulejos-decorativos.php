@@ -19,7 +19,7 @@ function adrihosan_azulejos_decorativos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejos Decorativos</span>
             </nav>
-            <h1>Azulejos Decorativos</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Decorativos' ); ?></h1>
             <p>Dale vida a cada espacio. Descubre nuestro cat&aacute;logo de revestimiento decorativo para pared con dise&ntilde;os &uacute;nicos: estampados, geom&eacute;tricos, florales y texturas 3D. Encuentra la pieza que har&aacute; que tu reforma destaque.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-decorativos" class="hero-btn primary">Ver Cat&aacute;logo</a>

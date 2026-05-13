@@ -19,7 +19,7 @@ function adrihosan_ceramica_vives_contenido_superior() {
                 <a href="#">Marcas</a> &gt;
                 <span>Cer&aacute;mica Vives</span>
             </nav>
-            <h1>Cer&aacute;mica Vives: Cat&aacute;logo y Distribuci&oacute;n Oficial</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Cer&aacute;mica Vives: Cat&aacute;logo y Distribuci&oacute;n Oficial' ); ?></h1>
             <p>Descubre el dise&ntilde;o inconfundible de Vives Cer&aacute;mica, referente desde 1957 en la fabricaci&oacute;n de azulejos, revestimientos y gres porcel&aacute;nico. Como distribuidores, ponemos a tu alcance toda su innovaci&oacute;n para suelos y paredes.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-vives" class="hero-btn primary">Ver Cat&aacute;logo</a>

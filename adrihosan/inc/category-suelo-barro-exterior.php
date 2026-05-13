@@ -19,7 +19,7 @@ function adrihosan_barro_exterior_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/">Suelo de Barro</a> &gt;
                 <span>Barro Exterior</span>
             </nav>
-            <h1>Suelo de Barro Exterior de Alta Densidad</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelo de Barro Exterior de Alta Densidad' ); ?></h1>
             <p>Resistencia extrema a heladas y m&aacute;xima seguridad antideslizante. La evoluci&oacute;n del barro artesanal para proyectos que exigen durabilidad sin renunciar a la esencia mediterr&aacute;nea.</p>
             <div class="hero-buttons">
                 <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="hero-btn secondary">Solicitar Presupuesto T&eacute;cnico</a>

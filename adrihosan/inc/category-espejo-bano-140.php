@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_140_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o 140x80</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o de 140x80&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o de 140x80&nbsp;cm' ); ?></h1>
             <p class="hero-tagline">El espejo m&aacute;s grande de nuestra colecci&oacute;n.</p>
             <p>140&nbsp;cm de ancho para ba&ntilde;os principales con mueble de doble seno. Con luz LED, antivaho y marco negro. Env&iacute;o gratis a toda Espa&ntilde;a.</p>
         </div>

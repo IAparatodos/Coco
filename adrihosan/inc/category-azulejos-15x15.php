@@ -24,7 +24,7 @@ function adrihosan_azulejos_15x15_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejos 15x15</span>
             </nav>
-            <h1>Azulejos 15x15: El Formato Cl&aacute;sico que Nunca Falla</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos 15x15: El Formato Cl&aacute;sico que Nunca Falla' ); ?></h1>
             <p>El peque&ntilde;o formato con grandes posibilidades. Los azulejos 15x15 son vers&aacute;tiles, atemporales y perfectos para crear composiciones &uacute;nicas en ba&ntilde;os y cocinas.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-15x15" class="hero-btn primary">Ver Cat&aacute;logo</a>

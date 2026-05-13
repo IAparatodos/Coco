@@ -18,7 +18,7 @@ function adrihosan_fachadas_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Revestimiento-de-Fachada-Exterior-y-Muros.jpg');">
         <div class="hero-content">
-            <h1>Azulejos para Fachadas y Muros: Protecci&oacute;n y Est&eacute;tica Exterior</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos para Fachadas y Muros: Protecci&oacute;n y Est&eacute;tica Exterior' ); ?></h1>
             <p>Revestimientos cer&aacute;micos dise&ntilde;ados para resistir la intemperie. Dale a tu fachada un acabado duradero, elegante y libre de mantenimiento.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-fachadas" class="hero-btn primary">Ver Cat&aacute;logo</a>

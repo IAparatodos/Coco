@@ -19,7 +19,7 @@ function adrihosan_azulejos_antiguos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejos Antiguos y Vintage</span>
             </nav>
-            <h1>Azulejos Vintage y Antiguos</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Vintage y Antiguos' ); ?></h1>
             <p>El encanto del pasado con la resistencia de hoy. Colecciones de azulejos antiguos, vintage y r&uacute;sticos fabricados en cer&aacute;mica de alta calidad. Ideal para dar alma a tu reforma sin renunciar a la durabilidad moderna.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-antiguos" class="hero-btn primary">Ver Cat&aacute;logo</a>

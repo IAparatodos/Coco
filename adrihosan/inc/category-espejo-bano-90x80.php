@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_90x80_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o 90x80</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o 90x80&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o 90x80&nbsp;cm' ); ?></h1>
             <p class="hero-tagline">Formato panor&aacute;mico para muebles de 80-90&nbsp;cm.</p>
             <p>Espejos de 90x80&nbsp;cm: formato panor&aacute;mico para muebles de 80-90&nbsp;cm. Con luz LED y antivaho. Env&iacute;o gratis.</p>
         </div>

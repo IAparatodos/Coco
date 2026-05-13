@@ -19,7 +19,7 @@ function adrihosan_muebles_bano_rusticos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o R&uacute;sticos</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o R&uacute;sticos</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o R&uacute;sticos' ); ?></h1>
             <p class="hero-tagline">La calidez de la madera natural en tu ba&ntilde;o.</p>
             <p>Muebles de ba&ntilde;o con patas y acabados en roble natural combinados con tonos neutros. Estilo r&uacute;stico contempor&aacute;neo desde 80 hasta 140&nbsp;cm, con cajones de cierre amortiguado y tratamiento antihumedad.</p>
         </div>

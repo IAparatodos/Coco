@@ -14,7 +14,7 @@ function adrihosan_azulejos_bano_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
         <div class="hero-content">
-            <h1>Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax' ); ?></h1>
             <p>Desde porcel&aacute;nicos antideslizantes para la ducha hasta revestimientos que ampl&iacute;an visualmente tu aseo.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-bano" class="hero-btn primary">Ver Cat&aacute;logo</a>

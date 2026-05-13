@@ -13,7 +13,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/suelo-porcelanico-imitacion-marmol.jpg');">
         <div class="hero-content">
-            <h1>Pavimento Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol: Distinci&oacute;n y M&aacute;xima Resistencia</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Pavimento Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol: Distinci&oacute;n y M&aacute;xima Resistencia' ); ?></h1>
             <p>La majestuosidad de la piedra natural con las ventajas t&eacute;cnicas del porcel&aacute;nico. Dise&ntilde;os de alto impacto visual que transforman tu suelo en una pieza de lujo duradera.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-marmol" class="hero-btn primary">Ver Cat&aacute;logo</a>

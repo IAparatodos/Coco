@@ -22,7 +22,7 @@ function adrihosan_contenido_superior_cocina() {
             <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Cocina moderna con un salpicadero de azulejo hidráulico de colores vivos" class="hero-bg-image">
             <div class="hero-content">
                
-                <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Cocina</h1>
+                <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Cocina' ); ?></h1>
                 <p>El toque de car&aacute;cter que tu cocina necesita. Dise&ntilde;os que resisten el d&iacute;a a d&iacute;a, f&aacute;ciles de limpiar y con una personalidad que no deja a nadie indiferente.</p>
                 <div class="hero-buttons">
                     <a href="#catalogo-cocina" class="ahc-boton primario">Ver Dise&ntilde;os</a>

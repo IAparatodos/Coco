@@ -19,7 +19,7 @@ function adrihosan_espejo_ovalado_luz_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ovalado</span>
             </nav>
-            <h1>Espejos Ovalados de Ba&ntilde;o con Luz LED</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos Ovalados de Ba&ntilde;o con Luz LED' ); ?></h1>
             <p class="hero-tagline">La forma que combina suavidad y funcionalidad.</p>
             <p>Espejos ovalados de ba&ntilde;o con luz LED integrada. La forma que combina la suavidad del redondo con la funcionalidad del rectangular. Con antivaho, marco negro y regulaci&oacute;n de temperatura. 89 modelos con env&iacute;o gratis.</p>
         </div>

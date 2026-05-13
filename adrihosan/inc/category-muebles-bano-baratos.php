@@ -19,7 +19,7 @@ function adrihosan_muebles_bano_baratos_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o Baratos</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o Baratos</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o Baratos' ); ?></h1>
             <p class="hero-tagline">Dise&ntilde;o y calidad a tu alcance con precios directos de f&aacute;brica.</p>
             <p>Renueva tu aseo sin complicaciones. Accede a nuestra selecci&oacute;n de muebles de ba&ntilde;o econ&oacute;micos: soluciones funcionales, materiales resistentes a la humedad y el ahorro real de comprar sin intermediarios.</p>
         </div>

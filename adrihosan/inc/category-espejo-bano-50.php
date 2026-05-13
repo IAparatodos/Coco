@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_50_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o 50</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o de 50&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o de 50&nbsp;cm' ); ?></h1>
             <p class="hero-tagline">La medida compacta para aseos y espacios reducidos.</p>
             <p>Espejos compactos de 50&nbsp;cm de ancho para aseos, ba&ntilde;os de cortes&iacute;a y espacios reducidos. Con luz LED, sin iluminaci&oacute;n, redondos y rectangulares. Env&iacute;o gratis a toda Espa&ntilde;a.</p>
         </div>

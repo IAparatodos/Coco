@@ -15,7 +15,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     <!-- 1. HERO SECTION -->
 <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-de-Exterior.jpg');">
     <div class="hero-content">
-        <h1>Suelos para Patios y Terrazas de Exterior</h1>
+        <h1><?php echo adrihosan_h1_dinamico( 'Suelos para Patios y Terrazas de Exterior' ); ?></h1>
         <p>Olv&iacute;date de baldosas que se rajan con el fr&iacute;o o resbalan cuando llueve. En Adrihosan te ofrecemos soluciones reales en porcel&aacute;nico de exterior y revestimientos de fachada que aguantan lo que les eches.</p>
         <div class="hero-buttons">
             <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo</a>

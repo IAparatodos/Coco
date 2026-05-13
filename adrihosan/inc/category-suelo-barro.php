@@ -19,7 +19,7 @@ function adrihosan_barro_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/">Pavimentos</a> &gt;
                 <span>Suelo de Barro y Terracota</span>
             </nav>
-            <h1>Suelo de Barro y Terracota: La Esencia de la Artesan&iacute;a</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelo de Barro y Terracota: La Esencia de la Artesan&iacute;a' ); ?></h1>
             <p>Recupera la calidez de lo aut&eacute;ntico. Nuestros suelos de barro cocido y baldosas de terracota son moldeados a mano, pieza a pieza, ofreciendo una belleza natural que mejora con el tiempo. Sostenibilidad, inercia t&eacute;rmica y dise&ntilde;o mediterr&aacute;neo.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-barro" class="hero-btn primary">Explorar Colecci&oacute;n</a>

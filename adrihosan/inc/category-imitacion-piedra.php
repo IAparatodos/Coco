@@ -18,7 +18,7 @@ function adrihosan_imitacion_piedra_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Azulejos-imitacion-piedra-Adrihosan-cat.jpg');">
         <div class="hero-content">
-            <h1>Azulejos Imitaci&oacute;n Piedra: La Naturaleza en tu Hogar</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos Imitaci&oacute;n Piedra: La Naturaleza en tu Hogar' ); ?></h1>
             <p>Reproduce la textura y calidez de la piedra natural con la resistencia y facilidad de mantenimiento del porcel&aacute;nico. Ideal para crear ambientes r&uacute;sticos, mediterr&aacute;neos o contempor&aacute;neos.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-piedra" class="hero-btn primary">Ver Cat&aacute;logo</a>

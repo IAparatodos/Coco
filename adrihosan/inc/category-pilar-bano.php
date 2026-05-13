@@ -44,7 +44,7 @@ function adrihosan_pilar_bano_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg');">
         <div class="hero-content">
             
-            <h1>Baldosa Hidr&aacute;ulica Original para Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Ba&ntilde;o' ); ?></h1>
             
             <p>Descubre el encanto de la baldosa hidr&aacute;ulica original. Un material con alma que transforma tu ba&ntilde;o en un espacio &uacute;nico, lleno de car&aacute;cter y belleza atemporal.</p>
             <div class="hero-buttons">

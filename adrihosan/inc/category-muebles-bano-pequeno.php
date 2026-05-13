@@ -19,7 +19,7 @@ function adrihosan_muebles_bano_pequeno_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o Peque&ntilde;os</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o Peque&ntilde;os: Optimiza cada Cent&iacute;metro</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o Peque&ntilde;os: Optimiza cada Cent&iacute;metro' ); ?></h1>
             <p>&iquest;Tu cuarto de ba&ntilde;o es muy peque&ntilde;o? No te preocupes. Tenemos muebles compactos, de fondo reducido y con dise&ntilde;os inteligentes que transformar&aacute;n tu aseo en un espacio funcional y con estilo.</p>
         </div>
     </section>

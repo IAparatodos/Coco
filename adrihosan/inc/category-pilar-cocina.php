@@ -40,7 +40,7 @@ function adrihosan_pilar_cocina_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
         <div class="hero-content">
 
-            <h1>Baldosa Hidr&aacute;ulica Original para Cocina</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Cocina' ); ?></h1>
 
             <p>La baldosa hidr&aacute;ulica original convierte la cocina en una declaraci&oacute;n de estilo. Perfecta para salpicaderos con car&aacute;cter, suelos que cuentan una historia o para enmarcar una isla central.</p>
             <div class="hero-buttons">

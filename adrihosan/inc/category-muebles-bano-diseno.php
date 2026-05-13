@@ -20,7 +20,7 @@ function adrihosan_muebles_bano_diseno_contenido_superior() {
                 <span>Muebles de Ba&ntilde;o de Dise&ntilde;o</span>
             </nav>
             <p class="hero-tagline">Donde la arquitectura se encuentra con el bienestar.</p>
-            <h1>Muebles de Ba&ntilde;o de Dise&ntilde;o: Vanguardia y Exclusividad</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o de Dise&ntilde;o: Vanguardia y Exclusividad' ); ?></h1>
             <p>Explora una selecci&oacute;n &uacute;nica de muebles de ba&ntilde;o de alta gama. Dise&ntilde;os de autor, acabados artesanales y materiales innovadores creados para quienes entienden que el lujo reside en los detalles.</p>
         </div>
     </section>

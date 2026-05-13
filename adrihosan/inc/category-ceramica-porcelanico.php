@@ -259,7 +259,7 @@ function adrihosan_porcelanico_superior_final() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/">Pavimentos</a> &gt;
                 <span>Gres Porcel&aacute;nico</span>
             </nav>
-            <h1>Gres Porcel&aacute;nico: La Base de tu Hogar</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Gres Porcel&aacute;nico: La Base de tu Hogar' ); ?></h1>
             <p>Resistencia extrema, dise&ntilde;o impecable y mantenimiento cero. El suelo definitivo.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-porcelanico" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -724,7 +724,7 @@ function adrihosan_metro_superior_final() {
                 <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
                 <span>Azulejo Metro</span>
             </nav>
-            <h1>Azulejo Metro</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Metro' ); ?></h1>
             <p>Del metro de Par&iacute;s a tu hogar. El revestimiento biselado que aporta luz, car&aacute;cter y un estilo atemporal a cualquier estancia.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-metro" class="hero-btn primary">Ver Colecci&oacute;n</a>

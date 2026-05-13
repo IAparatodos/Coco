@@ -19,7 +19,7 @@ function adrihosan_ledimex_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejos Ledimex</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o Ledimex</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o Ledimex' ); ?></h1>
             <p class="hero-tagline">Fabricante espa&ntilde;ol especializado en espejos LED.</p>
             <p>Espejos Ledimex: fabricante especializado en espejos de ba&ntilde;o con luz LED, antivaho e interruptor t&aacute;ctil. Redondos, rectangulares y ovalados. 112 modelos con env&iacute;o gratis.</p>
         </div>

@@ -13,7 +13,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas.jpg');">
         <div class="hero-content">
-            <h1>Suelos y Porcel&aacute;nico para Piscinas: Dise&ntilde;a tu Oasis</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos y Porcel&aacute;nico para Piscinas: Dise&ntilde;a tu Oasis' ); ?></h1>
             <p>Materiales de alta resistencia t&eacute;cnica, antideslizantes y dise&ntilde;ados para transformar tu piscina en un espacio &uacute;nico. Desde el cl&aacute;sico gresite hasta el porcel&aacute;nico de &uacute;ltima generaci&oacute;n.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-piscinas" class="hero-btn primary">Ver Colecci&oacute;n</a>

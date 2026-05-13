@@ -28,7 +28,7 @@ function adrihosan_contenido_superior_camerinos() {
         <section class="ac-hero-section adrihosan-full-width-block">
             <div class="ac-hero-content">
               
-    <h1>Camerinos de Baño: El Reflejo del Orden</h1>
+    <h1><?php echo adrihosan_h1_dinamico( 'Camerinos de Baño: El Reflejo del Orden' ); ?></h1>
     
     
                 <p>Gana espacio, elimina el desorden y eleva el diseño de tu baño con la solución 2 en 1 definitiva: espejo y almacenaje en una sola pieza.</p>

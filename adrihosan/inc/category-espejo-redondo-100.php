@@ -21,7 +21,7 @@ function adrihosan_espejo_redondo_100_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/">Espejo redondo ba&ntilde;o</a> &gt;
                 <span>Espejo redondo 100&nbsp;cm</span>
             </nav>
-            <h1>Espejos Redondos de 100&nbsp;cm para Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos Redondos de 100&nbsp;cm para Ba&ntilde;o' ); ?></h1>
             <p class="hero-tagline">El espejo redondo m&aacute;s grande de nuestra colecci&oacute;n.</p>
             <p>100&nbsp;cm de di&aacute;metro para ba&ntilde;os principales que buscan una pieza de impacto. Con luz LED, antivaho, marco negro y oro. 19 modelos con env&iacute;o gratis.</p>
         </div>

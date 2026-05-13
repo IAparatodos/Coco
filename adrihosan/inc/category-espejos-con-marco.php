@@ -19,7 +19,7 @@ function adrihosan_espejos_con_marco_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejos con marco</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o con Marco</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o con Marco' ); ?></h1>
             <p class="hero-tagline">El marco convierte un espejo en pieza decorativa.</p>
             <p>Espejos de ba&ntilde;o con marco negro, oro, oro rosa y plexiglass. El marco convierte un espejo funcional en una pieza decorativa que define el car&aacute;cter del ba&ntilde;o. Redondos, rectangulares y ovalados. Env&iacute;o gratis.</p>
         </div>

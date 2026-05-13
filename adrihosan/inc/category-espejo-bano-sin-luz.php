@@ -19,7 +19,7 @@ function adrihosan_espejo_bano_sin_luz_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de Ba&ntilde;o</a> &gt;
                 <span>Espejo ba&ntilde;o sin luz</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o Sin Luz</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o Sin Luz' ); ?></h1>
             <p class="hero-tagline">Libertad total para combinar con tus propios apliques.</p>
             <p>Espejos de ba&ntilde;o sin iluminaci&oacute;n integrada. Redondos, rectangulares, con marco negro y sin marco. Env&iacute;o gratis.</p>
         </div>

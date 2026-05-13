@@ -13,7 +13,7 @@ function adrihosan_pavimentos_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Suelos y Pavimentos Cer&aacute;micos: La Base de tu Reforma</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos y Pavimentos Cer&aacute;micos: La Base de tu Reforma' ); ?></h1>
             <p>No busques solo un suelo; busca la piel de tu hogar. En Adrihosan seleccionamos pavimentos que aguantan tu ritmo de vida sin perder su esencia.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-pavimentos" class="hero-btn primary">Ver Cat&aacute;logo Completo</a>

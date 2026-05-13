@@ -20,7 +20,7 @@ function adrihosan_espejo_bano_60x90_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-60/">Espejo ba&ntilde;o 60</a> &gt;
                 <span>Espejo ba&ntilde;o 60x90</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o 60x90&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o 60x90&nbsp;cm' ); ?></h1>
             <p class="hero-tagline">El formato vertical alto para ver m&aacute;s all&aacute; del rostro.</p>
             <p>Espejos de 60x90&nbsp;cm: el formato vertical alto para ver m&aacute;s all&aacute; del rostro. Con luz LED, antivaho y marco negro. 12 modelos con env&iacute;o gratis.</p>
         </div>

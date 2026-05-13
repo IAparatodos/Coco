@@ -22,7 +22,7 @@ function adrihosan_contenido_superior_original() {
 		<section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/Baldosa-hidraulica-original-Adrihosan-1.jpg');">
 			<div class="hero-content">
 				
-				<h1>Baldosa Hidráulica Original</h1>
+				<h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidráulica Original' ); ?></h1>
 				<p>Siente la belleza del cemento pigmentado. Celebramos la artesanía y el carácter del auténtico suelo hidráulico, creando suelos evocadores e irrepetibles.</p>
 				<div class="hero-buttons">
 					<a href="#bh-product-grid-anchor" class="hero-btn primary">Ver Colección</a>

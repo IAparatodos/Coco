@@ -18,7 +18,7 @@ function adrihosan_suelos_rusticos_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/03/Suelos-Rusticos-adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Suelos R&uacute;sticos: Calidez y Autenticidad para tu Hogar</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos R&uacute;sticos: Calidez y Autenticidad para tu Hogar' ); ?></h1>
             <p>Pavimentos con alma. Los suelos r&uacute;sticos aportan car&aacute;cter, textura y esa sensaci&oacute;n de calidez que solo los acabados naturales pueden ofrecer.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-rusticos" class="hero-btn primary">Ver Cat&aacute;logo</a>

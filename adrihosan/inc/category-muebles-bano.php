@@ -18,7 +18,7 @@ function adrihosan_muebles_bano_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/bano/">Ba&ntilde;o</a> &gt;
                 <span>Muebles de Ba&ntilde;o</span>
             </nav>
-            <h1>Muebles de Ba&ntilde;o: Encuentra el Estilo Ideal para tu Hogar</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Muebles de Ba&ntilde;o: Encuentra el Estilo Ideal para tu Hogar' ); ?></h1>
             <p>M&aacute;s de 500 modelos en stock. Desde soluciones compactas para ba&ntilde;os peque&ntilde;os hasta muebles de dise&ntilde;o suspendidos o r&uacute;sticos con patas. Calidad, durabilidad y env&iacute;o r&aacute;pido.</p>
         </div>
     </section>

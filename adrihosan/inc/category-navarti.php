@@ -19,7 +19,7 @@ function adrihosan_navarti_contenido_superior() {
                 <a href="#">Marcas</a> &gt;
                 <span>Navarti Cer&aacute;mica</span>
             </nav>
-            <h1>Navarti Cer&aacute;mica: Innovaci&oacute;n y Dise&ntilde;o en cada Pieza</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Navarti Cer&aacute;mica: Innovaci&oacute;n y Dise&ntilde;o en cada Pieza' ); ?></h1>
             <div style="display:inline-block; background:#4dd2d0; color:#102e35; font-weight:700; padding:6px 18px; border-radius:4px; font-size:0.85rem; margin-bottom:12px; font-family:'Poppins','Poppins Fallback',sans-serif;">&#9989; Distribuidor Oficial Navarti</div>
             <p>Descubre el universo de Navarti en Adrihosan. Desde el porcel&aacute;nico t&eacute;cnico m&aacute;s resistente hasta las maderas cer&aacute;micas m&aacute;s c&aacute;lidas. Calidad de Castell&oacute;n para transformar tu hogar con estilo.</p>
             <div class="hero-buttons">

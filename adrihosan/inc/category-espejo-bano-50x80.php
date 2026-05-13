@@ -20,7 +20,7 @@ function adrihosan_espejo_bano_50x80_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-50/">Espejo ba&ntilde;o 50</a> &gt;
                 <span>Espejo ba&ntilde;o 50x80</span>
             </nav>
-            <h1>Espejos de Ba&ntilde;o 50x80&nbsp;cm</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Ba&ntilde;o 50x80&nbsp;cm' ); ?></h1>
             <p>Espejos de 50x80&nbsp;cm: formato vertical amplio para aseos y ba&ntilde;os compactos. Con luz LED, antivaho y marco negro.</p>
         </div>
     </section>
