@@ -15,10 +15,14 @@ function adrihosan_reservas_get_calendar_id() {
         : 'comercial@adrihosan.com';
 }
 
-function adrihosan_reservas_get_access_token() {
-    $cached = get_transient( 'adria_google_access_token' );
-    if ( $cached ) {
-        return $cached;
+function adrihosan_reservas_get_access_token( $force_refresh = false ) {
+    if ( ! $force_refresh ) {
+        $cached = get_transient( 'adria_google_access_token' );
+        if ( $cached ) {
+            return $cached;
+        }
+    } else {
+        delete_transient( 'adria_google_access_token' );
     }
 
     $client_id     = defined( 'ADRIA_GOOGLE_CLIENT_ID' ) ? ADRIA_GOOGLE_CLIENT_ID : '';
