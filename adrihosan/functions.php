@@ -2506,4 +2506,18 @@ add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
     return $canonical;
 } );
 
-require_once get_stylesheet_directory() . '/inc/helpers-h1.php';
+// Helper H1 dinamico (Filter Everything Pro). Carga defensiva: si el inc no
+// se ha subido al server, la web NO debe caerse. El stub de abajo garantiza
+// que las plantillas que llaman a adrihosan_h1_dinamico() siempre tengan una
+// funcion disponible que al menos devuelve el H1 fallback estatico.
+$_adrihosan_h1_helper = get_template_directory() . '/inc/helpers-h1.php';
+if ( file_exists( $_adrihosan_h1_helper ) ) {
+	require_once $_adrihosan_h1_helper;
+}
+unset( $_adrihosan_h1_helper );
+
+if ( ! function_exists( 'adrihosan_h1_dinamico' ) ) {
+	function adrihosan_h1_dinamico( $h1_fallback ) {
+		return $h1_fallback;
+	}
+}

@@ -482,9 +482,11 @@ function nombre_contenido_inferior() {
 
 **Si falta este wrapper**, los filtros AJAX de Filter Everything Pro no funcionarán y la página dará error al intentar filtrar productos.
 
-### Sistema de carga de CSS por categoría: `inc/cache-and-css.php`
+### Sistema de carga de CSS por categoría: `functions.php` (función `adrihosan_cargar_css_categoria`)
 
-La función `adrihosan_cargar_css_categoria()` (línea 74) carga automáticamente:
+La función vive en `functions.php` (alrededor de la línea 2262) y se engancha a `wp_enqueue_scripts` con prioridad 20. Históricamente existió un duplicado en `inc/cache-and-css.php` que quedó huérfano (nunca llegó a cargarse desde `functions.php`); ese archivo se eliminó del repo el 2026-05-14 para evitar confusión y para evitar un futuro fatal `Cannot redeclare function` si alguien lo hubiera vuelto a incluir. **No vuelvas a crear `inc/cache-and-css.php`**: edita la función directamente en `functions.php`.
+
+La función carga automáticamente:
 1. `base-global.css` → Estilos compartidos (`.adrihosan-full-width-block`, `.product-loop-header`, `.faq-section-common`, `.contact-help-common`, etc.)
 2. `mobile-fixes.css` → Correcciones móviles globales (producto loop full-width, etc.)
 3. `category-{ID}.css` → CSS específico de cada categoría (detectado por `file_exists()`)
@@ -572,10 +574,19 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 - **Critical CSS inline** en header.php (header + hero h1 + cover + responsive)
 - **CSS async** style.css y fonts.css via media="print" + onload
 - **Cache menú categorías** en functions.php (transient 1h para 1.496 categorías)
-- **CSS versioning con filemtime()** en cache-and-css.php (cache-bust automático)
+- **CSS versioning con filemtime()** en `functions.php → adrihosan_cargar_css_categoria()` (cache-bust automático)
 - **Canonical paginación Escaparate** en functions.php (Rank Math)
 
 ### Historial de cambios recientes (Abril 2026)
+
+#### 2026-05-14: blindaje del H1 dinamico + limpieza cache-and-css huerfano
+- **Contexto**: por la manana el frontend de WooCommerce se cayo con `Uncaught Error: Call to undefined function adrihosan_h1_dinamico() in inc/category-azulejos-exterior.php:18`. Causa: el dia anterior se subio por FTP la carpeta `inc/` (incluido `inc/helpers-h1.php` y los 66 `category-*.php` que llaman a la funcion) pero NO se subio el `functions.php` con el `require_once get_stylesheet_directory() . '/inc/helpers-h1.php'`. Sin el require, la funcion no existia, los templates de categoria petaron.
+- **Fix inmediato**: subir el `functions.php` correcto al servidor.
+- **Endurecimiento aplicado en este commit**:
+  1. La carga del helper pasa a ser **defensiva** con `file_exists()` (regla "Subidas FTP corruptas tiran la web" de este mismo CLAUDE.md). Si en el futuro vuelve a faltar `inc/helpers-h1.php`, el `require_once` no se intenta.
+  2. Se añade un **stub fallback** justo despues del require: si `adrihosan_h1_dinamico` no existe tras intentar cargar el helper, se define una version minima que devuelve tal cual el `$h1_fallback` recibido. Las plantillas siguen funcionando con el H1 estatico de toda la vida. La web no se cae.
+  3. Se cambia `get_stylesheet_directory()` por `get_template_directory()` para coherencia con el resto de includes del theme y para evitar bugs latentes si en el futuro se activa un child theme.
+- **Limpieza simultanea**: borrado de `inc/cache-and-css.php` que llevaba siendo codigo huerfano (no se incluia desde ningun sitio) y redefinia `adrihosan_cargar_css_categoria()` ya activa en `functions.php`. Si alguien lo hubiera vuelto a incluir habria dado fatal `Cannot redeclare function`. La funcion activa, autoritativa y unica vive ahora **solo** en `functions.php`.
 
 #### Nuevas categorías creadas
 - **99 - Muebles de Baño**: PHP (`category-muebles-bano.php`) + CSS (`category-99.css`) + FAQs
@@ -599,7 +610,7 @@ La categoría **102 (Espejos)** usa clases BEM propias (`adri-faq-espejos__*`) e
 
 #### Cache-busting CSS
 - **Problema**: CSS versión hardcodeada `'1.0.0'` no se invalidaba al actualizar archivos
-- **Solución**: Cambiado a `filemtime()` en `cache-and-css.php` para invalidación automática
+- **Solución**: Cambiado a `filemtime()` en la función `adrihosan_cargar_css_categoria()` de `functions.php` para invalidación automática
 
 #### Fix Muebles Baño Rústicos (2428): paleta de colores incorrecta (DOBLE CORRECCIÓN)
 - **Problema inicial**: La categoría se creó con paleta marrón/madera (`#3a2616`, `#8b5a2b`, `#faf6f0`, `#e8c89a`, `#5a3a1f`, `#6b5340`, `#e6d9c4`) en lugar de la paleta corporativa. Mismo error que se cometió con la categoría 2433.
