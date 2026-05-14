@@ -159,6 +159,10 @@ function dw_select_attribute($item, $args, $tax_query, $attr_val, $el = 'select'
 		$base_args['tax_query'] = $tax_query;
 		$base_args['fields'] = 'ids';
 		$base_args['posts_per_page'] = -1;
+		// Cuando posts_per_page = -1, MariaDB rechaza el SQL si hay offset > 0
+		// heredado de $args (paginacion). Forzar offset/paged a 0/1.
+		$base_args['offset'] = 0;
+		$base_args['paged'] = 1;
 		$base_args['no_found_rows'] = true;
 		$base_args['post_type'] = 'product';
 		$base_args['post_status'] = 'publish';
