@@ -155,13 +155,17 @@ function dw_select_attribute($item, $args, $tax_query, $attr_val, $el = 'select'
 
 		// OPTIMIZACIÓN: Una sola query para obtener los IDs de productos que coinciden
 		// con los filtros actuales, en lugar de una query por cada término (N+1).
+		// IMPORTANTE: $args viene de $wp_query->query_vars en categorias paginadas
+		// y trae nopaging=false + offset>0 heredados. Con posts_per_page=-1 eso
+		// genera "LIMIT offset, -1" que MariaDB rechaza por sintaxis. Por eso:
+		//   - nopaging=true desactiva la construccion de la clausula LIMIT.
+		//   - unset(offset) evita la rama que prefija "offset, " al LIMIT.
 		$base_args = $args;
 		$base_args['tax_query'] = $tax_query;
 		$base_args['fields'] = 'ids';
 		$base_args['posts_per_page'] = -1;
-		// Cuando posts_per_page = -1, MariaDB rechaza el SQL si hay offset > 0
-		// heredado de $args (paginacion). Forzar offset/paged a 0/1.
-		$base_args['offset'] = 0;
+		$base_args['nopaging'] = true;
+		unset( $base_args['offset'] );
 		$base_args['paged'] = 1;
 		$base_args['no_found_rows'] = true;
 		$base_args['post_type'] = 'product';
