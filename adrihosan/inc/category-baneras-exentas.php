@@ -22,7 +22,7 @@ function adrihosan_baneras_exentas_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Ba&ntilde;eras Exentas' ); ?></h1>
             <p class="hero-tagline">Libre instalaci&oacute;n, dise&ntilde;o que destaca.</p>
-            <p>Ba&ntilde;eras exentas de libre instalaci&oacute;n: Solid Surface, Corian, acr&iacute;licas y de resina mineral. Modernas, con patas, redondas, rectangulares y a medida. M&aacute;s de 280 modelos con env&iacute;o gratis y 36 meses sin intereses.</p>
+            <p>Ba&ntilde;eras exentas de libre instalaci&oacute;n: Solid Surface, Corian, acr&iacute;licas y de resina mineral. Modernas, con patas, redondas, rectangulares y a medida. M&aacute;s de 280 modelos con env&iacute;o gratis.</p>
         </div>
     </section>
 
