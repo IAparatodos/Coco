@@ -32,8 +32,8 @@ function adrihosan_baneras_exentas_contenido_superior() {
             <div class="trust-item">
                 <div class="trust-icon">&#11088;</div>
                 <div class="trust-text">
-                    <strong>Fabricaci&oacute;n propia Solid Surface</strong>
-                    <span>Resina mineral fabricada en nuestras instalaciones</span>
+                    <strong>Solid Surface de primeras marcas</strong>
+                    <span>Trabajamos con los mejores fabricantes del mercado</span>
                 </div>
             </div>
             <div class="trust-item">
