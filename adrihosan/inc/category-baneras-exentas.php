@@ -84,26 +84,26 @@ function adrihosan_baneras_exentas_contenido_superior() {
                             <td data-label="Peso (170 cm)">40-60&nbsp;kg</td>
                             <td data-label="Conserva calor">Medio</td>
                             <td data-label="Reparable">No</td>
-                            <td data-label="Desde">974,90&nbsp;&euro;</td>
+                            <td data-label="Desde"><a href="https://www.adrihosan.com/producto/banera-exenta-acrilica-minimal/"><strong>974,90&nbsp;&euro;</strong></a></td>
                         </tr>
                         <tr>
                             <td data-label="Material">Corian</td>
                             <td data-label="Peso (170 cm)">100-140&nbsp;kg</td>
                             <td data-label="Conserva calor">Alto</td>
                             <td data-label="Reparable">S&iacute;</td>
-                            <td data-label="Desde">1.663,90&nbsp;&euro;</td>
+                            <td data-label="Desde"><a href="https://www.adrihosan.com/producto/banera-exenta-corian-by-dupont-hydra-170-70/"><strong>1.663,90&nbsp;&euro;</strong></a></td>
                         </tr>
                         <tr>
                             <td data-label="Material">Solid Surface (resina mineral)</td>
                             <td data-label="Peso (170 cm)">90-130&nbsp;kg</td>
                             <td data-label="Conserva calor">Alto</td>
                             <td data-label="Reparable">S&iacute;</td>
-                            <td data-label="Desde">1.701,90&nbsp;&euro;</td>
+                            <td data-label="Desde"><a href="https://www.adrihosan.com/producto/banera-exenta-solid-surface-belly/"><strong>1.701,90&nbsp;&euro;</strong></a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="banex-tabla-nota">El acr&iacute;lico es la opci&oacute;n m&aacute;s ligera y econ&oacute;mica, ideal para reformas con presupuesto ajustado. Solid Surface y Corian son materiales premium reparables, con mejor conservaci&oacute;n del calor y acabados a medida. El Solid Surface es una resina mineral compuesta de alta densidad: cuando se busca ba&ntilde;era de resina, en la pr&aacute;ctica se est&aacute; buscando Solid Surface o Corian, ya que ambos se fabrican con resinas y cargas minerales. En Adrihosan fabricamos Solid Surface en nuestras instalaciones, lo que nos permite personalizar medidas y acabados que otros distribuidores no ofrecen.</p>
+            <p class="banex-tabla-nota">El acr&iacute;lico es la opci&oacute;n m&aacute;s ligera y econ&oacute;mica, ideal para reformas con presupuesto ajustado. Solid Surface y Corian son materiales premium reparables, con mejor conservaci&oacute;n del calor y acabados a medida. El Solid Surface es una resina mineral compuesta de alta densidad: cuando se busca ba&ntilde;era de resina, en la pr&aacute;ctica se est&aacute; buscando Solid Surface o Corian, ya que ambos se fabrican con resinas y cargas minerales. En Adrihosan trabajamos con los mejores fabricantes de Solid Surface del mercado y ofrecemos atenci&oacute;n personalizada por videoconferencia o en nuestro showroom para que elijas el modelo, color y acabado que mejor encaje en tu ba&ntilde;o.</p>
         </div>
     </section>
 
@@ -156,8 +156,7 @@ function adrihosan_baneras_exentas_contenido_inferior() {
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/banera-corian/" class="banex-pill">Corian</a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/banera-exenta-pequena/" class="banex-pill">Peque&ntilde;as</a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/baneras-exentas-baratas/" class="banex-pill">Baratas</a>
-                <!-- TODO: sustituir el # por la URL real del filtro banhidro-si -->
-                <a href="#" class="banex-pill">Con hidromasaje</a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/banhidro-si/" class="banex-pill">Con hidromasaje</a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/" class="banex-pill">Todas las ba&ntilde;eras exentas</a>
             </div>
         </div>
