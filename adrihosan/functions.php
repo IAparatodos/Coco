@@ -271,6 +271,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2683: // Lavabo grande (subcategoria del silo Lavabos)
             adrihosan_setup_lavabo_grande_cpu_fix();
             break;
+        case 394: // Bañeras Exentas (madre del silo Baneras)
+            adrihosan_setup_baneras_exentas_cpu_fix();
+            break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
             break;
@@ -1395,6 +1398,23 @@ function adrihosan_setup_inodoros_colores_cpu_fix() {
     }
 }
 
+// Cat 394 - Baneras Exentas (madre del silo Baneras, cherry-pick de la
+// rama claude/resolve-merge-conflicts-zr6NH que nunca llego a esta rama).
+function adrihosan_setup_baneras_exentas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_baneras_exentas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baneras_exentas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baneras_exentas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_exentas_contenido_inferior', 99);
+    }
+}
+
 function adrihosan_setup_espejo_bano_140_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -2465,6 +2485,13 @@ if ( file_exists( $_adri_ledimex_path ) ) {
     require $_adri_ledimex_path;
 }
 unset( $_adri_ledimex_path );
+
+// === Categoria 394 - Baneras Exentas (carga defensiva con file_exists) ===
+$_adri_baneras_exentas_path = get_template_directory() . '/inc/category-baneras-exentas.php';
+if ( file_exists( $_adri_baneras_exentas_path ) ) {
+    require $_adri_baneras_exentas_path;
+}
+unset( $_adri_baneras_exentas_path );
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
