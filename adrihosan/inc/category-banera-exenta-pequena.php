@@ -114,8 +114,7 @@ function adrihosan_banera_exenta_pequena_contenido_inferior() {
     <!-- SECCION INSPIRACION (bloque unico) -->
     <section class="banpq-inspiration-section adrihosan-full-width-block">
         <div class="banpq-inspiration-wrapper">
-            <!-- TODO: sustituir el placeholder por la imagen real -->
-            <div class="banpq-inspiration-img"></div>
+            <div class="banpq-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-pequena-Adrihosan.jpg');"></div>
             <div class="banpq-inspiration-text">
                 <h2>Una ba&ntilde;era exenta peque&ntilde;a no resta funcionalidad: la concentra</h2>
                 <p>Material sin poros, l&iacute;neas limpias y una sola pieza que transforma incluso los ba&ntilde;os m&aacute;s reducidos en zonas de descanso.</p>
