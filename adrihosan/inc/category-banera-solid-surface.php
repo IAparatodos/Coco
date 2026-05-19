@@ -11,8 +11,7 @@
 function adrihosan_banera_solid_surface_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-pequena-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -117,8 +116,7 @@ function adrihosan_banera_solid_surface_contenido_inferior() {
     <!-- SECCION INSPIRACION (bloque unico) -->
     <section class="bss-inspiration-section adrihosan-full-width-block">
         <div class="bss-inspiration-wrapper">
-            <!-- TODO: sustituir el placeholder por la imagen real -->
-            <div class="bss-inspiration-img"></div>
+            <div class="bss-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-pequena-Adrihosan.jpg');"></div>
             <div class="bss-inspiration-text">
                 <h2>Una sola pieza continua, sin azulejos fr&iacute;os ni juntas</h2>
                 <p>La textura sin poros y la calidez al tacto del Solid Surface convierten cada ba&ntilde;o en una experiencia distinta. Sin azulejos fr&iacute;os, sin esquinas marcadas, sin juntas. Una sola pieza continua.</p>
