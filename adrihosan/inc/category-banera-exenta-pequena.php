@@ -11,8 +11,7 @@
 function adrihosan_banera_exenta_pequena_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-pequena-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
