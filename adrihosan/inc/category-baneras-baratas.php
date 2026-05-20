@@ -9,17 +9,18 @@
 // ============================================================================
 
 /**
- * Orden por defecto: precio ascendente.
+ * Orden por defecto del catalogo: precio ascendente.
  * Se enganchara desde adrihosan_setup_baneras_baratas_cpu_fix() (solo cuando
  * se renderiza esta categoria), de modo que no afecta a otras paginas.
+ *
+ * Se usa woocommerce_default_catalog_orderby (no pre_get_posts) porque
+ * WooCommerce tiene su propio sistema de catalog ordering que sobrescribe
+ * cualquier 'orderby' que se ponga directamente en la query principal.
+ * Este filtro cambia el orden POR DEFECTO; el dropdown "Ordenar por..."
+ * del usuario sigue funcionando normalmente.
  */
-function adrihosan_baneras_baratas_orden_precio_asc( $q ) {
-    if ( is_admin() ) {
-        return;
-    }
-    $q->set( 'meta_key', '_price' );
-    $q->set( 'orderby', 'meta_value_num' );
-    $q->set( 'order', 'ASC' );
+function adrihosan_baneras_baratas_orden_precio_asc( $orderby ) {
+    return 'price';
 }
 
 function adrihosan_baneras_baratas_contenido_superior() {

@@ -923,7 +923,7 @@ function adrihosan_setup_baneras_baratas_cpu_fix() {
     }
     // Orden por defecto: precio ascendente (solo en esta categoria).
     if ( function_exists( 'adrihosan_baneras_baratas_orden_precio_asc' ) ) {
-        add_action('woocommerce_product_query', 'adrihosan_baneras_baratas_orden_precio_asc', 10);
+        add_filter('woocommerce_default_catalog_orderby', 'adrihosan_baneras_baratas_orden_precio_asc');
     }
 }
 
