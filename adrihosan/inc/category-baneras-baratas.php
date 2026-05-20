@@ -34,8 +34,7 @@ add_action( 'woocommerce_product_query', function( $q ) {
 function adrihosan_baneras_baratas_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-barata.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -138,8 +137,7 @@ function adrihosan_baneras_baratas_contenido_inferior() {
     <!-- SECCION INSPIRACION (bloque unico) -->
     <section class="bbar-inspiration-section adrihosan-full-width-block">
         <div class="bbar-inspiration-wrapper">
-            <!-- TODO: sustituir el placeholder por la imagen real -->
-            <div class="bbar-inspiration-img"></div>
+            <div class="bbar-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/banera-exenta-barata.jpg');"></div>
             <div class="bbar-inspiration-text">
                 <h2>Mismo dise&ntilde;o exento, mismas medidas est&aacute;ndar, materiales contrastados</h2>
                 <p>Una ba&ntilde;era exenta barata no es una ba&ntilde;era de menor categor&iacute;a: es la opci&oacute;n correcta para presupuestos ajustados o reformas donde la ba&ntilde;era no es la pieza protagonista del proyecto.</p>
