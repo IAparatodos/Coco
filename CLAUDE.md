@@ -108,6 +108,39 @@ WooCommerce **NO dispara** los hooks `woocommerce_before_shop_loop` y `woocommer
 
 **Solución correcta**: asignar al menos 1 producto a la categoría desde WooCommerce. NO modificar los hooks a `before/after_main_content` para evitarlo, porque rompe la coherencia con las otras 44+ categorías que usan el patrón estándar.
 
+## REGLA: Forzar orden de productos en una categoría concreta
+
+Para forzar un orden de productos (ej. precio ascendente) en UNA sola categoría, sin afectar a las demás ni al dropdown global del usuario, usar el hook **`woocommerce_product_query` con prioridad 20** dentro del propio `inc/category-{slug}.php` (NO en `functions.php`). Patrón canónico (aplicado en `inc/category-baneras-baratas.php`, categoría 2279):
+
+```php
+add_action( 'woocommerce_product_query', function( $q ) {
+    if ( is_admin() || ! is_main_query() ) {
+        return;
+    }
+    if ( is_product_category( 2279 ) ) {
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'order', 'ASC' );
+    }
+}, 20 );
+```
+
+### Por qué este hook y no otro
+
+| Hook intentado | Por qué falla |
+|---|---|
+| `pre_get_posts` o `woocommerce_product_query` con prio 10 | El sistema interno de catalog ordering de WC se engancha a `pre_get_posts` con la misma prioridad y **sobrescribe** el `orderby` por el del dropdown del usuario (que por defecto es `menu_order`). |
+| `add_filter( 'woocommerce_default_catalog_orderby', ... )` | Solo cambia el VALOR seleccionado por defecto en el dropdown, pero el dropdown del usuario sigue ganando si pulsa otra opción. No sirve si lo que queremos es ignorar el dropdown. |
+
+La clave es **prioridad 20**: se ejecuta DESPUÉS del catalog ordering interno de WC (prio 10), por lo que sobrescribe el `orderby` final con `_price ASC`. El dropdown del usuario sigue visible pero pulsarlo no cambia el orden en esta categoría — es intencional cuando se quiere mostrar siempre precio asc (típico de "ofertas", "baratas", etc.).
+
+### Reglas de oro al añadir este patrón
+
+1. **NUNCA en `functions.php`** del theme. Aunque el check `is_product_category()` lo haría seguro, el patrón Adrihosan es hooks de categoría dentro del `inc/category-*.php` correspondiente. Mantiene cada categoría auto-contenida.
+2. **SIEMPRE con `is_main_query()`** + `is_product_category(ID)`. Sin esos checks el hook afecta a queries secundarias (widgets, related products) y rompe el resto del sitio.
+3. **El hook va a nivel global del archivo**, fuera de las funciones `_contenido_superior` / `_contenido_inferior`. Se registra al cargar el theme; el check `is_product_category(ID)` decide en runtime si dispara.
+4. **NO repetir el patrón sin necesidad**. Forzar el orden mata el dropdown del usuario para esa categoría: usar SOLO cuando el orden por defecto del sitio sea inadecuado y queramos un orden específico inmutable (ej. baratas → precio asc, ofertas → descuento desc).
+
 ## REGLA: URLs en el código PHP de categorías
 
 Cuando generes enlaces en los archivos `inc/category-*.php` y **no tengas claro** la URL exacta de una categoría, producto o página, usa siempre la home como fallback:
