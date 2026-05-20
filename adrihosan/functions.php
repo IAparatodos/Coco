@@ -2423,6 +2423,20 @@ function adrihosan_cargar_css_categoria() {
         file_exists($mobile_fixes_path) ? filemtime($mobile_fixes_path) : '1.0.0'
     );
     
+    // Cargar JS comun (acordeon de FAQs) tambien en posts del blog. Mismo
+    // archivo que en categorias para tener una unica fuente de verdad: si
+    // cambia el JS de FAQs se actualiza automaticamente en blog y categorias.
+    if ( is_singular( 'post' ) ) {
+        $common_js_path = get_stylesheet_directory() . '/assets/js/category-common.js';
+        wp_enqueue_script(
+            'adrihosan-category-common',
+            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
+            array('jquery'),
+            file_exists($common_js_path) ? filemtime($common_js_path) : '1.0.2',
+            true
+        );
+    }
+
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
