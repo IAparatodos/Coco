@@ -921,10 +921,6 @@ function adrihosan_setup_baneras_baratas_cpu_fix() {
     if ( function_exists( 'adrihosan_baneras_baratas_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_baratas_contenido_inferior', 99);
     }
-    // Orden por defecto: precio ascendente (solo en esta categoria).
-    if ( function_exists( 'adrihosan_baneras_baratas_orden_precio_asc' ) ) {
-        add_filter('woocommerce_default_catalog_orderby', 'adrihosan_baneras_baratas_orden_precio_asc');
-    }
 }
 
 function adrihosan_setup_espejo_bano_140_cpu_fix() {
