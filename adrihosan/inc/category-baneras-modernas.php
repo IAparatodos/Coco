@@ -11,8 +11,7 @@
 function adrihosan_baneras_modernas_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -119,8 +118,7 @@ function adrihosan_baneras_modernas_contenido_inferior() {
     <!-- SECCION INSPIRACION (bloque unico) -->
     <section class="bmod-inspiration-section adrihosan-full-width-block">
         <div class="bmod-inspiration-wrapper">
-            <!-- TODO: sustituir el placeholder por la imagen real -->
-            <div class="bmod-inspiration-img"></div>
+            <div class="bmod-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Adrihosan.jpg');"></div>
             <div class="bmod-inspiration-text">
                 <h2>La pieza que define el car&aacute;cter del ba&ntilde;o completo</h2>
                 <p>Una ba&ntilde;era moderna no es solo una pieza funcional: es el elemento que define el car&aacute;cter del ba&ntilde;o completo. Material continuo, l&iacute;neas que respiran y la libertad de elegir el color que encaja con tu proyecto.</p>
