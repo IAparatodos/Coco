@@ -286,6 +286,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2279: // Bañeras Exentas Baratas (hija del silo Baneras)
             adrihosan_setup_baneras_baratas_cpu_fix();
             break;
+        case 2311: // Bañeras Exentas Modernas (hija del silo Baneras)
+            adrihosan_setup_baneras_modernas_cpu_fix();
+            break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
             break;
@@ -1487,6 +1490,20 @@ function adrihosan_setup_baneras_baratas_cpu_fix() {
     }
 }
 
+function adrihosan_setup_baneras_modernas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_baneras_modernas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baneras_modernas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baneras_modernas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_modernas_contenido_inferior', 99);
+    }
+}
+
 function adrihosan_setup_espejo_bano_140_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -2592,6 +2609,13 @@ if ( file_exists( $_adri_baneras_baratas_path ) ) {
     require $_adri_baneras_baratas_path;
 }
 unset( $_adri_baneras_baratas_path );
+
+// === Categoria 2311 - Baneras Exentas Modernas (carga defensiva con file_exists) ===
+$_adri_baneras_modernas_path = get_template_directory() . '/inc/category-baneras-modernas.php';
+if ( file_exists( $_adri_baneras_modernas_path ) ) {
+    require $_adri_baneras_modernas_path;
+}
+unset( $_adri_baneras_modernas_path );
 
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
