@@ -2090,14 +2090,22 @@ require get_template_directory() . '/inc/category-ceramica-vives.php';
 require get_template_directory() . '/inc/category-navarti.php';             // Cat 4722
 
 /* ========================================================================== */
-/* MARCAS PROPIAS (taxonomy: brand)                                           */
+/* MARCAS PROPIAS (taxonomy: brand) + CARGADOR MODULAR DE CSS                 */
 /* ========================================================================== */
-require get_template_directory() . '/inc/brand-solidker.php';               // Brand 2720
-
-/* ========================================================================== */
-/* CARGADOR MODULAR DE CSS/JS (categorias, brands, paginas estaticas)         */
-/* ========================================================================== */
-require get_template_directory() . '/inc/cache-and-css.php';
+// Require defensivo: si por alguna razon un archivo no esta en FTP o
+// se subio truncado, no tirar la web entera. Patron documentado en
+// CLAUDE.md tras el incidente del 2026-05-05 (cat 4333).
+$_adri_modular_incs = array(
+    '/inc/brand-solidker.php',   // Brand 2720 - Solidker
+    '/inc/cache-and-css.php',    // Cargador de CSS por categoria/brand/page
+);
+foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
+    $_adri_inc_path = get_template_directory() . $_adri_inc_rel;
+    if ( file_exists( $_adri_inc_path ) ) {
+        require $_adri_inc_path;
+    }
+}
+unset( $_adri_modular_incs, $_adri_inc_rel, $_adri_inc_path );
 
 /* ========================================================================== */
 /* SISTEMA DE RESERVAS                                                        */
