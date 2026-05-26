@@ -2357,37 +2357,9 @@ function adrihosan_add_date_asc_option($options) {
     return $options;
 }
 
-/* ========================================================================== */
-/* FIX: Preservar filtros de Filter Everything Pro en paginaci&oacute;n        */
-/* ========================================================================== */
-add_filter( 'woocommerce_pagination_args', 'adrihosan_preservar_filtros_en_paginacion' );
-
-function adrihosan_preservar_filtros_en_paginacion( $args ) {
-    if ( empty( $_GET ) ) {
-        return $args;
-    }
-
-    $params = $_GET;
-
-    // Eliminar par&aacute;metros est&aacute;ndar de paginaci&oacute;n
-    unset( $params['paged'] );
-    unset( $params['product-page'] );
-
-    if ( ! empty( $params ) ) {
-        $sanitized = array();
-        foreach ( $params as $key => $value ) {
-            $clean_key = sanitize_text_field( $key );
-            if ( is_array( $value ) ) {
-                $sanitized[ $clean_key ] = array_map( 'sanitize_text_field', $value );
-            } else {
-                $sanitized[ $clean_key ] = sanitize_text_field( $value );
-            }
-        }
-        $args['add_args'] = $sanitized;
-    }
-
-    return $args;
-}
+// NOTA: adrihosan_preservar_filtros_en_paginacion() ahora vive en
+// inc/cache-and-css.php (mismo fichero que el cargador de CSS). Se
+// elimino su duplicado aqui para evitar fatal "Cannot redeclare".
 
 /**
  * Canonical para paginación del custom post type Escaparate
