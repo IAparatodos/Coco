@@ -58,42 +58,57 @@ function adrihosan_brand_solidker_contenido_superior() {
             <div class="filter-group">
                 <span class="filter-group-label">Tipo de pieza</span>
                 <div class="filter-tags">
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Encimeras con lavabo integrado</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Lavabos sobre encimera</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">A medida</a>
+                    <a class="filter-tag" href="#">Encimeras con lavabo integrado</a>
+                    <a class="filter-tag" href="#">Lavabos sobre encimera</a>
+                    <a class="filter-tag" href="#">A medida</a>
                 </div>
             </div>
 
             <div class="filter-group">
                 <span class="filter-group-label">Configuraci&oacute;n</span>
                 <div class="filter-tags">
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Un seno</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Doble seno</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Sin lavabo (encimera lisa)</a>
+                    <a class="filter-tag" href="#">Un seno</a>
+                    <a class="filter-tag" href="#">Doble seno</a>
+                    <a class="filter-tag" href="#">Sin lavabo (encimera lisa)</a>
                 </div>
             </div>
 
             <div class="filter-group">
                 <span class="filter-group-label">Instalaci&oacute;n</span>
                 <div class="filter-tags">
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Suspendida</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Sobre mueble</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Apoyada en pared</a>
+                    <a class="filter-tag" href="#">Suspendida</a>
+                    <a class="filter-tag" href="#">Sobre mueble</a>
+                    <a class="filter-tag" href="#">Apoyada en pared</a>
                 </div>
             </div>
 
             <div class="filter-group">
                 <span class="filter-group-label">Acabado</span>
                 <div class="filter-tags">
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Blanco mate</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Color RAL est&aacute;ndar</a>
-                    <a class="filter-tag" href="https://www.adrihosan.com/brand/solidker/">Color premium</a>
+                    <a class="filter-tag" href="#">Blanco mate</a>
+                    <a class="filter-tag" href="#">Color RAL est&aacute;ndar</a>
+                    <a class="filter-tag" href="#">Color premium</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. GALERIA DE AMBIENTES (placeholders) -->
+    <!-- 3. TITULO CATALOGO + WRAPPER PRODUCTOS (arriba: el catalogo va inmediatamente despues de los filtros) -->
+    <div class="solidker-catalog-header adrihosan-full-width-block" id="catalogo-solidker">
+        <h2>Cat&aacute;logo Solidker</h2>
+        <p>Encimeras y lavabos de Solid Surface fabricados a medida en Valencia. M&aacute;s de 300 referencias disponibles.</p>
+    </div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
+    <?php
+}
+
+function adrihosan_brand_solidker_contenido_inferior() {
+    ?>
+    </div><!-- /fe-products-wrapper -->
+
+    <!-- 4. GALERIA DE AMBIENTES (placeholders) -->
     <section class="solidker-gallery adrihosan-full-width-block">
         <div class="solidker-gallery-wrapper">
             <h2>Solidker en proyectos reales</h2>
@@ -104,28 +119,28 @@ function adrihosan_brand_solidker_contenido_superior() {
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/06/encimera-de-bano-solid-surface-blanca.jpg" alt="Encimera de ba&ntilde;o Solidker en blanco">
                     <div class="gallery-overlay">
                         <h3>Encimera con lavabo integrado &middot; Blanco</h3>
-                        <a class="gallery-cta" href="https://www.adrihosan.com/brand/solidker/">Ver encimera</a>
+                        <a class="gallery-cta" href="#">Ver encimera</a>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/06/lavabo-solid-surface-doble-seno.jpg" alt="Lavabo Solidker doble seno">
                     <div class="gallery-overlay">
                         <h3>Doble seno &middot; Suspendido</h3>
-                        <a class="gallery-cta" href="https://www.adrihosan.com/brand/solidker/">Ver lavabo</a>
+                        <a class="gallery-cta" href="#">Ver lavabo</a>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/06/lavabo-sobre-encimera-solid-surface.jpg" alt="Lavabo sobre encimera Solidker">
                     <div class="gallery-overlay">
                         <h3>Lavabo sobre encimera &middot; A medida</h3>
-                        <a class="gallery-cta" href="https://www.adrihosan.com/brand/solidker/">Ver pieza</a>
+                        <a class="gallery-cta" href="#">Ver pieza</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. STORYTELLING EGIPCIO -->
+    <!-- 5. STORYTELLING EGIPCIO -->
     <section class="solidker-egypt adrihosan-full-width-block">
         <div class="solidker-egypt-wrapper">
             <h2>Una colecci&oacute;n inspirada en el Antiguo Egipto</h2>
@@ -160,7 +175,7 @@ function adrihosan_brand_solidker_contenido_superior() {
         </div>
     </section>
 
-    <!-- 5. COMPARATIVA HONESTA -->
+    <!-- 6. COMPARATIVA HONESTA -->
     <section class="solidker-compare adrihosan-full-width-block">
         <div class="solidker-compare-wrapper">
             <h2>Solidker frente a Krion&reg;, Corian&reg; y Hi-Macs&reg;</h2>
@@ -218,12 +233,12 @@ function adrihosan_brand_solidker_contenido_superior() {
             </div>
 
             <p class="compare-closing">
-                Cada pieza Solidker se fabrica bajo pedido en nuestra planta. No tenemos stock acumulado: cada encimera y cada lavabo sale de f&aacute;brica con tu pedido encima. Por eso podemos personalizarte la medida, el seno, el fald&oacute;n y el color exactos. Si lo que buscas es <a href="https://www.adrihosan.com/brand/krion/">Krion&reg;</a>, te lo servimos tambi&eacute;n; pero si tu proyecto tolera 20-30 d&iacute;as, Solidker te da control total sobre cada cent&iacute;metro.
+                Cada pieza Solidker se fabrica bajo pedido en nuestra planta. No tenemos stock acumulado: cada encimera y cada lavabo sale de f&aacute;brica con tu pedido encima. Por eso podemos personalizarte la medida, el seno, el fald&oacute;n y el color exactos. Si lo que buscas es Krion&reg;, te lo servimos tambi&eacute;n; pero si tu proyecto tolera 20-30 d&iacute;as, Solidker te da control total sobre cada cent&iacute;metro.
             </p>
         </div>
     </section>
 
-    <!-- 6. PROPIEDADES TECNICAS -->
+    <!-- 7. PROPIEDADES TECNICAS -->
     <section class="solidker-tech adrihosan-full-width-block">
         <div class="solidker-tech-wrapper">
             <h2>Solid Surface: la tecnolog&iacute;a que hace Solidker, Solidker</h2>
@@ -293,7 +308,7 @@ function adrihosan_brand_solidker_contenido_superior() {
         </div>
     </section>
 
-    <!-- 7. CARTA DE COLORES -->
+    <!-- 8. CARTA DE COLORES -->
     <section class="solidker-colors adrihosan-full-width-block">
         <div class="solidker-colors-wrapper">
             <h2>9 colores est&aacute;ndar &middot; Carta RAL Solidker</h2>
@@ -353,7 +368,7 @@ function adrihosan_brand_solidker_contenido_superior() {
         </div>
     </section>
 
-    <!-- 8. ASESORAMIENTO PREMIER -->
+    <!-- 9. ASESORAMIENTO PREMIER -->
     <section class="solidker-asesoramiento adrihosan-full-width-block">
         <div class="solidker-asesoramiento-wrapper">
             <h2>Tu proyecto a medida, hablando con la f&aacute;brica</h2>
@@ -386,20 +401,20 @@ function adrihosan_brand_solidker_contenido_superior() {
         </div>
     </section>
 
-    <!-- 9. TITULO CATALOGO -->
-    <div class="solidker-catalog-header adrihosan-full-width-block" id="catalogo-solidker">
-        <h2>Cat&aacute;logo Solidker</h2>
-        <p>Encimeras y lavabos de Solid Surface fabricados a medida en Valencia. M&aacute;s de 300 referencias disponibles.</p>
-    </div>
-
-    <!-- 10. WRAPPER AJAX para Filter Everything Pro -->
-    <div id="fe-products-wrapper">
     <?php
-}
-
-function adrihosan_brand_solidker_contenido_inferior() {
+    // 10. BLOQUE DE TEXTO ESTANDAR DEL BRAND (term description editable desde WP admin)
+    // Mismo patron que category_description() en categorias.
+    $brand_description = term_description();
+    if ( ! empty( $brand_description ) ) :
     ?>
-    </div><!-- /fe-products-wrapper -->
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
+                <?php echo $brand_description; ?>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
 
     <!-- 11. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
@@ -413,7 +428,7 @@ function adrihosan_brand_solidker_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Solidker es Solid Surface aut&eacute;ntico, igual que <a href="https://www.adrihosan.com/brand/krion/">Krion&reg; (Porcelanosa)</a> y Corian&reg; (DuPont). Compartimos material y propiedades t&eacute;cnicas. La diferencia est&aacute; en el origen: Solidker se fabrica en nuestra planta de Valencia bajo pedido, lo que nos permite ofrecer precio directo de f&aacute;brica, personalizaci&oacute;n total y plazos de 20-30 d&iacute;as en lugar de las 6-10 semanas habituales en marcas importadas.</p>
+                        <p>Solidker es Solid Surface aut&eacute;ntico, igual que Krion&reg; (Porcelanosa) y Corian&reg; (DuPont). Compartimos material y propiedades t&eacute;cnicas. La diferencia est&aacute; en el origen: Solidker se fabrica en nuestra planta de Valencia bajo pedido, lo que nos permite ofrecer precio directo de f&aacute;brica, personalizaci&oacute;n total y plazos de 20-30 d&iacute;as en lugar de las 6-10 semanas habituales en marcas importadas.</p>
                     </div>
                 </div>
 
@@ -491,23 +506,40 @@ function adrihosan_brand_solidker_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 12. CONTACTO RICARDO (est&aacute;ndar Adrihosan) -->
-    <?php if ( function_exists( 'adrihosan_render_contact_help' ) ) : ?>
-        <?php adrihosan_render_contact_help(); ?>
-    <?php else : ?>
-        <section class="contact-help-common adrihosan-full-width-block">
-            <div class="contact-help-wrapper">
-                <div class="contact-intro">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2024/03/ricardo-adrihosan.jpg" alt="Ricardo, asesor t&eacute;cnico de Adrihosan">
-                    <h2>&iquest;Quieres una encimera Solidker a medida? Habla con Ricardo</h2>
-                </div>
-                <p>Ricardo es nuestro asesor t&eacute;cnico para proyectos de Solid Surface. Mu&eacute;strale tu plano o env&iacute;ale las medidas y en 48 horas te llega el presupuesto exacto, con color, fald&oacute;n y configuraci&oacute;n personalizadas.</p>
-                <div class="contact-buttons">
-                    <a class="contact-btn" href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20quiero%20presupuesto%20para%20una%20pieza%20Solidker%20a%20medida" target="_blank">WhatsApp Ricardo</a>
-                    <a class="contact-btn secondary" href="mailto:comercial@adrihosan.com">comercial@adrihosan.com</a>
+    <!-- 12. CONTACTO RICARDO (BLOQUE ESTANDAR ADRIHOSAN, igual que en todas las categorias) -->
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en Solidker">
+                <div>
+                    <h2>Soy Ricardo. &iquest;Dudas con Solidker o quieres un proyecto a medida?
+                        <span>Te asesoro sin compromiso.</span>
+                    </h2>
                 </div>
             </div>
-        </section>
-    <?php endif; ?>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
+                    <div class="icon">&#128205;</div>
+                    <div class="label">Visita Presencial</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
+                    <div class="icon">&#128187;</div>
+                    <div class="label">Visita Virtual</div>
+                </a>
+                <a href="tel:+34961957136" class="contact-option-common">
+                    <div class="icon">&#128222;</div>
+                    <div class="label">Tel&eacute;fono</div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20quiero%20presupuesto%20para%20una%20pieza%20Solidker%20a%20medida" class="contact-option-common">
+                    <div class="icon">&#128172;</div>
+                    <div class="label">Whatsapp</div>
+                </a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common">
+                    <div class="icon">&#9993;</div>
+                    <div class="label">Email</div>
+                </a>
+            </div>
+        </div>
+    </section>
     <?php
 }
