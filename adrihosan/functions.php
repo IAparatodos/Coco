@@ -250,6 +250,35 @@ function adrihosan_master_controller_cpu_fix() {
     }
 }
 
+// ============================================================================
+// CONTROLADOR BRAND (taxonomy: brand) - separado del master de product_cat
+// ============================================================================
+// Solo se procesa en archive de brand. NO afecta a las 50 categorias de
+// producto. Si en el futuro hay mas brands customizadas, anadir mas cases.
+// ============================================================================
+add_action('template_redirect', 'adrihosan_brand_controller', 1);
+function adrihosan_brand_controller() {
+    if ( ! is_tax( 'brand' ) ) {
+        return;
+    }
+    $term_id = get_queried_object_id();
+    switch ( $term_id ) {
+        case 2720: // Solidker (linea propia)
+            adrihosan_setup_brand_solidker();
+            break;
+    }
+}
+
+function adrihosan_setup_brand_solidker() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+    add_action('woocommerce_before_shop_loop', 'adrihosan_brand_solidker_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_brand_solidker_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
 // Setups específicos para cada categoría
 function adrihosan_setup_bano_imitacion_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
@@ -2059,6 +2088,11 @@ require get_template_directory() . '/inc/category-pavimentos.php';
 require get_template_directory() . '/inc/category-porcelanico-marmol.php';
 require get_template_directory() . '/inc/category-ceramica-vives.php';
 require get_template_directory() . '/inc/category-navarti.php';             // Cat 4722
+
+/* ========================================================================== */
+/* MARCAS PROPIAS (taxonomy: brand)                                           */
+/* ========================================================================== */
+require get_template_directory() . '/inc/brand-solidker.php';               // Brand 2720
 
 /* ========================================================================== */
 /* SISTEMA DE RESERVAS                                                        */

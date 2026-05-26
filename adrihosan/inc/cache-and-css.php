@@ -91,6 +91,30 @@ function adrihosan_cargar_css_categoria() {
         );
     }
 
+    // Páginas de marca (taxonomy: brand) — mismo patrón que category-{ID}.css
+    if ( is_tax( 'brand' ) ) {
+        wp_enqueue_script(
+            'adrihosan-category-common',
+            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
+            array('jquery'),
+            '1.0.2',
+            true
+        );
+
+        $term_id = get_queried_object_id();
+        $brand_css_file = '/assets/css/brand-' . $term_id . '.css';
+        $brand_css_path = get_stylesheet_directory() . $brand_css_file;
+
+        if ( file_exists( $brand_css_path ) ) {
+            wp_enqueue_style(
+                'adrihosan-brand-' . $term_id,
+                get_stylesheet_directory_uri() . $brand_css_file,
+                array('adrihosan-base-global'),
+                filemtime( $brand_css_path )
+            );
+        }
+    }
+
     // Solo en páginas de categoría de producto
     if (is_product_category()) {
 
