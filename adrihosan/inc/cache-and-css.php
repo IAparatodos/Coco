@@ -170,6 +170,42 @@ function adrihosan_cargar_css_categoria() {
             );
         }
     }
+
+    // Pagina Contacto Adrihosan (page ID 113323): CSS + calendario de reservas.
+    // Detectar tanto por template asignado como por page ID.
+    if ( is_page() && ( is_page_template( 'page-113323.php' ) || is_page( 113323 ) ) ) {
+        $contacto_css_path = get_stylesheet_directory() . '/assets/css/page-contacto.css';
+        if ( file_exists( $contacto_css_path ) ) {
+            wp_enqueue_style(
+                'adrihosan-page-contacto',
+                get_stylesheet_directory_uri() . '/assets/css/page-contacto.css',
+                array(),
+                filemtime( $contacto_css_path )
+            );
+        }
+
+        $reservas_js_path = get_stylesheet_directory() . '/assets/js/reservas-calendar.js';
+        if ( file_exists( $reservas_js_path ) && function_exists( 'adrihosan_reservas_duration' ) ) {
+            wp_enqueue_script(
+                'adrihosan-reservas-calendar',
+                get_stylesheet_directory_uri() . '/assets/js/reservas-calendar.js',
+                array(),
+                filemtime( $reservas_js_path ),
+                true
+            );
+            wp_localize_script( 'adrihosan-reservas-calendar', 'RESERVAS', array(
+                'restUrl' => esc_url_raw( rest_url( 'adrihosan/v1' ) ),
+                'nonce'   => wp_create_nonce( 'wp_rest' ),
+                'config'  => array(
+                    'duration'     => adrihosan_reservas_duration(),
+                    'minAdvance'   => adrihosan_reservas_min_advance_hours(),
+                    'lastBuffer'   => adrihosan_reservas_last_slot_buffer(),
+                    'maxWeeks'     => adrihosan_reservas_max_weeks_ahead(),
+                    'openingHours' => adrihosan_reservas_horarios(),
+                ),
+            ) );
+        }
+    }
 }
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 

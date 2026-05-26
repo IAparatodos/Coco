@@ -2095,6 +2095,11 @@ require get_template_directory() . '/inc/category-navarti.php';             // C
 require get_template_directory() . '/inc/brand-solidker.php';               // Brand 2720
 
 /* ========================================================================== */
+/* CARGADOR MODULAR DE CSS/JS (categorias, brands, paginas estaticas)         */
+/* ========================================================================== */
+require get_template_directory() . '/inc/cache-and-css.php';
+
+/* ========================================================================== */
 /* SISTEMA DE RESERVAS                                                        */
 /* ========================================================================== */
 include get_template_directory() . '/inc/reservas-google-auth.php';
@@ -2276,157 +2281,12 @@ function adrihosan_limpiar_cache_filtros($post_id) {
 
 
 /**
- * CARGADOR MODULAR DE CSS POR CATEGORÍA - ADRIHOSAN
- *
- * Añade este código a tu functions.php o crea un plugin personalizado.
- * 
- * Estructura de archivos esperada en tu tema:
- * /wp-content/themes/flavor/css/
- *   ├── base-global.css
- *   ├── category-2083.css
- *   ├── category-4876.css
- *   ├── category-4247.css
- *   ├── category-2626.css
- *   ├── category-4862.css
- *   ├── category-62.css
- *   ├── category-2209.css
- *   └── mobile-fixes.css
+ * NOTA: el cargador modular de CSS por categoria/brand/page vive ahora
+ * en inc/cache-and-css.php (require justo abajo, en la seccion de includes).
+ * La funcion adrihosan_cargar_css_categoria() estaba duplicada aqui y se
+ * cargaba la version vieja sin soporte para taxonomia brand, dejando sin
+ * CSS la pagina /brand/solidker/. Eliminada para que solo viva la nueva.
  */
-
-function adrihosan_cargar_css_categoria() {
-    
-    // Siempre cargar el CSS base global
-    $base_global_path = get_stylesheet_directory() . '/assets/css/base-global.css';
-    wp_enqueue_style(
-        'adrihosan-base-global',
-        get_stylesheet_directory_uri() . '/assets/css/base-global.css',
-        array(),
-        file_exists($base_global_path) ? filemtime($base_global_path) : '1.0.0'
-    );
-
-    // Siempre cargar los fixes móviles
-    $mobile_fixes_path = get_stylesheet_directory() . '/assets/css/mobile-fixes.css';
-    wp_enqueue_style(
-        'adrihosan-mobile-fixes',
-        get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
-        array('adrihosan-base-global'),
-        file_exists($mobile_fixes_path) ? filemtime($mobile_fixes_path) : '1.0.0'
-    );
-    
-    // Solo en páginas de categoría de producto
-    if (is_product_category()) {
-
-        // Cargar JS común (FAQs, scroll, filtro móvil, etc.)
-        $common_js_path = get_stylesheet_directory() . '/assets/js/category-common.js';
-        wp_enqueue_script(
-            'adrihosan-category-common',
-            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
-            array('jquery'),
-            file_exists($common_js_path) ? filemtime($common_js_path) : '1.0.2',
-            true
-        );
-
-        $cat_id = get_queried_object_id();
-
-        // Cachear file_exists con transient (evita filesystem I/O en cada request)
-        $cache_key = 'adri_css_exists_' . $cat_id;
-        $css_location = get_transient($cache_key);
-
-        if (false === $css_location || $css_location === 'none') {
-            // Recalcular siempre si es 'none' (por si se ha subido un CSS nuevo)
-            $css_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
-            $css_path_root = get_stylesheet_directory() . '/category-' . $cat_id . '.css';
-            $css_location = file_exists($css_path_assets) ? 'assets' : (file_exists($css_path_root) ? 'root' : 'none');
-            set_transient($cache_key, $css_location, DAY_IN_SECONDS);
-        }
-
-        if ($css_location === 'assets') {
-            $css_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
-            wp_enqueue_style(
-                'adrihosan-category-' . $cat_id,
-                get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css',
-                array('adrihosan-base-global'),
-                filemtime($css_path_assets)
-            );
-        } elseif ($css_location === 'root') {
-            $css_path_root = get_stylesheet_directory() . '/category-' . $cat_id . '.css';
-            wp_enqueue_style(
-                'adrihosan-category-' . $cat_id,
-                get_stylesheet_directory_uri() . '/category-' . $cat_id . '.css',
-                array('adrihosan-base-global'),
-                filemtime($css_path_root)
-            );
-        }
-
-        // Cargar CSS de categorías padre si existen
-        $cat = get_term($cat_id, 'product_cat');
-        if ($cat && $cat->parent > 0) {
-            $parent_cache_key = 'adri_css_exists_' . $cat->parent;
-            $parent_location = get_transient($parent_cache_key);
-
-            if (false === $parent_location || $parent_location === 'none') {
-                $parent_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat->parent . '.css';
-                $parent_path_root = get_stylesheet_directory() . '/category-' . $cat->parent . '.css';
-                $parent_location = file_exists($parent_path_assets) ? 'assets' : (file_exists($parent_path_root) ? 'root' : 'none');
-                set_transient($parent_cache_key, $parent_location, DAY_IN_SECONDS);
-            }
-
-            if ($parent_location === 'assets') {
-                $parent_path_assets = get_stylesheet_directory() . '/assets/css/category-' . $cat->parent . '.css';
-                wp_enqueue_style(
-                    'adrihosan-category-parent-' . $cat->parent,
-                    get_stylesheet_directory_uri() . '/assets/css/category-' . $cat->parent . '.css',
-                    array('adrihosan-base-global'),
-                    filemtime($parent_path_assets)
-                );
-            } elseif ($parent_location === 'root') {
-                $parent_path_root = get_stylesheet_directory() . '/category-' . $cat->parent . '.css';
-                wp_enqueue_style(
-                    'adrihosan-category-parent-' . $cat->parent,
-                    get_stylesheet_directory_uri() . '/category-' . $cat->parent . '.css',
-                    array('adrihosan-base-global'),
-                    filemtime($parent_path_root)
-                );
-            }
-        }
-    }
-
-    // Pagina Contacto Adrihosan: detectar por template asignado o por page ID
-    if ( is_page() && ( is_page_template( 'page-113323.php' ) || is_page( 113323 ) ) ) {
-        $contacto_css_path = get_stylesheet_directory() . '/assets/css/page-contacto.css';
-        if ( file_exists( $contacto_css_path ) ) {
-            wp_enqueue_style(
-                'adrihosan-page-contacto',
-                get_stylesheet_directory_uri() . '/assets/css/page-contacto.css',
-                array(),
-                filemtime( $contacto_css_path )
-            );
-        }
-
-        $reservas_js_path = get_stylesheet_directory() . '/assets/js/reservas-calendar.js';
-        if ( file_exists( $reservas_js_path ) && function_exists( 'adrihosan_reservas_duration' ) ) {
-            wp_enqueue_script(
-                'adrihosan-reservas-calendar',
-                get_stylesheet_directory_uri() . '/assets/js/reservas-calendar.js',
-                array(),
-                filemtime( $reservas_js_path ),
-                true
-            );
-            wp_localize_script( 'adrihosan-reservas-calendar', 'RESERVAS', array(
-                'restUrl' => esc_url_raw( rest_url( 'adrihosan/v1' ) ),
-                'nonce'   => wp_create_nonce( 'wp_rest' ),
-                'config'  => array(
-                    'duration'     => adrihosan_reservas_duration(),
-                    'minAdvance'   => adrihosan_reservas_min_advance_hours(),
-                    'lastBuffer'   => adrihosan_reservas_last_slot_buffer(),
-                    'maxWeeks'     => adrihosan_reservas_max_weeks_ahead(),
-                    'openingHours' => adrihosan_reservas_horarios(),
-                ),
-            ) );
-        }
-    }
-}
-add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
 /**
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
