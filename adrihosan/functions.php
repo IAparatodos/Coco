@@ -202,6 +202,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 5141: // Espejos de Baño Negros
             adrihosan_setup_espejos_negros_cpu_fix();
             break;
+        case 94: // Encimeras de Baño (madre del silo Encimeras)
+            adrihosan_setup_encimeras_bano_cpu_fix();
+            break;
         case 4415: // Espejo Baño 140x80 cm
             adrihosan_setup_espejo_bano_140_cpu_fix();
             break;
@@ -865,6 +868,24 @@ function adrihosan_setup_espejos_negros_cpu_fix() {
     add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_negros_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_negros_contenido_inferior', 99);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_encimeras_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Patron defensivo CLAUDE.md: function_exists guard por si el inc no
+    // se subio por FTP. Si no esta, la web sigue viva, solo no se pinta
+    // el contenido custom.
+    if ( function_exists( 'adrihosan_categoria_encimeras_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_bano_contenido_inferior', 99);
+    }
 }
 
 function adrihosan_setup_espejo_bano_140_cpu_fix() {
@@ -2096,8 +2117,9 @@ require get_template_directory() . '/inc/category-navarti.php';             // C
 // se subio truncado, no tirar la web entera. Patron documentado en
 // CLAUDE.md tras el incidente del 2026-05-05 (cat 4333).
 $_adri_modular_incs = array(
-    '/inc/brand-solidker.php',   // Brand 2720 - Solidker
-    '/inc/cache-and-css.php',    // Cargador de CSS por categoria/brand/page
+    '/inc/brand-solidker.php',          // Brand 2720 - Solidker
+    '/inc/category-encimeras-bano.php', // Cat 94 - Encimeras de Bano (madre)
+    '/inc/cache-and-css.php',           // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
     $_adri_inc_path = get_template_directory() . $_adri_inc_rel;
