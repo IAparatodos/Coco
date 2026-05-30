@@ -1,0 +1,140 @@
+/* ========================================================================== */
+/* PAGE-5074.CSS - Preguntas Frecuentes (FAQ general)                         */
+/* Descomprime los acordeones .faq-section-common cuando viven dentro del     */
+/* layout de pagina (sin .adrihosan-full-width-block).                        */
+/* Identidad corporativa Adrihosan: #4dd2d0 + #3f6f7b + Poppins.              */
+/* ========================================================================== */
+
+.page-id-5074 .faq-section-common {
+    padding: 25px 0 40px;
+    background: transparent;
+}
+
+.page-id-5074 .faq-section-common + .faq-section-common {
+    border-top: 1px solid #d4e3e6;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+.page-id-5074 .faq-main-title-common {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3f6f7b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.page-id-5074 .faq-items-wrapper {
+    border-top: 1px solid #d4e3e6;
+}
+
+.page-id-5074 .faq-item-common {
+    border-bottom: 1px solid #d4e3e6;
+}
+
+.page-id-5074 .faq-question-common {
+    padding: 22px 8px !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45 !important;
+    color: #3f6f7b !important;
+    gap: 16px;
+    text-transform: none;
+    align-items: flex-start;
+}
+
+.page-id-5074 .faq-question-common:hover {
+    color: #4dd2d0 !important;
+    background: rgba(77, 210, 208, 0.03);
+}
+
+.page-id-5074 .faq-question-common > span:first-child {
+    flex: 1;
+}
+
+.page-id-5074 .faq-icon-common {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    color: #4dd2d0;
+    border: 1px solid #4dd2d0;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.page-id-5074 .faq-item-common.active .faq-icon-common {
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.page-id-5074 .faq-answer-common {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 0 8px;
+}
+
+.page-id-5074 .faq-item-common.active .faq-answer-common {
+    max-height: 1500px;
+}
+
+.page-id-5074 .faq-answer-common p {
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.page-id-5074 .faq-answer-common p:first-child {
+    padding-top: 6px;
+}
+
+.page-id-5074 .faq-answer-common p:last-child {
+    padding-bottom: 22px;
+    margin-bottom: 0;
+}
+
+.page-id-5074 .faq-answer-common a {
+    color: #4dd2d0;
+    text-decoration: underline;
+}
+
+.page-id-5074 .faq-answer-common a:hover {
+    color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                  */
+/* ========================================================================== */
+@media (max-width: 768px) {
+    .page-id-5074 .faq-main-title-common {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        margin-bottom: 25px;
+    }
+
+    .page-id-5074 .faq-question-common {
+        padding: 18px 4px !important;
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .page-id-5074 .faq-icon-common {
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .page-id-5074 .faq-answer-common {
+        font-size: 14px;
+        padding: 0 4px;
+    }
+}

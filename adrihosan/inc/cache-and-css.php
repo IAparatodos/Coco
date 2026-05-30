@@ -218,6 +218,19 @@ function adrihosan_cargar_css_categoria() {
             '1.0.2',
             true
         );
+
+        // CSS especifico de la pagina (descomprime acordeones + reagrupa
+        // secciones con separadores). Sobrescribe las reglas base de
+        // .faq-section-common solo en la pagina 5074 via .page-id-5074.
+        $faq_css_path = get_stylesheet_directory() . '/assets/css/page-5074.css';
+        if ( file_exists( $faq_css_path ) ) {
+            wp_enqueue_style(
+                'adrihosan-page-5074',
+                get_stylesheet_directory_uri() . '/assets/css/page-5074.css',
+                array( 'adrihosan-base-global' ),
+                filemtime( $faq_css_path )
+            );
+        }
     }
 }
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
