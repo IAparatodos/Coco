@@ -206,6 +206,19 @@ function adrihosan_cargar_css_categoria() {
             ) );
         }
     }
+
+    // Pagina FAQ general (page ID 5074): solo necesita el JS de acordeones
+    // FAQ. El CSS (faq-section-common, etc.) ya vive en base-global.css que
+    // se carga arriba en cualquier pagina no-singular-product.
+    if ( is_page( 5074 ) ) {
+        wp_enqueue_script(
+            'adrihosan-category-common',
+            get_stylesheet_directory_uri() . '/assets/js/category-common.js',
+            array( 'jquery' ),
+            '1.0.2',
+            true
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'adrihosan_cargar_css_categoria', 20);
 
