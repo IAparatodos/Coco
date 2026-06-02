@@ -22,11 +22,38 @@ add_action( 'rest_api_init', function () {
     ] );
 } );
 
+/**
+ * Guarda central anti-cache para TODO el namespace adrihosan/v1.
+ *
+ * Regla critica documentada en CLAUDE.md: "endpoints REST nunca cachean".
+ * Se ejecuta en rest_pre_dispatch, ANTES de cualquier callback, asi cubre
+ * /availability, /bookings y cualquier endpoint futuro sin repetir codigo.
+ *
+ * IMPORTANTE: esto solo evita que la respuesta ENTRE en cache. Si LiteSpeed
+ * ya tiene una respuesta cacheada, la sirve sin ejecutar PHP y este hook ni
+ * se llama. Por eso, ademas de este codigo, el endpoint
+ * /wp-json/adrihosan/v1/ debe estar en LiteSpeed > Cache > Excludes >
+ * "Do Not Cache URIs" (garantia a nivel de servidor).
+ */
+add_filter( 'rest_pre_dispatch', 'adrihosan_reservas_rest_nocache_guard', 10, 3 );
+function adrihosan_reservas_rest_nocache_guard( $result, $server, $request ) {
+    if ( 0 === strpos( $request->get_route(), '/adrihosan/v1' ) ) {
+        if ( ! headers_sent() ) {
+            nocache_headers();
+            header( 'Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0' );
+            header( 'Pragma: no-cache' );
+        }
+        do_action( 'litespeed_control_set_nocache', 'adrihosan v1 REST dynamic' );
+    }
+    return $result;
+}
+
 function adrihosan_rest_availability( WP_REST_Request $request ) {
     /* Disponibilidad NUNCA debe cachearse: cambia segun token, eventos
      * de Google y la hora actual (regla min_advance_hours). Si LiteSpeed
      * o cualquier CDN guarda una respuesta antigua, la web muestra
-     * "todo no disponible" durante horas aunque ya este libre. */
+     * "todo no disponible" durante horas aunque ya este libre.
+     * (Refuerzo local; la guarda central de arriba ya cubre el namespace.) */
     nocache_headers();
     header( 'Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0' );
     header( 'Pragma: no-cache' );

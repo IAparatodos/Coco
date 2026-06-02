@@ -263,11 +263,29 @@ function mi_endpoint_dinamico( WP_REST_Request $request ) {
 
 Aplicado en `inc/reservas-rest-routes.php → adrihosan_rest_availability` (commit `cac6b5c` y posterior).
 
+### Reincidencia 2026-06-02: el control por PHP no basta
+
+Volvió a aparecer "no hay disponibilidad" **aunque las cabeceras anti-cache ya estaban desplegadas**. Aprendizaje clave:
+
+- `do_action('litespeed_control_set_nocache')` solo evita que la respuesta **entre** en caché, y **solo si LiteSpeed ejecuta el PHP**. Una vez LiteSpeed tiene la respuesta cacheada, la sirve **sin tocar PHP**, así que ningún hook puede descachearla. Por eso "purgo y va, pero al rato vuelve".
+- En esta config de LiteSpeed el control por PHP **se ignora para REST** (típicamente porque la opción *Cache → "Cache REST API"* está activa). El control en código no es suficiente por sí solo.
+
+**Medidas tomadas:**
+
+1. **Guarda central** en `inc/reservas-rest-routes.php` (`rest_pre_dispatch`) que aplica anti-cache a **todo** el namespace `/adrihosan/v1/*` (no solo `/availability`), antes de cualquier callback.
+2. **Regla en el panel de LiteSpeed (OBLIGATORIA, garantía a nivel de servidor):**
+   `LiteSpeed Cache → Cache → Excludes → "Do Not Cache URIs"` →
+   ```
+   /wp-json/adrihosan/v1/
+   ```
+   Alternativa/complemento: `LiteSpeed Cache → Cache → "Cache REST API" = OFF`.
+   Esto NO está en el repo (es config de WordPress); si se migra de servidor o se resetean los ajustes de LiteSpeed, **hay que volver a ponerlo**.
+
 ### Síntoma típico de regresión
 
 Si vuelve a aparecer "todo no disponible" o "datos antiguos" en cualquier endpoint dinámico del tema:
 1. Purga **LiteSpeed Cache** (no solo browser cache).
-2. Si tras purgar funciona pero al cabo de un rato vuelve a romperse → falta `nocache_headers()` en ese endpoint.
+2. Si tras purgar funciona pero al cabo de un rato vuelve a romperse → el endpoint **se está cacheando**. Verifica (a) que la guarda `rest_pre_dispatch` está desplegada y (b) que `/wp-json/adrihosan/v1/` está en "Do Not Cache URIs" de LiteSpeed. El paso (b) es el que de verdad lo garantiza.
 3. Si tras purgar sigue roto → mirar token de Google, ver "Healthcheck" abajo.
 
 ### Healthcheck activo
