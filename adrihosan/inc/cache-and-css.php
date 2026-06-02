@@ -162,3 +162,126 @@ function adrihosan_preservar_filtros_en_paginacion( $args ) {
     }
     return $args;
 }
+
+/* ========================================================================== */
+/* 6. RESERVAS / DISPONIBILIDAD - EXCLUSIÓN DE CACHÉ (LiteSpeed)               */
+/* ========================================================================== */
+/**
+ * PROBLEMA
+ * LiteSpeed Cache guarda el HTML completo de /contacto/ con la disponibilidad
+ * de reservas "congelada". Al purgar el caché vuelve a verse bien, pero la
+ * disponibilidad se queda obsoleta hasta la siguiente purga (síntoma: "no hay
+ * disponibilidad").
+ *
+ * SOLUCIÓN
+ *  A) ESI (recomendado): la página se sigue cacheando, pero el bloque del
+ *     calendario de reservas se sirve SIN caché en cada visita ("agujero" en
+ *     el caché). Requiere indicar el/los shortcode(s) con los que se inserta
+ *     el calendario en adrihosan_reservas_shortcodes().
+ *  B) Fallback automático: si no se configura ningún shortcode (el calendario
+ *     se inserta con page builder, widget o bloque y no se puede aislar con
+ *     ESI), la página de reservas se marca como NO cacheable, de modo que la
+ *     disponibilidad siempre sea fresca.
+ *
+ * Cómo averiguar tu shortcode: edita la página /contacto/ en WordPress y mira
+ * qué shortcode renderiza el calendario (p. ej. [ssa_booking], [amelia],
+ * [bookly-form], [latepoint_book_form], [mphb_availability_search]...). Añádelo
+ * abajo y tendrás ESI puro. Mientras tanto, el fallback ya evita el bug.
+ */
+
+// Slug(s) de la(s) página(s) que contienen el calendario de reservas.
+if ( ! defined( 'ADRIHOSAN_RESERVAS_PAGES' ) ) {
+    define( 'ADRIHOSAN_RESERVAS_PAGES', 'contacto' ); // separa por comas si hay varias
+}
+
+/**
+ * Shortcode(s) que renderizan el calendario de disponibilidad.
+ * Déjalo vacío para usar el fallback (no cachear la página de reservas).
+ *
+ * @return string[]
+ */
+function adrihosan_reservas_shortcodes() {
+    return array_values( array_filter( array_map( 'trim', array(
+        // 'pon_aqui_el_shortcode_del_calendario',
+    ) ) ) );
+}
+
+/**
+ * ¿Está activo LiteSpeed Cache con soporte ESI?
+ */
+function adrihosan_litespeed_esi_activo() {
+    return defined( 'LSCWP_V' ) || has_filter( 'litespeed_esi_url' );
+}
+
+/**
+ * ESI: convierte el shortcode de reservas en un bloque ESI no cacheado.
+ * Sólo actúa si LiteSpeed está activo y hay shortcode(s) configurados.
+ */
+add_filter( 'do_shortcode_tag', 'adrihosan_reservas_esi_shortcode', 10, 3 );
+function adrihosan_reservas_esi_shortcode( $output, $tag, $attr ) {
+    $tags = adrihosan_reservas_shortcodes();
+    if ( empty( $tags ) || ! in_array( $tag, $tags, true ) ) {
+        return $output;
+    }
+    if ( ! adrihosan_litespeed_esi_activo() ) {
+        return $output; // Sin LiteSpeed no hay ESI; se renderiza en vivo.
+    }
+
+    $params = array(
+        'reservas_tag'  => $tag,
+        'reservas_attr' => is_array( $attr ) ? $attr : array(),
+    );
+
+    // Genera el marcador ESI. 'no-cache' => el sub-request se ejecuta siempre.
+    $esi = apply_filters(
+        'litespeed_esi_url',
+        'adrihosan-reservas',       // id del bloque ESI
+        'Reservas Disponibilidad',  // descripción/wrapper
+        $params,                    // parámetros que recibe el loader
+        'no-cache',                 // control de caché del fragmento
+        true                        // silence (sin comentarios HTML)
+    );
+
+    // Si LiteSpeed no devolvió un marcador válido, renderiza el shortcode vivo.
+    return ( is_string( $esi ) && $esi !== 'adrihosan-reservas' ) ? $esi : $output;
+}
+
+/**
+ * Loader ESI: se ejecuta en el sub-request (no cacheado) y re-renderiza el
+ * calendario con la disponibilidad actual.
+ */
+add_action( 'litespeed_esi_load-adrihosan-reservas', 'adrihosan_reservas_esi_load' );
+function adrihosan_reservas_esi_load( $params ) {
+    // Asegura que este fragmento nunca se cachee.
+    do_action( 'litespeed_control_set_nocache', 'Reservas: disponibilidad dinámica' );
+
+    $tag  = isset( $params['reservas_tag'] ) ? $params['reservas_tag'] : '';
+    $attr = ( isset( $params['reservas_attr'] ) && is_array( $params['reservas_attr'] ) ) ? $params['reservas_attr'] : array();
+    if ( '' === $tag ) {
+        return;
+    }
+
+    // Reconstruye el shortcode con sus atributos originales.
+    $attr_str = '';
+    foreach ( $attr as $k => $v ) {
+        $attr_str .= is_int( $k ) ? ' ' . $v : ' ' . $k . '="' . esc_attr( $v ) . '"';
+    }
+    echo do_shortcode( '[' . $tag . $attr_str . ']' );
+}
+
+/**
+ * Fallback: si NO hay shortcode configurado, marca la página de reservas como
+ * NO cacheable para que la disponibilidad siempre sea fresca.
+ */
+add_action( 'template_redirect', 'adrihosan_reservas_nocache_fallback' );
+function adrihosan_reservas_nocache_fallback() {
+    // Con ESI por shortcode no hace falta desactivar la caché de la página.
+    if ( adrihosan_reservas_shortcodes() ) {
+        return;
+    }
+    $slugs = array_filter( array_map( 'trim', explode( ',', ADRIHOSAN_RESERVAS_PAGES ) ) );
+    if ( empty( $slugs ) || ! is_page( $slugs ) ) {
+        return;
+    }
+    do_action( 'litespeed_control_set_nocache', 'Página de reservas: disponibilidad dinámica' );
+}
