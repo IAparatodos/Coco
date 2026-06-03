@@ -29,19 +29,19 @@ function adrihosan_home_contenido() {
         </div>
         <div class="home-offers-grid">
 
-            <!-- Oferta 1: Mueble Vica 120 negro mate -->
-            <a href="https://www.adrihosan.com/producto/mueble-de-bano-120-cm-negro-mate-con-2-cajones-pc75341479/" class="home-offer-card">
+            <!-- Oferta 1: Mueble Litos Poalgi 80 cm negro -->
+            <a href="https://www.adrihosan.com/producto/mueble-de-bano-metalico-a-suelo-negro-litos-poalgi-80/" class="home-offer-card">
                 <div class="home-offer-badge">Oferta</div>
                 <div class="home-offer-img">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2019/07/mueble-de-bano-suspendido-vica-120-negro-2-cajones-seno-centrado-pc75341479-1.jpg.webp" alt="Mueble de ba&ntilde;o Vica 120 cm negro mate con 2 cajones">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2019/04/mueble-de-bano-metalico-a-suelo-negro-litos-poalgi-5.png.webp" alt="Mueble de ba&ntilde;o met&aacute;lico a suelo Litos Poalgi 80 cm negro">
                 </div>
                 <div class="home-offer-content">
                     <span class="home-offer-category">Muebles de Ba&ntilde;o</span>
-                    <h3>Mueble Vica 120 cm Negro Mate</h3>
-                    <p>Suspendido, 2 cajones con cierre amortiguado. Acabado negro mate de tendencia.</p>
+                    <h3>Mueble Litos Poalgi 80 cm Negro</h3>
+                    <p>Mueble de ba&ntilde;o met&aacute;lico a suelo negro Litos Poalgi 80&times;48&times;85 cm.</p>
                     <div class="home-offer-prices">
-                        <span class="home-price-old">1056,48 &euro;</span>
-                        <span class="home-price-new">409,90 &euro;</span>
+                        <span class="home-price-old">815,00 &euro;</span>
+                        <span class="home-price-new">390,90 &euro;</span>
                     </div>
                     <span class="home-offer-btn">Aprovechar oferta</span>
                 </div>
