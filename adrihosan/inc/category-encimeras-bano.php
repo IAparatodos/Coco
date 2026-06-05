@@ -17,7 +17,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/encimeras-de-bano-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/encimeras-de-bano-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Encimeras de Ba&ntilde;o</h1>
             <p>Solid Surface y madera natural. Suspendidas o sobre mueble. De 60 a 240&nbsp;cm.</p>
@@ -67,7 +67,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
             <div class="ap-inspiration-grid encimeras-subcats-grid">
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-blanca/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-blanca-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o blancas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-blanca-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o blancas">
                     <div class="ap-card-content">
                         <h3>Encimeras Blancas</h3>
                         <p>181 modelos</p>
@@ -75,7 +75,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-negra/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-negra-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o negras">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-negra-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o negras">
                     <div class="ap-card-content">
                         <h3>Encimeras Negras</h3>
                         <p>163 modelos</p>
@@ -83,7 +83,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-suspendida/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-suspendida-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o suspendidas">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-suspendida-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o suspendidas">
                     <div class="ap-card-content">
                         <h3>Encimeras Suspendidas</h3>
                         <p>278 modelos</p>
@@ -91,7 +91,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimeras-de-resina/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-resina-solid-surface-Adrihosan.jpg" alt="Encimeras de resina Solid Surface">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-resina-solid-surface-Adrihosan.jpg" alt="Encimeras de resina Solid Surface">
                     <div class="ap-card-content">
                         <h3>Encimeras de Resina (Solid Surface)</h3>
                         <p>321 modelos</p>
@@ -99,7 +99,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-doble-seno/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-doble-seno-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o doble seno">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-doble-seno-Adrihosan.jpg" alt="Encimeras de ba&ntilde;o doble seno">
                     <div class="ap-card-content">
                         <h3>Encimeras Doble Seno</h3>
                         <p>53 modelos</p>
@@ -107,7 +107,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-160-cm/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-160cm-Adrihosan.jpg" alt="Encimera de ba&ntilde;o de 160 cm">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-160cm-Adrihosan.jpg" alt="Encimera de ba&ntilde;o de 160 cm">
                     <div class="ap-card-content">
                         <h3>Encimeras de 160&nbsp;cm</h3>
                         <p>45 modelos</p>
@@ -115,7 +115,7 @@ function adrihosan_categoria_encimeras_bano_contenido_superior() {
                 </a>
 
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-60-cm/" class="ap-inspiration-card">
-                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/encimera-bano-60cm-Adrihosan.jpg" alt="Encimera de ba&ntilde;o de 60 cm">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-60cm-Adrihosan.jpg" alt="Encimera de ba&ntilde;o de 60 cm">
                     <div class="ap-card-content">
                         <h3>Encimeras de 60&nbsp;cm</h3>
                         <p>12 modelos</p>
