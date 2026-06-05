@@ -17,7 +17,7 @@ function adrihosan_categoria_encimeras_blancas_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/encimeras-de-bano-blancas-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/encimera-bano-blanca-Adrihosan.jpg');">
         <div class="hero-content">
             <h1>Encimeras de Ba&ntilde;o Blancas</h1>
             <p>El color que multiplica la luz y nunca pasa de moda.</p>
