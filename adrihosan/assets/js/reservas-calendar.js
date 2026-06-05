@@ -85,9 +85,17 @@
         state.loading = true;
         if (slotsGrid) slotsGrid.innerHTML = '<div class="reservas-slots-loading">Cargando disponibilidad...</div>';
 
-        var url = RESERVAS.restUrl + '/availability?start=' + start + '&end=' + end;
+        // Cache-buster: la URL por semana es fija (mismo start/end), asi que
+        // cualquier capa que cachee por URL (LiteSpeed REST, un CDN tipo
+        // Cloudflare por delante, o el propio navegador) puede servir una
+        // respuesta antigua ("no hay disponibilidad") aunque el calendario ya
+        // este libre. Anadir un parametro unico hace cada peticion distinta y
+        // descarta el cacheo a nivel de URL. cache:'no-store' refuerza en el
+        // navegador. La disponibilidad SIEMPRE debe pedirse en vivo.
+        var url = RESERVAS.restUrl + '/availability?start=' + start + '&end=' + end + '&_=' + Date.now();
 
         fetch(url, {
+            cache: 'no-store',
             headers: { 'X-WP-Nonce': RESERVAS.nonce }
         })
             .then(function (res) { return res.json(); })

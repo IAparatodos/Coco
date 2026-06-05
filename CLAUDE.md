@@ -281,6 +281,21 @@ Volvió a aparecer "no hay disponibilidad" **aunque las cabeceras anti-cache ya 
    Alternativa/complemento: `LiteSpeed Cache → Cache → "Cache REST API" = OFF`.
    Esto NO está en el repo (es config de WordPress); si se migra de servidor o se resetean los ajustes de LiteSpeed, **hay que volver a ponerlo**.
 
+### Reincidencia 2: cache-buster en el frontend (la garantía definitiva)
+
+Aun con la guarda central desplegada **siguió cacheándose**. Causa: la URL de la petición era **fija por semana** (`/availability?start=...&end=...`), así que cualquier capa que cachee por URL —LiteSpeed REST, un **CDN tipo Cloudflare por delante** (no lo controlamos desde PHP), o el propio navegador— la guardaba.
+
+**Solución definitiva (independiente del servidor)** en `assets/js/reservas-calendar.js`:
+
+```js
+var url = RESERVAS.restUrl + '/availability?start=' + start + '&end=' + end + '&_=' + Date.now();
+fetch(url, { cache: 'no-store', headers: { 'X-WP-Nonce': RESERVAS.nonce } })
+```
+
+El parámetro `&_=Date.now()` hace cada petición única → ninguna caché por URL puede servir una respuesta vieja. `cache:'no-store'` lo refuerza en el navegador. Esta es la medida más robusta porque NO depende de la config de LiteSpeed ni del CDN.
+
+> **Caveat:** si el CDN está configurado para *ignorar query strings* al cachear, el `&_=` no bastará → entonces sí hace falta la regla "Do Not Cache URIs" del panel. Por eso mantenemos las tres capas: cabeceras PHP + guarda central + cache-buster frontend (+ regla de LiteSpeed como red de seguridad).
+
 ### Síntoma típico de regresión
 
 Si vuelve a aparecer "todo no disponible" o "datos antiguos" en cualquier endpoint dinámico del tema:
