@@ -208,6 +208,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 5354: // Encimeras de Baño Blancas (hija de 94)
             adrihosan_setup_encimeras_blancas_cpu_fix();
             break;
+        case 2709: // Encimeras de Baño de 160 cm (hija de 94)
+            adrihosan_setup_encimeras_160cm_cpu_fix();
+            break;
         case 4415: // Espejo Baño 140x80 cm
             adrihosan_setup_espejo_bano_140_cpu_fix();
             break;
@@ -903,6 +906,21 @@ function adrihosan_setup_encimeras_blancas_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_encimeras_blancas_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_blancas_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_160cm_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_160cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_160cm_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_160cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_160cm_contenido_inferior', 99);
     }
 }
 
@@ -2138,6 +2156,7 @@ $_adri_modular_incs = array(
     '/inc/brand-solidker.php',              // Brand 2720 - Solidker
     '/inc/category-encimeras-bano.php',     // Cat 94 - Encimeras de Bano (madre)
     '/inc/category-encimeras-blancas.php',  // Cat 5354 - Encimeras Blancas (hija de 94)
+    '/inc/category-encimeras-160cm.php',    // Cat 2709 - Encimeras 160 cm (hija de 94)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
