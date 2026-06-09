@@ -383,34 +383,20 @@ function adrihosan_categoria_inodoro_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 13. CONTACTO ESTANDAR (sin telefono fijo) -->
+    <!-- 13. CONTACTO ESTANDAR (bloque comun de toda la web Adrihosan) -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
             <div class="contact-intro">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo, asesor t&eacute;cnico de Adrihosan">
-                <div>
-                    <h2>Soy Ricardo. &iquest;Sigues con dudas sobre tu inodoro?
-                        <span>Escr&iacute;benos al WhatsApp 96 195 71 36 y te decimos qu&eacute; modelo encaja en tu ba&ntilde;o.</span>
-                    </h2>
-                </div>
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;A&uacute;n con dudas? Te ayudo a elegir.</h2><p>Soy Ricardo. D&eacute;jame asesorarte para que tu ba&ntilde;o quede exactamente como lo imaginas.</p></div>
             </div>
             <div class="contact-options-grid-common">
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
-                    <div class="icon">&#128205;</div>
-                    <div class="label">Visita Presencial</div>
-                </a>
-                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
-                    <div class="icon">&#128187;</div>
-                    <div class="label">Visita Virtual</div>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20para%20elegir%20un%20inodoro" class="contact-option-common">
-                    <div class="icon">&#128172;</div>
-                    <div class="label">WhatsApp 96 195 71 36</div>
-                </a>
-                <a href="mailto:hola@adrihosan.com" class="contact-option-common">
-                    <div class="icon">&#9993;</div>
-                    <div class="label">Email</div>
-                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20para%20elegir%20un%20inodoro" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">📝</div><div class="label">Formulario</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>
