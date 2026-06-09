@@ -29,7 +29,7 @@ function adrihosan_categoria_inodoro_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoros-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Inodoro-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Inodoros' ); ?></h1>
             <p class="hero-tagline">El inodoro que encaja en tu ba&ntilde;o, sin equivocarte.</p>
