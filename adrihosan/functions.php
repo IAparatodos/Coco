@@ -238,6 +238,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 3798: // Inodoro pequeno (hija de 81)
             adrihosan_setup_inodoro_pequeno_cpu_fix();
             break;
+        case 3795: // Inodoros baratos (hija de 81)
+            adrihosan_setup_inodoros_baratos_cpu_fix();
+            break;
         case 4415: // Espejo Baño 140x80 cm
             adrihosan_setup_espejo_bano_140_cpu_fix();
             break;
@@ -1083,6 +1086,21 @@ function adrihosan_setup_inodoro_pequeno_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_inodoro_pequeno_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_pequeno_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoros_baratos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoros_baratos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoros_baratos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoros_baratos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_baratos_contenido_inferior', 99);
     }
 }
 
@@ -2328,6 +2346,7 @@ $_adri_modular_incs = array(
     '/inc/category-inodoro-minusvalidos.php', // Cat 3802 - Inodoro para minusvalidos (hija de 81)
     '/inc/category-inodoro-japones.php',    // Cat 3793 - Inodoro japones (hija de 81)
     '/inc/category-inodoro-pequeno.php',    // Cat 3798 - Inodoro pequeno (hija de 81)
+    '/inc/category-inodoros-baratos.php',   // Cat 3795 - Inodoros baratos (hija de 81)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
@@ -2574,6 +2593,16 @@ function adrihosan_orden_estricto_ids( $q ) {
         $seed = absint( date('Ymd') ) % 9973; // Primo grande, cambia cada día
         $q->set( 'orderby', 'ID' );
         $q->set( 'order', ( $seed % 2 === 0 ) ? 'ASC' : 'DESC' );
+    }
+
+    // 4. INODOROS BARATOS (ID 3795) -> PRECIO ASCENDENTE
+    // El argumento de la pagina es el precio: el mas barato primero
+    // (159,90 EUR de entrada al momento del montaje). Usa meta_value_num
+    // sobre _price (campo de WooCommerce) para orden numerico correcto.
+    elseif ( is_product_category( 3795 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
     }
 }
 
