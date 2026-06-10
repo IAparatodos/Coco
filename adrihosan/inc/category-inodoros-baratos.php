@@ -36,7 +36,10 @@
  * - Adrihosan DISTRIBUYE, NO fabrica.
  * - PROHIBIDO inventar promociones (sin financiacion, sin envio
  *   gratis si no consta).
- * - Tapa/asiento: "segun modelo" salvo confirmacion por ficha.
+ * - Tapa/asiento: **TODOS** los 18 productos de esta cat incluyen
+ *   tapa/asiento. Confirmado por el cliente al revisar el catalogo.
+ *   Si en el futuro se anade un modelo sin tapa, hay que revisar
+ *   tabla del pack + FAQ 3.
  * - Si cambia el producto de entrada de 159,90 EUR, actualizar
  *   hero, FAQ 1 y meta description.
  * - Bloque contacto ESTANDAR (6 opciones).
@@ -70,7 +73,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_superior() {
         <div class="ap-value-wrapper">
             <div class="section-header">
                 <p class="section-intro">
-                    Los <strong>inodoros baratos</strong> de Adrihosan arrancan en <strong>159,90&nbsp;&euro;</strong> y vienen completos: taza, cisterna y mecanismo de descarga, listos para instalar. Cer&aacute;mica resistente y doble descarga, sin pagar de m&aacute;s por lo que no necesitas. Ideales para reformas, segundos ba&ntilde;os y pisos de alquiler. Env&iacute;o a toda Espa&ntilde;a.
+                    Los <strong>inodoros baratos</strong> de Adrihosan arrancan en <strong>159,90&nbsp;&euro;</strong> y vienen completos: taza, cisterna, mecanismo de descarga y tapa/asiento, todo listo para instalar. Cer&aacute;mica resistente y doble descarga, sin pagar de m&aacute;s por lo que no necesitas. Ideales para reformas, segundos ba&ntilde;os y pisos de alquiler. Env&iacute;o a toda Espa&ntilde;a.
                 </p>
             </div>
             <div class="ap-value-grid">
@@ -81,8 +84,8 @@ function adrihosan_categoria_inodoros_baratos_contenido_superior() {
                 </div>
                 <div class="ap-value-card">
                     <div class="ap-value-icon">&#128230;</div>
-                    <h3>Pack completo</h3>
-                    <p>Taza, cisterna y mecanismo listos para montar.</p>
+                    <h3>Pack completo con tapa</h3>
+                    <p>Taza, cisterna, mecanismo y tapa, listos para montar.</p>
                 </div>
                 <div class="ap-value-card">
                     <div class="ap-value-icon">&#129521;</div>
@@ -152,7 +155,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_inferior() {
     <section class="inodoros-baratos-sizes adrihosan-full-width-block">
         <div class="inodoros-baratos-sizes-wrapper">
             <h2>Qu&eacute; incluye un inodoro completo barato</h2>
-            <p class="sizes-intro">El pack listo para instalar. La tapa depende del modelo, conviene mirarlo en la ficha de cada producto:</p>
+            <p class="sizes-intro">Todos los 18 modelos de esta categor&iacute;a vienen completos: taza, cisterna, mecanismo y tapa/asiento. Listo para instalar sin comprar piezas sueltas despu&eacute;s.</p>
 
             <div class="sizes-table-wrapper">
                 <table class="sizes-table">
@@ -179,9 +182,9 @@ function adrihosan_categoria_inodoros_baratos_contenido_inferior() {
                             <td><strong>Fijaciones</strong></td>
                             <td>S&iacute;</td>
                         </tr>
-                        <tr>
+                        <tr class="size-current">
                             <td><strong>Tapa / asiento</strong></td>
-                            <td>Seg&uacute;n el modelo (ver ficha)</td>
+                            <td>S&iacute; <span class="size-current-label">Incluida en todos</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -206,7 +209,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_inferior() {
                 <div class="material-card">
                     <span class="material-icon">&#128230;</span>
                     <h3>Pack completo</h3>
-                    <p>Taza, cisterna y mecanismo en una sola compra.</p>
+                    <p>Taza, cisterna, mecanismo y tapa/asiento incluidos.</p>
                 </div>
                 <div class="material-card">
                     <span class="material-icon">&#129521;</span>
@@ -253,7 +256,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_inferior() {
             <div class="steps-grid">
                 <div class="step-card">
                     <span class="step-number">1</span>
-                    <p><strong>Mira que el pack venga completo</strong> (taza, cisterna y mecanismo) para no comprar piezas sueltas despu&eacute;s.</p>
+                    <p><strong>Comprueba que el pack venga completo.</strong> En esta categor&iacute;a los 18 modelos traen taza, cisterna, mecanismo y tapa/asiento de serie.</p>
                 </div>
                 <div class="step-card">
                     <span class="step-number">2</span>
@@ -337,7 +340,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El pack trae <strong>taza, cisterna, mecanismo de descarga y fijaciones</strong>. La tapa o asiento se incluye seg&uacute;n el modelo, as&iacute; que conviene mirarlo en la ficha.</p>
+                        <p>El pack trae <strong>taza, cisterna, mecanismo de descarga, fijaciones y tapa/asiento</strong>. En esta categor&iacute;a los 18 modelos incluyen la tapa de serie: no tienes que comprarla aparte.</p>
                     </div>
                 </div>
 
