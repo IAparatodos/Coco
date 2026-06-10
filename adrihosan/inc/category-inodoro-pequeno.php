@@ -41,7 +41,7 @@ function adrihosan_categoria_inodoro_pequeno_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoro-pequeno-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoros-pequenos-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Inodoros peque&ntilde;os' ); ?></h1>
             <p class="hero-tagline">Fondo reducido para que tu ba&ntilde;o respire.</p>
