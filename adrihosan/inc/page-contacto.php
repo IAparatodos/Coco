@@ -8,6 +8,21 @@ if ( function_exists( 'adrihosan_contacto_contenido' ) ) {
     return;
 }
 
+/**
+ * /contacto/ NUNCA se cachea: el HTML lleva incrustado el nonce REST
+ * (RESERVAS.nonce) y los nonces de WordPress caducan a las 12-24h. Si
+ * LiteSpeed sirve la pagina cacheada mas tiempo, el JS envia un nonce
+ * caducado, la REST API devuelve 403 y el calendario muestra "no hay
+ * disponibilidad" hasta la siguiente purga manual. Sin cache de pagina,
+ * el nonce siempre es fresco y el bucle purga-falla-purga desaparece.
+ */
+add_action( 'template_redirect', function () {
+    if ( is_page( 113323 ) || is_page_template( 'page-113323.php' ) ) {
+        nocache_headers();
+        do_action( 'litespeed_control_set_nocache', 'contacto: nonce REST embebido caduca en cache' );
+    }
+} );
+
 function adrihosan_contacto_contenido() {
     ob_start();
     ?>

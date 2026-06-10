@@ -94,9 +94,14 @@
         // navegador. La disponibilidad SIEMPRE debe pedirse en vivo.
         var url = RESERVAS.restUrl + '/availability?start=' + start + '&end=' + end + '&_=' + Date.now();
 
+        // SIN X-WP-Nonce a proposito: /availability es publico y no verifica
+        // nonce, pero si se envia uno CADUCADO (el HTML de /contacto/ cacheado
+        // mas de 12-24h conserva el nonce viejo), WordPress rechaza la
+        // peticion con 403 rest_cookie_invalid_nonce y el calendario pinta
+        // "no hay huecos". Sin la cabecera, el calendario es inmune al nonce
+        // caducado. El POST /bookings SI lo envia (alli es obligatorio).
         fetch(url, {
-            cache: 'no-store',
-            headers: { 'X-WP-Nonce': RESERVAS.nonce }
+            cache: 'no-store'
         })
             .then(function (res) { return res.json(); })
             .then(function (json) {

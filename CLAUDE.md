@@ -296,6 +296,22 @@ El parámetro `&_=Date.now()` hace cada petición única → ninguna caché por 
 
 > **Caveat:** si el CDN está configurado para *ignorar query strings* al cachear, el `&_=` no bastará → entonces sí hace falta la regla "Do Not Cache URIs" del panel. Por eso mantenemos las tres capas: cabeceras PHP + guarda central + cache-buster frontend (+ regla de LiteSpeed como red de seguridad).
 
+### Reincidencia 3 (2026-06-10): el nonce caducado era la causa raíz del bucle
+
+Aun con el cache-buster desplegado volvió a fallar, y el patrón clave era: **"purgo LiteSpeed → funciona → ~1 día después vuelve a fallar"**. La causa real no era el cacheo del JSON sino el **nonce incrustado en el HTML cacheado** de `/contacto/`:
+
+1. `cache-and-css.php` inyecta `RESERVAS.nonce = wp_create_nonce('wp_rest')` en el HTML de la página.
+2. LiteSpeed cachea la página días; los nonces de WP caducan a las **12-24h**.
+3. El JS enviaba ese nonce caducado como `X-WP-Nonce` en el GET `/availability`. WordPress **rechaza con 403 `rest_cookie_invalid_nonce` cualquier petición REST con nonce inválido, aunque el endpoint sea público** (gotcha conocido de WP + page caching).
+4. El JS recibía el 403 → `json.days` undefined → "No hay huecos disponibles esta semana".
+5. Purga → HTML con nonce fresco → funciona → 24h después se repite.
+
+**Fix definitivo (commit en `claude/fix-css-loading-RdK8j`):**
+- `assets/js/reservas-calendar.js`: el GET `/availability` ya **no envía `X-WP-Nonce`** (el endpoint es público y no lo verifica; enviarlo solo podía romper). El POST `/bookings` sí lo sigue enviando (allí es obligatorio).
+- `inc/page-contacto.php`: hook `template_redirect` que marca la página 113323 como **no cacheable** (`nocache_headers()` + `litespeed_control_set_nocache`) → el nonce del formulario de reserva siempre es fresco.
+
+**Regla general:** cualquier página cuyo HTML incruste un nonce (`wp_create_nonce`) que luego usa JS contra la REST API **no puede cachearse a página completa**, o el nonce debe obtenerse en runtime. Y los GET públicos **no deben enviar `X-WP-Nonce`**: no aporta nada y un nonce caducado tumba la petición.
+
 ### Síntoma típico de regresión
 
 Si vuelve a aparecer "todo no disponible" o "datos antiguos" en cualquier endpoint dinámico del tema:
