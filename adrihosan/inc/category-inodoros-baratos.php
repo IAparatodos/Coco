@@ -57,7 +57,7 @@ function adrihosan_categoria_inodoros_baratos_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoros-baratos-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoro-barato-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Inodoros baratos' ); ?></h1>
             <p class="hero-tagline">Completos, resistentes y desde 159,90&nbsp;&euro;.</p>
