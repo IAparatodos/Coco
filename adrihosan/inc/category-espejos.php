@@ -18,7 +18,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
             remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
             ?>
             <div class="adri-hero-espejos adri-espejos-full-width">
-                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=2832&auto=format&fit=crop" alt="Baño moderno y luminoso con un espejo elegante" class="adri-hero-espejos__img">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-liso-Adrihosan.jpg" alt="Baño moderno y luminoso con un espejo elegante de Adrihosan" class="adri-hero-espejos__img">
                 <div class="adri-hero-espejos__overlay"></div>
                 <div class="adri-hero-espejos__content">
                     
