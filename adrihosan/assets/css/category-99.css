@@ -42,18 +42,18 @@
 
 .tax-product_cat.term-99 .term-description-dinamica {
     font-size: 1rem;
-    color: #3a5a6a;
+    color: #3f6f7b;
     line-height: 1.8;
 }
 
 .tax-product_cat.term-99 .term-description-dinamica h2,
 .tax-product_cat.term-99 .term-description-dinamica h3 {
-    color: #1a3a4a;
+    color: #3f6f7b;
     margin-top: 1.5em;
 }
 
 .tax-product_cat.term-99 .term-description-dinamica a {
-    color: #2a7a8a;
+    color: #3f6f7b;
     text-decoration: none;
     font-weight: 600;
 }
@@ -71,7 +71,7 @@
 .tax-product_cat.term-99 .product-loop-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
-    color: #1a3a4a;
+    color: #3f6f7b;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -112,7 +112,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 58, 74, 0.55);
+    background-color: rgba(63, 111, 123, 0.55);
     z-index: 1;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .tax-product_cat.term-99 .breadcrumb-nav span {
-    color: #7cc8e8;
+    color: #4dd2d0;
     font-weight: 600;
 }
 
@@ -187,15 +187,15 @@
 }
 
 .tax-product_cat.term-99 .hero-btn.primary {
-    background-color: #2a7a8a;
-    border-color: #2a7a8a;
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
     color: #ffffff;
 }
 
 .tax-product_cat.term-99 .hero-btn.primary:hover {
     background-color: #ffffff;
     border-color: #ffffff;
-    color: #2a7a8a;
+    color: #3f6f7b;
 }
 
 .tax-product_cat.term-99 .hero-btn.secondary {
@@ -206,14 +206,14 @@
 
 .tax-product_cat.term-99 .hero-btn.secondary:hover {
     background-color: #ffffff;
-    color: #1a3a4a;
+    color: #3f6f7b;
 }
 
 /* ========================================================================== */
 /* TRUST BAR SECTION                                                          */
 /* ========================================================================== */
 .tax-product_cat.term-99 .trust-bar-section {
-    background-color: #f0f5fa;
+    background-color: #f0f7f8;
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -233,13 +233,13 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #d8e3ef;
+    border: 1px solid #d4e3e6;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tax-product_cat.term-99 .trust-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(26, 58, 74, 0.08);
+    box-shadow: 0 8px 20px rgba(63, 111, 123, 0.08);
 }
 
 .tax-product_cat.term-99 .trust-icon {
@@ -251,13 +251,13 @@
 .tax-product_cat.term-99 .trust-text strong {
     display: block;
     font-size: 0.95rem;
-    color: #1a3a4a;
+    color: #3f6f7b;
     margin-bottom: 3px;
 }
 
 .tax-product_cat.term-99 .trust-text span {
     font-size: 0.85rem;
-    color: #3a5a6a;
+    color: #3f6f7b;
     line-height: 1.4;
 }
 
@@ -288,16 +288,16 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid #d8e3ef;
-    color: #1a3a4a;
-    background-color: #f7fafd;
+    border: 2px solid #d4e3e6;
+    color: #3f6f7b;
+    background-color: #f0f7f8;
     transition: all 0.3s ease;
     white-space: nowrap;
 }
 
 .tax-product_cat.term-99 .quick-nav-pill:hover {
-    background-color: #2a7a8a;
-    border-color: #2a7a8a;
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(193, 122, 80, 0.3);
@@ -310,21 +310,21 @@
     max-width: 960px;
     margin: 40px auto 30px auto;
     padding: 20px 25px;
-    background-color: #f0f5fa;
-    border-left: 4px solid #2a7a8a;
+    background-color: #f0f7f8;
+    border-left: 4px solid #3f6f7b;
     border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
 
 .tax-product_cat.term-99 .adria-tip-box p {
     font-size: 0.95rem;
-    color: #3a5a6a;
+    color: #3f6f7b;
     line-height: 1.6;
     margin: 0;
 }
 
 .tax-product_cat.term-99 .adria-tip-box strong {
-    color: #1a3a4a;
+    color: #3f6f7b;
 }
 
 /* ========================================================================== */
@@ -352,7 +352,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 58, 74, 0.7);
+    background-color: rgba(63, 111, 123, 0.7);
     z-index: 1;
 }
 
@@ -382,7 +382,7 @@
 .tax-product_cat.term-99 .bumper-btn {
     display: inline-block;
     padding: 14px 32px;
-    background-color: #2a7a8a;
+    background-color: #3f6f7b;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -391,12 +391,12 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    border: 2px solid #2a7a8a;
+    border: 2px solid #3f6f7b;
 }
 
 .tax-product_cat.term-99 .bumper-btn:hover {
     background-color: #ffffff;
-    color: #1a3a4a;
+    color: #3f6f7b;
     border-color: #ffffff;
 }
 
@@ -405,7 +405,7 @@
 /* ========================================================================== */
 .tax-product_cat.term-99 .seo-content-section {
     padding: 80px 20px;
-    background-color: #f5f8fa;
+    background-color: #f0f7f8;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -418,7 +418,7 @@
 .tax-product_cat.term-99 .seo-content-wrapper > h2 {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
-    color: #1a3a4a;
+    color: #3f6f7b;
     margin: 0 0 50px 0;
 }
 
@@ -433,14 +433,14 @@
     background-color: #ffffff;
     padding: 35px 25px;
     border-radius: 8px;
-    border: 1px solid #d8e3ef;
+    border: 1px solid #d4e3e6;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tax-product_cat.term-99 .material-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(26, 58, 74, 0.08);
+    box-shadow: 0 10px 20px rgba(63, 111, 123, 0.08);
 }
 
 .tax-product_cat.term-99 .material-icon {
@@ -452,13 +452,13 @@
 .tax-product_cat.term-99 .material-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1a3a4a;
+    color: #3f6f7b;
     margin: 0 0 10px 0;
 }
 
 .tax-product_cat.term-99 .material-card p {
     font-size: 0.95rem;
-    color: #3a5a6a;
+    color: #3f6f7b;
     line-height: 1.7;
     margin: 0;
 }
