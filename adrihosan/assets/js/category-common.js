@@ -65,4 +65,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // FAQs de espejos con luz (4213) y redondos (4247): clases ap-faq-*-luz / -redondo
+    document.querySelectorAll('.ap-faq-question-luz, .ap-faq-question-redondo').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var item = this.closest('[class*="ap-faq-item-"]');
+            if (!item) return;
+            var accordion = item.closest('[class*="ap-faq-accordion-"]') || item.parentNode;
+            var answer = item.querySelector('[class*="ap-faq-answer-"]');
+            var wasActive = item.classList.contains('active');
+
+            accordion.querySelectorAll('[class*="ap-faq-item-"]').forEach(function(i) {
+                i.classList.remove('active');
+                var a = i.querySelector('[class*="ap-faq-answer-"]');
+                if (a) { a.style.maxHeight = null; }
+            });
+
+            if (!wasActive) {
+                item.classList.add('active');
+                if (answer) { answer.style.maxHeight = answer.scrollHeight + 'px'; }
+            }
+        });
+    });
+
 });
