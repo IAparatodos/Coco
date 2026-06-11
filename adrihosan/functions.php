@@ -2230,72 +2230,72 @@ function adrihosan_custom_category_final_fix_css() {
 // =============================================================================
 // CATEGORÍA 2209 - SUELOS IMITACIÓN MADERA (Modularizado a inc/category-wood.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-wood.php';
+$_adri_p = get_template_directory() . '/inc/category-wood.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 2377 - AZULEJOS HEXAGONALES SUELO (Modularizado a inc/category-hexagonal.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-hexagonal.php';
+$_adri_p = get_template_directory() . '/inc/category-hexagonal.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 4973 - AZULEJOS IMITACIÓN CEMENTO (Modularizado a inc/category-imitacion-cemento.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-imitacion-cemento.php';
+$_adri_p = get_template_directory() . '/inc/category-imitacion-cemento.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 2516 - ZELLIGE (Modularizado a inc/category-zellige.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-zellige.php';
+$_adri_p = get_template_directory() . '/inc/category-zellige.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 4972 - AZULEJOS IMITACIÓN PIEDRA (Modularizado a inc/category-imitacion-piedra.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-imitacion-piedra.php';
+$_adri_p = get_template_directory() . '/inc/category-imitacion-piedra.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 2394 - FACHADAS Y MUROS (Modularizado a inc/category-fachadas.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-fachadas.php';
+$_adri_p = get_template_directory() . '/inc/category-fachadas.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍA 2188 - AZULEJO ESCAMA DE PEZ (Modularizado a inc/category-escama-pez.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-escama-pez.php';
-require get_template_directory() . '/inc/category-porcelanico-techlam.php';
-require get_template_directory() . '/inc/category-azulejos-15x15.php';
-require get_template_directory() . '/inc/category-azulejos-antiguos.php';
-require get_template_directory() . '/inc/category-azulejos-decorativos.php';
-require get_template_directory() . '/inc/category-azulejos-hexagonales.php';
-require get_template_directory() . '/inc/category-mosaico.php';
-require get_template_directory() . '/inc/category-suelo-barro.php';
-require get_template_directory() . '/inc/category-suelo-barro-exterior.php';
-require get_template_directory() . '/inc/category-muebles-bano.php';
-require get_template_directory() . '/inc/category-muebles-bano-pequeno.php';
-require get_template_directory() . '/inc/category-muebles-bano-baratos.php';
-require get_template_directory() . '/inc/category-muebles-bano-diseno.php';
-require get_template_directory() . '/inc/category-muebles-bano-rusticos.php';
-require get_template_directory() . '/inc/category-muebles-bano-suspendidos.php';
-require get_template_directory() . '/inc/category-muebles-bano-patas.php';
-require get_template_directory() . '/inc/category-columnas-bano.php';
-require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
+$_adri_p = get_template_directory() . '/inc/category-escama-pez.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-porcelanico-techlam.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-15x15.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-antiguos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-decorativos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-hexagonales.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-mosaico.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-suelo-barro.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-suelo-barro-exterior.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-pequeno.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-baratos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-diseno.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-rusticos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-suspendidos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-muebles-bano-patas.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-columnas-bano.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-ofertas-muebles-bano.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // === Categorias modernas de espejos (patron plano, igual que el resto del archivo)
-require get_template_directory() . '/inc/category-espejos-negros.php';
-require get_template_directory() . '/inc/category-espejo-bano-140.php';
-require get_template_directory() . '/inc/category-espejo-bano-50.php';
-require get_template_directory() . '/inc/category-espejo-bano-50x80.php';
-require get_template_directory() . '/inc/category-espejo-bano-60.php';
-require get_template_directory() . '/inc/category-espejo-bano-60x90.php';
-require get_template_directory() . '/inc/category-espejo-bano-antivaho.php';
-require get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
-require get_template_directory() . '/inc/category-espejo-bano-90x100.php';
-require get_template_directory() . '/inc/category-espejo-bano-sin-luz.php';
-require get_template_directory() . '/inc/category-espejos-aumento.php';
-require get_template_directory() . '/inc/category-espejo-bano-90x80.php';
-require get_template_directory() . '/inc/category-espejo-redondo-70-luz.php';
-require get_template_directory() . '/inc/category-espejo-redondo-100.php';
-require get_template_directory() . '/inc/category-espejos-con-marco.php';
-require get_template_directory() . '/inc/category-espejo-ovalado-luz.php';
+$_adri_p = get_template_directory() . '/inc/category-espejos-negros.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-140.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-50.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-50x80.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-60.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-60x90.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-antivaho.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-con-luz.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-90x100.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-sin-luz.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejos-aumento.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-bano-90x80.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-redondo-70-luz.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-redondo-100.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejos-con-marco.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-espejo-ovalado-luz.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 $_adri_ledimex_path = get_template_directory() . '/inc/category-ledimex.php';
 if ( file_exists( $_adri_ledimex_path ) ) {
     require $_adri_ledimex_path;
@@ -2311,38 +2311,38 @@ include get_template_directory() . '/inc/page-home.php';
 // =============================================================================
 // CATEGORÍA 2350 - SUELO TÉCNICO EXTERIOR (Modularizado a inc/category-suelo-tecnico.php)
 // =============================================================================
-require get_template_directory() . '/inc/category-suelo-tecnico.php';
-require get_template_directory() . '/inc/category-suelos-cocina.php';
-require get_template_directory() . '/inc/category-suelos-rusticos.php';
-require get_template_directory() . '/inc/category-porcelanico-tecnico.php';
+$_adri_p = get_template_directory() . '/inc/category-suelo-tecnico.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-suelos-cocina.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-suelos-rusticos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-porcelanico-tecnico.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // CATEGORÍAS 62, 2410, 1844, 2510, 2093 - Cerámica + Porcelánico + Gran Formato + Extrafino + Metro
 // =============================================================================
-require get_template_directory() . '/inc/category-ceramica-porcelanico.php';
+$_adri_p = get_template_directory() . '/inc/category-ceramica-porcelanico.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 
 // =============================================================================
 // Categorías restantes modularizadas
 // =============================================================================
-require get_template_directory() . '/inc/category-imitacion-hidraulico.php';
-require get_template_directory() . '/inc/category-bano-imitacion.php';
-require get_template_directory() . '/inc/category-cocina-imitacion.php';
-require get_template_directory() . '/inc/category-camerinos.php';
-require get_template_directory() . '/inc/category-pilar-bh.php';
-require get_template_directory() . '/inc/category-paredes.php';
-require get_template_directory() . '/inc/category-hidraulica-original.php';
-require get_template_directory() . '/inc/category-pilar-bano.php';
-require get_template_directory() . '/inc/category-pilar-cocina.php';
-require get_template_directory() . '/inc/category-pilar-exterior.php';
-require get_template_directory() . '/inc/category-azulejos.php';
-require get_template_directory() . '/inc/category-azulejos-bano.php';
-require get_template_directory() . '/inc/category-azulejos-cocina.php';
-require get_template_directory() . '/inc/category-azulejos-exterior.php';
-require get_template_directory() . '/inc/category-piscinas.php';
-require get_template_directory() . '/inc/category-pavimentos.php';
-require get_template_directory() . '/inc/category-porcelanico-marmol.php';
-require get_template_directory() . '/inc/category-ceramica-vives.php';
-require get_template_directory() . '/inc/category-navarti.php';             // Cat 4722
+$_adri_p = get_template_directory() . '/inc/category-imitacion-hidraulico.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-bano-imitacion.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-cocina-imitacion.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-camerinos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-pilar-bh.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-paredes.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-hidraulica-original.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-pilar-bano.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-pilar-cocina.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-pilar-exterior.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-bano.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-cocina.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-azulejos-exterior.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-piscinas.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-pavimentos.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-porcelanico-marmol.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-ceramica-vives.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
+$_adri_p = get_template_directory() . '/inc/category-navarti.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 4722
 
 /* ========================================================================== */
 /* MARCAS PROPIAS (taxonomy: brand) + CARGADOR MODULAR DE CSS                 */
