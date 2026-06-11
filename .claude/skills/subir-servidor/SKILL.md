@@ -8,6 +8,19 @@ description: "Generar la lista de archivos a subir al servidor por FTP con enlac
 Genera la lista de archivos a desplegar, con enlace de descarga, ruta de
 destino y orden de subida.
 
+## Flujo por defecto (preferencia del usuario)
+
+El usuario **siempre coge los archivos de `main`** para subir al servidor.
+Por tanto, ANTES de generar la lista:
+
+1. Asegúrate de que el cambio está **fusionado en `main`** (crea el PR y
+   hazlo merge tú mismo, como los PR #14 y #15). No le des enlaces de una
+   rama de trabajo a medias.
+2. Genera SIEMPRE los enlaces apuntando a **`main`**
+   (`https://github.com/IAparatodos/Coco/blob/main/...`).
+3. Solo si el usuario pide explícitamente desplegar desde una rama sin
+   fusionar, usa esa rama.
+
 ## 1. Detectar archivos modificados
 
 ```bash
@@ -29,11 +42,11 @@ git diff --name-only origin/main...HEAD
   "Download raw file"):
 
   ```
-  https://github.com/IAparatodos/Coco/blob/{rama}/{ruta}
+  https://github.com/IAparatodos/Coco/blob/main/{ruta}
   ```
 
-  donde `{rama}` es la rama actual y `{ruta}` es la ruta completa desde la
-  raíz del repo (incluyendo el prefijo `adrihosan/`).
+  donde `{ruta}` es la ruta completa desde la raíz del repo (incluyendo el
+  prefijo `adrihosan/`). Usa **`main`** salvo indicación contraria.
 
 > **NUNCA** des enlaces `raw.githubusercontent.com` ni pegues el contenido
 > del archivo para copiar. Siempre el enlace BLOB.
