@@ -26,3 +26,7 @@ dist-ssr
 # Backups locales generados por mantenimiento (no se commitean)
 *.bak
 *.orig
+
+# Environment variables
+.env
+.env.*
