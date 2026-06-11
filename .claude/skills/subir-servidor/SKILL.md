@@ -8,6 +8,14 @@ description: "Generar la lista de archivos a subir al servidor por FTP con enlac
 Genera la lista de archivos a desplegar, con enlace de descarga, ruta de
 destino y orden de subida.
 
+## REGLA OBLIGATORIA (preferencia explícita del usuario)
+
+**SIEMPRE, sin que el usuario lo pida**, al terminar CUALQUIER cambio que
+toque archivos dentro de `adrihosan/`, dale la **URL de GitHub (`main`) de
+cada archivo a subir**. No basta con decir "sube functions.php": hay que
+dar el enlace clicable `https://github.com/IAparatodos/Coco/blob/main/...`
+de cada uno. Es la parte más importante de la respuesta.
+
 ## Flujo por defecto (preferencia del usuario)
 
 El usuario **siempre coge los archivos de `main`** para subir al servidor.
