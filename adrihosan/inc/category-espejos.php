@@ -180,15 +180,11 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
                     <div class="ap-antifog-image"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-con-luz-Adrihosan-Antivaho.jpg" alt="Espejo de baño con la mitad de la superficie empañada y la otra mitad perfectamente clara gracias al sistema antivaho."></div>
                 </div>
             </section>
-            <section class="ap-filters-section-luz adrihosan-luz-full-width-block">
-                <div class="ap-filters-wrapper-luz">
-                    <div class="ap-filter-group-luz"><h3 class="ap-filter-group-title-luz">Filtrar por Forma</h3><div class="ap-filter-buttons-luz"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=rectangular" class="ap-filter-btn-luz">Rectangular</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=redondo" class="ap-filter-btn-luz">Redondo</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=ovalado" class="ap-filter-btn-luz">Orgánico</a></div></div>
-                    <div class="ap-filter-group-luz"><h3 class="ap-filter-group-title-luz">Filtrar por Ancho</h3><div class="ap-filter-buttons-luz"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=60" class="ap-filter-btn-luz">60 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=80" class="ap-filter-btn-luz">80 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=100" class="ap-filter-btn-luz">100 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=120" class="ap-filter-btn-luz">120 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=140" class="ap-filter-btn-luz">140 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=160" class="ap-filter-btn-luz">160 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=180" class="ap-filter-btn-luz">180 cm</a></div></div>
-                </div>
-            </section>
             <section class="ap-product-header-section-luz adrihosan-luz-full-width-block">
                 <div id="catalogo-luz" class="ap-product-header-wrapper-luz"><h2>Modelos de Espejos con Luz</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div>
             </section>
+            <!-- Filter Everything Pro (mismo widget que Espejos 102) -->
+            <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
             <!-- WRAPPER AJAX para Filter Everything Pro -->
             <div id="fe-products-wrapper">
             <?php
@@ -295,28 +291,9 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
                     </div>
                 </div>
             </section>
-            <section class="ap-filters-section-redondo adri-redondo-full-width">
-                <div class="ap-filters-wrapper-redondo">
-                    <div class="ap-filter-group-redondo">
-                        <h3 class="ap-filter-group-title-redondo">Filtrar por Diámetro</h3>
-                        <div class="ap-filter-buttons-redondo">
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=60" class="ap-filter-btn-redondo">60 cm</a>
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=70" class="ap-filter-btn-redondo">70 cm</a>
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=80" class="ap-filter-btn-redondo">80 cm</a>
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=90" class="ap-filter-btn-redondo">90 cm</a>
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=100" class="ap-filter-btn-redondo">100 cm</a>
-                        </div>
-                    </div>
-                    <div class="ap-filter-group-redondo">
-                        <h3 class="ap-filter-group-title-redondo">Filtrar por Funcionalidad</h3>
-                        <div class="ap-filter-buttons-redondo">
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?funcion-espejo=con-luz-led" class="ap-filter-btn-redondo">Con Luz LED</a>
-                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?funcion-espejo=antivaho" class="ap-filter-btn-redondo">Con Antivaho</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <div id="catalogo-redondos" style="scroll-margin-top: 20px;"></div>
+            <!-- Filter Everything Pro (mismo widget que Espejos 102) -->
+            <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
             <!-- WRAPPER AJAX para Filter Everything Pro -->
             <div id="fe-products-wrapper">
             <?php
