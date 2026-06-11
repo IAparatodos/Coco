@@ -1,127 +1,172 @@
 /* ========================================================================== */
 /* CATEGORY-4247.CSS - Espejos Redondos                                       */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
 /* ========================================================================== */
 
 .tax-product_cat.term-4247 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* --- HERO SECTION --- */
-.ap-hero-section-redondo {
+/* --- Eliminar espacio superior del tema --- */
+.tax-product_cat.term-4247 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-4247 .woocommerce-products-header,
+.tax-product_cat.term-4247 .wd-shop-tools,
+.tax-product_cat.term-4247 .advanced-filter,
+.tax-product_cat.term-4247 .filter-wrapper,
+.tax-product_cat.term-4247 .ai-filters-section,
+.tax-product_cat.term-4247 .bho-filters-section,
+.tax-product_cat.term-4247 .bho-hub-section,
+.tax-product_cat.term-4247 .woocommerce-products-header__description,
+.tax-product_cat.term-4247 .term-description,
+.tax-product_cat.term-4247 .woodmart-category-desc,
+.tax-product_cat.term-4247 .wd-active-filters,
+.tax-product_cat.term-4247 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-4247 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-4247 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-4247 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #3f6f7b;
     font-family: 'Poppins', sans-serif;
-    background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/espejo-redondo-adrihosan-1-scaled.jpg');
-    background-size: cover;
-    background-position: center 70%;
+}
+
+/* ========================================================================== */
+/* HERO SECTION (full-bleed via .adri-redondo-full-width)                     */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .ap-hero-section-redondo {
     position: relative;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
     padding: 80px 20px;
+    box-sizing: border-box;
+    background-color: #3f6f7b;
+    background-image: linear-gradient(rgba(63, 111, 123, 0.6), rgba(63, 111, 123, 0.6)), url('https://www.adrihosan.com/wp-content/uploads/2025/09/espejo-redondo-adrihosan-1-scaled.jpg');
+    background-size: cover;
+    background-position: center 70%;
     color: #ffffff;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
-.ap-hero-section-redondo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(16, 46, 53, 0.60);
-    z-index: 1;
-}
-
-.ap-hero-content-redondo {
+.tax-product_cat.term-4247 .ap-hero-content-redondo {
     position: relative;
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.ap-hero-content-redondo h1 {
+.tax-product_cat.term-4247 .ap-hero-content-redondo h1 {
     font-size: clamp(2rem, 5vw, 3.25rem);
     font-weight: 700;
     line-height: 1.2;
     margin: 0 0 15px 0;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(63, 111, 123, 0.5);
 }
 
-.ap-hero-content-redondo p {
+.tax-product_cat.term-4247 .ap-hero-content-redondo p {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     line-height: 1.6;
     max-width: 650px;
     margin: 0 auto 30px auto;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    opacity: 0.95;
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(63, 111, 123, 0.5);
 }
 
-.ap-hero-buttons-redondo {
+.tax-product_cat.term-4247 .ap-hero-buttons-redondo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.boton-adrihosan-redondo {
+/* --- Botones CTA --- */
+.tax-product_cat.term-4247 .boton-adrihosan-redondo {
     display: inline-block;
-    padding: 10px 22px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 0.95rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
-.boton-adrihosan-redondo.primary {
+.tax-product_cat.term-4247 .boton-adrihosan-redondo.primary {
     background-color: #4dd2d0;
+    border: 2px solid #4dd2d0;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-4247 .boton-adrihosan-redondo.primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #3f6f7b;
+    transform: translateY(-2px);
+}
+
+.tax-product_cat.term-4247 .boton-adrihosan-redondo.secondary {
+    background-color: transparent;
     border: 2px solid #4dd2d0;
     color: #ffffff;
 }
 
-.boton-adrihosan-redondo.primary:hover {
-    background-color: #ffffff;
-    color: #4dd2d0;
+.tax-product_cat.term-4247 .boton-adrihosan-redondo.secondary:hover {
+    background-color: #4dd2d0;
+    color: #3f6f7b;
     transform: translateY(-2px);
 }
 
-.boton-adrihosan-redondo.secondary {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-}
-
-.boton-adrihosan-redondo.secondary:hover {
-    background-color: #ffffff;
-    color: #102e35;
-    transform: translateY(-2px);
-}
-
-/* --- BENEFITS SECTION --- */
-.ap-benefits-section-redondo {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f9fa;
+/* ========================================================================== */
+/* BENEFITS SECTION                                                           */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .ap-benefits-section-redondo {
+    background-color: #f0f7f8;
     padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.ap-benefits-wrapper-redondo {
+.tax-product_cat.term-4247 .ap-benefits-wrapper-redondo {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.ap-benefits-header-redondo h2 {
+.tax-product_cat.term-4247 .ap-benefits-header-redondo h2 {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
-    color: #102e35;
+    color: #3f6f7b;
     margin: 0 0 15px 0;
 }
 
-.ap-benefits-header-redondo p {
+.tax-product_cat.term-4247 .ap-benefits-header-redondo p {
     font-size: clamp(1rem, 2.5vw, 1.125rem);
     color: #3f6f7b;
     max-width: 700px;
@@ -129,240 +174,340 @@
     line-height: 1.6;
 }
 
-.ap-benefits-grid-redondo {
+.tax-product_cat.term-4247 .ap-benefits-grid-redondo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.ap-benefit-card-redondo {
+.tax-product_cat.term-4247 .ap-benefit-card-redondo {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     text-align: left;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,.05), 0 2px 4px -2px rgba(0,0,0,.05);
-    transition: transform .2s ease, box-shadow .2s ease;
-    border: 1px solid #eef2f5;
+    box-shadow: 0 4px 15px rgba(63, 111, 123, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #d4e3e6;
 }
 
-.ap-benefit-card-redondo:hover {
+.tax-product_cat.term-4247 .ap-benefit-card-redondo:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(16, 46, 53, .08);
+    box-shadow: 0 12px 30px rgba(63, 111, 123, 0.15);
 }
 
-.ap-benefit-card-redondo img {
+.tax-product_cat.term-4247 .ap-benefit-card-redondo img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     display: block;
 }
 
-.ap-benefit-card-content {
+.tax-product_cat.term-4247 .ap-benefit-card-content {
     padding: 30px;
 }
 
-.ap-benefit-card-content h3 {
+.tax-product_cat.term-4247 .ap-benefit-card-content h3 {
     font-size: 1.25rem;
-    font-weight: 600;
-    color: #102e35;
+    font-weight: 700;
+    color: #3f6f7b;
     margin: 0 0 10px 0;
 }
 
-.ap-benefit-card-content p {
-    font-size: .95rem;
+.tax-product_cat.term-4247 .ap-benefit-card-content p {
+    font-size: 0.95rem;
     color: #3f6f7b;
     line-height: 1.7;
     margin: 0;
 }
 
-/* --- FILTERS SECTION --- */
-.ap-filters-section-redondo {
-    font-family: 'Poppins', sans-serif;
+/* ========================================================================== */
+/* SEO SECTION                                                                */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .ap-seo-section-redondo {
     background-color: #ffffff;
-    padding: 60px 20px;
-    border-top: 1px solid #eef2f5;
-}
-
-.ap-filters-wrapper-redondo {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.ap-filter-group-redondo {
-    margin-bottom: 30px;
-}
-
-.ap-filter-group-redondo:last-child {
-    margin-bottom: 0;
-}
-
-.ap-filter-group-title-redondo {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #3f6f7b;
-    margin: 0 0 15px 0;
-    text-align: center;
-}
-
-.ap-filter-buttons-redondo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.ap-filter-btn-redondo {
-    display: inline-block;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: .875rem;
-    font-weight: 500;
-    text-decoration: none;
-    border: 1px solid #4dd2d0;
-    background-color: #ffffff;
-    color: #4dd2d0;
-    transition: all .2s ease-in-out;
-}
-
-.ap-filter-btn-redondo:hover {
-    background-color: #4dd2d0;
-    color: #ffffff;
-    border-color: #4dd2d0;
-}
-
-/* --- SEO SECTION --- */
-.ap-seo-section-redondo {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f9fa;
     padding: 80px 20px;
-    border-top: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
 }
 
-.ap-seo-wrapper-redondo {
+.tax-product_cat.term-4247 .ap-seo-wrapper-redondo {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.7;
     color: #3f6f7b;
 }
 
-.ap-seo-wrapper-redondo h2 {
+.tax-product_cat.term-4247 .ap-seo-wrapper-redondo h2 {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
-    color: #102e35;
+    color: #3f6f7b;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.ap-seo-wrapper-redondo h3 {
+.tax-product_cat.term-4247 .ap-seo-wrapper-redondo h3 {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
-    font-weight: 600;
-    color: #102e35;
+    font-weight: 700;
+    color: #3f6f7b;
     margin-top: 40px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #4dd2d0;
 }
 
-.ap-seo-wrapper-redondo p {
+.tax-product_cat.term-4247 .ap-seo-wrapper-redondo p {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: #3f6f7b;
     margin-bottom: 20px;
 }
 
-.ap-seo-wrapper-redondo strong {
+.tax-product_cat.term-4247 .ap-seo-wrapper-redondo strong {
     font-weight: 600;
-    color: #102e35;
+    color: #3f6f7b;
 }
 
-/* --- HELP SECTION --- */
-.ap-help-section-redondo {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f9fa;
+/* ========================================================================== */
+/* FAQ SECTION (acordeon - JS fija max-height inline + clase .active)         */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .ap-faq-section-redondo {
+    background-color: #f0f7f8;
     padding: 80px 20px;
-    border-top: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
 }
 
-.ap-help-wrapper-redondo {
+.tax-product_cat.term-4247 .ap-faq-wrapper-redondo {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-4247 .ap-faq-header-redondo {
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.tax-product_cat.term-4247 .ap-faq-header-redondo h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 15px 0;
+}
+
+.tax-product_cat.term-4247 .ap-faq-header-redondo p {
+    font-size: 1.05rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-4247 .ap-faq-accordion-redondo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tax-product_cat.term-4247 .ap-faq-item-redondo {
+    background-color: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-4247 .ap-faq-question-redondo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    line-height: 1.4;
+}
+
+.tax-product_cat.term-4247 .ap-faq-icon-redondo {
+    flex-shrink: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4dd2d0;
+    transition: transform 0.35s ease;
+}
+
+.tax-product_cat.term-4247 .ap-faq-item-redondo.active .ap-faq-icon-redondo {
+    transform: rotate(45deg);
+}
+
+.tax-product_cat.term-4247 .ap-faq-answer-redondo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.tax-product_cat.term-4247 .ap-faq-answer-content-redondo {
+    padding: 0 24px 22px 24px;
+}
+
+.tax-product_cat.term-4247 .ap-faq-answer-content-redondo p {
+    font-size: 0.98rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-4247 .ap-faq-answer-content-redondo strong {
+    color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* HELP / CONTACTO RICARDO                                                    */
+/* ========================================================================== */
+.tax-product_cat.term-4247 .ap-help-section-redondo {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-4247 .ap-help-wrapper-redondo {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
 
-.ap-help-intro-redondo {
+.tax-product_cat.term-4247 .ap-help-intro-redondo {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
-.ap-help-intro-redondo img {
-    width: 100px;
-    height: 100px;
+.tax-product_cat.term-4247 .ap-help-intro-redondo img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 50%;
     border: 4px solid #4dd2d0;
-    box-shadow: 0 4px 15px rgba(16, 46, 53, 0.1);
+    box-shadow: 0 4px 15px rgba(63, 111, 123, 0.1);
 }
 
-.ap-help-intro-redondo h2 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+.tax-product_cat.term-4247 .ap-help-intro-redondo h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
     font-weight: 700;
-    color: #102e35;
+    color: #3f6f7b;
+    line-height: 1.35;
     margin: 0;
     text-align: left;
 }
 
-.ap-help-intro-redondo h2 span {
-    font-size: clamp(1rem, 2.5vw, 1.125rem);
-    color: #3f6f7b;
-    font-weight: 400;
+.tax-product_cat.term-4247 .ap-help-intro-redondo h2 span {
     display: block;
-    margin-top: 5px;
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    font-weight: 500;
+    color: #3f6f7b;
+    margin-top: 8px;
 }
 
-.ap-contact-options-grid-redondo {
+.tax-product_cat.term-4247 .ap-contact-options-grid-redondo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
 }
 
-.ap-contact-option-redondo {
+.tax-product_cat.term-4247 .ap-contact-option-redondo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     text-decoration: none;
-    padding: 25px 15px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    border: 1px solid #eef2f5;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 24px 14px;
+    border-radius: 10px;
+    background-color: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    transition: all 0.3s ease;
 }
 
-.ap-contact-option-redondo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(16, 46, 53, 0.08);
+.tax-product_cat.term-4247 .ap-contact-option-redondo:hover {
+    background-color: #3f6f7b;
+    border-color: #3f6f7b;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(63, 111, 123, 0.25);
 }
 
-.ap-contact-option-redondo .icon {
-    font-size: 2.5rem;
+.tax-product_cat.term-4247 .ap-contact-option-redondo .icon {
+    font-size: 1.8rem;
     line-height: 1;
-    color: #4dd2d0;
-    margin-bottom: 15px;
 }
 
-.ap-contact-option-redondo .label {
-    font-size: 0.95rem;
+.tax-product_cat.term-4247 .ap-contact-option-redondo .label {
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #102e35;
+    color: #3f6f7b;
+    text-align: center;
 }
 
+.tax-product_cat.term-4247 .ap-contact-option-redondo:hover .label {
+    color: #ffffff;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                 */
+/* ========================================================================== */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-4247 .ap-benefits-grid-redondo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tax-product_cat.term-4247 .ap-contact-options-grid-redondo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- Movil --- */
 @media (max-width: 768px) {
-    .ap-help-intro-redondo {
+    .tax-product_cat.term-4247 .ap-hero-section-redondo {
+        min-height: 55vh;
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-4247 .ap-benefits-section-redondo,
+    .tax-product_cat.term-4247 .ap-seo-section-redondo,
+    .tax-product_cat.term-4247 .ap-faq-section-redondo,
+    .tax-product_cat.term-4247 .ap-help-section-redondo {
+        padding: 50px 20px;
+    }
+
+    .tax-product_cat.term-4247 .ap-benefits-grid-redondo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tax-product_cat.term-4247 .ap-help-intro-redondo {
         flex-direction: column;
+        gap: 18px;
         text-align: center;
     }
-    
-    .ap-help-intro-redondo h2 {
+
+    .tax-product_cat.term-4247 .ap-help-intro-redondo h2 {
+        text-align: center;
+    }
+
+    .tax-product_cat.term-4247 .ap-contact-options-grid-redondo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .tax-product_cat.term-4247 .boton-adrihosan-redondo {
+        width: 100%;
         text-align: center;
     }
 }
