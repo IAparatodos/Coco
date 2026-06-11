@@ -6,14 +6,17 @@
 /*   - Tipografia corporativa: Poppins                                       */
 /* ========================================================================== */
 
+/* ─── RESETS ─── */
 .contacto-page {
     font-family: 'Poppins', sans-serif !important;
     color: #3f6f7b;
+    overflow-x: hidden;
 }
 
 .contacto-page h1,
 .contacto-page h2,
 .contacto-page h3,
+.contacto-page h4,
 .contacto-page p,
 .contacto-page span,
 .contacto-page a,
@@ -27,57 +30,71 @@
     letter-spacing: normal !important;
 }
 
-.contacto-page section {
+.contacto-page,
+.contacto-page .entry-content {
     max-width: 100% !important;
     width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.contacto-page section {
+    max-width: 100% !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
     box-sizing: border-box;
 }
 
 .contacto-shell {
-    width: min(1100px, calc(100% - 32px));
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
 }
 
 /* ─── HERO ─── */
 .contacto-hero {
-    padding: 60px 0 44px;
-    background: linear-gradient(135deg, #3f6f7b 0%, #4dd2d0 100%);
+    padding: 80px 0 60px;
+    background: linear-gradient(135deg, #3f6f7b 0%, rgba(63, 111, 123, 0.85) 40%, rgba(77, 210, 208, 0.9) 100%);
     color: #ffffff;
+    text-align: center;
 }
 
 .contacto-eyebrow {
     text-transform: uppercase !important;
-    letter-spacing: 0.12em !important;
+    letter-spacing: 0.15em !important;
     font-size: 0.8rem;
-    margin-bottom: 12px;
-    opacity: 0.85;
-    font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 16px;
+    opacity: 0.8;
+    font-weight: 500;
 }
 
 .contacto-hero h1 {
-    margin: 0 0 12px;
-    font-size: clamp(1.75rem, 4vw, 3rem);
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
     font-weight: 700;
-    color: #ffffff;
-    line-height: 1.2;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff !important;
+    line-height: 1.15;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacto-lead {
-    max-width: 680px;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    opacity: 0.92;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
 }
 
 /* ─── CONTACT METHODS GRID ─── */
 .contacto-methods {
-    padding: 48px 0;
-    background: #f0f7f8;
+    padding: 56px 0;
+    background: #ffffff;
 }
 
 .contacto-methods-grid {
@@ -91,26 +108,27 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 28px 16px;
+    padding: 32px 16px 28px;
     background: #ffffff;
     border: 2px solid #d4e3e6;
     border-radius: 16px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #3f6f7b;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .contacto-method-card:hover {
     border-color: #4dd2d0;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(63, 111, 123, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(63, 111, 123, 0.12);
+    color: #3f6f7b;
+    text-decoration: none !important;
 }
 
 .contacto-method-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 14px;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
     object-fit: contain;
 }
 
@@ -126,30 +144,29 @@
     color: #3f6f7b;
     line-height: 1.4;
     margin: 0;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 /* ─── SECTION HEADERS ─── */
 .contacto-section-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 .contacto-section-header h2 {
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 700;
     color: #3f6f7b;
-    margin: 0 0 12px;
-    font-family: 'Poppins', sans-serif;
+    margin: 0 0 14px;
 }
 
 .contacto-section-header p {
     max-width: 640px;
     margin: 0 auto;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.65;
     color: #3f6f7b;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .contacto-meta-pills {
@@ -157,12 +174,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .contacto-meta-pills span {
-    background: rgba(63, 111, 123, 0.08);
-    padding: 8px 16px;
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    padding: 8px 18px;
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 600;
@@ -171,28 +189,26 @@
 
 /* ─── RESERVATION SECTION ─── */
 .contacto-reservas {
-    padding: 56px 0 64px;
-    background: #ffffff;
+    padding: 64px 0 72px;
+    background: #f0f7f8;
 }
 
-/* Reservation components inherit from contacto-reservas.css */
 .contacto-reservas .reservas-steps {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .contacto-reservas .reservas-step {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 16px;
+    padding: 10px 20px;
     background: #ffffff;
     border: 2px solid #d4e3e6;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     color: #3f6f7b;
@@ -219,8 +235,8 @@
 }
 
 .contacto-reservas .reservas-step-num {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -240,25 +256,26 @@
 }
 
 .contacto-reservas .reservas-step-line {
-    width: 40px;
+    width: 48px;
     height: 2px;
     background: #d4e3e6;
     flex-shrink: 0;
 }
 
 .contacto-reservas .reservas-panel {
-    background: #f0f7f8;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
     border-radius: 20px;
-    padding: 32px;
-    box-shadow: 0 4px 20px rgba(63, 111, 123, 0.08);
+    padding: 40px;
+    box-shadow: 0 4px 24px rgba(63, 111, 123, 0.08);
 }
 
 .contacto-reservas .reservas-panel h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #3f6f7b;
     margin: 0 0 24px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .contacto-reservas .reservas-back-row {
@@ -271,7 +288,6 @@
 .contacto-reservas .reservas-back {
     background: none;
     border: none;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     color: #4dd2d0;
@@ -284,9 +300,9 @@
 }
 
 .contacto-reservas .reservas-type-badge {
-    padding: 4px 12px;
+    padding: 4px 14px;
     border-radius: 50px;
-    background: rgba(63, 111, 123, 0.08);
+    background: #f0f7f8;
     font-size: 0.8rem;
     font-weight: 600;
     color: #3f6f7b;
@@ -306,29 +322,29 @@
     padding: 28px 24px;
     text-align: left;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .contacto-reservas .reservas-type-card:hover {
     border-color: #4dd2d0;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(63, 111, 123, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(63, 111, 123, 0.1);
 }
 
 .contacto-reservas .reservas-type-card.is-selected {
     border-color: #4dd2d0;
-    background: rgba(77, 210, 208, 0.08);
+    background: rgba(77, 210, 208, 0.06);
+    box-shadow: 0 0 0 3px rgba(77, 210, 208, 0.2);
 }
 
 .contacto-reservas .reservas-type-icon {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .contacto-reservas .reservas-type-svg {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
 }
 
@@ -342,8 +358,9 @@
 .contacto-reservas .reservas-type-card p {
     font-size: 0.9rem;
     color: #3f6f7b;
-    line-height: 1.5;
-    margin: 0 0 12px;
+    line-height: 1.55;
+    margin: 0 0 14px;
+    opacity: 0.85;
 }
 
 .contacto-reservas .reservas-type-card ul {
@@ -351,7 +368,16 @@
     padding-left: 18px;
     font-size: 0.85rem;
     color: #3f6f7b;
-    line-height: 1.7;
+    line-height: 1.8;
+    list-style: none;
+    padding-left: 0;
+}
+
+.contacto-reservas .reservas-type-card ul li::before {
+    content: "\2713";
+    color: #4dd2d0;
+    font-weight: 700;
+    margin-right: 8px;
 }
 
 /* Calendar */
@@ -367,8 +393,8 @@
 }
 
 .contacto-reservas .reservas-week-btn {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 2px solid #d4e3e6;
     background: #ffffff;
@@ -376,7 +402,6 @@
     font-weight: 700;
     color: #3f6f7b;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     transition: all 0.2s ease;
 }
 
@@ -407,12 +432,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12px 8px;
+    padding: 14px 8px;
     border: 2px solid #d4e3e6;
     border-radius: 12px;
     background: #ffffff;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     transition: all 0.2s ease;
 }
 
@@ -487,7 +511,6 @@
     border: 2px solid #d4e3e6;
     border-radius: 10px;
     background: #ffffff;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
     color: #3f6f7b;
@@ -526,7 +549,8 @@
 .contacto-reservas .reservas-summary-tag {
     padding: 8px 16px;
     border-radius: 50px;
-    background: rgba(63, 111, 123, 0.08);
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
     font-size: 0.85rem;
     font-weight: 600;
     color: #3f6f7b;
@@ -555,7 +579,6 @@
     padding: 14px 16px;
     border: 2px solid #d4e3e6;
     border-radius: 12px;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.95rem;
     color: #3f6f7b;
     background: #ffffff;
@@ -563,10 +586,16 @@
     box-sizing: border-box;
 }
 
+.contacto-reservas .reservas-form input::placeholder,
+.contacto-reservas .reservas-form textarea::placeholder {
+    color: rgba(63, 111, 123, 0.45);
+}
+
 .contacto-reservas .reservas-form input:focus,
 .contacto-reservas .reservas-form textarea:focus {
     outline: none;
     border-color: #4dd2d0;
+    box-shadow: 0 0 0 3px rgba(77, 210, 208, 0.15);
 }
 
 .contacto-reservas .reservas-form textarea {
@@ -575,45 +604,47 @@
 }
 
 .contacto-reservas .reservas-submit {
-    padding: 16px 32px;
+    padding: 16px 40px;
     border: none;
     border-radius: 12px;
     background: #4dd2d0;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
+    justify-self: start;
 }
 
 .contacto-reservas .reservas-submit:hover {
     background: #3f6f7b;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(63, 111, 123, 0.15);
 }
 
 .contacto-reservas .reservas-submit:disabled {
     opacity: 0.5;
     cursor: default;
     transform: none;
+    box-shadow: none;
 }
 
 /* Confirmation */
 .contacto-reservas .reservas-confirmation {
     text-align: center;
-    padding: 48px 32px;
+    padding: 56px 32px;
 }
 
 .contacto-reservas .reservas-done-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 16px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
     background: #4dd2d0;
     color: #ffffff;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -625,7 +656,7 @@
     font-size: 1.05rem;
     max-width: 500px;
     margin: 0 auto 24px;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 .contacto-reservas .reservas-done-summary {
@@ -637,53 +668,57 @@
 
 /* ─── SHOWROOM ─── */
 .contacto-showroom {
-    padding: 56px 0 64px;
-    background: #f0f7f8;
+    padding: 64px 0 72px;
+    background: #ffffff;
 }
 
 .contacto-showroom-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+}
+
+.contacto-showroom-photo {
     border-radius: 16px;
     overflow: hidden;
 }
 
 .contacto-showroom-photo img {
     width: 100%;
-    height: 280px;
+    height: 320px;
     object-fit: cover;
     display: block;
-    border-radius: 16px;
 }
 
 .contacto-showroom-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .contacto-info-card {
-    background: #ffffff;
-    border: 2px solid #d4e3e6;
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
     border-radius: 16px;
-    padding: 24px;
-    font-family: 'Poppins', sans-serif;
+    padding: 28px 24px;
 }
 
 .contacto-info-card h3 {
     font-size: 1rem;
     font-weight: 700;
     color: #3f6f7b;
-    margin: 0 0 12px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dd2d0;
+    display: inline-block;
 }
 
 .contacto-info-card p {
     font-size: 0.9rem;
     color: #3f6f7b;
-    line-height: 1.6;
+    line-height: 1.65;
     margin: 0 0 6px;
 }
 
@@ -698,43 +733,50 @@
 }
 
 .contacto-parking {
-    margin-top: 8px;
-    padding: 8px 14px;
+    margin-top: 10px;
+    padding: 10px 14px;
     background: rgba(77, 210, 208, 0.1);
     border-radius: 8px;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    color: #4dd2d0;
+    color: #3f6f7b;
 }
 
 .contacto-map {
     border-radius: 16px;
     overflow: hidden;
-    border: 2px solid #d4e3e6;
+    border: 1px solid #d4e3e6;
+    box-shadow: 0 4px 16px rgba(63, 111, 123, 0.06);
 }
 
 .contacto-map iframe {
     display: block;
+    width: 100%;
 }
 
 /* ─── VIDEOLLAMADA ─── */
 .contacto-videollamada {
-    padding: 56px 0 64px;
-    background: #ffffff;
+    padding: 64px 0 72px;
+    background: #f0f7f8;
 }
 
 .contacto-videollamada-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+}
+
+.contacto-videollamada-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(63, 111, 123, 0.08);
 }
 
 .contacto-videollamada-photo img {
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
-    border-radius: 16px;
     display: block;
 }
 
@@ -744,7 +786,7 @@
 
 /* ─── PHONE & WHATSAPP ─── */
 .contacto-telefono {
-    padding: 56px 0 64px;
+    padding: 64px 0 72px;
     background: #3f6f7b;
     color: #ffffff;
 }
@@ -767,69 +809,96 @@
 
 /* ─── FORM & EMAIL ─── */
 .contacto-formulario {
-    padding: 56px 0 64px;
-    background: #f0f7f8;
+    padding: 64px 0 72px;
+    background: #ffffff;
 }
 
 /* ─── BUTTONS ─── */
 .contacto-btn-cta {
     display: inline-block;
-    padding: 16px 32px;
+    padding: 16px 36px;
     border-radius: 12px;
     background: #4dd2d0;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff !important;
     font-size: 1rem;
     font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+    border: 2px solid #4dd2d0;
 }
 
 .contacto-btn-cta:hover {
     background: #3f6f7b;
+    border-color: #3f6f7b;
     transform: translateY(-2px);
-    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(63, 111, 123, 0.15);
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 .contacto-telefono .contacto-btn-cta {
     background: #4dd2d0;
-    color: #ffffff;
+    border-color: #4dd2d0;
+    color: #ffffff !important;
 }
 
 .contacto-btn-outline {
     display: inline-block;
-    padding: 16px 32px;
+    padding: 16px 36px;
     border-radius: 12px;
     background: transparent;
     border: 2px solid #4dd2d0;
-    color: #4dd2d0;
-    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0 !important;
     font-size: 1rem;
     font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
 }
 
 .contacto-btn-outline:hover {
     background: #4dd2d0;
-    color: #ffffff;
+    color: #ffffff !important;
     transform: translateY(-2px);
+    text-decoration: none !important;
 }
 
 .contacto-telefono .contacto-btn-outline {
     border-color: #ffffff;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .contacto-telefono .contacto-btn-outline:hover {
     background: #ffffff;
-    color: #3f6f7b;
+    color: #3f6f7b !important;
 }
 
-/* ─── RESPONSIVE ─── */
+/* ─── RESPONSIVE TABLET ─── */
+@media (max-width: 1024px) {
+    .contacto-methods-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacto-showroom-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ─── RESPONSIVE MOBILE ─── */
 @media (max-width: 768px) {
     .contacto-hero {
-        padding: 40px 0 30px;
+        padding: 48px 0 36px;
+    }
+
+    .contacto-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .contacto-lead {
+        font-size: 0.95rem;
+    }
+
+    .contacto-methods {
+        padding: 36px 0;
     }
 
     .contacto-methods-grid {
@@ -838,31 +907,45 @@
     }
 
     .contacto-method-card {
-        padding: 18px 10px;
+        padding: 20px 10px;
+    }
+
+    .contacto-method-icon {
+        width: 40px;
+        height: 40px;
     }
 
     .contacto-method-card h3 {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
     }
 
     .contacto-method-card p {
         display: none;
     }
 
+    .contacto-reservas {
+        padding: 40px 0 48px;
+    }
+
     .contacto-reservas .reservas-step-label {
         display: none;
     }
 
-    .contacto-reservas .reservas-step-line {
-        width: 24px;
+    .contacto-reservas .reservas-step {
+        padding: 8px 14px;
     }
 
-    .contacto-reservas .reservas-type-cards {
-        grid-template-columns: 1fr;
+    .contacto-reservas .reservas-step-line {
+        width: 20px;
     }
 
     .contacto-reservas .reservas-panel {
         padding: 24px 18px;
+        border-radius: 14px;
+    }
+
+    .contacto-reservas .reservas-type-cards {
+        grid-template-columns: 1fr;
     }
 
     .contacto-reservas .reservas-days {
@@ -873,16 +956,29 @@
         grid-template-columns: 1fr;
     }
 
+    .contacto-reservas .reservas-submit {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .contacto-showroom {
+        padding: 40px 0 48px;
+    }
+
     .contacto-showroom-grid {
         grid-template-columns: 1fr;
     }
 
     .contacto-showroom-photo img {
-        height: 200px;
+        height: 220px;
     }
 
     .contacto-showroom-info {
         grid-template-columns: 1fr;
+    }
+
+    .contacto-videollamada {
+        padding: 40px 0 48px;
     }
 
     .contacto-videollamada-grid {
@@ -890,7 +986,15 @@
     }
 
     .contacto-videollamada-photo img {
-        height: 200px;
+        height: 220px;
+    }
+
+    .contacto-telefono {
+        padding: 40px 0 48px;
+    }
+
+    .contacto-formulario {
+        padding: 40px 0 48px;
     }
 
     .contacto-telefono-buttons {
@@ -906,12 +1010,25 @@
     }
 
     .contacto-section-header h2 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
+    }
+
+    .contacto-section-header p {
+        font-size: 0.9rem;
+    }
+
+    .contacto-meta-pills {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
     .contacto-methods-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-hero h1 {
+        font-size: 1.4rem;
     }
 }
