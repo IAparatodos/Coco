@@ -40,7 +40,7 @@ function adrihosan_pilar_cocina_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Baldosa-hidraulica-cocina.jpg');">
         <div class="hero-content">
 
-            <h1>Baldosa Hidr&aacute;ulica Original para Cocina</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Cocina' ); ?></h1>
 
             <p>La baldosa hidr&aacute;ulica original convierte la cocina en una declaraci&oacute;n de estilo. Perfecta para salpicaderos con car&aacute;cter, suelos que cuentan una historia o para enmarcar una isla central.</p>
             <div class="hero-buttons">
@@ -77,21 +77,23 @@ function adrihosan_pilar_cocina_contenido_superior() {
 
     <section class="bho-hub-section adrihosan-full-width-block">
         <div class="bho-hub-wrapper">
-            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/?tipo-hidraulico=geometricas" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Cocina moderna con un frontal de baldosa hidráulica original geométrica." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Salpicaderos que Enamoran</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/?tipo-hidraulico=tradicional" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Porcelnico-Imitacion-Hidraulica-1.jpg" alt="Cocina de estilo rústico con suelo completo de baldosa artesanal con patrones florales." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Suelos con Historia</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/?tipo-hidraulico=contemporaneo" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/baldosa-hidraulica-adrihosan-cocina.jpg" alt="Cocina minimalista con una isla central y un detalle de suelo hidráulico enmarcado." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Detalles que Marcan la Diferencia</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/estilos-hidra-geometrico/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Cocina moderna con un frontal de baldosa hidráulica original geométrica." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Salpicaderos que Enamoran</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/estilos-hidra-victoriano/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Porcelnico-Imitacion-Hidraulica-1.jpg" alt="Cocina de estilo rústico con suelo completo de baldosa artesanal con patrones florales." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Suelos con Historia</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/cocina/autor-maria-starling/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/baldosa-hidraulica-adrihosan-cocina.jpg" alt="Cocina minimalista con una isla central y un detalle de suelo hidráulico enmarcado." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Detalles que Marcan la Diferencia</h3></div></a>
         </div>
     </section>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
     </div>
     
     <div id="destino-filtro-adria-cocina" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427053"]'); ?></div>
 
     <div id="catalogo-cocina" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosas para Cocina</h2></div>
 
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -100,6 +102,7 @@ function adrihosan_pilar_cocina_contenido_superior() {
  */
 function adrihosan_pilar_cocina_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
    <section class="bh-simulator-section adrihosan-full-width-block" style="background-color: #3f6f7b;">
     <div class="bh-simulator-wrapper">
         <div class="bh-simulator-image">
@@ -129,7 +132,7 @@ function adrihosan_pilar_cocina_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

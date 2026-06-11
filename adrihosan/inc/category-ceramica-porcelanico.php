@@ -35,11 +35,12 @@ function adrihosan_ceramica_superior_final() {
         background-repeat: no-repeat;
         color: #fff;
         padding: 80px 20px;
-        text-align: center;">
-        
+        text-align: center;
+        font-family: 'Poppins', sans-serif;">
+
         <div class="cer-hero-content">
             <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Cerámica: El Origen de tu Reforma</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
+            <p style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Suelos y revestimientos que definen tu hogar con la calidad técnica de Adrihosan.</p>
             <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
                 <a href="#catalogo-ceramica-foco" class="btn-adri-master">Ver Catálogo Completo</a>
                 <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Estilo</a>
@@ -52,19 +53,19 @@ function adrihosan_ceramica_superior_final() {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Azulejos para Baños</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Azulejos de Cocina</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Terraza</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Suelos para Patios y Terrazas</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-piscinas-adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Piscina</h3>
+                <h3 style="color:#102e35; font-family:'Poppins', sans-serif; margin-top:15px; font-weight: 700;">Porcel&aacute;nico para Piscinas</h3>
             </a>
         </div>
     </div>
@@ -74,19 +75,19 @@ function adrihosan_ceramica_superior_final() {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Suelos Imitación Madera</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Mármol</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Porcelánico Efecto Mármol</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Piedra</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Azulejos Imitación Piedra</h3>
             </a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-cemento/" style="text-decoration:none; text-align:center;">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
+                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Azulejos Efecto Cemento</h3>
             </a>
         </div>
     </div>
@@ -101,7 +102,7 @@ function adrihosan_ceramica_superior_final() {
         </div>
 
     <div class="filter-container-master" style="margin-bottom:50px;">
-       <?php echo do_shortcode('[fe_widget id="425985"]'); ?>
+       <?php echo do_shortcode('[fe_widget id="427044"]'); ?>
     </div>
 
     <div style="text-align: center; margin: 60px 0;">
@@ -121,7 +122,8 @@ function adrihosan_ceramica_superior_final() {
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Completo</h2>
     </div>
 
-
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -130,6 +132,7 @@ function adrihosan_ceramica_superior_final() {
  */
 function adrihosan_ceramica_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 62 ); ?>
@@ -138,24 +141,78 @@ function adrihosan_ceramica_inferior_final() {
 
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Cerámica</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Cer&aacute;mica y Azulejos</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué mantenimiento requiere el suelo porcelánico?</span>
+                        <span>&iquest;Cu&aacute;l es la diferencia entre pasta roja, pasta blanca y porcel&aacute;nico?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Solo requiere limpieza regular con agua y detergente neutro. No necesita ceras ni barnices.</p>
+                        <p>La pasta roja es m&aacute;s econ&oacute;mica y cl&aacute;sica, ideal para interiores residenciales. La pasta blanca ofrece colores m&aacute;s vivos y esmaltes m&aacute;s limpios, siendo la favorita para azulejos de ba&ntilde;o y cocina de alta gama. El porcel&aacute;nico es el material m&aacute;s resistente de todos, apto para suelos, paredes, exteriores y zonas de alto tr&aacute;nsito por su baja porosidad.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es necesario dejar junta en azulejos rectificados?</span>
+                        <span>&iquest;Qu&eacute; significa que un azulejo sea &quot;rectificado&quot;?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Sí, es vital dejar una junta mínima de entre 1.5mm y 2mm para absorber dilataciones.</p>
+                        <p>Un azulejo rectificado es aquel cuyos bordes han sido cortados mec&aacute;nicamente para que sean totalmente rectos (a 90&ordm;). Esto permite una instalaci&oacute;n con juntas m&iacute;nimas (de apenas 1-2 mm), lo que visualmente crea una superficie continua y mucho m&aacute;s elegante.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo elijo el azulejo adecuado para mi ba&ntilde;o o cocina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para el ba&ntilde;o, busca materiales con baja absorci&oacute;n de humedad y, si es para el suelo de la ducha, que sean antideslizantes. En la cocina, lo m&aacute;s importante es la facilidad de limpieza; elige esmaltes que no absorban la grasa y que resistan los productos de limpieza habituales.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; mantenimiento requiere la cer&aacute;mica?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es uno de los materiales m&aacute;s f&aacute;ciles de mantener. Para la limpieza diaria, basta con agua y un jab&oacute;n neutro. Al ser un material inerte, no atrae el polvo ni los &aacute;caros, lo que lo convierte en la opci&oacute;n m&aacute;s higi&eacute;nica para el hogar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es mejor comprar cer&aacute;mica de primera calidad?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, siempre. La cer&aacute;mica de primera calidad garantiza que las piezas tengan el mismo tono (tonalidad) y el mismo tama&ntilde;o exacto (calibre). Esto evita problemas visuales y de nivelaci&oacute;n durante la instalaci&oacute;n, asegurando un acabado perfecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Puedo poner el mismo azulejo en la pared y en el suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Puedes poner un pavimento (suelo) en la pared sin problemas, pero nunca debes poner un azulejo de pared (revestimiento) en el suelo. Los revestimientos no est&aacute;n dise&ntilde;ados para soportar peso ni fricci&oacute;n y se romper&iacute;an o rayar&iacute;an r&aacute;pidamente.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;La cer&aacute;mica es apta para suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Absolutamente. La cer&aacute;mica es una de las mejores conductoras t&eacute;rmicas que existen. Transmite el calor de forma eficiente y lo mantiene por m&aacute;s tiempo, optimizando el rendimiento de tu sistema de calefacci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo influye el formato del azulejo en la percepci&oacute;n del espacio?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Los formatos grandes y los rectificados ayudan a que los espacios peque&ntilde;os parezcan m&aacute;s amplios al reducir el n&uacute;mero de juntas visuales. Por el contrario, los formatos peque&ntilde;os o decorativos (como el tipo metro o hidr&aacute;ulico) aportan textura y car&aacute;cter, ideales para resaltar zonas concretas como el frente de una cocina.</p>
                     </div>
                 </div>
             </div>
@@ -193,168 +250,118 @@ function adrihosan_ceramica_inferior_final() {
  */
 function adrihosan_porcelanico_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="
-        position: relative;
-        background-color: #102e35;
-        /* IMPORTANTE: Cambia esta URL por la imagen específica de Porcelánico */
-        background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #fff;
-        padding: 80px 20px;
-        text-align: center;">
-        
-        <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Gres Porcelánico: La Base de tu Hogar</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Resistencia extrema, diseño impecable y mantenimiento cero. El suelo definitivo.</p>
-            <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                <a href="#catalogo-porcelanico-foco" class="btn-adri-master">Ver Catálogo</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Filtrar por Uso</a>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
+        <div class="hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="https://www.adrihosan.com/">Inicio</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/">Pavimentos</a> &gt;
+                <span>Gres Porcel&aacute;nico</span>
+            </nav>
+            <h1><?php echo adrihosan_h1_dinamico( 'Gres Porcel&aacute;nico: La Base de tu Hogar' ); ?></h1>
+            <p>Resistencia extrema, dise&ntilde;o impecable y mantenimiento cero. El suelo definitivo.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-porcelanico" class="hero-btn primary">Ver Cat&aacute;logo</a>
+                <a href="#instalacion-porcelanico" class="hero-btn secondary">D&oacute;nde Instalar</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">¿Dónde lo vas a instalar?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-cocina/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Cocina</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-bano/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Baño</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/estancia-terraza/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Exterior</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/salon/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" style="width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Salón</h3>
-            </a>
+    <!-- 2. ¿DÓNDE LO VAS A INSTALAR? -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="instalacion-porcelanico">
+        <div class="ap-inspiration-wrapper">
+            <h2>&iquest;D&oacute;nde lo vas a instalar?</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-cocina/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cocina-600-x-400.jpg" alt="Porcel&aacute;nicos para cocina" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Cocina</h3>
+                        <p>Porcel&aacute;nicos para cocina</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-bano/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-bano-600-x-400-1.jpg" alt="Porcel&aacute;nicos para ba&ntilde;o" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Ba&ntilde;o</h3>
+                        <p>Porcel&aacute;nicos para ba&ntilde;o</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/slip-si/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-terraza-600-x-400.jpg" alt="Porcel&aacute;nicos para exterior" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Exterior</h3>
+                        <p>Suelos porcel&aacute;nicos de exterior</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/est-prod-salon/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2025/10/suelo-imitacion-madera-Adrihosan.jpg" alt="Porcel&aacute;nicos para sal&oacute;n" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Sal&oacute;n</h3>
+                        <p>Porcel&aacute;nicos para sal&oacute;n</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div style="padding-top: 60px; margin-bottom:50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Efecto</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Madera</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Mármol</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Piedra</h3>
-            </a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;">
-                <h3 style="color:#102e35; font-family:'Poppins'; margin-top:10px;">Efecto Cemento</h3>
-            </a>
+    <!-- 3. ELIGE EL EFECTO -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="efectos-porcelanico">
+        <div class="ap-inspiration-wrapper">
+            <h2>Elige el Efecto</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n m&aacute;rmol" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto M&aacute;rmol</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n m&aacute;rmol</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-cemento/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n cemento" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto Cemento</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n cemento</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-basicos/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" alt="Porcel&aacute;nicos lisos" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Lisos</h3>
+                        <p>Porcel&aacute;nicos lisos</p>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelo-imitacion-madera/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" alt="Porcel&aacute;nicos imitaci&oacute;n madera" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Efecto Madera</h3>
+                        <p>Porcel&aacute;nicos imitaci&oacute;n madera</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- 4. CONSEJO ADRIA -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;Buscas un suelo sin juntas visibles? Selecciona el filtro <strong>&quot;Rectificado&quot;</strong> y pulsa <strong>&quot;FILTRAR&quot;</strong>.</p>
     </div>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;">
-            <strong>¡Consejo de AdrIA!</strong> ¿Buscas un suelo sin juntas visibles? Selecciona el filtro <strong>"Rectificado"</strong> y pulsa <strong>"FILTRAR"</strong>.
-        </p>
+    <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
+    <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
+
+    <style>@media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-porcelanico .wpc-filters-open-button-container, #destino-filtro-adria-porcelanico .wpc-filters-open-button-container a, #destino-filtro-adria-porcelanico a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <script>(function($){"use strict";function moverBotonFiltroPorcelanico(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-porcelanico');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR PORCEL\u00c1NICOS');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroPorcelanico);setTimeout(moverBotonFiltroPorcelanico,1500);function adrihosanFuerzaScrollPorcelanico(){var $dest=$('#catalogo-porcelanico-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollPorcelanico,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollPorcelanico,500);});})(jQuery);</script>
+
+    <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
+    <div id="catalogo-porcelanico-foco"></div>
+    <div id="catalogo-porcelanico" class="product-loop-header">
+        <h2 class="product-loop-title">Cat&aacute;logo de Gres Porcel&aacute;nico</h2>
     </div>
 
-    <div id="destino-filtro-adria-porcelanico" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;">
-        </div>
-
-    <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Colecciones Especiales</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/" class="btn-adri-master">Gran Formato</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/" class="btn-adri-master">Porcelánico Extrafino</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/" class="btn-adri-master">Antideslizante C3</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/textura-brillo-2/" class="btn-adri-master">Acabado Pulido</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelos-rusticos/" class="btn-adri-master">Estilo Rústico</a>
-        </div>
-    </div>
-
-    <div id="catalogo-porcelanico-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo de Gres Porcelánico</h2>
-    </div>
-
-    <style>
-        .btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; }
-        
-        #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-        }
-
-        @media (max-width: 768px) {
-            .solo-movil-filtro { display: block !important; }
-
-            /* FORZAMOS EL DISEÑO BONITO AL BOTÓN QUE VENGA */
-            #destino-filtro-adria-porcelanico .wpc-filters-open-button-container,
-            #destino-filtro-adria-porcelanico .wpc-filters-open-button-container a,
-            #destino-filtro-adria-porcelanico a.wpc-filters-open-button {
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-                position: static !important;
-                margin: 0 auto !important;
-                width: 90% !important;
-                background: #4dd2d0 !important;
-                color: #fff !important;
-                font-family: 'Poppins', sans-serif !important;
-                font-weight: 800 !important;
-                text-transform: uppercase !important;
-                border-radius: 4px !important;
-                padding: 15px 0 !important;
-                text-align: center !important;
-                border: none !important;
-                box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important;
-            }
-        }
-    </style>
-
-    <script>
-    (function($) {
-        "use strict";
-
-        // A. TRANSPLANTE DE BOTÓN (Con ID específico para esta categoría)
-        function moverBotonFiltroPorcelanico() {
-            var $botonesOriginales = $('.wpc-filters-open-button-container');
-            var $nuevoHogar = $('#destino-filtro-adria-porcelanico');
-
-            if ($botonesOriginales.length && $nuevoHogar.length) {
-                if ($nuevoHogar.children().length > 0) return;
-                var $elElegido = $botonesOriginales.first();
-                $elElegido.appendTo($nuevoHogar);
-                $elElegido.find('a').text('FILTRAR PORCELÁNICOS'); // Texto personalizado
-                $('.wpc-filters-open-button-container').not($elElegido).hide();
-            }
-        }
-        $(document).ready(moverBotonFiltroPorcelanico);
-        setTimeout(moverBotonFiltroPorcelanico, 1500);
-
-        // B. SCROLL AUTOMÁTICO
-        function adrihosanFuerzaScrollPorcelanico() {
-            var $destino = $('#catalogo-porcelanico-foco');
-            if ($destino.length) {
-                $('html, body').animate({ scrollTop: $destino.offset().top - 120 }, 800);
-            }
-        }
-        $(document).on('click', '.wpc-filters-submit-button', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 1000);
-        });
-        $(document).on('feAfterFilterApply', function() {
-            setTimeout(adrihosanFuerzaScrollPorcelanico, 500);
-        });
-
-    })(jQuery);
-    </script>
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -363,43 +370,60 @@ function adrihosan_porcelanico_superior_final() {
  */
 function adrihosan_porcelanico_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
 
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gres Porcelánico</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué mantenimiento requiere?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Prácticamente nulo. Al no ser poroso, basta con agua y un jabón neutro. Olvídate de ceras, pulidos o barnices para siempre.</p>
-            </div>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Es compatible con suelo radiante?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Es el mejor material para ello. Su alta conductividad térmica permite que el calor pase rápidamente, optimizando el consumo energético de tu calefacción.</p>
-            </div>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Se mancha con facilidad?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">No. El porcelánico tiene una absorción de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el ácido penetran en la baldosa. Es higiénico y antibacteriano.</p>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Gres Porcel&aacute;nico</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; mantenimiento requiere?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Pr&aacute;cticamente nulo. Al no ser poroso, basta con agua y un jab&oacute;n neutro. Olv&iacute;date de ceras, pulidos o barnices para siempre.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es compatible con suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es el mejor material para ello. Su alta conductividad t&eacute;rmica permite que el calor pase r&aacute;pidamente, optimizando el consumo energ&eacute;tico de tu calefacci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se mancha con facilidad?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No. El porcel&aacute;nico tiene una absorci&oacute;n de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el &aacute;cido penetran en la baldosa. Es higi&eacute;nico y antibacteriano.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" 
-                     style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Dudas sobre tu reforma?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Te ayudo a elegir el porcelánico que mejor se adapta a tu vida. Llámame al <strong>96 195 71 36</strong>.</p>
-                </div>
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Dudas sobre el Porcel&aacute;nico?<span>Soy Ricardo, preg&uacute;ntame.</span></h2></div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>
@@ -414,7 +438,7 @@ function adrihosan_porcelanico_inferior_final() {
 
 function adrihosan_gran_formato_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
+    <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.35), rgba(16, 46, 53, 0.35)), url('https://www.adrihosan.com/wp-content/uploads/2026/02/Porcelanico-gran-formato-negro-efecto-marmol.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
         <div class="cer-hero-content">
             <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Porcelánico Gran Formato</h1>
             <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">La revolución del espacio. Superficies continuas, mínimas juntas y máxima elegancia.</p>
@@ -428,11 +452,16 @@ function adrihosan_gran_formato_superior_final() {
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Estilo</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/estilo-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-piedra/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Piedra</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-suelo-imitacion-madera/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Madera</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto M&aacute;rmol</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-basicos/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Lisos</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelo-imitacion-madera/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-madera-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Madera</h3></a>
         </div>
+    </div>
+
+    <div style="max-width: 900px; margin: 50px auto 30px auto; padding: 0 20px; text-align: left; font-family: 'Poppins', sans-serif;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #102e35; margin: 0 0 15px 0;">Porcel&aacute;nico Gran Formato: La Revoluci&oacute;n del Espacio</h2>
+        <p style="font-size: 1.05rem; color: #3f6f7b; line-height: 1.8; margin: 0;">Descubre c&oacute;mo el porcel&aacute;nico gran formato est&aacute; transformando el interiorismo y la arquitectura contempor&aacute;nea. En Adrihosan, te ofrecemos una cuidada selecci&oacute;n de azulejos gran formato dise&ntilde;ados para crear superficies continuas, reducir las juntas al m&iacute;nimo y elevar la elegancia de cualquier estancia, desde salones y cocinas hasta ba&ntilde;os y terrazas.</p>
     </div>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
@@ -440,16 +469,16 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/atributo/formato-azulejo/60x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">60x120 cm</a>
-            <a href="https://www.adrihosan.com/atributo/formato-azulejo/120x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">120x120 cm</a>
-            <a href="https://www.adrihosan.com/atributo/azulejo-tipo/lamina-porcelanica/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">Lámina XXL</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-60x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">60x120 cm</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/fmt-120x120/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">120x120 cm</a>
+            <a href="https://www.adrihosan.com/atributo/azulejo-tipo/lamina-porcelanica/" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">L&aacute;mina XXL</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/textura-brillo/" class="btn-adri-master">Acabado Pulido</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/?filter_acabado=mate" class="btn-adri-master">Acabado Mate</a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/textura-mate/" class="btn-adri-master">Acabado Mate</a>
             <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/slip-si/" class="btn-adri-master">Antideslizante (C3)</a>
         </div>
     </div>
@@ -460,20 +489,95 @@ function adrihosan_gran_formato_superior_final() {
 
     <style>.btn-adri-master { display: inline-block !important; background: #4dd2d0 !important; color: #fff !important; padding: 14px 24px !important; border-radius: 4px !important; text-decoration: none !important; font-family: 'Poppins', sans-serif !important; font-weight: 700 !important; text-transform: uppercase !important; font-size: 13px !important; transition: all 0.3s ease !important; box-shadow: 0 4px 6px rgba(0,0,0,0.1); } .btn-adri-master:hover { background: #3f6f7b !important; transform: translateY(-3px); color: #fff !important; } #bloque-filtros-visuales img:hover, .cer-hero-buttons img:hover { transform: scale(1.03); box-shadow: 0 8px 15px rgba(0,0,0,0.15); } @media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-gran-formato .wpc-filters-open-button-container, #destino-filtro-adria-gran-formato .wpc-filters-open-button-container a, #destino-filtro-adria-gran-formato a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
     <script>(function($){"use strict";function moverBotonFiltroXL(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-gran-formato');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR GRAN FORMATO');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroXL);setTimeout(moverBotonFiltroXL,1500);function adrihosanFuerzaScrollXL(){var $dest=$('#catalogo-xl-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollXL,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollXL,500);});})(jQuery);</script>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_gran_formato_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Gran Formato</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Es difícil la instalación?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Requiere profesionales. Usa doble encolado y cuñas de nivelación.</p></div>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Gran Formato</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es dif&iacute;cil la instalaci&oacute;n de los azulejos gran formato?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La instalaci&oacute;n de los azulejos gran formato requiere de profesionales cualificados y herramientas espec&iacute;ficas. Es obligatorio utilizar la t&eacute;cnica del doble encolado (cemento cola en el soporte y en la pieza) y sistemas de nivelaci&oacute;n (cu&ntilde;as y calzos) para evitar desniveles y asegurar un acabado continuo y perfecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; ventajas ofrece un suelo porcel&aacute;nico gran formato frente a baldosas tradicionales?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Apostar por un suelo porcel&aacute;nico gran formato transforma por completo la percepci&oacute;n espacial. Al tener muchas menos juntas, crea una sensaci&oacute;n de amplitud y continuidad visual inigualable. Adem&aacute;s, esta cer&aacute;mica gran formato es mucho m&aacute;s higi&eacute;nica, ya que la ausencia de juntas evita la acumulaci&oacute;n de suciedad, siendo ideal para ba&ntilde;os, cocinas y salones de concepto abierto.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el porcel&aacute;nico gran formato precio promedio?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El porcel&aacute;nico gran formato precio var&iacute;a en funci&oacute;n de las dimensiones exactas, el acabado (pulido, mate, antideslizante) y el dise&ntilde;o (imitaci&oacute;n m&aacute;rmol, cemento, madera). En Adrihosan trabajamos para ofrecerte colecciones premium a precios muy competitivos, con opciones incre&iacute;bles que parten desde aproximadamente los 20-25&euro;/m&sup2; (como nuestra serie Ziro).</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Ten&eacute;is opciones de porcel&aacute;nico gran formato 120x120 precio competitivo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>&iexcl;Por supuesto! La medida de 120x120 cm es actualmente una de las favoritas en interiorismo y arquitectura. Si buscas un porcel&aacute;nico gran formato 120x120 precio accesible sin renunciar a la m&aacute;xima calidad y dise&ntilde;o, en nuestro cat&aacute;logo encontrar&aacute;s opciones que se ajustan a tu presupuesto. Este gran formato porcel&aacute;nico es la elecci&oacute;n perfecta para proyectos residenciales y comerciales de alto nivel.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se puede colocar gres porcel&aacute;nico gran formato en las paredes?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, el gres porcel&aacute;nico gran formato es un material extremadamente vers&aacute;til. Gracias a que muchas colecciones cuentan con un espesor reducido, estas l&aacute;minas son perfectas no solo para pavimentos, sino tambi&eacute;n para revestir paredes completas de suelo a techo sin cortes, decorar fachadas exteriores o incluso para dise&ntilde;ar encimeras y revestir mobiliario.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;D&oacute;nde puedo ver m&aacute;s opciones si busco otros tama&ntilde;os o estilos?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Si quieres explorar m&aacute;s alternativas para tu proyecto, te invitamos a visitar nuestra <a href="https://www.adrihosan.com/categoria-producto/ceramica/porcelanico/">categor&iacute;a principal de suelos porcel&aacute;nicos</a>, donde encontrar&aacute;s desde mosaicos detallados hasta las piezas XL m&aacute;s impresionantes para renovar tu hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Dudas sobre el Gran Formato?<span>Soy Ricardo, preg&uacute;ntame.</span></h2></div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a>
+            </div>
         </div>
     </section>
     <?php
@@ -501,10 +605,10 @@ function adrihosan_extrafino_superior_final() {
     <div id="bloque-filtros-visuales" style="padding-top: 50px;">
         <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige el Acabado de tu Reforma</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Mármol</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/estilo-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/?filter_efecto=piedra" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Piedra</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/estilo-basicos/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/porcelanico-gran-formato-colores-puros.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Colores Puros</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-suelos-imitacion-marmol/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-marmol-600-x-400-1.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto M&aacute;rmol</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-cemento/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-cemento-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Cemento</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-azulejos-imitacion-piedra/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/imagen-piedra-600-x-400.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Efecto Piedra</h3></a>
+            <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-basicos/" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/porcelanico-gran-formato-colores-puros.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Colores Puros</h3></a>
         </div>
     </div>
 
@@ -513,41 +617,90 @@ function adrihosan_extrafino_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-extrafino" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
     <div id="catalogo-extrafino-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
     </div>
 
-
+    <!-- WRAPPER AJAX para Filter Everything Pro (productos + paginaci&oacute;n) -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_extrafino_inferior_final() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( get_queried_object_id() ); ?>
         </div>
     </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Lámina Porcelánica</h2>
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"><p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué espesor debo elegir?</p><p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Para paredes 3mm. Para suelos (pavimento), recomendamos 5mm o 6mm.</p></div>
-        </div>
-    </section>
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Dudas técnicas?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. El extrafino requiere una instalación precisa. Llámame al <strong>96 195 71 36</strong>.</p>
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre el Porcel&aacute;nico Extrafino</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se rompe el porcel&aacute;nico por ser tan fino?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Rotundamente no. Una vez instalado correctamente sobre una base s&oacute;lida y sin huecos de aire (t&eacute;cnica del doble encolado), el porcel&aacute;nico extrafino es tan resistente o m&aacute;s que un azulejo convencional. Su flexibilidad en el manejo es precisamente lo que evita que se parta durante la instalaci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; significa C1 en un suelo porcel&aacute;nico extrafino?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>La clasificaci&oacute;n C1 se refiere al nivel de adherencia o resistencia al deslizamiento en seco. La mayor&iacute;a de nuestros modelos extrafinos para interior cuentan con esta clasificaci&oacute;n, ofreciendo una superficie suave al tacto y muy f&aacute;cil de limpiar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo se corta el porcel&aacute;nico de fino espesor?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>A pesar de su dureza, se corta con suma facilidad utilizando herramientas de corte manual con gu&iacute;a (similares a las de un cristalero) o discos de diamante espec&iacute;ficos. Su ligereza permite que un solo operario pueda manipular piezas de gran tama&ntilde;o.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Puedo ponerlo sobre un suelo de madera o parquet?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No se recomienda. El porcel&aacute;nico extrafino requiere una base totalmente r&iacute;gida y estable (cer&aacute;mica antigua, terrazo o cemento). La madera tiene dilataciones que podr&iacute;an comprometer la adherencia de la pieza cer&aacute;mica.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;l es el precio del porcel&aacute;nico extrafino?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>El precio m2 del porcel&aacute;nico extrafino refleja la alta tecnolog&iacute;a necesaria para su fabricaci&oacute;n. Aunque el material puede tener un coste superior al gres convencional, el ahorro total en la reforma (al no haber demolici&oacute;n, retirada de escombros ni transporte de residuos) suele compensar la inversi&oacute;n, resultando en una obra m&aacute;s econ&oacute;mica y r&aacute;pida.</p>
+                    </div>
                 </div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan">
+                <div><h2>&iquest;Dudas sobre el Extrafino?<span>Soy Ricardo, preg&uacute;ntame.</span></h2></div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">&#128205;</div><div class="label">Exposici&oacute;n</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Videollamada</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n!" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>
@@ -555,110 +708,255 @@ function adrihosan_extrafino_inferior_final() {
 }
 
 /* ========================================================================== */
-/* 3. PÁGINA PILAR AZULEJO METRO (ID 2093) - VERSIÓN FINAL */
+/* 3. P&Aacute;GINA PILAR AZULEJO METRO (ID 2093) - VERSI&Oacute;N MODERNA  */
 /* ========================================================================== */
 
-// Controller cat 2093 - movido al master controller en functions.php
+// Controller cat 2093 - movido al master controller en functions-server.php
 
 function adrihosan_metro_superior_final() {
     ?>
-    <section class="cer-hero-section adrihosan-full-width-block" style="position: relative; background-color: #102e35; background-image: linear-gradient(rgba(16, 46, 53, 0.40), rgba(16, 46, 53, 0.40)), url('https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-metro-cocina-adrihosan.jpg'); background-position: center center; background-size: cover; color: #fff; padding: 80px 20px; text-align: center;">
-        <div class="cer-hero-content">
-            <h1 style="font-family: 'Poppins', sans-serif; color:#4dd2d0; font-weight:800; font-size: 2.8rem; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Azulejo Metro: El Icono del Diseño</h1>
-            <p style="font-family: 'Poppins'; font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">Del metro de París a tu hogar. El revestimiento biselado que aporta luz, carácter y un estilo atemporal.</p>
-            <div class="cer-hero-buttons" style="margin-top:35px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                <a href="#catalogo-metro-foco" class="btn-adri-master">Ver Colección</a>
-                <a href="#bloque-filtros-visuales" class="btn-adri-master" style="background:transparent !important; border:2px solid #4dd2d0 !important; color:#4dd2d0 !important;">Ver Colores</a>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-adrihosan.jpg');">
+        <div class="hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="https://www.adrihosan.com/">Inicio</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/">Cer&aacute;mica</a> &gt;
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/">Azulejos</a> &gt;
+                <span>Azulejo Metro</span>
+            </nav>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Metro' ); ?></h1>
+            <p>Del metro de Par&iacute;s a tu hogar. El revestimiento biselado que aporta luz, car&aacute;cter y un estilo atemporal a cualquier estancia.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo-metro" class="hero-btn primary">Ver Colecci&oacute;n</a>
+                <a href="#estilos-metro" class="hero-btn secondary">Elige tu Estilo</a>
             </div>
         </div>
     </section>
 
-    <div id="bloque-filtros-visuales" style="padding-top: 50px;">
-        <h2 style="text-align:center; font-size: 1.6rem; color: #102e35; text-transform: uppercase; font-family: 'Poppins'; margin-bottom:30px; font-weight: 800;">Elige tu Estilo</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=blanco" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-blanco-biselado.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Blanco Clásico</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=negro" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-negro-mate.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Negro Industrial</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_color=verde,azul,rosa" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-colores-variados.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">A Todo Color</h3></a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" style="text-decoration:none; text-align:center;"><img src="https://www.adrihosan.com/wp-content/uploads/2026/01/metro-mate-moderno.jpg" style="width:100%; border-radius:8px; transition: transform 0.3s ease;"><h3 style="color:#102e35; font-family:'Poppins'; margin-top:15px; font-weight: 700;">Acabado Mate</h3></a>
+    <!-- 2. TRUST BAR / VALORES -->
+    <section class="ap-value-section adrihosan-full-width-block">
+        <div class="ap-value-wrapper">
+            <div class="ap-value-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/ver-estilo-biselado/" class="ap-value-card" style="text-decoration:none;">
+                    <div class="icon">&#9898;</div>
+                    <h3>Biselado Ic&oacute;nico</h3>
+                    <p>Relieve cl&aacute;sico con car&aacute;cter</p>
+                </a>
+                <div class="ap-value-card">
+                    <div class="icon">&#127912;</div>
+                    <h3>+30 Colores</h3>
+                    <p>Del blanco puro al negro mate</p>
+                </div>
+                <div class="ap-value-card">
+                    <div class="icon">&#128230;</div>
+                    <h3>Stock en Almac&eacute;n</h3>
+                    <p>Env&iacute;o r&aacute;pido en toda Espa&ntilde;a</p>
+                </div>
+                <div class="ap-value-card">
+                    <div class="icon">&#128176;</div>
+                    <h3>Mejor Precio</h3>
+                    <p>Distribuidor directo de f&aacute;brica</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- 3. INSPIRACI&Oacute;N: ELIGE TU ESTILO -->
+    <section class="ap-inspiration-section adrihosan-full-width-block" id="estilos-metro">
+        <div class="ap-inspiration-wrapper">
+            <h2>Elige tu Estilo</h2>
+            <div class="ap-inspiration-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-blanco/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-blanco-adrihosan.jpg" alt="Azulejo metro blanco cl&aacute;sico" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Blanco Cl&aacute;sico</h3>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-negro/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-negro-adrihosan.jpg" alt="Azulejo metro negro industrial" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Negro Industrial</h3>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-multicolor/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-colores-adrihosan.jpg" alt="Azulejo metro a todo color" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>A Todo Color</h3>
+                    </div>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="ap-inspiration-card">
+                    <img src="https://www.adrihosan.com/wp-content/uploads/2026/02/azulejo-metro-mate-adrihosan.jpg" alt="Azulejo metro acabado mate" loading="lazy">
+                    <div class="ap-card-content">
+                        <h3>Acabado Mate</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONSEJO ADRIA (Filtros) -->
+    <div class="adria-tip-box">
+        <p><strong>&iexcl;Consejo de AdrIA!</strong> Usa los filtros de <strong>Color</strong>, <strong>Formato</strong> y <strong>Acabado</strong> para encontrar tu azulejo metro ideal. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
     </div>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona el color, formato o acabado que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
-    </div>
-
+    <!-- 5. DESTINO M&Oacute;VIL + WIDGET FILTROS -->
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
-    <div style="text-align: center; margin: 60px 0;">
-        <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=7-5x15" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">7.5x15 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x20" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">10x20 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_formato=10x30" class="btn-adri-master" style="background:#102e35 !important; color:#fff !important;">10x30 cm</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=brillo" class="btn-adri-master">Brillo</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_acabado=mate" class="btn-adri-master">Mate</a>
-            <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/?filter_relieve=biselado" class="btn-adri-master">Biselado</a>
-        </div>
+    <style>@media (max-width: 768px) { .solo-movil-filtro { display: block !important; } #destino-filtro-adria-metro .wpc-filters-open-button-container, #destino-filtro-adria-metro .wpc-filters-open-button-container a, #destino-filtro-adria-metro a.wpc-filters-open-button { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; margin: 0 auto !important; width: 90% !important; background: #4dd2d0 !important; color: #fff !important; font-family: 'Poppins', sans-serif !important; font-weight: 800 !important; text-transform: uppercase !important; border-radius: 4px !important; padding: 15px 0 !important; text-align: center !important; border: none !important; box-shadow: 0 4px 10px rgba(77, 210, 208, 0.3) !important; } }</style>
+    <script>(function($){"use strict";function moverBotonFiltroMetro(){var $bot=$('.wpc-filters-open-button-container');var $hogar=$('#destino-filtro-adria-metro');if($bot.length&&$hogar.length){if($hogar.children().length>0)return;var $el=$bot.first();$el.appendTo($hogar);$el.find('a').text('FILTRAR AZULEJOS');$('.wpc-filters-open-button-container').not($el).hide();}}$(document).ready(moverBotonFiltroMetro);setTimeout(moverBotonFiltroMetro,1500);function adrihosanFuerzaScrollMetro(){var $dest=$('#catalogo-metro-foco');if($dest.length){$('html, body').animate({scrollTop:$dest.offset().top-120},800);}}$(document).on('click','.wpc-filters-submit-button',function(){setTimeout(adrihosanFuerzaScrollMetro,1000);});$(document).on('feAfterFilterApply',function(){setTimeout(adrihosanFuerzaScrollMetro,500);});})(jQuery);</script>
+
+    <!-- 6. T&Iacute;TULO CAT&Aacute;LOGO -->
+    <div id="catalogo-metro-foco"></div>
+    <div id="catalogo-metro" class="product-loop-header">
+        <h2 class="product-loop-title">Colecci&oacute;n Azulejo Metro</h2>
     </div>
 
-    <div id="catalogo-metro-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
-        <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Colección Azulejo Metro</h2>
-    </div>
-
-
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_metro_inferior_final() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
-        <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
-            <?php echo category_description( get_queried_object_id() ); ?>
-        </div>
-    </section>
-    <section class="faq-section adrihosan-full-width-block" style="background: #f9f9f9; padding: 80px 0; font-family: 'Poppins'; border-top: 1px solid #eee;">
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-            <h2 style="text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.2rem; color: #102e35;">Preguntas Frecuentes sobre Azulejo Metro</h2>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Se pueden colocar en el suelo?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Por norma general, no. El azulejo metro clásico es de pasta blanca o roja, diseñado exclusivamente como revestimiento para paredes. Sin embargo, en Adrihosan disponemos de modelos específicos fabricados en porcelánico que sí son aptos para pavimento. Revisa siempre la ficha técnica antes de comprar.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Son aptos para el interior de la ducha?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Sí, absolutamente. Al ser piezas esmaltadas, son impermeables y protegen perfectamente la pared de la humedad. Son una de las opciones más higiénicas y duraderas para zonas mojadas.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿El biselado hace que sean difíciles de limpiar?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Es un mito común, pero falso. El bisel (el borde inclinado) es suave y no tiene rincones donde la suciedad se incruste. Se limpian con la misma facilidad que un azulejo liso: agua y jabón neutro son suficientes.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Qué color de junta recomiendas para el azulejo blanco?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">Depende del efecto que busques. Si quieres amplitud y limpieza visual, usa una junta blanca. Si buscas el auténtico look industrial o "tipo metro" de Nueva York, atrévete con una junta negra o gris antracita para resaltar el patrón de colocación.</p>
-            </div>
-            
-            <div style="background: #fff; padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <p style="font-weight: 800; color: #102e35; margin-bottom: 15px; font-size: 1.25rem;">¿Hay otras formas de colocación además de la "tipo ladrillo"?</p>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #3f6f7b;">¡Por supuesto! Aunque la colocación trabada (tipo ladrillo) es la icónica, hoy es tendencia colocarlos en espiga (herringbone), en vertical (para ganar altura visual) o totalmente alineados (para un toque moderno y ordenado).</p>
+    </div><!-- /fe-products-wrapper -->
+    <?php
+
+    // SEO: Contenido din&aacute;mico desde WooCommerce category_description()
+    $descripcion_editor = category_description();
+    if ( ! empty( $descripcion_editor ) ) {
+    ?>
+    <section class="bho-guide-section">
+        <div class="bho-guide-wrapper">
+            <div class="term-description-dinamica">
+                <?php echo $descripcion_editor; ?>
             </div>
         </div>
     </section>
-    <section class="contact-help-common adrihosan-full-width-block" style="background: #102e35; color: #fff; padding: 90px 0;">
-        <div class="contact-help-wrapper" style="max-width: 1150px; margin: 0 auto; padding: 0 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div class="contact-intro" style="display: flex; align-items: center; gap: 30px; flex: 1; min-width: 320px;">
-                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo Adrihosan" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #4dd2d0; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                <div>
-                    <h2 style="color: #4dd2d0; margin-bottom: 12px; font-size: 2.4rem; font-weight: 800; font-family: 'Poppins', sans-serif;">¿Buscas un color específico?</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.6; font-family: 'Poppins', sans-serif; opacity: 0.9;">Soy Ricardo. Tenemos muchísimos colores.</p>
+    <?php
+    }
+    ?>
+
+    <!-- BLOQUE SEO: COLOCACI&Oacute;N Y ESTILOS -->
+    <section class="seo-content-section adrihosan-full-width-block" id="guia-metro">
+        <div class="seo-content-wrapper">
+            <h2>Patrones de Colocaci&oacute;n del Azulejo Metro</h2>
+            <div class="material-types-grid">
+                <div class="material-card">
+                    <div class="material-icon">&#129521;</div>
+                    <h3>Trabado (Tipo Ladrillo)</h3>
+                    <p>La colocaci&oacute;n cl&aacute;sica e ic&oacute;nica. Cada fila se desplaza a la mitad respecto a la anterior, creando el patr&oacute;n que hizo famoso al azulejo metro en las estaciones de Par&iacute;s y Nueva York.</p>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">&#10022;</div>
+                    <h3>Espiga (Herringbone)</h3>
+                    <p>Piezas colocadas en &aacute;ngulo de 45&deg; formando una &ldquo;V&rdquo;. Aporta dinamismo y elegancia. Perfecta para cocinas y ba&ntilde;os donde quieras un toque contempor&aacute;neo.</p>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">&#8597;</div>
+                    <h3>Vertical</h3>
+                    <p>Colocaci&oacute;n en sentido vertical que alarga visualmente la estancia y aporta sensaci&oacute;n de mayor altura. Ideal para techos bajos o espacios reducidos.</p>
                 </div>
             </div>
-            <div class="contact-options-grid-common" style="display: flex; gap: 20px;">
-                <a href="tel:+34961957136" style="background: #4dd2d0; color: #102e35; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);">Llamar</a>
-                <a href="https://api.whatsapp.com/send?phone=34961957136" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 800; text-align: center; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- TENDENCIAS -->
+    <section class="trends-section adrihosan-full-width-block">
+        <div class="trends-wrapper">
+            <h2>Formatos y Acabados Disponibles</h2>
+            <p>Desde el formato cl&aacute;sico 7,5x15 hasta el alargado 10x30. En brillo, mate o biselado. Encuentra la combinaci&oacute;n perfecta para tu proyecto.</p>
+            <div class="trends-links">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-blanco/" class="trend-link">Blanco</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-negro/" class="trend-link">Negro</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/tono-multicolor/" class="trend-link">Color</a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejo-metro/textura-mate/" class="trend-link">Mate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq-section-common adrihosan-full-width-block">
+        <div class="faq-wrapper-common">
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos Tipo Metro</h2>
+            <div class="faq-items-wrapper">
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; es exactamente un azulejo biselado?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Un azulejo biselado es aquel cuyos bordes terminan en un &aacute;ngulo inclinado en lugar de ser totalmente rectos. Este dise&ntilde;o se cre&oacute; originalmente para que los azulejos del metro reflejaran mejor la escasa luz de los t&uacute;neles. Hoy en d&iacute;a, el bisel aporta un relieve est&eacute;tico muy valorado que da profundidad a las paredes.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo puedo colocar mis azulejos de metro?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Existen tres formas principales que cambian totalmente el look:<br><br><strong>Trabado (Matajunta):</strong> La colocaci&oacute;n cl&aacute;sica de ladrillo, perfecta para estilos vintage.<br><br><strong>Lineal:</strong> Alineando las juntas vertical y horizontalmente para un look m&aacute;s moderno.<br><br><strong>En Espiga (Herringbone):</strong> Coloc&aacute;ndolos en &aacute;ngulo de 45&ordm; para crear un patr&oacute;n din&aacute;mico y sofisticado, ideal para frentes de cocina.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; color de junta es mejor para el alicatado metro?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Si buscas un estilo industrial aut&eacute;ntico, utiliza una junta gris oscura o negra con el azulejo metro blanco. Si prefieres algo m&aacute;s sutil y atemporal, usa una junta blanca para que el relieve del bisel sea el &uacute;nico protagonista.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Son f&aacute;ciles de limpiar los azulejos estilo metro en la cocina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, son de los m&aacute;s sencillos de mantener. Al ser piezas cer&aacute;micas esmaltadas, la grasa y las salpicaduras no penetran. Un pa&ntilde;o h&uacute;medo con jab&oacute;n neutro es suficiente para que el biselado blanco brillo luzca como el primer d&iacute;a.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Se pueden usar los azulejos metro en el suelo?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>No se recomienda. El azulejo tipo metro es un revestimiento de pared (pasta blanca o roja). No est&aacute; dise&ntilde;ado para soportar el peso ni la fricci&oacute;n del calzado. Para el suelo, te recomendamos explorar nuestra secci&oacute;n de pavimentos con efectos similares pero mayor resistencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO RICARDO -->
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejo metro">
+                <div>
+                    <h2>Soy Ricardo. &iquest;Dudas con tu proyecto de azulejo metro?
+                        <span>Te ayudo a elegir sin compromiso.</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common">
+                    <div class="icon">&#128205;</div>
+                    <div class="label">Visita Presencial</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common">
+                    <div class="icon">&#128187;</div>
+                    <div class="label">Visita Virtual</div>
+                </a>
+                <a href="tel:+34961957136" class="contact-option-common">
+                    <div class="icon">&#128222;</div>
+                    <div class="label">Tel&eacute;fono</div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20azulejo%20metro" class="contact-option-common">
+                    <div class="icon">&#128172;</div>
+                    <div class="label">Whatsapp</div>
+                </a>
             </div>
         </div>
     </section>

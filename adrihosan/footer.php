@@ -66,7 +66,7 @@ if (!$class) {
 						<?php 
 						if ($icon) {
 							?>
-							<img src="<?php echo $icon;?>" alt="footer_icon">
+							<img src="<?php echo $icon;?>" alt="footer_icon" width="120" height="40">
 							<?php
 						}
 						?>
@@ -76,7 +76,7 @@ if (!$class) {
 							<?php 
 							if ($icon1) {
 								?>
-								<img src="<?php echo $icon1;?>" alt="icon">
+								<img src="<?php echo $icon1;?>" alt="icon" width="24" height="24">
 								<?php
 							}
 							?>
@@ -90,7 +90,7 @@ if (!$class) {
 							<?php 
 							if ($icon2) {
 								?>
-								<img src="<?php echo $icon2;?>" alt="icon">
+								<img src="<?php echo $icon2;?>" alt="icon" width="24" height="24">
 								<?php
 							}
 							?>
@@ -131,6 +131,40 @@ if (!$class) {
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<!-- Playfair Display: cargado via JS para eliminarlo de la cadena crítica de render -->
+<script>
+window.addEventListener('load', function() {
+	var pc = document.createElement('link');
+	pc.rel = 'preconnect';
+	pc.href = 'https://fonts.gstatic.com';
+	pc.crossOrigin = 'anonymous';
+	document.head.appendChild(pc);
+	var l = document.createElement('link');
+	l.rel = 'stylesheet';
+	l.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap';
+	document.head.appendChild(l);
+});
+</script>
+
+<!-- GTM diferido: se carga tras el render para no bloquear FCP/LCP -->
+<script>
+(function() {
+	function loadGTM() {
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+		var s = document.createElement('script');
+		s.async = true;
+		s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NSSDZCN';
+		document.head.appendChild(s);
+	}
+	if ('requestIdleCallback' in window) {
+		window.addEventListener('load', function() { requestIdleCallback(loadGTM, {timeout: 3000}); });
+	} else {
+		window.addEventListener('load', function() { setTimeout(loadGTM, 2000); });
+	}
+})();
+</script>
 
 </body>
 </html>

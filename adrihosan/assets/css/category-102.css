@@ -1,0 +1,326 @@
+/**
+ * ============================================================================
+ * CSS CATEGORÍA 102 - ESPEJOS
+ * Archivo independiente - Extraído de category-styles.css
+ * ============================================================================
+ */
+
+/* ========================================================================== */
+/* 1. OCULTAR ELEMENTOS INNECESARIOS                                          */
+/* ========================================================================== */
+
+.tax-product_cat.term-102 .woocommerce-breadcrumb,
+.tax-product_cat.term-102 .woocommerce-products-header,
+.tax-product_cat.term-102 .term-description,
+.tax-product_cat.term-102 .product-categories,
+.tax-product_cat.term-102 .doo-category-banner,
+.tax-product_cat.term-102 .wd-shop-tools,
+.tax-product_cat.term-102 .advanced-filter,
+.tax-product_cat.term-102 .filter-wrapper {
+    display: none !important;
+}
+
+/* ========================================================================== */
+/* 2. HERO SECTION                                                            */
+/* ========================================================================== */
+
+.adri-hero-espejos {
+    position: relative;
+    height: 70vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-hero-espejos__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.adri-hero-espejos__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.7);
+    z-index: 1;
+}
+
+.adri-hero-espejos__content {
+    position: relative;
+    z-index: 2;
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.adri-hero-espejos h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.adri-hero-espejos__text {
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+.adri-hero-espejos__text p {
+    margin-bottom: 1rem;
+}
+
+.adri-hero-espejos__text p:last-child {
+    margin-bottom: 0;
+}
+
+.adri-hero-espejos__text-desktop {
+    display: none;
+}
+
+.adri-hero-espejos__nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.adri-hero-espejos__nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4dd2d0;
+    border-radius: 5px;
+    background-color: #4dd2d0 !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.adri-hero-espejos__nav-link:hover {
+    background-color: #ffffff !important;
+    border-color: #ffffff;
+    color: #4dd2d0 !important;
+    transform: translateY(-2px);
+}
+
+.adri-hero-espejos__nav-link:focus,
+.adri-hero-espejos__nav-link:active {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(77, 210, 208, 0.5);
+}
+
+/* ========================================================================== */
+/* 3. NAV VISUAL (Tipos de Espejo)                                            */
+/* ========================================================================== */
+
+.adri-nav-visual-espejos {
+    padding: 4rem 1rem;
+    background-color: #f9fafb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-nav-visual-espejos__container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.adri-nav-visual-espejos__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.adri-nav-visual-espejos__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102e35;
+    margin-bottom: 0.5rem;
+}
+
+.adri-nav-visual-espejos__subtitle {
+    font-size: 1.125rem;
+    color: #3f6f7b;
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.adri-nav-visual-espejos__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+.adri-nav-visual-espejos__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    aspect-ratio: 3 / 2;
+}
+
+.adri-nav-visual-espejos__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.adri-nav-visual-espejos__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.adri-nav-visual-espejos__card:hover .adri-nav-visual-espejos__card-img {
+    transform: scale(1.05);
+}
+
+.adri-nav-visual-espejos__card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(16, 46, 53, 0.8) 0%, rgba(16, 46, 53, 0) 60%);
+}
+
+.adri-nav-visual-espejos__card-title {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================================================== */
+/* 4. GUIA RAPIDA (3 Claves)                                                  */
+/* ========================================================================== */
+
+.adri-guiarapida-espejos {
+    padding: 4rem 1rem;
+    background-color: #102e35;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.adri-guiarapida-espejos__container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.adri-guiarapida-espejos__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.adri-guiarapida-espejos__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.adri-guiarapida-espejos__subtitle {
+    font-size: 1.125rem;
+    color: #a0aec0;
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.adri-guiarapida-espejos__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.adri-guiarapida-espejos__card {
+    text-align: center;
+}
+
+.adri-guiarapida-espejos__icon-wrapper {
+    margin: 0 auto 1.5rem auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adri-guiarapida-espejos__icon {
+    width: 32px;
+    height: 32px;
+    stroke: #4dd2d0;
+    stroke-width: 1.5;
+}
+
+.adri-guiarapida-espejos__card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.adri-guiarapida-espejos__card-text {
+    font-size: 1rem;
+    color: #a0aec0;
+    line-height: 1.6;
+}
+
+/* ========================================================================== */
+/* 5. RESPONSIVE                                                              */
+/* ========================================================================== */
+
+@media (min-width: 640px) {
+    .adri-hero-espejos__text-desktop {
+        display: block;
+    }
+
+    .adri-nav-visual-espejos__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .adri-hero-espejos h1 {
+        font-size: 3rem;
+    }
+
+    .adri-hero-espejos__text {
+        font-size: 1.125rem;
+    }
+
+    .adri-guiarapida-espejos__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .adri-hero-espejos h1 {
+        font-size: 3.75rem;
+    }
+
+    .adri-nav-visual-espejos__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

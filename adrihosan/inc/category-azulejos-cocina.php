@@ -15,7 +15,7 @@ function adrihosan_azulejos_cocina_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/05/azulejos-para-cocinas-1.jpg');">
         <div class="hero-content">
-            <h1>Azulejos de Cocina: Dise&ntilde;os que inspiran tu lado chef</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos de Cocina: Dise&ntilde;os que inspiran tu lado chef' ); ?></h1>
             <p>Encuentra el revestimiento perfecto: desde frentes de cocina f&aacute;ciles de limpiar hasta suelos de alta resistencia.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-cocina" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -44,7 +44,7 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                         <p>El clásico atemporal que nunca falla</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejo-para-cocina-marmol.jpg" alt="Azulejos efecto mármol para cocina">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
@@ -77,21 +77,21 @@ function adrihosan_azulejos_cocina_contenido_superior() {
                 <p>Encuentra la solución perfecta para cada área de tu cocina</p>
             </div>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-hexagonal/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/asp-vintage/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano-3.jpg" alt="Frentes de cocina splashbacks">
                     <div class="ap-card-content">
                         <h3>Frentes de Cocina</h3>
                         <p>Diseños decorativos para la zona de cocción</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/estilo-imitacion-bambu/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/fmt-7-5x15/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/azulejo-imitacion-hidraulico-Adrihosan-1.jpg" alt="Azulejos para cocinas pequeñas">
                     <div class="ap-card-content">
                         <h3>Cocinas Pequeñas</h3>
                         <p>Azulejos que aportan luz y sensación de espacio</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/uso-pavimento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-de-cocina/fmt-7-5x15/destino-az-col-suelo/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Suelos de cocina resistentes">
                     <div class="ap-card-content">
                         <h3>Suelos de Cocina</h3>
@@ -104,22 +104,26 @@ function adrihosan_azulejos_cocina_contenido_superior() {
 
     <!-- 4. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
     </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-cocina" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-cocina" class="product-loop-header">
         <h2 class="product-loop-title">Catálogo de Azulejos para Cocina</h2>
     </div>
+
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_cocina_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
@@ -127,7 +131,7 @@ function adrihosan_azulejos_cocina_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

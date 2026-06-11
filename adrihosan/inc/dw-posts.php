@@ -20,8 +20,12 @@ function dw_footer_post( $post ) {
 }
 
 
-// Last 2 posts
+// Last 2 posts (cached with transient)
 function dw_last_2_posts() {
+	$cached = get_transient('adrihosan_last_2_posts');
+	if ($cached !== false) {
+		return $cached;
+	}
 	global $post;
 	$show = '<div class="footer-posts">';
 	$query = array(
@@ -42,6 +46,7 @@ function dw_last_2_posts() {
 	}
 	$show .= '</div>';
 	wp_reset_postdata();
+	set_transient('adrihosan_last_2_posts', $show, HOUR_IN_SECONDS);
 	return $show;
 }
 
@@ -157,28 +162,30 @@ function dw_script_loadmore_posts( $published_posts, $cat = '', $search_s = '' )
 }
 
 function dw_ajax_loadmore_posts() {
-	global $post;
-	$query=array(
+	$page = isset($_POST['page']) ? absint($_POST['page']) : 1;
+	$postsperpage = isset($_POST['postsperpage']) ? absint($_POST['postsperpage']) : get_option('posts_per_page', 9);
+	$query_args = array(
 		'post_type'     => 'post',
 		'orderby'       => 'date',
 		'order'         => 'DESC',
-		'paged'         => $_POST['page'] + 1,
-		'posts_per_page'=> $_POST['postsperpage'],
+		'paged'         => $page + 1,
+		'posts_per_page'=> $postsperpage,
 		'post_status'   => 'publish',
 	);
 	if (isset($_POST['cat']) && !empty($_POST['cat'])) {
-		$query['cat'] = $_POST['cat'];
+		$query_args['cat'] = absint($_POST['cat']);
 	}
 	if (isset($_POST['s']) && !empty($_POST['s'])) {
-		$query['s'] = $_POST['s'];
+		$query_args['s'] = sanitize_text_field($_POST['s']);
 	}
-	query_posts($query);
-	$show='';
-	if (have_posts()) {
-		while (have_posts()) {
-			the_post();
-			$show.=dw_single_post( $post );
+	$posts_query = new WP_Query($query_args);
+	$show = '';
+	if ($posts_query->have_posts()) {
+		while ($posts_query->have_posts()) {
+			$posts_query->the_post();
+			$show .= dw_single_post(get_post());
 		}
+		wp_reset_postdata();
 		wp_send_json($show);
 	}
 	wp_die();

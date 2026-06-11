@@ -825,7 +825,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
     </div>
     
     <div id="destino-filtro-adria-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
     
     <section class="ai-product-header-section" id="catalogo-imitacion">
         <div class="ai-product-header-wrapper">
@@ -963,7 +963,7 @@ function adrihosan_contenido_superior_bano() {
 		</div>
 		
 		<div id="destino-filtro-adria-bano-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+		<div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
 		<section class="ap-product-header-section adrihosan-full-width-block"><div id="ap-productos-bano-grid" class="ap-product-header-wrapper"><h2>Nuestro Catálogo para Baños</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div></section>
 
@@ -1038,7 +1038,7 @@ function adrihosan_contenido_superior_cocina() {
         </div>
         
         <div id="destino-filtro-adria-cocina-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
         
         <?php // --- TÍTULO H2 ANTES DEL LOOP --- ?>
         <div class="product-loop-header" id="catalogo-cocina">
@@ -1864,7 +1864,7 @@ function adrihosan_pilar_paredes_contenido_superior() {
     </div>
     
     <div id="destino-filtro-adria-paredes" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
     
     <div id="catalogo-paredes" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Pared</h2></div>
     <?php
@@ -2942,7 +2942,7 @@ function adrihosan_ceramica_superior_final() {
         </div>
 
     <div class="filter-container-master" style="margin-bottom:50px;">
-       <?php echo do_shortcode('[fe_widget id="425985"]'); ?>
+       <?php echo do_shortcode('[fe_widget id="427035"]'); ?>
     </div>
 
     <div style="text-align: center; margin: 60px 0;">
@@ -3327,7 +3327,7 @@ function adrihosan_gran_formato_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-gran-formato" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Medidas y Acabados Populares</h4>
@@ -3416,7 +3416,7 @@ function adrihosan_extrafino_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-extrafino" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div id="catalogo-extrafino-foco" style="scroll-margin-top: 140px; text-align: center; padding: 50px 0; border-top: 1px solid #eee;">
         <h2 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; text-transform: uppercase;">Catálogo Porcelánico Extrafino</h2>
@@ -3505,7 +3505,7 @@ function adrihosan_metro_superior_final() {
     </div>
 
     <div id="destino-filtro-adria-metro" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <div style="text-align: center; margin: 60px 0;">
         <h4 style="font-family: 'Poppins'; font-weight: 800; color: #102e35; margin-bottom:30px; text-transform:uppercase; letter-spacing: 1px;">Lo más buscado</h4>
@@ -3800,7 +3800,7 @@ function adrihosan_azulejos_bano_contenido_superior() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-bano" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
     
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-bano" class="product-loop-header">
@@ -4034,7 +4034,7 @@ function adrihosan_azulejos_cocina_contenido_superior() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-cocina" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-cocina" class="product-loop-header">
@@ -4266,7 +4266,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-exterior" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427035"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-exterior" class="product-loop-header">

@@ -14,7 +14,7 @@ function adrihosan_azulejos_bano_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/IMAGEN-1920-X-600-3.jpg');">
         <div class="hero-content">
-            <h1>Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejos de Ba&ntilde;o: Dise&ntilde;os que crean tu zona de relax' ); ?></h1>
             <p>Desde porcel&aacute;nicos antideslizantes para la ducha hasta revestimientos que ampl&iacute;an visualmente tu aseo.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-bano" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -29,28 +29,28 @@ function adrihosan_azulejos_bano_contenido_superior() {
             <h2>¿Qué estilo buscas para tu baño?</h2>
             <p class="section-subtitle">Explora nuestras colecciones y encuentra el acabado perfecto para tu proyecto</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-suelo-imitacion-madera/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/asp-suelo-imitacion-madera/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-2.jpg" alt="Azulejos efecto madera para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Madera</h3>
                         <p>Calidez total sin el mantenimiento de la madera real</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-suelos-imitacion-marmol/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/asp-suelos-imitacion-marmol/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-cocina-1.jpg" alt="Azulejos efecto mármol para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Mármol</h3>
                         <p>Lujo atemporal en vetas naturales</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-piedra/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/asp-azulejos-imitacion-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared-2.jpg" alt="Azulejos efecto piedra para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Piedra</h3>
                         <p>Conexión natural y textura auténtica</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/ver-estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-bano/asp-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-bano.jpg" alt="Azulejos efecto cemento para baño">
                     <div class="ap-card-content">
                         <h3>Efecto Cemento</h3>
@@ -103,22 +103,26 @@ function adrihosan_azulejos_bano_contenido_superior() {
 
     <!-- 4. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Selecciona las caracter&iacute;sticas que buscas y recuerda pulsar el bot&oacute;n <strong>&quot;FILTRAR&quot;</strong> para ver los azulejos disponibles.</p>
     </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-bano" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
     
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-bano" class="product-loop-header">
         <h2 class="product-loop-title">Catálogo de Azulejos para Baño</h2>
     </div>
+
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_bano_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
@@ -126,7 +130,7 @@ function adrihosan_azulejos_bano_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

@@ -28,7 +28,7 @@ function adrihosan_contenido_superior_camerinos() {
         <section class="ac-hero-section adrihosan-full-width-block">
             <div class="ac-hero-content">
               
-    <h1>Camerinos de Baño: El Reflejo del Orden</h1>
+    <h1><?php echo adrihosan_h1_dinamico( 'Camerinos de Baño: El Reflejo del Orden' ); ?></h1>
     
     
                 <p>Gana espacio, elimina el desorden y eleva el diseño de tu baño con la solución 2 en 1 definitiva: espejo y almacenaje en una sola pieza.</p>
@@ -102,6 +102,8 @@ function adrihosan_contenido_superior_camerinos() {
                  <p>Explora nuestra selección completa. Usa los filtros para encontrar el camerino que se adapta perfectamente a tu espacio y necesidades.</p>
             </div>
         </section>
+        <!-- WRAPPER AJAX para Filter Everything Pro -->
+        <div id="fe-products-wrapper">
         <?php
     }
 }
@@ -115,6 +117,7 @@ function adrihosan_contenido_superior_camerinos() {
 function adrihosan_contenido_inferior_camerinos() {
     if ( is_product_category( 2626 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="ac-faq-section adrihosan-full-width-block">
             <div class="ac-faq-wrapper">
                 <div class="ac-faq-header">

@@ -13,7 +13,7 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/02/suelo-porcelanico-imitacion-marmol.jpg');">
         <div class="hero-content">
-            <h1>Pavimento Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol: Distinci&oacute;n y M&aacute;xima Resistencia</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Pavimento Porcel&aacute;nico Imitaci&oacute;n M&aacute;rmol: Distinci&oacute;n y M&aacute;xima Resistencia' ); ?></h1>
             <p>La majestuosidad de la piedra natural con las ventajas t&eacute;cnicas del porcel&aacute;nico. Dise&ntilde;os de alto impacto visual que transforman tu suelo en una pieza de lujo duradera.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-marmol" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -69,9 +69,9 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
                 <div class="cluster-column">
                     <h3>Por Formato</h3>
                     <ul class="cluster-list">
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-gran-formato/">Porcel&aacute;nico Gran Formato</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-formato-60x120/">Formato Est&aacute;ndar (60x60, 60x120)</a></li>
-                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/ver-tipo-lamina-porcelanica/">Porcel&aacute;nico Extrafino</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-gran-formato/asp-suelos-imitacion-marmol/">Porcel&aacute;nico Gran Formato</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/fmt-60x120/">L&iacute;der de ventas 60x120 cm</a></li>
+                        <li><a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanico-extrafino/asp-suelos-imitacion-marmol/">Porcel&aacute;nico Extrafino</a></li>
                     </ul>
                 </div>
 
@@ -100,13 +100,17 @@ function adrihosan_porcelanico_marmol_contenido_superior() {
 
     <!-- Filtro Móvil -->
     <div id="destino-filtro-adria-marmol" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0;"></div>
-    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_porcelanico_marmol_contenido_inferior() {
     ?>
-    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins'; line-height: 1.8;">
+    </div><!-- /fe-products-wrapper -->
+    <section class="adrihosan-seo-long-content" style="background:#fff; padding: 80px 0; color: #102e35; font-family: 'Poppins','Poppins Fallback',sans-serif; line-height: 1.8;">
         <div style="max-width: 950px; margin: 0 auto; padding: 0 15px;">
             <?php echo category_description( 2245 ); ?>
         </div>

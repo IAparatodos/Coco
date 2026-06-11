@@ -23,6 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# Backups locales generados por mantenimiento (no se commitean)
+*.bak
+*.orig
+
 # Environment variables
 .env
 .env.*

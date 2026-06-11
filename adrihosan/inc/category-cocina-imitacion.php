@@ -22,7 +22,7 @@ function adrihosan_contenido_superior_cocina() {
             <img src="https://www.adrihosan.com/wp-content/uploads/2025/09/AMB-CANET-22-AQUA-BRUNEI-L25-BLANCO-WEB-1-optimized.jpg" alt="Cocina moderna con un salpicadero de azulejo hidráulico de colores vivos" class="hero-bg-image">
             <div class="hero-content">
                
-                <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Cocina</h1>
+                <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Cocina' ); ?></h1>
                 <p>El toque de car&aacute;cter que tu cocina necesita. Dise&ntilde;os que resisten el d&iacute;a a d&iacute;a, f&aacute;ciles de limpiar y con una personalidad que no deja a nadie indiferente.</p>
                 <div class="hero-buttons">
                     <a href="#catalogo-cocina" class="ahc-boton primario">Ver Dise&ntilde;os</a>
@@ -54,16 +54,18 @@ function adrihosan_contenido_superior_cocina() {
         </section>
         
         <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
+            <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
         </div>
         
         <div id="destino-filtro-adria-cocina-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+        <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427477"]'); ?></div>
         
         <?php // --- TÍTULO H2 ANTES DEL LOOP --- ?>
         <div class="product-loop-header" id="catalogo-cocina">
             <h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Cocina</h2>
         </div>
+        <!-- WRAPPER AJAX para Filter Everything Pro -->
+        <div id="fe-products-wrapper">
         <?php
     }
 }
@@ -73,6 +75,7 @@ function adrihosan_contenido_superior_cocina() {
 function adrihosan_contenido_inferior_cocina() {
     if ( is_product_category( 4876 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="ap-seo-content-section adrihosan-full-width-block">
             <div class="ap-seo-content-wrapper">
                 <h2>Gu&iacute;a para Elegir Azulejos Imitaci&oacute;n Hidr&aacute;ulico para tu Cocina</h2>

@@ -13,7 +13,7 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
     <!-- 1. HERO SECTION -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas.jpg');">
         <div class="hero-content">
-            <h1>Azulejos para Piscinas: Dise&ntilde;a tu propio oasis</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos y Porcel&aacute;nico para Piscinas: Dise&ntilde;a tu Oasis' ); ?></h1>
             <p>Materiales de alta resistencia t&eacute;cnica, antideslizantes y dise&ntilde;ados para transformar tu piscina en un espacio &uacute;nico. Desde el cl&aacute;sico gresite hasta el porcel&aacute;nico de &uacute;ltima generaci&oacute;n.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-piscinas" class="hero-btn primary">Ver Colecci&oacute;n</a>
@@ -28,21 +28,21 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
             <h2>¿Qué material buscas?</h2>
             <p class="section-subtitle">Elige según el tipo de revestimiento para tu piscina</p>
             <div class="ap-inspiration-grid">
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-bali/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/asp-bali/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-efecto-bali.jpg" alt="Efecto piedra bali para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra Bali</h3>
                         <p>El clásico que nunca falla</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-cemento/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/asp-cemento/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azueljos-para-piscinas-efecto-cemento.jpg" alt="Gres porcelánico para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto cemento</h3>
                         <p>Máxima resistencia y diseño</p>
                     </div>
                 </a>
-                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/estilo-pizarra/" class="ap-inspiration-card">
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos-para-piscinas/asp-azulejos-imitacion-piedra/" class="ap-inspiration-card">
                     <img src="https://www.adrihosan.com/wp-content/uploads/2026/01/azulejos-para-piscinas-piedra.jpg" alt="Piedra natural para piscinas">
                     <div class="ap-card-content">
                         <h3>Efecto piedra natural</h3>
@@ -63,23 +63,23 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
             <div class="guia-color-agua" style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #87CEEB, #00CED1); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Blancos/Arena</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul caribe/celeste</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Blancos/Arena</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul caribe/celeste</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4169E1, #000080); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Grises</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul profundo/marino</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Grises</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Agua azul profundo/marino</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #3CB371, #228B22); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Verdes/Piedra</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto lago natural/tropical</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Verdes/Piedra</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto lago natural/tropical</p>
                 </div>
                 <div class="color-agua-item" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2F4F4F, #1a1a2e); border-radius: 50%; margin: 0 auto 15px;"></div>
-                    <h4 style="font-family: 'Poppins'; color: #102e35; margin: 0 0 8px;">Tonos Negros/Antracita</h4>
-                    <p style="font-family: 'Poppins'; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto espejo moderno</p>
+                    <h4 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; margin: 0 0 8px;">Tonos Negros/Antracita</h4>
+                    <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 13px; color: #3f6f7b; margin: 0;">Efecto espejo moderno</p>
                 </div>
             </div>
         </div>
@@ -90,40 +90,44 @@ function adrihosan_azulejos_piscinas_contenido_superior() {
         <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center;">
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">🛡️</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Resistencia</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Soporta cambios bruscos de temperatura (hielo/deshielo)</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Resistencia</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Soporta cambios bruscos de temperatura (hielo/deshielo)</p>
             </div>
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">👣</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Seguridad</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Certificación antideslizante obligatoria para zonas húmedas</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Seguridad</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Certificación antideslizante obligatoria para zonas húmedas</p>
             </div>
             <div style="color: #fff;">
                 <div style="font-size: 40px; margin-bottom: 15px;">🧼</div>
-                <h3 style="font-family: 'Poppins'; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Higiene</h3>
-                <p style="font-family: 'Poppins'; font-size: 14px; margin: 0; opacity: 0.9;">Superficies no porosas que evitan algas y bacterias</p>
+                <h3 style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 18px; margin: 0 0 10px; color: #4dd2d0;">Higiene</h3>
+                <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px; margin: 0; opacity: 0.9;">Superficies no porosas que evitan algas y bacterias</p>
             </div>
         </div>
     </section>
 
     <!-- 5. CONSEJO ADRIA -->
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> El porcel&aacute;nico permite usar el mismo material dentro y fuera del agua, creando continuidad visual desde la terraza hasta el vaso de la piscina.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> El porcel&aacute;nico permite usar el mismo material dentro y fuera del agua, creando continuidad visual desde la terraza hasta el vaso de la piscina.</p>
     </div>
 
     <!-- 6. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-piscinas" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426341"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427062"]'); ?></div>
 
     <!-- 7. TÍTULO CATÁLOGO -->
     <div id="catalogo-piscinas" class="product-loop-header">
         <h2 class="product-loop-title">Catálogo de Azulejos para Piscinas</h2>
     </div>
+
+    <!-- 8. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_piscinas_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
@@ -131,7 +135,7 @@ function adrihosan_azulejos_piscinas_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

@@ -1,0 +1,177 @@
+/* ========================================================================== */
+/* PAGE-5074.CSS - Preguntas Frecuentes (FAQ general)                         */
+/* Cada pregunta es una tarjeta independiente con aire entre ellas.           */
+/* Identidad corporativa Adrihosan: #4dd2d0 + #3f6f7b + Poppins.              */
+/* ========================================================================== */
+
+.page-id-5074 .faq-section-common {
+    padding: 30px 0 60px;
+    background: transparent;
+}
+
+.page-id-5074 .faq-section-common + .faq-section-common {
+    margin-top: 50px;
+    padding-top: 70px;
+    border-top: 1px solid #d4e3e6;
+}
+
+.page-id-5074 .faq-main-title-common {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3f6f7b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.page-id-5074 .faq-items-wrapper {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.page-id-5074 .faq-item-common {
+    border: 1px solid #d4e3e6;
+    border-bottom: 1px solid #d4e3e6;
+    border-radius: 8px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page-id-5074 .faq-item-common:last-child {
+    border-bottom: 1px solid #d4e3e6;
+}
+
+.page-id-5074 .faq-item-common:hover {
+    border-color: #4dd2d0;
+    box-shadow: 0 4px 14px rgba(77, 210, 208, 0.10);
+}
+
+.page-id-5074 .faq-item-common.active {
+    border-color: #4dd2d0;
+    box-shadow: 0 6px 20px rgba(77, 210, 208, 0.15);
+}
+
+.page-id-5074 .faq-question-common {
+    padding: 22px 30px !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45 !important;
+    color: #3f6f7b !important;
+    gap: 22px;
+    align-items: center;
+    background: transparent;
+}
+
+.page-id-5074 .faq-question-common:hover {
+    color: #4dd2d0 !important;
+    background: transparent;
+}
+
+.page-id-5074 .faq-item-common.active .faq-question-common {
+    color: #4dd2d0 !important;
+}
+
+.page-id-5074 .faq-question-common > span:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+.page-id-5074 .faq-icon-common {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    color: #4dd2d0;
+    background: #ffffff;
+    border: 1.5px solid #4dd2d0;
+    border-radius: 50%;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.3s ease;
+}
+
+.page-id-5074 .faq-item-common.active .faq-icon-common {
+    background: #4dd2d0;
+    color: #ffffff;
+}
+
+.page-id-5074 .faq-answer-common {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 0 24px;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+}
+
+.page-id-5074 .faq-item-common.active .faq-answer-common {
+    max-height: 2000px;
+    padding: 0 24px 24px;
+    border-top: 1px solid #f0f7f8;
+    padding-top: 18px;
+}
+
+.page-id-5074 .faq-answer-common p {
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.page-id-5074 .faq-answer-common p:last-child {
+    margin-bottom: 0;
+}
+
+.page-id-5074 .faq-answer-common a {
+    color: #4dd2d0;
+    text-decoration: underline;
+}
+
+.page-id-5074 .faq-answer-common a:hover {
+    color: #3f6f7b;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE - MOVIL                                                          */
+/* ========================================================================== */
+@media (max-width: 768px) {
+    .page-id-5074 .faq-main-title-common {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+
+    .page-id-5074 .faq-items-wrapper {
+        gap: 12px;
+    }
+
+    .page-id-5074 .faq-question-common {
+        padding: 18px 22px !important;
+        font-size: 15px;
+        gap: 16px;
+    }
+
+    .page-id-5074 .faq-icon-common {
+        width: 26px;
+        height: 26px;
+        font-size: 19px;
+        border-width: 1.5px;
+    }
+
+    .page-id-5074 .faq-answer-common {
+        font-size: 14px;
+        padding: 0 18px;
+    }
+
+    .page-id-5074 .faq-item-common.active .faq-answer-common {
+        padding: 18px 18px 22px;
+    }
+}

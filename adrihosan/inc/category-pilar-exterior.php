@@ -38,7 +38,7 @@ function adrihosan_pilar_exterior_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-5.jpg');">
         <div class="hero-content">
 
-            <h1>Baldosa Hidr&aacute;ulica Original para Exterior</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Exterior' ); ?></h1>
             <p>Descubre nuestra colecci&oacute;n de baldosa hidr&aacute;ulica original para exterior. La soluci&oacute;n artesanal y duradera para crear terrazas, patios y porches con un car&aacute;cter inigualable.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo Exterior</a>
@@ -58,20 +58,23 @@ function adrihosan_pilar_exterior_contenido_superior() {
 
     <section class="bho-hub-section adrihosan-full-width-block">
         <div class="bho-hub-wrapper">
-            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/?tipo-hidraulico=geometricas" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-3.jpg" alt="Terraza con suelo de baldosa hidráulica original para exterior con un diseño geométrico." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Terrazas con Encanto</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/?tipo-hidraulico=tradicional" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-1.jpg" alt="Patio de estilo mediterráneo con baldosa artesanal para exterior con motivos florales." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Patios Mediterr&aacute;neos</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/?tipo-hidraulico=florales" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan.jpg" alt="Porche rústico revestido con baldosa hidráulica original para exterior." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Porches Acogedores</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/estilos-hidra-floral/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-3.jpg" alt="Terraza con suelo de baldosa hidráulica original para exterior con un diseño geométrico." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Terrazas con Encanto</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/estilos-hidra-mudejar-2/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan-1.jpg" alt="Patio de estilo mediterráneo con baldosa artesanal para exterior con motivos florales." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Patios Mediterr&aacute;neos</h3></div></a>
+            <a href="/categoria-producto/baldosa-hidraulica/original/exterior/estilos-hidra-contemporaneo/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-exterior-Adrihosan.jpg" alt="Porche rústico revestido con baldosa hidráulica original para exterior." class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Porches Acogedores</h3></div></a>
         </div>
     </section>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
     </div>
     
     <div id="destino-filtro-adria-exterior" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427053"]'); ?></div>
 
     <div id="catalogo-exterior" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosa Hidr&aacute;ulica para Exterior</h2></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -80,6 +83,7 @@ function adrihosan_pilar_exterior_contenido_superior() {
  */
 function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="hero-section-container guia-tecnica adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
         <div class="hero-content">
             <div class="eyebrow">Gu&iacute;a T&eacute;cnica Esencial</div>
@@ -109,7 +113,7 @@ function adrihosan_pilar_exterior_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

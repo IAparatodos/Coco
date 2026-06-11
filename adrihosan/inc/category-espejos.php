@@ -22,7 +22,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
                 <div class="adri-hero-espejos__overlay"></div>
                 <div class="adri-hero-espejos__content">
                     
-            <h1>Espejos de Baño: El Reflejo de tu Estilo</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Espejos de Baño: El Reflejo de tu Estilo' ); ?></h1>
                     <div class="adri-hero-espejos__text">
                         <p>Un espejo de baño es mucho más que un simple cristal. Es una pieza clave que define el carácter de tu espacio, amplifica la luz y añade un toque de diseño inconfundible.</p>
                         <p class="adri-hero-espejos__text-desktop">¿Buscas un <strong>espejo con luz LED</strong>, la calidez de un <strong>marco de madera</strong> o la funcionalidad del <strong>sistema antivaho</strong>? Descubre todas las opciones a continuación.</p>
@@ -64,6 +64,17 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
                 </div>
             </section>
             <div id="catalogo-completo"></div>
+
+            <!-- CONSEJO ADRIA (Filtros) -->
+            <div class="adria-tip-box">
+                <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Forma</strong> (Redondo, Rectangular, Ovalado, Irregular), <strong>Iluminaci&oacute;n</strong> (Con luz LED o Sin luz), <strong>Ancho</strong> y <strong>Funciones</strong> (Antivaho, Bluetooth) para encontrar el espejo ideal para tu ba&ntilde;o. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+            </div>
+
+            <!-- WIDGET FILTROS Filter Everything Pro -->
+            <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -75,6 +86,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
     function adrihosan_contenido_inferior_espejos() {
         if ( is_product_category( 102 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="adri-seo-espejos adri-espejos-full-width">
                 <div class="adri-seo-espejos__container">
                     <h2>Guía Completa para Comprar el Espejo de Baño Ideal</h2>
@@ -177,6 +189,8 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
             <section class="ap-product-header-section-luz adrihosan-luz-full-width-block">
                 <div id="catalogo-luz" class="ap-product-header-wrapper-luz"><h2>Modelos de Espejos con Luz</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div>
             </section>
+            <!-- WRAPPER AJAX para Filter Everything Pro -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -188,6 +202,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
     function adrihosan_contenido_inferior_espejos_luz() {
         if ( is_product_category( 4213 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="ap-tech-guide-section adrihosan-luz-full-width-block">
                 <div class="ap-tech-guide-wrapper">
                     <div class="ap-tech-guide-header"><h2>Los Detalles que Marcan la Diferencia</h2><p>Entender la tecnología detrás de tu espejo te ayuda a elegir con total seguridad. Te explicamos los tres conceptos clave que debes conocer.</p></div>
@@ -258,7 +273,7 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
             <section class="ap-hero-section-redondo adri-redondo-full-width">
                 <div class="ap-hero-content-redondo">
                     
-                <h1>Espejos Redondos para Baño</h1>
+                <h1><?php echo adrihosan_h1_dinamico( 'Espejos Redondos para Baño' ); ?></h1>
                 
                     <p>Rompe con la rigidez de las líneas rectas. Un espejo redondo suaviza el ambiente, crea un punto focal de diseño y aporta un equilibrio único a tu espacio.</p>
                     <div class="ap-hero-buttons-redondo">
@@ -302,6 +317,8 @@ if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
                 </div>
             </section>
             <div id="catalogo-redondos" style="scroll-margin-top: 20px;"></div>
+            <!-- WRAPPER AJAX para Filter Everything Pro -->
+            <div id="fe-products-wrapper">
             <?php
         }
     }
@@ -312,6 +329,7 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_redondo' ) ) {
     function adrihosan_contenido_inferior_espejos_redondo() {
         if ( is_product_category( 4247 ) && ! is_singular('product') ) {
             ?>
+            </div><!-- /fe-products-wrapper -->
             <section class="ap-seo-section-redondo adri-redondo-full-width">
                 <div class="ap-seo-wrapper-redondo">
                     <h2>El Espejo Redondo: La Guía Definitiva para tu Baño</h2>

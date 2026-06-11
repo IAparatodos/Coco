@@ -44,7 +44,7 @@ function adrihosan_pilar_bano_contenido_superior() {
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan.jpg');">
         <div class="hero-content">
             
-            <h1>Baldosa Hidr&aacute;ulica Original para Ba&ntilde;o</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica Original para Ba&ntilde;o' ); ?></h1>
             
             <p>Descubre el encanto de la baldosa hidr&aacute;ulica original. Un material con alma que transforma tu ba&ntilde;o en un espacio &uacute;nico, lleno de car&aacute;cter y belleza atemporal.</p>
             <div class="hero-buttons">
@@ -65,26 +65,30 @@ function adrihosan_pilar_bano_contenido_superior() {
 
     <section class="bho-hub-section adrihosan-full-width-block">
         <div class="bho-hub-wrapper">
-            <a href="/categoria-producto/baldosa-hidraulica/original/bano/estilos-hidraulico-bano-contemporaneo/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-5.jpg" alt="Baño moderno con baldosa hidráulica original geométrica" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Estilo Moderno</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/bano/estilos-hidraulico-bano-tradicional/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-6.jpg" alt="Baño rústico con suelo de baldosa artesanal floral" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Estilo R&uacute;stico</h3></div></a>
-            <a href="/categoria-producto/baldosa-hidraulica/original/bano/color-hidraulico-bano-blanco-y-negro/" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-7.jpg" alt="Baño minimalista con pared de acento en baldosa hidráulica" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Toque Minimalista</h3></div></a>
+            <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/bano/estilos-hidra-contemporaneo/#scroll-productos" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-5.jpg" alt="Baño moderno con baldosa hidráulica original geométrica" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Estilo Moderno</h3></div></a>
+            <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/bano/estilos-hidra-tradicional/#scroll-productos" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-6.jpg" alt="Baño rústico con suelo de baldosa artesanal floral" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Estilo R&uacute;stico</h3></div></a>
+            <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/bano/estilos-hidra-geometrico/#scroll-productos" class="bho-hub-card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/suelo-hidraulico-bano-Adrihosan-7.jpg" alt="Baño minimalista con pared de acento en baldosa hidráulica" class="bho-hub-card-img"><div class="bho-hub-card-content"><h3>Toque Minimalista</h3></div></a>
         </div>
     </section>
 
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver las baldosas disponibles.</p>
     </div>
     
     <div id="destino-filtro-adria-bano" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="426058"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427053"]'); ?></div>
     
     <div id="lista-productos" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Baldosas para Ba&ntilde;o</h2></div>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_pilar_bano_contenido_inferior() {
     if ( is_product_category( 4865 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="bho-hero-section adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/mantenimiento-suelo-hidraulico.jpg'); min-height: 40vh;">
             <div class="bho-hero-content">
                 <div class="eyebrow" style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #4dd2d0; margin-bottom: 1rem;">Gu&iacute;a T&eacute;cnica Esencial</div>

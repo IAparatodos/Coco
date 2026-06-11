@@ -152,29 +152,53 @@ function dw_select_attribute($item, $args, $tax_query, $attr_val, $el = 'select'
 		$terms=get_terms(array('taxonomy'=>'pa_'. $item, 'hide_empty'=>true));
 		$item_sel = false;
 		$item_name = false;
+
+		// OPTIMIZACIÓN: Una sola query para obtener los IDs de productos que coinciden
+		// con los filtros actuales, en lugar de una query por cada término (N+1).
+		// IMPORTANTE: $args viene de $wp_query->query_vars en categorias paginadas
+		// y trae nopaging=false + offset>0 heredados. Con posts_per_page=-1 eso
+		// genera "LIMIT offset, -1" que MariaDB rechaza por sintaxis. Por eso:
+		//   - nopaging=true desactiva la construccion de la clausula LIMIT.
+		//   - unset(offset) evita la rama que prefija "offset, " al LIMIT.
+		$base_args = $args;
+		$base_args['tax_query'] = $tax_query;
+		$base_args['fields'] = 'ids';
+		$base_args['posts_per_page'] = -1;
+		$base_args['nopaging'] = true;
+		unset( $base_args['offset'] );
+		$base_args['paged'] = 1;
+		$base_args['no_found_rows'] = true;
+		$base_args['post_type'] = 'product';
+		$base_args['post_status'] = 'publish';
+		$matching_product_ids = get_posts($base_args);
+
+		if (!empty($matching_product_ids)) {
+			// Una sola query para obtener qué términos del atributo actual tienen
+			// productos entre los que coinciden con los filtros.
+			$terms_with_products = wp_get_object_terms($matching_product_ids, 'pa_' . $item, array(
+				'fields' => 'slugs',
+			));
+			$valid_slugs = is_array($terms_with_products) ? array_unique($terms_with_products) : [];
+		} else {
+			$valid_slugs = [];
+		}
+
 		foreach ($terms as $term) {
-			$tax_query_new = $tax_query;
-			$tax_query_new[] = array(
-				'taxonomy' => 'pa_' . $item,
-				'field'    => 'slug',
-				'terms'    => $term->slug,
-			);
-			$args_new = $args;
-			$args_new['tax_query'] = $tax_query_new;
-			$posts = get_posts($args_new);
-			if (count($posts)) {
-				if ($attr_val[$item] == $term->slug) {
-					$selected = 'selected';
-					$item_sel = $term->slug;
-					$item_name = $term->name;
-				} else  {
-					$selected = ''; 
-				}
-				if ($el == 'select') {
-					$options[] = '<option value="'.$term->slug.'" '.$selected.'>'.$term->name.'</option>';
-				} else {
-					$options[] = '<li value="'.$term->slug.'" class="'.$selected.'">'.$term->name.'</li>';
-				}
+			// En vez de get_posts() por cada término, verificamos contra el set precalculado
+			if (!in_array($term->slug, $valid_slugs, true)) {
+				continue;
+			}
+			if ($attr_val[$item] == $term->slug) {
+				$selected = 'selected';
+				$item_sel = $term->slug;
+				$item_name = $term->name;
+			} else  {
+				$selected = '';
+			}
+			if ($el == 'select') {
+				$options[] = '<option value="'.$term->slug.'" '.$selected.'>'.$term->name.'</option>';
+			} else {
+				$options[] = '<li value="'.$term->slug.'" class="'.$selected.'">'.$term->name.'</li>';
 			}
 		}
 	}

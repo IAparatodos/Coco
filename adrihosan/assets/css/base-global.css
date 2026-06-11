@@ -221,6 +221,129 @@ html {
 }
 
 /* ========================================================================== */
+/* ESTILOS UNIFICADOS PARA BLOQUES PILL/TAG                                   */
+/* ========================================================================== */
+.ap-pill-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ap-pill-wrapper {
+    max-width: 1152px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ap-pill-wrapper h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin-bottom: 20px;
+}
+
+.ap-pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ap-pill-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #d4e3e6;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Forzar el mismo color en :link y :visited para que el tema no pinte
+ * los enlaces ya visitados con un tono distinto (rompia la coherencia
+ * del bloque de pills, donde el primero sin visitar quedaba 'fuera de
+ * juego' visualmente). */
+.ap-pill-tag:link,
+.ap-pill-tag:visited {
+    color: #3f6f7b;
+}
+
+.ap-pill-tag:hover {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ========================================================================== */
+/* ESTILOS UNIFICADOS PARA BLOQUE SEO                                         */
+/* ========================================================================== */
+.ap-seo-content-section {
+    padding: 60px 20px;
+    background-color: #f0f7f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ap-seo-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.ap-seo-content-wrapper h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #3f6f7b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ap-seo-content-wrapper h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 600;
+    color: #3f6f7b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.ap-seo-content-wrapper p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper strong {
+    font-weight: 600;
+    color: #3f6f7b;
+}
+
+.ap-seo-content-wrapper ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ap-seo-content-wrapper li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.ap-seo-content-wrapper a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ap-seo-content-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================================================== */
 /* ESTILOS UNIFICADOS PARA FAQ                                                */
 /* ========================================================================== */
 .faq-section-common {
@@ -503,6 +626,84 @@ html {
 }
 
 /* ========================================================================== */
+/* COMPARATIVA / VENTAJAS - BLOQUE COMÚN                                      */
+/* ========================================================================== */
+.comparativa-section {
+    padding: 70px 20px;
+    background-color: #f8f9fa;
+}
+
+.comparativa-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.comparativa-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 10px 0;
+}
+
+.comparativa-section .section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #3f6f7b;
+    margin: 0 0 50px 0;
+}
+
+.comparativa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.comparativa-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparativa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.comparativa-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.comparativa-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+
+.comparativa-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #3f6f7b;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .comparativa-grid {
+        grid-template-columns: 1fr;
+    }
+    .comparativa-section h2 {
+        font-size: 26px;
+    }
+}
+
+/* ========================================================================== */
 /* FILTER EVERYTHING PRO - 3 COLUMNAS                                         */
 /* ========================================================================== */
 
@@ -619,4 +820,30 @@ html {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+}
+
+/* ========================================================================== */
+/* CONSEJO ADRIA (bloque comun de ayuda sobre filtros)                        */
+/* Usar en cualquier categoria con <div class="adria-tip-box">                */
+/* ========================================================================== */
+.adria-tip-box {
+    max-width: 960px;
+    margin: 40px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0fafa;
+    border-left: 4px solid #4dd2d0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.adria-tip-box strong {
+    color: #3f6f7b;
 }

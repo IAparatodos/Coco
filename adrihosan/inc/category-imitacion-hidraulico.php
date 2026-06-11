@@ -39,7 +39,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/suelo-hidraulico-adrihosan.jpg');">
         <div class="hero-content">
-            <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico Porcel&aacute;nico</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Suelos Hidr&aacute;ulicos de Imitaci&oacute;n: Porcel&aacute;nico de Alta Resistencia' ); ?></h1>
             <p>Consigue la est&eacute;tica atemporal del mosaico hidr&aacute;ulico sin preocuparte por manchas, ceras o cuidados especiales. La soluci&oacute;n perfecta para el d&iacute;a a d&iacute;a.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-imitacion" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -73,11 +73,11 @@ function adrihosan_pilar_imitacion_contenido_superior() {
     </section>
     
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
     </div>
     
     <div id="destino-filtro-adria-imitacion" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
     
     <section class="ai-product-header-section" id="catalogo-imitacion">
         <div class="ai-product-header-wrapper">
@@ -85,6 +85,9 @@ function adrihosan_pilar_imitacion_contenido_superior() {
             <p>Explora la colecci&oacute;n completa. Usa los filtros para afinar tu b&uacute;squeda o d&eacute;jate inspirar por la variedad de dise&ntilde;os que combinan el encanto de siempre con la tecnolog&iacute;a de ahora.</p>
         </div>
     </section>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -93,6 +96,7 @@ function adrihosan_pilar_imitacion_contenido_superior() {
  */
 function adrihosan_pilar_imitacion_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <section class="ai-guide-section adrihosan-full-width-block">
         <div class="ai-guide-wrapper">
             <div class="ai-guide-header">
@@ -110,7 +114,7 @@ function adrihosan_pilar_imitacion_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

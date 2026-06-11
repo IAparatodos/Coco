@@ -15,7 +15,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     <!-- 1. HERO SECTION -->
 <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/01/Azulejos-de-Exterior.jpg');">
     <div class="hero-content">
-        <h1>Azulejos de Exterior: Resistencia y Dise&ntilde;o para tu Terraza</h1>
+        <h1><?php echo adrihosan_h1_dinamico( 'Suelos para Patios y Terrazas de Exterior' ); ?></h1>
         <p>Olv&iacute;date de baldosas que se rajan con el fr&iacute;o o resbalan cuando llueve. En Adrihosan te ofrecemos soluciones reales en porcel&aacute;nico de exterior y revestimientos de fachada que aguantan lo que les eches.</p>
         <div class="hero-buttons">
             <a href="#catalogo-exterior" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -62,14 +62,19 @@ function adrihosan_azulejos_exterior_contenido_superior() {
     </div>
 </section>
 
+  <!-- TEXTO INTRODUCTORIO CATALOGO -->
+  <div class="ap-intro-catalogo" style="max-width: 900px; margin: 30px auto; padding: 0 20px; text-align: center;">
+      <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; font-size: 1.15rem; line-height: 1.7; margin: 0; text-align: center;">Encuentra la mejor selecci&oacute;n de suelos para patios y terrazas con ofertas exclusivas y la mejor relaci&oacute;n calidad-precio.</p>
+  </div>
+
   <section class="ap-value-section adrihosan-full-width-block">
     <div class="ap-value-wrapper">
         <div class="section-header">
-            <h2 style="font-family: 'Poppins', sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
-            <p style="font-family: 'Poppins', sans-serif; color: #3f6f7b;">Cada zona exterior tiene sus necesidades específicas de resistencia y seguridad</p>
+            <h2 style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35;">Compara y elige el material perfecto</h2>
+            <p style="font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b;">Cada zona exterior tiene sus necesidades específicas de resistencia y seguridad</p>
         </div>
         <div class="tabla-comparativa-exterior" style="max-width: 1000px; margin: 0 auto; overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins', sans-serif; font-size: 14px;">
+            <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins','Poppins Fallback',sans-serif; font-size: 14px;">
                 <thead>
                     <tr style="background: #102e35; color: #fff;">
                         <th style="padding: 15px; text-align: left;">Tipo de Material</th>
@@ -111,22 +116,26 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 
    <!-- 4. CONSEJO ADRIA -->
 <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-    <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
+    <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
 </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
     <div id="destino-filtro-adria-exterior" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427044"]'); ?></div>
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-exterior" class="product-loop-header">
         <h2 class="product-loop-title">Catálogo de Azulejos para Exterior</h2>
     </div>
+
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
 function adrihosan_azulejos_exterior_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
@@ -134,7 +143,7 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>
@@ -146,33 +155,51 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
     <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos de Exterior</h2>
+            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos de Exterior (FAQs)</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Qué diferencia hay entre un azulejo de interior y una baldosa exterior?</span>
+                        <span>&iquest;Cu&aacute;l es el mejor material para azulejos de exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La clave es la absorción de agua y la resistencia al deslizamiento. Un azulejo para exterior es mucho más denso y rugoso. El porcelánico exterior tiene una absorción prácticamente nula, lo que evita que el agua penetre y lo dañe con las heladas.</p>
+                        <p>Sin duda, el gres porcel&aacute;nico. Su baja absorci&oacute;n de agua (menor al 0,5%) lo hace resistente a las heladas y a los cambios bruscos de temperatura, a diferencia de la cer&aacute;mica convencional o el barro cocido.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Es difícil limpiar el gres porcelánico exterior antideslizante?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre un azulejo de exterior C2 y C3?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para nada. Aunque sea rugoso, si es un material de calidad, el poro está cerrado. Una manguera y listo. En Adrihosan solo trabajamos con porcelánicos de baja porosidad que no retienen la suciedad.</p>
+                        <p>La diferencia radica en el grado de adherencia. Un azulejo C3 es el de mayor agarre, obligatorio en zonas de piscina o rampas. Un C2 es un antideslizante suave, ideal para terrazas cubiertas o balcones donde se busca una limpieza m&aacute;s sencilla.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>¿Puedo poner azulejos de pared en el suelo de la terraza?</span>
+                        <span>&iquest;Se pueden usar azulejos de interior en una pared exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Nunca. El revestimiento de muros exteriores no está diseñado para soportar peso ni tránsito. Acabaría agrietado. Para suelos siempre porcelánico con clasificación PEI 4 o superior y antideslizante C3.</p>
+                        <p>No es recomendable. Aunque sea para una pared, el material debe ser resistente a los rayos UV y a la dilataci&oacute;n t&eacute;rmica. Usar un material de interior en fachada puede provocar que el esmalte se cuartee o la pieza se desprenda con el tiempo.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;C&oacute;mo se limpian los azulejos de exterior antideslizantes?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Al tener una superficie rugosa, lo ideal es usar agua a presi&oacute;n o una fregona de hilos de microfibra con detergentes neutros. Evita ceras o productos que creen capas, ya que anular&iacute;an el efecto antideslizante del material.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; es el suelo t&eacute;cnico de exterior de 20mm?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es un porcel&aacute;nico espesorado que permite su colocaci&oacute;n sobre &quot;plots&quot; (soportes regulables). Es la soluci&oacute;n perfecta para terrazas donde se quiere ocultar el desag&uuml;e o cables, permitiendo un suelo totalmente nivelado y drenante.</p>
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ function adrihosan_master_controller_cpu_fix() {
     if (!is_product_category()) {
         return;
     }
-    
+
     // UNA SOLA QUERY - Obtener ID de categoría actual
     $cat_id = get_queried_object_id();
     
@@ -61,19 +61,38 @@ function adrihosan_master_controller_cpu_fix() {
         case 2160: // Azulejos Exterior
             adrihosan_setup_azulejos_exterior_cpu_fix();
             break;
-        case 63: // Azulejos
-            adrihosan_setup_azulejos_cpu_fix();
+        case 66: // Azulejos Piscinas
+            adrihosan_setup_azulejos_piscinas_cpu_fix();
             break;
         case 64: // Pavimentos y Suelos
             adrihosan_setup_pavimentos_cpu_fix();
             break;
-        case 66: // Azulejos Piscinas
-            adrihosan_setup_piscinas_cpu_fix();
+        case 63: // Azulejos
+            adrihosan_setup_azulejos_cpu_fix();
             break;
         case 2245: // Porcelánico Imitación Mármol
             adrihosan_setup_porcelanico_marmol_cpu_fix();
             break;
-        case 62: // Cerámica
+        case 2377: // Azulejos Hexagonales Suelo
+            adrihosan_setup_hexagonal_cpu_fix();
+            break;
+        case 4973: // Azulejos Imitación Cemento
+            adrihosan_setup_imitacion_cemento_cpu_fix();
+            break;
+        case 2350: // Suelo Técnico Exterior
+            adrihosan_setup_suelo_tecnico_cpu_fix();
+            break;
+        case 2285: // Suelos de Cocina
+            adrihosan_setup_suelos_cocina_cpu_fix();
+            break;
+        case 2273: // Suelos Rústicos
+            adrihosan_setup_suelos_rusticos_cpu_fix();
+            break;
+        case 2471: // Porcelánico Técnico
+            adrihosan_setup_porcelanico_tecnico_cpu_fix();
+            break;
+        // --- Cerámica y derivados (consolidados desde controllers independientes) ---
+        case 62: // Cerámica (pilar)
             adrihosan_setup_ceramica_cpu_fix();
             break;
         case 2410: // Porcelánico
@@ -88,6 +107,10 @@ function adrihosan_master_controller_cpu_fix() {
         case 2093: // Metro
             adrihosan_setup_metro_cpu_fix();
             break;
+        // --- Baldosa Hidráulica (consolidados desde controllers independientes) ---
+        case 4564: // Baldosa Hidráulica (pilar)
+            adrihosan_setup_pilar_bh_cpu_fix();
+            break;
         case 4865: // Original / Baño
             adrihosan_setup_pilar_bano_cpu_fix();
             break;
@@ -97,19 +120,205 @@ function adrihosan_master_controller_cpu_fix() {
         case 4869: // Original / Exterior
             adrihosan_setup_pilar_exterior_cpu_fix();
             break;
-        case 4564: // Baldosa Hidráulica (Pilar)
-            adrihosan_setup_pilar_bh_cpu_fix();
-            break;
         case 2082: // Imitación Hidráulico
             adrihosan_setup_imitacion_hidraulico_cpu_fix();
+            break;
+        // --- Baño: Espejos Redondos y Camerinos (consolidados desde hooks a nivel archivo) ---
+        case 4247: // Espejos Redondos
+            adrihosan_setup_espejos_redondo_cpu_fix();
             break;
         case 2626: // Camerino Baño
             adrihosan_setup_camerinos_cpu_fix();
             break;
-        case 4247: // Espejos Redondos
-            adrihosan_setup_espejos_redondo_cpu_fix();
+        case 2516: // Zellige
+            adrihosan_setup_zellige_cpu_fix();
+            break;
+        case 4972: // Azulejos Imitación Piedra
+            adrihosan_setup_imitacion_piedra_cpu_fix();
+            break;
+        case 2394: // Fachadas y Muros
+            adrihosan_setup_fachadas_cpu_fix();
+            break;
+        case 2188: // Azulejo Escama de Pez
+            adrihosan_setup_escama_pez_cpu_fix();
+            break;
+        case 2132: // Azulejos 15x15
+            adrihosan_setup_azulejos_15x15_cpu_fix();
+            break;
+        case 2358: // Azulejos Antiguos y Vintage
+            adrihosan_setup_azulejos_antiguos_cpu_fix();
+            break;
+        case 2108: // Azulejos Decorativos
+            adrihosan_setup_azulejos_decorativos_cpu_fix();
+            break;
+        case 2173: // Azulejos Hexagonales
+            adrihosan_setup_azulejos_hexagonales_cpu_fix();
+            break;
+        case 310: // Porcel&aacute;nico Techlam
+            adrihosan_setup_porcelanico_techlam_cpu_fix();
+            break;
+        case 2482: // Cer&aacute;mica Vives
+            adrihosan_setup_ceramica_vives_cpu_fix();
+            break;
+        case 4722: // Navarti Cer&aacute;mica
+            adrihosan_setup_navarti_cpu_fix();
+            break;
+        case 67: // Azulejo Mosaico
+            adrihosan_setup_mosaico_cpu_fix();
+            break;
+        case 1989: // Suelo de Barro y Terracota
+            adrihosan_setup_barro_cpu_fix();
+            break;
+        case 4043: // Suelo Barro Cocido Exterior
+            adrihosan_setup_barro_exterior_cpu_fix();
+            break;
+        case 99: // Muebles de Baño
+            adrihosan_setup_muebles_bano_cpu_fix();
+            break;
+        case 2421: // Muebles de Baño Pequeños
+            adrihosan_setup_muebles_bano_pequeno_cpu_fix();
+            break;
+        case 2143: // Muebles de Baño Baratos
+            adrihosan_setup_muebles_bano_baratos_cpu_fix();
+            break;
+        case 2433: // Muebles de Baño de Diseño
+            adrihosan_setup_muebles_bano_diseno_cpu_fix();
+            break;
+        case 2428: // Muebles de Baño Rústicos
+            adrihosan_setup_muebles_bano_rusticos_cpu_fix();
+            break;
+        case 101: // Muebles de Baño Suspendidos
+            adrihosan_setup_muebles_bano_suspendidos_cpu_fix();
+            break;
+        case 100: // Muebles de Baño con Patas
+            adrihosan_setup_muebles_bano_patas_cpu_fix();
+            break;
+        case 103: // Columnas de Baño
+            adrihosan_setup_columnas_bano_cpu_fix();
+            break;
+        case 2528: // Ofertas Muebles de Baño
+            adrihosan_setup_ofertas_muebles_bano_cpu_fix();
+            break;
+        case 5141: // Espejos de Baño Negros
+            adrihosan_setup_espejos_negros_cpu_fix();
+            break;
+        case 94: // Encimeras de Baño (madre del silo Encimeras)
+            adrihosan_setup_encimeras_bano_cpu_fix();
+            break;
+        case 5354: // Encimeras de Baño Blancas (hija de 94)
+            adrihosan_setup_encimeras_blancas_cpu_fix();
+            break;
+        case 2709: // Encimeras de Baño de 160 cm (hija de 94)
+            adrihosan_setup_encimeras_160cm_cpu_fix();
+            break;
+        case 2719: // Encimeras de Baño de 60 cm (hija de 94)
+            adrihosan_setup_encimeras_60cm_cpu_fix();
+            break;
+        case 2717: // Encimeras de Baño Doble Seno (hija de 94)
+            adrihosan_setup_encimeras_doble_seno_cpu_fix();
+            break;
+        case 2707: // Encimeras de Baño Negra (hija de 94)
+            adrihosan_setup_encimeras_negra_cpu_fix();
+            break;
+        case 2708: // Encimeras de Baño Suspendida (hija de 94)
+            adrihosan_setup_encimeras_suspendida_cpu_fix();
+            break;
+        case 96: // Encimeras de Resina (hija de 94 - la joya del silo)
+            adrihosan_setup_encimeras_resina_cpu_fix();
+            break;
+        case 81: // Inodoro (raiz silo Sanitarios > Inodoro)
+            adrihosan_setup_inodoro_cpu_fix();
+            break;
+        case 3802: // Inodoro para minusvalidos (hija de 81)
+            adrihosan_setup_inodoro_minusvalidos_cpu_fix();
+            break;
+        case 3793: // Inodoro japones (hija de 81)
+            adrihosan_setup_inodoro_japones_cpu_fix();
+            break;
+        case 3798: // Inodoro pequeno (hija de 81)
+            adrihosan_setup_inodoro_pequeno_cpu_fix();
+            break;
+        case 3795: // Inodoros baratos (hija de 81)
+            adrihosan_setup_inodoros_baratos_cpu_fix();
+            break;
+        case 3811: // Inodoros de colores (hija de 81)
+            adrihosan_setup_inodoros_colores_cpu_fix();
+            break;
+        case 4415: // Espejo Baño 140x80 cm
+            adrihosan_setup_espejo_bano_140_cpu_fix();
+            break;
+        case 4366: // Espejo Baño 50 cm
+            adrihosan_setup_espejo_bano_50_cpu_fix();
+            break;
+        case 4368: // Espejo Baño 50x80 cm (hijo de 4366)
+            adrihosan_setup_espejo_bano_50x80_cpu_fix();
+            break;
+        case 4369: // Espejo Baño 60 cm
+            adrihosan_setup_espejo_bano_60_cpu_fix();
+            break;
+        case 4374: // Espejo Baño 60x90 cm (hijo de 4369)
+            adrihosan_setup_espejo_bano_60x90_cpu_fix();
+            break;
+        case 4290: // Espejo Baño Antivaho
+            adrihosan_setup_espejo_bano_antivaho_cpu_fix();
+            break;
+        case 4404: // Espejo Baño 90x100 cm
+            adrihosan_setup_espejo_bano_90x100_cpu_fix();
+            break;
+        case 4333: // Espejo Baño Sin Luz
+            adrihosan_setup_espejo_bano_sin_luz_cpu_fix();
+            break;
+        case 4299: // Espejos de Aumento
+            adrihosan_setup_espejos_aumento_cpu_fix();
+            break;
+        case 4402: // Espejo Baño 90x80 cm
+            adrihosan_setup_espejo_bano_90x80_cpu_fix();
+            break;
+        case 4274: // Espejo Redondo 70 cm con Luz LED
+            adrihosan_setup_espejo_redondo_70_luz_cpu_fix();
+            break;
+        case 4273: // Espejo Redondo 100 cm
+            adrihosan_setup_espejo_redondo_100_cpu_fix();
+            break;
+        case 4344: // Espejos Baño con Marco
+            adrihosan_setup_espejos_con_marco_cpu_fix();
+            break;
+        case 4288: // Espejo Ovalado con Luz LED
+            adrihosan_setup_espejo_ovalado_luz_cpu_fix();
+            break;
+        case 4336: // Espejos Ledimex
+            adrihosan_setup_ledimex_cpu_fix();
             break;
     }
+}
+
+// ============================================================================
+// CONTROLADOR BRAND (taxonomy: brand) - separado del master de product_cat
+// ============================================================================
+// Solo se procesa en archive de brand. NO afecta a las 50 categorias de
+// producto. Si en el futuro hay mas brands customizadas, anadir mas cases.
+// ============================================================================
+add_action('template_redirect', 'adrihosan_brand_controller', 1);
+function adrihosan_brand_controller() {
+    if ( ! is_tax( 'brand' ) ) {
+        return;
+    }
+    $term_id = get_queried_object_id();
+    switch ( $term_id ) {
+        case 2720: // Solidker (linea propia)
+            adrihosan_setup_brand_solidker();
+            break;
+    }
+}
+
+function adrihosan_setup_brand_solidker() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+    add_action('woocommerce_before_shop_loop', 'adrihosan_brand_solidker_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_brand_solidker_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 // Setups específicos para cada categoría
@@ -119,6 +328,7 @@ function adrihosan_setup_bano_imitacion_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_bano', 8);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_cocina_imitacion_cpu_fix() {
@@ -127,6 +337,7 @@ function adrihosan_setup_cocina_imitacion_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_cocina', 9);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_hidraulica_original_cpu_fix() {
@@ -136,6 +347,7 @@ function adrihosan_setup_hidraulica_original_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_espejos_cpu_fix() {
@@ -145,26 +357,47 @@ function adrihosan_setup_espejos_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos', 9);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_espejos_luz_cpu_fix() {
-    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
-    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_wood_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_hexagonal_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_hexagonal_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_hexagonal_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_imitacion_cemento_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_cemento_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_cemento_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_paredes_cpu_fix() {
@@ -174,11 +407,7 @@ function adrihosan_setup_paredes_cpu_fix() {
     
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_paredes_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_paredes_contenido_inferior', 99);
-    
-    // Ocultar filtros antiguos y botones azules
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_azulejos_bano_cpu_fix() {
@@ -188,11 +417,7 @@ function adrihosan_setup_azulejos_bano_cpu_fix() {
     
     add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_bano_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_bano_contenido_inferior', 99);
-    
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_azulejos_cocina_cpu_fix() {
@@ -202,11 +427,7 @@ function adrihosan_setup_azulejos_cocina_cpu_fix() {
 
     add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_cocina_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_cocina_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_azulejos_exterior_cpu_fix() {
@@ -216,25 +437,17 @@ function adrihosan_setup_azulejos_exterior_cpu_fix() {
 
     add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_exterior_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_exterior_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
-function adrihosan_setup_azulejos_cpu_fix() {
+function adrihosan_setup_azulejos_piscinas_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_piscinas_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_piscinas_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_pavimentos_cpu_fix() {
@@ -244,25 +457,17 @@ function adrihosan_setup_pavimentos_cpu_fix() {
 
     add_action('woocommerce_before_shop_loop', 'adrihosan_pavimentos_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pavimentos_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
-function adrihosan_setup_piscinas_cpu_fix() {
+function adrihosan_setup_azulejos_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_piscinas_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_piscinas_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_porcelanico_marmol_cpu_fix() {
@@ -272,12 +477,67 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
 
     add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_marmol_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_marmol_contenido_inferior', 99);
-
-    // Ocultar filtros antiguos
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
+
+function adrihosan_setup_suelo_tecnico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelo_tecnico_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelo_tecnico_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_suelos_cocina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_cocina_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_cocina_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_suelos_rusticos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_rusticos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_rusticos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_porcelanico_tecnico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_zellige_cpu_fix() {
+    // Patrón Hidráulica Original: removes específicos + filtro datos
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
+
+    // Eliminar subcategorías: forzar display mode "products" + vaciar array subcats
+    add_filter('wc_get_loop_display_mode', function() { return 'products'; });
+    add_filter('woocommerce_product_subcategories', '__return_empty_array');
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+// --- Setups consolidados desde controllers independientes ---
 
 function adrihosan_setup_ceramica_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
@@ -287,9 +547,7 @@ function adrihosan_setup_ceramica_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_porcelanico_cpu_fix() {
@@ -300,9 +558,7 @@ function adrihosan_setup_porcelanico_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_gran_formato_cpu_fix() {
@@ -313,9 +569,7 @@ function adrihosan_setup_gran_formato_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_extrafino_cpu_fix() {
@@ -326,9 +580,7 @@ function adrihosan_setup_extrafino_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_metro_cpu_fix() {
@@ -339,36 +591,11 @@ function adrihosan_setup_metro_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
-    add_action('wp_head', function() {
-        echo '<style>.wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section { display: none !important; }</style>';
-    });
-}
-
-function adrihosan_setup_pilar_bano_cpu_fix() {
-    add_filter('woocommerce_show_page_title', '__return_false');
-    remove_all_actions('woocommerce_archive_description');
-    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
-}
-
-function adrihosan_setup_pilar_cocina_cpu_fix() {
-    add_filter('woocommerce_show_page_title', '__return_false');
-    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
-    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
-}
-
-function adrihosan_setup_pilar_exterior_cpu_fix() {
-    add_filter('woocommerce_show_page_title', '__return_false');
-    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
-    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_pilar_bh_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
@@ -377,6 +604,35 @@ function adrihosan_setup_pilar_bh_cpu_fix() {
     remove_action('woocommerce_no_products_found', 'wc_no_products_found', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_pilar_bano_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_pilar_cocina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_pilar_exterior_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
@@ -385,15 +641,7 @@ function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
-}
-
-function adrihosan_setup_camerinos_cpu_fix() {
-    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
-    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
-    add_filter('woocommerce_show_page_title', '__return_false');
-    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_espejos_redondo_cpu_fix() {
@@ -403,11 +651,632 @@ function adrihosan_setup_espejos_redondo_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8);
     add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_camerinos_cpu_fix() {
+    remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+    remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_imitacion_piedra_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_piedra_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_piedra_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_fachadas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_fachadas_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_fachadas_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_escama_pez_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_escama_pez_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_escama_pez_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_15x15_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_15x15_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_15x15_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_antiguos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_antiguos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_antiguos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_decorativos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_decorativos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_decorativos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+/**
+ * CSS para ocultar filtros legacy en categorías con landing personalizada.
+ * Se llama SOLO desde cada setup_*_cpu_fix(), NUNCA de forma global.
+ * Las categorías sin case en el switch conservan los bloques estándar de WooCommerce.
+ */
+function adrihosan_ocultar_filtros_legacy() {
+    echo '<style>.woocommerce-products-header,.wd-shop-tools,.advanced-filter,.filter-wrapper,.ai-filters-section,.bho-filters-section,.bho-hub-section,.woocommerce-products-header__description,.term-description,.woodmart-category-desc,.wd-active-filters,.doo-category-banner{display:none!important}</style>';
+}
+
+function adrihosan_setup_azulejos_hexagonales_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_porcelanico_techlam_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_techlam_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_techlam_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ceramica_vives_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_navarti_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_navarti_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_navarti_contenido_inferior', 99);
+    add_action('wp_head', function() {
+        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
+    });
+}
+
+function adrihosan_setup_mosaico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_mosaico_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_mosaico_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_barro_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_barro_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_barro_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_barro_exterior_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_barro_exterior_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_barro_exterior_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_pequeno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_baratos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_diseno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_rusticos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_suspendidos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_muebles_bano_patas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_patas_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_patas_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_columnas_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_columnas_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_columnas_bano_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ofertas_muebles_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    // Badge -XX% sobre el precio rebajado
+    add_filter('woocommerce_sale_flash', 'adrihosan_ofertas_muebles_bano_sale_flash', 10, 3);
+}
+
+function adrihosan_setup_espejos_negros_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_negros_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_negros_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_encimeras_bano_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Patron defensivo CLAUDE.md: function_exists guard por si el inc no
+    // se subio por FTP. Si no esta, la web sigue viva, solo no se pinta
+    // el contenido custom.
+    if ( function_exists( 'adrihosan_categoria_encimeras_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_bano_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_blancas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_blancas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_blancas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_blancas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_blancas_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_160cm_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_160cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_160cm_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_160cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_160cm_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_60cm_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_60cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_60cm_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_60cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_60cm_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_doble_seno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_doble_seno_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_doble_seno_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_doble_seno_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_doble_seno_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_negra_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_negra_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_negra_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_negra_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_negra_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_suspendida_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_suspendida_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_suspendida_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_suspendida_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_suspendida_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_encimeras_resina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimeras_resina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimeras_resina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimeras_resina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_resina_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoro_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoro_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoro_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoro_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoro_minusvalidos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoro_minusvalidos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoro_minusvalidos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoro_minusvalidos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_minusvalidos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoro_japones_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoro_japones_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoro_japones_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoro_japones_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_japones_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoro_pequeno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoro_pequeno_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoro_pequeno_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoro_pequeno_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_pequeno_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoros_baratos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoros_baratos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoros_baratos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoros_baratos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_baratos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoros_colores_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoros_colores_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoros_colores_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoros_colores_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_colores_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_espejo_bano_140_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_140_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_140_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_50_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_50x80_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_60_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_60x90_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_antivaho_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_90x100_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_sin_luz_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejos_aumento_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_aumento_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_aumento_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_bano_90x80_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_redondo_70_luz_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_redondo_100_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_100_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_100_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejos_con_marco_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_con_marco_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_con_marco_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_espejo_ovalado_luz_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_superior', 5);
+    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_inferior', 99);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_ledimex_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    if ( function_exists( 'adrihosan_ledimex_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ledimex_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_ledimex_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ledimex_contenido_inferior', 99);
+    }
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 // FIN CONTROLADOR MAESTRO
-// ============================================================================
- 
 if ( ! function_exists( 'adrihosan_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -588,16 +1457,14 @@ if (is_admin()) {
 }
  
 function dw_scripts() {
-	wp_enqueue_script( 'dw-customizer', get_template_directory_uri() . '/js/dw-customizer.js', array(), _S_VERSION, true );
-
-	// Cache doo_menu_cats() - con 1.496 categorías, esta query es muy pesada
-	// Sin cache se ejecuta en CADA página. Con cache, solo 1 vez por hora.
-	$menu_cats = get_transient('adrihosan_menu_cats_cache');
-	if ($menu_cats === false) {
+	// Cache doo_menu_cats() con transient (1 hora) - evita query de 1.496 categorías en cada página
+	$menu_cats = get_transient('adrihosan_menu_cats');
+	if (false === $menu_cats) {
 		$menu_cats = doo_menu_cats();
-		set_transient('adrihosan_menu_cats_cache', $menu_cats, 3600);
+		set_transient('adrihosan_menu_cats', $menu_cats, HOUR_IN_SECONDS);
 	}
 
+	wp_enqueue_script( 'dw-customizer', get_template_directory_uri() . '/js/dw-customizer.js', array(), _S_VERSION, true );
 	wp_localize_script('dw-customizer','var_cus', array(
 		'accordion' => get_option('dw-op-cetelem-accordion'),
 		'custom_menu_cats' => $menu_cats,
@@ -605,10 +1472,13 @@ function dw_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'dw_scripts' );
 
-// Invalidar cache de menú cuando se crean/editan/eliminan categorías
-add_action('created_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
-add_action('edited_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
-add_action('delete_product_cat', function() { delete_transient('adrihosan_menu_cats_cache'); });
+// Invalidar cache de doo_menu_cats() al crear/editar/eliminar categorías
+add_action('created_product_cat', 'adrihosan_clear_menu_cats_cache');
+add_action('edited_product_cat', 'adrihosan_clear_menu_cats_cache');
+add_action('delete_product_cat', 'adrihosan_clear_menu_cats_cache');
+function adrihosan_clear_menu_cats_cache() {
+	delete_transient('adrihosan_menu_cats');
+}
  
 /**
  * Custom fields for Page
@@ -690,7 +1560,7 @@ add_action('admin_menu','dw_register_block_reusable_menu_page');
  
  
 //Elimina el aviso de Past-due
-add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
+// add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
 /**
  * Add filter shortcodes in the content
  */
@@ -988,33 +1858,805 @@ add_action( 'template_redirect', function() {
   }
 });
 
- 
 // =============================================================================
-// CONTENIDO DE CATEGORÍAS DE PRODUCTO (Modularizado)
+// SISTEMA ANTIGUO - DESACTIVADO (Migrado a sistema modular)
 // =============================================================================
-// Cada archivo contiene el controller + contenido_superior + contenido_inferior
-// de su categoría correspondiente.
-// =============================================================================
+// function adrihosan_custom_category_assets() {
+//     if ( is_product_category( array(2093, 2510, 1844, 2410, 62, 4564, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4877, 2209, 1789 ) ) ) {
+//         wp_enqueue_style('adrihosan-category-styles', get_stylesheet_directory_uri() . '/css/category-styles.css', array(), filemtime( get_stylesheet_directory() . '/css/category-styles.css' ));
+//         wp_enqueue_script('adrihosan-category-scripts', get_stylesheet_directory_uri() . '/js/category-scripts.js', array(), filemtime( get_stylesheet_directory() . '/js/category-scripts.js' ), true);
+//     }
+// }
+// add_action( 'wp_enqueue_scripts', 'adrihosan_custom_category_assets', 99 ); // DESACTIVADO - Migrado a sistema modular
 
-require get_template_directory() . '/inc/category-imitacion-hidraulico.php';  // Cat 2082
-require get_template_directory() . '/inc/category-bano-imitacion.php';        // Cat 2083
-require get_template_directory() . '/inc/category-cocina-imitacion.php';      // Cat 4876
-require get_template_directory() . '/inc/category-espejos.php';              // Cats 102, 4213, 4247
-require get_template_directory() . '/inc/category-camerinos.php';            // Cat 2626
-require get_template_directory() . '/inc/category-pilar-bh.php';             // Cat 4564
-require get_template_directory() . '/inc/category-paredes.php';              // Cat 4806
-require get_template_directory() . '/inc/category-hidraulica-original.php';  // Cat 4862
-require get_template_directory() . '/inc/category-pilar-bano.php';           // Cat 4865
-require get_template_directory() . '/inc/category-pilar-cocina.php';         // Cat 4866
-require get_template_directory() . '/inc/category-pilar-exterior.php';       // Cat 4869
-require get_template_directory() . '/inc/category-wood.php';                 // Cat 2209 + CSS fix
-require get_template_directory() . '/inc/category-ceramica-porcelanico.php'; // Cats 62, 1844, 2510, 2093
-require get_template_directory() . '/inc/category-azulejos.php';              // Cat 63
-require get_template_directory() . '/inc/category-pavimentos.php';            // Cat 64
-require get_template_directory() . '/inc/category-piscinas.php';              // Cat 66
-require get_template_directory() . '/inc/category-porcelanico-marmol.php';    // Cat 2245
-require get_template_directory() . '/inc/category-azulejos-bano.php';        // Cat 1789
-require get_template_directory() . '/inc/category-azulejos-cocina.php';      // Cat 1790
-require get_template_directory() . '/inc/category-azulejos-exterior.php';    // Cat 2160
-require get_template_directory() . '/inc/cache-and-css.php';                 // Cache, CSS loader, style fixes
 
+
+/********************************************************************************
+ * =============================================================================
+ * INYECTAR BLOQUES PERSONALIZADOS EN CATEGORÍA 'ESPEJOS' (ID: 102)
+ * =============================================================================
+ ********************************************************************************/
+if ( ! function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
+    function adrihosan_contenido_superior_espejos() {
+        if ( is_product_category( 102 ) && ! is_singular('product') ) {
+            remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+            remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+            add_filter( 'woocommerce_show_page_title', '__return_false' );
+            remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
+            ?>
+            <div class="adri-hero-espejos adri-espejos-full-width">
+                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=2832&auto=format&fit=crop" alt="Baño moderno y luminoso con un espejo elegante" class="adri-hero-espejos__img">
+                <div class="adri-hero-espejos__overlay"></div>
+                <div class="adri-hero-espejos__content">
+                    
+            <h1>Espejos de Baño: El Reflejo de tu Estilo</h1>
+                    <div class="adri-hero-espejos__text">
+                        <p>Un espejo de baño es mucho más que un simple cristal. Es una pieza clave que define el carácter de tu espacio, amplifica la luz y añade un toque de diseño inconfundible.</p>
+                        <p class="adri-hero-espejos__text-desktop">¿Buscas un <strong>espejo con luz LED</strong>, la calidez de un <strong>marco de madera</strong> o la funcionalidad del <strong>sistema antivaho</strong>? Descubre todas las opciones a continuación.</p>
+                    </div>
+                    <nav class="adri-hero-espejos__nav">
+                        <a href="#tipos-de-espejo" class="adri-hero-espejos__nav-link">Tipos de Espejo</a>
+                        <a href="#guia-de-compra" class="adri-hero-espejos__nav-link">Guía de Compra</a>
+                        <a href="#catalogo-completo" class="adri-hero-espejos__nav-link">Ver Todo el Catálogo</a>
+                    </nav>
+                </div>
+            </div>
+            <section class="adri-nav-visual-espejos" id="tipos-de-espejo">
+                <div class="adri-nav-visual-espejos__container">
+                    <header class="adri-nav-visual-espejos__header">
+                        <h2 class="adri-nav-visual-espejos__title">Un espejo para cada baño</h2>
+                        <p class="adri-nav-visual-espejos__subtitle">Sabemos que cada espacio es único. Empieza tu búsqueda aquí y encuentra el espejo que parece hecho a medida para ti.</p>
+                    </header>
+                    <div class="adri-nav-visual-espejos__grid">
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/espejo-luz-led-adrihosan.jpg" alt="Espejos de baño con luz LED integrada" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Con Luz LED</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/espejo-redondo-adrihosan.jpg" alt="Elegantes espejos de baño redondos" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Redondos</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-negros/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-de-bano-negro-Adrihosan.jpg" alt="Espejos de baño negros" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Negros</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-antivaho/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-antivaho-Adrihosan.jpg" alt="Espejos de baño con sistema antivaho" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Antivaho</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-ovalado-con-luz-led/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-bano-ovalado-Adrihosan.jpg" alt="Espejos de baño ovalados con luz LED" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Ovalados</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-sin-luz/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-liso-Adrihosan.jpg" alt="Espejos de baño sin luz" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Sin Luz</h3></a>
+                        <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-bano-con-marco/" class="adri-nav-visual-espejos__card"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-dorado-Adrihosan.jpg" alt="Espejos de baño con marco decorativo" class="adri-nav-visual-espejos__card-img"><div class="adri-nav-visual-espejos__card-overlay"></div><h3 class="adri-nav-visual-espejos__card-title">Con Marco</h3></a>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-pill-section adrihosan-full-width-block"><div class="ap-pill-wrapper"><h2>Buscar por Ancho</h2><div class="ap-pill-grid"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-50/" class="ap-pill-tag">50 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-60/" class="ap-pill-tag">60 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-70-cm/" class="ap-pill-tag">70 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-80-cm/" class="ap-pill-tag">80 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-90-cm/" class="ap-pill-tag">90 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-100-cm/" class="ap-pill-tag">100 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-120-cm/" class="ap-pill-tag">120 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espancho-140-cm/" class="ap-pill-tag">140 cm</a></div></div></section>
+            <section class="ap-pill-section adrihosan-full-width-block"><div class="ap-pill-wrapper"><h2>Otras Categorías</h2><div class="ap-pill-grid"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-ledimex/" class="ap-pill-tag">Espejos Ledimex</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejos-de-aumento-de-pared/" class="ap-pill-tag">Espejos de Aumento</a></div></div></section>
+            <section class="adri-guiarapida-espejos" id="guia-de-compra">
+                <div class="adri-guiarapida-espejos__container">
+                    <header class="adri-guiarapida-espejos__header">
+                        <h2 class="adri-guiarapida-espejos__title">3 Claves para no Equivocarte con tu Espejo</h2>
+                        <p class="adri-guiarapida-espejos__subtitle">Elegir el espejo adecuado puede transformar tu baño. Ten en cuenta estos tres puntos y acertarás seguro.</p>
+                    </header>
+                    <div class="adri-guiarapida-espejos__grid">
+                        <div class="adri-guiarapida-espejos__card"><div class="adri-guiarapida-espejos__icon-wrapper"><svg class="adri-guiarapida-espejos__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5v4m0 0h-4" /></svg></div><h3 class="adri-guiarapida-espejos__card-title">El Tamaño Importa</h3><p class="adri-guiarapida-espejos__card-text">La regla de oro: el espejo no debe ser más ancho que el mueble de baño. Mide tu espacio y busca un espejo que quede centrado y proporcionado para un look equilibrado y profesional.</p></div>
+                        <div class="adri-guiarapida-espejos__card"><div class="adri-guiarapida-espejos__icon-wrapper"><svg class="adri-guiarapida-espejos__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg></div><h3 class="adri-guiarapida-espejos__card-title">La Luz Perfecta</h3><p class="adri-guiarapida-espejos__card-text">La luz frontal es ideal para maquillaje o afeitado, ya que no crea sombras. La retroiluminación aporta una luz ambiental muy decorativa. Elige según tu necesidad principal.</p></div>
+                        <div class="adri-guiarapida-espejos__card"><div class="adri-guiarapida-espejos__icon-wrapper"><svg class="adri-guiarapida-espejos__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg></div><h3 class="adri-guiarapida-espejos__card-title">Funciones Extra</h3><p class="adri-guiarapida-espejos__card-text">¿Harto del vaho tras la ducha? El sistema antivaho es tu mejor aliado. Si te gusta escuchar música, un espejo con Bluetooth integrado es la solución perfecta para un baño moderno.</p></div>
+                    </div>
+                </div>
+            </section>
+            <div id="catalogo-completo"></div>
+
+            <!-- CONSEJO ADRIA (Filtros) -->
+            <div class="adria-tip-box">
+                <p><strong>&iexcl;Consejo de AdrIA!</strong> Filtra por <strong>Forma</strong> (Redondo, Rectangular, Ovalado, Irregular), <strong>Iluminaci&oacute;n</strong> (Con luz LED o Sin luz), <strong>Ancho</strong> y <strong>Funciones</strong> (Antivaho, Bluetooth) para encontrar el espejo ideal para tu ba&ntilde;o. No olvides pulsar <strong>&quot;FILTRAR&quot;</strong> para ver los resultados.</p>
+            </div>
+
+            <!-- WIDGET FILTROS Filter Everything Pro -->
+            <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427498"]'); ?></div>
+
+            <!-- WRAPPER AJAX para Filter Everything Pro -->
+            <div id="fe-products-wrapper">
+            <?php
+        }
+    }
+}
+
+if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
+    function adrihosan_contenido_inferior_espejos() {
+        if ( is_product_category( 102 ) && ! is_singular('product') ) {
+            ?>
+            </div><!-- /fe-products-wrapper -->
+            <section class="ap-seo-content-section adrihosan-full-width-block"><div class="ap-seo-content-wrapper"><h2>Guía Completa para Comprar el Espejo de Baño Ideal</h2><p>Elegir un <strong>espejo para el cuarto de baño</strong> es una decisión que combina diseño y uso diario. No es solo un objeto donde mirarse, sino una pieza que puede transformar por completo la percepción de tu espacio, aportando luminosidad, amplitud y un toque de carácter. En esta guía te damos las claves para que encuentres el espejo perfecto que se adapte a tu estilo y necesidades.</p><h3>Elige la Forma que Define tu Estilo</h3><p>La forma del espejo es el primer gran paso. Cada una transmite una sensación diferente:</p><ul><li><strong>Espejos Rectangulares:</strong> Un clásico atemporal. Son versátiles y encajan en cualquier diseño, desde el más tradicional al más moderno. Ofrecen la mayor superficie de reflejo, siendo ideales para baños familiares.</li><li><strong>Espejos Redondos:</strong> Perfectos para suavizar las líneas rectas de los muebles y azulejos. Aportan un toque orgánico y de diseño, convirtiéndose en el punto focal del lavabo.</li><li><strong>Espejos Orgánicos:</strong> Para los más atrevidos. Sus formas irregulares y asimétricas son una declaración de estilo y una tendencia en auge en el diseño de interiores.</li></ul><h3>Tecnología que Facilita tu Día a Día</h3><p>Los espejos modernos han dejado de ser simples cristales para incorporar tecnología que mejora la experiencia en el baño.</p><ul><li><strong>Espejos con Luz LED:</strong> La funcionalidad definitiva. Proporcionan una iluminación frontal perfecta para tareas como el maquillaje o el afeitado, sin generar sombras. La mayoría de nuestros modelos ofrecen diferentes temperaturas de luz (cálida, neutra o fría) para que la adaptes a tu gusto.</li><li><strong>Espejos con Sistema Antivaho:</strong> ¿Cansado de no verte después de la ducha? Esta tecnología integra una pequeña resistencia que calienta el cristal, evitando que se forme vaho. Un extra de confort que agradecerás cada día.</li></ul><h3>El Toque Final: ¿Con o sin Marco?</h3><p>El marco es el detalle que remata el diseño. Un <strong>espejo sin marco</strong> ofrece un look minimalista y limpio, integrándose perfectamente en la pared. Por otro lado, los <strong>espejos con marco</strong> (negro, dorado, madera) añaden un acento decorativo, permitiéndote coordinarlos con la grifería, los tiradores del mueble o otros accesorios del baño.</p></div></section>
+
+            <section class="faq-section-common adrihosan-full-width-block"><div class="faq-wrapper-common"><h2 class="faq-main-title-common">Resolvemos tus Dudas</h2><div class="faq-items-wrapper"><div class="faq-item-common"><button class="faq-question-common"><span>¿Qué tipo de luz es mejor para un espejo de baño?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Depende del uso. La <strong>luz neutra (4000K)</strong> es la más recomendada y versátil, ya que reproduce los colores de forma fiel, ideal para maquillarse o afeitarse. La <strong>luz cálida (3000K)</strong> crea un ambiente más relajante, mientras que la <strong>luz fría (6000K)</strong> ofrece la máxima luminosidad. Nuestros espejos LED suelen especificar el tipo de luz que ofrecen.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Son difíciles de instalar los espejos con luz?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No especialmente, pero <strong>recomendamos que la instalación eléctrica la realice un profesional cualificado</strong>. El espejo se cuelga en la pared como uno convencional, pero necesita una conexión a un punto de luz cercano, que normalmente es el que se usa para el aplique del baño. Todos nuestros espejos incluyen un manual de instrucciones detallado.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Qué es el sistema antivaho y cómo funciona?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>El sistema antivaho consiste en una <strong>resistencia eléctrica</strong> situada en la parte trasera del espejo. Al activarla (normalmente con un botón táctil), calienta suavemente la superficie del cristal, evitando que el vapor de la ducha se condense sobre él. Así, tendrás siempre una zona del espejo perfectamente despejada.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Cómo se limpian los espejos LED para no dañar el sistema?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>La limpieza es muy sencilla. Utiliza un <strong>paño suave de microfibra</strong> y un limpiacristales estándar. Lo más importante es <strong>no pulverizar el líquido directamente sobre el espejo</strong>, sino sobre el paño. Así evitas que el líquido se filtre por los bordes y pueda dañar los componentes electrónicos.</p></div></div></div></div></section>
+
+            <section class="contact-help-common adrihosan-full-width-block"><div class="contact-help-wrapper"><div class="contact-intro"><img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan"><div><h2>¿Aún con dudas? Te ayudo a elegir.<span>Soy Ricardo. Déjame asesorarte para que tu nuevo espejo quede exactamente como lo imaginas.</span></h2></div></div><div class="contact-options-grid-common"><a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposición</div></a><a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a><a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Teléfono</div></a><a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20espejos!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a><a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a></div></div></section>
+            <?php
+        }
+    }
+}
+// COMENTADO - Duplicado del controlador maestro (línea 99)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21 );
+
+/********************************************************************************
+ * =============================================================================
+ * INYECTAR BLOQUES PERSONALIZADOS EN CATEGORÍA 'ESPEJOS DE BAÑO CON LUZ' (ID: 4213)
+ * =============================================================================
+ ********************************************************************************/
+if ( ! function_exists( 'adrihosan_contenido_superior_espejos_luz' ) ) {
+    function adrihosan_contenido_superior_espejos_luz() {
+        if ( is_product_category( 4213 ) && ! is_singular('product') ) {
+            remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+            remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+            add_filter( 'woocommerce_show_page_title', '__return_false' );
+            remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
+            ?>
+            <section class="ap-hero-section-luz adrihosan-luz-full-width-block">
+                <div class="ap-hero-content-luz">
+                    
+                    <h2>La Iluminación que lo Cambia Todo</h2>
+                    <p>Descubre cómo nuestros espejos con luz LED integrada transforman tu baño en un espacio de precisión, confort y diseño.</p>
+                    <div class="ap-hero-buttons-luz">
+                        <a href="#tipos-de-luz" class="boton-adrihosan-luz primary">Ver Tipos de Luz</a>
+                        <a href="#catalogo-luz" class="boton-adrihosan-luz secondary">Ver Modelos</a>
+                    </div>
+                </div>
+            </section>
+            <section id="tipos-de-luz" class="ap-light-types-section adrihosan-luz-full-width-block">
+                <div class="ap-light-types-wrapper">
+                    <div class="ap-light-types-header">
+                        <h2>Funcionalidad o Ambiente. ¿O por qué no ambos?</h2>
+                        <p>Cada tipo de iluminación tiene un propósito. Conoce las diferencias clave para elegir el espejo que se adapta perfectamente a tu rutina y estilo.</p>
+                    </div>
+                    <div class="ap-light-types-grid">
+                        <div class="ap-light-type-card"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/><path d="M1.646 6.354a.5.5 0 0 1 .708 0L4 8 2.354 9.646a.5.5 0 0 1-.708-.708L3.293 8 1.646 6.354zM14.354 6.354a.5.5 0 0 1 0 .708L12.707 8l1.647 1.646a.5.5 0 0 1-.708.708L12 8l1.646-1.646a.5.5 0 0 1 .708 0zM8 4a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 4zm0 8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5z"/></svg></div><h3>Luz Frontal</h3><p>Perfecta para tareas de precisión. La luz se proyecta directamente hacia ti, eliminando sombras en el rostro. Ideal para maquillarse, afeitarse o ponerse lentillas.</p></div>
+                        <div class="ap-light-type-card"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zm0 8a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 1 0v3a.5.5 0 0 1-.5.5zM4.5 8a.5.5 0 0 1-.5-.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5zm8 0a.5.5 0 0 1-.5-.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5z"/></svg></div><h3>Retroiluminación</h3><p>Crea un ambiente único y decorativo. La luz se proyecta hacia la pared, generando un halo que hace que el espejo parezca flotar. Aporta profundidad y un toque de diseño.</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-antifog-section adrihosan-luz-full-width-block">
+                <div class="ap-antifog-wrapper">
+                    <div class="ap-antifog-content">
+                        <h2>Se acabó el vaho. Siempre.</h2>
+                        <p>Nuestra tecnología antivaho integra una resistencia que calienta sutilmente el espejo para que nunca se empañe. Sales de la ducha y tu reflejo está ahí, nítido e inmediato. Un pequeño lujo que transforma tu día a día.</p>
+                    </div>
+                    <div class="ap-antifog-image"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-con-luz-Adrihosan-Antivaho.jpg" alt="Espejo de baño con la mitad de la superficie empañada y la otra mitad perfectamente clara gracias al sistema antivaho."></div>
+                </div>
+            </section>
+            <section class="ap-filters-section-luz adrihosan-luz-full-width-block">
+                <div class="ap-filters-wrapper-luz">
+                    <div class="ap-filter-group-luz"><h3 class="ap-filter-group-title-luz">Filtrar por Forma</h3><div class="ap-filter-buttons-luz"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=rectangular" class="ap-filter-btn-luz">Rectangular</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=redondo" class="ap-filter-btn-luz">Redondo</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?forma-espejo=ovalado" class="ap-filter-btn-luz">Orgánico</a></div></div>
+                    <div class="ap-filter-group-luz"><h3 class="ap-filter-group-title-luz">Filtrar por Ancho</h3><div class="ap-filter-buttons-luz"><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=60" class="ap-filter-btn-luz">60 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=80" class="ap-filter-btn-luz">80 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=100" class="ap-filter-btn-luz">100 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=120" class="ap-filter-btn-luz">120 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=140" class="ap-filter-btn-luz">140 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=160" class="ap-filter-btn-luz">160 cm</a><a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-bano-con-luz/?ancho-espejo=180" class="ap-filter-btn-luz">180 cm</a></div></div>
+                </div>
+            </section>
+            <section class="ap-product-header-section-luz adrihosan-luz-full-width-block">
+                <div id="catalogo-luz" class="ap-product-header-wrapper-luz"><h2>Modelos de Espejos con Luz</h2><p>Explora la colección completa. Usa los filtros para afinar tu búsqueda o déjate inspirar por la variedad de diseños.</p></div>
+            </section>
+            <?php
+        }
+    }
+}
+// COMENTADO - Duplicado del controlador maestro (línea 107)
+// add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_luz', 8 );
+
+if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_luz' ) ) {
+    function adrihosan_contenido_inferior_espejos_luz() {
+        if ( is_product_category( 4213 ) && ! is_singular('product') ) {
+            ?>
+            <section class="ap-tech-guide-section adrihosan-luz-full-width-block">
+                <div class="ap-tech-guide-wrapper">
+                    <div class="ap-tech-guide-header"><h2>Los Detalles que Marcan la Diferencia</h2><p>Entender la tecnología detrás de tu espejo te ayuda a elegir con total seguridad. Te explicamos los tres conceptos clave que debes conocer.</p></div>
+                    <div class="ap-tech-guide-grid">
+                        <div class="ap-tech-guide-card"><h3>Temperatura de Color (K)</h3><ul><li><strong>Luz Cálida (3000K):</strong> Crea un ambiente íntimo y relajante. Perfecta para baños donde buscas una sensación de spa.</li><li><strong>Luz Neutra (4000K):</strong> La más versátil. Simula la luz natural del día, reproduciendo los colores con gran fidelidad. Ideal para maquillaje.</li><li><strong>Luz Fría (6000K):</strong> Aporta una sensación de limpieza y energía. Es la más vendida y es perfecta para baños de estilo moderno y funcional.</li></ul></div>
+                        <div class="ap-tech-guide-card"><h3>Potencia Lumínica (Lúmenes)</h3><p>Los lúmenes miden la cantidad total de luz que emite el espejo. A más lúmenes, más luminosidad.</p><p>Un espejo para un aseo pequeño puede ser suficiente con <strong>800-1200 lúmenes</strong>, mientras que para un baño principal o para maquillaje profesional, busca modelos por encima de los <strong>2000 lúmenes</strong>.</p></div>
+                        <div class="ap-tech-guide-card"><h3>Índice de Reproducción Cromática (CRI)</h3><p>El CRI (en una escala de 0 a 100) mide la capacidad de una luz para mostrar los colores de los objetos de forma realista.</p><p>Para un baño, donde la fidelidad del color es clave al maquillarse o elegir la ropa, busca siempre un <strong>CRI superior a 80</strong>. Todos nuestros modelos cumplen este estándar de calidad.</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-faq-section-luz adrihosan-luz-full-width-block">
+                <div class="ap-faq-wrapper-luz">
+                    <div class="ap-faq-header-luz"><h2>Instalación y Mantenimiento</h2><p>Resolvemos las dudas más prácticas para que solo tengas que preocuparte de disfrutar tu nuevo espejo.</p></div>
+                    <div class="ap-faq-accordion-luz">
+                        <div class="ap-faq-item-luz"><button class="ap-faq-question-luz"><span>¿Necesita una instalación eléctrica especial?</span><span class="ap-faq-icon-luz">+</span></button><div class="ap-faq-answer-luz"><div class="ap-faq-answer-content-luz"><p>Recomendamos que la conexión la realice un electricista cualificado. El espejo se conecta directamente a la red eléctrica, generalmente aprovechando el punto de luz existente del aplique del baño. No necesita transformadores externos, viene todo integrado.</p></div></div></div>
+                        <div class="ap-faq-item-luz"><button class="ap-faq-question-luz"><span>Si se funde el LED, ¿se puede reemplazar?</span><span class="ap-faq-icon-luz">+</span></button><div class="ap-faq-answer-luz"><div class="ap-faq-answer-content-luz"><p>Sí. Aunque la vida útil de nuestras tiras LED supera las 50.000 horas (años de uso normal), están diseñadas para ser reemplazables. Disponemos de recambios para todos nuestros modelos, garantizando la durabilidad de tu inversión.</p></div></div></div>
+                        <div class="ap-faq-item-luz"><button class="ap-faq-question-luz"><span>¿Cómo se limpia sin dañar el sistema?</span><span class="ap-faq-icon-luz">+</span></button><div class="ap-faq-answer-luz"><div class="ap-faq-answer-content-luz"><p>Es muy sencillo. Utiliza un paño de microfibra y tu limpiacristales habitual. El truco es no pulverizar el líquido directamente sobre el espejo, sino sobre el paño. Así evitas que la humedad pueda afectar a los componentes electrónicos.</p></div></div></div>
+                        <div class="ap-faq-item-luz"><button class="ap-faq-question-luz"><span>¿Las medidas son Ancho x Alto?</span><span class="ap-faq-icon-luz">+</span></button><div class="ap-faq-answer-luz"><div class="ap-faq-answer-content-luz"><p>Sí, por norma general, todas las medidas de nuestros espejos se especifican siempre en formato <strong>Ancho x Alto</strong>. Por ejemplo, un espejo de 80x60 cm tiene 80 cm de ancho y 60 cm de alto. ¡Fíjate bien para que encaje perfecto sobre tu mueble!</p></div></div></div>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-seo-content-section-luz adrihosan-luz-full-width-block">
+                <div class="ap-seo-content-wrapper-luz">
+                    <h2>Claves para Acertar con tu Espejo de Baño con Luz</h2>
+                    <p>Comprar un <strong>espejo con luz para el baño</strong> es una de las decisiones de diseño más inteligentes que puedes tomar. No solo mejora radicalmente la funcionalidad del espacio, sino que se convierte en una pieza central que define el ambiente y el estilo. En Adrihosan, entendemos que cada detalle cuenta, y por eso te ofrecemos esta guía definitiva para que tu elección sea perfecta.</p>
+                    <h3>Más Allá del Reflejo: La Luz como Herramienta Funcional</h3>
+                    <p>La principal ventaja de un espejo con luz integrada es, sin duda, la calidad de la iluminación. A diferencia de los apliques tradicionales que crean sombras molestas, la luz integrada ofrece una iluminación uniforme y directa, esencial para tareas de precisión.</p>
+                    <ul><li><strong>Luz Frontal:</strong> Ideal para el afeitado o el maquillaje. Proyecta una luz clara y directa sobre el rostro, eliminando cualquier sombra y permitiendo ver los detalles con una nitidez profesional.</li><li><strong>Retroiluminación (Luz Trasera):</strong> Perfecta para crear una atmósfera relajante. La luz se proyecta contra la pared, generando un halo que hace que el espejo parezca flotar. Es un recurso de diseño que aporta profundidad y un toque de lujo a cualquier baño.</li></ul>
+                    <h3>La Tecnología que Simplifica tu Rutina: Antivaho y Más</h3>
+                    <p>Un espejo de calidad va más allá de la luz. La tecnología antivaho es un extra de confort que marca la diferencia en el día a día. Consiste en una resistencia interna que calienta ligeramente la superficie del cristal, <strong>evitando que se empañe</strong> incluso después de una ducha caliente. Se acabaron las esperas o tener que pasar la toalla. Sales de la ducha y tu espejo está siempre listo para usar.</p>
+                    <h3>¿Qué Temperatura de Color Elegir para tu Baño?</h3>
+                    <p>La temperatura de la luz LED afecta directamente a cómo percibes los colores y el ambiente de tu baño. Las tres opciones principales ofrecen beneficios distintos:</p>
+                    <ul><li><strong>Luz Cálida (2700K-3000K):</strong> Crea un ambiente acogedor y relajante, similar a la luz de una bombilla tradicional. Ideal para baños donde se busca una sensación de spa.</li><li><strong>Luz Neutra (4000K-4500K):</strong> Es la más versátil y recomendada. Se asemeja a la luz natural del día, por lo que reproduce los colores con gran fidelidad, siendo excelente tanto para el maquillaje como para la iluminación general.</li><li><strong>Luz Fría (5000K-6500K):</strong> Proporciona una luz muy blanca y estimulante, que genera una sensación de limpieza y energía. Es la opción más vendida y es perfecta para baños de estilo moderno y minimalista.</li></ul>
+                </div>
+            </section>
+            <section class="ap-help-section-luz adrihosan-luz-full-width-block">
+                <div class="ap-help-wrapper-luz">
+                    <div class="ap-help-intro-luz"><img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan"><div><h2>¿Necesitas un último consejo?<span>Soy Ricardo, tu experto en iluminación para baños.</span></h2></div></div>
+                    <div class="ap-contact-options-grid-luz">
+                        <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="ap-contact-option-luz"><div class="icon">📍</div><div class="label">Visita Presencial</div></a>
+                        <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="ap-contact-option-luz"><div class="icon">💻</div><div class="label">Visita Virtual</div></a>
+                        <a href="tel:+34961957136" class="ap-contact-option-luz"><div class="icon">📞</div><div class="label">Teléfono</div></a>
+                        <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20ayuda%20con%20los%20espejos%20con%20luz" class="ap-contact-option-luz"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                        <a href="mailto:hola@adrihosan.com" class="ap-contact-option-luz"><div class="icon">✉️</div><div class="label">Email</div></a>
+                    </div>
+                </div>
+            </section>
+            <?php
+        }
+    }
+}
+// COMENTADO - Duplicado del controlador maestro (línea 108)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_luz', 21 );
+
+/********************************************************************************
+ * =============================================================================
+ * INYECTAR BLOQUES PERSONALIZADOS EN CATEGORÍA 'ESPEJO REDONDO BAÑO' (ID: 4247)
+ * =============================================================================
+ ********************************************************************************/
+if ( ! function_exists( 'adrihosan_contenido_superior_espejos_redondo' ) ) {
+    function adrihosan_contenido_superior_espejos_redondo() {
+        if ( is_product_category( 4247 ) && ! is_singular('product') ) {
+            remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+            remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+            add_filter( 'woocommerce_show_page_title', '__return_false' );
+            remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10 );
+            ?>
+            <section class="ap-hero-section-redondo adri-redondo-full-width">
+                <div class="ap-hero-content-redondo">
+                    
+                <h1>Espejos Redondos para Baño</h1>
+                
+                    <p>Rompe con la rigidez de las líneas rectas. Un espejo redondo suaviza el ambiente, crea un punto focal de diseño y aporta un equilibrio único a tu espacio.</p>
+                    <div class="ap-hero-buttons-redondo">
+                        <a href="#beneficios-redondos" class="boton-adrihosan-redondo primary">Ver Beneficios</a>
+                        <a href="#catalogo-redondos" class="boton-adrihosan-redondo secondary">Ver Modelos</a>
+                    </div>
+                </div>
+            </section>
+            <section id="beneficios-redondos" class="ap-benefits-section-redondo adri-redondo-full-width">
+                <div class="ap-benefits-wrapper-redondo">
+                    <div class="ap-benefits-header-redondo">
+                        <h2>El Toque de Diseño que Transforma tu Baño</h2>
+                        <p>Un espejo redondo no es solo una tendencia. Es una decisión de diseño inteligente que aporta armonía, dinamismo y un carácter único a tu espacio.</p>
+                    </div>
+                    <div class="ap-benefits-grid-redondo">
+                        <div class="ap-benefit-card-redondo"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-bano-redondo-Adrihosan.jpg" alt="Baño con un espejo redondo que suaviza las líneas de un mueble de baño rectangular."><div class="ap-benefit-card-content"><h3>Suaviza el Espacio</h3><p>Los baños suelen estar dominados por ángulos rectos. Un espejo redondo rompe esa rigidez, aportando fluidez y una sensación de calma y equilibrio visual.</p></div></div>
+                        <div class="ap-benefit-card-redondo"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-bano-redondo-Adrihosan-1.jpg" alt="Un gran espejo redondo con marco negro que actúa como punto focal sobre el lavabo."><div class="ap-benefit-card-content"><h3>Crea un Punto Focal</h3><p>Su forma singular atrae la mirada de forma natural, convirtiéndose en la pieza central de la decoración. Es perfecto para destacar la zona del lavabo y darle protagonismo.</p></div></div>
+                        <div class="ap-benefit-card-redondo"><img src="https://www.adrihosan.com/wp-content/uploads/2025/09/Espejo-bano-redondo-Adrihosan-2.jpg" alt="Baño con espejo redondo enmarcado, retroiluminado con luz LED blanca."><div class="ap-benefit-card-content"><h3>Versatilidad de Estilos</h3><p>Desde el minimalismo nórdico hasta el industrial o el boho-chic. Con o sin marco, con luz o sin ella, el espejo redondo se adapta y complementa cualquier estilo decorativo.</p></div></div>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-filters-section-redondo adri-redondo-full-width">
+                <div class="ap-filters-wrapper-redondo">
+                    <div class="ap-filter-group-redondo">
+                        <h3 class="ap-filter-group-title-redondo">Filtrar por Diámetro</h3>
+                        <div class="ap-filter-buttons-redondo">
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=60" class="ap-filter-btn-redondo">60 cm</a>
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=70" class="ap-filter-btn-redondo">70 cm</a>
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=80" class="ap-filter-btn-redondo">80 cm</a>
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=90" class="ap-filter-btn-redondo">90 cm</a>
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?ancho-espejo=100" class="ap-filter-btn-redondo">100 cm</a>
+                        </div>
+                    </div>
+                    <div class="ap-filter-group-redondo">
+                        <h3 class="ap-filter-group-title-redondo">Filtrar por Funcionalidad</h3>
+                        <div class="ap-filter-buttons-redondo">
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?funcion-espejo=con-luz-led" class="ap-filter-btn-redondo">Con Luz LED</a>
+                            <a href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/espejo-redondo-bano/?funcion-espejo=antivaho" class="ap-filter-btn-redondo">Con Antivaho</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="catalogo-redondos" style="scroll-margin-top: 20px;"></div>
+            <?php
+        }
+    }
+}
+// COMENTADO - Consolidado en el controlador maestro (switch case 4247)
+// add_action( 'woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos_redondo', 8 );
+
+if ( ! function_exists( 'adrihosan_contenido_inferior_espejos_redondo' ) ) {
+    function adrihosan_contenido_inferior_espejos_redondo() {
+        if ( is_product_category( 4247 ) && ! is_singular('product') ) {
+            ?>
+            <section class="ap-seo-section-redondo adri-redondo-full-width">
+                <div class="ap-seo-wrapper-redondo">
+                    <h2>El Espejo Redondo: La Guía Definitiva para tu Baño</h2>
+                    <p>Elegir un <strong>espejo redondo para el baño</strong> es apostar por el diseño y la armonía. A diferencia de las formas tradicionales, un espejo circular tiene la capacidad única de suavizar el ambiente, romper con la rigidez de los azulejos y convertirse en el punto focal indiscutible de la estancia. Te ayudamos a entender por qué es la elección perfecta para ti.</p>
+                    <h3>¿Cómo Elegir el Diámetro Ideal?</h3>
+                    <p>El tamaño es la clave para que un espejo redondo luzca espectacular. La regla de oro es la proporción: el diámetro del espejo <strong>no debe superar el ancho del mueble de lavabo</strong>. Un espejo ligeramente más estrecho que el mueble crea un efecto visual equilibrado y profesional. Para lavabos dobles, dos espejos redondos idénticos son una solución simétrica y de gran impacto visual.</p>
+                    <h3>La Versatilidad del Círculo en la Decoración</h3>
+                    <p>Lejos de estar limitado a un solo estilo, el espejo redondo es increíblemente versátil. Un modelo <strong>sin marco</strong> es perfecto para un look minimalista o nórdico. Si buscas un toque más sofisticado o industrial, un <strong>espejo redondo con marco negro o dorado</strong> puede coordinarse con la grifería y los accesorios, creando un diseño cohesivo y lleno de personalidad.</p>
+                </div>
+            </section>
+            <section class="ap-faq-section-redondo adri-redondo-full-width">
+                <div class="ap-faq-wrapper-redondo">
+                    <div class="ap-faq-header-redondo"><h2>Dudas Habituales sobre Espejos Redondos</h2><p>Resolvemos las preguntas más concretas para que tu elección sea tan clara como el reflejo de tu nuevo espejo.</p></div>
+                    <div class="ap-faq-accordion-redondo">
+                        <div class="ap-faq-item-redondo"><button class="ap-faq-question-redondo"><span>¿A qué altura debo colgar un espejo redondo?</span><span class="ap-faq-icon-redondo">+</span></button><div class="ap-faq-answer-redondo"><div class="ap-faq-answer-content-redondo"><p>La regla general es colgarlo de forma que el centro del espejo quede a la altura de los ojos de una persona de estatura media, aproximadamente a 1.65 metros del suelo. Sin embargo, lo más importante es que quede visualmente centrado entre el mueble de lavabo y el techo o cualquier aplique superior.</p></div></div></div>
+                        <div class="ap-faq-item-redondo"><button class="ap-faq-question-redondo"><span>¿Un espejo redondo hace que el baño parezca más grande?</span><span class="ap-faq-icon-redondo">+</span></button><div class="ap-faq-answer-redondo"><div class="ap-faq-answer-content-redondo"><p>Sí, como cualquier espejo, ayuda a ampliar visualmente el espacio al reflejar la luz. La ventaja del espejo redondo es que sus curvas suaves rompen con la monotonía de las líneas rectas (azulejos, muebles), aportando una sensación de fluidez y dinamismo que puede hacer que el baño se perciba más acogedor y con un diseño más trabajado.</p></div></div></div>
+                        <div class="ap-faq-item-redondo"><button class="ap-faq-question-redondo"><span>¿Cómo se limpia un espejo redondo sin marco?</span><span class="ap-faq-icon-redondo">+</span></button><div class="ap-faq-answer-redondo"><div class="ap-faq-answer-content-redondo"><p>La limpieza es igual que la de cualquier otro espejo. Usa un paño de microfibra y un limpiacristales. Para los bordes pulidos, simplemente asegúrate de que el paño esté bien escurrido para no dejar exceso de humedad. Es un proceso sencillo que mantendrá tu espejo impecable.</p></div></div></div>
+                    </div>
+                </div>
+            </section>
+            <section class="ap-help-section-redondo adri-redondo-full-width">
+                <div class="ap-help-wrapper-redondo">
+                    <div class="ap-help-intro-redondo"><img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan"><div><h2>¿Necesitas un último consejo?<span>Soy Ricardo, tu experto en espejos con estilo.</span></h2></div></div>
+                    <div class="ap-contact-options-grid-redondo">
+                        <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="ap-contact-option-redondo"><div class="icon">📍</div><div class="label">Visita Presencial</div></a>
+                        <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="ap-contact-option-redondo"><div class="icon">💻</div><div class="label">Visita Virtual</div></a>
+                        <a href="tel:+34961957136" class="ap-contact-option-redondo"><div class="icon">📞</div><div class="label">Teléfono</div></a>
+                        <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20ayuda%20con%20los%20espejos%20redondos" class="ap-contact-option-redondo"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                        <a href="mailto:hola@adrihosan.com" class="ap-contact-option-redondo"><div class="icon">✉️</div><div class="label">Email</div></a>
+                    </div>
+                </div>
+            </section>
+            <?php
+        }
+    }
+}
+// COMENTADO - Consolidado en el controlador maestro (switch case 4247)
+// add_action( 'woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos_redondo', 21 );
+
+add_action( 'wp_head', 'adrihosan_custom_category_final_fix_css', 999 );
+function adrihosan_custom_category_final_fix_css() {
+    // Lista de IDs de TODAS las categorías personalizadas
+    $custom_category_ids = array(62, 2082, 4806, 2083, 4876, 102, 4213, 4247, 2626, 4862, 4865, 4866, 4869, 4564, 2209, 1789, 2093);
+
+    // Solo ejecutar si estamos en una de esas categorías
+    if ( is_product_category( $custom_category_ids ) ) {
+        ?>
+        <style type="text/css">
+            /*
+             * PASO 1: Oculta completamente los contenedores de filtros y herramientas del tema.
+             */
+            .filter-wrapper,
+            .wd-shop-tools {
+                display: none !important;
+            }
+
+            /*
+             * PASO 2 (SOLUCIÓN MEJORADA): Fuerza a la rejilla de productos a posicionarse
+             * debajo de cualquier elemento flotante y añade un margen superior robusto.
+             * Usamos 'div.products' para aumentar la especificidad sobre las reglas del tema.
+             */
+            div.products-grid.products {
+                clear: both !important;
+                margin-top: 250px !important; /* Aumentamos el margen para asegurar el espacio */
+            }
+        </style>
+        <?php
+    }
+}
+
+// =============================================================================
+// CATEGORÍA 2209 - SUELOS IMITACIÓN MADERA (Modularizado a inc/category-wood.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-wood.php';
+
+// =============================================================================
+// CATEGORÍA 2377 - AZULEJOS HEXAGONALES SUELO (Modularizado a inc/category-hexagonal.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-hexagonal.php';
+
+// =============================================================================
+// CATEGORÍA 4973 - AZULEJOS IMITACIÓN CEMENTO (Modularizado a inc/category-imitacion-cemento.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-imitacion-cemento.php';
+
+// =============================================================================
+// CATEGORÍA 2516 - ZELLIGE (Modularizado a inc/category-zellige.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-zellige.php';
+
+// =============================================================================
+// CATEGORÍA 4972 - AZULEJOS IMITACIÓN PIEDRA (Modularizado a inc/category-imitacion-piedra.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-imitacion-piedra.php';
+
+// =============================================================================
+// CATEGORÍA 2394 - FACHADAS Y MUROS (Modularizado a inc/category-fachadas.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-fachadas.php';
+
+// =============================================================================
+// CATEGORÍA 2188 - AZULEJO ESCAMA DE PEZ (Modularizado a inc/category-escama-pez.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-escama-pez.php';
+require get_template_directory() . '/inc/category-porcelanico-techlam.php';
+require get_template_directory() . '/inc/category-azulejos-15x15.php';
+require get_template_directory() . '/inc/category-azulejos-antiguos.php';
+require get_template_directory() . '/inc/category-azulejos-decorativos.php';
+require get_template_directory() . '/inc/category-azulejos-hexagonales.php';
+require get_template_directory() . '/inc/category-mosaico.php';
+require get_template_directory() . '/inc/category-suelo-barro.php';
+require get_template_directory() . '/inc/category-suelo-barro-exterior.php';
+require get_template_directory() . '/inc/category-muebles-bano.php';
+require get_template_directory() . '/inc/category-muebles-bano-pequeno.php';
+require get_template_directory() . '/inc/category-muebles-bano-baratos.php';
+require get_template_directory() . '/inc/category-muebles-bano-diseno.php';
+require get_template_directory() . '/inc/category-muebles-bano-rusticos.php';
+require get_template_directory() . '/inc/category-muebles-bano-suspendidos.php';
+require get_template_directory() . '/inc/category-muebles-bano-patas.php';
+require get_template_directory() . '/inc/category-columnas-bano.php';
+require get_template_directory() . '/inc/category-ofertas-muebles-bano.php';
+
+// === Categorias modernas de espejos (patron plano, igual que el resto del archivo)
+require get_template_directory() . '/inc/category-espejos-negros.php';
+require get_template_directory() . '/inc/category-espejo-bano-140.php';
+require get_template_directory() . '/inc/category-espejo-bano-50.php';
+require get_template_directory() . '/inc/category-espejo-bano-50x80.php';
+require get_template_directory() . '/inc/category-espejo-bano-60.php';
+require get_template_directory() . '/inc/category-espejo-bano-60x90.php';
+require get_template_directory() . '/inc/category-espejo-bano-antivaho.php';
+require get_template_directory() . '/inc/category-espejo-bano-con-luz.php';
+require get_template_directory() . '/inc/category-espejo-bano-90x100.php';
+require get_template_directory() . '/inc/category-espejo-bano-sin-luz.php';
+require get_template_directory() . '/inc/category-espejos-aumento.php';
+require get_template_directory() . '/inc/category-espejo-bano-90x80.php';
+require get_template_directory() . '/inc/category-espejo-redondo-70-luz.php';
+require get_template_directory() . '/inc/category-espejo-redondo-100.php';
+require get_template_directory() . '/inc/category-espejos-con-marco.php';
+require get_template_directory() . '/inc/category-espejo-ovalado-luz.php';
+$_adri_ledimex_path = get_template_directory() . '/inc/category-ledimex.php';
+if ( file_exists( $_adri_ledimex_path ) ) {
+    require $_adri_ledimex_path;
+}
+unset( $_adri_ledimex_path );
+
+// ============================================================================
+// PAGE 164094 - HOME ADRIHOSAN
+// El contenido se renderiza desde front-page.php (no necesita filtro the_content)
+// ============================================================================
+include get_template_directory() . '/inc/page-home.php';
+
+// =============================================================================
+// CATEGORÍA 2350 - SUELO TÉCNICO EXTERIOR (Modularizado a inc/category-suelo-tecnico.php)
+// =============================================================================
+require get_template_directory() . '/inc/category-suelo-tecnico.php';
+require get_template_directory() . '/inc/category-suelos-cocina.php';
+require get_template_directory() . '/inc/category-suelos-rusticos.php';
+require get_template_directory() . '/inc/category-porcelanico-tecnico.php';
+
+// =============================================================================
+// CATEGORÍAS 62, 2410, 1844, 2510, 2093 - Cerámica + Porcelánico + Gran Formato + Extrafino + Metro
+// =============================================================================
+require get_template_directory() . '/inc/category-ceramica-porcelanico.php';
+
+// =============================================================================
+// Categorías restantes modularizadas
+// =============================================================================
+require get_template_directory() . '/inc/category-imitacion-hidraulico.php';
+require get_template_directory() . '/inc/category-bano-imitacion.php';
+require get_template_directory() . '/inc/category-cocina-imitacion.php';
+require get_template_directory() . '/inc/category-camerinos.php';
+require get_template_directory() . '/inc/category-pilar-bh.php';
+require get_template_directory() . '/inc/category-paredes.php';
+require get_template_directory() . '/inc/category-hidraulica-original.php';
+require get_template_directory() . '/inc/category-pilar-bano.php';
+require get_template_directory() . '/inc/category-pilar-cocina.php';
+require get_template_directory() . '/inc/category-pilar-exterior.php';
+require get_template_directory() . '/inc/category-azulejos.php';
+require get_template_directory() . '/inc/category-azulejos-bano.php';
+require get_template_directory() . '/inc/category-azulejos-cocina.php';
+require get_template_directory() . '/inc/category-azulejos-exterior.php';
+require get_template_directory() . '/inc/category-piscinas.php';
+require get_template_directory() . '/inc/category-pavimentos.php';
+require get_template_directory() . '/inc/category-porcelanico-marmol.php';
+require get_template_directory() . '/inc/category-ceramica-vives.php';
+require get_template_directory() . '/inc/category-navarti.php';             // Cat 4722
+
+/* ========================================================================== */
+/* MARCAS PROPIAS (taxonomy: brand) + CARGADOR MODULAR DE CSS                 */
+/* ========================================================================== */
+// Require defensivo: si por alguna razon un archivo no esta en FTP o
+// se subio truncado, no tirar la web entera. Patron documentado en
+// CLAUDE.md tras el incidente del 2026-05-05 (cat 4333).
+$_adri_modular_incs = array(
+    '/inc/brand-solidker.php',              // Brand 2720 - Solidker
+    '/inc/category-encimeras-bano.php',     // Cat 94 - Encimeras de Bano (madre)
+    '/inc/category-encimeras-blancas.php',  // Cat 5354 - Encimeras Blancas (hija de 94)
+    '/inc/category-encimeras-160cm.php',    // Cat 2709 - Encimeras 160 cm (hija de 94)
+    '/inc/category-encimeras-60cm.php',     // Cat 2719 - Encimeras 60 cm (hija de 94)
+    '/inc/category-encimeras-doble-seno.php', // Cat 2717 - Encimeras Doble Seno (hija de 94)
+    '/inc/category-encimeras-negra.php',     // Cat 2707 - Encimeras Negra (hija de 94)
+    '/inc/category-encimeras-suspendida.php', // Cat 2708 - Encimeras Suspendida (hija de 94)
+    '/inc/category-encimeras-resina.php',    // Cat 96 - Encimeras de Resina (hija de 94)
+    '/inc/category-inodoro.php',            // Cat 81 - Inodoro (raiz silo Sanitarios > Inodoro)
+    '/inc/category-inodoro-minusvalidos.php', // Cat 3802 - Inodoro para minusvalidos (hija de 81)
+    '/inc/category-inodoro-japones.php',    // Cat 3793 - Inodoro japones (hija de 81)
+    '/inc/category-inodoro-pequeno.php',    // Cat 3798 - Inodoro pequeno (hija de 81)
+    '/inc/category-inodoros-baratos.php',   // Cat 3795 - Inodoros baratos (hija de 81)
+    '/inc/category-inodoros-colores.php',   // Cat 3811 - Inodoros de colores (hija de 81)
+    '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
+);
+foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
+    $_adri_inc_path = get_template_directory() . $_adri_inc_rel;
+    if ( file_exists( $_adri_inc_path ) ) {
+        require $_adri_inc_path;
+    }
+}
+unset( $_adri_modular_incs, $_adri_inc_rel, $_adri_inc_path );
+
+/* ========================================================================== */
+/* SISTEMA DE RESERVAS                                                        */
+/* ========================================================================== */
+include get_template_directory() . '/inc/reservas-google-auth.php';
+include get_template_directory() . '/inc/reservas-google-api.php';
+include get_template_directory() . '/inc/reservas-emails.php';
+include get_template_directory() . '/inc/reservas-api.php';
+include get_template_directory() . '/inc/reservas-rest-routes.php';
+include get_template_directory() . '/inc/reservas-pipedrive.php';
+include get_template_directory() . '/inc/reservas-storage.php';
+include get_template_directory() . '/inc/reservas-cancellation.php';
+include get_template_directory() . '/inc/reservas-reminders.php';
+include get_template_directory() . '/inc/reservas-healthcheck.php';
+include get_template_directory() . '/inc/page-contacto.php';
+
+/* ========================================================================== */
+/* ESTILOS FINALES PARA LA TABLA DE COMPARACIÓN (MÓVIL) */
+/* ========================================================================== */
+add_action('wp_head', function() {
+    // Solo aplicamos esto en la categoría Pilar Hidráulico (ID 4564)
+    if ( is_product_category( 4564 ) ) {
+        ?>
+        <style>
+        @media (max-width: 768px) {
+            
+            /* 1. OCULTAR EL TEXTO "VER OPCIONES" (Usando tu nueva clase) */
+            .ocultar-en-movil {
+                display: none !important;
+            }
+
+            /* 2. PONER LOS BOTONES EN FILA HORIZONTAL */
+            .bhp-comparison-table tfoot tr {
+                display: flex !important;
+                flex-direction: row !important;
+                width: 100% !important;
+                gap: 10px !important;
+                padding: 10px 0 !important;
+                border: none !important;
+            }
+
+            /* 3. QUE CADA BOTÓN OCUPE EXACTAMENTE LA MITAD */
+            .bhp-comparison-table tfoot td {
+                display: block !important;
+                width: 50% !important;
+                flex: 1 1 50% !important; 
+                padding: 0 !important;
+                margin: 0 !important;
+                border: none !important;
+                background: transparent !important;
+            }
+
+            /* 4. LIMPIEZA DE CUALQUIER TEXTO AUTOMÁTICO */
+            .bhp-comparison-table tfoot td::before {
+                content: none !important;
+                display: none !important;
+            }
+
+            /* 5. DISEÑO DE LOS BOTONES */
+            .bhp-comparison-table tfoot .boton-adrihosan {
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                height: 42px !important;
+                font-size: 11px !important;
+                margin: 0 !important;
+                text-align: center !important;
+                padding: 0 5px !important;
+            }
+        }
+        </style>
+        <?php
+    }
+}, 100);
+
+// CACHÉ INTELIGENTE PARA FILTROS - OPTIMIZACIÓN CRÍTICA
+function adrihosan_cache_filter_widget($widget_id, $cache_key) {
+    // Intentar recuperar del caché (duración: 1 hora = 3600 segundos)
+    $cached = get_transient($cache_key);
+    
+    if ($cached !== false) {
+        return $cached;
+    }
+    
+    // Si no existe caché, generar el widget
+    $output = do_shortcode("[fe_widget id='$widget_id']");
+    
+    // Guardar en caché por 1 hora
+    set_transient($cache_key, $output, 3600);
+    
+    return $output;
+}
+
+// Limpiar cachés de filtros SOLO cuando se edita/crea un producto (optimizado)
+add_action('save_post_product', 'adrihosan_limpiar_cache_filtros', 10, 1);
+function adrihosan_limpiar_cache_filtros($post_id) {
+    // Solo si es una actualización real, no autoguardado ni revisiones
+    if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
+        return;
+    }
+    
+    // Array de todas las cachés de filtros
+    $caches = array(
+        'cache_filter_metro',
+        'cache_filter_hidraulico', 
+        'cache_filter_imitacion',
+        'cache_filter_hidraulica_original',
+        'cache_filter_bano',
+        'cache_filter_bano_v2',
+        'cache_filter_cocina',
+        'cache_filter_exterior',
+        'cache_filter_imitacion_hidraulico',
+        'cache_filter_cocina_imitacion',
+        'cache_filter_bano_imitacion'
+    );
+    
+    // Limpiar todas las cachés de una vez
+    foreach ($caches as $cache) {
+        delete_transient($cache);
+    }
+}
+
+/* ========================================================================== */
+/* 5. ENQUEUE DE ASSETS EXTERNOS (CSS Y JS) - OPTIMIZACIÓN PASO 2 */
+/* ========================================================================== */
+
+// =============================================================================
+// SISTEMA INTERMEDIO - DESACTIVADO (Migrado a sistema modular category-{ID}.css)
+// =============================================================================
+// add_action('wp_enqueue_scripts', 'adrihosan_enqueue_category_assets');
+//
+// function adrihosan_enqueue_category_assets() {
+//     // Solo cargar en categorías específicas y no en productos individuales
+//     if (is_singular('product')) {
+//         return;
+//     }
+//
+//     // Array lookup es mucho más eficiente que múltiples if statements
+//     $cat_assets = array(
+//         2093 => 'metro',
+//         1844 => 'hidraulico',
+//         2510 => 'imitacion',
+//         4564 => 'hidraulica',
+//         4862 => 'hidraulica-original',
+//         4865 => 'hidraulica-bano',
+//         4866 => 'hidraulica-cocina',
+//         4869 => 'hidraulica-exterior',
+//         2082 => 'imitacion-hidraulico',
+//         4876 => 'cocina-imitacion',
+//         2083 => 'bano-imitacion',
+//         4806 => 'paredes',
+//         1789 => 'azulejos-bano'
+//     );
+//
+//     // Verificar si estamos en alguna de estas categorías
+//     foreach ($cat_assets as $cat_id => $asset_name) {
+//         if (is_product_category($cat_id)) {
+//             // Cargar CSS
+//             wp_enqueue_style(
+//                 "adrihosan-{$asset_name}-styles",
+//                 get_template_directory_uri() . "/assets/css/categoria-{$asset_name}.css",
+//                 array(),
+//                 '1.0.0'
+//             );
+//
+//             // Cargar JS
+//             wp_enqueue_script(
+//                 "adrihosan-{$asset_name}-scripts",
+//                 get_template_directory_uri() . "/assets/js/categoria-{$asset_name}.js",
+//                 array('jquery'),
+//                 '1.0.0',
+//                 true
+//             );
+//
+//             // Solo puede ser una categoría a la vez, salir del loop
+//             break;
+//         }
+//     }
+// }
+
+
+/**
+ * NOTA: el cargador modular de CSS por categoria/brand/page vive ahora
+ * en inc/cache-and-css.php (require justo abajo, en la seccion de includes).
+ * La funcion adrihosan_cargar_css_categoria() estaba duplicada aqui y se
+ * cargaba la version vieja sin soporte para taxonomia brand, dejando sin
+ * CSS la pagina /brand/solidker/. Eliminada para que solo viva la nueva.
+ */
+
+/**
+ * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ */
+function adrihosan_preload_css_critico() {
+    if (is_product_category()) {
+        $cat_id = get_queried_object_id();
+        $css_path = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
+        if (file_exists($css_path)) {
+            echo '<link rel="preload" href="' . esc_url(get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css') . '" as="style">' . "\n";
+        }
+    }
+}
+add_action('wp_head', 'adrihosan_preload_css_critico', 1);
+
+/**
+ * Adrihosan: Ordenación FORZADA para diferenciar categorías
+ */
+add_action( 'woocommerce_product_query', 'adrihosan_orden_estricto_ids' );
+
+function adrihosan_orden_estricto_ids( $q ) {
+    if ( is_admin() || ! $q->is_main_query() ) {
+        return;
+    }
+
+    // 1. COCINA (ID 4866) -> POR NOMBRE (A-Z)
+    // Empezará por "Baldosa A..."
+    if ( is_product_category( 4866 ) ) {
+        $q->set( 'orderby', 'title' );
+        $q->set( 'order', 'ASC' );
+    }
+
+    // 2. BAÑO (ID 4865) -> POR NOMBRE INVERSO (Z-A)
+    // Empezará por "Baldosa V..." o la última letra.
+    // Esto garantiza que la parrilla sea 100% diferente a Cocina.
+    elseif ( is_product_category( 4865 ) ) {
+        $q->set( 'orderby', 'title' );
+        $q->set( 'order', 'DESC' );
+    }
+
+    // 3. EXTERIOR (ID 4869) -> PSEUDO-ALEATORIO POR DÍA (sin ORDER BY RAND)
+    // Cambia cada día pero NO mata MySQL. RAND() causaba picos de CPU al 100%.
+    // Estrategia: ordenar por ID ASC/DESC alternando seg&uacute;n el d&iacute;a.
+    // NOTA: NO usar $q->set('offset') aqu&iacute;: rompe la paginaci&oacute;n de WooCommerce.
+    elseif ( is_product_category( 4869 ) ) {
+        $seed = absint( date('Ymd') ) % 9973; // Primo grande, cambia cada día
+        $q->set( 'orderby', 'ID' );
+        $q->set( 'order', ( $seed % 2 === 0 ) ? 'ASC' : 'DESC' );
+    }
+
+    // 4. INODOROS BARATOS (ID 3795) -> PRECIO ASCENDENTE
+    // El argumento de la pagina es el precio: el mas barato primero
+    // (159,90 EUR de entrada al momento del montaje). Usa meta_value_num
+    // sobre _price (campo de WooCommerce) para orden numerico correcto.
+    elseif ( is_product_category( 3795 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
+    }
+}
+
+/**
+ * Adrihosan: Orderby personalizado "date-asc" (de antiguo a nuevo)
+ * Permite usar ?orderby=date-asc en URLs de categoría
+ */
+add_filter('woocommerce_get_catalog_ordering_args', 'adrihosan_orderby_date_asc');
+function adrihosan_orderby_date_asc($args) {
+    if (isset($_GET['orderby']) && $_GET['orderby'] === 'date-asc') {
+        $args['orderby'] = 'date';
+        $args['order'] = 'ASC';
+    }
+    return $args;
+}
+
+add_filter('woocommerce_catalog_orderby', 'adrihosan_add_date_asc_option');
+function adrihosan_add_date_asc_option($options) {
+    $options['date-asc'] = 'Antiguos primero';
+    return $options;
+}
+
+// NOTA: adrihosan_preservar_filtros_en_paginacion() ahora vive en
+// inc/cache-and-css.php (mismo fichero que el cargador de CSS). Se
+// elimino su duplicado aqui para evitar fatal "Cannot redeclare".
+
+/**
+ * Canonical para paginación del custom post type Escaparate
+ * Evita soft 404 en páginas paginadas profundas del escaparate
+ */
+add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
+    if ( is_post_type_archive( 'escaparate' ) && is_paged() ) {
+        $canonical = get_post_type_archive_link( 'escaparate' );
+    }
+    return $canonical;
+} );
+
+require_once get_stylesheet_directory() . '/inc/helpers-h1.php';

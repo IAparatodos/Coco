@@ -40,7 +40,7 @@ function adrihosan_pilar_paredes_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/09/Azulejos-Hidraulicos-para-Pared.jpg');">
         <div class="hero-content">
-            <h1>Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Azulejo Imitaci&oacute;n Hidr&aacute;ulico para Pared' ); ?></h1>
             <p>Redecora sin obras y transforma tus espacios. Descubre c&oacute;mo un simple cambio de azulejos en la pared puede darle una nueva vida a tu hogar.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-paredes" class="hero-btn primary">Ver Cat&aacute;logo</a>
@@ -76,13 +76,16 @@ function adrihosan_pilar_paredes_contenido_superior() {
     </section>
     
     <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
+        <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>¡Consejo de AdrIA!</strong> Selecciona las características que buscas y recuerda pulsar el botón <strong>"FILTRAR"</strong> para ver los azulejos disponibles.</p>
     </div>
     
     <div id="destino-filtro-adria-paredes" class="solo-movil-filtro" style="display:none; text-align:center; margin: 20px 0 40px 0; min-height: 60px;"></div>
-    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="425985"]'); ?></div>
+    <div class="filter-container-master" style="margin-bottom:50px;"><?php echo do_shortcode('[fe_widget id="427137"]'); ?></div>
     
     <div id="catalogo-paredes" class="product-loop-header"><h2 class="product-loop-title">Cat&aacute;logo de Azulejos para Pared</h2></div>
+
+    <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 
@@ -91,6 +94,7 @@ function adrihosan_pilar_paredes_contenido_superior() {
  */
 function adrihosan_pilar_paredes_contenido_inferior() {
     ?>
+    </div><!-- /fe-products-wrapper -->
     <?php
     // SEO: Contenido dinámico desde WooCommerce category_description()
     $descripcion_editor = category_description();
@@ -98,7 +102,7 @@ function adrihosan_pilar_paredes_contenido_inferior() {
     ?>
     <section class="bho-guide-section">
         <div class="bho-guide-wrapper" style="max-width: 850px; margin: 0 auto; padding: 40px 20px;">
-            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins'; color: #3f6f7b; line-height: 1.8;">
+            <div class="term-description-dinamica" style="text-align: left; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #3f6f7b; line-height: 1.8;">
                 <?php echo $descripcion_editor; ?>
             </div>
         </div>

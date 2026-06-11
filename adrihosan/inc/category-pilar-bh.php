@@ -47,7 +47,7 @@ function adrihosan_pilar_bh_contenido_superior() {
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('<?php echo esc_url( $hero_img_url ); ?>');">
         <div class="hero-content">
-            <h1>Baldosa Hidr&aacute;ulica</h1>
+            <h1><?php echo adrihosan_h1_dinamico( 'Baldosa Hidr&aacute;ulica' ); ?></h1>
             <p>Descubre el universo del suelo hidr&aacute;ulico. Elige entre la autenticidad de la baldosa artesanal o la resistencia del porcel&aacute;nico de imitaci&oacute;n. La soluci&oacute;n perfecta para tu proyecto est&aacute; aqu&iacute;.</p>
             <div class="hero-buttons">
                 <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="hero-btn primary">Ver Colecci&oacute;n Original</a>
@@ -86,10 +86,6 @@ function adrihosan_pilar_bh_contenido_superior() {
         </div>
     </section>
 
-    <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p style="margin:0; font-family: 'Poppins'; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> &iquest;No sabes cu&aacute;l elegir? La <strong>baldosa original</strong> es para amantes de lo artesanal que disfrutan cuidando su suelo. El <strong>porcel&aacute;nico</strong> es para quienes buscan practicidad sin renunciar al dise&ntilde;o.</p>
-    </div>
-
     <section class="ap-product-header-section adrihosan-full-width-block" style="padding-bottom: 0;">
         <div class="ap-product-header-wrapper">
             <h2>Nuestros Best Sellers en Hidr&aacute;ulico</h2>
@@ -102,6 +98,9 @@ function adrihosan_pilar_bh_contenido_superior() {
             ?>
         </div>
     </section>
+
+    <!-- WRAPPER AJAX para Filter Everything Pro -->
+    <div id="fe-products-wrapper">
     <?php
 }
 /**
@@ -110,6 +109,7 @@ function adrihosan_pilar_bh_contenido_superior() {
 function adrihosan_pilar_bh_contenido_inferior() {
     if ( is_product_category( 4564 ) && ! is_singular('product') ) {
         ?>
+        </div><!-- /fe-products-wrapper -->
         <section class="bhp-comparison-section adrihosan-full-width-block">
             <div class="bhp-comparison-wrapper">
                 <h2>Original vs. Imitaci&oacute;n: Ficha T&eacute;cnica Comparativa</h2>
