@@ -2,15 +2,19 @@
 /**
  * REST API endpoints for reservations
  *
- * GET  /wp-json/adrihosan/v1/availability?start=YYYY-MM-DD&end=YYYY-MM-DD
+ * POST /wp-json/adrihosan/v1/availability   body: { start, end }  (YYYY-MM-DD)
  * POST /wp-json/adrihosan/v1/bookings
+ *
+ * /availability es POST a proposito: LiteSpeed (y cualquier cache/CDN) NUNCA
+ * cachea POST, asi que es imposible servir una disponibilidad antigua. Se
+ * mantiene GET para pruebas directas, pero el frontend usa POST.
  *
  * Tokens never reach the frontend. Rate-limited + honeypot + nonce.
  */
 
 add_action( 'rest_api_init', function () {
     register_rest_route( 'adrihosan/v1', '/availability', [
-        'methods'             => 'GET',
+        'methods'             => [ 'GET', 'POST' ],
         'callback'            => 'adrihosan_rest_availability',
         'permission_callback' => '__return_true',
     ] );

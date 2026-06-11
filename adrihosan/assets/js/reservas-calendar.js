@@ -85,23 +85,23 @@
         state.loading = true;
         if (slotsGrid) slotsGrid.innerHTML = '<div class="reservas-slots-loading">Cargando disponibilidad...</div>';
 
-        // Cache-buster: la URL por semana es fija (mismo start/end), asi que
-        // cualquier capa que cachee por URL (LiteSpeed REST, un CDN tipo
-        // Cloudflare por delante, o el propio navegador) puede servir una
-        // respuesta antigua ("no hay disponibilidad") aunque el calendario ya
-        // este libre. Anadir un parametro unico hace cada peticion distinta y
-        // descarta el cacheo a nivel de URL. cache:'no-store' refuerza en el
-        // navegador. La disponibilidad SIEMPRE debe pedirse en vivo.
-        var url = RESERVAS.restUrl + '/availability?start=' + start + '&end=' + end + '&_=' + Date.now();
+        // POST a proposito (no GET): LiteSpeed y cualquier cache/CDN NUNCA
+        // cachean peticiones POST, asi que es IMPOSIBLE que sirvan una
+        // disponibilidad antigua ("no hay disponibilidad"). Es la unica medida
+        // que no depende de la config de LiteSpeed (Cache REST API, query
+        // strings, etc.). La disponibilidad SIEMPRE se pide en vivo.
+        //
+        // SIN X-WP-Nonce a proposito: /availability es publico y no lo
+        // verifica; enviar un nonce caducado (del HTML de /contacto/ cacheado)
+        // provocaba 403 rest_cookie_invalid_nonce. El POST /bookings si lo
+        // envia (alli es obligatorio).
+        var url = RESERVAS.restUrl + '/availability';
 
-        // SIN X-WP-Nonce a proposito: /availability es publico y no verifica
-        // nonce, pero si se envia uno CADUCADO (el HTML de /contacto/ cacheado
-        // mas de 12-24h conserva el nonce viejo), WordPress rechaza la
-        // peticion con 403 rest_cookie_invalid_nonce y el calendario pinta
-        // "no hay huecos". Sin la cabecera, el calendario es inmune al nonce
-        // caducado. El POST /bookings SI lo envia (alli es obligatorio).
         fetch(url, {
-            cache: 'no-store'
+            method: 'POST',
+            cache: 'no-store',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ start: start, end: end })
         })
             .then(function (res) { return res.json(); })
             .then(function (json) {

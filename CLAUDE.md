@@ -312,6 +312,17 @@ Aun con el cache-buster desplegado volvió a fallar, y el patrón clave era: **"
 
 **Regla general:** cualquier página cuyo HTML incruste un nonce (`wp_create_nonce`) que luego usa JS contra la REST API **no puede cachearse a página completa**, o el nonce debe obtenerse en runtime. Y los GET públicos **no deben enviar `X-WP-Nonce`**: no aporta nada y un nonce caducado tumba la petición.
 
+### Reincidencia 4 (2026-06-11): solución definitiva = /availability por POST
+
+Confirmado con el usuario: archivos desplegados, healthcheck verde (backend sano), y aun así **"purgo LiteSpeed → funciona → al rato vuelve"**. Como purgar **LiteSpeed** (no Cloudflare) lo arregla, el cacheo es de **LiteSpeed**, y está ignorando tanto el cache-buster `&_=` (LiteSpeed configurado para ignorar query strings) como el `litespeed_control_set_nocache` por PHP (Cache REST API activo).
+
+**Fix definitivo e inmune a la config de LiteSpeed:** `/availability` se pide por **POST**, no por GET. LiteSpeed (y cualquier CDN/caché) **nunca cachea POST** → imposible servir una respuesta antigua.
+
+- `inc/reservas-rest-routes.php`: la ruta `/availability` acepta `[ 'GET', 'POST' ]` (GET solo para pruebas directas; el frontend usa POST). El callback ya lee `start`/`end` con `get_param()`, que funciona igual con body JSON.
+- `assets/js/reservas-calendar.js`: el fetch de disponibilidad es `method: 'POST'` con `body: JSON.stringify({ start, end })` y `Content-Type: application/json`.
+
+**Regla general (la definitiva):** un endpoint REST cuya respuesta cambia constantemente (disponibilidad, stock, precios en vivo) y al que le persigue el caché de LiteSpeed pese a las cabeceras → **hacerlo POST**. Es la única medida que no depende de ningún ajuste del panel. El cache-buster por query string NO basta si LiteSpeed ignora query strings.
+
 ### Síntoma típico de regresión
 
 Si vuelve a aparecer "todo no disponible" o "datos antiguos" en cualquier endpoint dinámico del tema:
