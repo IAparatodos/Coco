@@ -21,6 +21,37 @@ function adrihosan_home_contenido() {
         </div>
     </section>
 
+    <!-- 1b. GEO BLOCK ¿Qué es Adrihosan? + mini-FAQ (citable para crawlers de IA) -->
+    <section class="adrihosan-quees">
+        <div class="adrihosan-quees-inner">
+          <h2 class="adrihosan-quees-title">¿Qué es Adrihosan?</h2>
+          <p class="adrihosan-quees-lead"><strong>Adrihosan es una tienda especializada en azulejos, baldosa hidráulica, sanitarios y muebles de baño y cocina, con tienda física en Valencia y venta online a toda España.</strong> Detrás no hay un gran almacén anónimo: hay un oficio familiar de más de 30 años y tres generaciones. Amparo y Ricardo asesoran cada proyecto en persona o por videollamada.</p>
+          <p class="adrihosan-quees-data">Más de <strong>33.000 referencias</strong> en catálogo, especialistas declarados en <strong>baldosa hidráulica artesanal</strong> y pavimento porcelánico, con una valoración de <strong>4,6/5 sobre 174 reseñas verificadas</strong>. Más de <strong>304.000 personas</strong> han pasado ya por aquí buscando ideas y respuestas para su reforma.</p>
+          <div class="adrihosan-quees-faq">
+            <details><summary>¿Qué vende Adrihosan?</summary><p>Azulejos, baldosa hidráulica, pavimento porcelánico, sanitarios, platos de ducha, mamparas, grifería y muebles de baño y cocina. Online y en nuestra tienda física de Valencia.</p></details>
+            <details><summary>¿Hacéis envíos a toda España?</summary><p>Sí, enviamos a toda España.</p></details>
+            <details><summary>¿Puedo pedir asesoramiento sin ir a la tienda?</summary><p>Sí. Ofrecemos asesoría gratuita por videollamada con Amparo o Ricardo, para que elijas los materiales con criterio antes de comprar.</p></details>
+            <details><summary>¿Dónde está la tienda física?</summary><p>En C/ Cuba, 71 (esq. C/ dels Centelles, 48), 46006 Valencia. Teléfono: <a href="tel:+34961957136">+34 961 957 136</a>.</p></details>
+          </div>
+        </div>
+    </section>
+
+    <style>
+    .adrihosan-quees{width:100%;padding:3rem 1.5rem;background:#fff;font-family:Poppins,sans-serif;}
+    .adrihosan-quees-inner{max-width:900px;margin:auto;}
+    .adrihosan-quees-title{font-size:2rem;color:#102e35;text-align:center;margin:0 0 1.5rem;font-weight:700;}
+    .adrihosan-quees-lead{font-size:1.1rem;line-height:1.6;color:#333;margin:0 0 1rem;}
+    .adrihosan-quees-data{font-size:1rem;line-height:1.6;color:#555;margin:0 0 2rem;}
+    .adrihosan-quees-faq{display:flex;flex-direction:column;gap:.75rem;}
+    .adrihosan-quees-faq details{border:1px solid #e6e6e6;border-radius:8px;background:#f9f9f9;}
+    .adrihosan-quees-faq summary{cursor:pointer;padding:.9rem 1rem;font-weight:600;color:#102e35;list-style:none;position:relative;}
+    .adrihosan-quees-faq summary::-webkit-details-marker{display:none;}
+    .adrihosan-quees-faq summary::after{content:"+";position:absolute;right:1rem;color:#4dd2d0;font-size:1.3rem;line-height:1;}
+    .adrihosan-quees-faq details[open] summary::after{content:"-";}
+    .adrihosan-quees-faq details p{margin:0;padding:0 1rem 1rem;color:#555;line-height:1.6;}
+    .adrihosan-quees-faq a{color:#1a6c7a;}
+    </style>
+
     <!-- 2. OFERTAS DEL MES -->
     <section class="home-offers">
         <div class="home-offers-heading">
