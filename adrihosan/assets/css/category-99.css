@@ -222,7 +222,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -300,7 +300,7 @@
     border-color: #3f6f7b;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(193, 122, 80, 0.3);
+    box-shadow: 0 4px 12px rgba(63, 111, 123, 0.3);
 }
 
 /* ========================================================================== */
