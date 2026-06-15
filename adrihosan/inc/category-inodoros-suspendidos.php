@@ -43,7 +43,7 @@ function adrihosan_categoria_inodoros_suspendidos_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Inodoros-suspendidos-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoro-suspendido-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Inodoros suspendidos' ); ?></h1>
             <p class="hero-tagline">Dise&ntilde;o moderno con el suelo despejado.</p>
