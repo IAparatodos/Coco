@@ -386,3 +386,37 @@ HTML;
 </div>
 HTML;
 }, 10 );
+
+// 4.4 - JS de "ultimo recurso": oculta cualquier elemento con texto
+// "Ricardo Hoyos" que este FUERA de .adri-au. Precision por contenido,
+// no por selector. Solo se carga en el archive del autor 2.
+add_action( 'wp_footer', function () {
+    if ( ! adri_au_ricardo_is_target() ) { return; }
+    ?>
+<script id="adri-au-dedupe">
+(function(){
+  var adri = document.querySelector('.adri-au');
+  if (!adri) return;
+  var hay = function(t){ return t && t.toLowerCase().indexOf('ricardo hoyos') !== -1; };
+  // Candidatos tipicos donde el theme pinta el titulo del autor.
+  var sel = 'h1, h2, h3, .page-title, .archive-title, .entry-title, .author-title, '
+          + '.page-header, .archive-header, header.entry-header, .author-info, '
+          + '.page-title-bar, .post-author, .vcard';
+  var nodos = document.querySelectorAll(sel);
+  for (var i = 0; i < nodos.length; i++) {
+    var el = nodos[i];
+    if (adri.contains(el)) continue; // no toco lo que esta dentro de mi hero
+    var t = (el.textContent || '').trim();
+    if (hay(t) && t.length < 200) { el.style.display = 'none'; }
+  }
+  // Tambien si <header> del main contiene texto "Ricardo Hoyos", ocultarlo.
+  var headers = document.querySelectorAll('main header, .page-blog header, body > header');
+  for (var j = 0; j < headers.length; j++) {
+    var h = headers[j];
+    if (adri.contains(h)) continue;
+    if (hay(h.textContent || '')) { h.style.display = 'none'; }
+  }
+})();
+</script>
+    <?php
+}, 99 );
