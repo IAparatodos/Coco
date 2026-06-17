@@ -114,11 +114,32 @@ if ( ! function_exists( 'adri_au_ricardo_is_target' ) ) {
     }
 }
 
-// 4.1 - CSS centralizado en wp_head (una sola vez por carga)
+// 4.1a - Ocultar titulo y descripcion por defecto del archive (theme/WP)
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if ( adri_au_ricardo_is_target() ) { return ''; }
+    return $title;
+}, 99 );
+
+add_filter( 'get_the_archive_description', function ( $desc ) {
+    if ( adri_au_ricardo_is_target() ) { return ''; }
+    return $desc;
+}, 99 );
+
+// 4.1b - CSS centralizado en wp_head (una sola vez por carga)
 add_action( 'wp_head', function () {
     if ( ! adri_au_ricardo_is_target() ) { return; }
     ?>
 <style id="adri-au-css">
+/* Ocultar el header por defecto del archive (titulo/descripcion del autor que
+   pinta el theme antes de loop_start). Selectores comunes en themes modernos. */
+body.author-2 .page-header,
+body.author-2 .page-title-bar,
+body.author-2 .archive-header,
+body.author-2 .archive-title,
+body.author-2 > main > header,
+body.author-2 .page-blog > header,
+body.author-2 .author-title,
+body.author-2 h1.entry-title:not(.adri-au h1):first-of-type{display:none !important}
 /* Variables corporativas: definidas en los 3 nodos top-level del plugin
    (no estan anidados en .adri-au cuando loop_end los inyecta fuera). */
 .adri-au, .adri-au-postshead, .adri-au-cta{
