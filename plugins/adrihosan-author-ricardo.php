@@ -142,8 +142,21 @@ body.author-2 .author-title,
 body.author-2 h1.entry-title:not(.adri-au h1):first-of-type{display:none !important}
 /* Regla final: sea cual sea el markup del theme, garantizar que SOLO mi h1
    del hero queda visible (evita el "Ricardo Hoyos Perez" duplicado). */
-body.author-2 h1{display:none !important}
+body.author-2 h1, body.author-2 h2.page-title, body.author-2 .page-title,
+body.author-2 .archive-title, body.author-2 .entry-title:not(.adri-au .entry-title){display:none !important}
 body.author-2 .adri-au h1{display:block !important}
+/* Ocultar cualquier <header> directo dentro del main que aparezca antes del
+   plugin (el header del archive del theme). No afecta a mis bloques porque
+   ninguno de los nodos del plugin es un <header>. */
+body.author-2 main > header,
+body.author-2 main > .page-header,
+body.author-2 main > div.page-blog > header,
+body.author-2 main > div.page-blog > .page-header,
+body.author-2 main > div.page-blog > .archive-header,
+body.author-2 main > div.page-blog > .term-description,
+body.author-2 main > div.page-blog > .author-info,
+body.author-2 main > div.page-blog > h1,
+body.author-2 main > div.page-blog > h2{display:none !important}
 /* Variables corporativas: definidas en los 3 nodos top-level del plugin
    (no estan anidados en .adri-au cuando loop_end los inyecta fuera). */
 .adri-au, .adri-au-postshead, .adri-au-cta{
