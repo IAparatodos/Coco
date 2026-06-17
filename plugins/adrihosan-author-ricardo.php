@@ -231,14 +231,6 @@ add_action( 'loop_start', function ( $q ) {
         $chips_html .= "<span class='adri-au-chip'>" . esc_html( $c ) . "</span>";
     }
 
-    // FAQs - forma real es posicional [0]=pregunta, [1]=respuesta.
-    $faq_html = '';
-    foreach ( adrihosan_ricardo_faqs() as $f ) {
-        $pq = esc_html( $f[0] );
-        $pa = esc_html( $f[1] );
-        $faq_html .= "<details><summary>{$pq}</summary><p>{$pa}</p></details>";
-    }
-
     echo <<<HTML
 <div class="adri-au">
   <div class="adri-au-hero">
@@ -284,12 +276,35 @@ add_action( 'loop_start', function ( $q ) {
       </aside>
     </div>
   </div>
+</div>
+<h2 class="adri-au-postshead">Artículos de Ricardo</h2>
+HTML;
+}, 10 );
+
+// 4.3 - loop_end: FAQs + CTA WhatsApp + email
+add_action( 'loop_end', function ( $q ) {
+    if ( ! is_a( $q, 'WP_Query' ) || ! $q->is_main_query() ) { return; }
+    if ( ! adri_au_ricardo_is_target() ) { return; }
+    static $once = false;
+    if ( $once ) { return; }
+    $once = true;
+
+    // FAQs - forma real es posicional [0]=pregunta, [1]=respuesta.
+    $faq_html = '';
+    foreach ( adrihosan_ricardo_faqs() as $f ) {
+        $pq = esc_html( $f[0] );
+        $pa = esc_html( $f[1] );
+        $faq_html .= "<details><summary>{$pq}</summary><p>{$pa}</p></details>";
+    }
+
+    // FAQs envueltas en otro .adri-au para que hereden las CSS custom props.
+    echo <<<HTML
+<div class="adri-au">
   <div class="adri-au-sec adri-au-wrap adri-au-faq">
     <div class="adri-au-head"><h2>Preguntas frecuentes</h2><div class="adri-au-rule"></div></div>
     {$faq_html}
   </div>
 </div>
-<h2 class="adri-au-postshead">Artículos de Ricardo</h2>
 HTML;
 
     // Schema FAQPage para el archivo de autor. Rank Math NO emite FAQPage en
@@ -310,12 +325,6 @@ HTML;
         'mainEntity' => $main,
     );
     echo "<script type='application/ld+json'>" . wp_json_encode( $schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . "</script>";
-}, 10 );
-
-// 4.3 - loop_end: CTA WhatsApp + email
-add_action( 'loop_end', function ( $q ) {
-    if ( ! is_a( $q, 'WP_Query' ) || ! $q->is_main_query() ) { return; }
-    if ( ! adri_au_ricardo_is_target() ) { return; }
 
     $wa   = 'https://wa.me/34961957136';
     $mail = 'mailto:info@adrihosan.com';
