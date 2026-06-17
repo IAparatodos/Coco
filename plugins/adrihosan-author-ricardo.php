@@ -119,11 +119,15 @@ add_action( 'wp_head', function () {
     if ( ! adri_au_ricardo_is_target() ) { return; }
     ?>
 <style id="adri-au-css">
-.adri-au{
+/* Variables corporativas: definidas en los 3 nodos top-level del plugin
+   (no estan anidados en .adri-au cuando loop_end los inyecta fuera). */
+.adri-au, .adri-au-postshead, .adri-au-cta{
   --turq:#12ABA6; --turq-deep:#0A6F6C; --ink:#0C2A30; --ink-soft:#1A2B2F;
   --mute:#4E6A6E; --line:#E2ECEC; --card:#fff;
-  grid-column:1 / -1; width:100%;
   font-family:Poppins,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+.adri-au{
+  grid-column:1 / -1; width:100%;
 }
 .adri-au *{box-sizing:border-box}
 .adri-au-wrap{max-width:1080px;margin:0 auto;padding:0 20px}
