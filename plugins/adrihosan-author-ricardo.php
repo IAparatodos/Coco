@@ -140,6 +140,10 @@ body.author-2 > main > header,
 body.author-2 .page-blog > header,
 body.author-2 .author-title,
 body.author-2 h1.entry-title:not(.adri-au h1):first-of-type{display:none !important}
+/* Regla final: sea cual sea el markup del theme, garantizar que SOLO mi h1
+   del hero queda visible (evita el "Ricardo Hoyos Perez" duplicado). */
+body.author-2 h1{display:none !important}
+body.author-2 .adri-au h1{display:block !important}
 /* Variables corporativas: definidas en los 3 nodos top-level del plugin
    (no estan anidados en .adri-au cuando loop_end los inyecta fuera). */
 .adri-au, .adri-au-postshead, .adri-au-cta{
