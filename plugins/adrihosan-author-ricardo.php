@@ -131,7 +131,10 @@ add_action( 'wp_head', function () {
 .adri-au-hero{position:relative;overflow:hidden;border-radius:20px;margin:0;
   background:radial-gradient(120% 140% at 85% 10%,#14C2BC 0%,var(--turq) 38%,var(--turq-deep) 100%);
   color:#fff}
-.adri-au-hero-in{display:flex;gap:34px;align-items:center;flex-wrap:wrap;padding:42px 30px}
+.adri-au-hero::after{content:"";position:absolute;inset:0;
+  background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g fill="none" stroke="white" stroke-opacity="0.06"><rect x="0" y="0" width="30" height="30"/><rect x="30" y="30" width="30" height="30"/></g></svg>');
+  opacity:.7;pointer-events:none}
+.adri-au-hero-in{position:relative;z-index:1;display:flex;gap:34px;align-items:center;flex-wrap:wrap;padding:48px 30px}
 .adri-au-photo{width:168px;height:168px;border-radius:24px;object-fit:cover;flex-shrink:0;
   border:4px solid rgba(255,255,255,.85);box-shadow:0 18px 40px rgba(8,40,44,.35)}
 .adri-au-htxt{flex:1;min-width:280px}
@@ -147,8 +150,9 @@ add_action( 'wp_head', function () {
 .adri-au-stat span{font-size:11.5px;font-weight:500;color:rgba(255,255,255,.85)}
 /* TRUST */
 .adri-au-trust{background:var(--ink);color:#fff;border-radius:14px;margin:14px 0 0}
-.adri-au-trust-in{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;padding:15px 22px}
+.adri-au-trust-in{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;padding:16px 22px}
 .adri-au-t{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:500;color:rgba(255,255,255,.92)}
+.adri-au-t svg{flex-shrink:0}
 /* SECCIONES */
 .adri-au-sec{padding:40px 0 0}
 .adri-au-head{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
@@ -213,7 +217,6 @@ add_action( 'loop_start', function ( $q ) {
     $nombre   = esc_html( $d['name'] );
     $rol      = esc_html( $d['role'] );
     $foto     = esc_url( $d['photo'] );
-    $bio      = esc_html( $d['bio'] );
     $linkedin = esc_url( $d['li'] );
     $equis    = esc_url( $d['tw'] );
     $sobre    = esc_url( $d['url'] );
@@ -252,16 +255,20 @@ add_action( 'loop_start', function ( $q ) {
   </div>
   <div class="adri-au-trust">
     <div class="adri-au-trust-in adri-au-wrap">
-      <div class="adri-au-t">✓ Asesoría gratuita por videollamada</div>
-      <div class="adri-au-t">✓ +30 años en azulejos y baño</div>
-      <div class="adri-au-t">✓ Valencia · envíos a toda España</div>
-      <div class="adri-au-t">✓ Respuesta rápida por WhatsApp</div>
+      <div class="adri-au-t"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12ABA6" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Asesoría gratuita por videollamada</div>
+      <div class="adri-au-t"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12ABA6" stroke-width="2.4"><path d="M12 2 4 6v6c0 5 8 8 8 8s8-3 8-8V6z"/></svg> +30 años en azulejos y baño</div>
+      <div class="adri-au-t"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12ABA6" stroke-width="2.4"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Valencia · envíos a toda España</div>
+      <div class="adri-au-t"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12ABA6" stroke-width="2.4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Respuesta rápida por WhatsApp</div>
     </div>
   </div>
   <div class="adri-au-sec adri-au-wrap">
     <div class="adri-au-head"><h2>Quién soy</h2><div class="adri-au-rule"></div></div>
     <div class="adri-au-bio">
-      <div><p class="adri-au-lead">{$bio}</p></div>
+      <div>
+        <p class="adri-au-lead">Aquí reúno las guías y artículos que escribo para Adrihosan, sobre lo que veo cada día en tienda y en obra.</p>
+        <p>Llevo más de 30 años vendiendo y asesorando sobre azulejos, mamparas y material de baño. Junto a Amparo dirijo nuestra tienda de cerámica y reforma en Valencia, especializada en baldosa hidráulica artesanal, porcelánico, sanitarios y mamparas.</p>
+        <p>Escribo desde la práctica, no desde el catálogo: lo que funciona, lo que da problemas en obra, las medidas que importan. La idea es simple, ayudarte a acertar con tu reforma sin sustos.</p>
+      </div>
       <aside class="adri-au-exp">
         <h3>Áreas de experiencia</h3>
         <div class="adri-au-chips">{$chips_html}</div>
@@ -307,7 +314,7 @@ add_action( 'loop_end', function ( $q ) {
     if ( ! adri_au_ricardo_is_target() ) { return; }
 
     $wa   = 'https://wa.me/34961957136';
-    $mail = 'mailto:hola@adrihosan.com';
+    $mail = 'mailto:info@adrihosan.com';
 
     echo <<<HTML
 <div class="adri-au-cta">
@@ -316,8 +323,14 @@ add_action( 'loop_end', function ( $q ) {
     <p>Escríbeme y te ayudo a elegir bien los materiales. Asesoría gratuita, sin compromiso.</p>
   </div>
   <div class="adri-au-btns">
-    <a class="adri-au-btn adri-au-wa" href="{$wa}">WhatsApp 96 195 71 36</a>
-    <a class="adri-au-btn adri-au-mail" href="{$mail}">Escribir por email</a>
+    <a class="adri-au-btn adri-au-wa" href="{$wa}">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2m0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20m4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2 0-.2 0-.3-.1-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c2.1.8 2.1.6 2.5.5a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3"/></svg>
+      WhatsApp 96 195 71 36
+    </a>
+    <a class="adri-au-btn adri-au-mail" href="{$mail}">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      Escribir por email
+    </a>
   </div>
 </div>
 HTML;
