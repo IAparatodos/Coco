@@ -2538,13 +2538,21 @@ function adrihosan_limpiar_cache_filtros($post_id) {
 
 /**
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ *
+ * IMPORTANTE: el href DEBE incluir la query string `?ver=filemtime()` igual
+ * que el <link rel="stylesheet"> que emite wp_enqueue_style() en
+ * cache-and-css.php. Si las dos URLs difieren (una con ver, otra sin),
+ * el browser NO empareja el preload con el stylesheet y lanza el warning
+ * "preloaded using link preload but not used within a few seconds".
  */
 function adrihosan_preload_css_critico() {
     if (is_product_category()) {
-        $cat_id = get_queried_object_id();
+        $cat_id   = get_queried_object_id();
         $css_path = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
         if (file_exists($css_path)) {
-            echo '<link rel="preload" href="' . esc_url(get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css') . '" as="style">' . "\n";
+            $css_url = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
+            $css_url = add_query_arg('ver', filemtime($css_path), $css_url);
+            echo '<link rel="preload" href="' . esc_url($css_url) . '" as="style">' . "\n";
         }
     }
 }
