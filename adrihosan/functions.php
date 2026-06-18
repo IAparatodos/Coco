@@ -238,6 +238,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 83: // Inodoros suspendidos (pilar silo, hija de 81)
             adrihosan_setup_inodoros_suspendidos_cpu_fix();
             break;
+        case 90: // Lavabos (raiz + pilar silo Sanitarios > Lavabos)
+            adrihosan_setup_lavabos_cpu_fix();
+            break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
             break;
@@ -1147,6 +1150,21 @@ function adrihosan_setup_inodoros_suspendidos_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_inodoros_suspendidos_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_suspendidos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_lavabos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabos_contenido_inferior', 99);
     }
 }
 
@@ -2312,6 +2330,7 @@ $_adri_modular_incs = array(
     '/inc/category-inodoro.php',            // Cat 81 - Inodoro (raiz silo Sanitarios > Inodoro)
     '/inc/category-inodoro-a-suelo.php',    // Cat 82 - Inodoro a suelo (pilar silo, hija de 81)
     '/inc/category-inodoros-suspendidos.php', // Cat 83 - Inodoros suspendidos (pilar silo, hija de 81)
+    '/inc/category-lavabos.php',            // Cat 90 - Lavabos (raiz + pilar silo Sanitarios > Lavabos)
     '/inc/category-suelos-porcelanicos-ofertas.php', // Cat 2396 - Suelos porcelanicos en oferta (pilar silo ofertas)
     '/inc/category-inodoro-minusvalidos.php', // Cat 3802 - Inodoro para minusvalidos (hija de 81)
     '/inc/category-inodoro-japones.php',    // Cat 3793 - Inodoro japones (hija de 81)
