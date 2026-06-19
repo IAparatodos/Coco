@@ -72,7 +72,16 @@ function _adri_enc1seno_render_superior() {
     $tid       = (int) get_queried_object_id();
     $term      = get_term( $tid, 'product_cat' );
     $n_prod    = ( $term && ! is_wp_error( $term ) ) ? (int) $term->count : 0;
-    $hero_img  = 'https://www.adrihosan.com/wp-content/uploads/2026/06/Encimera-bano-' . $ancho . 'cm-1seno-Adrihosan.jpg';
+    // URL del hero por ancho. Mapeo explicito porque los nombres de archivo
+    // en /uploads/ no siguen un patron homogeneo. Para anchos nuevos
+    // (100/130/150/160) anadir aqui la URL real cuando se suba la imagen.
+    $hero_map  = array(
+        120 => 'https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-120-cm-1-seno.jpg',
+        140 => 'https://www.adrihosan.com/wp-content/uploads/2026/06/Encimera-bano-140cm-1seno-Adrihosan.jpg',
+    );
+    $hero_img  = isset( $hero_map[ $ancho ] )
+        ? $hero_map[ $ancho ]
+        : 'https://www.adrihosan.com/wp-content/uploads/2026/06/Encimera-bano-' . $ancho . 'cm-1seno-Adrihosan.jpg';
     $h1_fall   = 'Encimera de ba&ntilde;o ' . $ancho . ' cm 1 seno';
     ?>
 
