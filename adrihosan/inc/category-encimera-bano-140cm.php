@@ -48,7 +48,7 @@ function adrihosan_categoria_encimera_bano_140cm_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Encimera-bano-140cm-1seno-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-120-cm-1-seno.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Encimera de ba&ntilde;o 140 cm 1 seno' ); ?></h1>
             <p class="hero-tagline">Solid Surface a medida, con el seno donde t&uacute; lo quieras.</p>
