@@ -183,13 +183,13 @@
 /* ========================================================================== */
 /* 3. SHORTCUTS PILLS                                                          */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-shortcuts-unused {
+.tax-product_cat.term-5387 .enc120-1seno-shortcuts-unused {
     padding: 25px 20px;
     background: #f0f7f8;
     font-family: 'Poppins', sans-serif;
 }
 
-.tax-product_cat.term-5387 .enc1seno-shortcuts-unused-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-shortcuts-unused-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -237,17 +237,17 @@
 /* ========================================================================== */
 /* 4. STORYTELLING                                                             */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-storytelling {
+.tax-product_cat.term-5387 .enc120-1seno-storytelling {
     padding: 60px 20px;
     background: #ffffff;
 }
 
-.tax-product_cat.term-5387 .enc1seno-storytelling-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-storytelling-wrapper {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.tax-product_cat.term-5387 .enc1seno-storytelling h2 {
+.tax-product_cat.term-5387 .enc120-1seno-storytelling h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
@@ -306,7 +306,7 @@
 /* ========================================================================== */
 /* 6. CTA INTERMEDIO                                                           */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-cta-mid {
+.tax-product_cat.term-5387 .enc120-1seno-cta-mid {
     padding: 40px 20px;
     background: #3f6f7b;
 }
@@ -355,17 +355,17 @@
 /* ========================================================================== */
 /* 7. COMPARATIVA DE MEDIDAS                                                   */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-comparativa {
+.tax-product_cat.term-5387 .enc120-1seno-comparativa {
     padding: 70px 20px;
     background: #ffffff;
 }
 
-.tax-product_cat.term-5387 .enc1seno-comparativa-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-comparativa-wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.tax-product_cat.term-5387 .enc1seno-comparativa h2 {
+.tax-product_cat.term-5387 .enc120-1seno-comparativa h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
@@ -474,17 +474,17 @@
 /* ========================================================================== */
 /* 8. MATERIALES GRID                                                          */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-materials {
+.tax-product_cat.term-5387 .enc120-1seno-materials {
     padding: 70px 20px;
     background: #f0f7f8;
 }
 
-.tax-product_cat.term-5387 .enc1seno-materials-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-materials-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.tax-product_cat.term-5387 .enc1seno-materials h2 {
+.tax-product_cat.term-5387 .enc120-1seno-materials h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
@@ -563,17 +563,17 @@
 /* ========================================================================== */
 /* 9. ASESORAMIENTO SOLIDKER                                                   */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-asesoramiento {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento {
     padding: 70px 20px;
     background: #ffffff;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento-wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento h2 {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -667,18 +667,18 @@
 /* ========================================================================== */
 /* 10. CATEGORIAS RELACIONADAS                                                 */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-related {
+.tax-product_cat.term-5387 .enc120-1seno-related {
     padding: 50px 20px;
     background: #f0f7f8;
 }
 
-.tax-product_cat.term-5387 .enc1seno-related-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-related-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
 }
 
-.tax-product_cat.term-5387 .enc1seno-related h2 {
+.tax-product_cat.term-5387 .enc120-1seno-related h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -753,19 +753,19 @@
         gap: 14px;
     }
 
-    .tax-product_cat.term-5387 .enc1seno-storytelling h2,
-    .tax-product_cat.term-5387 .enc1seno-comparativa h2,
-    .tax-product_cat.term-5387 .enc1seno-materials h2,
-    .tax-product_cat.term-5387 .enc1seno-asesoramiento h2,
+    .tax-product_cat.term-5387 .enc120-1seno-storytelling h2,
+    .tax-product_cat.term-5387 .enc120-1seno-comparativa h2,
+    .tax-product_cat.term-5387 .enc120-1seno-materials h2,
+    .tax-product_cat.term-5387 .enc120-1seno-asesoramiento h2,
     .tax-product_cat.term-5387 .product-loop-title {
         font-size: 22px;
     }
 
-    .tax-product_cat.term-5387 .enc1seno-related h2 {
+    .tax-product_cat.term-5387 .enc120-1seno-related h2 {
         font-size: 18px;
     }
 
-    .tax-product_cat.term-5387 .enc1seno-shortcuts-unused-wrapper {
+    .tax-product_cat.term-5387 .enc120-1seno-shortcuts-unused-wrapper {
         flex-direction: column;
         gap: 12px;
     }
@@ -785,11 +785,11 @@
         align-self: center;
     }
 
-    .tax-product_cat.term-5387 .enc1seno-storytelling,
-    .tax-product_cat.term-5387 .enc1seno-comparativa,
-    .tax-product_cat.term-5387 .enc1seno-materials,
-    .tax-product_cat.term-5387 .enc1seno-asesoramiento,
-    .tax-product_cat.term-5387 .enc1seno-related,
+    .tax-product_cat.term-5387 .enc120-1seno-storytelling,
+    .tax-product_cat.term-5387 .enc120-1seno-comparativa,
+    .tax-product_cat.term-5387 .enc120-1seno-materials,
+    .tax-product_cat.term-5387 .enc120-1seno-asesoramiento,
+    .tax-product_cat.term-5387 .enc120-1seno-related,
     .tax-product_cat.term-5387 .ap-value-section {
         padding-left: 18px;
         padding-right: 18px;
@@ -985,18 +985,18 @@
 /* ========================================================================== */
 /* 7b. COMO IDENTIFICAR TU SALIDA                                              */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused {
     background: #ffffff;
     padding: 60px 20px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused-wrapper {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused h2 {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -1004,14 +1004,14 @@
     margin: 0 0 14px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-intro {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-intro {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #3f6f7b;
     margin: 0 0 32px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-text {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-text {
     max-width: 760px;
     margin: 0 auto 30px;
     font-family: 'Poppins', sans-serif;
@@ -1021,20 +1021,20 @@
     text-align: left;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-text p {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-text p {
     margin: 0 0 16px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-text p:last-child {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-text p:last-child {
     margin-bottom: 0;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-cta {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-cta {
     text-align: center;
     margin-top: 10px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-cta .bumper-btn {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-cta .bumper-btn {
     display: inline-block;
     padding: 14px 32px;
     background: #4dd2d0;
@@ -1049,13 +1049,13 @@
     transition: background 0.25s ease, transform 0.25s ease;
 }
 
-.tax-product_cat.term-5387 .enc1seno-bastidor-unused .bastidor-cta .bumper-btn:hover {
+.tax-product_cat.term-5387 .enc120-1seno-bastidor-unused .bastidor-cta .bumper-btn:hover {
     background: #3f6f7b;
     transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-    .tax-product_cat.term-5387 .enc1seno-bastidor-unused h2 {
+    .tax-product_cat.term-5387 .enc120-1seno-bastidor-unused h2 {
         font-size: 24px;
     }
 }
@@ -1063,18 +1063,18 @@
 /* ========================================================================== */
 /* 9b. ALTURA Y ACCESIBILIDAD (texto breve, sin grid)                          */
 /* ========================================================================== */
-.tax-product_cat.term-5387 .enc1seno-asesoramiento {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento {
     background: #ffffff;
     padding: 60px 20px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento-wrapper {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento-wrapper {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento h2 {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -1082,7 +1082,7 @@
     margin: 0 0 18px;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento .altura-text {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento .altura-text {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.7;
@@ -1090,7 +1090,7 @@
     margin: 0;
 }
 
-.tax-product_cat.term-5387 .enc1seno-asesoramiento .altura-text a {
+.tax-product_cat.term-5387 .enc120-1seno-asesoramiento .altura-text a {
     color: #4dd2d0;
     font-weight: 600;
     text-decoration: none;
@@ -1098,7 +1098,7 @@
 }
 
 @media (max-width: 768px) {
-    .tax-product_cat.term-5387 .enc1seno-asesoramiento h2 {
+    .tax-product_cat.term-5387 .enc120-1seno-asesoramiento h2 {
         font-size: 24px;
     }
 }
