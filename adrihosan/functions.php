@@ -214,8 +214,8 @@ function adrihosan_master_controller_cpu_fix() {
         case 5387: // Encimera de Baño 120 cm 1 seno (standalone)
             adrihosan_setup_encimera_bano_120cm_cpu_fix();
             break;
-        case 5388: // Encimera de Baño 140 cm 1 seno (hija de 94, plantilla compartida)
-            adrihosan_setup_encimera_bano_1seno_cpu_fix();
+        case 5388: // Encimera de Baño 140 cm 1 seno (standalone)
+            adrihosan_setup_encimera_bano_140cm_cpu_fix();
             break;
         case 2709: // Encimeras de Baño de 160 cm (hija de 94)
             adrihosan_setup_encimeras_160cm_cpu_fix();
@@ -1191,21 +1191,20 @@ function adrihosan_setup_encimera_bano_120cm_cpu_fix() {
     }
 }
 
-// Plantilla compartida para Encimera de bano por ancho · 1 seno
-// (5388 = 140 cm, extensible a 100/130/150/160). El 5387 se desacoplo
-// a su PHP propio category-encimera-bano-120cm.php para customizar libre.
-function adrihosan_setup_encimera_bano_1seno_cpu_fix() {
+// Cat 5388 - Encimera de bano 140 cm 1 seno (standalone, eje doble-seno
+// para parejas + seno unico amplio).
+function adrihosan_setup_encimera_bano_140cm_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 
-    if ( function_exists( 'adrihosan_categoria_encimera_bano_1seno_contenido_superior' ) ) {
-        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimera_bano_1seno_contenido_superior', 5);
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_140cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimera_bano_140cm_contenido_superior', 5);
     }
-    if ( function_exists( 'adrihosan_categoria_encimera_bano_1seno_contenido_inferior' ) ) {
-        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimera_bano_1seno_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_140cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimera_bano_140cm_contenido_inferior', 99);
     }
 }
 
@@ -2373,7 +2372,7 @@ $_adri_modular_incs = array(
     '/inc/category-inodoros-suspendidos.php', // Cat 83 - Inodoros suspendidos (pilar silo, hija de 81)
     '/inc/category-lavabos.php',            // Cat 90 - Lavabos (raiz + pilar silo Sanitarios > Lavabos)
     '/inc/category-encimera-bano-120cm.php', // Cat 5387 - Encimera de bano 120 cm 1 seno (standalone)
-    '/inc/category-encimera-bano-1seno.php', // Cat 5388 - Encimera de bano 140 cm 1 seno (plantilla compartida, extensible)
+    '/inc/category-encimera-bano-140cm.php', // Cat 5388 - Encimera de bano 140 cm 1 seno (standalone)
     '/inc/category-suelos-porcelanicos-ofertas.php', // Cat 2396 - Suelos porcelanicos en oferta (pilar silo ofertas)
     '/inc/category-inodoro-minusvalidos.php', // Cat 3802 - Inodoro para minusvalidos (hija de 81)
     '/inc/category-inodoro-japones.php',    // Cat 3793 - Inodoro japones (hija de 81)
