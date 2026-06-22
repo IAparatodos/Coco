@@ -247,6 +247,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 90: // Lavabos (raiz + pilar silo Sanitarios > Lavabos)
             adrihosan_setup_lavabos_cpu_fix();
             break;
+        case 5389: // Lavabo cilindrico (subcategoria del silo Lavabos)
+            adrihosan_setup_lavabo_cilindrico_cpu_fix();
+            break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
             break;
@@ -1171,6 +1174,22 @@ function adrihosan_setup_lavabos_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_lavabos_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabos_contenido_inferior', 99);
+    }
+}
+
+// Cat 5389 - Lavabo cilindrico (subcategoria del silo Lavabos)
+function adrihosan_setup_lavabo_cilindrico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_cilindrico_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_cilindrico_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_cilindrico_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_cilindrico_contenido_inferior', 99);
     }
 }
 
@@ -2371,6 +2390,7 @@ $_adri_modular_incs = array(
     '/inc/category-inodoro-a-suelo.php',    // Cat 82 - Inodoro a suelo (pilar silo, hija de 81)
     '/inc/category-inodoros-suspendidos.php', // Cat 83 - Inodoros suspendidos (pilar silo, hija de 81)
     '/inc/category-lavabos.php',            // Cat 90 - Lavabos (raiz + pilar silo Sanitarios > Lavabos)
+    '/inc/category-lavabo-cilindrico.php',  // Cat 5389 - Lavabo cilindrico (subcategoria del silo Lavabos)
     '/inc/category-encimera-bano-120cm.php', // Cat 5387 - Encimera de bano 120 cm 1 seno (standalone)
     '/inc/category-encimera-bano-140cm.php', // Cat 5388 - Encimera de bano 140 cm 1 seno (standalone)
     '/inc/category-suelos-porcelanicos-ofertas.php', // Cat 2396 - Suelos porcelanicos en oferta (pilar silo ofertas)
