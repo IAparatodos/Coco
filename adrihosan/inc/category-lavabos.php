@@ -164,7 +164,7 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
                             <td>Buen anclaje a pared</td>
                         </tr>
                         <tr>
-                            <td><a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-con-pie/"><strong>De pie</strong></a></td>
+                            <td><a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-pie/"><strong>De pie</strong></a></td>
                             <td>Columna que oculta el desag&uuml;e</td>
                             <td>Aseos y ba&ntilde;os cl&aacute;sicos</td>
                             <td>Solo toma de agua y desag&uuml;e</td>
@@ -213,7 +213,7 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
                 <div class="material-card">
                     <span class="material-icon">&#9881;</span>
                     <h3>Terrazo</h3>
-                    <p>Granito reconstituido con chinas, est&eacute;tica retro de tendencia. <a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-terrazo/">Ver lavabos de terrazo</a>.</p>
+                    <p>Granito reconstituido con chinas, est&eacute;tica retro de tendencia. <a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lav-material-terrazo/">Ver lavabos de terrazo</a>.</p>
                 </div>
                 <div class="material-card">
                     <span class="material-icon">&#129534;</span>
@@ -264,13 +264,19 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
         <div class="lavabos-related-wrapper">
             <h2>Tambi&eacute;n te puede interesar</h2>
             <div class="related-pills">
-                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-modernos/">Lavabos modernos</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-minimalista/">Lavabos modernos</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-pequenos/">Lavabos peque&ntilde;os</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-de-colores/">Lavabos de colores</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de ba&ntilde;o</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/">Encimeras de ba&ntilde;o</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de ba&ntilde;o</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/griferia/griferia-bano/grifo-lavabo/">Grifos de lavabo</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-rustico/">Lavabos r&uacute;sticos</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-exterior/">Lavabos de exterior</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-cilindrico/">Lavabos cil&iacute;ndricos</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-redondo/">Lavabos redondos</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-ovalado/">Lavabos ovalados</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-baratos/">Lavabos baratos</a>
             </div>
         </div>
     </section>
@@ -372,6 +378,16 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
                     </button>
                     <div class="faq-answer-common">
                         <p>S&iacute;, enviamos a toda la pen&iacute;nsula. Si tienes dudas con plazos o con tu zona, escr&iacute;benos por WhatsApp al 96 195 71 36 y te lo confirmamos antes de comprar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es lo mismo un lavabo que un lavamanos?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;, son la misma pieza: <strong>lavabo</strong> y <strong>lavamanos</strong> son dos nombres para el sanitario donde te lavas manos y cara. "Lavamanos" se usa m&aacute;s en algunas zonas y para piezas peque&ntilde;as de aseo, pero todo nuestro cat&aacute;logo &mdash;sobre encimera, suspendidos, de pie, de piedra, resina o cer&aacute;mica&mdash; vale busques la palabra que busques. Si dudas qu&eacute; modelo encaja en tu ba&ntilde;o, escr&iacute;benos por WhatsApp y te asesoramos.</p>
                     </div>
                 </div>
 
