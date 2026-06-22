@@ -50,7 +50,7 @@ function adrihosan_categoria_lavabo_cilindrico_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Lavabo-cilindrico-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-cilindrico-blanco-bano-moderno-ducha-negra.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo cil&iacute;ndrico' ); ?></h1>
             <p class="hero-tagline">El lavabo de dise&ntilde;o que da volumen y car&aacute;cter a tu ba&ntilde;o.</p>
