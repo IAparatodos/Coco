@@ -58,7 +58,7 @@ function adrihosan_categoria_doble_lavabo_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Doble-lavabo-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/doble-lavabo-moderno-suspendido-mueble-madera-espejo-iluminado.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Doble lavabo' ); ?></h1>
             <p class="hero-tagline">La soluci&oacute;n para ba&ntilde;os compartidos: dos senos, cero esperas.</p>
