@@ -256,6 +256,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2937: // Lavabo alargado (subcategoria del silo Lavabos)
             adrihosan_setup_lavabo_alargado_cpu_fix();
             break;
+        case 2721: // Lavabo azul (subcategoria del silo Lavabos, mejora quirurgica)
+            adrihosan_setup_lavabo_azul_cpu_fix();
+            break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
             break;
@@ -1180,6 +1183,23 @@ function adrihosan_setup_lavabos_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_lavabos_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabos_contenido_inferior', 99);
+    }
+}
+
+// Cat 2721 - Lavabo azul (mejora quirurgica, plantilla preserva
+// category_description() para mantener el copy que YA rankea).
+function adrihosan_setup_lavabo_azul_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_azul_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_azul_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_azul_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_azul_contenido_inferior', 99);
     }
 }
 
@@ -2431,6 +2451,7 @@ $_adri_modular_incs = array(
     '/inc/category-lavabo-cilindrico.php',  // Cat 5389 - Lavabo cilindrico (subcategoria del silo Lavabos)
     '/inc/category-doble-lavabo.php',       // Cat 2654 - Doble lavabo (pagina puente del silo Lavabos)
     '/inc/category-lavabo-alargado.php',    // Cat 2937 - Lavabo alargado (subcategoria del silo Lavabos)
+    '/inc/category-lavabo-azul.php',        // Cat 2721 - Lavabo azul (subcategoria del silo Lavabos, mejora quirurgica)
     '/inc/category-encimera-bano-120cm.php', // Cat 5387 - Encimera de bano 120 cm 1 seno (standalone)
     '/inc/category-encimera-bano-140cm.php', // Cat 5388 - Encimera de bano 140 cm 1 seno (standalone)
     '/inc/category-suelos-porcelanicos-ofertas.php', // Cat 2396 - Suelos porcelanicos en oferta (pilar silo ofertas)
