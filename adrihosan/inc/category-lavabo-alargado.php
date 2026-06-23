@@ -61,7 +61,7 @@ function adrihosan_categoria_lavabo_alargado_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Lavabo-alargado-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-alargado-blanco-doble-seno-bano-moderno.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo alargado' ); ?></h1>
             <p class="hero-tagline">L&iacute;nea recta, poco fondo y el color que tu ba&ntilde;o ped&iacute;a.</p>
