@@ -70,7 +70,7 @@ function adrihosan_categoria_lavabo_azul_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Lavabo-azul-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-azul-sobre-encimera-bano-moderno.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo azul' ); ?></h1>
             <p class="hero-tagline">El color que convierte el lavabo en el foco del ba&ntilde;o.</p>
