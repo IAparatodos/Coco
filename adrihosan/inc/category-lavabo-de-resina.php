@@ -67,7 +67,7 @@ function adrihosan_categoria_lavabo_de_resina_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Lavabo-de-resina-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/doble-lavabo-moderno-suspendido-mueble-madera-espejo-iluminado.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo de resina' ); ?></h1>
             <p class="hero-tagline">El material moderno que la cer&aacute;mica no iguala: sin juntas y en color.</p>
