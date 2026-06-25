@@ -75,7 +75,7 @@ function adrihosan_categoria_lavabo_exterior_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Lavabo-exterior-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-exterior-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo exterior' ); ?></h1>
             <p class="hero-tagline">Piedra natural con car&aacute;cter para tu terraza, porche o ba&ntilde;o r&uacute;stico.</p>
