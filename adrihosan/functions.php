@@ -139,6 +139,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2394: // Fachadas y Muros
             adrihosan_setup_fachadas_cpu_fix();
             break;
+        case 2396: // Suelos Porcelanicos en Oferta (pilar silo ofertas)
+            adrihosan_setup_suelos_porcelanicos_ofertas_cpu_fix();
+            break;
         case 2188: // Azulejo Escama de Pez
             adrihosan_setup_escama_pez_cpu_fix();
             break;
@@ -208,6 +211,12 @@ function adrihosan_master_controller_cpu_fix() {
         case 5354: // Encimeras de Baño Blancas (hija de 94)
             adrihosan_setup_encimeras_blancas_cpu_fix();
             break;
+        case 5387: // Encimera de Baño 120 cm 1 seno (standalone)
+            adrihosan_setup_encimera_bano_120cm_cpu_fix();
+            break;
+        case 5388: // Encimera de Baño 140 cm 1 seno (standalone)
+            adrihosan_setup_encimera_bano_140cm_cpu_fix();
+            break;
         case 2709: // Encimeras de Baño de 160 cm (hija de 94)
             adrihosan_setup_encimeras_160cm_cpu_fix();
             break;
@@ -228,6 +237,57 @@ function adrihosan_master_controller_cpu_fix() {
             break;
         case 81: // Inodoro (raiz silo Sanitarios > Inodoro)
             adrihosan_setup_inodoro_cpu_fix();
+            break;
+        case 82: // Inodoro a suelo (pilar silo, hija de 81)
+            adrihosan_setup_inodoro_a_suelo_cpu_fix();
+            break;
+        case 83: // Inodoros suspendidos (pilar silo, hija de 81)
+            adrihosan_setup_inodoros_suspendidos_cpu_fix();
+            break;
+        case 90: // Lavabos (raiz + pilar silo Sanitarios > Lavabos)
+            adrihosan_setup_lavabos_cpu_fix();
+            break;
+        case 5389: // Lavabo cilindrico (subcategoria del silo Lavabos)
+            adrihosan_setup_lavabo_cilindrico_cpu_fix();
+            break;
+        case 2654: // Doble lavabo (pagina puente del silo Lavabos)
+            adrihosan_setup_doble_lavabo_cpu_fix();
+            break;
+        case 2937: // Lavabo alargado (subcategoria del silo Lavabos)
+            adrihosan_setup_lavabo_alargado_cpu_fix();
+            break;
+        case 2721: // Lavabo azul (subcategoria del silo Lavabos, mejora quirurgica)
+            adrihosan_setup_lavabo_azul_cpu_fix();
+            break;
+        case 2673: // Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
+            adrihosan_setup_lavabo_blanco_cpu_fix();
+            break;
+        case 2681: // Lavabo de resina / Solid Surface (subcategoria del silo Lavabos)
+            adrihosan_setup_lavabo_de_resina_cpu_fix();
+            break;
+        case 2716: // Lavabo exterior (subcategoria del silo Lavabos, reescritura limpia)
+            adrihosan_setup_lavabo_exterior_cpu_fix();
+            break;
+        case 2683: // Lavabo grande (subcategoria del silo Lavabos)
+            adrihosan_setup_lavabo_grande_cpu_fix();
+            break;
+        case 394: // Bañeras Exentas (madre del silo Baneras)
+            adrihosan_setup_baneras_exentas_cpu_fix();
+            break;
+        case 2315: // Bañera Corian (hija del silo Baneras)
+            adrihosan_setup_banera_corian_cpu_fix();
+            break;
+        case 2280: // Bañera Exenta Pequeña (hija del silo Baneras)
+            adrihosan_setup_banera_exenta_pequena_cpu_fix();
+            break;
+        case 2314: // Bañera Solid Surface (hija del silo Baneras)
+            adrihosan_setup_banera_solid_surface_cpu_fix();
+            break;
+        case 2279: // Bañeras Exentas Baratas (hija del silo Baneras)
+            adrihosan_setup_baneras_baratas_cpu_fix();
+            break;
+        case 2311: // Bañeras Exentas Modernas (hija del silo Baneras)
+            adrihosan_setup_baneras_modernas_cpu_fix();
             break;
         case 3802: // Inodoro para minusvalidos (hija de 81)
             adrihosan_setup_inodoro_minusvalidos_cpu_fix();
@@ -1111,6 +1171,233 @@ function adrihosan_setup_inodoros_baratos_cpu_fix() {
     }
 }
 
+function adrihosan_setup_inodoro_a_suelo_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoro_a_suelo_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoro_a_suelo_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoro_a_suelo_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoro_a_suelo_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_inodoros_suspendidos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_inodoros_suspendidos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_inodoros_suspendidos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_inodoros_suspendidos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_suspendidos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_lavabos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabos_contenido_inferior', 99);
+    }
+}
+
+// Cat 2683 - Lavabo grande (subcategoria del silo Lavabos, 47 productos).
+function adrihosan_setup_lavabo_grande_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_grande_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_grande_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_grande_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_grande_contenido_inferior', 99);
+    }
+}
+
+// Cat 2716 - Lavabo exterior (reescritura limpia, decorativo piedra/
+// marmol, plantilla NO renderiza category_description() para no
+// contaminar con el copy viejo prohibido).
+function adrihosan_setup_lavabo_exterior_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_exterior_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_exterior_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_exterior_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_exterior_contenido_inferior', 99);
+    }
+}
+
+// Cat 2681 - Lavabo de resina / Solid Surface (categoria de material
+// transversal del silo Lavabos, 169 productos, build completo).
+function adrihosan_setup_lavabo_de_resina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_de_resina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_de_resina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_de_resina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_de_resina_contenido_inferior', 99);
+    }
+}
+
+// Cat 2673 - Lavabo blanco (termino cabecera de alto volumen, plantilla
+// preserva category_description() en modo quirurgico automatico).
+function adrihosan_setup_lavabo_blanco_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_blanco_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_blanco_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_blanco_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_blanco_contenido_inferior', 99);
+    }
+}
+
+// Cat 2721 - Lavabo azul (mejora quirurgica, plantilla preserva
+// category_description() para mantener el copy que YA rankea).
+function adrihosan_setup_lavabo_azul_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_azul_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_azul_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_azul_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_azul_contenido_inferior', 99);
+    }
+}
+
+// Cat 2937 - Lavabo alargado (subcategoria del silo Lavabos)
+function adrihosan_setup_lavabo_alargado_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_alargado_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_alargado_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_alargado_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_alargado_contenido_inferior', 99);
+    }
+}
+
+// Cat 2654 - Doble lavabo (pagina puente del silo Lavabos)
+function adrihosan_setup_doble_lavabo_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_doble_lavabo_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_doble_lavabo_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_doble_lavabo_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_doble_lavabo_contenido_inferior', 99);
+    }
+}
+
+// Cat 5389 - Lavabo cilindrico (subcategoria del silo Lavabos)
+function adrihosan_setup_lavabo_cilindrico_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_cilindrico_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_cilindrico_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_cilindrico_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_cilindrico_contenido_inferior', 99);
+    }
+}
+
+// Cat 5387 - Encimera de bano 120 cm 1 seno (standalone, customizable
+// sin afectar al 140 cm de la plantilla compartida).
+function adrihosan_setup_encimera_bano_120cm_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_120cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimera_bano_120cm_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_120cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimera_bano_120cm_contenido_inferior', 99);
+    }
+}
+
+// Cat 5388 - Encimera de bano 140 cm 1 seno (standalone, eje doble-seno
+// para parejas + seno unico amplio).
+function adrihosan_setup_encimera_bano_140cm_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_140cm_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_encimera_bano_140cm_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_encimera_bano_140cm_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimera_bano_140cm_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_suelos_porcelanicos_ofertas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_inferior', 99);
+    }
+}
+
 function adrihosan_setup_inodoros_colores_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -1123,6 +1410,97 @@ function adrihosan_setup_inodoros_colores_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_inodoros_colores_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_inodoros_colores_contenido_inferior', 99);
+    }
+}
+
+// Cat 394 - Baneras Exentas (madre del silo Baneras, cherry-pick de la
+// rama claude/resolve-merge-conflicts-zr6NH que nunca llego a esta rama).
+function adrihosan_setup_baneras_exentas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_baneras_exentas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baneras_exentas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baneras_exentas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_exentas_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_banera_corian_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_banera_corian_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_banera_corian_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_banera_corian_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_banera_corian_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_banera_exenta_pequena_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_banera_exenta_pequena_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_banera_exenta_pequena_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_banera_exenta_pequena_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_banera_exenta_pequena_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_banera_solid_surface_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_banera_solid_surface_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_banera_solid_surface_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_banera_solid_surface_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_banera_solid_surface_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_baneras_baratas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_baneras_baratas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baneras_baratas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baneras_baratas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_baratas_contenido_inferior', 99);
+    }
+    // Orden por defecto: precio ascendente (solo en esta categoria).
+    if ( function_exists( 'adrihosan_baneras_baratas_orden_precio_asc' ) ) {
+        add_action('woocommerce_product_query', 'adrihosan_baneras_baratas_orden_precio_asc', 10);
+    }
+}
+
+function adrihosan_setup_baneras_modernas_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+    if ( function_exists( 'adrihosan_baneras_modernas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baneras_modernas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baneras_modernas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baneras_modernas_contenido_inferior', 99);
     }
 }
 
@@ -2197,6 +2575,48 @@ if ( file_exists( $_adri_ledimex_path ) ) {
 }
 unset( $_adri_ledimex_path );
 
+// === Categoria 394 - Baneras Exentas (carga defensiva con file_exists) ===
+$_adri_baneras_exentas_path = get_template_directory() . '/inc/category-baneras-exentas.php';
+if ( file_exists( $_adri_baneras_exentas_path ) ) {
+    require $_adri_baneras_exentas_path;
+}
+unset( $_adri_baneras_exentas_path );
+
+// === Categoria 2315 - Banera Corian (carga defensiva con file_exists) ===
+$_adri_banera_corian_path = get_template_directory() . '/inc/category-banera-corian.php';
+if ( file_exists( $_adri_banera_corian_path ) ) {
+    require $_adri_banera_corian_path;
+}
+unset( $_adri_banera_corian_path );
+
+// === Categoria 2280 - Banera Exenta Pequena (carga defensiva con file_exists) ===
+$_adri_banera_pequena_path = get_template_directory() . '/inc/category-banera-exenta-pequena.php';
+if ( file_exists( $_adri_banera_pequena_path ) ) {
+    require $_adri_banera_pequena_path;
+}
+unset( $_adri_banera_pequena_path );
+
+// === Categoria 2314 - Banera Solid Surface (carga defensiva con file_exists) ===
+$_adri_banera_solid_surface_path = get_template_directory() . '/inc/category-banera-solid-surface.php';
+if ( file_exists( $_adri_banera_solid_surface_path ) ) {
+    require $_adri_banera_solid_surface_path;
+}
+unset( $_adri_banera_solid_surface_path );
+
+// === Categoria 2279 - Baneras Exentas Baratas (carga defensiva con file_exists) ===
+$_adri_baneras_baratas_path = get_template_directory() . '/inc/category-baneras-baratas.php';
+if ( file_exists( $_adri_baneras_baratas_path ) ) {
+    require $_adri_baneras_baratas_path;
+}
+unset( $_adri_baneras_baratas_path );
+
+// === Categoria 2311 - Baneras Exentas Modernas (carga defensiva con file_exists) ===
+$_adri_baneras_modernas_path = get_template_directory() . '/inc/category-baneras-modernas.php';
+if ( file_exists( $_adri_baneras_modernas_path ) ) {
+    require $_adri_baneras_modernas_path;
+}
+unset( $_adri_baneras_modernas_path );
+
 // ============================================================================
 // PAGE 164094 - HOME ADRIHOSAN
 // El contenido se renderiza desde front-page.php (no necesita filtro the_content)
@@ -2256,6 +2676,20 @@ $_adri_modular_incs = array(
     '/inc/category-encimeras-suspendida.php', // Cat 2708 - Encimeras Suspendida (hija de 94)
     '/inc/category-encimeras-resina.php',    // Cat 96 - Encimeras de Resina (hija de 94)
     '/inc/category-inodoro.php',            // Cat 81 - Inodoro (raiz silo Sanitarios > Inodoro)
+    '/inc/category-inodoro-a-suelo.php',    // Cat 82 - Inodoro a suelo (pilar silo, hija de 81)
+    '/inc/category-inodoros-suspendidos.php', // Cat 83 - Inodoros suspendidos (pilar silo, hija de 81)
+    '/inc/category-lavabos.php',            // Cat 90 - Lavabos (raiz + pilar silo Sanitarios > Lavabos)
+    '/inc/category-lavabo-cilindrico.php',  // Cat 5389 - Lavabo cilindrico (subcategoria del silo Lavabos)
+    '/inc/category-doble-lavabo.php',       // Cat 2654 - Doble lavabo (pagina puente del silo Lavabos)
+    '/inc/category-lavabo-alargado.php',    // Cat 2937 - Lavabo alargado (subcategoria del silo Lavabos)
+    '/inc/category-lavabo-azul.php',        // Cat 2721 - Lavabo azul (subcategoria del silo Lavabos, mejora quirurgica)
+    '/inc/category-lavabo-blanco.php',      // Cat 2673 - Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
+    '/inc/category-lavabo-de-resina.php',   // Cat 2681 - Lavabo de resina / Solid Surface (subcategoria del silo Lavabos)
+    '/inc/category-lavabo-exterior.php',    // Cat 2716 - Lavabo exterior (subcategoria del silo Lavabos, reescritura limpia)
+    '/inc/category-lavabo-grande.php',      // Cat 2683 - Lavabo grande (subcategoria del silo Lavabos)
+    '/inc/category-encimera-bano-120cm.php', // Cat 5387 - Encimera de bano 120 cm 1 seno (standalone)
+    '/inc/category-encimera-bano-140cm.php', // Cat 5388 - Encimera de bano 140 cm 1 seno (standalone)
+    '/inc/category-suelos-porcelanicos-ofertas.php', // Cat 2396 - Suelos porcelanicos en oferta (pilar silo ofertas)
     '/inc/category-inodoro-minusvalidos.php', // Cat 3802 - Inodoro para minusvalidos (hija de 81)
     '/inc/category-inodoro-japones.php',    // Cat 3793 - Inodoro japones (hija de 81)
     '/inc/category-inodoro-pequeno.php',    // Cat 3798 - Inodoro pequeno (hija de 81)
@@ -2462,13 +2896,21 @@ function adrihosan_limpiar_cache_filtros($post_id) {
 
 /**
  * OPCIONAL: Precargar CSS crítico para mejorar rendimiento
+ *
+ * IMPORTANTE: el href DEBE incluir la query string `?ver=filemtime()` igual
+ * que el <link rel="stylesheet"> que emite wp_enqueue_style() en
+ * cache-and-css.php. Si las dos URLs difieren (una con ver, otra sin),
+ * el browser NO empareja el preload con el stylesheet y lanza el warning
+ * "preloaded using link preload but not used within a few seconds".
  */
 function adrihosan_preload_css_critico() {
     if (is_product_category()) {
-        $cat_id = get_queried_object_id();
+        $cat_id   = get_queried_object_id();
         $css_path = get_stylesheet_directory() . '/assets/css/category-' . $cat_id . '.css';
         if (file_exists($css_path)) {
-            echo '<link rel="preload" href="' . esc_url(get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css') . '" as="style">' . "\n";
+            $css_url = get_stylesheet_directory_uri() . '/assets/css/category-' . $cat_id . '.css';
+            $css_url = add_query_arg('ver', filemtime($css_path), $css_url);
+            echo '<link rel="preload" href="' . esc_url($css_url) . '" as="style">' . "\n";
         }
     }
 }

@@ -56,7 +56,7 @@ function adrihosan_categoria_inodoros_colores_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/inodoros-de-colores-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Inodoros-de-colores-Adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Inodoros de colores' ); ?></h1>
             <p class="hero-tagline">Sal del blanco de siempre.</p>
