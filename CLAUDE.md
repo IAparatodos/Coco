@@ -1,5 +1,30 @@
 # Adrihosan - Instrucciones para Claude
 
+## REGLA OBLIGATORIA — main es la única fuente de verdad
+
+Cada sesión nueva, **antes de tocar código**:
+
+```bash
+git fetch origin main
+git rebase origin/main   # o: git merge origin/main si la rama de trabajo ya no es lineal
+```
+
+Esto trae a la rama de trabajo todo lo que esté ya en `main` (commits de otras sesiones, fixes urgentes, releases). Si se omite, se acaba reescribiendo archivos clave del servidor (típicamente `functions.php`) con una versión vieja que no conoce el trabajo de otras ramas, y se borran silenciosamente cases del master controller / requires / setup functions de otros silos.
+
+Cada vez que una feature está acabada y verificada:
+
+1. Abrir PR de la rama de trabajo a `main`.
+2. Merge (o squash si es trivial).
+3. Si quedaran ramas viejas con commits no fusionados, **cherry-pickearlos antes de borrarlas** o consolidar vía PR.
+
+### Síntoma de regresión por incumplimiento
+
+"En el servidor están los `inc/category-*.php` y `assets/css/category-*.css` del silo X, pero la página solo muestra el loop de productos" → casi seguro el `functions.php` del servidor está desactualizado y no tiene los `case` / `setup function` / `require` de ese silo. Causa raíz: una sesión vieja subió esos archivos por FTP desde una rama huérfana, y otra sesión posterior sobrescribió `functions.php` desde una rama que nunca fusionó la primera. Solución: cherry-pick + merge a main + reglas de esta sección.
+
+### Histórico
+
+- **2026-06-26**: 6 categorías del silo Bañeras (394, 2279, 2280, 2311, 2314, 2315) llevaban semanas con sus PHP+CSS en el servidor pero el `functions.php` sin wiring. El trabajo vivía en `claude/resolve-merge-conflicts-zr6NH` que nunca se mergeó. Recuperado vía cherry-pick a `claude/fix-css-loading-RdK8j` + PR #26 a main. Documentado aquí para no repetir.
+
 ## REGLA OBLIGATORIA: Resumen de cambios en cada respuesta
 
 Al finalizar cada respuesta donde se hayan hecho cambios en código, **SIEMPRE** incluir un resumen con:
