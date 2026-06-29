@@ -370,29 +370,38 @@ function adrihosan_porcelanico_inferior_final() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; mantenimiento requiere?</span>
+                        <span>&iquest;El gres porcel&aacute;nico vale para exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Pr&aacute;cticamente nulo. Al no ser poroso, basta con agua y un jab&oacute;n neutro. Olv&iacute;date de ceras, pulidos o barnices para siempre.</p>
+                        <p>S&iacute;. El porcel&aacute;nico t&eacute;cnico, en versi&oacute;n antideslizante y antihielo, est&aacute; pensado para terrazas, porches y bordes de piscina.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es compatible con suelo radiante?</span>
+                        <span>&iquest;Qu&eacute; grosor necesito para una terraza?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es el mejor material para ello. Su alta conductividad t&eacute;rmica permite que el calor pase r&aacute;pidamente, optimizando el consumo energ&eacute;tico de tu calefacci&oacute;n.</p>
+                        <p>Para exterior pisable elige 2 cm; para interior, el habitual de 8 a 11 mm es suficiente.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se mancha con facilidad?</span>
+                        <span>&iquest;El imitaci&oacute;n madera se raya como el parqu&eacute;?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. El porcel&aacute;nico tiene una absorci&oacute;n de agua inferior al 0.5%. Ni el vino, ni el aceite, ni el &aacute;cido penetran en la baldosa. Es higi&eacute;nico y antibacteriano.</p>
+                        <p>No. Resiste mejor el rayado, la humedad y el sol, y no hay que barnizarlo.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Cu&aacute;nto material pido de m&aacute;s?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Calcula un 10% extra sobre los metros para cortes y para guardar reposici&oacute;n de la misma serie.</p>
                     </div>
                 </div>
             </div>
