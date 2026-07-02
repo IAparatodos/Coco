@@ -59,7 +59,7 @@ function adrihosan_categoria_suelo_garaje_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/07/Suelo-para-garaje-Adrihosan.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/07/Suelo-para-Garaje-Barato.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Suelo para garaje' ); ?></h1>
             <p class="hero-tagline">El pavimento que no se mancha con aceite ni pide mantenimiento.</p>
