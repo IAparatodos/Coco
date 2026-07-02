@@ -37,11 +37,9 @@
  * - Financiacion si se menciona = 3 meses sin intereses.
  * - FAQs HTML sin json-ld (Rank Math gestiona schema FAQPage).
  *
- * !! FILTER SET PENDIENTE DE CONFIRMAR CON RICARDO !!
- *   Uso 427044 como default (es el Filter Set de porcelanico-tecnico y
- *   suelo-tecnico, hermanas de esta cat en el silo pavimentos). El
- *   428107 del wireframe es de ENCIMERAS y NO sirve aqui. Confirmar el
- *   ID correcto antes de publicar y sustituir la constante de abajo.
+ * FILTER SET: 427026, el de la categoria PADRE Pavimentos (cat 64). El
+ *   428107 del wireframe era de ENCIMERAS y NO servia aqui. Se usa el del
+ *   padre para heredar los mismos filtros del silo pavimentos.
  *
  * @package Adrihosan
  */
@@ -50,10 +48,9 @@
 // CATEGORIA 5393 - SUELO PARA GARAJE (silo Pavimentos)
 // ============================================================================
 
-// TODO CONFIRMAR CON RICARDO: Filter Set del silo pavimentos para esta cat.
-// 427044 = el que usan porcelanico-tecnico (cat 2471) y suelo-tecnico (2350).
+// Filter Set 427026 = el de la categoria padre Pavimentos (cat 64).
 if ( ! defined( 'ADRIHOSAN_SGAR_FILTER_SET' ) ) {
-    define( 'ADRIHOSAN_SGAR_FILTER_SET', '427044' );
+    define( 'ADRIHOSAN_SGAR_FILTER_SET', '427026' );
 }
 
 function adrihosan_categoria_suelo_garaje_contenido_superior() {
