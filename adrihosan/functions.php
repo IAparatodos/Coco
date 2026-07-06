@@ -852,8 +852,19 @@ function adrihosan_setup_azulejos_decorativos_cpu_fix() {
  * CSS para ocultar filtros legacy en categorías con landing personalizada.
  * Se llama SOLO desde cada setup_*_cpu_fix(), NUNCA de forma global.
  * Las categorías sin case en el switch conservan los bloques estándar de WooCommerce.
+ *
+ * OPTIMIZACIÓN CPU (2026-07): además de ocultar por CSS, se desenganchan los
+ * renderizadores cuyo HTML queda oculto (.advanced-filter y .doo-category-banner).
+ * dw_advanced_search() ejecuta, por CADA atributo de 'dw-op-attributes-search',
+ * un get_posts con posts_per_page=-1 sobre todos los productos de la categoría
+ * + wp_get_object_terms sobre esa lista completa de IDs. Generar eso para luego
+ * taparlo con display:none era de lo más caro de cada page view sin caché.
+ * wp_head (prio 5) se ejecuta antes de woocommerce_before_shop_loop, así que
+ * el remove_action llega a tiempo.
  */
 function adrihosan_ocultar_filtros_legacy() {
+    remove_action( 'woocommerce_before_shop_loop', 'dw_advanced_search', 10 );
+    remove_action( 'woocommerce_before_shop_loop', 'doo_display_categories_banner', 5 );
     echo '<style>.woocommerce-products-header,.wd-shop-tools,.advanced-filter,.filter-wrapper,.ai-filters-section,.bho-filters-section,.bho-hub-section,.woocommerce-products-header__description,.term-description,.woodmart-category-desc,.wd-active-filters,.doo-category-banner{display:none!important}</style>';
 }
 
@@ -884,9 +895,7 @@ function adrihosan_setup_ceramica_vives_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
-    add_action('wp_head', function() {
-        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_navarti_cpu_fix() {
@@ -896,9 +905,7 @@ function adrihosan_setup_navarti_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
     add_action('woocommerce_before_shop_loop', 'adrihosan_navarti_contenido_superior', 5);
     add_action('woocommerce_after_shop_loop', 'adrihosan_navarti_contenido_inferior', 99);
-    add_action('wp_head', function() {
-        echo '<style>.woocommerce-products-header, .wd-shop-tools, .advanced-filter, .filter-wrapper, .ai-filters-section, .bho-filters-section, .bho-hub-section, .woocommerce-products-header__description, .term-description, .woodmart-category-desc, .wd-active-filters, .doo-category-banner { display: none !important; }</style>';
-    });
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
 function adrihosan_setup_mosaico_cpu_fix() {
