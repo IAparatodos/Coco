@@ -450,6 +450,12 @@ add_action( 'woocommerce_before_shop_loop', 'dw_advanced_search', 10 );
 
 function dw_advanced_search() {
 
+	// En la tienda el HTML se descartaba igualmente (if ($html && !is_shop())):
+	// salir antes de ejecutar las queries pesadas de dw_wc_product_search_selects().
+	if ( is_shop() ) {
+		return;
+	}
+
 	$html = dw_wc_product_search_selects();
 
 	// if ($html && !has_children() && !is_shop()) {
