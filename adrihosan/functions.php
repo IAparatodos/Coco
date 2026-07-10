@@ -103,6 +103,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 5397: // Suelo Exterior Antideslizante (silo Pavimentos/Exterior)
             adrihosan_setup_suelo_exterior_anti_cpu_fix();
             break;
+        case 5396: // Mueble de baño 120 cm 1 seno desplazado (silo Muebles de baño, parent 99)
+            adrihosan_setup_mueble_120_desplazado_cpu_fix();
+            break;
         // --- Cerámica y derivados (consolidados desde controllers independientes) ---
         case 62: // Cerámica (pilar)
             adrihosan_setup_ceramica_cpu_fix();
@@ -657,6 +660,23 @@ function adrihosan_setup_suelo_exterior_anti_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_suelo_exterior_anti_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_suelo_exterior_anti_contenido_inferior', 99);
+    }
+}
+
+// Cat 5396 - Mueble de baño 120 cm 1 seno desplazado (silo Muebles de baño, parent 99).
+// Guards function_exists por si el inc no se subio (patron CLAUDE.md).
+function adrihosan_setup_mueble_120_desplazado_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_mueble_120_desplazado_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_mueble_120_desplazado_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_mueble_120_desplazado_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_mueble_120_desplazado_contenido_inferior', 99);
     }
 }
 
@@ -2721,6 +2741,7 @@ $_adri_p = get_template_directory() . '/inc/category-suelo-para-garaje-barato.ph
 $_adri_p = get_template_directory() . '/inc/category-suelo-antideslizante-para-ducha-de-obra.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 5394 - Suelo para ducha de obra
 $_adri_p = get_template_directory() . '/inc/category-revestimiento-chimenea.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 5395 - Revestimiento de chimenea (silo Azulejos)
 $_adri_p = get_template_directory() . '/inc/category-suelo-exterior-antideslizante.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 5397 - Suelo Exterior Antideslizante (silo Pavimentos/Exterior)
+$_adri_p = get_template_directory() . '/inc/category-mueble-bano-120cm-1-seno-desplazado.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 5396 - Mueble de baño 120 cm 1 seno desplazado (silo Muebles de baño)
 
 // =============================================================================
 // CATEGORÍAS 62, 2410, 1844, 2510, 2093 - Cerámica + Porcelánico + Gran Formato + Extrafino + Metro
