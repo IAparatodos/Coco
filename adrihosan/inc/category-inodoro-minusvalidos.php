@@ -314,91 +314,91 @@ function adrihosan_categoria_inodoro_minusvalidos_contenido_inferior() {
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; altura debe tener un inodoro para minusv&aacute;lidos o personas mayores?</span>
+                        <span>&iquest;Qu&eacute; altura de inodoro es la ideal para una persona mayor?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La normativa de accesibilidad sit&uacute;a el asiento entre <strong>45 y 50&nbsp;cm</strong>. Esa altura permite sentarse y levantarse con mucho menos esfuerzo y reduce el riesgo de ca&iacute;da.</p>
+                        <p>La franja recomendada es un asiento entre 45 y 50 cm del suelo, frente a los 40 o 42 cm de un inodoro est&aacute;ndar. Esa altura reduce la flexi&oacute;n de rodillas y caderas al sentarse y levantarse. La referencia pr&aacute;ctica es que la persona quede sentada con los pies bien apoyados en el suelo.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;nto m&aacute;s alto es que un inodoro normal?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre un inodoro alto y uno est&aacute;ndar?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Un inodoro est&aacute;ndar ronda los 40&nbsp;cm. Uno adaptado sube a 45-50&nbsp;cm: <strong>cinco a diez cent&iacute;metros</strong> que se notan much&iacute;simo en personas mayores o con problemas de cadera y rodilla.</p>
+                        <p>La diferencia est&aacute; en el asiento. Un inodoro est&aacute;ndar lo sit&uacute;a a unos 40 o 42 cm y un inodoro alto lo sube a entre 45 y 50 cm. Esos cent&iacute;metros de m&aacute;s evitan la sentadilla profunda, que es el movimiento que m&aacute;s cuesta con poca fuerza en las piernas. En altura total con cisterna baja, un modelo alto ronda o supera los 70 cm.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Sirve para una persona que usa silla de ruedas?</span>
+                        <span>&iquest;Sirve para un anciano que se levanta con dificultad?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;. La altura facilita la transferencia desde la silla y conviene dejar espacio libre a un lado de la taza para aproximarse. El <a href="https://www.adrihosan.com/categoria-producto/sanitarios/inodoro/inodoros-suspendidos/">suspendido</a> despeja a&uacute;n m&aacute;s el suelo.</p>
+                        <p>Es justo su caso ideal. Al partir de un asiento m&aacute;s alto, el recorrido para incorporarse es menor y las rodillas y caderas trabajan mucho menos. Combinado con una barra de apoyo junto a la taza, levantarse pasa de ser un esfuerzo a ser un gesto seguro.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Necesito barras de apoyo adem&aacute;s del inodoro?</span>
+                        <span>&iquest;Se puede combinar con barras de apoyo?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es muy recomendable. Una barra abatible junto a la taza da el punto de apoyo para incorporarse con seguridad. Tenemos <a href="https://www.adrihosan.com/categoria-producto/accesorios-de-bano/barras-de-seguridad/">barras de seguridad</a> para completar el ba&ntilde;o adaptado.</p>
+                        <p>S&iacute;, y es la combinaci&oacute;n que m&aacute;s recomendamos. Una barra abatible junto a la taza o una agarradera fija en la pared dan el punto de apoyo firme para sentarse y levantarse con seguridad. En Adrihosan encontrar&aacute;s <a href="https://www.adrihosan.com/categoria-producto/accesorios-de-bano/barras-de-seguridad/">barras de seguridad</a> y agarraderas de ba&ntilde;o que se instalan en la misma reforma.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Puedo instalar el inodoro adaptado en el hueco del antiguo?</span>
+                        <span>&iquest;Cumple la normativa de accesibilidad para minusv&aacute;lidos o PMR?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>En la mayor&iacute;a de los casos s&iacute;. Con la <strong>salida dual</strong> encaja tanto en desag&uuml;es de suelo como de pared. Si nos dices c&oacute;mo es tu salida, lo confirmamos antes de comprar.</p>
+                        <p>La normativa espa&ntilde;ola de accesibilidad sit&uacute;a el asiento de los aseos adaptados entre 45 y 50 cm del suelo y los modelos de esta categor&iacute;a se mueven en esa franja. Para un proyecto con requisitos concretos de PMR te enviamos la ficha t&eacute;cnica del modelo antes de comprar y as&iacute; lo validas con tu t&eacute;cnico.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Es mejor a suelo o suspendido para PMR?</span>
+                        <span>&iquest;Se instala con el desag&uuml;e est&aacute;ndar existente?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Los dos son v&aacute;lidos. El <a href="https://www.adrihosan.com/categoria-producto/sanitarios/inodoro/inodoro-a-suelo/">a suelo alto</a> aprovecha el desag&uuml;e existente; el <a href="https://www.adrihosan.com/categoria-producto/sanitarios/inodoro/inodoros-suspendidos/">suspendido</a> permite ajustar la altura del bastidor y deja el suelo despejado para la silla de ruedas.</p>
+                        <p>En la mayor&iacute;a de reformas s&iacute;, porque estos inodoros usan medidas de desag&uuml;e convencionales. Solo hay que comprobar si tu salida actual es vertical al suelo u horizontal a la pared. M&aacute;ndanos una foto por WhatsApp al 96 195 71 36 y te confirmamos la compatibilidad del modelo con tu ba&ntilde;o.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Cumplen la normativa de accesibilidad?</span>
+                        <span>&iquest;Hac&eacute;is env&iacute;o a toda Espa&ntilde;a con financiaci&oacute;n?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, est&aacute;n pensados para cumplir los requisitos de altura y uso PMR, tanto en viviendas como en centros (hoteles, residencias, espacios p&uacute;blicos).</p>
+                        <p>S&iacute;. Enviamos a toda Espa&ntilde;a con seguimiento del pedido y puedes financiar la compra en 3 meses sin intereses. Antes de decidir puedes resolver cualquier duda por WhatsApp o por videollamada viendo el inodoro desde nuestro showroom de Valencia.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Aguanta bien el peso y es estable?</span>
+                        <span>&iquest;Hay inodoros altos con cisterna alta o empotrada?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;. Van firmemente fijados al suelo o a la pared y la estructura est&aacute; pensada para apoyarse con confianza al sentarse y levantarse.</p>
+                        <p>Los modelos de esta categor&iacute;a son de tanque bajo a suelo, la opci&oacute;n m&aacute;s directa en una reforma sin obra. Si partes de obra o quieres cisterna empotrada, un <a href="https://www.adrihosan.com/categoria-producto/sanitarios/inodoro/inodoros-suspendidos/">inodoro suspendido</a> permite fijar la taza a la altura exacta que necesites, incluida la franja de 45 a 50 cm recomendada para personas mayores.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Hac&eacute;is env&iacute;o a toda Espa&ntilde;a?</span>
+                        <span>&iquest;Resulta inc&oacute;modo un inodoro alto para el resto de la familia?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, enviamos a toda Espa&ntilde;a, a tu casa o directamente a la de tu familiar.</p>
+                        <p>Para la mayor&iacute;a de adultos no, porque los pies siguen apoyando en el suelo con normalidad. De hecho muchas personas altas lo prefieren. Con ni&ntilde;os peque&ntilde;os basta un alza o un escal&oacute;n estable, igual que se usa con un lavabo.</p>
                     </div>
                 </div>
 
