@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de reservas Adrihosan — flujo</title>
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  img { max-width: 100%; }
+  :root {
+    --turquesa: #4dd2d0;
+    --azul: #3f6f7b;
+    --tint: #f0f7f8;
+    --borde: #d4e3e6;
+    --blanco: #ffffff;
+    --ground: #f7fbfc;
+    --card: #ffffff;
+    --ink: #23434c;
+    --ink-soft: #5c7d86;
+    --spine: #d4e3e6;
+    --shadow: 0 1px 2px rgba(63,111,123,.06), 0 8px 24px rgba(63,111,123,.07);
+    --chip-nav-bg: rgba(63,111,123,.10);
+    --chip-nav-ink: #3f6f7b;
+    --chip-goog-bg: rgba(77,210,208,.16);
+    --chip-goog-ink: #1f7a78;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #10242b;
+      --card: #16323b;
+      --tint: #1a3a44;
+      --borde: #2a505b;
+      --ink: #e6f1f3;
+      --ink-soft: #a8c4cb;
+      --spine: #2a505b;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+      --chip-nav-bg: rgba(122,166,178,.16);
+      --chip-nav-ink: #a8cdd6;
+      --chip-goog-bg: rgba(77,210,208,.14);
+      --chip-goog-ink: #6fe0de;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #10242b;
+    --card: #16323b;
+    --tint: #1a3a44;
+    --borde: #2a505b;
+    --ink: #e6f1f3;
+    --ink-soft: #a8c4cb;
+    --spine: #2a505b;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    --chip-nav-bg: rgba(122,166,178,.16);
+    --chip-nav-ink: #a8cdd6;
+    --chip-goog-bg: rgba(77,210,208,.14);
+    --chip-goog-ink: #6fe0de;
+  }
+  :root[data-theme="light"] {
+    --ground: #f7fbfc;
+    --card: #ffffff;
+    --tint: #f0f7f8;
+    --borde: #d4e3e6;
+    --ink: #23434c;
+    --ink-soft: #5c7d86;
+    --spine: #d4e3e6;
+    --shadow: 0 1px 2px rgba(63,111,123,.06), 0 8px 24px rgba(63,111,123,.07);
+    --chip-nav-bg: rgba(63,111,123,.10);
+    --chip-nav-ink: #3f6f7b;
+    --chip-goog-bg: rgba(77,210,208,.16);
+    --chip-goog-ink: #1f7a78;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: clamp(24px, 4vw, 56px) clamp(16px, 4vw, 40px) 72px;
+  }
+
+  /* ---------- Header ---------- */
+  .masthead { margin-bottom: 44px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--azul);
+    padding: 5px 12px; border: 1px solid var(--borde); border-radius: 999px;
+    background: var(--tint);
+  }
+  .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--turquesa); }
+  h1 {
+    font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+    line-height: 1.08; letter-spacing: -.02em; font-weight: 700;
+    margin: 18px 0 8px; text-wrap: balance; max-width: 20ch;
+  }
+  .lede { font-size: clamp(1rem, 1.6vw, 1.18rem); color: var(--ink-soft); max-width: 60ch; margin: 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+  .legend span { display: inline-flex; align-items: center; gap: 9px; font-size: 13.5px; color: var(--ink-soft); font-weight: 500; }
+  .swatch { width: 26px; height: 12px; border-radius: 4px; flex: none; }
+  .sw-1 { background: var(--turquesa); }
+  .sw-2 { background: var(--azul); }
+
+  /* ---------- Phase ---------- */
+  .phase { margin-top: 8px; }
+  .phase-head { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 8px; }
+  .phase-num {
+    font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    padding: 4px 11px; border-radius: 7px; color: var(--blanco);
+  }
+  .p1 .phase-num { background: var(--turquesa); color: #0c3a39; }
+  .p2 .phase-num { background: var(--azul); }
+  .phase-head h2 { font-size: clamp(1.15rem, 2vw, 1.4rem); margin: 0; letter-spacing: -.01em; font-weight: 650; }
+  .phase-head .sub { color: var(--ink-soft); font-size: 14px; margin-left: auto; }
+
+  /* ---------- Spine of steps ---------- */
+  .steps { list-style: none; margin: 0; padding: 0; position: relative; }
+  .steps::before {
+    content: ""; position: absolute; left: 17px; top: 8px; bottom: 8px; width: 2px;
+    background: linear-gradient(var(--spine), var(--spine)); border-radius: 2px;
+  }
+  .step { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: 16px; padding: 9px 0; }
+  .node {
+    width: 36px; height: 36px; border-radius: 50%; flex: none;
+    display: grid; place-items: center; font-weight: 700; font-size: 15px;
+    z-index: 1; border: 2px solid var(--card);
+    box-shadow: 0 0 0 1px var(--borde);
+  }
+  .p1 .node { background: var(--turquesa); color: #0c3a39; }
+  .p2 .node { background: var(--azul); color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--borde); border-radius: 12px;
+    padding: 14px 16px; box-shadow: var(--shadow);
+  }
+  .card .row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .card h3 { margin: 0; font-size: 15.5px; font-weight: 640; letter-spacing: -.005em; }
+  .card p { margin: 5px 0 0; color: var(--ink-soft); font-size: 13.5px; }
+  .card code {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 12.5px; background: var(--tint); color: var(--azul);
+    padding: 2px 7px; border-radius: 6px; border: 1px solid var(--borde); font-weight: 600;
+  }
+  :root[data-theme="dark"] .card code, .card code { }
+  @media (prefers-color-scheme: dark) { .card code { color: var(--turquesa); } }
+  :root[data-theme="dark"] .card code { color: var(--turquesa); }
+  :root[data-theme="light"] .card code { color: var(--azul); }
+
+  .chip {
+    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 999px; white-space: nowrap;
+  }
+  .chip.nav { background: var(--chip-nav-bg); color: var(--chip-nav-ink); }
+  .chip.goog { background: var(--chip-goog-bg); color: var(--chip-goog-ink); }
+  .arrow { color: var(--ink-soft); font-size: 12px; font-weight: 600; opacity: .8; }
+
+  /* ---------- Fan-out ---------- */
+  .fanout-label {
+    display: flex; align-items: center; gap: 12px; margin: 20px 0 14px 52px;
+    font-size: 13px; font-weight: 600; color: var(--ink-soft);
+    text-transform: uppercase; letter-spacing: .08em;
+  }
+  .fanout-label::before { content: "⤷"; font-size: 18px; color: var(--azul); }
+  .fanout {
+    margin-left: 52px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px;
+  }
+  .fx {
+    background: var(--card); border: 1px solid var(--borde); border-left: 3px solid var(--turquesa);
+    border-radius: 10px; padding: 13px 15px; box-shadow: var(--shadow);
+  }
+  .fx h4 { margin: 0 0 4px; font-size: 14px; font-weight: 640; display: flex; align-items: center; gap: 8px; }
+  .fx .ic { font-size: 15px; line-height: 1; }
+  .fx p { margin: 0; font-size: 12.5px; color: var(--ink-soft); }
+
+  /* ---------- Rails ---------- */
+  .rails { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 52px; }
+  .rail { background: var(--card); border: 1px solid var(--borde); border-radius: 14px; padding: 22px; box-shadow: var(--shadow); }
+  .rail.accent { border-top: 3px solid var(--turquesa); }
+  .rail h3 { margin: 0 0 14px; font-size: 15px; letter-spacing: .02em; font-weight: 680; display: flex; align-items: center; gap: 9px; }
+  .rail h3 .tag { font-size: 17px; }
+  .rail ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .rail li { font-size: 13.5px; color: var(--ink-soft); padding-left: 20px; position: relative; }
+  .rail li::before { content: ""; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 2px; background: var(--turquesa); }
+  .rail li strong { color: var(--ink); font-weight: 640; }
+
+  /* ---------- Caché callout ---------- */
+  .cache {
+    margin-top: 20px; border-radius: 14px; padding: 24px clamp(20px, 3vw, 30px);
+    background: linear-gradient(135deg, var(--azul), #325863);
+    color: #eaf6f7; box-shadow: var(--shadow); position: relative; overflow: hidden;
+  }
+  .cache h3 { margin: 0 0 6px; font-size: 16px; color: #fff; display: flex; align-items: center; gap: 10px; }
+  .cache p { margin: 0; font-size: 14px; color: rgba(234,246,247,.85); max-width: 74ch; }
+  .cache .flip {
+    display: inline-flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap;
+    font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 700;
+  }
+  .cache .tok { padding: 6px 13px; border-radius: 8px; }
+  .cache .old { background: rgba(255,255,255,.10); color: #ffd9d0; text-decoration: line-through; text-decoration-thickness: 2px; }
+  .cache .new { background: var(--turquesa); color: #0c3a39; }
+  .cache .to { color: var(--turquesa); font-size: 18px; }
+  .cache .rounds { margin-top: 4px; font-size: 12.5px; color: rgba(234,246,247,.7); }
+
+  footer { margin-top: 40px; text-align: center; font-size: 12.5px; color: var(--ink-soft); }
+
+  @media (max-width: 560px) {
+    .fanout, .fanout-label { margin-left: 0; }
+    .phase-head .sub { display: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .step, .fx, .rail, .cache { animation: rise .5s cubic-bezier(.2,.7,.3,1) both; }
+    .steps .step:nth-child(2) { animation-delay: .04s; }
+    .steps .step:nth-child(3) { animation-delay: .08s; }
+    .steps .step:nth-child(4) { animation-delay: .12s; }
+    .steps .step:nth-child(5) { animation-delay: .16s; }
+    .steps .step:nth-child(6) { animation-delay: .20s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="masthead">
+    <span class="eyebrow"><span class="dot"></span>Adrihosan · Sistema de citas</span>
+    <h1>Un Calendly propio dentro de WordPress</h1>
+    <p class="lede">Del calendario que ve el cliente hasta el evento en Google Calendar, los emails y el CRM — sin cuota mensual y sin ceder datos a un tercero.</p>
+    <div class="legend">
+      <span><span class="swatch sw-1"></span>Fase 1 — ver huecos libres</span>
+      <span><span class="swatch sw-2"></span>Fase 2 — reservar la cita</span>
+    </div>
+  </header>
+
+  <!-- FASE 1 -->
+  <section class="phase p1">
+    <div class="phase-head">
+      <span class="phase-num">Fase 1</span>
+      <h2>Disponibilidad — ¿qué huecos hay libres?</h2>
+      <span class="sub">respuesta en tiempo real, nunca cacheada</span>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="node">1</span>
+        <div class="card">
+          <div class="row"><span class="chip nav">Navegador</span><h3>El cliente abre la página de contacto</h3></div>
+          <p>Un calendario en JavaScript pinta los días y las horas de la semana.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">2</span>
+        <div class="card">
+          <div class="row"><span class="chip nav">Navegador</span><span class="arrow">→</span><span class="chip">Servidor</span><h3>Pide los huecos de la semana</h3></div>
+          <p>Petición <code>POST /availability</code> con <code>{ start, end }</code>. Va por POST a propósito: ninguna caché guarda un POST.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">3</span>
+        <div class="card">
+          <div class="row"><span class="chip">Servidor</span><span class="arrow">→</span><span class="chip goog">Google</span><h3>Consigue un token de Google</h3></div>
+          <p>OAuth2 con refresh token. Se cachea ~55 min en el servidor y <strong>nunca llega al navegador</strong>.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">4</span>
+        <div class="card">
+          <div class="row"><span class="chip goog">Google</span><span class="arrow">→</span><span class="chip">Servidor</span><h3>freeBusy: qué franjas están ocupadas</h3></div>
+          <p>Google Calendar de <code>comercial@</code> devuelve solo los tramos ocupados, sin exponer detalles de los eventos.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">5</span>
+        <div class="card">
+          <div class="row"><span class="chip">Servidor</span><h3>Genera los huecos aplicando las reglas</h3></div>
+          <p>Cruza el horario de apertura con lo ocupado: quita lo pasado, lo que incumple las 12 h de antelación y lo que se solapa.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">6</span>
+        <div class="card">
+          <div class="row"><span class="chip">Servidor</span><span class="arrow">→</span><span class="chip nav">Navegador</span><h3>Devuelve los huecos y el calendario los pinta</h3></div>
+          <p>El cliente ve, día a día, solo las horas realmente reservables.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- FASE 2 -->
+  <section class="phase p2">
+    <div class="phase-head">
+      <span class="phase-num">Fase 2</span>
+      <h2>Reserva — confirmar la cita</h2>
+      <span class="sub">un solo envío dispara todo lo demás</span>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="node">7</span>
+        <div class="card">
+          <div class="row"><span class="chip nav">Navegador</span><span class="arrow">→</span><span class="chip">Servidor</span><h3>El cliente elige hueco y envía sus datos</h3></div>
+          <p><code>POST /bookings</code> protegido con nonce, honeypot anti-bots y límite de 6 reservas/hora por IP.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">8</span>
+        <div class="card">
+          <div class="row"><span class="chip">Servidor</span><h3>Valida la solicitud</h3></div>
+          <p>Comprueba campos, tipo de visita, 12 h de antelación y que la hora caiga dentro del horario de apertura.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="node">9</span>
+        <div class="card">
+          <div class="row"><span class="chip">Servidor</span><span class="arrow">→</span><span class="chip goog">Google</span><h3>Crea el evento en Google Calendar</h3></div>
+          <p>Cita de 45 min con lugar (showroom de Ruzafa o videollamada) y los datos del cliente en la descripción.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="fanout-label">Y en cadena, automáticamente</div>
+    <div class="fanout">
+      <div class="fx"><h4><span class="ic">📅</span>Evento en Google Calendar</h4><p>Aparece en la agenda de comercial@ al instante.</p></div>
+      <div class="fx"><h4><span class="ic">🗄️</span>Guardado en tabla propia</h4><p>Se registra en la base de datos para poder recordar y cancelar.</p></div>
+      <div class="fx"><h4><span class="ic">✉️</span>Email al cliente</h4><p>Confirmación con los detalles y su enlace para cancelar.</p></div>
+      <div class="fx"><h4><span class="ic">🔔</span>Aviso a comercial@</h4><p>Notificación interna con nombre, teléfono y qué quiere ver.</p></div>
+      <div class="fx"><h4><span class="ic">📇</span>Lead en Pipedrive</h4><p>Crea el contacto y la oportunidad en el CRM, sin copiar a mano.</p></div>
+      <div class="fx"><h4><span class="ic">⏰</span>Recordatorio 24 h antes</h4><p>Un cron horario reengancha al cliente antes de la cita.</p></div>
+    </div>
+  </section>
+
+  <!-- RAILS -->
+  <section class="rails">
+    <div class="rail accent">
+      <h3><span class="tag">🕗</span>Reglas de negocio</h3>
+      <ul>
+        <li><strong>L–J</strong> 8:00–15:00 · <strong>V</strong> 8:00–13:00 · <strong>S</strong> 9:00–13:00 · D cerrado</li>
+        <li>Citas de <strong>45 min</strong>, una cada hora en punto (15 min de margen)</li>
+        <li>Mínimo <strong>12 h</strong> de antelación</li>
+        <li>Máximo <strong>4 semanas</strong> vista</li>
+        <li><strong>Presencial</strong> en el showroom o <strong>videollamada</strong></li>
+      </ul>
+    </div>
+    <div class="rail accent">
+      <h3><span class="tag">🛡️</span>Seguridad y robustez</h3>
+      <ul>
+        <li>Los <strong>tokens de Google</strong> viven solo en el servidor, nunca en el navegador</li>
+        <li><strong>Nonce + honeypot</strong> y límite por IP contra spam de bots</li>
+        <li>Los administradores logueados se saltan el límite para pruebas internas</li>
+        <li><strong>Healthcheck diario</strong>: refresca el token y avisa por email si algo falla</li>
+      </ul>
+    </div>
+    <div class="rail accent">
+      <h3><span class="tag">⚙️</span>Piezas del sistema</h3>
+      <ul>
+        <li><strong>Frontend</strong>: calendario y formulario en JavaScript</li>
+        <li><strong>REST</strong>: endpoints de disponibilidad y reserva</li>
+        <li><strong>Google Calendar</strong>: la agenda real, vía OAuth2</li>
+        <li><strong>Email + Pipedrive</strong>: confirmaciones, recordatorios y CRM</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CACHÉ -->
+  <div class="cache">
+    <h3>🥊 La guerra contra la caché</h3>
+    <p>El calendario mostraba «no hay huecos» aunque la agenda estuviera vacía: purgabas la caché, funcionaba, y al día siguiente se rompía otra vez. La solución definitiva fue cambiar la petición de disponibilidad de GET a POST — porque <strong>ninguna caché ni CDN cachea un POST</strong>, así que es imposible servir una disponibilidad vieja.</p>
+    <div class="flip">
+      <span class="tok old">GET /availability</span>
+      <span class="to">→</span>
+      <span class="tok new">POST /availability</span>
+    </div>
+    <div class="rounds">Cuatro reincidencias hasta dar con la causa raíz — incluida un nonce caducado en el HTML cacheado que tumbaba la petición con un 403.</div>
+  </div>
+
+  <footer>Adrihosan · flujo del sistema de reservas — material de apoyo para el podcast</footer>
+</div>
+</body>
+</html>
