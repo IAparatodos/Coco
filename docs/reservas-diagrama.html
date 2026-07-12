@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sistema de reservas Adrihosan — flujo</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3QgeD0iMyIgeT0iNiIgd2lkdGg9IjI2IiBoZWlnaHQ9IjIzIiByeD0iNSIgZmlsbD0iIzNmNmY3YiIvPjxyZWN0IHg9IjMiIHk9IjYiIHdpZHRoPSIyNiIgaGVpZ2h0PSI4IiByeD0iNSIgZmlsbD0iIzRkZDJkMCIvPjxyZWN0IHg9IjkiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjYiIHJ4PSIxLjUiIGZpbGw9IiMzZjZmN2IiLz48cmVjdCB4PSIyMCIgeT0iMyIgd2lkdGg9IjMiIGhlaWdodD0iNiIgcng9IjEuNSIgZmlsbD0iIzNmNmY3YiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjAuNSIgcj0iNSIgZmlsbD0iIzRkZDJkMCIvPjxwYXRoIGQ9Ik0xMy43IDIwLjVsMS43IDEuNyAzLTMuMyIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+Cg==">
+<meta name="description" content="Flujo completo del sistema de reservas de Adrihosan: un Calendly propio en WordPress conectado a Google Calendar, emails y CRM.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sistema de reservas Adrihosan — flujo">
+<meta property="og:description" content="Un Calendly propio dentro de WordPress: del calendario del cliente al evento en Google Calendar, emails, CRM y la saga del caché GET→POST.">
+<meta property="og:image" content="https://raw.githack.com/IAparatodos/Coco/main/docs/reservas-diagrama-card.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sistema de reservas Adrihosan — flujo">
+<meta name="twitter:description" content="Un Calendly propio dentro de WordPress, explicado en un diagrama.">
+<meta name="twitter:image" content="https://raw.githack.com/IAparatodos/Coco/main/docs/reservas-diagrama-card.svg">
 <style>
   html { -webkit-text-size-adjust: 100%; }
   img { max-width: 100%; }
@@ -86,6 +96,17 @@
 
   /* ---------- Header ---------- */
   .masthead { margin-bottom: 44px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+  .brand-mark { width: 40px; height: 40px; flex: none; filter: drop-shadow(0 3px 8px rgba(63,111,123,.18)); }
+  .brand-word {
+    display: flex; flex-direction: column; line-height: 1;
+    font-weight: 700; font-size: 20px; letter-spacing: -.02em; color: var(--ink);
+  }
+  .brand-sub {
+    font-size: 11px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--turquesa); margin-top: 4px;
+  }
+  @media (prefers-color-scheme: dark) { .brand-sub { color: var(--turquesa); } }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
@@ -227,6 +248,17 @@
 
 <div class="wrap">
   <header class="masthead">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" role="img" aria-label="Adrihosan reservas">
+        <rect x="3" y="6" width="26" height="23" rx="5" fill="#3f6f7b"/>
+        <rect x="3" y="6" width="26" height="8" rx="5" fill="#4dd2d0"/>
+        <rect x="9" y="3" width="3" height="6" rx="1.5" fill="#3f6f7b"/>
+        <rect x="20" y="3" width="3" height="6" rx="1.5" fill="#3f6f7b"/>
+        <circle cx="16" cy="20.5" r="5" fill="#4dd2d0"/>
+        <path d="M13.7 20.5l1.7 1.7 3-3.3" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-word">adrihosan<span class="brand-sub">reservas</span></span>
+    </div>
     <span class="eyebrow"><span class="dot"></span>Adrihosan · Sistema de citas</span>
     <h1>Un Calendly propio dentro de WordPress</h1>
     <p class="lede">Del calendario que ve el cliente hasta el evento en Google Calendar, los emails y el CRM — sin cuota mensual y sin ceder datos a un tercero.</p>
