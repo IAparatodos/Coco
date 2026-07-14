@@ -203,7 +203,7 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
                 <div class="material-card">
                     <span class="material-icon">&#128137;</span>
                     <h3>M&aacute;rmol</h3>
-                    <p>Piedra natural, pieza &uacute;nica con vetas, alto impacto visual. <a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-marmol/">Ver lavabos de m&aacute;rmol</a>.</p>
+                    <p>Piedra natural, pieza &uacute;nica con vetas, alto impacto visual. <a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-piedra/">Ver lavabos de piedra y m&aacute;rmol</a>.</p>
                 </div>
                 <div class="material-card">
                     <span class="material-icon">&#129704;</span>
