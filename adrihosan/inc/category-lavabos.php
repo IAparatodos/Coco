@@ -268,6 +268,7 @@ function adrihosan_categoria_lavabos_contenido_inferior() {
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-pequenos/">Lavabos peque&ntilde;os</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-de-colores/">Lavabos de colores</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-azul/">Lavabo azul</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-gris/">Lavabo gris</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/">Muebles de ba&ntilde;o</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/">Encimeras de ba&ntilde;o</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/espejos/">Espejos de ba&ntilde;o</a>
