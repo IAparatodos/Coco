@@ -263,7 +263,7 @@ function adrihosan_categoria_lavabo_gris_contenido_inferior() {
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-de-colores/">Lavabos de colores</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-negros/">Lavabos negros</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-blanco/">Lavabo blanco</a>
-                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-marmol/">Lavabo m&aacute;rmol</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-piedra/">Lavabos de piedra y m&aacute;rmol</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-de-resina/">Lavabo de resina</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/muebles-de-bano/mueble-bano-gris/">Mueble de ba&ntilde;o gris</a>
             </div>

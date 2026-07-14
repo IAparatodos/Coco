@@ -258,7 +258,7 @@ function adrihosan_categoria_lavabo_exterior_contenido_inferior() {
             <h2>Tambi&eacute;n te puede interesar</h2>
             <div class="related-pills">
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-piedra/">Lavabo de piedra</a>
-                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-marmol/">Lavabo de m&aacute;rmol</a>
+                <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-piedra/">Lavabos de piedra y m&aacute;rmol</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabo-rustico/">Lavabo r&uacute;stico</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/fregaderos/fregadero-exterior/fregadero-exterior-jardin/">Fregadero de exterior (jard&iacute;n)</a>
                 <a class="related-pill" href="https://www.adrihosan.com/categoria-producto/griferia/griferia-bano/grifo-lavabo/">Grifo de lavabo</a>
