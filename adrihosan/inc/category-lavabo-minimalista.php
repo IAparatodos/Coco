@@ -84,7 +84,7 @@ function adrihosan_categoria_lavabo_minimalista_contenido_superior() {
         <div class="ap-value-wrapper">
             <div class="section-header">
                 <p class="section-intro">
-                    Un <strong>lavabo minimalista</strong> se define por tres cosas: geometr&iacute;a pura, borde fino y superficie lisa. Aqu&iacute; tienes m&aacute;s de 200 modelos en <strong>Solid Surface</strong> y <strong>cer&aacute;mica extrafina</strong>: sobre encimera, suspendidos o de pie, de 30 a 141 cm, desde 78,90 &euro;.
+                    Un <strong>lavabo minimalista</strong> se reconoce a simple vista: formas geom&eacute;tricas sin adornos y un borde que casi desaparece. M&aacute;s de 200 modelos en <strong>Solid Surface</strong> y <strong>cer&aacute;mica extrafina</strong>: sobre encimera, suspendidos o de pie, de 30 a 141 cm, desde 78,90 &euro;.
                 </p>
             </div>
             <div class="ap-value-grid">
@@ -121,7 +121,7 @@ function adrihosan_categoria_lavabo_minimalista_contenido_superior() {
         <div class="lavmin-storytelling-wrapper">
             <h2>Qu&eacute; hace minimalista a un lavabo</h2>
             <div class="storytelling-text">
-                <p>Minimalista no es una marca ni un material: es una <strong>decisi&oacute;n de formas</strong>. Geometr&iacute;a pura &mdash; c&iacute;rculo, cuadrado o rect&aacute;ngulo, sin molduras &mdash;, <strong>borde fino</strong> (los cer&aacute;micos extrafinos bajan hasta 11,5 cm de altura total) y superficie lisa en mate o brillo. El resultado: una pieza de dise&ntilde;o que no compite con el resto del ba&ntilde;o.</p>
+                <p>Minimalista no es una marca ni un material: es una <strong>decisi&oacute;n de formas</strong>. C&iacute;rculo, cuadrado o rect&aacute;ngulo, sin molduras. El <strong>borde, cuanto m&aacute;s fino mejor</strong> (los cer&aacute;micos extrafinos se quedan en 11,5 cm de altura total), y la superficie lisa, en mate o en brillo. Una pieza as&iacute; no compite con el resto del ba&ntilde;o.</p>
                 <p>En el cat&aacute;logo mandan dos materiales. El <strong>Solid Surface</strong> en acabado mate, con el color macizo en toda la masa y series en 14 tonos (COSS, BINX, ONNI, ARVO y TOPI). Y la <strong>cer&aacute;mica</strong>, del cl&aacute;sico blanco desde 78,90 &euro; al extrafino de borde fino. Si buscas un tono concreto, tienes el detalle en <a href="https://www.adrihosan.com/categoria-producto/sanitarios/lavabos/lavabos-de-colores/">lavabos de colores</a>.</p>
             </div>
         </div>
@@ -296,7 +296,7 @@ function adrihosan_categoria_lavabo_minimalista_contenido_inferior() {
 
                 <div class="faq-item-common">
                     <button class="faq-question-common"><span>&iquest;Qu&eacute; hace que un lavabo sea minimalista?</span><span class="faq-icon-common">+</span></button>
-                    <div class="faq-answer-common"><p>Tres cosas: geometr&iacute;a pura (c&iacute;rculo, cuadrado o rect&aacute;ngulo, sin molduras), borde fino &mdash; los cer&aacute;micos extrafinos bajan hasta 11,5 cm de altura total &mdash; y superficie lisa en mate o brillo. El resultado es una pieza que no compite con el resto del ba&ntilde;o.</p></div>
+                    <div class="faq-answer-common"><p>La forma manda: c&iacute;rculo, cuadrado o rect&aacute;ngulo sin molduras, superficie lisa y un borde lo m&aacute;s fino posible (los cer&aacute;micos extrafinos se quedan en 11,5 cm de altura total). Al no tener adornos, la pieza encaja en el ba&ntilde;o sin pedir protagonismo.</p></div>
                 </div>
 
                 <div class="faq-item-common">
