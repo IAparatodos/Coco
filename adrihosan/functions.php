@@ -283,6 +283,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2726: // Lavabo minimalista (subcategoria del silo Lavabos, reconstruccion)
             adrihosan_setup_lavabo_minimalista_cpu_fix();
             break;
+        case 2699: // Lavabo ovalado (subcategoria del silo Lavabos, reconstruccion)
+            adrihosan_setup_lavabo_ovalado_cpu_fix();
+            break;
         case 2673: // Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
             adrihosan_setup_lavabo_blanco_cpu_fix();
             break;
@@ -1466,6 +1469,23 @@ function adrihosan_setup_lavabo_minimalista_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_lavabo_minimalista_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_minimalista_contenido_inferior', 99);
+    }
+}
+
+// Cat 2699 - Lavabo ovalado (reconstruccion: archivo por defecto con metas de
+// relleno; la descripcion editable sera reemplazada por el Archivo 2).
+function adrihosan_setup_lavabo_ovalado_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_lavabo_ovalado_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_lavabo_ovalado_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_lavabo_ovalado_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_lavabo_ovalado_contenido_inferior', 99);
     }
 }
 
@@ -2859,6 +2879,7 @@ $_adri_modular_incs = array(
     '/inc/category-lavabo-gris.php',        // Cat 2676 - Lavabo gris (subcategoria del silo Lavabos, reconstruccion)
     '/inc/category-lavabo-piedra.php',      // Cat 2649 - Lavabo piedra (consolidacion piedra/marmol/granito)
     '/inc/category-lavabo-minimalista.php', // Cat 2726 - Lavabo minimalista (subcategoria del silo Lavabos, reconstruccion)
+    '/inc/category-lavabo-ovalado.php',     // Cat 2699 - Lavabo ovalado (subcategoria del silo Lavabos, reconstruccion)
     '/inc/category-lavabo-blanco.php',      // Cat 2673 - Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
     '/inc/category-lavabo-de-resina.php',   // Cat 2681 - Lavabo de resina / Solid Surface (subcategoria del silo Lavabos)
     '/inc/category-lavabo-exterior.php',    // Cat 2716 - Lavabo exterior (subcategoria del silo Lavabos, reescritura limpia)
