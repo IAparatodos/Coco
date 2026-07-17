@@ -11,8 +11,9 @@
 function adrihosan_baneras_modernas_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <!-- TODO: imagen prestada del silo (hero de Solid Surface); sustituir por
+         la imagen propia de "baneras modernas" cuando se suba a uploads -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/float-banera-exenta-solid-surface-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
