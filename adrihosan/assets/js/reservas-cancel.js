@@ -26,7 +26,9 @@
             return;
         }
 
-        fetch(CANCELAR.restUrl + '/booking?token=' + encodeURIComponent(CANCELAR.token))
+        // no-store: el estado de la reserva cambia (p.ej. ya cancelada) y una
+        // respuesta cacheada por navegador/CDN mostraria un estado antiguo.
+        fetch(CANCELAR.restUrl + '/booking?token=' + encodeURIComponent(CANCELAR.token), { cache: 'no-store' })
             .then(function (res) {
                 if (res.status === 404) {
                     showPanel('cancel-not-found');
@@ -49,11 +51,17 @@
 
                 var details = $('cancel-details');
                 var tipoLabel = data.visitType === 'presencial' ? 'Presencial' : 'Virtual';
-                details.innerHTML =
-                    '<span class="cancelar-tag">' + data.name + '</span>' +
-                    '<span class="cancelar-tag">' + tipoLabel + '</span>' +
-                    '<span class="cancelar-tag">' + formatDateLong(data.startDate) + '</span>' +
-                    '<span class="cancelar-tag">' + data.startTime + '</span>';
+                if (details) {
+                    // textContent (no innerHTML): data.name viene de la BD y
+                    // no debe interpretarse nunca como HTML.
+                    details.innerHTML = '';
+                    [data.name, tipoLabel, formatDateLong(data.startDate), data.startTime].forEach(function (txt) {
+                        var tag = document.createElement('span');
+                        tag.className = 'cancelar-tag';
+                        tag.textContent = txt;
+                        details.appendChild(tag);
+                    });
+                }
 
                 showPanel('cancel-form-panel');
             })
@@ -106,6 +114,7 @@
             clearReasonError();
 
             var btn = $('cancel-submit');
+            if (!btn || btn.disabled) return;
             btn.disabled = true;
             btn.textContent = 'Cancelando...';
 

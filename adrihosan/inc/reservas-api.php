@@ -92,8 +92,15 @@ function adrihosan_reservas_generar_slots( $date_str, $busy = [] ) {
             $start_time = adrihosan_reservas_from_minutes( $current );
             $end_time   = adrihosan_reservas_from_minutes( $current + $duration );
 
-            $slot_timestamp = strtotime( $date_str . ' ' . $start_time );
-            $too_soon       = ( $slot_timestamp - $now ) < ( $min_adv * 3600 );
+            /* El slot es hora LOCAL de la web. strtotime() lo interpretaba
+             * como UTC (WP fija PHP a UTC), asi que la regla de 12h de
+             * antelacion eran en realidad ~10-11h. */
+            try {
+                $slot_timestamp = ( new DateTime( $date_str . ' ' . $start_time, $tz ) )->getTimestamp();
+            } catch ( Exception $e ) {
+                $slot_timestamp = strtotime( $date_str . ' ' . $start_time );
+            }
+            $too_soon = ( $slot_timestamp - $now ) < ( $min_adv * 3600 );
 
             $overlap = false;
             foreach ( $busy_minutes as $bm ) {
@@ -148,7 +155,13 @@ function adrihosan_reservas_validar( $data ) {
         return $errors;
     }
 
-    $slot_ts = strtotime( $data['startDate'] . ' ' . $data['startTime'] );
+    /* Mismo criterio que en generar_slots(): el slot es hora LOCAL. */
+    $tz = function_exists( 'wp_timezone' ) ? wp_timezone() : new DateTimeZone( 'Europe/Madrid' );
+    try {
+        $slot_ts = ( new DateTime( $data['startDate'] . ' ' . $data['startTime'], $tz ) )->getTimestamp();
+    } catch ( Exception $e ) {
+        return [ 'startDate_invalid' ];
+    }
     if ( ( $slot_ts - time() ) < adrihosan_reservas_min_advance_hours() * 3600 ) {
         $errors[] = 'minimum_advance_12h';
     }

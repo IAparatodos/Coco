@@ -7,7 +7,12 @@
         selectedDate: null,
         selectedSlot: null,
         weekData: null,
-        loading: false
+        loading: false,
+        // Numero de secuencia de peticiones de disponibilidad: clicks
+        // rapidos en prev/next lanzan varios POST y una respuesta tardia
+        // podia pintar los huecos de OTRA semana. Solo se acepta la
+        // respuesta cuyo seq coincide con el ultimo lanzado.
+        requestSeq: 0
     };
 
     var MONTHS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
@@ -96,6 +101,7 @@
         // provocaba 403 rest_cookie_invalid_nonce. El POST /bookings si lo
         // envia (alli es obligatorio).
         var url = RESERVAS.restUrl + '/availability';
+        var seq = ++state.requestSeq;
 
         fetch(url, {
             method: 'POST',
@@ -103,20 +109,29 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ start: start, end: end })
         })
-            .then(function (res) { return res.json(); })
+            .then(function (res) {
+                // Sin esto, un 403/500/503 con cuerpo JSON se interpretaba
+                // como "days undefined" y se mostraba "No hay huecos"
+                // enmascarando el fallo real del backend (patron que oculto
+                // la incidencia historica del nonce caducado).
+                if (!res.ok) { throw new Error('availability_http_' + res.status); }
+                return res.json();
+            })
             .then(function (json) {
+                if (seq !== state.requestSeq) return; // respuesta obsoleta
                 state.weekData = json.days || [];
                 state.loading = false;
-                renderWeek();
+                renderWeek(false);
             })
             .catch(function () {
-                state.weekData = [];
+                if (seq !== state.requestSeq) return;
+                state.weekData = null;
                 state.loading = false;
-                renderWeek();
+                renderWeek(true);
             });
     }
 
-    function renderWeek() {
+    function renderWeek(loadError) {
         var dates = getWeekDates(state.weekOffset);
         var strip = $('days-strip');
         var weekLabel = $('week-label');
@@ -127,11 +142,13 @@
 
         var firstDate = dates[0];
         var lastDate = dates[dates.length - 1];
-        weekLabel.textContent = firstDate.getDate() + ' ' + MONTHS[firstDate.getMonth()] +
-            ' – ' + lastDate.getDate() + ' ' + MONTHS[lastDate.getMonth()];
+        if (weekLabel) {
+            weekLabel.textContent = firstDate.getDate() + ' ' + MONTHS[firstDate.getMonth()] +
+                ' – ' + lastDate.getDate() + ' ' + MONTHS[lastDate.getMonth()];
+        }
 
-        prevBtn.disabled = state.weekOffset <= 0;
-        nextBtn.disabled = state.weekOffset >= (RESERVAS.config.maxWeeks - 1);
+        if (prevBtn) prevBtn.disabled = state.weekOffset <= 0;
+        if (nextBtn) nextBtn.disabled = state.weekOffset >= (RESERVAS.config.maxWeeks - 1);
 
         strip.innerHTML = '';
 
@@ -213,7 +230,17 @@
                 var slotsGrid = $('slots-grid');
                 var dayLabel = $('day-label');
                 if (dayLabel) dayLabel.textContent = '';
-                if (slotsGrid) slotsGrid.innerHTML = '<div class="reservas-slots-empty">No hay huecos disponibles esta semana. Prueba la siguiente.</div>';
+                if (slotsGrid) {
+                    if (loadError) {
+                        // Error de red/backend: se dice la verdad y se ofrece
+                        // reintentar, en vez del enganoso "no hay huecos".
+                        slotsGrid.innerHTML = '<div class="reservas-slots-empty">No se pudo cargar la disponibilidad. <button type="button" class="reservas-slot" id="retry-availability">Reintentar</button></div>';
+                        var retryBtn = $('retry-availability');
+                        if (retryBtn) retryBtn.addEventListener('click', fetchWeekAvailability);
+                    } else {
+                        slotsGrid.innerHTML = '<div class="reservas-slots-empty">No hay huecos disponibles esta semana. Prueba la siguiente.</div>';
+                    }
+                }
             }
         }
     }
@@ -280,9 +307,12 @@
             slotBtns[i].classList.toggle('is-selected', slotBtns[i].getAttribute('data-start') === startTime);
         }
 
-        $('input-visit-type').value = state.visitType;
-        $('input-start-date').value = state.selectedDate;
-        $('input-start-time').value = startTime;
+        var inputType = $('input-visit-type');
+        var inputDate = $('input-start-date');
+        var inputTime = $('input-start-time');
+        if (inputType) inputType.value = state.visitType;
+        if (inputDate) inputDate.value = state.selectedDate;
+        if (inputTime) inputTime.value = startTime;
 
         var d = new Date(state.selectedDate + 'T12:00:00');
         var summary = $('booking-summary');
@@ -376,7 +406,7 @@
             e.preventDefault();
 
             var btn = $('reservas-submit');
-            if (btn.disabled) return;
+            if (!btn || btn.disabled) return;
             btn.disabled = true;
             btn.textContent = 'Enviando...';
 
@@ -409,15 +439,25 @@
                         goToStep('done');
                     } else {
                         var msg = 'No se pudo completar la reserva.';
+                        var slotTaken = false;
                         if (json.errors) {
-                            if (json.errors.indexOf('rate_limited') !== -1) msg = 'Has alcanzado el límite de reservas por hora. Inténtalo más tarde.';
+                            if (json.errors.indexOf('slot_unavailable') !== -1) { msg = 'Ese hueco se acaba de ocupar. Elige otra hora, por favor.'; slotTaken = true; }
+                            else if (json.errors.indexOf('rate_limited') !== -1) msg = 'Has alcanzado el límite de reservas por hora. Inténtalo más tarde.';
                             else if (json.errors.indexOf('minimum_advance_12h') !== -1) msg = 'La cita debe reservarse con al menos 12 horas de antelación.';
                             else if (json.errors.indexOf('outside_opening_hours') !== -1) msg = 'El horario seleccionado está fuera del horario de apertura.';
                             else if (json.errors.indexOf('calendar_unavailable') !== -1) msg = 'El sistema de calendario no está disponible. Contacta por teléfono.';
+                            else if (json.errors.indexOf('nonce_invalid') !== -1) msg = 'Tu sesión ha caducado. Recarga la página e inténtalo de nuevo.';
                         }
                         alert(msg);
                         btn.disabled = false;
                         btn.textContent = 'Solicitar cita';
+                        if (slotTaken) {
+                            // El hueco ya no existe: volver al calendario con
+                            // disponibilidad fresca para elegir otro.
+                            state.selectedSlot = null;
+                            goToStep(2);
+                            fetchWeekAvailability();
+                        }
                     }
                 })
                 .catch(function () {
