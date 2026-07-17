@@ -412,8 +412,12 @@ function adrihosan_setup_brand_solidker() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_brand_solidker_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_brand_solidker_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_brand_solidker_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_brand_solidker_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_brand_solidker_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_brand_solidker_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -422,8 +426,12 @@ function adrihosan_setup_bano_imitacion_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_bano', 8);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20);
+    if ( function_exists( 'adrihosan_contenido_superior_bano' ) ) {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_bano', 8);
+    }
+    if ( function_exists( 'adrihosan_contenido_inferior_bano' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_bano', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -431,8 +439,12 @@ function adrihosan_setup_cocina_imitacion_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_cocina', 9);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21);
+    if ( function_exists( 'adrihosan_contenido_superior_cocina' ) ) {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_cocina', 9);
+    }
+    if ( function_exists( 'adrihosan_contenido_inferior_cocina' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_cocina', 21);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -441,8 +453,12 @@ function adrihosan_setup_hidraulica_original_cpu_fix() {
     remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);
+    if ( function_exists( 'adrihosan_contenido_superior_original' ) ) {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_original', 7);
+    }
+    if ( function_exists( 'adrihosan_contenido_inferior_original' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_original', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -451,8 +467,12 @@ function adrihosan_setup_espejos_cpu_fix() {
     remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos', 9);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21);
+    if ( function_exists( 'adrihosan_contenido_superior_espejos' ) ) {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_espejos', 9);
+    }
+    if ( function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_espejos', 21);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -461,8 +481,12 @@ function adrihosan_setup_espejos_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_con_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_con_luz_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_con_luz_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -471,8 +495,12 @@ function adrihosan_setup_wood_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_wood_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_wood_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_wood_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_wood_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -481,8 +509,12 @@ function adrihosan_setup_hexagonal_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_hexagonal_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_hexagonal_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_hexagonal_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_hexagonal_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_hexagonal_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_hexagonal_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -491,8 +523,12 @@ function adrihosan_setup_imitacion_cemento_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_cemento_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_cemento_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_imitacion_cemento_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_cemento_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_imitacion_cemento_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_cemento_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -501,8 +537,12 @@ function adrihosan_setup_paredes_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_paredes_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_paredes_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pilar_paredes_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_paredes_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_paredes_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_paredes_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -511,8 +551,12 @@ function adrihosan_setup_azulejos_bano_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_bano_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_bano_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -521,8 +565,12 @@ function adrihosan_setup_azulejos_cocina_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_cocina_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_cocina_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_cocina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_cocina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_cocina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_cocina_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -531,8 +579,12 @@ function adrihosan_setup_azulejos_exterior_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_exterior_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_exterior_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_exterior_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_exterior_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_exterior_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_exterior_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -541,8 +593,12 @@ function adrihosan_setup_azulejos_piscinas_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_piscinas_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_piscinas_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_piscinas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_piscinas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_piscinas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_piscinas_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -551,8 +607,12 @@ function adrihosan_setup_pavimentos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pavimentos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pavimentos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pavimentos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pavimentos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pavimentos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pavimentos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -561,8 +621,12 @@ function adrihosan_setup_azulejos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -571,8 +635,12 @@ function adrihosan_setup_porcelanico_marmol_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
-    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_marmol_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_marmol_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_porcelanico_marmol_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_marmol_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_porcelanico_marmol_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_marmol_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -581,8 +649,12 @@ function adrihosan_setup_suelo_tecnico_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_suelo_tecnico_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_suelo_tecnico_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_suelo_tecnico_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_suelo_tecnico_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_suelo_tecnico_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_suelo_tecnico_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -591,8 +663,12 @@ function adrihosan_setup_suelos_cocina_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_cocina_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_cocina_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_suelos_cocina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_cocina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_suelos_cocina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_cocina_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -601,8 +677,12 @@ function adrihosan_setup_suelos_rusticos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_rusticos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_rusticos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_suelos_rusticos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_suelos_rusticos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_suelos_rusticos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_suelos_rusticos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -611,8 +691,12 @@ function adrihosan_setup_porcelanico_tecnico_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_porcelanico_tecnico_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_porcelanico_tecnico_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_tecnico_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -709,8 +793,12 @@ function adrihosan_setup_zellige_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_zellige_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_zellige_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_zellige_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_zellige_contenido_inferior', 99);
+    }
 
     // Eliminar subcategorías: forzar display mode "products" + vaciar array subcats
     add_filter('wc_get_loop_display_mode', function() { return 'products'; });
@@ -726,8 +814,12 @@ function adrihosan_setup_ceramica_cpu_fix() {
         remove_all_actions('woocommerce_archive_description');
     }
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20);
+    if ( function_exists( 'adrihosan_ceramica_superior_final' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_superior_final', 5);
+    }
+    if ( function_exists( 'adrihosan_ceramica_inferior_final' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_inferior_final', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -737,8 +829,12 @@ function adrihosan_setup_porcelanico_cpu_fix() {
         remove_all_actions('woocommerce_archive_description');
     }
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20);
+    if ( function_exists( 'adrihosan_porcelanico_superior_final' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_superior_final', 5);
+    }
+    if ( function_exists( 'adrihosan_porcelanico_inferior_final' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_inferior_final', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -748,8 +844,12 @@ function adrihosan_setup_gran_formato_cpu_fix() {
         remove_all_actions('woocommerce_archive_description');
     }
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20);
+    if ( function_exists( 'adrihosan_gran_formato_superior_final' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_gran_formato_superior_final', 5);
+    }
+    if ( function_exists( 'adrihosan_gran_formato_inferior_final' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_gran_formato_inferior_final', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -759,8 +859,12 @@ function adrihosan_setup_extrafino_cpu_fix() {
         remove_all_actions('woocommerce_archive_description');
     }
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20);
+    if ( function_exists( 'adrihosan_extrafino_superior_final' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_extrafino_superior_final', 5);
+    }
+    if ( function_exists( 'adrihosan_extrafino_inferior_final' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_extrafino_inferior_final', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -770,8 +874,12 @@ function adrihosan_setup_metro_cpu_fix() {
         remove_all_actions('woocommerce_archive_description');
     }
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
+    if ( function_exists( 'adrihosan_metro_superior_final' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_metro_superior_final', 5);
+    }
+    if ( function_exists( 'adrihosan_metro_inferior_final' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_metro_inferior_final', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -783,8 +891,12 @@ function adrihosan_setup_pilar_bh_cpu_fix() {
     remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
     remove_action('woocommerce_no_products_found', 'wc_no_products_found', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pilar_bh_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bh_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_bh_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bh_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -793,8 +905,12 @@ function adrihosan_setup_pilar_bano_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pilar_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_bano_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -802,8 +918,12 @@ function adrihosan_setup_pilar_cocina_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pilar_cocina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_cocina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_cocina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_cocina_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -811,8 +931,12 @@ function adrihosan_setup_pilar_exterior_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_pilar_exterior_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_exterior_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_exterior_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_exterior_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -820,8 +944,12 @@ function adrihosan_setup_imitacion_hidraulico_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
+    if ( function_exists( 'adrihosan_pilar_imitacion_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pilar_imitacion_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pilar_imitacion_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pilar_imitacion_contenido_inferior', 20);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -844,8 +972,12 @@ function adrihosan_setup_camerinos_cpu_fix() {
     remove_action('woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22);
+    if ( function_exists( 'adrihosan_contenido_superior_camerinos' ) ) {
+        add_action('woocommerce_before_main_content', 'adrihosan_contenido_superior_camerinos', 10);
+    }
+    if ( function_exists( 'adrihosan_contenido_inferior_camerinos' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_contenido_inferior_camerinos', 22);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -854,8 +986,12 @@ function adrihosan_setup_imitacion_piedra_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_piedra_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_piedra_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_imitacion_piedra_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_imitacion_piedra_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_imitacion_piedra_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_imitacion_piedra_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -864,8 +1000,12 @@ function adrihosan_setup_fachadas_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_fachadas_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_fachadas_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_fachadas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_fachadas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_fachadas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_fachadas_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -874,8 +1014,12 @@ function adrihosan_setup_escama_pez_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_escama_pez_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_escama_pez_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_escama_pez_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_escama_pez_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_escama_pez_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_escama_pez_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -884,8 +1028,12 @@ function adrihosan_setup_azulejos_15x15_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_15x15_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_15x15_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_15x15_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_15x15_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_15x15_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_15x15_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -894,8 +1042,12 @@ function adrihosan_setup_azulejos_antiguos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_antiguos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_antiguos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_antiguos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_antiguos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_antiguos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_antiguos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -904,8 +1056,12 @@ function adrihosan_setup_azulejos_decorativos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_decorativos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_decorativos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_decorativos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_decorativos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_decorativos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_decorativos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -934,8 +1090,12 @@ function adrihosan_setup_azulejos_hexagonales_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_azulejos_hexagonales_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_hexagonales_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_hexagonales_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -944,8 +1104,12 @@ function adrihosan_setup_porcelanico_techlam_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_techlam_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_techlam_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_porcelanico_techlam_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_porcelanico_techlam_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_porcelanico_techlam_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_porcelanico_techlam_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -954,8 +1118,12 @@ function adrihosan_setup_ceramica_vives_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_ceramica_vives_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_vives_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_ceramica_vives_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_vives_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -964,8 +1132,12 @@ function adrihosan_setup_navarti_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_navarti_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_navarti_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_navarti_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_navarti_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_navarti_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_navarti_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -974,8 +1146,12 @@ function adrihosan_setup_mosaico_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_mosaico_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_mosaico_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_mosaico_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_mosaico_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_mosaico_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_mosaico_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -984,8 +1160,12 @@ function adrihosan_setup_barro_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_barro_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_barro_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_barro_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_barro_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_barro_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_barro_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -994,8 +1174,12 @@ function adrihosan_setup_barro_exterior_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_barro_exterior_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_barro_exterior_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_barro_exterior_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_barro_exterior_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_barro_exterior_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_barro_exterior_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1004,8 +1188,12 @@ function adrihosan_setup_muebles_bano_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1014,8 +1202,12 @@ function adrihosan_setup_muebles_bano_pequeno_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_pequeno_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_pequeno_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_pequeno_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1024,8 +1216,12 @@ function adrihosan_setup_muebles_bano_baratos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_baratos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_baratos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_baratos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1034,8 +1230,12 @@ function adrihosan_setup_muebles_bano_diseno_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_diseno_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_diseno_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_diseno_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1044,8 +1244,12 @@ function adrihosan_setup_muebles_bano_rusticos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_rusticos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_rusticos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_rusticos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1054,8 +1258,12 @@ function adrihosan_setup_muebles_bano_suspendidos_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_suspendidos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_suspendidos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_suspendidos_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1064,8 +1272,12 @@ function adrihosan_setup_muebles_bano_patas_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_patas_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_patas_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_muebles_bano_patas_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_muebles_bano_patas_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_muebles_bano_patas_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_muebles_bano_patas_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1074,8 +1286,12 @@ function adrihosan_setup_columnas_bano_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_columnas_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_columnas_bano_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_columnas_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_columnas_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_columnas_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_columnas_bano_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1084,8 +1300,12 @@ function adrihosan_setup_ofertas_muebles_bano_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_ofertas_muebles_bano_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_ofertas_muebles_bano_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ofertas_muebles_bano_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
     // Badge -XX% sobre el precio rebajado
     add_filter('woocommerce_sale_flash', 'adrihosan_ofertas_muebles_bano_sale_flash', 10, 3);
@@ -1096,8 +1316,12 @@ function adrihosan_setup_espejos_negros_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_negros_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_negros_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejos_negros_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_negros_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejos_negros_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_negros_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1757,8 +1981,12 @@ function adrihosan_setup_espejo_bano_140_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_140_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_140_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_140_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_140_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_140_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_140_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1767,8 +1995,12 @@ function adrihosan_setup_espejo_bano_50_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_50_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_50_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1777,8 +2009,12 @@ function adrihosan_setup_espejo_bano_50x80_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_50x80_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_50x80_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_50x80_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1787,8 +2023,12 @@ function adrihosan_setup_espejo_bano_60_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_60_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_60_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1797,8 +2037,12 @@ function adrihosan_setup_espejo_bano_60x90_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_60x90_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_60x90_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_60x90_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1807,8 +2051,12 @@ function adrihosan_setup_espejo_bano_antivaho_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_antivaho_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_antivaho_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_antivaho_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1817,8 +2065,12 @@ function adrihosan_setup_espejo_bano_90x100_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_90x100_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_90x100_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x100_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1827,8 +2079,12 @@ function adrihosan_setup_espejo_bano_sin_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_sin_luz_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_sin_luz_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1837,8 +2093,12 @@ function adrihosan_setup_espejos_aumento_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_aumento_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_aumento_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejos_aumento_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_aumento_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejos_aumento_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_aumento_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1847,8 +2107,12 @@ function adrihosan_setup_espejo_bano_90x80_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_bano_90x80_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_bano_90x80_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_bano_90x80_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1857,8 +2121,12 @@ function adrihosan_setup_espejo_redondo_70_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_redondo_70_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_redondo_70_luz_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_70_luz_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1867,8 +2135,12 @@ function adrihosan_setup_espejo_redondo_100_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_100_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_100_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_redondo_100_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_redondo_100_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_redondo_100_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_redondo_100_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1877,8 +2149,12 @@ function adrihosan_setup_espejos_con_marco_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_con_marco_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_con_marco_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejos_con_marco_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejos_con_marco_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejos_con_marco_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejos_con_marco_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
@@ -1887,8 +2163,12 @@ function adrihosan_setup_espejo_ovalado_luz_cpu_fix() {
     remove_all_actions('woocommerce_archive_description');
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
     remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
-    add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_superior', 5);
-    add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_inferior', 99);
+    if ( function_exists( 'adrihosan_espejo_ovalado_luz_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_ovalado_luz_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_ovalado_luz_contenido_inferior', 99);
+    }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
