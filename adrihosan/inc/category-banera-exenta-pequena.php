@@ -117,7 +117,7 @@ function adrihosan_banera_exenta_pequena_contenido_inferior() {
             <!-- TODO: sustituir el placeholder por la imagen real -->
             <div class="banpq-inspiration-img"></div>
             <div class="banpq-inspiration-text">
-                <h2>Una ba&ntilde;era exenta peque&ntilde;a no resta funcionalidad: la concentra</h2>
+                <h2>Una ba&ntilde;era exenta peque&ntilde;a no resta comodidad: la concentra</h2>
                 <p>Material sin poros, l&iacute;neas limpias y una sola pieza que transforma incluso los ba&ntilde;os m&aacute;s reducidos en zonas de descanso.</p>
             </div>
         </div>
