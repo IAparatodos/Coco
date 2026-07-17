@@ -126,18 +126,17 @@ function adrihosan_baneras_exentas_contenido_inferior() {
             <h2>Inspiraci&oacute;n para tu ba&ntilde;o</h2>
             <div class="banex-inspiration-grid">
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/banera-solid-surface/" class="banex-inspiration-card">
-                    <!-- TODO: sustituir el placeholder por la imagen real -->
-                    <div class="banex-inspiration-img"></div>
+                    <div class="banex-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/float-banera-exenta-solid-surface-Adrihosan.jpg');"></div>
                     <div class="banex-inspiration-label">Ba&ntilde;eras de Solid Surface</div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/baneras-exentas-modernas/" class="banex-inspiration-card">
-                    <!-- TODO: sustituir el placeholder por la imagen real -->
-                    <div class="banex-inspiration-img"></div>
+                    <!-- TODO: imagen provisional (generica de exentas); sustituir por la
+                         imagen real de "baneras modernas" cuando se suba a uploads -->
+                    <div class="banex-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Adrihosan.jpg');"></div>
                     <div class="banex-inspiration-label">Ba&ntilde;eras modernas de dise&ntilde;o</div>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/baneras-exentas/banera-corian/" class="banex-inspiration-card">
-                    <!-- TODO: sustituir el placeholder por la imagen real -->
-                    <div class="banex-inspiration-img"></div>
+                    <div class="banex-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Corian-Adrihosan.jpg');"></div>
                     <div class="banex-inspiration-label">Ba&ntilde;eras Corian a medida</div>
                 </a>
             </div>
