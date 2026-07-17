@@ -70,7 +70,9 @@ add_filter( 'the_title', 'dw_add_subtitle', 10, 2 );
 function dw_add_subtitle( $title, $id = null ) {
 	$subtitle = get_post_meta($id, 'cfp-subtitle', true);
 	if ($subtitle) {
-		$title .= '<span class="subtitle">' . $subtitle . '</span>';
+		// esc_html: el subtitulo es meta editable y the_title se pinta
+		// tambien en admin y menus (XSS almacenado sin escapar)
+		$title .= '<span class="subtitle">' . esc_html( $subtitle ) . '</span>';
 	}
 	return $title;
 }

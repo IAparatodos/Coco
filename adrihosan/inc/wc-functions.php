@@ -3164,7 +3164,7 @@ function doo_menu_cats() {
 
 			<li class="menu-item parent">
 
-				<a href="<?php echo $link; ?>"><span><?php echo $title; ?></span><span class="more">+</span><span class="minus">-</span></a>
+				<a href="<?php echo esc_url( $link ); ?>"><span><?php echo esc_html( $title ); ?></span><span class="more">+</span><span class="minus">-</span></a>
 
 					<?php
 
@@ -3190,7 +3190,7 @@ function doo_menu_cats() {
 
 									<div class="menu-item child">
 
-										<a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+										<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $title ); ?></a>
 
 									</div>
 
@@ -3212,7 +3212,7 @@ function doo_menu_cats() {
 
 										<div class="menu-item child level-2">
 
-											<a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+											<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $title ); ?></a>
 
 										</div>
 
