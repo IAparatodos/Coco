@@ -1,5 +1,36 @@
 # Adrihosan - Instrucciones para Claude
 
+## AUDITORÍA 2026-07-17 — estado y pendientes
+
+Auditoría completa del repo (functions.php, inc/, assets/). **Corregido en PRs #51-#56**:
+reservas blindadas (doble reserva, DoS por `end` sin acotar, fail-open, timezone, manejo
+de errores JS), guards `function_exists` en los 140 enganches de contenido, "36 meses"→"3 meses",
+headings con palabras prohibidas, cache-busting con `filemtime` (base-global, mobile-fixes,
+CSS padre), escapado de menús/REQUEST_URI/subtítulos, backups de functions.php eliminados del repo.
+
+**Pendientes de decisión/verificación (NO tocar sin revisar en navegador):**
+
+1. **HTML cruzado en cats 2083, 4876, 4862, 102**: su `_contenido_superior` engancha a
+   `woocommerce_before_main_content` prio 7-9 pero `<main>` se abre a prio 10 → hero fuera
+   de `<main>` y `#fe-products-wrapper` cruzado. Migrarlas al patrón estándar
+   (`before_shop_loop` prio 5) requiere comprobar el filtrado FE y el CSS en esas 4 páginas.
+2. **Paletas fuera de identidad**: `category-1989.css` y `category-4043.css` (terracota) y
+   `category-66.css` (azules acuáticos) violan la identidad de 2 colores. Migración visual pendiente.
+   Residuos menores (`#102e35`, `#333`, `#eee`) en ~31 CSS antiguos.
+3. **mobile-fixes.css**: desde ~línea 195 contiene secciones de contenido (`bho-*`, `bhp-*`) que
+   violan la regla "solo loop de productos". Reubicarlas a sus category-CSS con verificación visual.
+4. **Heros sin imagen**: `category-baneras-modernas.php` y `category-baneras-baratas.php` tienen
+   el `TODO` de background-image sin resolver → pedir URLs reales de las imágenes.
+5. **`inc/category-espejos.php` está huérfano** (nunca se requiere): la cat 102 vive inline en
+   functions.php. No añadir su require sin limpiar la duplicación. La tabla de categorías de este
+   archivo está desfasada (el switch tiene 118 cases + 1 brand): **la fuente de verdad es el switch
+   de functions.php**, no la tabla.
+6. **Reservas — mejoras de fondo** (no urgentes): tokens de cancelación sin caducidad (RGPD),
+   `CREATE TABLE IF NOT EXISTS` rompe dbDelta, rate-limit sobre REMOTE_ADDR detrás de CDN,
+   Pipedrive síncrono en el request de reserva.
+7. **H1 fijo** (sin `adrihosan_h1_dinamico`) en `category-encimeras-bano.php` y
+   `category-encimeras-blancas.php`.
+
 ## REGLA OBLIGATORIA — main es la única fuente de verdad
 
 Cada sesión nueva, **antes de tocar código**:
