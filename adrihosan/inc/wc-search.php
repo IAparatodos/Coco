@@ -112,7 +112,8 @@ function dw_wc_product_search_selects($args = []) {
 		if (!$html) return false;
 		$url = strtok( $_SERVER['REQUEST_URI'], '?' );
 		if ( strpos( $_SERVER['REQUEST_URI'], '?' ) ) {
-			$html .= '<a class="reset-filter" href="' . $url . '"><img alt="reset" title="Reset" src="' . get_theme_file_uri('img/reset.svg') . '"></a>';
+			// esc_url: REQUEST_URI lo controla el cliente (XSS reflejado sin escapar)
+			$html .= '<a class="reset-filter" href="' . esc_url( $url ) . '"><img alt="reset" title="Reset" src="' . esc_url( get_theme_file_uri('img/reset.svg') ) . '"></a>';
 		}
 		ob_start();
 		?>
