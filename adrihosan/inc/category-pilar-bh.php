@@ -43,7 +43,10 @@ function adrihosan_pilar_bh_controller() {
  * Inyecta el contenido superior: Hero, Características, Hub y Best Sellers.
  */
 function adrihosan_pilar_bh_contenido_superior() {
-    $hero_img_url = get_term_meta( get_queried_object_id(), 'bh_hero_img_url', true ) ?: 'https://www.adrihosan.com/wp-content/uploads/2023/04/fa4a5c7e-d682-41f2-a4a3-c2eafa4fea9d.jpg';
+    // Fallback: misma imagen que el hero de Baldosa Hidraulica Original (4862).
+    // El anterior (uploads/2023/04/fa4a5c7e-...jpg, nombre UUID) ya no existia
+    // en uploads y el hero salia sin fondo.
+    $hero_img_url = get_term_meta( get_queried_object_id(), 'bh_hero_img_url', true ) ?: 'https://www.adrihosan.com/wp-content/uploads/2026/01/Baldosa-hidraulica-original-Adrihosan-1.jpg';
     ?>
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('<?php echo esc_url( $hero_img_url ); ?>');">
         <div class="hero-content">
