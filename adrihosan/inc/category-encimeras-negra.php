@@ -89,7 +89,7 @@ function adrihosan_categoria_encimeras_negra_contenido_superior() {
     <!-- 3. STORYTELLING: EL NEGRO QUE DA CARACTER -->
     <section class="encimeras-negra-storytelling adrihosan-full-width-block">
         <div class="encimeras-negra-storytelling-wrapper">
-            <h2>Encimera de ba&ntilde;o negra: elegancia contempor&aacute;nea que combina con todo</h2>
+            <h2>Encimera de ba&ntilde;o negra: contraste que combina con todo</h2>
             <div class="storytelling-text">
                 <p>El negro es el color que m&aacute;s transforma un ba&ntilde;o con un solo cambio. Aporta profundidad, marca un punto de dise&ntilde;o y, al contrario de lo que parece, es de los m&aacute;s f&aacute;ciles de combinar: funciona con madera para un aire c&aacute;lido, con <a href="https://www.adrihosan.com/categoria-producto/sanitarios/encimeras-bano/encimera-bano-blanca/">blanco</a> para el cl&aacute;sico contraste que nunca falla y con detalles en dorado para un toque sofisticado.</p>
                 <p>La duda habitual es el mantenimiento, porque en un negro brillante se ve cada gota. Por eso trabajamos sobre todo el negro <strong>mate</strong> en Solid Surface y resina: la superficie mate y sin poros disimula las marcas de agua y la cal apenas se aprecia. Si buscas el golpe de efecto sin la pesadilla de limpieza, esta es tu encimera.</p>

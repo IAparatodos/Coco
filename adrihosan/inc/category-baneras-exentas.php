@@ -21,7 +21,7 @@ function adrihosan_baneras_exentas_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Ba&ntilde;eras Exentas' ); ?></h1>
             <p class="hero-tagline">Libre instalaci&oacute;n, dise&ntilde;o que destaca.</p>
-            <p>Ba&ntilde;eras exentas de libre instalaci&oacute;n: Solid Surface, Corian, acr&iacute;licas y de resina mineral. Modernas, con patas, redondas, rectangulares y a medida. M&aacute;s de 280 modelos con env&iacute;o gratis y 36 meses sin intereses.</p>
+            <p>Ba&ntilde;eras exentas de libre instalaci&oacute;n: Solid Surface, Corian, acr&iacute;licas y de resina mineral. Modernas, con patas, redondas, rectangulares y a medida. M&aacute;s de 280 modelos con env&iacute;o gratis y 3 meses sin intereses.</p>
         </div>
     </section>
 
@@ -208,7 +208,7 @@ function adrihosan_baneras_exentas_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Depende del uso. El Solid Surface, que fabricamos en Adrihosan, mantiene mejor la temperatura del agua, es reparable y resiste el rayado. El acr&iacute;lico es m&aacute;s ligero y econ&oacute;mico, ideal para ba&ntilde;os en plantas altas. El Corian es similar al Solid Surface pero de marca registrada DuPont y suele ir asociado a piezas a medida.</p>
+                        <p>Depende del uso. El Solid Surface, que trabajamos a medida con nuestra l&iacute;nea propia Solidker, mantiene mejor la temperatura del agua, es reparable y resiste el rayado. El acr&iacute;lico es m&aacute;s ligero y econ&oacute;mico, ideal para ba&ntilde;os en plantas altas. El Corian es similar al Solid Surface pero de marca registrada DuPont y suele ir asociado a piezas a medida.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">

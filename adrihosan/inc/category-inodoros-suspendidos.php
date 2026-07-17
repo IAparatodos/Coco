@@ -120,7 +120,7 @@ function adrihosan_categoria_inodoros_suspendidos_contenido_inferior() {
     <!-- 6. CTA INTERMEDIO -->
     <section class="inodoros-suspendidos-cta-mid adrihosan-full-width-block">
         <div class="cta-mid-wrapper">
-            <p class="cta-mid-text">&iquest;Necesitas tambi&eacute;n el bastidor con la cisterna? Te montamos el conjunto completo y te lo enviamos.</p>
+            <p class="cta-mid-text">&iquest;Necesitas tambi&eacute;n el bastidor con la cisterna? Te preparamos el conjunto completo y te lo enviamos.</p>
             <a class="cta-mid-btn" href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20quiero%20el%20conjunto%20completo%20inodoro%20suspendido%20+%20bastidor%20+%20cisterna%20empotrada" target="_blank">WhatsApp 96 195 71 36</a>
         </div>
     </section>
