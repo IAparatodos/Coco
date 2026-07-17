@@ -76,18 +76,22 @@ function adrihosan_cargar_css_categoria() {
     // base-global.css y mobile-fixes.css solo usan selectores .tax-product_cat.term-XXXX
     // → No cargar en fichas de producto individual (mejora LCP: -2 CSS bloqueantes)
     if (!is_singular('product')) {
+        // filemtime() para cache-busting automatico al editar (mismo patron
+        // que category-{ID}.css); fallback a version fija si faltara el archivo.
+        $base_global_path = get_stylesheet_directory() . '/assets/css/base-global.css';
         wp_enqueue_style(
             'adrihosan-base-global',
             get_stylesheet_directory_uri() . '/assets/css/base-global.css',
             array(),
-            '1.0.0'
+            file_exists($base_global_path) ? filemtime($base_global_path) : '1.0.0'
         );
 
+        $mobile_fixes_path = get_stylesheet_directory() . '/assets/css/mobile-fixes.css';
         wp_enqueue_style(
             'adrihosan-mobile-fixes',
             get_stylesheet_directory_uri() . '/assets/css/mobile-fixes.css',
             array('adrihosan-base-global'),
-            '1.0.0'
+            file_exists($mobile_fixes_path) ? filemtime($mobile_fixes_path) : '1.0.0'
         );
     }
 
@@ -152,7 +156,10 @@ function adrihosan_cargar_css_categoria() {
                     'adrihosan-category-parent-' . $cat->parent,
                     get_stylesheet_directory_uri() . $parent_css_file,
                     array('adrihosan-base-global'),
-                    '1.0.0'
+                    // filemtime, no version fija: con '1.0.0' las ediciones
+                    // del CSS del padre no invalidaban la cache (el mismo
+                    // bug que ya se corrigio para el CSS propio).
+                    filemtime($parent_css_path)
                 );
             }
         }
