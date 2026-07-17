@@ -80,17 +80,63 @@ function adrihosan_rest_availability( WP_REST_Request $request ) {
         return new WP_REST_Response( [ 'slots' => [] ], 200 );
     }
 
-    $access_token = adrihosan_reservas_get_access_token();
-    $busy         = [];
+    /* Acotar la ventana pedida: sin esto, un POST anonimo con
+     * end=9999-12-31 provocaba millones de iteraciones del bucle de dias
+     * y una llamada freeBusy gigante (DoS de CPU en endpoint publico).
+     * El frontend pide semanas (6 dias), asi que 7 dias de rango sobran.
+     * Comparacion de strings valida por formato YYYY-MM-DD. */
+    if ( $end < $start ) {
+        $end = $start;
+    }
+    $span_limit = gmdate( 'Y-m-d', strtotime( $start . ' +7 days' ) );
+    if ( $end > $span_limit ) {
+        $end = $span_limit;
+    }
+    if ( $end > $max_date ) {
+        $end = $max_date;
+    }
 
-    if ( ! is_wp_error( $access_token ) ) {
-        $calendar_id = adrihosan_reservas_get_calendar_id();
-        $time_min    = gmdate( 'c', strtotime( $start . 'T00:00:00+02:00' ) );
-        $time_max    = gmdate( 'c', strtotime( $end . 'T23:59:59+02:00' ) );
-        $result      = adrihosan_google_calendar_freebusy( $calendar_id, $time_min, $time_max, $access_token );
-        if ( ! is_wp_error( $result ) ) {
-            $busy = $result;
+    /* Fail-CLOSED: si Google no responde (token caido, cuota, red), se
+     * devuelve 503 en vez de "todo libre". Antes, con $busy = [], un fallo
+     * de token ofrecia todos los huecos como disponibles y se aceptaban
+     * reservas sobre horas ya ocupadas. */
+    $access_token = adrihosan_reservas_get_access_token();
+    if ( is_wp_error( $access_token ) ) {
+        return new WP_REST_Response( [ 'error' => 'calendar_unavailable' ], 503 );
+    }
+
+    /* Zona horaria de la web (no offset fijo +02:00: en invierno es +01:00
+     * y la ventana freeBusy quedaba desplazada una hora). */
+    $tz = function_exists( 'wp_timezone' ) ? wp_timezone() : new DateTimeZone( 'Europe/Madrid' );
+
+    $calendar_id = adrihosan_reservas_get_calendar_id();
+    try {
+        $time_min = ( new DateTime( $start . ' 00:00:00', $tz ) )->format( 'c' );
+        $time_max = ( new DateTime( $end . ' 23:59:59', $tz ) )->format( 'c' );
+    } catch ( Exception $e ) {
+        return new WP_REST_Response( [ 'error' => 'invalid start date' ], 400 );
+    }
+
+    $busy = adrihosan_google_calendar_freebusy( $calendar_id, $time_min, $time_max, $access_token );
+    if ( is_wp_error( $busy ) ) {
+        return new WP_REST_Response( [ 'error' => 'calendar_unavailable' ], 503 );
+    }
+
+    /* Agrupar los tramos ocupados por su fecha LOCAL. Google devuelve
+     * freeBusy en UTC: agrupar por substr() asignaba al dia anterior los
+     * eventos cercanos a medianoche local. */
+    $busy_by_day = [];
+    foreach ( $busy as $b ) {
+        if ( empty( $b['start'] ) ) {
+            continue;
         }
+        try {
+            $bd = new DateTime( $b['start'] );
+            $bd->setTimezone( $tz );
+        } catch ( Exception $e ) {
+            continue;
+        }
+        $busy_by_day[ $bd->format( 'Y-m-d' ) ][] = $b;
     }
 
     $days    = [];
@@ -98,16 +144,9 @@ function adrihosan_rest_availability( WP_REST_Request $request ) {
     $last    = strtotime( $end );
 
     while ( $current <= $last ) {
-        $date_str  = gmdate( 'Y-m-d', $current );
-        $day_busy  = [];
-        foreach ( $busy as $b ) {
-            $b_date = substr( $b['start'], 0, 10 );
-            if ( $b_date === $date_str ) {
-                $day_busy[] = $b;
-            }
-        }
-        $slots  = adrihosan_reservas_generar_slots( $date_str, $day_busy );
-        $days[] = [
+        $date_str = gmdate( 'Y-m-d', $current );
+        $slots    = adrihosan_reservas_generar_slots( $date_str, $busy_by_day[ $date_str ] ?? [] );
+        $days[]   = [
             'date'  => $date_str,
             'slots' => $slots,
         ];
@@ -165,6 +204,44 @@ function adrihosan_rest_create_booking( WP_REST_Request $request ) {
     }
 
     $calendar_id = adrihosan_reservas_get_calendar_id();
+
+    /* Cerrojo blando por slot: dos POST simultaneos del mismo hueco
+     * (doble click, dos pestanas) chocan aqui antes de llegar a Google.
+     * 15s cubren de sobra la ventana entre re-verificacion y creacion. */
+    $lock_key = 'adria_slot_lock_' . md5( $data['startDate'] . '_' . $data['startTime'] );
+    if ( get_transient( $lock_key ) ) {
+        return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'slot_unavailable' ] ], 409 );
+    }
+    set_transient( $lock_key, 1, 15 );
+
+    /* Re-verificacion anti doble-reserva: consultar freeBusy del dia y
+     * comprobar que el hueco pedido sigue libre ANTES de crear el evento.
+     * Sin esto, dos clientes con el calendario abierto a la vez podian
+     * reservar el mismo slot y ambos recibian confirmacion. */
+    $tz = function_exists( 'wp_timezone' ) ? wp_timezone() : new DateTimeZone( 'Europe/Madrid' );
+    try {
+        $day_min = ( new DateTime( $data['startDate'] . ' 00:00:00', $tz ) )->format( 'c' );
+        $day_max = ( new DateTime( $data['startDate'] . ' 23:59:59', $tz ) )->format( 'c' );
+    } catch ( Exception $e ) {
+        return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'startDate_invalid' ] ], 400 );
+    }
+
+    $day_busy = adrihosan_google_calendar_freebusy( $calendar_id, $day_min, $day_max, $access_token );
+    if ( is_wp_error( $day_busy ) ) {
+        return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'calendar_unavailable' ] ], 503 );
+    }
+
+    $slot_libre = false;
+    foreach ( adrihosan_reservas_generar_slots( $data['startDate'], $day_busy ) as $s ) {
+        if ( $s['start'] === $data['startTime'] ) {
+            $slot_libre = true;
+            break;
+        }
+    }
+    if ( ! $slot_libre ) {
+        return new WP_REST_Response( [ 'ok' => false, 'errors' => [ 'slot_unavailable' ] ], 409 );
+    }
+
     $start_dt    = $data['startDate'] . 'T' . $data['startTime'] . ':00';
     $end_dt      = gmdate( 'Y-m-d\TH:i:s', strtotime( $start_dt ) + ( adrihosan_reservas_duration() * 60 ) );
 
