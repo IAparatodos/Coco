@@ -19,8 +19,11 @@ CSS padre), escapado de menús/REQUEST_URI/subtítulos, backups de functions.php
    Residuos menores (`#102e35`, `#333`, `#eee`) en ~31 CSS antiguos.
 3. **mobile-fixes.css**: desde ~línea 195 contiene secciones de contenido (`bho-*`, `bhp-*`) que
    violan la regla "solo loop de productos". Reubicarlas a sus category-CSS con verificación visual.
-4. **Heros sin imagen**: `category-baneras-modernas.php` y `category-baneras-baratas.php` tienen
-   el `TODO` de background-image sin resolver → pedir URLs reales de las imágenes.
+4. **Heros sin imagen**: ✅ resuelto provisionalmente (PR #58): modernas usa el hero de
+   Solid Surface y baratas la genérica de Exentas, ambas del propio silo. Sustituir por
+   imágenes propias cuando se suban a uploads (los `TODO` en los archivos lo marcan).
+   Quedan placeholders de tarjetas de inspiración en corian:95, pequena:117,
+   modernas:122 y baratas:132.
 5. **`inc/category-espejos.php` está huérfano** (nunca se requiere): la cat 102 vive inline en
    functions.php. No añadir su require sin limpiar la duplicación. La tabla de categorías de este
    archivo está desfasada (el switch tiene 118 cases + 1 brand): **la fuente de verdad es el switch

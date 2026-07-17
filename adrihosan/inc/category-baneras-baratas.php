@@ -25,8 +25,9 @@ function adrihosan_baneras_baratas_orden_precio_asc( $q ) {
 function adrihosan_baneras_baratas_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
-    <section class="hero-section-container adrihosan-full-width-block">
+    <!-- TODO: imagen prestada del silo (generica de Baneras Exentas); sustituir
+         por la imagen propia de "baneras baratas" cuando se suba a uploads -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
