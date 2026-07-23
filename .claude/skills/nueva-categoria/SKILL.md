@@ -19,6 +19,16 @@ antes de escribir código.
   103, 2421, 2428, 2528). Solo se crea un widget nuevo si los atributos
   filtrables son distintos.
 
+## 1b. Imágenes (hero y cualquier imagen nueva) — REGLA DURA del operador (2026-07-23)
+
+- **Toda imagen que se suba a adrihosan.com va en JPG optimizado y de poco peso.**
+  Nada de PNG de generadores de IA (salen a 2+ MB). Conversión obligatoria antes
+  de subir: `ffmpeg -i in.png -vf "scale=1600:-2" -q:v 4 out.jpg`.
+- Objetivo: hero ~1600px de ancho y **<200 KB**; miniaturas al tamaño real de
+  uso y **<100 KB**. PNG solo si la transparencia es imprescindible.
+- Verificar el peso (`ls -la`) ANTES de subir a la mediateca y de referenciar
+  la URL en la plantilla.
+
 ## 2. CSS: `adrihosan/assets/css/category-{ID}.css`
 
 - Copia **`category-2428.css`** como base (es la implementación canónica de
