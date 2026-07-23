@@ -48,7 +48,7 @@ function adrihosan_categoria_lavabos_baratos_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2022/05/lavabo-solid-surface-square-decorado.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabos-baratos.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabos baratos' ); ?></h1>
             <p class="hero-tagline">Rebajados de precio, no de calidad.</p>

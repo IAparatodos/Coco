@@ -44,7 +44,7 @@ function adrihosan_categoria_lavabo_rustico_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2019/12/lavabo-redondo-porcelana-crudo-nordic-adrihosan-4.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabo-rustico.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo r&uacute;stico' ); ?></h1>
             <p class="hero-tagline">La materia a la vista: m&aacute;rmol, piedra, terrazo y barro crudo.</p>

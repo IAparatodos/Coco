@@ -68,7 +68,7 @@ function adrihosan_categoria_lavabo_minimalista_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2021/07/opbouwkom_topi_1_0002_8157513237785.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabo-minimalista.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo minimalista' ); ?></h1>
             <p class="hero-tagline">Geometr&iacute;a pura y borde fino: la pieza que no rompe el ba&ntilde;o.</p>

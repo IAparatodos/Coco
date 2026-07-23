@@ -56,7 +56,7 @@ function adrihosan_categoria_lavabo_ovalado_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2021/07/opbouwkom_omni_1_0002_8157513233718.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabo-ovalado.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo ovalado' ); ?></h1>
             <p class="hero-tagline">La forma sin esquinas: c&oacute;moda en la encimera, suave a la vista.</p>

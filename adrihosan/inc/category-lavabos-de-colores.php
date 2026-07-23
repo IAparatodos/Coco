@@ -54,7 +54,7 @@ function adrihosan_categoria_lavabos_de_colores_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2021/07/opbouwkom_binx_1_0015_8157513226335.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabos-de-colores.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabos de colores' ); ?></h1>
             <p class="hero-tagline">Catorce colores. Cinco formatos. T&uacute; eliges la combinaci&oacute;n.</p>
