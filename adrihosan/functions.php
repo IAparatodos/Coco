@@ -310,6 +310,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2644: // Lavabos pequenos (subcategoria del silo Lavabos, reconstruccion)
             adrihosan_setup_lavabos_pequenos_cpu_fix();
             break;
+        case 92: // Lavabos suspendidos (subcategoria del silo Lavabos, reconstruccion)
+            adrihosan_setup_lavabos_suspendidos_cpu_fix();
+            break;
         case 2673: // Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
             adrihosan_setup_lavabo_blanco_cpu_fix();
             break;
@@ -1882,6 +1885,27 @@ function adrihosan_setup_lavabos_pequenos_cpu_fix() {
     }
 }
 
+// Cat 92 - Lavabos suspendidos (reconstruccion: el post de la altura le
+// pisaba la transaccional a la categoria; "lavabo suspendido" 952 impr/12m
+// con la categoria en pos 40,2. Lo informativo se queda en el post
+// /a-que-altura-se-pone-un-lavabo-suspendido/; la categoria reclama la
+// transaccional. 19 productos, sin curacion). OJO: el copy lleva precios
+// verificados el 23-jul-2026.
+function adrihosan_setup_lavabos_suspendidos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_categoria_92_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_categoria_92_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_categoria_92_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_92_contenido_inferior', 99);
+    }
+}
+
 // Cat 2937 - Lavabo alargado (subcategoria del silo Lavabos)
 function adrihosan_setup_lavabo_alargado_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
@@ -3337,6 +3361,7 @@ $_adri_modular_incs = array(
     '/inc/category-lavabos-de-colores.php', // Cat 2703 - Lavabos de colores (subcategoria del silo Lavabos, reconstruccion)
     '/inc/category-lavabos-negros.php',     // Cat 2723 - Lavabos negros (subcategoria del silo Lavabos, reconstruccion)
     '/inc/category-lavabos-pequenos.php',   // Cat 2644 - Lavabos pequenos (subcategoria del silo Lavabos, reconstruccion)
+    '/inc/category-lavabos-suspendidos.php', // Cat 92 - Lavabos suspendidos (subcategoria del silo Lavabos, reconstruccion)
     '/inc/category-lavabo-blanco.php',      // Cat 2673 - Lavabo blanco (subcategoria del silo Lavabos, termino cabecera)
     '/inc/category-lavabo-de-resina.php',   // Cat 2681 - Lavabo de resina / Solid Surface (subcategoria del silo Lavabos)
     '/inc/category-lavabo-exterior.php',    // Cat 2716 - Lavabo exterior (subcategoria del silo Lavabos, reescritura limpia)
