@@ -45,7 +45,7 @@ function adrihosan_categoria_lavabo_redondo_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2019/12/lavabo-redondo-porcelana-blanca-cuenca-adrihosan-3.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabo-redondo.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo redondo' ); ?></h1>
             <p class="hero-tagline">El bol de siempre, en la materia que quieras.</p>

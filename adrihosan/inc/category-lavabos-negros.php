@@ -52,7 +52,7 @@ function adrihosan_categoria_lavabos_negros_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2025/07/lavabo-a-suelo-lijar-negro-mate.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabos-negros.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabos negros' ); ?></h1>
             <p class="hero-tagline">34 modelos en cer&aacute;mica, terrazo y Solid Surface, de 94,90 a 508,90 &euro; +IVA. Mate, bicolor o con pie: elige el material primero y el formato despu&eacute;s.</p>

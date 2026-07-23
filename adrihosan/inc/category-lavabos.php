@@ -46,7 +46,7 @@ function adrihosan_categoria_lavabos_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/lavabo-120-cm-1-seno.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabos.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabos' ); ?></h1>
             <p class="hero-tagline">El lavabo manda en el ba&ntilde;o. Elige el tuyo entre m&aacute;s de 200 modelos.</p>
