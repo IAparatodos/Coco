@@ -43,7 +43,7 @@ function adrihosan_categoria_lavabo_sobre_encimera_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2021/07/opbouwkom_topi_google_2_0002_8157513237783.jpg');">
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/themes/adrihosan/assets/img/heroes/hero-lavabo-sobre-encimera.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Lavabo sobre encimera' ); ?></h1>
             <p class="hero-tagline">El vaso a la vista manda en el ba&ntilde;o. Elige bien el tuyo.</p>
