@@ -138,16 +138,16 @@
     font-size: 0.85rem;
 }
 
-/* ---------- 4. Filtro FE sticky (escritorio) ---------- */
+/* ---------- 4. Filtro FE (bloque normal en el flujo) ---------- */
+/* NOTA: el wireframe pedia sticky en escritorio, pero fijado al hacer
+ * scroll tapaba la pagina (feedback de Ricardo 2026-08-01). Se queda como
+ * tarjeta normal en el flujo. NO volver a poner position: sticky. */
 .tax-product_cat.term-86 .pldu-filter-shell {
     margin: 40px 0;
 }
 
 @media (min-width: 1025px) {
     .tax-product_cat.term-86 .pldu-filter-shell {
-        position: sticky;
-        top: 90px;
-        z-index: 20;
         background: #ffffff;
         border: 1px solid #d4e3e6;
         border-radius: 10px;
