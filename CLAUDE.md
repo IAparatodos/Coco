@@ -409,6 +409,55 @@ Si el OAuth consent screen del proyecto Google Cloud está en modo **"Testing"**
 
 `inc/reservas-google-auth.php` cachea el access_token en transient durante ~55 min. Cuando Google rechaza un token cacheado con 401 (raro pero posible), `inc/reservas-google-api.php` detecta el 401, fuerza un refresh (`get_access_token(true)`) y reintenta una vez. Antes de esto, el sistema podía servir un token muerto hasta 55 min sin auto-recuperarse.
 
+## REGLA CRÍTICA: "Error crítico" que NO es del tema — core de WordPress a medias
+
+### El caso real (2026-08-01, tras desplegar la cat 86)
+
+Web caída con "error crítico" justo después de subir archivos del tema por FTP.
+Parecía la subida — **no lo era**. Cronología del diagnóstico:
+
+1. Rollback del `functions.php` anterior → **seguía caída** (primera pista: no es lo subido).
+2. `error_log` de la raíz: `Call to undefined function RankMath\Status\untrailingslashit()`.
+3. Se desactiva Rank Math (renombrar carpeta por FTP) → **peta el SIGUIENTE plugin**
+   (`woocommerce-abandon-cart-pro`) pidiendo la MISMA función.
+4. Clave: `untrailingslashit()` es de **core** (`wp-includes/formatting.php`). Si dos plugins
+   sin relación no la encuentran, el roto es el core. Segunda prueba: los dos logs mostraban
+   `wp-settings.php(749)` y `wp-settings.php(771)` con 6 min de diferencia → **update de core
+   aplicado a medias** (versiones mezcladas en disco).
+
+### Reglas de diagnóstico rápido
+
+- "Error crítico" + el rollback del tema NO lo arregla → mirar `error_log` (raíz,
+  `wp-content/`, `themes/adrihosan/`) ANTES de tocar nada más.
+- Si el fatal es `undefined function` de una función de WordPress core (`untrailingslashit`,
+  `wp_parse_args`, etc.) → **el core está roto**; apagar plugins es matar moscas: irán
+  petando en cadena por orden alfabético de carga.
+- La web caída NO bloquea el arreglo: cPanel → **Terminal** (wp-cli) funciona igual.
+
+### El fix (5 minutos, cPanel → Terminal)
+
+```bash
+cd ~/public_html && wp core version                      # ver versión (ej. 7.0.2)
+wp core download --version=X.Y.Z --locale=es_ES --force --skip-content
+wp core verify-checksums                                 # debe dar Success
+```
+
+`--skip-content` + `--force` machaca SOLO el núcleo (`wp-includes`, `wp-admin`, PHP de la
+raíz) sin tocar `wp-content` ni `wp-config.php`. Los warnings de `verify-checksums` por
+archivos `error_log`/`.rnd` sobrantes son metralla del incidente: borrarlos y listo.
+
+### Trucos que salieron de este incidente
+
+- **flush.php de emergencia**: si no puedes entrar al admin para purgar OPcache, sube por
+  FTP un `flush.php` a la raíz con `<?php if(function_exists('opcache_reset')){opcache_reset();}
+  echo 'PHP vivo: '.PHP_VERSION;` y ábrelo en el navegador. Borrar después.
+- Renombrar `inc/category-X.php` a `.bak` levanta la web al instante si el corrupto es un inc
+  (los requires llevan `file_exists`) — en este caso no era, pero es la primera bala.
+- El email "Tu sitio tiene problemas técnicos" de comercial@ trae el error exacto y el modo
+  de recuperación.
+- WP desactiva en BD los plugins cuya carpeta desaparece: al restaurar la carpeta hay que
+  **reactivarlos** en el admin (Rank Math gratuito ANTES que el PRO).
+
 ## REGLA CRÍTICA: Subidas FTP corruptas tiran la web — `require` defensivo OBLIGATORIO
 
 ### El problema (caso real 2026-05-05)
