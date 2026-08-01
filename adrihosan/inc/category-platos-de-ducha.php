@@ -22,11 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function adrihosan_platos_ducha_contenido_superior() {
     ?>
-    <!-- 1. HERO -->
-    <!-- TODO: sustituir el fondo corporativo por la imagen hero real cuando
-         llegue (paso 3 del plan: genimg -> JPG < 200 KB -> OK de Ricardo).
-         Basta cambiar el style por background-image: url('...'); -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-color: #3f6f7b;">
+    <!-- 1. HERO (imagen del paso 3 del plan, subida a uploads el 1-ago) -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/plato-de-ducha-blanco-textura-pizarra-adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
