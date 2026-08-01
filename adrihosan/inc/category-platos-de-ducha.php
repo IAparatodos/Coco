@@ -268,5 +268,24 @@ function adrihosan_platos_ducha_contenido_inferior() {
             </div>
         </div>
     </section>
+
+    <!-- 11. CONTACTO RICARDO (bloque comun; anadido a peticion de Ricardo 1-ago) -->
+    <section class="contact-help-common adrihosan-full-width-block">
+        <div class="contact-help-wrapper">
+            <div class="contact-intro">
+                <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en platos de ducha de Adrihosan">
+                <div>
+                    <h2>&iquest;Dudas con la medida o el material?<span>Soy Ricardo, te ayudo a elegir tu plato de ducha.</span></h2>
+                </div>
+            </div>
+            <div class="contact-options-grid-common">
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">&#128205;</div><div class="label">Visita Presencial</div></a>
+                <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Visita Virtual</div></a>
+                <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
+                <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20un%20plato%20de%20ducha" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">Whatsapp</div></a>
+                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;&#65039;</div><div class="label">Email</div></a>
+            </div>
+        </div>
+    </section>
     <?php
 }
