@@ -253,6 +253,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 81: // Inodoro (raiz silo Sanitarios > Inodoro)
             adrihosan_setup_inodoro_cpu_fix();
             break;
+        case 86: // Platos de ducha (LA MADRE del silo, patron repartidor)
+            adrihosan_setup_platos_ducha_cpu_fix();
+            break;
         case 82: // Inodoro a suelo (pilar silo, hija de 81)
             adrihosan_setup_inodoro_a_suelo_cpu_fix();
             break;
@@ -1466,6 +1469,21 @@ function adrihosan_setup_encimeras_resina_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_categoria_encimeras_resina_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_categoria_encimeras_resina_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_platos_ducha_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_platos_ducha_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_platos_ducha_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_platos_ducha_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_platos_ducha_contenido_inferior', 99);
     }
 }
 
@@ -3399,6 +3417,7 @@ $_adri_modular_incs = array(
     '/inc/category-inodoro-pequeno.php',    // Cat 3798 - Inodoro pequeno (hija de 81)
     '/inc/category-inodoros-baratos.php',   // Cat 3795 - Inodoros baratos (hija de 81)
     '/inc/category-inodoros-colores.php',   // Cat 3811 - Inodoros de colores (hija de 81)
+    '/inc/category-platos-de-ducha.php',    // Cat 86 - Platos de ducha (MADRE del silo, patron repartidor)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
