@@ -21,6 +21,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function adrihosan_platos_ducha_contenido_superior() {
+    // En una URL de filtro CON regla SEO propia (p.ej. /plt-textura-marmol/)
+    // solo se pintan hero, filtro y listado. Los bloques repartidores son de
+    // la madre: clonarlos ahi duplicaria su contenido palabra por palabra en
+    // una URL indexable distinta y la pondria a competir consigo misma.
+    // El resto de URLs de filtro (sin regla, en noindex) no cambian.
+    $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
     <!-- 1. HERO (imagen del paso 3 del plan, subida a uploads el 1-ago) -->
     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/plato-de-ducha-blanco-textura-pizarra-adrihosan.jpg');">
@@ -31,10 +37,15 @@ function adrihosan_platos_ducha_contenido_superior() {
                 <span>Platos de ducha</span>
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Platos de ducha' ); ?></h1>
+            <?php if ( ! $es_filtro ) : ?>
+            <!-- Subtitulo de la MADRE: sus cifras solo son ciertas en la madre.
+                 En un filtro (5 platos desde 257,90) mentiria, asi que no se pinta. -->
             <p>M&aacute;s de 700 modelos desde 120,90&nbsp;&euro; +IVA. Resina a medida, antideslizantes C3 y sin escal&oacute;n, con anchos de 70 a 130&nbsp;cm y largos hasta 230.</p>
+            <?php endif; ?>
         </div>
     </section>
 
+    <?php if ( ! $es_filtro ) : ?>
     <!-- 2. MEDIDAS - EL BLOQUE PROTAGONISTA (la pregunta n.1 del comprador: cabe o no cabe) -->
     <section class="pldu-sizes-section adrihosan-full-width-block">
         <div class="pldu-sizes-wrapper">
@@ -63,13 +74,16 @@ function adrihosan_platos_ducha_contenido_superior() {
             </div>
         </div>
     </section>
+    <?php endif; // fin bloque 2 ?>
 
     <!-- 3. FILTRO FE PRO (conjunto 429707: Largo + Ancho deslizadores, Textura casillas) -->
+    <!-- SIEMPRE visible, tambien en filtro: es como el usuario afina o deshace. -->
     <!-- CRITICO: sin este bloque el filtro no existe para el usuario. Sticky en escritorio (CSS). -->
     <div class="pldu-filter-shell">
         <div class="filter-container-master"><?php echo do_shortcode( '[fe_widget id="429707"]' ); ?></div>
     </div>
 
+    <?php if ( ! $es_filtro ) : ?>
     <!-- 4. PARA QUIEN ES (la familia de hijas mas fuerte del silo) -->
     <section class="pldu-who-section adrihosan-full-width-block">
         <div class="pldu-who-wrapper">
@@ -123,11 +137,18 @@ function adrihosan_platos_ducha_contenido_superior() {
             <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-baratos/" class="pldu-price-link">Ver la selecci&oacute;n de platos de ducha baratos &rarr;</a>
         </div>
     </section>
+    <?php endif; // fin bloques 4, 5 y 6 ?>
 
     <!-- 7. TITULO CATALOGO + LISTADO (el loop es el fondo de armario, no el escaparate) -->
+    <!-- En filtro el encabezado se neutraliza: "Catalogo completo" sobre 5 platos
+         de marmol es falso, y las cifras de la madre no valen aqui. -->
     <div class="product-loop-header">
+        <?php if ( $es_filtro ) : ?>
+        <h2 id="pldu-catalogo">Modelos disponibles</h2>
+        <?php else : ?>
         <h2 id="pldu-catalogo">Cat&aacute;logo completo de platos de ducha</h2>
         <p>M&aacute;s de 700 modelos. Usa el filtro de medidas y textura para acotar.</p>
+        <?php endif; ?>
     </div>
 
     <!-- WRAPPER AJAX para Filter Everything Pro (lo exige wpc_filter_settings) -->
@@ -136,9 +157,12 @@ function adrihosan_platos_ducha_contenido_superior() {
 }
 
 function adrihosan_platos_ducha_contenido_inferior() {
+    // Mismo criterio que en el bloque superior (ambito de funcion distinto).
+    $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
     </div><!-- /fe-products-wrapper -->
 
+    <?php if ( ! $es_filtro ) : ?>
     <!-- 8. MARCAS (tres enlaces, nada mas) -->
     <section class="pldu-brands-section adrihosan-full-width-block">
         <div class="pldu-brands-wrapper">
@@ -265,8 +289,10 @@ function adrihosan_platos_ducha_contenido_inferior() {
             </div>
         </div>
     </section>
+    <?php endif; // fin bloques 8, 9 y 10 ?>
 
     <!-- 11. CONTACTO RICARDO (bloque comun; anadido a peticion de Ricardo 1-ago) -->
+    <!-- SIEMPRE visible: no es contenido de catalogo, es atencion al cliente. -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
             <div class="contact-intro">
