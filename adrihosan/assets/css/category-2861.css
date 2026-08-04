@@ -1,0 +1,566 @@
+/* ========================================================================== */
+/* CATEGORY-2861.CSS - Platos de ducha Duplach (hoja de marca)                 */
+/* Identidad corporativa Adrihosan:                                            */
+/*   - Color corporativo CTA: #4dd2d0                                          */
+/*   - Color corporativo texto: #3f6f7b                                        */
+/*   - Tipografia corporativa: Poppins                                         */
+/* Patron HOJA DE MARCA: el bloque de confianza va justo tras el hero, antes   */
+/* que nada de catalogo (responde a "duplach opiniones", la de mas CTR).       */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-2861 .woocommerce-breadcrumb,
+.tax-product_cat.term-2861 .woocommerce-products-header,
+.tax-product_cat.term-2861 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero (estructura base en critical CSS del header) ---------- */
+.tax-product_cat.term-2861 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2861 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2861 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 3. Bloque de confianza (el protagonista) ---------- */
+.tax-product_cat.term-2861 .dupl-trust-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin: 0 0 14px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-intro {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    max-width: 780px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin-bottom: 34px;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-card {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 26px 24px;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.12rem;
+    font-weight: 650;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-card li {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tax-product_cat.term-2861 .dupl-trust-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #4dd2d0;
+}
+
+/* Opinion de Ricardo */
+.tax-product_cat.term-2861 .dupl-opinion {
+    background: #ffffff;
+    border-left: 4px solid #4dd2d0;
+    border-radius: 10px;
+    padding: 26px 28px;
+    margin-bottom: 34px;
+    box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+}
+
+.tax-product_cat.term-2861 .dupl-opinion h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin: 0 0 12px;
+}
+
+.tax-product_cat.term-2861 .dupl-opinion p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-2861 .dupl-opinion-firma {
+    font-weight: 600;
+    color: #4dd2d0 !important;
+    margin: 0 !important;
+}
+
+/* Resenas citadas (sin estrellas ni medias: son de la tienda, no del producto) */
+.tax-product_cat.term-2861 .dupl-reviews h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin: 0 0 6px;
+}
+
+.tax-product_cat.term-2861 .dupl-reviews-nota {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.75;
+    font-size: 0.85rem;
+    margin: 0 0 18px;
+}
+
+.tax-product_cat.term-2861 .dupl-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.tax-product_cat.term-2861 .dupl-review {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 0;
+}
+
+.tax-product_cat.term-2861 .dupl-review p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    font-style: italic;
+    margin: 0 0 12px;
+}
+
+.tax-product_cat.term-2861 .dupl-review cite {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2861 .dupl-review-critica {
+    border-color: #4dd2d0;
+}
+
+.tax-product_cat.term-2861 .dupl-garantia {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    background: #ffffff;
+    border: 1px dashed #d4e3e6;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 0;
+}
+
+/* ---------- 4. Las dos series ---------- */
+.tax-product_cat.term-2861 .dupl-series-section {
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .dupl-series-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2861 .dupl-series-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2861 .dupl-series-sub {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 34px;
+    line-height: 1.6;
+}
+
+.tax-product_cat.term-2861 .dupl-series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-top: 4px solid #4dd2d0;
+    border-radius: 12px;
+    padding: 26px 24px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-clave {
+    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 14px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-card > p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-datos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid #d4e3e6;
+    padding-top: 16px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-datos li {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.92rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tax-product_cat.term-2861 .dupl-serie-datos li span {
+    opacity: 0.7;
+}
+
+.tax-product_cat.term-2861 .dupl-series-tercera {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2861 .dupl-series-tercera a {
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2861 .dupl-series-tercera a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 5. Franja de precio ---------- */
+.tax-product_cat.term-2861 .dupl-price-band {
+    background: #3f6f7b;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .dupl-price-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-2861 .dupl-price-line {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.tax-product_cat.term-2861 .dupl-price-link {
+    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2861 .dupl-price-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 6. Medidas (seleccion, no rejilla de madre) ---------- */
+.tax-product_cat.term-2861 .dupl-sizes-section {
+    background: #f0f7f8;
+    padding: 55px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .dupl-sizes-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2861 .dupl-sizes-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-2861 .dupl-sizes-sub {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0 0 26px;
+    line-height: 1.6;
+}
+
+.tax-product_cat.term-2861 .dupl-sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.tax-product_cat.term-2861 .dupl-size-btn {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 10px;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2861 .dupl-size-btn:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+}
+
+.tax-product_cat.term-2861 .dupl-sizes-madre {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+    padding-bottom: 2px;
+}
+
+/* ---------- 7. Filtro FE heredado de la madre (mismo marcado) ---------- */
+/* NOTA: sin position:sticky (tapaba la pagina; decision del 1-ago en cat 86). */
+.tax-product_cat.term-2861 .pldu-filter-shell {
+    margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+    .tax-product_cat.term-2861 .pldu-filter-shell {
+        background: #ffffff;
+        border: 1px solid #d4e3e6;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+    }
+}
+
+/* ---------- 8. Titulo catalogo ---------- */
+.tax-product_cat.term-2861 .product-loop-header {
+    text-align: center;
+    margin: 50px auto 30px;
+    max-width: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .product-loop-header h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-2861 .product-loop-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* ---------- 9. Guias del blog ---------- */
+.tax-product_cat.term-2861 .dupl-guides-section {
+    background: #f0f7f8;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2861 .dupl-guides-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2861 .dupl-guides-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-2861 .dupl-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.tax-product_cat.term-2861 .dupl-guide-link {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #3f6f7b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2861 .dupl-guide-link:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* ---------- 10. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+.tax-product_cat.term-2861 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-2861 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 11. Responsive movil ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2861 .dupl-trust-section,
+    .tax-product_cat.term-2861 .dupl-series-section,
+    .tax-product_cat.term-2861 .dupl-sizes-section {
+        padding: 40px 15px;
+    }
+
+    .tax-product_cat.term-2861 .dupl-trust-card,
+    .tax-product_cat.term-2861 .dupl-serie-card {
+        padding: 20px 18px;
+    }
+
+    .tax-product_cat.term-2861 .dupl-opinion {
+        padding: 20px 18px;
+    }
+
+    .tax-product_cat.term-2861 .dupl-sizes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-2861 .dupl-size-btn {
+        padding: 13px 6px;
+        font-size: 0.95rem;
+    }
+
+    .tax-product_cat.term-2861 .dupl-price-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ---------- 12. Responsive tablet ---------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tax-product_cat.term-2861 .dupl-sizes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
