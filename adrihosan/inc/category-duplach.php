@@ -27,11 +27,8 @@ function adrihosan_duplach_contenido_superior() {
     // marca en una URL indexable distinta la pondria a competir con esta.
     $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
-    <!-- 1. HERO -->
-    <!-- TODO: sustituir el fondo corporativo por la imagen editorial cuando
-         llegue (JPG < 200 KB, 1600x1066, partiendo de foto real de un Stone
-         Plus). Basta cambiar el style por background-image: url('...'); -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-color: #3f6f7b;">
+    <!-- 1. HERO (imagen editorial de un Stone Plus pizarra antracita, 4-ago) -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/plato-de-ducha-duplach-stone-plus-pizarra-antracita-adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -41,7 +38,7 @@ function adrihosan_duplach_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Platos de ducha Duplach' ); ?></h1>
             <?php if ( ! $es_filtro ) : ?>
-            <p>M&aacute;s de 140 modelos desde 120,90&nbsp;&euro; +IVA. Dos series de resina con gel coat, medidas de 70 a 210&nbsp;cm y fabricaci&oacute;n nacional.</p>
+            <p>M&aacute;s de 140 modelos desde 120,90&nbsp;&euro; +IVA. Dos series de resina con gel coat, medidas de 70 a 210&nbsp;cm y f&aacute;brica en Villa del R&iacute;o, C&oacute;rdoba.</p>
             <?php endif; ?>
         </div>
     </section>
@@ -55,7 +52,7 @@ function adrihosan_duplach_contenido_superior() {
     <section class="dupl-trust-section adrihosan-full-width-block">
         <div class="dupl-trust-wrapper">
             <h2>&iquest;Qu&eacute; tal son los platos de ducha Duplach?</h2>
-            <p class="dupl-trust-intro">Es la pregunta que m&aacute;s nos llega de esta marca, as&iacute; que la contestamos con lo que se puede comprobar. Duplach fabrica en Espa&ntilde;a platos de resina de poli&eacute;ster con gel coat, con clasificaci&oacute;n antideslizante C3, v&aacute;lvula de desag&uuml;e incluida y posibilidad de recorte a medida. Los precios van de 120,90 a 490,90&nbsp;&euro; +IVA seg&uacute;n serie, medida y acabado.</p>
+            <p class="dupl-trust-intro">Es la pregunta que m&aacute;s nos llega de esta marca, as&iacute; que la contestamos con lo que se puede comprobar. Duplach fabrica desde 2010 en Villa del R&iacute;o, C&oacute;rdoba, platos de resina de poli&eacute;ster con gel coat, con clasificaci&oacute;n antideslizante C3, v&aacute;lvula de desag&uuml;e incluida y posibilidad de recorte a medida. Los precios van de 120,90 a 490,90&nbsp;&euro; +IVA seg&uacute;n serie, medida y acabado.</p>
 
             <div class="dupl-trust-grid">
                 <div class="dupl-trust-card">
@@ -64,7 +61,7 @@ function adrihosan_duplach_contenido_superior() {
                         <li>El gel coat aguanta el uso diario y se limpia sin productos especiales.</li>
                         <li>La C3 es la clase que pide la normativa para ducha con pie descalzo.</li>
                         <li>Se recortan en obra, que es lo que salva un hueco que no es medida est&aacute;ndar.</li>
-                        <li>Al fabricarse en Espa&ntilde;a, reponer una pieza no depende de un contenedor.</li>
+                        <li>La f&aacute;brica est&aacute; en C&oacute;rdoba: reponer una pieza no depende de un contenedor.</li>
                     </ul>
                 </div>
                 <div class="dupl-trust-card">
@@ -84,36 +81,40 @@ function adrihosan_duplach_contenido_superior() {
                 <p class="dupl-opinion-firma">Ricardo &middot; Adrihosan</p>
             </div>
 
-            <!-- Resenas REALES del perfil de Google Business, citadas con su
-                 autor. Son de la tienda, no del producto: por eso van como
-                 texto citado y NUNCA con AggregateRating ni schema Review.
-                 TODO: anadir la fecha de cada resena junto al nombre. -->
+            <!-- Resenas REALES del perfil de Google Business, con su autor y su
+                 fecha exacta del perfil (sin retocar: la de Jose Antonio es de
+                 2022 y se publica tal cual). Son de la tienda, no del producto:
+                 por eso van como texto citado y NUNCA con AggregateRating ni
+                 schema Review. -->
             <div class="dupl-reviews">
                 <h3>Lo que dicen clientes que compraron su plato aqu&iacute;</h3>
-                <p class="dupl-reviews-nota">Rese&ntilde;as del perfil de Google de Adrihosan. Son de la tienda y no de una marca concreta, as&iacute; que las publicamos tal cual, sin medias ni puntuaciones.</p>
+                <p class="dupl-reviews-nota">Rese&ntilde;as del perfil de Google de Adrihosan, con su fecha original. Son de la tienda y no de una marca concreta, as&iacute; que las publicamos tal cual, sin medias ni puntuaciones.</p>
                 <div class="dupl-reviews-grid">
                     <blockquote class="dupl-review">
                         <p>Compr&eacute; un plato de ducha hace 2 a&ntilde;os, y he vuelto a repetir con ellos para el segundo aseo. Calidad precio alta.</p>
-                        <cite>Jesus Ortega</cite>
+                        <cite>Jesus Ortega <span class="dupl-review-fecha">1 de abril de 2024</span></cite>
                     </blockquote>
                     <blockquote class="dupl-review">
                         <p>Compre plato ducha de 210 x 80 todo excelente.</p>
-                        <cite>Jos&eacute; Antonio</cite>
+                        <cite>Jos&eacute; Antonio <span class="dupl-review-fecha">15 de marzo de 2022</span></cite>
                     </blockquote>
                     <blockquote class="dupl-review">
                         <p>Ya los tenemos instalados y son preciosos.</p>
-                        <cite>Ra&uacute;l Gonz&aacute;lez</cite>
+                        <cite>Ra&uacute;l Gonz&aacute;lez <span class="dupl-review-fecha">18 de mayo de 2024</span></cite>
                     </blockquote>
                     <blockquote class="dupl-review dupl-review-critica">
                         <p>i&ntilde;aki Huete compr&oacute; un plato de resina con carga mineral, tuvo problemas con &eacute;l y los resolvimos. La dejamos aqu&iacute; porque una cr&iacute;tica resuelta cuenta m&aacute;s que tres elogios seguidos.</p>
-                        <cite>i&ntilde;aki Huete</cite>
+                        <cite>i&ntilde;aki Huete <span class="dupl-review-fecha">19 de diciembre de 2024</span></cite>
                     </blockquote>
                 </div>
             </div>
 
-            <!-- Garantia: se cuenta como DERECHO DEL COMPRADOR, no como
-                 ventaja de la marca. Duplach no da garantia comercial extra.
-                 REVISION LEGAL PENDIENTE antes de publicar (gestoria/abogado). -->
+            <!-- Garantia: se cuenta como DERECHO DEL COMPRADOR, no como ventaja
+                 de la marca. Duplach no da garantia comercial extra. Los "3
+                 anos" no son afirmacion nueva: salen de las condiciones de
+                 venta ya publicadas (pagina 23433), que ademas dicen que las
+                 garantias especificas las otorga el fabricante. Pendiente el
+                 visto bueno de la gestoria, sin cambiar lo que ya se publica. -->
             <p class="dupl-garantia">Sobre la garant&iacute;a, seamos exactos: Duplach no a&ntilde;ade una garant&iacute;a comercial propia. Lo que tienes es la <strong>garant&iacute;a legal de conformidad</strong>, tres a&ntilde;os por la normativa espa&ntilde;ola de consumo para compras hechas desde 2022. No es un extra de la marca, es un derecho tuyo como comprador, y aqu&iacute; lo respetamos como tal.</p>
         </div>
     </section>
@@ -217,7 +218,7 @@ function adrihosan_duplach_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Son platos de resina de poli&eacute;ster con gel coat fabricados en Espa&ntilde;a, con clasificaci&oacute;n antideslizante C3 y v&aacute;lvula de desag&uuml;e incluida. Es una de las marcas que m&aacute;s vendemos para reformas de ba&ntilde;o por relaci&oacute;n calidad-precio y por disponibilidad de medidas. Si buscas piedra natural o una pieza de dise&ntilde;o singular, no es la marca que te conviene.</p>
+                        <p>Son platos de resina de poli&eacute;ster con gel coat fabricados en Villa del R&iacute;o, C&oacute;rdoba, con clasificaci&oacute;n antideslizante C3 y v&aacute;lvula de desag&uuml;e incluida. Es una de las marcas que m&aacute;s vendemos para reformas de ba&ntilde;o por relaci&oacute;n calidad-precio y por disponibilidad de medidas. Si buscas piedra natural o una pieza de dise&ntilde;o singular, no es la marca que te conviene.</p>
                     </div>
                 </div>
 
