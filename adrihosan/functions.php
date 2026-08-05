@@ -3739,3 +3739,34 @@ add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
 } );
 
 require_once get_stylesheet_directory() . '/inc/helpers-h1.php';
+
+/* ==========================================================================
+ * oEmbed DESACTIVADO - incidente de saturacion 2026-08-05
+ * ==========================================================================
+ * Una botnet distribuida (IPs de EEUU, Malasia y Asia con user-agents de
+ * Chrome falsos) estaba extrayendo el catalogo entero a traves de
+ * /wp-json/oembed/1.0/embed: 1.965 peticiones en un dia, mas de una cuarta
+ * parte de todo el trafico PHP. Cada llamada arranca WordPress y WooCommerce
+ * completos y NUNCA se cachea, asi que dejaba los procesos lsphp al 70-88 %
+ * de CPU y tiraba la web por limite del plan.
+ *
+ * oEmbed solo sirve para que OTRAS webs incrusten nuestros productos con una
+ * tarjeta de previsualizacion. No lo usamos, y su coste es enorme.
+ *
+ * Esto duplica a proposito el bloqueo del .htaccess: los plugins de cache
+ * reescriben ese archivo y el bloqueo se perderia sin avisar.
+ * ========================================================================== */
+add_action( 'init', function () {
+    // Quitar la ruta REST de oEmbed (el endpoint caro).
+    remove_action( 'rest_api_init', 'wp_oembed_register_route' );
+    // Y de paso, el descubrimiento y el JS que ya no hacen falta.
+    remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+    remove_action( 'wp_head', 'wp_oembed_add_host_js' );
+}, 9 );
+
+// Cinturon y tirantes: si algo volviera a registrar la ruta, se responde 404.
+add_filter( 'rest_endpoints', function ( $endpoints ) {
+    unset( $endpoints['/oembed/1.0/embed'] );
+    unset( $endpoints['/oembed/1.0/proxy'] );
+    return $endpoints;
+} );
