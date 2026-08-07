@@ -30,10 +30,22 @@
     );
 }
 
+/* El texto va alineado a la izquierda, pero DENTRO del ancho de contenido de
+ * la pagina (1100 px, el mismo que usan los bloques de abajo), no pegado al
+ * borde del viewport: el hero es full-bleed y sin este ancho el H1 se iba al
+ * filo de la pantalla. */
 .tax-product_cat.term-2863 .fio-hero .hero-content {
-    margin-left: 0;
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+
+/* Y las lineas de texto se mantienen legibles aunque el bloque sea ancho. */
+.tax-product_cat.term-2863 .fio-hero .hero-content h1,
+.tax-product_cat.term-2863 .fio-hero .hero-content p {
+    max-width: 640px;
 }
 
 .tax-product_cat.term-2863 .hero-section-container .breadcrumb-nav {
@@ -546,6 +558,13 @@
 
     .tax-product_cat.term-2863 .fio-hero .hero-content {
         text-align: center;
+    }
+
+    /* Con el texto centrado, los bloques acotados tambien se centran */
+    .tax-product_cat.term-2863 .fio-hero .hero-content h1,
+    .tax-product_cat.term-2863 .fio-hero .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .tax-product_cat.term-2863 .fio-problems-section,
