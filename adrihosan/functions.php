@@ -262,6 +262,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2863: // Fiora platos de ducha (hoja de MARCA, hija de 86)
             adrihosan_setup_fiora_cpu_fix();
             break;
+        case 2887: // Acquabella platos de ducha (hoja de MARCA, hija de 86)
+            adrihosan_setup_acquabella_cpu_fix();
+            break;
         case 82: // Inodoro a suelo (pilar silo, hija de 81)
             adrihosan_setup_inodoro_a_suelo_cpu_fix();
             break;
@@ -1490,6 +1493,21 @@ function adrihosan_setup_platos_ducha_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_platos_ducha_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_platos_ducha_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_acquabella_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_acquabella_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_acquabella_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_acquabella_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_acquabella_contenido_inferior', 99);
     }
 }
 
@@ -3456,6 +3474,7 @@ $_adri_modular_incs = array(
     '/inc/category-platos-de-ducha.php',    // Cat 86 - Platos de ducha (MADRE del silo, patron repartidor)
     '/inc/category-duplach.php',            // Cat 2861 - Duplach platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-fiora.php',              // Cat 2863 - Fiora platos de ducha (hoja de MARCA, hija de 86)
+    '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
