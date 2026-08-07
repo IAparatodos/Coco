@@ -48,6 +48,15 @@
     max-width: 640px;
 }
 
+/* El critical CSS del header trae ".hero-content p { margin: 0 auto 30px }":
+ * ese auto centraba el subtitulo dentro del bloque mientras el H1 quedaba a
+ * la izquierda (el h1 lleva "margin: 0 0 15px", sin auto). Se anula para que
+ * los dos arranquen en la misma vertical. */
+.tax-product_cat.term-2863 .fio-hero .hero-content p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .tax-product_cat.term-2863 .hero-section-container .breadcrumb-nav {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
