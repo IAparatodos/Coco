@@ -4,9 +4,10 @@
 /*   - Color corporativo CTA: #4dd2d0                                         */
 /*   - Color corporativo texto: #3f6f7b                                       */
 /*   - Tipografia corporativa: Poppins                                        */
-/* Los 338 platos comparten material y grosor: lo unico que decide la compra  */
-/* es por donde sale el agua. Por eso el bloque del desague va el primero y   */
-/* sus tres figuras se dibujan en CSS, sin imagenes.                          */
+/* Todos los platos son de Akron y llevan desague incluido: lo que decide la  */
+/* compra es la ALTURA REAL y el FORMATO MAXIMO de cada modelo, y asi se      */
+/* presentan. El bloque que agrupaba por forma del desague se elimino: la     */
+/* rejilla es configurable, no viene dada por el modelo.                      */
 /* ========================================================================== */
 
 /* ---------- 1. Ocultar elementos legacy ---------- */
@@ -34,151 +35,7 @@
     text-decoration: underline;
 }
 
-/* ---------- 3. Bloque del desague (el que decide) ---------- */
-.tax-product_cat.term-2887 .acq-drain-section {
-    background: #f0f7f8;
-    padding: 60px 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.tax-product_cat.term-2887 .acq-drain-wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.tax-product_cat.term-2887 .acq-drain-wrapper h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #3f6f7b;
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 700;
-    margin: 0 0 12px;
-}
-
-.tax-product_cat.term-2887 .acq-drain-sub {
-    font-family: 'Poppins', sans-serif;
-    color: #3f6f7b;
-    opacity: 0.85;
-    max-width: 700px;
-    margin: 0 auto 34px;
-    line-height: 1.6;
-}
-
-.tax-product_cat.term-2887 .acq-drain-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 18px;
-}
-
-.tax-product_cat.term-2887 .acq-drain-card {
-    display: block;
-    background: #ffffff;
-    border: 2px solid #d4e3e6;
-    border-radius: 12px;
-    padding: 26px 22px;
-    text-decoration: none;
-    text-align: left;
-    transition: border-color .2s ease, transform .2s ease;
-}
-
-.tax-product_cat.term-2887 .acq-drain-card:hover {
-    border-color: #4dd2d0;
-    transform: translateY(-3px);
-}
-
-/* --- Las tres figuras de desague, dibujadas en CSS (sin imagenes) --- */
-/* El rectangulo es el plato visto en planta; dentro se dibuja el desague. */
-.tax-product_cat.term-2887 .acq-drain-fig {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 190px;
-    height: 78px;
-    margin: 0 0 18px;
-    background: #f0f7f8;
-    border: 2px solid #3f6f7b;
-    border-radius: 6px;
-}
-
-/* Central: sumidero cuadrado en mitad del plato */
-.tax-product_cat.term-2887 .acq-fig-central::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    transform: translate(-50%, -50%);
-    background: #4dd2d0;
-    border-radius: 3px;
-}
-
-/* Lineal visto: canal alargado con rejilla marcada en un extremo */
-.tax-product_cat.term-2887 .acq-fig-lineal::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    bottom: 12px;
-    right: 14px;
-    width: 13px;
-    background: #4dd2d0;
-    border-radius: 3px;
-}
-
-/* Lineal oculto: tapa del mismo material del plato, solo dos ranuras finas */
-.tax-product_cat.term-2887 .acq-fig-oculto::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    bottom: 12px;
-    right: 14px;
-    width: 13px;
-    background: #f0f7f8;
-    border: 1px solid #d4e3e6;
-    border-radius: 3px;
-}
-
-.tax-product_cat.term-2887 .acq-fig-oculto::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    bottom: 16px;
-    right: 19px;
-    width: 3px;
-    background: #d4e3e6;
-    border-left: 3px solid #ffffff;
-    border-right: 3px solid #ffffff;
-}
-
-.tax-product_cat.term-2887 .acq-drain-card h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #3f6f7b;
-    font-size: 1.1rem;
-    font-weight: 650;
-    margin: 0 0 8px;
-}
-
-.tax-product_cat.term-2887 .acq-drain-card p {
-    font-family: 'Poppins', sans-serif;
-    color: #3f6f7b;
-    font-size: 0.92rem;
-    line-height: 1.55;
-    margin: 0 0 14px;
-}
-
-.tax-product_cat.term-2887 .acq-drain-serie {
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    color: #3f6f7b;
-    font-size: 0.85rem;
-    font-weight: 700;
-    background: #f0f7f8;
-    border: 2px solid #4dd2d0;
-    border-radius: 999px;
-    padding: 4px 16px;
-}
-
-/* ---------- 4. Las siete series ---------- */
+/* ---------- 3. Los modelos ---------- */
 .tax-product_cat.term-2887 .acq-series-section {
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
@@ -215,6 +72,7 @@
 }
 
 .tax-product_cat.term-2887 .acq-serie-card {
+    position: relative;
     background: #f0f7f8;
     border: 1px solid #d4e3e6;
     border-radius: 12px;
@@ -222,9 +80,62 @@
     text-align: left;
 }
 
-/* Las tres con desague verificado llevan filete turquesa arriba */
-.tax-product_cat.term-2887 .acq-serie-verificada {
+/* Los modelos con rasgo propio (Base Slate y Arq Zero) llevan filete */
+.tax-product_cat.term-2887 .acq-serie-destacada {
     border-top: 3px solid #4dd2d0;
+}
+
+/* Etiqueta "Enmarcado" del Arq Zero */
+.tax-product_cat.term-2887 .acq-serie-tag {
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    background: #4dd2d0;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+/* Ficha de datos del modelo: altura y formato maximo, que es lo que decide */
+.tax-product_cat.term-2887 .acq-serie-datos {
+    margin: 0 0 12px;
+    padding: 12px 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid #d4e3e6;
+}
+
+.tax-product_cat.term-2887 .acq-serie-datos li {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tax-product_cat.term-2887 .acq-serie-datos li span {
+    opacity: 0.7;
+}
+
+/* Aviso del Prisma Slate: modelo descatalogado por el fabricante */
+.tax-product_cat.term-2887 .acq-serie-aviso {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.85;
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid #d4e3e6;
 }
 
 .tax-product_cat.term-2887 .acq-serie-card h3 {
@@ -261,7 +172,7 @@
     margin: 0;
 }
 
-/* ---------- 5. Akron ---------- */
+/* ---------- 4. Akron ---------- */
 .tax-product_cat.term-2887 .acq-akron-section {
     background: #f0f7f8;
     padding: 60px 20px;
@@ -323,7 +234,7 @@
     line-height: 1.4;
 }
 
-/* ---------- 6. Franja de precio ---------- */
+/* ---------- 5. Franja de precio ---------- */
 .tax-product_cat.term-2887 .acq-price-band {
     background: #3f6f7b;
     padding: 34px 20px;
@@ -351,7 +262,7 @@
     margin: 0;
 }
 
-/* ---------- 7. Medidas ---------- */
+/* ---------- 6. Medidas ---------- */
 .tax-product_cat.term-2887 .acq-sizes-section {
     padding: 55px 20px;
     font-family: 'Poppins', sans-serif;
@@ -404,7 +315,7 @@
     color: #4dd2d0;
 }
 
-/* ---------- 8. Filtro FE heredado de la madre (mismo marcado) ---------- */
+/* ---------- 7. Filtro FE heredado de la madre (mismo marcado) ---------- */
 /* NOTA: sin position:sticky (tapaba la pagina; decision del 1-ago en cat 86). */
 .tax-product_cat.term-2887 .pldu-filter-shell {
     margin: 40px 0;
@@ -420,7 +331,7 @@
     }
 }
 
-/* ---------- 9. Titulo catalogo ---------- */
+/* ---------- 8. Titulo catalogo ---------- */
 .tax-product_cat.term-2887 .product-loop-header {
     text-align: center;
     margin: 50px auto 30px;
@@ -443,7 +354,7 @@
     margin: 0;
 }
 
-/* ---------- 10. Guias del blog ---------- */
+/* ---------- 9. Guias del blog ---------- */
 .tax-product_cat.term-2887 .acq-guides-section {
     background: #f0f7f8;
     padding: 50px 20px;
@@ -488,7 +399,7 @@
     transform: translateY(-2px);
 }
 
-/* ---------- 11. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+/* ---------- 10. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
 .tax-product_cat.term-2887 .contact-help-common .contact-intro img {
     flex-shrink: 0;
     width: 110px;
@@ -502,31 +413,15 @@
     line-height: 1.35;
 }
 
-/* ---------- 12. Responsive movil (verificado a 390 px) ---------- */
+/* ---------- 11. Responsive movil (verificado a 390 px) ---------- */
 @media (max-width: 768px) {
-    .tax-product_cat.term-2887 .acq-drain-section,
-    .tax-product_cat.term-2887 .acq-series-section,
+        .tax-product_cat.term-2887 .acq-series-section,
     .tax-product_cat.term-2887 .acq-akron-section {
         padding: 40px 15px;
     }
-
-    .tax-product_cat.term-2887 .acq-drain-card,
-    .tax-product_cat.term-2887 .acq-serie-card {
+        .tax-product_cat.term-2887 .acq-serie-card {
         padding: 20px 18px;
     }
-
-    /* La figura se centra y encoge para no comerse el ancho a 390 px */
-    .tax-product_cat.term-2887 .acq-drain-fig {
-        max-width: 160px;
-        height: 66px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tax-product_cat.term-2887 .acq-drain-card {
-        text-align: center;
-    }
-
     .tax-product_cat.term-2887 .acq-series-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 12px;
@@ -555,7 +450,7 @@
     }
 }
 
-/* ---------- 13. Responsive tablet ---------- */
+/* ---------- 12. Responsive tablet ---------- */
 @media (max-width: 1024px) and (min-width: 769px) {
     .tax-product_cat.term-2887 .acq-series-grid {
         grid-template-columns: repeat(3, 1fr);
