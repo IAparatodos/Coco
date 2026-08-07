@@ -10,17 +10,29 @@
  * 1.513 impresiones de la brand hacia aqui con el 301.
  *
  * Quien llega ya sabe que quiere Acquabella: no hay que venderle la marca, hay
- * que ayudarle a elegir la SERIE. Y como los 338 platos comparten material
- * (Akron) y grosor (3 cm), el unico eje real de decision es por donde sale el
- * agua. Mismo criterio que la madre 86 y que Fiora: coherencia de silo.
+ * que ayudarle a elegir el MODELO. Todos comparten material (Akron) y llevan el
+ * desague incluido, asi que lo que decide la compra es la ALTURA REAL y el
+ * FORMATO MAXIMO: si el plato no entra en el hueco o no encaja con el suelo, da
+ * igual lo bonito que sea.
  *
- * Wireframe 2026-08-07 (prefijo acq-). Datos verificados en BD y GSC.
+ * Wireframe 2026-08-07 (prefijo acq-), CORREGIDO el 7-ago con las
+ * especificaciones oficiales del fabricante.
  *
- * AVISO DE PRODUCTO (leccion del Silex, 4-ago): de las siete series solo hay
- * TRES con la forma del desague verificada (Slate Base, Slate Prisma y Alma
- * Slate). Base Beton, Base Zero, Zero Arq y Flow Zero van SOLO con nombre y
- * numero de medidas. No se describe su desague hasta comprobarlo: no se deduce
- * de una foto.
+ * REGLA DE DATOS: ningun dato de producto que no este en la ficha oficial de
+ * Acquabella. Ni deducido de una foto, ni sacado de nuestros propios titulos
+ * comerciales, ni heredado de la descripcion vieja. La primera version de esta
+ * plantilla fallo en las tres cosas:
+ *   - Decia "todos miden 3 cm". FALSO: van de 2,3 a 3,9 cm segun modelo. El "3"
+ *     salia del titulo comercial (80X70X3), que es nominal, no altura real.
+ *   - Tenia un bloque que agrupaba los modelos por forma del desague. PREMISA
+ *     FALSA: la rejilla es CONFIGURABLE (Mia, Geo, Lux), no viene dada por el
+ *     modelo. Bloque eliminado.
+ *   - Decia "antideslizante C3". Eso es jerga que mezcla TRES normas distintas:
+ *     UNE-ENV 12633 Clase 3, DIN 51097 Clase C y la francesa PN 24.
+ *
+ * PRISMA SLATE: son 49 platos nuestros de un modelo que el fabricante ya no
+ * cataloga (su pagina da 404). Va SOLO con nombre y numero de medidas: sin
+ * altura, sin formato y sin caracteristicas.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -47,112 +59,116 @@ function adrihosan_acquabella_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Platos de ducha Acquabella' ); ?></h1>
             <?php if ( ! $es_filtro ) : ?>
-            <p>M&aacute;s de 300 medidas en siete series, desde 245,90&nbsp;&euro; +IVA. Todas en material Akron de 3&nbsp;cm de grosor, con largos de 80 a 230&nbsp;cm.</p>
+            <p>M&aacute;s de 300 medidas, de 70x80 a 200x120&nbsp;cm, en material Akron. Desde 245,90&nbsp;&euro; +IVA.</p>
             <?php endif; ?>
         </div>
     </section>
 
     <?php if ( ! $es_filtro ) : ?>
-    <!-- 2. EL DESAGUE - EL BLOQUE QUE DECIDE.
-         Todos los platos comparten material y grosor, asi que lo unico que
-         separa de verdad a las series es por donde evacua el agua. Enlaza por
-         ancla al bloque de series: las series NO tienen URL propia (no son
-         categorias ni filtros con regla), asi que no se inventa ninguna. -->
-    <section class="acq-drain-section adrihosan-full-width-block">
-        <div class="acq-drain-wrapper">
-            <h2>&iquest;Por d&oacute;nde te sale el desag&uuml;e?</h2>
-            <p class="acq-drain-sub">Es la primera pregunta que hay que resolver, porque decide la serie. Si te equivocas, hay que picar el suelo para mover el saneamiento.</p>
-            <div class="acq-drain-grid">
-                <a href="#acq-series" class="acq-drain-card">
-                    <span class="acq-drain-fig acq-fig-central" aria-hidden="true"></span>
-                    <h3>Te queda en el centro</h3>
-                    <p>Sumidero cuadrado en mitad del plato, con las pendientes trabajando hacia &eacute;l desde las cuatro esquinas.</p>
-                    <span class="acq-drain-serie">Slate Base</span>
-                </a>
-                <a href="#acq-series" class="acq-drain-card">
-                    <span class="acq-drain-fig acq-fig-lineal" aria-hidden="true"></span>
-                    <h3>Prefieres canal a la vista</h3>
-                    <p>Canal alargado con rejilla de acero inoxidable vista, la soluci&oacute;n cl&aacute;sica de desag&uuml;e lineal.</p>
-                    <span class="acq-drain-serie">Slate Prisma</span>
-                </a>
-                <a href="#acq-series" class="acq-drain-card">
-                    <span class="acq-drain-fig acq-fig-oculto" aria-hidden="true"></span>
-                    <h3>No quieres ver la rejilla</h3>
-                    <p>Canal tapado con una pieza del mismo material y la misma textura del plato; solo se ven dos ranuras finas.</p>
-                    <span class="acq-drain-serie">Alma Slate</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. LAS SIETE SERIES.
-         Solo las tres verificadas llevan descripcion del desague. Las otras
-         cuatro van con nombre y numero de medidas, a la espera de comprobar
-         su forma. -->
+    <!-- 2. LOS MODELOS.
+         El eje ya NO es el desague (la rejilla es configurable): son la
+         ALTURA REAL y el FORMATO MAXIMO, que es lo que decide si el plato
+         encaja. Datos de la ficha oficial del fabricante, modelo a modelo.
+         Se conserva el id acq-series por si hay enlaces apuntando. -->
     <section id="acq-series" class="acq-series-section adrihosan-full-width-block">
         <div class="acq-series-wrapper">
-            <h2>Las siete series de Acquabella</h2>
-            <p class="acq-series-sub">Todas comparten material y grosor, as&iacute; que la diferencia est&aacute; en la forma y en las medidas disponibles.</p>
+            <h2>Los modelos de Acquabella</h2>
+            <p class="acq-series-sub">Todos son de material Akron y llevan el desag&uuml;e incluido. Lo que cambia entre ellos es la textura, la altura y hasta qu&eacute; formato llegan.</p>
             <div class="acq-series-grid">
 
-                <div class="acq-serie-card acq-serie-verificada">
-                    <h3>Slate Base</h3>
+                <div class="acq-serie-card acq-serie-destacada">
+                    <h3>Base Slate</h3>
                     <span class="acq-serie-medidas">89 medidas</span>
-                    <p>Desag&uuml;e central, con sumidero cuadrado en mitad del plato. Es la serie con m&aacute;s medidas del cat&aacute;logo.</p>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 2,3 &ndash; 2,8 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x120 cm</li>
+                    </ul>
+                    <p>El m&aacute;s vers&aacute;til y el que llega a formato mayor. Admite rejilla Mia, Geo o Lux, y es el modelo a medida por excelencia.</p>
                 </div>
 
                 <div class="acq-serie-card">
-                    <h3>Base Beton</h3>
-                    <span class="acq-serie-medidas">75 medidas</span>
+                    <h3>Focus Beton</h3>
+                    <span class="acq-serie-medidas">50 medidas</span>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 2,7 &ndash; 3,1 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
                 </div>
 
-                <div class="acq-serie-card acq-serie-verificada">
-                    <h3>Slate Prisma</h3>
+                <div class="acq-serie-card">
+                    <h3>Prisma Slate</h3>
                     <span class="acq-serie-medidas">49 medidas</span>
-                    <p>Desag&uuml;e lineal con rejilla de acero inoxidable a la vista, en canal alargado.</p>
+                    <p class="acq-serie-aviso">Modelo descatalogado por el fabricante. Consultanos disponibilidad y ficha t&eacute;cnica antes de comprar.</p>
                 </div>
 
                 <div class="acq-serie-card">
                     <h3>Base Zero</h3>
                     <span class="acq-serie-medidas">48 medidas</span>
-                </div>
-
-                <div class="acq-serie-card acq-serie-verificada">
-                    <h3>Alma Slate</h3>
-                    <span class="acq-serie-medidas">44 medidas</span>
-                    <p>Desag&uuml;e lineal oculto: la tapa es del mismo material y textura que el plato y solo deja ver dos ranuras.</p>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 2,3 &ndash; 2,8 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
                 </div>
 
                 <div class="acq-serie-card">
-                    <h3>Zero Arq</h3>
+                    <h3>Alma Slate</h3>
+                    <span class="acq-serie-medidas">44 medidas</span>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 2,4 &ndash; 3 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
+                </div>
+
+                <div class="acq-serie-card acq-serie-destacada">
+                    <span class="acq-serie-tag">Enmarcado</span>
+                    <h3>Arq Zero</h3>
                     <span class="acq-serie-medidas">28 medidas</span>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 3,4 &ndash; 3,9 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
+                    <p>El &uacute;nico con un marco que recorre todo su per&iacute;metro, y tambi&eacute;n el m&aacute;s alto de la gama.</p>
+                </div>
+
+                <div class="acq-serie-card">
+                    <h3>Base Beton</h3>
+                    <span class="acq-serie-medidas">25 medidas</span>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 2,3 &ndash; 2,8 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
                 </div>
 
                 <div class="acq-serie-card">
                     <h3>Flow Zero</h3>
                     <span class="acq-serie-medidas">5 medidas</span>
+                    <ul class="acq-serie-datos">
+                        <li><span>Altura</span> 3 cm</li>
+                        <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
+                    </ul>
+                    <p>Lleva rejilla integrada, pensada para recoger gran caudal de agua.</p>
                 </div>
 
             </div>
-            <p class="acq-series-nota">&iquest;No sabes cu&aacute;l encaja con tu ba&ntilde;o? M&aacute;ndanos una foto del hueco y te decimos por d&oacute;nde te conviene sacar el agua.</p>
+            <p class="acq-series-nota">&iquest;No sabes cu&aacute;l encaja con tu ba&ntilde;o? M&aacute;ndanos las medidas del hueco y te decimos qu&eacute; modelo entra.</p>
         </div>
     </section>
 
-    <!-- 4. QUE ES EL AKRON (diferenciador verificado en ficha tecnica) -->
+    <!-- 3. QUE ES EL AKRON (diferenciador verificado en ficha tecnica) -->
     <section class="acq-akron-section adrihosan-full-width-block">
         <div class="acq-akron-wrapper">
             <h2>Qu&eacute; es el Akron</h2>
             <p>Es el material con el que Acquabella fabrica sus platos, y lo llevan los m&aacute;s de 300 modelos del cat&aacute;logo. Se compone de <strong>poliuretano y cargas minerales</strong> de distinta granulometr&iacute;a, compactadas en una masa <strong>maciza y reforzada</strong>: no es una l&aacute;mina hueca ni un relleno ligero, es s&oacute;lido de lado a lado.</p>
             <p>Su matriz est&aacute; formulada con polioles de poli&eacute;ter, que traducido a lo que importa significa que <strong>no se degrada con el agua ni con la humedad constante</strong>, que es justo lo que le pides a un plato de ducha durante veinte a&ntilde;os.</p>
             <div class="acq-akron-datos">
-                <div class="acq-akron-dato"><strong>3 cm</strong><span>de grosor, en todos los modelos</span></div>
                 <div class="acq-akron-dato"><strong>Macizo</strong><span>compactado en masa, no hueco</span></div>
-                <div class="acq-akron-dato"><strong>C3</strong><span>clase antideslizante</span></div>
+                <div class="acq-akron-dato"><strong>Incluido</strong><span>el desag&uuml;e va en todos los modelos</span></div>
+                <div class="acq-akron-dato"><strong>2,3 &ndash; 3,9</strong><span>cent&iacute;metros de alto seg&uacute;n modelo</span></div>
             </div>
         </div>
     </section>
 
-    <!-- 5. FRANJA DE PRECIO (el "desde" va EXACTO, nunca redondeado) -->
+    <!-- 4. FRANJA DE PRECIO (el "desde" va EXACTO, nunca redondeado) -->
     <section class="acq-price-band adrihosan-full-width-block">
         <div class="acq-price-wrapper">
             <p class="acq-price-line">Platos Acquabella <strong>desde 245,90&nbsp;&euro; +IVA</strong>, hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes</p>
@@ -160,11 +176,11 @@ function adrihosan_acquabella_contenido_superior() {
         </div>
     </section>
 
-    <!-- 6. MEDIDAS -->
+    <!-- 5. MEDIDAS -->
     <section class="acq-sizes-section adrihosan-full-width-block">
         <div class="acq-sizes-wrapper">
             <h2>Medidas disponibles</h2>
-            <p class="acq-sizes-sub">Los largos van de 80 a 230&nbsp;cm. Slate Base es la serie con m&aacute;s opciones, con 89 medidas distintas; Flow Zero es la m&aacute;s corta, con 5.</p>
+            <p class="acq-sizes-sub">Del formato m&aacute;s peque&ntilde;o, 70x80&nbsp;cm, al mayor, 200x120. El modelo con m&aacute;s opciones es el Base Slate, con 89 medidas y el &uacute;nico que llega a 120&nbsp;cm de ancho.</p>
             <div class="acq-sizes-links">
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-grandes/" class="acq-sizes-link">Ver platos de ducha grandes</a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/" class="acq-sizes-link">Ver todos los platos del cat&aacute;logo</a>
@@ -173,13 +189,13 @@ function adrihosan_acquabella_contenido_superior() {
     </section>
     <?php endif; // fin bloques de marca ?>
 
-    <!-- 7. FILTRO FE PRO (conjunto 429707 heredado de la madre, mismo marcado).
+    <!-- 6. FILTRO FE PRO (conjunto 429707 heredado de la madre, mismo marcado).
          SIEMPRE visible, tambien en URL de filtro. -->
     <div class="pldu-filter-shell">
         <div class="filter-container-master"><?php echo do_shortcode( '[fe_widget id="429707"]' ); ?></div>
     </div>
 
-    <!-- 8. TITULO CATALOGO + LISTADO -->
+    <!-- 7. TITULO CATALOGO + LISTADO -->
     <div class="product-loop-header">
         <h2 id="acq-catalogo">Cat&aacute;logo de platos de ducha Acquabella</h2>
         <p>M&aacute;s de 300 medidas entre las siete series. Tambi&eacute;n encontrar&aacute;s la marca escrita como Aquabella.</p>
@@ -196,14 +212,12 @@ function adrihosan_acquabella_contenido_inferior() {
     </div><!-- /fe-products-wrapper -->
 
     <?php if ( ! $es_filtro ) : ?>
-    <!-- 9. FAQ (9 preguntas, HTML visible SIN JSON-LD).
-         TODO OPERADOR: el wireframe indica que ya hay 9 respuestas redactadas
-         y validadas el 7-ago. Aqui va la estructura del acordeon con textos
-         escritos a partir de los datos YA VERIFICADOS del propio wireframe
-         (Akron, 3 cm, las tres Slate, C3, corte, 10 dias, garantia legal,
-         precio y medidas), para que la pagina funcione desde el primer
-         despliegue. Sustituir por las validadas si difieren: el schema lo
-         genera Rank Math parseando este HTML, asi que manda lo que quede aqui. -->
+    <!-- 8. FAQ (9 preguntas, HTML visible SIN JSON-LD).
+         Textos escritos con los datos oficiales del fabricante: material
+         Akron, alturas reales por modelo, diferencias entre modelos, las tres
+         normas de antideslizamiento con su nombre, corte, plazo, garantia
+         legal, precio y formatos. El schema lo genera Rank Math parseando
+         este HTML, asi que manda lo que quede aqui. -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas frecuentes sobre los platos de ducha Acquabella</h2>
@@ -225,17 +239,17 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Tres cent&iacute;metros, todos los modelos sin excepci&oacute;n. Es una altura pensada para sustituir una ba&ntilde;era o renovar el ba&ntilde;o sin levantar el suelo, dejando un escal&oacute;n m&iacute;nimo.</p>
+                        <p>Depende del modelo, entre 2,3 y 3,9 cm. Los Base rondan los 2,5 cm; el Arq Zero, que va enmarcado, es el m&aacute;s alto. Si vas a renovar el ba&ntilde;o sin levantar el suelo, la altura es justo el dato que conviene mirar primero.</p>
                     </div>
                 </div>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre Slate Base, Slate Prisma y Alma Slate?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre los modelos?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El desag&uuml;e. Slate Base lo lleva centrado, con un sumidero cuadrado en mitad del plato. Slate Prisma usa un canal lineal con rejilla de acero inoxidable a la vista. Alma Slate tambi&eacute;n es lineal, pero con la tapa del mismo material y textura que el plato, de modo que solo se aprecian dos ranuras finas.</p>
+                        <p>La textura, la altura, hasta qu&eacute; formato llegan y si van enmarcados o a ras. El Base Slate es el m&aacute;s vers&aacute;til y el &uacute;nico que alcanza los 200x120&nbsp;cm. El Arq Zero es el &uacute;nico con marco alrededor y el m&aacute;s alto, de 3,4 a 3,9&nbsp;cm. El Flow Zero lleva rejilla integrada para gran caudal. El resto se mueven entre 2,3 y 3,1&nbsp;cm de alto y llegan hasta 200x100.</p>
                     </div>
                 </div>
 
@@ -245,7 +259,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, con clasificaci&oacute;n C3, que es la que exige la normativa para zona de ducha con el pie descalzo. Si necesitas el certificado del fabricante para una obra en local de uso p&uacute;blico, te lo facilitamos.</p>
+                        <p>S&iacute;. Cumplen la Clase 3 de la UNE-ENV 12633, la Clase C de la DIN 51097 &mdash;la exigente para pie descalzo&mdash; y la PN 24 francesa. Si necesitas el certificado del fabricante para una obra en local de uso p&uacute;blico, te lo facilitamos.</p>
                     </div>
                 </div>
 
@@ -295,7 +309,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Los largos van de 80 a 230&nbsp;cm. La serie con m&aacute;s opciones es Slate Base, con 89 medidas distintas; la m&aacute;s reducida es Flow Zero, con 5. Si no ves tu medida, escr&iacute;benos con las dimensiones del hueco antes de comprar.</p>
+                        <p>Desde 70x80&nbsp;cm hasta 200x120. El modelo con m&aacute;s opciones es el Base Slate, con 89 medidas y el &uacute;nico que llega a 120&nbsp;cm de ancho; el m&aacute;s reducido es el Flow Zero, con 5. Si no ves tu medida, escr&iacute;benos con las dimensiones del hueco antes de comprar.</p>
                     </div>
                 </div>
 
@@ -303,7 +317,7 @@ function adrihosan_acquabella_contenido_inferior() {
         </div>
     </section>
 
-    <!-- 10. GUIAS DEL BLOG -->
+    <!-- 9. GUIAS DEL BLOG -->
     <section class="acq-guides-section adrihosan-full-width-block">
         <div class="acq-guides-wrapper">
             <h2>Gu&iacute;as para acertar con tu plato</h2>
@@ -316,7 +330,7 @@ function adrihosan_acquabella_contenido_inferior() {
     </section>
     <?php endif; // fin bloques de marca ?>
 
-    <!-- 11. CONTACTO RICARDO (se pinta SIEMPRE, tambien en URL de filtro) -->
+    <!-- 10. CONTACTO RICARDO (se pinta SIEMPRE, tambien en URL de filtro) -->
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
             <div class="contact-intro">
