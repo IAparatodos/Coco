@@ -57,7 +57,12 @@ function adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_superior() {
     ?>
 
     <!-- 1. HERO -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/06/Suelos-porcelanicos-ofertas-Adrihosan.jpg');">
+    <!-- Hero: el JPG anterior (2026/06/Suelos-porcelanicos-ofertas-Adrihosan.jpg) NUNCA
+         llego a subirse y daba 404, asi que el hero salia sin imagen. Sustituido el
+         2026-08-10 por el adjunto 429745 (1536x1024, 152 KB), que ademas es el og:image
+         del termino: el que habia antes media 270x160 y Rank Math no lo emitia por
+         quedarse por debajo del minimo que piden las redes. El degradado lo pone el CSS. -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/suelos-porcelanicos-ofertas-adrihosan.jpg');">
         <div class="hero-content">
             <h1><?php echo adrihosan_h1_dinamico( 'Suelos Porcel&aacute;nicos en Oferta' ); ?></h1>
             <p class="hero-tagline">Porcel&aacute;nico de primera marca a precio rebajado real. Stock, fin de serie y lotes de proveedor.</p>
