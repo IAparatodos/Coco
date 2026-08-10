@@ -231,7 +231,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>De Akron, un compuesto de poliuretano con cargas minerales de distinta granulometr&iacute;a compactadas en masa maciza y reforzada. No es una l&aacute;mina hueca: es s&oacute;lido en todo su espesor. Su formulaci&oacute;n resiste la humedad permanente sin degradarse, y lo llevan los m&aacute;s de 280 modelos del cat&aacute;logo.</p>
+                        <p>De Akron, un compuesto de resina de poliuretano y cargas minerales sin s&iacute;lice, con una superficie compacta, antideslizante y resistente. Aguanta agentes qu&iacute;micos, impactos y choque t&eacute;rmico, y lleva certificado antibacteriano seg&uacute;n la norma ISO 22196:2011. Lo llevan los m&aacute;s de 280 modelos del cat&aacute;logo.</p>
                     </div>
                 </div>
 
@@ -301,7 +301,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Desde 245,90&nbsp;&euro; +IVA, y hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes. Lo que mueve el precio es la medida y la serie, no el material: todos los modelos son del mismo Akron.</p>
+                        <p>Desde 245,90&nbsp;&euro; +IVA, y hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes. Lo que mueve el precio es la medida y el modelo, no el material: todos son del mismo Akron.</p>
                     </div>
                 </div>
 
