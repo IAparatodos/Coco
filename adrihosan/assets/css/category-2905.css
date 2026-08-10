@@ -1,0 +1,339 @@
+/* ========================================================================== */
+/* CATEGORY-2905.CSS - Platos de ducha baratos (hoja de intencion de precio)   */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* Eje unico: PRECIO. Bloques tomados de category-2396.css (hero, ap-value-*, */
+/* section-intro, product-loop-header) y de category-2887.css (migas y        */
+/* pldu-filter-shell), TODO re-scopeado a .term-2905 para no filtrar estilos  */
+/* a otras categorias.                                                        */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-2905 .woocommerce-breadcrumb,
+.tax-product_cat.term-2905 .woocommerce-products-header,
+.tax-product_cat.term-2905 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero: patron estandar del silo (centrado, overlay del
+   critical CSS del header). Aqui solo migas y botones. ---------- */
+.tax-product_cat.term-2905 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2905 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2905 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2905 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.tax-product_cat.term-2905 .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.tax-product_cat.term-2905 .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2905 .hero-btn.primary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-2905 .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2905 .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3. Las cuatro cifras (ap-value-*, re-scopeado) ---------- */
+.tax-product_cat.term-2905 .ap-value-section {
+    padding: 60px 20px;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2905 .ap-value-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2905 .ap-value-section .section-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3f6f7b;
+    max-width: 880px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.tax-product_cat.term-2905 .ap-value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tax-product_cat.term-2905 .ap-value-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 26px 20px;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tax-product_cat.term-2905 .ap-value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(63, 111, 123, 0.10);
+    border-color: #4dd2d0;
+}
+
+/* La cifra es el protagonista de la tarjeta: esta pagina va de precio */
+.tax-product_cat.term-2905 .ap-value-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.tax-product_cat.term-2905 .ap-value-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    color: #3f6f7b;
+    line-height: 1.55;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.tax-product_cat.term-2905 .ap-value-card a {
+    color: #3f6f7b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #4dd2d0;
+    text-underline-offset: 2px;
+}
+
+.tax-product_cat.term-2905 .ap-value-card a:hover {
+    color: #4dd2d0;
+}
+
+/* ---------- 4. Por que son mas baratos ---------- */
+.tax-product_cat.term-2905 .pbar-why-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2905 .pbar-why-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2905 .pbar-why-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2905 .pbar-why-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.68;
+    margin: 0 0 14px;
+}
+
+.tax-product_cat.term-2905 .pbar-why-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+.tax-product_cat.term-2905 .pbar-why-wrapper a {
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+    padding-bottom: 1px;
+}
+
+/* ---------- 5. Filtro FE heredado de la madre (mismo marcado) ---------- */
+/* NOTA: sin position:sticky (tapaba la pagina; decision del 1-ago en cat 86). */
+.tax-product_cat.term-2905 .pldu-filter-shell {
+    margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+    .tax-product_cat.term-2905 .pldu-filter-shell {
+        background: #ffffff;
+        border: 1px solid #d4e3e6;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+    }
+}
+
+/* ---------- 6. Titulo catalogo ---------- */
+.tax-product_cat.term-2905 .product-loop-header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2905 .product-loop-header h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-2905 .product-loop-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* ---------- 7. Guias del blog (prefijo propio pbar-) ---------- */
+.tax-product_cat.term-2905 .pbar-guides-section {
+    background: #f0f7f8;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2905 .pbar-guides-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2905 .pbar-guides-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-2905 .pbar-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.tax-product_cat.term-2905 .pbar-guide-link {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #3f6f7b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2905 .pbar-guide-link:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* ---------- 8. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+.tax-product_cat.term-2905 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-2905 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 9. Responsive movil (verificado a 390 px) ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2905 .ap-value-section,
+    .tax-product_cat.term-2905 .pbar-why-section {
+        padding: 40px 18px;
+    }
+
+    .tax-product_cat.term-2905 .ap-value-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .tax-product_cat.term-2905 .ap-value-card {
+        padding: 20px 18px;
+    }
+
+    .tax-product_cat.term-2905 .ap-value-section .section-intro {
+        margin-bottom: 28px;
+    }
+
+    /* A 390 px los dos botones del hero van uno bajo otro y a ancho completo */
+    .tax-product_cat.term-2905 .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-2905 .hero-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-2905 .product-loop-header {
+        padding: 30px 15px 20px;
+    }
+}
+
+/* ---------- 10. Responsive tablet ---------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tax-product_cat.term-2905 .ap-value-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

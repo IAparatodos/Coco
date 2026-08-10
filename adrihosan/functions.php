@@ -265,6 +265,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2887: // Acquabella platos de ducha (hoja de MARCA, hija de 86)
             adrihosan_setup_acquabella_cpu_fix();
             break;
+        case 2905: // Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
+            adrihosan_setup_baratos_cpu_fix();
+            break;
         case 82: // Inodoro a suelo (pilar silo, hija de 81)
             adrihosan_setup_inodoro_a_suelo_cpu_fix();
             break;
@@ -1493,6 +1496,21 @@ function adrihosan_setup_platos_ducha_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_platos_ducha_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_platos_ducha_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_baratos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_baratos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_baratos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_baratos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_baratos_contenido_inferior', 99);
     }
 }
 
@@ -3475,6 +3493,7 @@ $_adri_modular_incs = array(
     '/inc/category-duplach.php',            // Cat 2861 - Duplach platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-fiora.php',              // Cat 2863 - Fiora platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
+    '/inc/category-platos-de-ducha-baratos.php', // Cat 2905 - Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
@@ -3736,6 +3755,15 @@ function adrihosan_orden_estricto_ids( $q ) {
     // (159,90 EUR de entrada al momento del montaje). Usa meta_value_num
     // sobre _price (campo de WooCommerce) para orden numerico correcto.
     elseif ( is_product_category( 3795 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
+    }
+
+    // 5. PLATOS DE DUCHA BARATOS (ID 2905) -> PRECIO ASCENDENTE
+    // Misma logica que la 3795: el argumento de la pagina ES el precio
+    // (120,90 EUR de entrada), asi que el mas barato va primero.
+    elseif ( is_product_category( 2905 ) ) {
         $q->set( 'orderby', 'meta_value_num' );
         $q->set( 'meta_key', '_price' );
         $q->set( 'order', 'ASC' );
