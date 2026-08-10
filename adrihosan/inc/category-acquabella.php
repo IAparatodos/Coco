@@ -30,9 +30,17 @@
  *   - Decia "antideslizante C3". Eso es jerga que mezcla TRES normas distintas:
  *     UNE-ENV 12633 Clase 3, DIN 51097 Clase C y la francesa PN 24.
  *
- * PRISMA SLATE: son 49 platos nuestros de un modelo que el fabricante ya no
- * cataloga (su pagina da 404). Va SOLO con nombre y numero de medidas: sin
- * altura, sin formato y sin caracteristicas.
+ * PRISMA SLATE: RETIRADO de la pagina el 2026-08-10. Eran 49 platos de un
+ * modelo que el fabricante ya no cataloga (su pagina da 404). El 7-ago se
+ * pasaron los 49 a borrador con su 301 medida a medida hacia el Base Slate,
+ * asi que la tarjeta anunciaba algo que ya no se vende. No se vuelve a
+ * pintar: si un modelo no esta a la venta, no ocupa sitio en la hoja.
+ *
+ * CIFRA DEL CATALOGO: al salir Prisma quedan 289 platos publicados, no 338.
+ * Por eso el "mas de 300" que habia en hero, Akron, precio, cabecera del
+ * listado y FAQ pasa a "mas de 280" (regla: catalogo redondeado a la baja).
+ * Los mismos textos estan replicados en la descripcion del termino, en el
+ * rank_math_title y en el schema FAQ de Rank Math, y se cambiaron a la vez.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -45,11 +53,11 @@ function adrihosan_acquabella_contenido_superior() {
     $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
     <!-- 1. HERO -->
-    <!-- TODO: sustituir el fondo corporativo por la imagen editorial cuando
-         llegue (1600x1066, ~190 KB, mediterraneo calido). El degradado lo pone
-         el CSS, nunca horneado en el JPG: basta cambiar el style por
-         background-image: url('...'); -->
-    <section class="hero-section-container acq-hero adrihosan-full-width-block" style="background-color: #3f6f7b;">
+    <!-- Imagen editorial subida el 7-ago (adjunto 429737): Alma Slate en textura
+         pizarra, 1600x1066, 191 KB. Mismo patron que el resto del silo. El
+         degradado lo pone el CSS, NUNCA horneado en el JPG.
+         NO sustituir por un color de fondo: esta imagen es la definitiva. -->
+    <section class="hero-section-container acq-hero adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/plato-de-ducha-acquabella-alma-slate-textura-pizarra-adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -59,7 +67,7 @@ function adrihosan_acquabella_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Platos de ducha Acquabella' ); ?></h1>
             <?php if ( ! $es_filtro ) : ?>
-            <p>M&aacute;s de 300 medidas, de 70x80 a 200x120&nbsp;cm, en material Akron. Desde 245,90&nbsp;&euro; +IVA.</p>
+            <p>M&aacute;s de 280 medidas, de 70x80 a 200x120&nbsp;cm, en material Akron. Desde 245,90&nbsp;&euro; +IVA.</p>
             <?php endif; ?>
         </div>
     </section>
@@ -93,12 +101,6 @@ function adrihosan_acquabella_contenido_superior() {
                         <li><span>Altura</span> 2,7 &ndash; 3,1 cm</li>
                         <li><span>Formato m&aacute;x.</span> 200x100 cm</li>
                     </ul>
-                </div>
-
-                <div class="acq-serie-card">
-                    <h3>Prisma Slate</h3>
-                    <span class="acq-serie-medidas">49 medidas</span>
-                    <p class="acq-serie-aviso">Modelo descatalogado por el fabricante. Consultanos disponibilidad y ficha t&eacute;cnica antes de comprar.</p>
                 </div>
 
                 <div class="acq-serie-card">
@@ -158,11 +160,11 @@ function adrihosan_acquabella_contenido_superior() {
     <section class="acq-akron-section adrihosan-full-width-block">
         <div class="acq-akron-wrapper">
             <h2>Qu&eacute; es el Akron</h2>
-            <p>Es el material con el que Acquabella fabrica sus platos, y lo llevan los m&aacute;s de 300 modelos del cat&aacute;logo. Se compone de <strong>poliuretano y cargas minerales</strong> de distinta granulometr&iacute;a, compactadas en una masa <strong>maciza y reforzada</strong>: no es una l&aacute;mina hueca ni un relleno ligero, es s&oacute;lido de lado a lado.</p>
-            <p>Su matriz est&aacute; formulada con polioles de poli&eacute;ter, que traducido a lo que importa significa que <strong>no se degrada con el agua ni con la humedad constante</strong>, que es justo lo que le pides a un plato de ducha durante veinte a&ntilde;os.</p>
+            <p>Es el material con el que Acquabella fabrica sus platos, y lo llevan los m&aacute;s de 280 modelos del cat&aacute;logo. Es un compuesto de <strong>resina de poliuretano y cargas minerales sin s&iacute;lice</strong>, con una superficie compacta, antideslizante y resistente.</p>
+            <p>Aguanta agentes qu&iacute;micos, impactos y choque t&eacute;rmico, y lleva <strong>certificado antibacteriano seg&uacute;n la norma ISO 22196:2011</strong>. Sus texturas se consiguen en alta definici&oacute;n, admite m&aacute;s de 2.000 colores y se puede cortar a medida, que es lo que permite ajustarlo a un hueco que no es est&aacute;ndar.</p>
             <div class="acq-akron-datos">
-                <div class="acq-akron-dato"><strong>Macizo</strong><span>compactado en masa, no hueco</span></div>
-                <div class="acq-akron-dato"><strong>Incluido</strong><span>el desag&uuml;e va en todos los modelos</span></div>
+                <div class="acq-akron-dato"><strong>Sin s&iacute;lice</strong><span>en sus cargas minerales</span></div>
+                <div class="acq-akron-dato"><strong>ISO 22196</strong><span>certificado antibacteriano</span></div>
                 <div class="acq-akron-dato"><strong>2,3 &ndash; 3,9</strong><span>cent&iacute;metros de alto seg&uacute;n modelo</span></div>
             </div>
         </div>
@@ -172,7 +174,7 @@ function adrihosan_acquabella_contenido_superior() {
     <section class="acq-price-band adrihosan-full-width-block">
         <div class="acq-price-wrapper">
             <p class="acq-price-line">Platos Acquabella <strong>desde 245,90&nbsp;&euro; +IVA</strong>, hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes</p>
-            <p class="acq-price-nota">El precio depende de la medida y de la serie, no del material: los m&aacute;s de 300 modelos son del mismo Akron.</p>
+            <p class="acq-price-nota">El precio depende de la medida y de la serie, no del material: los m&aacute;s de 280 modelos son del mismo Akron.</p>
         </div>
     </section>
 
@@ -198,7 +200,7 @@ function adrihosan_acquabella_contenido_superior() {
     <!-- 7. TITULO CATALOGO + LISTADO -->
     <div class="product-loop-header">
         <h2 id="acq-catalogo">Cat&aacute;logo de platos de ducha Acquabella</h2>
-        <p>M&aacute;s de 300 medidas entre las siete series. Tambi&eacute;n encontrar&aacute;s la marca escrita como Aquabella.</p>
+        <p>M&aacute;s de 280 medidas entre los siete modelos. Tambi&eacute;n encontrar&aacute;s la marca escrita como Aquabella.</p>
     </div>
 
     <!-- WRAPPER AJAX para Filter Everything Pro (lo exige wpc_filter_settings) -->
@@ -229,7 +231,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>De Akron, un compuesto de poliuretano con cargas minerales de distinta granulometr&iacute;a compactadas en masa maciza y reforzada. No es una l&aacute;mina hueca: es s&oacute;lido en todo su espesor. Su formulaci&oacute;n resiste la humedad permanente sin degradarse, y lo llevan los m&aacute;s de 300 modelos del cat&aacute;logo.</p>
+                        <p>De Akron, un compuesto de resina de poliuretano y cargas minerales sin s&iacute;lice, con una superficie compacta, antideslizante y resistente. Aguanta agentes qu&iacute;micos, impactos y choque t&eacute;rmico, y lleva certificado antibacteriano seg&uacute;n la norma ISO 22196:2011. Lo llevan los m&aacute;s de 280 modelos del cat&aacute;logo.</p>
                     </div>
                 </div>
 
@@ -299,7 +301,7 @@ function adrihosan_acquabella_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Desde 245,90&nbsp;&euro; +IVA, y hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes. Lo que mueve el precio es la medida y la serie, no el material: todos los modelos son del mismo Akron.</p>
+                        <p>Desde 245,90&nbsp;&euro; +IVA, y hasta 916,90&nbsp;&euro; en los formatos m&aacute;s grandes. Lo que mueve el precio es la medida y el modelo, no el material: todos son del mismo Akron.</p>
                     </div>
                 </div>
 
