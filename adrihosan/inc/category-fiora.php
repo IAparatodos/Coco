@@ -160,7 +160,7 @@ function adrihosan_fiora_contenido_superior() {
                     </ul>
                 </div>
             </div>
-            <p class="fio-series-comun">Las cuatro comparten lo importante: <strong>resina de poliuretano</strong>, clasificaci&oacute;n <strong>antideslizante C3</strong> y <strong>v&aacute;lvula de desag&uuml;e incluida</strong>.</p>
+            <p class="fio-series-comun">Las cuatro comparten lo importante: <strong>resina de poliuretano</strong>, <strong>superficie antideslizante</strong> y <strong>v&aacute;lvula de desag&uuml;e incluida</strong>.</p>
         </div>
     </section>
 
@@ -282,7 +282,7 @@ function adrihosan_fiora_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, las cuatro series llevan clasificaci&oacute;n antideslizante C3, que es la que pide la normativa para zona de ducha con el pie descalzo. Para obra en local de uso p&uacute;blico podemos facilitarte el certificado del fabricante.</p>
+                        <p>S&iacute;, las cuatro series tienen superficie antideslizante. Fiora no publica la clase concreta ni en su web ni en su cat&aacute;logo, as&iacute; que si necesitas el dato certificado para una obra en local de uso p&uacute;blico se lo pedimos a f&aacute;brica y te lo pasamos por escrito.</p>
                     </div>
                 </div>
 

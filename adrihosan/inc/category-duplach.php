@@ -52,14 +52,14 @@ function adrihosan_duplach_contenido_superior() {
     <section class="dupl-trust-section adrihosan-full-width-block">
         <div class="dupl-trust-wrapper">
             <h2>&iquest;Qu&eacute; tal son los platos de ducha Duplach?</h2>
-            <p class="dupl-trust-intro">Es la pregunta que m&aacute;s nos llega de esta marca, as&iacute; que la contestamos con lo que se puede comprobar. Duplach fabrica desde 2010 en Villa del R&iacute;o, C&oacute;rdoba, platos de resina de poli&eacute;ster con gel coat, con clasificaci&oacute;n antideslizante C3, v&aacute;lvula de desag&uuml;e incluida y posibilidad de recorte a medida. Los precios van de 120,90 a 490,90&nbsp;&euro; +IVA seg&uacute;n serie, medida y acabado.</p>
+            <p class="dupl-trust-intro">Es la pregunta que m&aacute;s nos llega de esta marca, as&iacute; que la contestamos con lo que se puede comprobar. Duplach fabrica desde 2010 en Villa del R&iacute;o, C&oacute;rdoba, platos de resina de poli&eacute;ster con gel coat, con superficie antideslizante, v&aacute;lvula de desag&uuml;e incluida y posibilidad de recorte a medida. Los precios van de 120,90 a 490,90&nbsp;&euro; +IVA seg&uacute;n serie, medida y acabado.</p>
 
             <div class="dupl-trust-grid">
                 <div class="dupl-trust-card">
                     <h3>Lo que funciona bien</h3>
                     <ul>
                         <li>El gel coat aguanta el uso diario y se limpia sin productos especiales.</li>
-                        <li>La C3 es la clase que pide la normativa para ducha con pie descalzo.</li>
+                        <li>La superficie va texturizada y es antideslizante, que es lo que se le pide a un plato.</li>
                         <li>Se recortan en obra, que es lo que salva un hueco que no es medida est&aacute;ndar.</li>
                         <li>La f&aacute;brica est&aacute; en C&oacute;rdoba: reponer una pieza no depende de un contenedor.</li>
                     </ul>
@@ -218,7 +218,7 @@ function adrihosan_duplach_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Son platos de resina de poli&eacute;ster con gel coat fabricados en Villa del R&iacute;o, C&oacute;rdoba, con clasificaci&oacute;n antideslizante C3 y v&aacute;lvula de desag&uuml;e incluida. Es una de las marcas que m&aacute;s vendemos para reformas de ba&ntilde;o por relaci&oacute;n calidad-precio y por disponibilidad de medidas. Si buscas piedra natural o una pieza de dise&ntilde;o singular, no es la marca que te conviene.</p>
+                        <p>Son platos de resina de poli&eacute;ster con gel coat fabricados en Villa del R&iacute;o, C&oacute;rdoba, con superficie antideslizante y v&aacute;lvula de desag&uuml;e incluida. Es una de las marcas que m&aacute;s vendemos para reformas de ba&ntilde;o por relaci&oacute;n calidad-precio y por disponibilidad de medidas. Si buscas piedra natural o una pieza de dise&ntilde;o singular, no es la marca que te conviene.</p>
                     </div>
                 </div>
 
@@ -258,7 +258,7 @@ function adrihosan_duplach_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, llevan clasificaci&oacute;n antideslizante C3, que es la que exige la normativa para zona de ducha con pie descalzo. Para obra en local de uso p&uacute;blico podemos facilitar el certificado del fabricante.</p>
+                        <p>S&iacute;, la superficie es antideslizante. Duplach no publica la clase concreta en su ficha t&eacute;cnica, as&iacute; que si necesitas el dato certificado para una obra en local de uso p&uacute;blico se lo pedimos a f&aacute;brica y te lo pasamos por escrito.</p>
                     </div>
                 </div>
 
