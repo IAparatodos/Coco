@@ -1,0 +1,485 @@
+/* ========================================================================== */
+/* CATEGORY-DOS-SENOS.CSS - Familia "muebles de bano con dos senos" (7 paginas)*/
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/*                                                                            */
+/* SCOPE: este archivo NO se carga por la convencion category-{ID}.css porque  */
+/* lo comparten siete terminos. Se encola desde la setup function y todo va    */
+/* scopeado a .adri-dos-senos, una clase que la propia setup anade al body.    */
+/* Asi no puede filtrar estilos a ninguna otra pagina.                         */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.adri-dos-senos .woocommerce-breadcrumb,
+.adri-dos-senos .woocommerce-products-header,
+.adri-dos-senos .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero: patron estandar del silo (centrado, overlay del
+   critical CSS del header). Aqui solo migas y botones. ---------- */
+.adri-dos-senos .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.adri-dos-senos .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.adri-dos-senos .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+.adri-dos-senos .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.adri-dos-senos .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.adri-dos-senos .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.adri-dos-senos .hero-btn.primary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+.adri-dos-senos .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.adri-dos-senos .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3a. Escaparate de medidas (solo la madre 5461) ---------- */
+.adri-dos-senos .dsen-showcase-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .dsen-showcase-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adri-dos-senos .dsen-showcase-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.adri-dos-senos .dsen-showcase-sub {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    max-width: 640px;
+    margin: 0 auto 34px;
+    line-height: 1.6;
+}
+
+.adri-dos-senos .dsen-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+.adri-dos-senos .dsen-showcase-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 26px 12px;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.adri-dos-senos .dsen-showcase-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(63, 111, 123, 0.10);
+}
+
+.adri-dos-senos .dsen-showcase-cm {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.adri-dos-senos .dsen-showcase-cm small {
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-left: 2px;
+}
+
+.adri-dos-senos .dsen-showcase-count {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.78rem;
+    opacity: 0.75;
+}
+
+/* ---------- 3b. Selector de medida (las seis hijas) ---------- */
+/* La pieza central: va arriba y lleva de una pagina a otra. */
+.adri-dos-senos .dsen-picker-section {
+    background: #f0f7f8;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .dsen-picker-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adri-dos-senos .dsen-picker-label {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.adri-dos-senos .dsen-picker-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.adri-dos-senos .dsen-pill {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 10px 24px;
+    color: #3f6f7b;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.adri-dos-senos a.dsen-pill:hover {
+    border-color: #4dd2d0;
+    color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* La medida de la pagina actual: marcada y sin enlace */
+.adri-dos-senos .dsen-pill.is-current {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+    cursor: default;
+}
+
+.adri-dos-senos .dsen-picker-all {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+    padding-bottom: 2px;
+}
+
+/* ---------- 4. Las cuatro tarjetas (ap-value-*, scopeadas) ---------- */
+.adri-dos-senos .ap-value-section {
+    padding: 55px 20px;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .ap-value-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adri-dos-senos .ap-value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.adri-dos-senos .ap-value-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 26px 20px;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.adri-dos-senos .ap-value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(63, 111, 123, 0.10);
+    border-color: #4dd2d0;
+}
+
+.adri-dos-senos .ap-value-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3f6f7b;
+    margin: 0 0 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.adri-dos-senos .ap-value-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    color: #3f6f7b;
+    line-height: 1.55;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* ---------- 5. Cuanto sitio necesitas ---------- */
+.adri-dos-senos .dsen-space-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .dsen-space-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.adri-dos-senos .dsen-space-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.adri-dos-senos .dsen-space-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.68;
+    margin: 0 0 14px;
+}
+
+.adri-dos-senos .dsen-space-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- 6. Filtro FE heredado (mismo marcado que el resto del tema) ---------- */
+/* NOTA: sin position:sticky (tapaba la pagina; decision del 1-ago en cat 86). */
+.adri-dos-senos .pldu-filter-shell {
+    margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+    .adri-dos-senos .pldu-filter-shell {
+        background: #ffffff;
+        border: 1px solid #d4e3e6;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+    }
+}
+
+/* ---------- 7. Titulo catalogo ---------- */
+.adri-dos-senos .product-loop-header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .product-loop-header h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.adri-dos-senos .product-loop-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* ---------- 8. Guias del blog ---------- */
+.adri-dos-senos .dsen-guides-section {
+    background: #f0f7f8;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-dos-senos .dsen-guides-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adri-dos-senos .dsen-guides-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.adri-dos-senos .dsen-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.adri-dos-senos .dsen-guide-link {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #3f6f7b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.adri-dos-senos .dsen-guide-link:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* ---------- 9. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+.adri-dos-senos .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.adri-dos-senos .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 10. Responsive movil (verificado a 390 px) ---------- */
+@media (max-width: 768px) {
+    .adri-dos-senos .dsen-showcase-section,
+    .adri-dos-senos .dsen-space-section,
+    .adri-dos-senos .ap-value-section {
+        padding: 40px 15px;
+    }
+
+    /* El escaparate de la madre pasa a dos columnas: seis tarjetas en fila
+       serian ilegibles a 390 px */
+    .adri-dos-senos .dsen-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .adri-dos-senos .dsen-showcase-card {
+        padding: 20px 8px;
+    }
+
+    .adri-dos-senos .dsen-showcase-cm {
+        font-size: 1.5rem;
+    }
+
+    /* El selector se mantiene en fila y hace scroll horizontal: asi las seis
+       medidas siguen visibles de un vistazo sin romper la linea */
+    .adri-dos-senos .dsen-picker-row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .adri-dos-senos .dsen-pill {
+        flex: 0 0 auto;
+        padding: 9px 18px;
+        font-size: 0.92rem;
+    }
+
+    .adri-dos-senos .ap-value-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .adri-dos-senos .ap-value-card {
+        padding: 20px 18px;
+    }
+
+    .adri-dos-senos .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .adri-dos-senos .hero-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .adri-dos-senos .product-loop-header {
+        padding: 30px 15px 20px;
+    }
+}
+
+/* ---------- 11. Responsive tablet ---------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .adri-dos-senos .dsen-showcase-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .adri-dos-senos .ap-value-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
