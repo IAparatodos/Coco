@@ -268,6 +268,18 @@ function adrihosan_master_controller_cpu_fix() {
         case 2905: // Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
             adrihosan_setup_baratos_cpu_fix();
             break;
+        // Familia "muebles de bano con dos senos": 5461 madre (escaparate) +
+        // seis hijas por medida. Comparten plantilla; los datos salen por
+        // term_id dentro de inc/category-muebles-dos-senos.php.
+        case 5461: // Mueble lavabo doble (madre)
+        case 5463: // 120 cm
+        case 5464: // 130 cm
+        case 5462: // 140 cm
+        case 5460: // 150 cm
+        case 5459: // 160 cm
+        case 5465: // 180 cm
+            adrihosan_setup_dos_senos_cpu_fix();
+            break;
         case 82: // Inodoro a suelo (pilar silo, hija de 81)
             adrihosan_setup_inodoro_a_suelo_cpu_fix();
             break;
@@ -1496,6 +1508,45 @@ function adrihosan_setup_platos_ducha_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_platos_ducha_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_platos_ducha_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_dos_senos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Las siete paginas comparten un CSS que NO sigue la convencion
+    // category-{ID}.css, asi que se encola aqui y se scopea con una clase
+    // propia en el body.
+    add_filter('body_class', 'adrihosan_dos_senos_body_class');
+    add_action('wp_enqueue_scripts', 'adrihosan_dos_senos_css', 20);
+
+    if ( function_exists( 'adrihosan_dos_senos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_dos_senos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_dos_senos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_dos_senos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_dos_senos_body_class( $classes ) {
+    $classes[] = 'adri-dos-senos';
+    return $classes;
+}
+
+function adrihosan_dos_senos_css() {
+    $rel  = '/assets/css/category-dos-senos.css';
+    $path = get_stylesheet_directory() . $rel;
+    if ( file_exists( $path ) ) {
+        wp_enqueue_style(
+            'adrihosan-dos-senos',
+            get_stylesheet_directory_uri() . $rel,
+            array('adrihosan-base-global'),
+            filemtime( $path )
+        );
     }
 }
 
@@ -3494,6 +3545,7 @@ $_adri_modular_incs = array(
     '/inc/category-fiora.php',              // Cat 2863 - Fiora platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-platos-de-ducha-baratos.php', // Cat 2905 - Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
+    '/inc/category-muebles-dos-senos.php',  // Cats 5459-5465 - Familia muebles con dos senos (7 paginas, plantilla compartida)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
@@ -3764,6 +3816,15 @@ function adrihosan_orden_estricto_ids( $q ) {
     // Misma logica que la 3795: el argumento de la pagina ES el precio
     // (120,90 EUR de entrada), asi que el mas barato va primero.
     elseif ( is_product_category( 2905 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
+    }
+
+    // 6. MUEBLES CON DOS SENOS (7 paginas) -> PRECIO ASCENDENTE
+    // Catalogos de 176 a 5.474 referencias: el orden por precio es lo unico
+    // que hace navegable un listado de ese tamano.
+    elseif ( is_product_category( array( 5459, 5460, 5461, 5462, 5463, 5464, 5465 ) ) ) {
         $q->set( 'orderby', 'meta_value_num' );
         $q->set( 'meta_key', '_price' );
         $q->set( 'order', 'ASC' );
