@@ -66,6 +66,138 @@ function adrihosan_dos_senos_url( $term_id ) {
     return is_wp_error( $url ) ? 'https://www.adrihosan.com/' : $url;
 }
 
+/**
+ * FAQs de cada pagina: las DOS PRIMERAS son propias del termino, las CUATRO
+ * siguientes son comunes a las siete.
+ *
+ * Por que solo las dos primeras: "el lavabo viene incluido" se responde igual
+ * en las siete, y reescribir esa respuesta siete veces seria contenido hilado,
+ * que penaliza mas que repetirlo. Lo que si cambia de una pagina a otra es el
+ * espacio disponible, y de eso van las dos primeras.
+ *
+ * Antes las siete pintaban el mismo acordeon, con "?caben dos senos en 120 cm?"
+ * de primera pregunta incluso en la pagina de 180.
+ *
+ * OJO AL VOCABULARIO: son REFERENCIAS, no modelos. Hay 8 familias de modelo
+ * (Vica, Erin, Alan, Alan-Dlux, Kurve, Kurve-Dlux, Lush, Lagom) multiplicadas
+ * por acabados. Llamar "1.367 modelos" a 1.367 referencias promete algo que la
+ * pagina no cumple.
+ *
+ * Estos textos se copian palabra por palabra al rank_math_schema_FAQPage, asi
+ * que no se tocan sin tocar tambien el schema.
+ */
+function adrihosan_dos_senos_faqs( $term_id ) {
+
+    $propias = array(
+
+        // 5461 - madre (lavabo doble)
+        5461 => array(
+            array(
+                'q' => '&iquest;Qu&eacute; medida necesito para dos senos?',
+                'a' => 'Depende del hueco. Con 120 cm entran los dos, pero pegados. A partir de 140 empieza a quedar encimera libre en medio, y en 180 sobra sitio. Mide por el punto m&aacute;s estrecho y d&eacute;jate un par de cent&iacute;metros de holgura si va entre dos paredes.',
+            ),
+            array(
+                'q' => '&iquest;Cu&aacute;ntos hay y en qu&eacute; precios se mueven?',
+                'a' => 'Ahora mismo 5.474 referencias, de 536 a 3.858 &euro; +IVA (precios consultados el 11 de agosto de 2026). Lo que marca la diferencia es la medida, el modelo y el acabado, no el n&uacute;mero de senos.',
+            ),
+        ),
+
+        // 5463 - 120 cm
+        5463 => array(
+            array(
+                'q' => '&iquest;Caben dos senos en un mueble de 120 cm?',
+                'a' => 'Caben, y es la medida m&aacute;s peque&ntilde;a en la que montamos lavabo doble. Ahora bien, los dos senos quedan juntos y casi sin encimera entre ellos: sirve para lavarse a la vez, no para dejar cosas en medio.',
+            ),
+            array(
+                'q' => '&iquest;Me compensa subir a 130 o 140?',
+                'a' => 'Si te cabe, s&iacute;. Cada diez cent&iacute;metros van casi enteros al hueco central, que es justo lo que se echa de menos despu&eacute;s. Con 140 ya tienes una franja donde apoyar.',
+            ),
+        ),
+
+        // 5464 - 130 cm
+        5464 => array(
+            array(
+                'q' => '&iquest;Qu&eacute; gano con 130 cm frente a 120?',
+                'a' => 'Diez cent&iacute;metros que van casi todos al espacio entre los dos senos. Sobre plano no parece nada y en el d&iacute;a a d&iacute;a se nota, porque es la diferencia entre tener d&oacute;nde dejar el neceser y no tenerlo.',
+            ),
+            array(
+                'q' => '&iquest;Hay mucho donde elegir en 130?',
+                'a' => '675 referencias. Es una medida menos habitual que el 120 o el 150, as&iacute; que si buscas un acabado concreto conviene mirarlo antes de decidir el ancho.',
+            ),
+        ),
+
+        // 5462 - 140 cm
+        5462 => array(
+            array(
+                'q' => '&iquest;Es el 140 la medida donde empieza a haber encimera en medio?',
+                'a' => 'S&iacute;. Por debajo los senos van pegados. A partir de 140 queda entre ellos una franja libre que da para el jab&oacute;n, el vaso y poco m&aacute;s. Si quieres una repisa de verdad, mira el 160.',
+            ),
+            array(
+                'q' => '&iquest;Cu&aacute;ntos muebles de 140 con dos senos hay?',
+                'a' => '543 referencias, de 917 a 3.841 &euro; +IVA (precios consultados el 11 de agosto de 2026).',
+            ),
+        ),
+
+        // 5460 - 150 cm
+        5460 => array(
+            array(
+                'q' => '&iquest;Por qu&eacute; es la medida que m&aacute;s se busca?',
+                'a' => 'Porque cuadra en la mayor&iacute;a de ba&ntilde;os reformados y ya deja un hueco c&oacute;modo entre los dos senos. Es la que m&aacute;s nos preguntan y tambi&eacute;n de la que m&aacute;s variedad tenemos: 1.367 referencias.',
+            ),
+            array(
+                'q' => '&iquest;Cu&aacute;nto espacio queda entre los dos senos?',
+                'a' => 'El suficiente para el uso diario, una franja donde caben el jab&oacute;n y lo que sueles dejar fuera. Si os lav&aacute;is a la vez, la diferencia con el 120 o el 130 se nota.',
+            ),
+        ),
+
+        // 5459 - 160 cm
+        5459 => array(
+            array(
+                'q' => '&iquest;Cu&aacute;nto sitio queda en un mueble de 160?',
+                'a' => 'El necesario para que dos personas se laven a la vez sin rozarse los codos, y con una repisa central de verdad entre los dos senos.',
+            ),
+            array(
+                'q' => '&iquest;Por qu&eacute; hay menos donde elegir que en otras medidas?',
+                'a' => 'Porque el 160 no lo fabrican todos los modelos. Tenemos 176 referencias, bastantes menos que en 150. Si el acabado te importa m&aacute;s que el ancho exacto, compara antes con el 150.',
+            ),
+        ),
+
+        // 5465 - 180 cm
+        5465 => array(
+            array(
+                'q' => '&iquest;Qu&eacute; gano con 180 frente a 150?',
+                'a' => 'Treinta cent&iacute;metros que se van al centro. Los dos senos quedan separados de verdad y en medio queda una superficie utilizable, no un hueco de compromiso. Es la medida para ba&ntilde;os grandes.',
+            ),
+            array(
+                'q' => '&iquest;Aguanta la pared un mueble de 180 suspendido?',
+                'a' => 'Un tabique de pladur sin refuerzo, no. A esa medida el mueble pesa con los dos lavabos puestos, as&iacute; que o hay refuerzo detr&aacute;s o vas a por la versi&oacute;n con patas.',
+            ),
+        ),
+    );
+
+    $comunes = array(
+        array(
+            'q' => '&iquest;El lavabo viene incluido?',
+            'a' => 'S&iacute;. El precio incluye el mueble con sus dos senos montados, no hay que sumarlos aparte. En muchos modelos adem&aacute;s eliges el tipo de lavabo y si lleva orificio para el grifo o va a pared.',
+        ),
+        array(
+            'q' => '&iquest;Puedo elegir el color de los cajones y del lavabo?',
+            'a' => 'Ah&iacute; est&aacute; el motivo de que haya tantas referencias. Cada mueble combina color, modelo de lavabo, n&uacute;mero de cajones, orificios de grifer&iacute;a y espejo LED opcional, y cada combinaci&oacute;n es una referencia distinta. Lo pr&aacute;ctico es acotar con los filtros.',
+        ),
+        array(
+            'q' => '&iquest;Suspendido o con patas?',
+            'a' => 'El suspendido deja el suelo libre, se limpia mejor y lo cuelgas a la altura que quieras, pero necesita una pared que aguante. El de patas apoya en el suelo y viene con la altura de f&aacute;brica. Si la pared es de pladur sin refuerzo, ve al de patas.',
+        ),
+        array(
+            'q' => '&iquest;Cu&aacute;nto tarda en llegar?',
+            'a' => 'Depende del acabado y de si esa combinaci&oacute;n est&aacute; en stock o entra en la siguiente fabricaci&oacute;n. Te confirmamos fecha al hacer el pedido. Si tienes obra empezada, dilo al pedir y lo tenemos en cuenta.',
+        ),
+    );
+
+    $mias = isset( $propias[ $term_id ] ) ? $propias[ $term_id ] : array();
+    return array_merge( $mias, $comunes );
+}
+
 function adrihosan_dos_senos_contenido_superior() {
     // Regla del PR #74: en una URL de filtro CON regla SEO propia solo se
     // pintan hero, filtro, listado y contacto.
@@ -235,72 +367,28 @@ function adrihosan_dos_senos_contenido_inferior() {
 
     <?php if ( ! $es_filtro ) : ?>
     <!-- 7. FAQ (6 preguntas, HTML visible SIN JSON-LD).
-         El schema lo pone Rank Math desde el termino y los textos deben
-         coincidir palabra por palabra: se tocan los dos o ninguno. -->
+         Las DOS PRIMERAS dependen del termino (el espacio disponible cambia
+         de una medida a otra); las CUATRO siguientes son comunes a las siete.
+         Antes las siete pintaban el mismo acordeon y la de 180 preguntaba si
+         caben dos senos en 120 cm.
+         El schema lo pone Rank Math desde el termino copiando este texto
+         visible palabra por palabra: se tocan los dos o ninguno. -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas frecuentes sobre muebles de ba&ntilde;o con dos senos</h2>
             <div class="faq-items-wrapper">
+<?php foreach ( adrihosan_dos_senos_faqs( $term_id ) as $faq ) : ?>
 
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Caben dos senos en un mueble de 120&nbsp;cm?</span>
+                        <span><?php echo $faq['q']; ?></span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Caben, y de hecho 120&nbsp;cm es la medida m&aacute;s peque&ntilde;a en la que trabajamos el lavabo doble. Eso s&iacute;, los dos senos quedan pegados y casi sin encimera libre entre ellos. Si tienes hueco, a partir de 140&nbsp;cm empiezas a ganar espacio en medio, que es donde de verdad se nota.</p>
+                        <p><?php echo $faq['a']; ?></p>
                     </div>
                 </div>
-
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;El lavabo viene incluido?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>S&iacute;. El precio que ves incluye el mueble con sus dos senos puestos. No hay que comprar los lavabos aparte ni sumarlos al presupuesto, y en muchos modelos puedes elegir el tipo de lavabo y el n&uacute;mero de orificios para la grifer&iacute;a.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre los modelos Vica, Erin y Alan?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Son familias distintas dentro de Mondiaz y cambian en el dise&ntilde;o del frente, el n&uacute;mero de cajones y las combinaciones de acabado disponibles. Vica es la de m&aacute;s recorrido en color y configuraciones; Erin y Alan tienen sus propias cartas. Lo pr&aacute;ctico es filtrar por la medida que necesitas y comparar los que entren en tu hueco.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Puedo elegir el color de los cajones y del lavabo?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>S&iacute;, y es justo lo que explica que haya tantas referencias. Cada modelo combina color de mueble, modelo de lavabo, n&uacute;mero de cajones, orificios de grifer&iacute;a y espejo LED opcional. Cada combinaci&oacute;n es una referencia distinta, as&iacute; que lo m&aacute;s c&oacute;modo es usar los filtros para acotar.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Suspendido o con patas?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>El suspendido deja el suelo libre, facilita la limpieza y te permite decidir a qu&eacute; altura lo cuelgas, pero necesita una pared que aguante el peso del mueble con los dos lavabos. El de patas apoya en el suelo y viene con su altura de f&aacute;brica. Si la pared es de pladur sin refuerzo, ve a por el de patas.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item-common">
-                    <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;nto tarda en llegar?</span>
-                        <span class="faq-icon-common">+</span>
-                    </button>
-                    <div class="faq-answer-common">
-                        <p>Depende del acabado y de si esa combinaci&oacute;n est&aacute; en stock o entra en la siguiente fabricaci&oacute;n. Te confirmamos la fecha concreta al hacer el pedido. Si tienes obra empezada, d&iacute;noslo al pedir y lo tenemos en cuenta.</p>
-                    </div>
-                </div>
+<?php endforeach; ?>
 
             </div>
         </div>
