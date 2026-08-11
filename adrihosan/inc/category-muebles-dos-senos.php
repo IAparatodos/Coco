@@ -22,9 +22,11 @@
  * base de datos, nunca escrita a mano. Asi el selector no puede dar 404 aunque
  * cambien los slugs o el termino se mueva de padre.
  *
- * PRECIOS BLOQUEADOS: esta pendiente comprobar contra Mondiaz si el precio de
- * la web lleva IVA. Hasta saberlo NO se publica precio en hero ni en tarjetas
- * (instruccion expresa del wireframe). Los TODO estan marcados abajo.
+ * PRECIOS: confirmado el 11-ago que toda la web muestra los precios SIN IVA,
+ * como el resto del catalogo, asi que se publican con el "+IVA" habitual. El
+ * "desde" va exacto y el "hasta" acompana para dar el rango. No van en el hero
+ * a proposito: en un catalogo de 536 a 3.858 EUR, un "desde" ahi promete lo
+ * que el grueso no cumple.
  *
  * REGLAS DURAS: H1 via adrihosan_h1_dinamico(); FAQ en HTML visible SIN
  * JSON-LD (el schema lo pone Rank Math y los textos deben coincidir palabra por
@@ -43,13 +45,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function adrihosan_dos_senos_datos() {
     return array(
-        5461 => array( 'medida' => 0,   'productos' => 5474, 'aprox' => '5.400' ),
-        5463 => array( 'medida' => 120, 'productos' => 1148, 'aprox' => '1.100' ),
-        5464 => array( 'medida' => 130, 'productos' =>  675, 'aprox' =>   '600' ),
-        5462 => array( 'medida' => 140, 'productos' =>  543, 'aprox' =>   '500' ),
-        5460 => array( 'medida' => 150, 'productos' => 1367, 'aprox' => '1.300' ),
-        5459 => array( 'medida' => 160, 'productos' =>  176, 'aprox' =>   '170' ),
-        5465 => array( 'medida' => 180, 'productos' =>  233, 'aprox' =>   '230' ),
+        5461 => array( 'medida' => 0,   'productos' => 5474, 'aprox' => '5.400', 'desde' =>   '536', 'hasta' => '3.858' ),
+        5463 => array( 'medida' => 120, 'productos' => 1148, 'aprox' => '1.100', 'desde' =>   '536', 'hasta' => '3.016' ),
+        5464 => array( 'medida' => 130, 'productos' =>  675, 'aprox' =>   '600', 'desde' =>   '853', 'hasta' => '3.073' ),
+        5462 => array( 'medida' => 140, 'productos' =>  543, 'aprox' =>   '500', 'desde' =>   '917', 'hasta' => '3.841' ),
+        5460 => array( 'medida' => 150, 'productos' => 1367, 'aprox' => '1.300', 'desde' =>   '978', 'hasta' => '3.858' ),
+        5459 => array( 'medida' => 160, 'productos' =>  176, 'aprox' =>   '170', 'desde' => '1.313', 'hasta' => '3.393' ),
+        5465 => array( 'medida' => 180, 'productos' =>  233, 'aprox' =>   '230', 'desde' => '1.224', 'hasta' => '3.505' ),
     );
 }
 
@@ -78,6 +80,8 @@ function adrihosan_dos_senos_contenido_superior() {
     $medida   = (int) $info['medida'];
     $es_madre = ( 0 === $medida );
     $aprox    = $info['aprox'];
+    $desde    = $info['desde'];
+    $hasta    = $info['hasta'];
     $orden    = adrihosan_dos_senos_orden();
     ?>
     <!-- 1. HERO -->
@@ -104,9 +108,9 @@ function adrihosan_dos_senos_contenido_superior() {
                 );
             ?></h1>
             <?php if ( ! $es_filtro ) : ?>
-            <!-- TODO PRECIO: cuando se confirme si el precio de Mondiaz lleva
-                 IVA, valorar si entra aqui. Decision de UX: mejor en tarjeta
-                 con contexto que en el hero como reclamo. -->
+            <!-- El precio NO va en el hero a proposito: con un catalogo de 536
+                 a 3.858 EUR, un "desde" aqui promete lo que el grueso no
+                 cumple. Va en la cuarta tarjeta, con su rango al lado. -->
             <p>M&aacute;s de <?php echo esc_html( $aprox ); ?> acabados de 8 modelos Mondiaz, con los dos senos y el lavabo puestos.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-dos-senos" class="hero-btn primary">Ver cat&aacute;logo</a>
@@ -175,11 +179,8 @@ function adrihosan_dos_senos_contenido_superior() {
                     <p>Seg&uacute;n el modelo, y con 1, 2 o 4 cajones.</p>
                 </div>
                 <div class="ap-value-card">
-                    <!-- TODO PRECIO: esta tarjeta llevara el "desde X EUR" en
-                         cuanto se confirme si el precio de Mondiaz incluye IVA.
-                         Hasta entonces, el otro eje real de eleccion. -->
-                    <h3>T&uacute; eliges el acabado</h3>
-                    <p>Color del mueble, modelo de lavabo, n&uacute;mero de cajones y espejo LED. De ah&iacute; salen tantas combinaciones.</p>
+                    <h3>Desde <?php echo esc_html( $desde ); ?>&nbsp;&euro; +IVA</h3>
+                    <p>Y hasta <?php echo esc_html( $hasta ); ?>&nbsp;&euro; en los acabados m&aacute;s completos. Lo que mueve el precio es el modelo, el n&uacute;mero de cajones y si lleva espejo LED.</p>
                 </div>
             </div>
         </div>
