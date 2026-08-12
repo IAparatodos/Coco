@@ -61,6 +61,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2160: // Azulejos Exterior
             adrihosan_setup_azulejos_exterior_cpu_fix();
             break;
+        case 5467: // Azulejos grandes para banos (hija de 5466, recreada 12-ago)
+            adrihosan_setup_azulejos_grandes_banos_cpu_fix();
+            break;
         case 66: // Azulejos Piscinas
             adrihosan_setup_azulejos_piscinas_cpu_fix();
             break;
@@ -620,6 +623,21 @@ function adrihosan_setup_azulejos_cocina_cpu_fix() {
         add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_cocina_contenido_inferior', 99);
     }
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
+function adrihosan_setup_azulejos_grandes_banos_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_azulejos_grandes_banos_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_azulejos_grandes_banos_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_azulejos_grandes_banos_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_azulejos_grandes_banos_contenido_inferior', 99);
+    }
 }
 
 function adrihosan_setup_azulejos_exterior_cpu_fix() {
@@ -3546,6 +3564,7 @@ $_adri_modular_incs = array(
     '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-platos-de-ducha-baratos.php', // Cat 2905 - Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
     '/inc/category-muebles-dos-senos.php',  // Cats 5459-5465 - Familia muebles con dos senos (7 paginas, plantilla compartida)
+    '/inc/category-azulejos-grandes-banos.php', // Cat 5467 - Azulejos grandes para banos (hija de 5466)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
