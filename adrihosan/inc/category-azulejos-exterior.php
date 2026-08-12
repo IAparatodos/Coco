@@ -93,7 +93,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                     <tr>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Imitación Madera</strong></td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">Contorno de Piscinas y Porches</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">C3 Antideslizante</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Clase 3 (C3)</td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">Calidez sin mantenimiento</td>
                     </tr>
                     <tr style="background: #f8f9fa;">
@@ -116,7 +116,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 
    <!-- 4. CONSEJO ADRIA -->
 <div style="background: #f0fafa; border-left: 5px solid #4dd2d0; padding: 25px; margin: 30px auto; max-width: 950px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-    <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca siempre porcel&aacute;nico antideslizante con clasificaci&oacute;n C3. Es la garant&iacute;a de seguridad cuando llueve o hay humedad. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
+    <p style="margin:0; font-family: 'Poppins','Poppins Fallback',sans-serif; color: #102e35; font-size: 1.1rem;"><strong>&iexcl;Consejo de AdrIA!</strong> Para exteriores, busca porcel&aacute;nico <strong>Clase 3 (lo que el sector llama C3)</strong>: es la que el C&oacute;digo T&eacute;cnico exige en exteriores y piscinas. Selecciona las caracter&iacute;sticas que necesitas y pulsa <strong>&quot;FILTRAR&quot;</strong> para encontrar tu azulejo ideal.</p>
 </div>
 
     <!-- 5. DESTINO MÓVIL + WIDGET -->
@@ -125,7 +125,7 @@ function adrihosan_azulejos_exterior_contenido_superior() {
 
     <!-- 6. TÍTULO CATÁLOGO -->
     <div id="catalogo-exterior" class="product-loop-header">
-        <h2 class="product-loop-title">Catálogo de Azulejos para Exterior</h2>
+        <h2 class="product-loop-title">Catálogo de suelo de exterior y terrazas</h2>
     </div>
 
     <!-- 7. WRAPPER AJAX para Filter Everything Pro -->
@@ -155,51 +155,51 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
     <!-- 8. FAQs -->
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
-            <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Azulejos de Exterior (FAQs)</h2>
+            <h2 class="faq-main-title-common">Preguntas frecuentes sobre suelo de exterior</h2>
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;l es el mejor material para azulejos de exterior?</span>
+                        <span>&iquest;Qu&eacute; significa que un suelo de exterior sea antideslizante C3?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Sin duda, el gres porcel&aacute;nico. Su baja absorci&oacute;n de agua (menor al 0,5%) lo hace resistente a las heladas y a los cambios bruscos de temperatura, a diferencia de la cer&aacute;mica convencional o el barro cocido.</p>
+                        <p>C3 es como se llama en el sector a la Clase 3 de resistencia al deslizamiento, la m&aacute;s alta de la escala. Se mide con la norma UNE-ENV 12633, que clasifica los suelos de Clase 0 a Clase 3 seg&uacute;n el ensayo del p&eacute;ndulo. El C&oacute;digo T&eacute;cnico de la Edificaci&oacute;n (DB-SUA 1) exige Clase 3 en zonas exteriores, en el contorno de piscinas y en duchas. La clase concreta de cada modelo viene en su ficha t&eacute;cnica.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; diferencia hay entre un azulejo de exterior C2 y C3?</span>
+                        <span>&iquest;Qu&eacute; diferencia hay entre un suelo C2 y uno C3?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>La diferencia radica en el grado de adherencia. Un azulejo C3 es el de mayor agarre, obligatorio en zonas de piscina o rampas. Un C2 es un antideslizante suave, ideal para terrazas cubiertas o balcones donde se busca una limpieza m&aacute;s sencilla.</p>
+                        <p>Es el grado de agarre con el suelo mojado. La Clase 2 sirve para zonas interiores h&uacute;medas, como el suelo de un ba&ntilde;o o una cocina. La Clase 3 es la que el C&oacute;digo T&eacute;cnico exige en cuanto el suelo est&aacute; a la intemperie o junto a una piscina. Si dudas entre las dos para una terraza descubierta, la respuesta es Clase 3.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Se pueden usar azulejos de interior en una pared exterior?</span>
+                        <span>&iquest;Cu&aacute;l es el mejor suelo para una terraza o un patio exterior?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No es recomendable. Aunque sea para una pared, el material debe ser resistente a los rayos UV y a la dilataci&oacute;n t&eacute;rmica. Usar un material de interior en fachada puede provocar que el esmalte se cuartee o la pieza se desprenda con el tiempo.</p>
+                        <p>El gres porcel&aacute;nico, por una raz&oacute;n concreta: absorbe menos del 0,5 % de agua (grupo BIa de la norma UNE-EN 14411). Como no empapa, el agua no se congela dentro de la pieza y no la rompe cuando hiela. La cer&aacute;mica convencional y el barro cocido sin tratar absorben mucho m&aacute;s y sufren con las heladas.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;C&oacute;mo se limpian los azulejos de exterior antideslizantes?</span>
+                        <span>&iquest;C&oacute;mo se limpia un suelo de exterior antideslizante?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Al tener una superficie rugosa, lo ideal es usar agua a presi&oacute;n o una fregona de hilos de microfibra con detergentes neutros. Evita ceras o productos que creen capas, ya que anular&iacute;an el efecto antideslizante del material.</p>
+                        <p>Con agua a presi&oacute;n o una fregona de microfibra y detergente neutro. Al tener relieve retiene m&aacute;s suciedad que un suelo liso, as&iacute; que agradece un repaso a fondo de vez en cuando. Evita ceras y productos que dejen capa: tapan el relieve y anulan justo el efecto antideslizante por el que lo compraste.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; es el suelo t&eacute;cnico de exterior de 20mm?</span>
+                        <span>&iquest;Qu&eacute; es el suelo t&eacute;cnico de 20 mm y cu&aacute;ndo compensa?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es un porcel&aacute;nico espesorado que permite su colocaci&oacute;n sobre &quot;plots&quot; (soportes regulables). Es la soluci&oacute;n perfecta para terrazas donde se quiere ocultar el desag&uuml;e o cables, permitiendo un suelo totalmente nivelado y drenante.</p>
+                        <p>Es porcel&aacute;nico de doble espesor que se apoya sobre soportes regulables (plots) en lugar de pegarse con cemento. Compensa cuando no puedes o no quieres picar: deja el suelo nivelado sobre una superficie que no lo est&aacute;, drena el agua y permite levantar una pieza para acceder a desag&uuml;es o cableado.</p>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
             <div class="contact-intro">
                 <img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Ricardo experto en azulejos">
                 <div>
-                    <h2>Soy Ricardo. ¿Dudas con los azulejos para tu terraza?
+                    <h2>Soy Ricardo. ¿Dudas con el suelo de tu terraza?
                         <span>Te ayudo a elegir sin compromiso.</span>
                     </h2>
                 </div>
