@@ -34,6 +34,85 @@ CSS padre), escapado de menús/REQUEST_URI/subtítulos, backups de functions.php
 7. **H1 fijo** (sin `adrihosan_h1_dinamico`) en `category-encimeras-bano.php` y
    `category-encimeras-blancas.php`.
 
+## REGLA CRÍTICA: precios sin IVA y política de muestras
+
+**Todos los precios publicados en adrihosan.com van SIN IVA**, con "+ IVA" escrito detrás.
+Cualquier importe que se escriba en un `inc/category-*.php` debe llevarlo: `18&nbsp;&euro; + IVA`.
+
+**Política de muestras (cerrada, no volver a proponer cambios):**
+
+- Las muestras son **gratuitas**; el cliente solo paga la entrega a domicilio: **18 € + IVA por
+  fabricante**, y se le descuentan del pedido si supera **600 € + IVA**.
+- Aplica **SOLO a azulejos**: cerámica y baldosa hidráulica. **Nada más entra en ese régimen.**
+  Encimeras (`category-encimeras-blancas.php`) y cartas RAL de color (`brand-solidker.php`) **NO**
+  son muestras de azulejo y se quedan como están.
+- Página oficial: `https://www.adrihosan.com/muestras/`. Cualquier botón o badge que hable de
+  muestras debe enlazar ahí.
+
+Aplicado en PRs #95 y #96 (`category-azulejos.php`, `category-suelos-porcelanicos-ofertas.php`,
+`category-mosaico.php`, `category-azulejos-antiguos.php`, `category-navarti.php`,
+`category-ceramica-vives.php`).
+
+## REGLA CRÍTICA: ningún dato de producto que no esté en la ficha oficial del fabricante
+
+Ni deducido de una foto, ni sacado de nuestros propios títulos de producto, ni heredado de la
+descripción vieja de la categoría. Si un dato no está en el brief o en la ficha oficial:
+**preguntar, no inventar.**
+
+### Errores históricos de este tipo
+
+- **Cat 2887 (Acquabella)**: la plantilla afirmaba "todos los platos de 3 cm de grosor", dato
+  deducido de nuestro propio título comercial `80X70X3` (que es la medida *nominal*, no el grosor
+  real). Las alturas reales van de **2,3 a 3,9 cm según modelo**. Además llevaba un bloque entero
+  que agrupaba modelos por tipo de sumidero sobre una premisa falsa (la rejilla es configurable) →
+  bloque eliminado. Corregido en PR #83.
+- **Cat 2863 (Fiora)**: el brief avisaba expresamente de que el KOU Lastra **sí** lleva reborde
+  perimetral y el Silex **no** lleva marco, precisamente porque de la foto se deduce lo contrario.
+
+## REGLA CRÍTICA: el wireframe describe CONTENIDO, no el esqueleto visual del silo
+
+Un wireframe indica qué bloques van y qué dicen. **No cambia el patrón visual de las plantillas.**
+Todas las categorías comparten el mismo hero centrado, la misma tipografía y los mismos colores
+corporativos. Si el brief dice cosas como "aire arriba a la izquierda para el H1", eso es una
+instrucción para **el generador de imágenes del hero**, no una instrucción de CSS.
+
+**2026-08-07**: interpreté esa frase como CSS e inventé heros alineados a la izquierda con
+degradados diagonales en Fiora (2863) y Acquabella (2887). Costó 3 PRs de arreglo y una queja
+del usuario: *"no entiendo que cambies la forma de trabajar que teníamos en todas las demás
+plantillas"*. Revertido entero en PR #82 (−121 líneas). **Ante la duda: copiar el patrón de una
+categoría existente del mismo silo.**
+
+## REGLA: el tema está duplicado en el repo — el bueno es `adrihosan/`
+
+- ✅ `adrihosan/inc/` (~160 archivos) → **es el que se sube al servidor**.
+- ❌ `inc/` en la raíz del repo (~33 archivos) → copias viejas y desincronizadas. **No tocar.**
+
+Antes de editar cualquier `inc/category-*.php`, comprobar que la ruta empieza por `adrihosan/`.
+Y si el archivo lleva tiempo sin tocarse, **leer primero la versión del servidor**: el repo puede
+ir desfasado respecto a lo desplegado.
+
+## RUNBOOK: la web va lenta o está caída y NO es el tema
+
+Tres incidentes en agosto de 2026, **ninguno causado por el theme**. Antes de revertir nada del
+tema, descartar estas tres causas (el patrón se repite: se culpa al último despliegue y no lo es).
+
+| Fecha | Síntoma | Causa real | Fix |
+|-------|---------|------------|-----|
+| 1-ago | "Error crítico", el rollback del tema no lo arregla | **Core de WP a medias** (ver sección propia más abajo) | `wp core download --force --skip-content` |
+| 5-ago | CPU al 100 %, web caída | **Scraping distribuido**: 1.965 hits/día a `/wp-json/oembed/1.0/embed` desde IPs rotatorias con UA de Chrome falso | Bloqueo 403 en `.htaccess` + bloqueo permanente en functions.php (PR #77). CPU 100 %→30 % |
+| 12-ago | Web muy lenta tras desplegar functions.php | **Complianz**: 195 peticiones con 200 a `/wp-json/complianz/v1/{track,cookie_data,banner}`, cada una arrancando WP entero | Activar LiteSpeed "Cache REST API" (solo rotan 4 tokens → sí son cacheables), **manteniendo** `/wp-json/adrihosan/v1/` en "Do Not Cache URIs" |
+
+### Cómo mirar los logs (error metodológico ya cometido)
+
+El access log real es **`~/access-logs/adrihosan.com-ssl_log`** (~78 MB). El archivo
+`~/access-logs/adrihosan.com` (21 KB) solo contiene redirecciones 301 y **no sirve para
+diagnosticar** — analizarlo lleva a conclusiones falsas.
+
+### Cómo descartar el tema en 30 segundos
+
+Mirar el diff del último despliegue. Si son N líneas que solo se ejecutan en **una** categoría
+concreta, no puede tumbar la web entera: la causa está fuera del tema.
+
 ## REGLA OBLIGATORIA — main es la única fuente de verdad
 
 Cada sesión nueva, **antes de tocar código**:
