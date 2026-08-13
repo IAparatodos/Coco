@@ -119,7 +119,7 @@ function adrihosan_azulejos_antiguos_contenido_inferior() {
             <div class="bumper-content">
                 <h2>&iquest;Restaurando una casa de pueblo o buscando un estilo retro?</h2>
                 <p>Nuestras racholas antiguas combinan el dise&ntilde;o de las casas se&ntilde;oriales de principios de siglo con la nula absorci&oacute;n del gres moderno. Olv&iacute;date de los tratamientos especiales.</p>
-                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="bumper-btn">Pedir Muestras a Domicilio</a>
+                <a href="https://www.adrihosan.com/muestras/" class="bumper-btn">Pedir Muestras a Domicilio</a>
             </div>
         </div>
     </section>

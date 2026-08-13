@@ -398,7 +398,7 @@ function adrihosan_categoria_suelos_porcelanicos_ofertas_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;. Si tienes dudas con el color o el acabado, escr&iacute;benos por WhatsApp y te enviamos una muestra antes de cerrar el pedido. Mejor decidir con la pieza en la mano.</p>
+                        <p>Las muestras son <strong>gratuitas</strong>: solo pagas la entrega a domicilio, 18&nbsp;&euro; + IVA por fabricante, y te los descontamos del pedido si supera los 600&nbsp;&euro; + IVA. Escr&iacute;benos por WhatsApp o m&iacute;ralo todo en <a href="https://www.adrihosan.com/muestras/">nuestra p&aacute;gina de muestras</a>.</p>
                     </div>
                 </div>
 

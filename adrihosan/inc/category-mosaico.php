@@ -118,7 +118,7 @@ function adrihosan_mosaico_contenido_inferior() {
             <div class="bumper-content">
                 <h2>Instalaci&oacute;n r&aacute;pida y perfecta: El secreto est&aacute; en la malla.</h2>
                 <p>Nuestros mosaicos de cer&aacute;mica vienen unidos por una malla trasera (normalmente de 30x30 cm). Se instalan igual de r&aacute;pido que un azulejo grande y, adem&aacute;s, la malla es flexible, &iexcl;perfecta para revestir columnas redondas o platos de ducha con pendiente!</p>
-                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="bumper-btn">Pedir Muestras a Domicilio</a>
+                <a href="https://www.adrihosan.com/muestras/" class="bumper-btn">Pedir Muestras a Domicilio</a>
             </div>
         </div>
     </section>
