@@ -191,7 +191,7 @@ function adrihosan_azulejos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                    <div class="faq-answer-common">
-                     <p>Las muestras son <strong>gratuitas</strong>, solo cobramos un peque&ntilde;o importe testimonial por el env&iacute;o. Cont&aacute;ctanos por WhatsApp o tel&eacute;fono para solicitar las tuyas.</p>
+                     <p>Las muestras son <strong>gratuitas</strong>: solo pagas la entrega a domicilio, 18&nbsp;&euro; por fabricante, y te los descontamos del pedido si supera los 600&nbsp;&euro;. Te lo contamos todo en <a href="https://www.adrihosan.com/muestras/">nuestra p&aacute;gina de muestras</a>.</p>
                 </div>
                 </div>
                 <div class="faq-item-common">
