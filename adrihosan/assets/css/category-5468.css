@@ -1,0 +1,310 @@
+/* ========================================================================== */
+/* CATEGORY-5468.CSS - Azulejos grandes para cocina                            */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* La intencion de esta pagina es el FORMATO: por eso la medida es lo que      */
+/* manda visualmente en las tarjetas de navegacion.                           */
+/* OJO: aqui NO hay 60x120 (eso es de la hermana 5467, banos). El tercer       */
+/* formato de cocina es el 40x120.                                            */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-5468 .woocommerce-breadcrumb,
+.tax-product_cat.term-5468 .woocommerce-products-header,
+.tax-product_cat.term-5468 .term-description,
+.tax-product_cat.term-5468 .wd-shop-tools,
+.tax-product_cat.term-5468 .advanced-filter,
+.tax-product_cat.term-5468 .filter-wrapper,
+.tax-product_cat.term-5468 .doo-category-banner,
+.tax-product_cat.term-5468 .product-categories {
+    display: none;
+}
+
+/* ---------- 2. Hero (estructura base en critical CSS del header) ---------- */
+.tax-product_cat.term-5468 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.tax-product_cat.term-5468 .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.tax-product_cat.term-5468 .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-5468 .hero-btn.primary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-5468 .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-5468 .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3. Navegacion por formato ---------- */
+/* La medida va grande porque es el criterio de eleccion de esta pagina. */
+.tax-product_cat.term-5468 .agc-formatos-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-5468 .agc-formatos-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-5468 .agc-formatos-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-5468 .section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    max-width: 640px;
+    margin: 0 auto 34px;
+    line-height: 1.6;
+}
+
+.tax-product_cat.term-5468 .agc-formatos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.tax-product_cat.term-5468 .agc-formato-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 30px 16px;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-5468 .agc-formato-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(63, 111, 123, 0.10);
+}
+
+.tax-product_cat.term-5468 .agc-formato-cm {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tax-product_cat.term-5468 .agc-formato-cm small {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.6;
+    margin: 0 2px;
+}
+
+/* La tarjeta de color no lleva medida, asi que su titulo va algo menor */
+.tax-product_cat.term-5468 .agc-formato-color .agc-formato-cm {
+    font-size: 1.5rem;
+}
+
+.tax-product_cat.term-5468 .agc-formato-txt {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    opacity: 0.85;
+}
+
+/* ---------- 4. Tabla comparativa ---------- */
+.tax-product_cat.term-5468 .agc-tabla-section {
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-5468 .agc-tabla-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-5468 .agc-tabla-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-5468 .tabla-comparativa-grandes {
+    text-align: left;
+}
+
+/* ---------- 5. Titulo catalogo ---------- */
+.tax-product_cat.term-5468 .product-loop-header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-5468 .product-loop-title {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ---------- 6. Descripcion del termino (5 H2 publicados por datos) ---------- */
+.tax-product_cat.term-5468 .bho-guide-section {
+    background: #f0f7f8;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-5468 .term-description-dinamica h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+    font-weight: 700;
+    margin: 28px 0 12px;
+}
+
+.tax-product_cat.term-5468 .term-description-dinamica h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin: 20px 0 10px;
+}
+
+.tax-product_cat.term-5468 .term-description-dinamica p,
+.tax-product_cat.term-5468 .term-description-dinamica li {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-5468 .term-description-dinamica a {
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-5468 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 7. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+.tax-product_cat.term-5468 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-5468 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 8. Filtro movil (mismo patron que el resto del silo) ---------- */
+.tax-product_cat.term-5468 .solo-movil-filtro {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-5468 .solo-movil-filtro {
+        display: block !important;
+    }
+}
+
+/* ---------- 9. Responsive movil (verificado a 390 px) ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-5468 .agc-formatos-section,
+    .tax-product_cat.term-5468 .agc-tabla-section {
+        padding: 40px 15px;
+    }
+
+    /* Cuatro tarjetas en fila son ilegibles a 390 px: pasan a dos columnas */
+    .tax-product_cat.term-5468 .agc-formatos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-5468 .agc-formato-card {
+        padding: 22px 10px;
+    }
+
+    .tax-product_cat.term-5468 .agc-formato-cm {
+        font-size: 1.45rem;
+    }
+
+    .tax-product_cat.term-5468 .agc-formato-color .agc-formato-cm {
+        font-size: 1.25rem;
+    }
+
+    .tax-product_cat.term-5468 .agc-formato-txt {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-5468 .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-5468 .hero-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-5468 .product-loop-header {
+        padding: 30px 15px 20px;
+    }
+}
+
+/* ---------- 10. Responsive tablet ---------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tax-product_cat.term-5468 .agc-formatos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
