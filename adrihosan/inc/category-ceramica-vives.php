@@ -56,7 +56,7 @@ function adrihosan_ceramica_vives_contenido_superior() {
                 <div class="trust-icon">&#128230;</div>
                 <div class="trust-text">
                     <strong>Muestras Disponibles</strong>
-                    <span>Pide tu muestra antes de comprar</span>
+                    <span><a href="https://www.adrihosan.com/muestras/">Pide tu muestra antes de comprar</a></span>
                 </div>
             </div>
         </div>
