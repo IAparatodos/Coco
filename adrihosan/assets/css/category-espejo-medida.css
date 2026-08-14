@@ -1,0 +1,362 @@
+/* ========================================================================== */
+/* CATEGORY-ESPEJO-MEDIDA.CSS - Espejos de bano por medida (5472, 5474...)     */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/*                                                                            */
+/* CSS compartido por todas las medidas, asi que NO sigue la convencion        */
+/* category-{ID}.css: se encola desde functions.php y se scopea con la clase   */
+/* .adri-espejo-medida que la setup function anade al body.                    */
+/* ========================================================================== */
+
+.adri-espejo-medida {
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-espejo-medida .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* ---------- 1. Ocultar legacy y, sobre todo, las DOS descripciones ----------
+   Sin plantilla el tema imprime la descripcion del termino dos veces
+   (.term-description y .woodmart-category-desc). La plantilla la pinta una
+   sola vez dentro de .bho-guide-section, asi que aqui se apagan las dos. */
+.adri-espejo-medida .woocommerce-breadcrumb,
+.adri-espejo-medida .woocommerce-products-header,
+.adri-espejo-medida .woocommerce-products-header__description,
+.adri-espejo-medida .term-description,
+.adri-espejo-medida .woodmart-category-desc,
+.adri-espejo-medida .wd-shop-tools,
+.adri-espejo-medida .wd-active-filters,
+.adri-espejo-medida .advanced-filter,
+.adri-espejo-medida .filter-wrapper,
+.adri-espejo-medida .doo-category-banner,
+.adri-espejo-medida .product-categories {
+    display: none !important;
+}
+
+/* La descripcion que SI se pinta vive dentro de la plantilla y no se toca. */
+.adri-espejo-medida .bho-guide-section .term-description-dinamica {
+    display: block !important;
+}
+
+/* ---------- 2. Hero (estructura base en el critical CSS del header) ---------- */
+.adri-espejo-medida .hero-section-container .breadcrumb-nav {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.adri-espejo-medida .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.adri-espejo-medida .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+/* El subtitulo es la ficha tecnica de la pagina (cuantos hay, desde cuanto,
+   envio): va destacado porque es lo que resuelve la duda de quien entra. */
+.adri-espejo-medida .hero-section-container .hero-tagline {
+    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0;
+    font-size: clamp(1rem, 2.2vw, 1.15rem);
+    font-weight: 600;
+    margin: 12px 0 0;
+}
+
+.adri-espejo-medida .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.adri-espejo-medida .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.adri-espejo-medida .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.adri-espejo-medida .hero-btn.primary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+.adri-espejo-medida .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.adri-espejo-medida .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3. Tira "otra medida" ---------- */
+.adri-espejo-medida .esp-medidas-section {
+    background: #f0f7f8;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-espejo-medida .esp-medidas-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adri-espejo-medida .esp-medidas-label {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 18px;
+}
+
+.adri-espejo-medida .esp-medidas-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.adri-espejo-medida .esp-pill {
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 40px;
+    padding: 10px 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3f6f7b;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+.adri-espejo-medida .esp-pill:hover {
+    border-color: #4dd2d0;
+    color: #3f6f7b;
+}
+
+.adri-espejo-medida .esp-pill-todos {
+    border-style: dashed;
+}
+
+/* ---------- 4. Tabla comparativa ---------- */
+.adri-espejo-medida .esp-tabla-section {
+    padding: 55px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-espejo-medida .esp-tabla-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.adri-espejo-medida .esp-tabla-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 26px;
+}
+
+/* La tabla scrollea dentro de su caja, nunca el body (regla del proyecto). */
+.adri-espejo-medida .esp-tabla-scroll {
+    overflow-x: auto;
+}
+
+.adri-espejo-medida .esp-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #3f6f7b;
+}
+
+.adri-espejo-medida .esp-tabla th {
+    background: #3f6f7b;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 15px;
+    white-space: nowrap;
+}
+
+.adri-espejo-medida .esp-tabla td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #d4e3e6;
+}
+
+.adri-espejo-medida .esp-tabla tbody tr.is-current {
+    background: #f0f7f8;
+}
+
+.adri-espejo-medida .esp-tabla a {
+    color: #3f6f7b;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.adri-espejo-medida .esp-tabla a:hover {
+    color: #4dd2d0;
+}
+
+/* ---------- 5. Filtro y titulo del catalogo ---------- */
+.adri-espejo-medida .filter-container-master {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adri-espejo-medida .product-loop-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.adri-espejo-medida .product-loop-title {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ---------- 6. Descripcion del termino (los cinco H2) ---------- */
+.adri-espejo-medida .bho-guide-section {
+    background: #f0f7f8;
+    padding: 55px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adri-espejo-medida .bho-guide-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.adri-espejo-medida .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.adri-espejo-medida .term-description-dinamica h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+    font-weight: 700;
+    margin: 32px 0 12px;
+}
+
+.adri-espejo-medida .term-description-dinamica h2:first-child {
+    margin-top: 0;
+}
+
+.adri-espejo-medida .term-description-dinamica h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 22px 0 10px;
+}
+
+.adri-espejo-medida .term-description-dinamica p,
+.adri-espejo-medida .term-description-dinamica li {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.adri-espejo-medida .term-description-dinamica a {
+    color: #3f6f7b;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+}
+
+.adri-espejo-medida .term-description-dinamica a:hover {
+    color: #4dd2d0;
+}
+
+/* ---------- 7. Contacto Ricardo (fix circulo de la foto, patron CLAUDE.md) ---------- */
+.adri-espejo-medida .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.adri-espejo-medida .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 8. Responsive movil ---------- */
+@media (max-width: 768px) {
+    .adri-espejo-medida .esp-medidas-section {
+        padding: 26px 15px;
+    }
+
+    .adri-espejo-medida .esp-tabla-section {
+        padding: 38px 15px;
+    }
+
+    .adri-espejo-medida .esp-pill {
+        padding: 9px 16px;
+        font-size: 0.88rem;
+    }
+
+    .adri-espejo-medida .esp-tabla {
+        font-size: 0.85rem;
+    }
+
+    .adri-espejo-medida .esp-tabla th,
+    .adri-espejo-medida .esp-tabla td {
+        padding: 10px 12px;
+    }
+
+    .adri-espejo-medida .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .adri-espejo-medida .hero-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .adri-espejo-medida .bho-guide-section {
+        padding: 38px 15px;
+    }
+
+    .adri-espejo-medida .product-loop-header {
+        padding: 0 15px;
+    }
+}

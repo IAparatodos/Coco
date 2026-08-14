@@ -424,6 +424,15 @@ function adrihosan_master_controller_cpu_fix() {
         case 4402: // Espejo Baño 90x80 cm
             adrihosan_setup_espejo_bano_90x80_cpu_fix();
             break;
+        // Espejos de baño POR MEDIDA: una sola plantilla parametrizable para
+        // todas. Los datos salen por term_id de inc/category-espejo-medida.php
+        // y las cifras (recuento y "desde") de la BD en cada carga. Para dar de
+        // alta otra medida: añadir su case aquí y su term_id en el array de
+        // datos de la plantilla. Nada más.
+        case 5472: // Espejo baño 120x80 (hija de 5471)
+        case 5474: // Espejo baño 100x100 (hija de 5473)
+            adrihosan_setup_espejo_medida_cpu_fix();
+            break;
         case 4274: // Espejo Redondo 70 cm con Luz LED
             adrihosan_setup_espejo_redondo_70_luz_cpu_fix();
             break;
@@ -2450,6 +2459,45 @@ function adrihosan_setup_espejo_bano_90x80_cpu_fix() {
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
+function adrihosan_setup_espejo_medida_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    // Todas las medidas comparten un CSS que NO sigue la convencion
+    // category-{ID}.css, asi que se encola aqui y se scopea con una clase
+    // propia en el body.
+    add_filter('body_class', 'adrihosan_espejo_medida_body_class');
+    add_action('wp_enqueue_scripts', 'adrihosan_espejo_medida_css', 20);
+
+    if ( function_exists( 'adrihosan_espejo_medida_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_espejo_medida_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_espejo_medida_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_espejo_medida_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_espejo_medida_body_class( $classes ) {
+    $classes[] = 'adri-espejo-medida';
+    return $classes;
+}
+
+function adrihosan_espejo_medida_css() {
+    $rel  = '/assets/css/category-espejo-medida.css';
+    $path = get_stylesheet_directory() . $rel;
+    if ( file_exists( $path ) ) {
+        wp_enqueue_style(
+            'adrihosan-espejo-medida',
+            get_stylesheet_directory_uri() . $rel,
+            array('adrihosan-base-global'),
+            filemtime( $path )
+        );
+    }
+}
+
 function adrihosan_setup_espejo_redondo_70_luz_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -3584,6 +3632,7 @@ $_adri_modular_incs = array(
     '/inc/category-muebles-dos-senos.php',  // Cats 5459-5465 - Familia muebles con dos senos (7 paginas, plantilla compartida)
     '/inc/category-azulejos-grandes-banos.php', // Cat 5467 - Azulejos grandes para banos (hija de 5466)
     '/inc/category-azulejos-grandes-cocina.php', // Cat 5468 - Azulejos grandes para cocina (hija de 5466)
+    '/inc/category-espejo-medida.php',      // Cats 5472, 5474 - Espejos de bano por medida (plantilla parametrizable)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
