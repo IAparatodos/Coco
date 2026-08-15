@@ -37,10 +37,11 @@ function adrihosan_baratos_contenido_superior() {
     $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
     <!-- 1. HERO -->
-    <!-- TODO: falta la URL del adjunto 429757. Mientras tanto, fondo
-         corporativo. El degradado lo pone el CSS, nunca horneado en el JPG:
-         basta cambiar el style por background-image: url('...'); -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-color: #3f6f7b;">
+    <!-- Imagen editorial (adjunto 429757, 1536x1024, 181 KB): plato de resina
+         con textura pizarra a ras de suelo y desague lineal a la vista. El
+         degradado lo pone el CSS, NUNCA horneado en el JPG.
+         NO sustituir por un color de fondo: esta imagen es la definitiva. -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/platos-de-ducha-baratos-adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
