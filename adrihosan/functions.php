@@ -274,6 +274,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 2905: // Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
             adrihosan_setup_baratos_cpu_fix();
             break;
+        case 2897: // Platos de ducha de pizarra (hoja de ACABADO, hija de 86)
+            adrihosan_setup_pizarra_cpu_fix();
+            break;
         // Familia "muebles de bano con dos senos": 5461 madre (escaparate) +
         // seis hijas por medida. Comparten plantilla; los datos salen por
         // term_id dentro de inc/category-muebles-dos-senos.php.
@@ -1607,6 +1610,21 @@ function adrihosan_setup_baratos_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_baratos_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_baratos_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_pizarra_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_pizarra_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pizarra_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pizarra_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pizarra_contenido_inferior', 99);
     }
 }
 
@@ -3629,6 +3647,7 @@ $_adri_modular_incs = array(
     '/inc/category-fiora.php',              // Cat 2863 - Fiora platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-platos-de-ducha-baratos.php', // Cat 2905 - Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
+    '/inc/category-platos-pizarra.php',      // Cat 2897 - Platos de ducha de pizarra (hoja de ACABADO, hija de 86; 55% del importe del silo)
     '/inc/category-muebles-dos-senos.php',  // Cats 5459-5465 - Familia muebles con dos senos (7 paginas, plantilla compartida)
     '/inc/category-azulejos-grandes-banos.php', // Cat 5467 - Azulejos grandes para banos (hija de 5466)
     '/inc/category-azulejos-grandes-cocina.php', // Cat 5468 - Azulejos grandes para cocina (hija de 5466)

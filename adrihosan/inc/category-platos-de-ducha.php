@@ -124,7 +124,34 @@ function adrihosan_platos_ducha_contenido_superior() {
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-solid-surface/" class="pldu-material-card pldu-material-premium">
                     <span class="pldu-premium-tag">Gama alta</span>
                     <h3>Solid Surface</h3>
-                    <p>Tacto piedra y fabricaci&oacute;n a medida. Una selecci&oacute;n corta de 8 piezas, no una opci&oacute;n m&aacute;s.</p>
+                    <p>Tacto piedra y acabado sedoso. Una selecci&oacute;n corta de 8 piezas, no una opci&oacute;n m&aacute;s.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5-bis. QUE ACABADO: la textura es lo que mas se elige y lo que mas se vende -->
+    <section class="pldu-finish-section adrihosan-full-width-block">
+        <div class="pldu-finish-wrapper">
+            <h2>&iquest;Qu&eacute; acabado quieres?</h2>
+            <p class="pldu-finish-lead">La textura es lo primero que se ve y lo que decide la mayor&iacute;a de las compras.</p>
+            <div class="pldu-finish-grid">
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-de-pizarra/" class="pldu-finish-card pldu-finish-main">
+                    <h3>Textura pizarra</h3>
+                    <p>El acabado de referencia: 692 platos en 31 colores y 121 medidas, desde 120,90 &euro; +IVA.</p>
+                    <span class="pldu-finish-count">692 platos</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-decorados/" class="pldu-finish-card">
+                    <h3>Decorados</h3>
+                    <p>Madera, m&aacute;rmol, terrazo, hidr&aacute;ulico, mosaico y granito, para que no parezca un plato.</p>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-enmarcados/" class="pldu-finish-card">
+                    <h3>Enmarcados</h3>
+                    <p>Con marco perimetral, incluida la serie Silex de Fiora.</p>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-de-resina/platos-de-ducha-de-poliuretano-base/" class="pldu-finish-card">
+                    <h3>Bet&oacute;n</h3>
+                    <p>Aspecto cemento continuo, en poliuretano.</p>
                 </a>
             </div>
         </div>

@@ -1,0 +1,396 @@
+/* ============================================================
+   Categoria 2897 - Platos de ducha de pizarra (hija de 86)
+   Hoja de ACABADO. La seccion estrella es la carta de 31 colores.
+   Paleta de la casa: petroleo #3f6f7b · turquesa #4dd2d0 · fondo #f0f7f8
+   ============================================================ */
+
+/* ---------- 1. Colores (seccion estrella) ---------- */
+.tax-product_cat.term-2897 .pzr-colors-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-colors-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-colors-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-2897 .pzr-colors-lead {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 1rem;
+    margin: 0 0 28px;
+}
+
+.tax-product_cat.term-2897 .pzr-family-title {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 26px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #d4e3e6;
+}
+
+.tax-product_cat.term-2897 .pzr-colors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.tax-product_cat.term-2897 .pzr-color-chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.92rem;
+    color: #3f6f7b;
+    transition: border-color .2s ease;
+}
+
+.tax-product_cat.term-2897 .pzr-color-chip:hover {
+    border-color: #4dd2d0;
+}
+
+.tax-product_cat.term-2897 .pzr-color-chip em {
+    font-style: normal;
+    font-size: 0.8rem;
+    opacity: 0.65;
+}
+
+/* ---------- 2. Medidas ---------- */
+.tax-product_cat.term-2897 .pzr-sizes-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-wrapper p {
+    color: #3f6f7b;
+    opacity: 0.9;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto 26px;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-links a {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 9px 18px;
+    font-size: 0.92rem;
+    color: #3f6f7b;
+    text-decoration: none;
+    transition: border-color .2s ease, background .2s ease;
+}
+
+.tax-product_cat.term-2897 .pzr-sizes-links a:hover {
+    border-color: #4dd2d0;
+    background: #ffffff;
+}
+
+/* ---------- 3. Franja de precio ---------- */
+.tax-product_cat.term-2897 .pzr-price-band {
+    background: #3f6f7b;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-price-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.tax-product_cat.term-2897 .pzr-price-claim {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.tax-product_cat.term-2897 .pzr-price-link {
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2897 .pzr-price-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 4. Por que pizarra ---------- */
+.tax-product_cat.term-2897 .pzr-why-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-why-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-why-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+.tax-product_cat.term-2897 .pzr-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.tax-product_cat.term-2897 .pzr-why-card {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 26px 22px;
+    text-align: left;
+}
+
+.tax-product_cat.term-2897 .pzr-why-card h3 {
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-2897 .pzr-why-card p {
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---------- 5. Enlazado horizontal (otros acabados / para quien) ---------- */
+.tax-product_cat.term-2897 .pzr-related-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-related-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-related-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    font-weight: 700;
+    margin: 0 0 26px;
+}
+
+.tax-product_cat.term-2897 .pzr-related-second {
+    margin-top: 46px;
+}
+
+.tax-product_cat.term-2897 .pzr-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.tax-product_cat.term-2897 .pzr-related-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 26px 22px;
+    text-align: left;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2897 .pzr-related-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+}
+
+.tax-product_cat.term-2897 .pzr-related-card h3 {
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-2897 .pzr-related-card p {
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---------- 6. Marcas ---------- */
+.tax-product_cat.term-2897 .pzr-brands-section {
+    background: #f0f7f8;
+    padding: 46px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-brands-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-brands-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    font-weight: 700;
+    margin: 0 0 22px;
+}
+
+.tax-product_cat.term-2897 .pzr-brands-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.tax-product_cat.term-2897 .pzr-brand-link {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 10px 24px;
+    color: #3f6f7b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color .2s ease;
+}
+
+.tax-product_cat.term-2897 .pzr-brand-link:hover {
+    border-color: #4dd2d0;
+}
+
+/* ---------- 7. FAQ ---------- */
+.tax-product_cat.term-2897 .pzr-faq-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-faq-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2897 .pzr-faq-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+/* ---------- 8. Guias del blog ---------- */
+.tax-product_cat.term-2897 .pzr-guides-section {
+    background: #f0f7f8;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2897 .pzr-guides-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2897 .pzr-guides-wrapper h2 {
+    color: #3f6f7b;
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-2897 .pzr-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+}
+
+.tax-product_cat.term-2897 .pzr-guide-card {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 20px 18px;
+    color: #3f6f7b;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2897 .pzr-guide-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+}
+
+/* ---------- 9. Responsive ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2897 .pzr-colors-section,
+    .tax-product_cat.term-2897 .pzr-sizes-section,
+    .tax-product_cat.term-2897 .pzr-why-section,
+    .tax-product_cat.term-2897 .pzr-related-section,
+    .tax-product_cat.term-2897 .pzr-faq-section {
+        padding: 44px 16px;
+    }
+
+    .tax-product_cat.term-2897 .pzr-price-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-2897 .pzr-color-chip {
+        font-size: 0.86rem;
+        padding: 7px 13px;
+    }
+}

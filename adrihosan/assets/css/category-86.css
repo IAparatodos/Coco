@@ -505,3 +505,96 @@
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+/* ---------- 13. Acabados (seccion 5-bis): la textura es lo que mas se vende ---------- */
+.tax-product_cat.term-86 .pldu-finish-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-86 .pldu-finish-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-86 .pldu-finish-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-86 .pldu-finish-lead {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 1rem;
+    margin: 0 0 30px;
+}
+
+.tax-product_cat.term-86 .pldu-finish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.tax-product_cat.term-86 .pldu-finish-card {
+    position: relative;
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 28px 22px;
+    text-decoration: none;
+    text-align: left;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-86 .pldu-finish-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+}
+
+.tax-product_cat.term-86 .pldu-finish-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-86 .pldu-finish-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* La pizarra es el 55 % de la facturacion del silo: se destaca */
+.tax-product_cat.term-86 .pldu-finish-main {
+    border-color: #4dd2d0;
+    background: #ffffff;
+}
+
+.tax-product_cat.term-86 .pldu-finish-count {
+    display: inline-block;
+    margin-top: 12px;
+    background: #4dd2d0;
+    color: #102e35;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-86 .pldu-finish-section {
+        padding: 44px 16px;
+    }
+}
