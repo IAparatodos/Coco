@@ -60,8 +60,14 @@ function adrihosan_platos_ducha_contenido_superior() {
                          Si se toca el catalogo, refrescar los recuentos. */ ?>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-70x70/" class="pldu-size-btn"><span class="pldu-size-num">70&times;70</span><span class="pldu-size-count">23 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-ducha-80x80/" class="pldu-size-btn"><span class="pldu-size-num">80&times;80</span><span class="pldu-size-count">29 modelos</span></a>
+                <?php /* OJO: la etiqueta va 80x90 aunque el slug y el termino sean 90x80, y por
+                         eso el boton se coloca aqui, detras del 80x80. No es una errata: en GSC
+                         (12 meses) "plato de ducha 80x90" suma ~930 impresiones y 8 clics, y
+                         "90x80" 196 impresiones y CERO clics. Manda la consulta, no la
+                         coherencia con el slug. El H1 y el title de la regla SEO tambien dicen
+                         80x90, asi que van alineados. */ ?>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x80/" class="pldu-size-btn"><span class="pldu-size-num">80&times;90</span><span class="pldu-size-count">26 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x70/" class="pldu-size-btn"><span class="pldu-size-num">90&times;70</span><span class="pldu-size-count">28 modelos</span></a>
-                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x80/" class="pldu-size-btn"><span class="pldu-size-num">90&times;80</span><span class="pldu-size-count">26 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-90x90/" class="pldu-size-btn"><span class="pldu-size-num">90&times;90</span><span class="pldu-size-count">30 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-100x70/" class="pldu-size-btn"><span class="pldu-size-num">100&times;70</span><span class="pldu-size-count">38 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-100x80/" class="pldu-size-btn"><span class="pldu-size-num">100&times;80</span><span class="pldu-size-count">37 modelos</span></a>
