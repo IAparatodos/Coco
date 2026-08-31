@@ -96,11 +96,11 @@ function adrihosan_platos_ducha_contenido_superior() {
             <div class="pldu-sizes-exits">
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-grandes/" class="pldu-exit-card">
                     <span class="pldu-exit-title">Platos de ducha grandes</span>
-                    <span class="pldu-exit-desc">Hasta 230&times;130&nbsp;cm &middot; 375 modelos</span>
+                    <span class="pldu-exit-desc">De 160&times;70 a 250&times;120&nbsp;cm &middot; 276 modelos desde 219,90&nbsp;&euro; +IVA</span>
                 </a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-ducha-pequeno/" class="pldu-exit-card">
                     <span class="pldu-exit-title">Platos de ducha peque&ntilde;os</span>
-                    <span class="pldu-exit-desc">Hasta 130&times;90&nbsp;cm &middot; 273 modelos</span>
+                    <span class="pldu-exit-desc">Desde 70&times;70&nbsp;cm &middot; 135 modelos desde 120,90&nbsp;&euro; +IVA</span>
                 </a>
             </div>
         </div>
