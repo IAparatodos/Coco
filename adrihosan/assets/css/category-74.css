@@ -1,0 +1,505 @@
+/* ========================================================================== */
+/* CATEGORY-74.CSS - Columnas de ducha (hoja de PRODUCTO, hija de 71)         */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* Bloques: hero/migas/botones, franja de precio, storytelling y pasos con el */
+/* patron del silo de platos (category-2890.css). Propios de esta categoria:  */
+/* el selector de dos pasos (instalacion + acabado) y la tabla comparativa.   */
+/* TODO re-scopeado a .term-74 para no filtrar estilos a otras categorias.    */
+/* OJO: NO se ocultan aqui los filtros legacy del tema; siguen en uso hasta   */
+/* que el silo de griferia migre a FilterEverything (decision 21-ago-2026).   */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-74 .woocommerce-breadcrumb,
+.tax-product_cat.term-74 .woocommerce-products-header,
+.tax-product_cat.term-74 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero ---------- */
+/* La foto va inline en la seccion 1 de inc/category-columnas-ducha.php (media
+   430640, columna Valencia negro mate en ambiente).
+   VELO: mismo patron que el resto del silo (ver categoria-hidraulica-bano.css,
+   term 4865): ::after con un velo PLANO y suave de petroleo al 45 %, y la
+   legibilidad del texto se resuelve con text-shadow, NO oscureciendo mas la
+   foto. Correccion de Ricardo 21-ago-2026: el velo va sobre la imagen, nunca
+   apagando la zona del texto — un degradado fuerte deja el hero raro. */
+.tax-product_cat.term-74 .cdd-hero {
+    position: relative;
+    background-color: #3f6f7b;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tax-product_cat.term-74 .cdd-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, .45);
+    z-index: 1;
+}
+.tax-product_cat.term-74 .cdd-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+.tax-product_cat.term-74 .cdd-hero .hero-content h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+.tax-product_cat.term-74 .cdd-hero .hero-content p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .45);
+}
+
+/* Migas y botones (patron estandar del silo) */
+.tax-product_cat.term-74 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+.tax-product_cat.term-74 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+.tax-product_cat.term-74 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+.tax-product_cat.term-74 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.tax-product_cat.term-74 .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.tax-product_cat.term-74 .hero-btn.primary {
+    background: #4dd2d0;
+    color: #102e35;
+}
+.tax-product_cat.term-74 .hero-btn.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.tax-product_cat.term-74 .hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .22);
+}
+
+/* ---------- 3. Seccion "elige en dos pasos" (propia de esta categoria) --- */
+.tax-product_cat.term-74 .cdd-choose-section {
+    background: #f6fafa;
+    padding: 54px 20px;
+}
+.tax-product_cat.term-74 .cdd-choose-wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-choose-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 8px;
+}
+.tax-product_cat.term-74 .cdd-choose-sub {
+    text-align: center;
+    color: #5b6f74;
+    font-size: 16px;
+    margin: 0 auto 34px;
+    max-width: 62ch;
+}
+.tax-product_cat.term-74 .cdd-step-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #3f6f7b;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 34px 0 16px;
+}
+.tax-product_cat.term-74 .cdd-step-num {
+    background: #4dd2d0;
+    color: #102e35;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    flex: 0 0 30px;
+}
+
+/* Tarjetas de instalacion */
+.tax-product_cat.term-74 .cdd-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+.tax-product_cat.term-74 .cdd-choose-card {
+    background: #ffffff;
+    border: 1px solid #dce7e8;
+    border-top: 4px solid #4dd2d0;
+    border-radius: 10px;
+    padding: 22px 24px;
+    text-decoration: none;
+    display: block;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.tax-product_cat.term-74 .cdd-choose-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(16, 46, 53, .12);
+}
+.tax-product_cat.term-74 .cdd-card-title {
+    display: block;
+    color: #102e35;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.tax-product_cat.term-74 .cdd-card-count {
+    display: block;
+    color: #4dd2d0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tax-product_cat.term-74 .cdd-card-desc {
+    display: block;
+    color: #5b6f74;
+    font-size: 14.5px;
+    line-height: 1.55;
+}
+
+/* Chips de acabado */
+.tax-product_cat.term-74 .cdd-finish-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tax-product_cat.term-74 .cdd-finish-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #ffffff;
+    border: 1px solid #dce7e8;
+    border-radius: 40px;
+    padding: 9px 17px;
+    color: #12262b;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color .18s ease, box-shadow .18s ease;
+}
+.tax-product_cat.term-74 .cdd-finish-chip:hover {
+    border-color: #4dd2d0;
+    box-shadow: 0 4px 12px rgba(16, 46, 53, .1);
+}
+.tax-product_cat.term-74 .cdd-finish-chip em {
+    font-style: normal;
+    color: #5b6f74;
+    font-weight: 500;
+    font-size: 13px;
+}
+.tax-product_cat.term-74 .cdd-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(16, 46, 53, .22);
+    flex: 0 0 16px;
+}
+.tax-product_cat.term-74 .cdd-dot-cromo      { background: linear-gradient(135deg, #e8eef0 0%, #b9c6cc 50%, #eef3f5 100%); }
+.tax-product_cat.term-74 .cdd-dot-negro      { background: #1d1d1d; }
+.tax-product_cat.term-74 .cdd-dot-blanco     { background: #f4f4f2; }
+.tax-product_cat.term-74 .cdd-dot-inox       { background: linear-gradient(135deg, #d4dade 0%, #9aa6ab 50%, #dfe4e7 100%); }
+.tax-product_cat.term-74 .cdd-dot-gun        { background: #3a3f44; }
+.tax-product_cat.term-74 .cdd-dot-champagne  { background: #b8ab97; }
+.tax-product_cat.term-74 .cdd-dot-ororosa    { background: linear-gradient(135deg, #1d1d1d 0%, #1d1d1d 48%, #c48a76 52%, #c48a76 100%); }
+.tax-product_cat.term-74 .cdd-dot-niquel     { background: linear-gradient(135deg, #cfc9bf 0%, #a49c90 50%, #ddd8d0 100%); }
+
+/* ---------- 4. Storytelling ---------- */
+.tax-product_cat.term-74 .cdd-story-section {
+    background: #ffffff;
+    padding: 50px 20px;
+}
+.tax-product_cat.term-74 .cdd-story-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-story-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+.tax-product_cat.term-74 .cdd-story-wrapper p {
+    color: #12262b;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+.tax-product_cat.term-74 .cdd-story-wrapper a {
+    color: #3f6f7b;
+    font-weight: 600;
+}
+
+/* ---------- 5. Franja de precio + CTA 1 ---------- */
+.tax-product_cat.term-74 .cdd-price-band {
+    background: #102e35;
+    padding: 30px 20px;
+}
+.tax-product_cat.term-74 .cdd-price-wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-price-line {
+    color: #ffffff;
+    font-size: 17px;
+    margin: 0;
+}
+.tax-product_cat.term-74 .cdd-price-line strong {
+    color: #4dd2d0;
+}
+.tax-product_cat.term-74 .cdd-price-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+.tax-product_cat.term-74 .cdd-price-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+.tax-product_cat.term-74 .cdd-whatsapp-btn {
+    background: #4dd2d0;
+    color: #102e35;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* ---------- 6. Tabla comparativa ---------- */
+.tax-product_cat.term-74 .cdd-compare-section {
+    background: #f6fafa;
+    padding: 54px 20px;
+}
+.tax-product_cat.term-74 .cdd-compare-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-compare-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 26px;
+}
+.tax-product_cat.term-74 .cdd-table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.tax-product_cat.term-74 .cdd-compare-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #dce7e8;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.tax-product_cat.term-74 .cdd-compare-table th {
+    background: #3f6f7b;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.tax-product_cat.term-74 .cdd-compare-table td {
+    padding: 12px 16px;
+    border-top: 1px solid #e6eff0;
+    color: #12262b;
+    vertical-align: top;
+    line-height: 1.55;
+}
+.tax-product_cat.term-74 .cdd-compare-table tbody tr:nth-child(even) td {
+    background: #fbfdfd;
+}
+.tax-product_cat.term-74 .cdd-compare-table td:first-child {
+    color: #5b6f74;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.tax-product_cat.term-74 .cdd-compare-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+.tax-product_cat.term-74 .cdd-compare-btn {
+    background: #4dd2d0;
+    color: #102e35;
+    padding: 12px 26px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform .18s ease;
+}
+.tax-product_cat.term-74 .cdd-compare-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- 7. Pasos de asesoramiento ---------- */
+.tax-product_cat.term-74 .cdd-steps-section {
+    background: #ffffff;
+    padding: 52px 20px;
+}
+.tax-product_cat.term-74 .cdd-steps-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-steps-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.tax-product_cat.term-74 .cdd-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+.tax-product_cat.term-74 .cdd-step {
+    background: #f6fafa;
+    border-radius: 10px;
+    padding: 22px 20px;
+}
+.tax-product_cat.term-74 .cdd-step-badge {
+    display: inline-block;
+    background: #4dd2d0;
+    color: #102e35;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.tax-product_cat.term-74 .cdd-step p {
+    margin: 0;
+    color: #12262b;
+    font-size: 14.8px;
+    line-height: 1.6;
+}
+
+/* ---------- 8. Categorias relacionadas ---------- */
+.tax-product_cat.term-74 .cdd-related-section {
+    background: #f6fafa;
+    padding: 46px 20px;
+}
+.tax-product_cat.term-74 .cdd-related-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .cdd-related-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.tax-product_cat.term-74 .cdd-related-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    justify-content: center;
+}
+.tax-product_cat.term-74 .cdd-related-link {
+    background: #ffffff;
+    border: 1px solid #dce7e8;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: #3f6f7b;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color .18s ease;
+}
+.tax-product_cat.term-74 .cdd-related-link:hover {
+    border-color: #4dd2d0;
+}
+
+/* ---------- 9. Cabecera del catalogo ---------- */
+.tax-product_cat.term-74 .product-loop-header {
+    max-width: 1180px;
+    margin: 40px auto 18px;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-74 .product-loop-header h2 {
+    color: #3f6f7b;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+.tax-product_cat.term-74 .product-loop-header p {
+    color: #5b6f74;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* ---------- 10. Movil ---------- */
+@media (max-width: 782px) {
+    .tax-product_cat.term-74 .cdd-choose-section,
+    .tax-product_cat.term-74 .cdd-compare-section,
+    .tax-product_cat.term-74 .cdd-steps-section {
+        padding: 38px 16px;
+    }
+    .tax-product_cat.term-74 .cdd-choose-wrapper h2,
+    .tax-product_cat.term-74 .cdd-compare-wrapper h2 {
+        font-size: 23px;
+    }
+    .tax-product_cat.term-74 .cdd-price-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tax-product_cat.term-74 .cdd-step-title {
+        font-size: 18px;
+    }
+}

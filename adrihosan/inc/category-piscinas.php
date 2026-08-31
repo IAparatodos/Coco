@@ -194,6 +194,15 @@ function adrihosan_azulejos_piscinas_contenido_inferior() {
                         <p>No es difícil si el vaso es estanco, pero requiere un puente de unión y un adhesivo flexible de alta gama. Siempre recomendamos revisar la impermeabilización antes de colocar los nuevos <strong>azulejos para piscinas</strong> para asegurar un resultado eterno.</p>
                     </div>
                 </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Cuánto cuestan los azulejos para piscina?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Nuestros azulejos para piscinas van desde unos 12 €/m² + IVA en las series más económicas hasta unos 63 €/m² + IVA en porcelánico de última generación; el precio depende del formato y del acabado antideslizante. Si buscas azulejos para piscinas baratos, ordena el catálogo por precio: todos son aptos para inmersión total, también los más ajustados.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

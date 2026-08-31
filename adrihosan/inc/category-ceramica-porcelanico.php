@@ -370,38 +370,65 @@ function adrihosan_porcelanico_inferior_final() {
             <div class="faq-items-wrapper">
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;El gres porcel&aacute;nico vale para exterior?</span>
+                        <span>&iquest;En qu&eacute; se diferencia el porcel&aacute;nico del gres normal?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;. El porcel&aacute;nico t&eacute;cnico, en versi&oacute;n antideslizante y antihielo, est&aacute; pensado para terrazas, porches y bordes de piscina.</p>
+                        <p>El suelo porcel&aacute;nico se cuece a mayor temperatura y su absorci&oacute;n de agua es inferior al 0,5%, lo que lo hace m&aacute;s duro, m&aacute;s resistente al desgaste e inmune a las heladas. El gres normal (pasta roja) es m&aacute;s blando y solo se recomienda para interiores de poco tr&aacute;nsito. Si dudas entre los dos, el porcel&aacute;nico gana en casi cualquier uso.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Qu&eacute; grosor necesito para una terraza?</span>
+                        <span>&iquest;Sirve el suelo porcel&aacute;nico para exterior o para el garaje?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Para exterior pisable elige 2 cm; para interior, el habitual de 8 a 11 mm es suficiente.</p>
+                        <p>S&iacute;. Al no absorber agua soporta las heladas sin romperse, as&iacute; que funciona en terrazas y porches. En el garaje es de lo m&aacute;s agradecido: aguanta el peso del coche, no se mancha con la grasa ni con el rodado de los neum&aacute;ticos y se limpia con agua. Para rampas, elige un acabado antideslizante.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;El imitaci&oacute;n madera se raya como el parqu&eacute;?</span>
+                        <span>&iquest;Qu&eacute; acabados puedo elegir: madera, m&aacute;rmol, cemento?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. Resiste mejor el rayado, la humedad y el sol, y no hay que barnizarlo.</p>
+                        <p>Los tres, entre otros. El <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-imitacion-madera/">porcel&aacute;nico imitaci&oacute;n madera</a> da el calor del parquet sin su mantenimiento; el <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/">efecto m&aacute;rmol</a> consigue las vetas y el brillo de la piedra sin su delicadeza; el efecto cemento es el favorito de los espacios de estilo industrial. Tambi&eacute;n hay <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-imitacion-piedra/">piedra</a>, <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/imitacion/">hidr&aacute;ulico</a> y metal.</p>
                     </div>
                 </div>
                 <div class="faq-item-common">
                     <button class="faq-question-common">
-                        <span>&iquest;Cu&aacute;nto material pido de m&aacute;s?</span>
+                        <span>&iquest;Existen acabados antideslizantes para ducha o zonas h&uacute;medas?</span>
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Calcula un 10% extra sobre los metros para cortes y para guardar reposici&oacute;n de la misma serie.</p>
+                        <p>S&iacute;. Hay series con superficie antideslizante pensadas para platos de ducha de obra, ba&ntilde;os o terrazas, y colecciones con piezas especiales para bordes de piscina: las tienes en la categor&iacute;a de <a href="https://www.adrihosan.com/categoria-producto/azulejos-para-piscinas/">suelos y porcel&aacute;nico para piscinas</a>. En cada ficha de producto se indica el acabado; si dudas para tu caso, preg&uacute;ntanos antes de comprar.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Es compatible con suelo radiante?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Es el mejor material para ello. Su alta conductividad t&eacute;rmica permite que el calor pase r&aacute;pidamente al ambiente, optimizando el consumo energ&eacute;tico de tu calefacci&oacute;n.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; mantenimiento requiere?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Pr&aacute;cticamente nulo. Al no ser poroso, basta agua con un jab&oacute;n neutro: ni ceras, ni pulidos, ni barnices. Tampoco se mancha: con una absorci&oacute;n inferior al 0,5%, ni el vino, ni el aceite ni el &aacute;cido penetran en la baldosa. Es higi&eacute;nico y muy agradecido en cocinas.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Hac&eacute;is ofertas o restos de lote?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;. En la secci&oacute;n de <a href="https://www.adrihosan.com/categoria-producto/suelos-porcelanicos-ofertas/">suelos porcel&aacute;nicos en oferta</a> hay material de primera calidad rebajado por fin de serie o por promociones puntuales de f&aacute;brica. El stock de esas series es limitado: si una te encaja, no la dejes escapar.</p>
                     </div>
                 </div>
             </div>

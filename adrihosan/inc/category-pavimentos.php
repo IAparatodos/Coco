@@ -132,6 +132,18 @@ function adrihosan_pavimentos_contenido_superior() {
                     <span class="link-icon">🏔️</span>
                     <span class="link-text">Suelo T&eacute;cnico Exterior</span>
                 </a>
+                <a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/" class="strategic-link">
+                    <span class="link-icon">&#127912;</span>
+                    <span class="link-text">Baldosa Hidr&aacute;ulica</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/suelo-de-barro/" class="strategic-link">
+                    <span class="link-icon">&#127968;</span>
+                    <span class="link-text">Suelo de Barro Cocido</span>
+                </a>
+                <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/porcelanico/porcelanicos-imitacion-marmol/" class="strategic-link">
+                    <span class="link-icon">&#128142;</span>
+                    <span class="link-text">Imitaci&oacute;n M&aacute;rmol</span>
+                </a>
                 <a href="https://www.adrihosan.com/categoria-producto/complementos/rodapies/" class="strategic-link">
                     <span class="link-icon">📏</span>
                     <span class="link-text">Rodapi&eacute;s</span>

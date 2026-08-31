@@ -898,6 +898,19 @@
     color: #ffffff;
 }
 
+/* Blindaje del color del texto del CTA: la regla global `body a` del theme
+ * (style.css) lo tenia de turquesa, invisible sobre el fondo turquesa del
+ * boton. Subimos especificidad (.contacto-page a.contacto-btn-cta) + !important
+ * para que el texto sea siempre blanco en todos los estados. */
+.contacto-page a.contacto-btn-cta,
+.contacto-page a.contacto-btn-cta:link,
+.contacto-page a.contacto-btn-cta:visited,
+.contacto-page a.contacto-btn-cta:hover,
+.contacto-page a.contacto-btn-cta:focus,
+.contacto-page a.contacto-btn-cta:active {
+    color: #ffffff !important;
+}
+
 .contacto-telefono .contacto-btn-cta {
     background: #4dd2d0;
     color: #ffffff;

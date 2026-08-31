@@ -1,0 +1,575 @@
+/* @deploy 2026-08-18.2 */
+/* ========================================================================== */
+/* CATEGORY-136.CSS - Platos de ducha de RESINA (hoja de material, hija de 86) */
+/* Identidad corporativa Adrihosan:                                            */
+/*   - Color corporativo CTA: #4dd2d0                                          */
+/*   - Color corporativo texto: #3f6f7b                                        */
+/*   - Tipografia corporativa: Poppins                                         */
+/* Patron ESCAPARATE CON REPARTO POR MEDIDA (wireframe 2026-08-18, prefijo     */
+/* plre-). El filtro NO va sticky (feedback Ricardo 2026-08-01 en la madre).   */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-136 .woocommerce-breadcrumb,
+.tax-product_cat.term-136 .woocommerce-products-header,
+.tax-product_cat.term-136 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero ---------- */
+/* Encuadre anclado ABAJO: en las fotos de ambiente el plato esta en la
+ * parte baja; con center el recorte se queda en la pared y el producto
+ * desaparece (feedback Ricardo 2026-08-18). El producto SIEMPRE en cuadro. */
+.tax-product_cat.term-136 .hero-section-container {
+    background-position: center bottom;
+}
+
+.tax-product_cat.term-136 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-136 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-136 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-136 .plre-hero-seals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.tax-product_cat.term-136 .plre-seal {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(77, 210, 208, 0.16);
+    border: 1px solid #4dd2d0;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ---------- 3. Medidas y precios (protagonista) ---------- */
+.tax-product_cat.term-136 .plre-sizes-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-sizes-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-sizes-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-136 .plre-sizes-sub {
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 1rem;
+    margin: 0 0 34px;
+}
+
+.tax-product_cat.term-136 .plre-sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin-bottom: 26px;
+}
+
+.tax-product_cat.term-136 .plre-size-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 18px 10px;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-136 .plre-size-btn:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.10);
+}
+
+.tax-product_cat.term-136 .plre-size-num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-136 .plre-size-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #3f6f7b;
+    opacity: 0.7;
+}
+
+.tax-product_cat.term-136 .plre-size-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #2a9d9b;
+}
+
+.tax-product_cat.term-136 .plre-sizes-exits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-136 .plre-exit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #3f6f7b;
+    border-radius: 10px;
+    padding: 18px 22px;
+    text-decoration: none;
+    text-align: left;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-136 .plre-exit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.25);
+}
+
+.tax-product_cat.term-136 .plre-exit-title {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.tax-product_cat.term-136 .plre-exit-desc {
+    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0;
+    font-size: 0.85rem;
+}
+
+/* ---------- 4. Filtro FE (tarjeta normal, NUNCA sticky) ---------- */
+.tax-product_cat.term-136 .plre-filter-shell {
+    margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+    .tax-product_cat.term-136 .plre-filter-shell {
+        background: #ffffff;
+        border: 1px solid #d4e3e6;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+    }
+}
+
+/* ---------- 5. Storytelling ---------- */
+.tax-product_cat.term-136 .plre-story-section {
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-story-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-story-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+.tax-product_cat.term-136 .plre-story-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tax-product_cat.term-136 .plre-story-wrapper a {
+    color: #2a9d9b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-136 .plre-story-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 6. Franja de precio + CTA ---------- */
+.tax-product_cat.term-136 .plre-price-band {
+    background: #3f6f7b;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-price-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-136 .plre-price-line {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.tax-product_cat.term-136 .plre-price-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-136 .plre-price-link {
+    font-family: 'Poppins', sans-serif;
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-136 .plre-price-link:hover {
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-136 .plre-whatsapp-btn {
+    font-family: 'Poppins', sans-serif;
+    background: #4dd2d0;
+    color: #3f6f7b;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 10px 24px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-136 .plre-whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- 7. Titulo catalogo ---------- */
+.tax-product_cat.term-136 .product-loop-header {
+    text-align: center;
+    margin: 50px auto 30px;
+    max-width: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .product-loop-header h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-136 .product-loop-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* ---------- 8. Comparativa ---------- */
+.tax-product_cat.term-136 .plre-compare-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-compare-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-compare-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 28px;
+}
+
+.tax-product_cat.term-136 .plre-compare-table-scroll {
+    overflow-x: auto;
+}
+
+.tax-product_cat.term-136 .plre-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+}
+
+.tax-product_cat.term-136 .plre-compare-table th {
+    background: #3f6f7b;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-136 .plre-compare-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e3eeee;
+    color: #3f6f7b;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.tax-product_cat.term-136 .plre-compare-table td:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tax-product_cat.term-136 .plre-compare-table a {
+    color: #2a9d9b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-136 .plre-compare-table a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- 9. Claves ---------- */
+.tax-product_cat.term-136 .plre-keys-section {
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-keys-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-keys-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 34px;
+}
+
+.tax-product_cat.term-136 .plre-keys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.tax-product_cat.term-136 .plre-key-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 26px 20px;
+}
+
+.tax-product_cat.term-136 .plre-key-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tax-product_cat.term-136 .plre-key-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-136 .plre-key-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---------- 10. A medida ---------- */
+.tax-product_cat.term-136 .plre-custom-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-custom-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-custom-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-136 .plre-custom-sub {
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0 0 30px;
+}
+
+.tax-product_cat.term-136 .plre-custom-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.tax-product_cat.term-136 .plre-step {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 12px;
+    padding: 22px 18px;
+}
+
+.tax-product_cat.term-136 .plre-step-num {
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #4dd2d0;
+    color: #3f6f7b;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tax-product_cat.term-136 .plre-step p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---------- 11. Relacionadas ---------- */
+.tax-product_cat.term-136 .plre-related-section {
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-136 .plre-related-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-136 .plre-related-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-136 .plre-related-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-136 .plre-related-link {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 2px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 9px 22px;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+.tax-product_cat.term-136 .plre-related-link:hover {
+    border-color: #4dd2d0;
+    color: #4dd2d0;
+}
+
+/* ---------- 12. Responsive movil ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-136 .plre-sizes-section,
+    .tax-product_cat.term-136 .plre-story-section,
+    .tax-product_cat.term-136 .plre-compare-section,
+    .tax-product_cat.term-136 .plre-keys-section,
+    .tax-product_cat.term-136 .plre-custom-section {
+        padding: 40px 15px;
+    }
+
+    .tax-product_cat.term-136 .plre-sizes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-136 .plre-size-btn {
+        padding: 14px 6px;
+    }
+
+    .tax-product_cat.term-136 .plre-size-num {
+        font-size: 1.05rem;
+    }
+
+    .tax-product_cat.term-136 .plre-price-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-136 .plre-related-link {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ---------- 13. Responsive tablet ---------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tax-product_cat.term-136 .plre-sizes-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

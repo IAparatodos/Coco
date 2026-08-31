@@ -183,6 +183,11 @@ function adrihosan_wood_contenido_inferior() {
                     <button class="faq-question-common"><span>&iquest;Por qu&eacute; hay tanta diferencia de precio entre gres y porcel&aacute;nico?</span><span class="faq-icon-common">+</span></button>
                     <div class="faq-answer-common"><p>El <strong>gres porcel&aacute;nico</strong> es mucho m&aacute;s denso y resistente, con absorci&oacute;n de agua casi nula (&lt;0.5%), lo que lo hace apto para exterior, ba&ntilde;os y cocinas. El gres de pasta roja es m&aacute;s poroso y econ&oacute;mico, pero solo se recomienda para interiores de bajo tr&aacute;nsito. A largo plazo, el porcel&aacute;nico es siempre mejor inversi&oacute;n.</p></div>
                 </div>
+
+                <div class="faq-item-common">
+                    <button class="faq-question-common"><span>&iquest;Ten&eacute;is suelo imitaci&oacute;n madera en espiga?</span><span class="faq-icon-common">+</span></button>
+                    <div class="faq-answer-common"><p>S&iacute;. La colocaci&oacute;n en espiga vuelve a ser tendencia y tenemos porcel&aacute;nico imitaci&oacute;n madera en formato espiga en varios tonos, del blanco n&oacute;rdico al negro. Son piezas rectificadas de formato alargado, pensadas para que el dibujo quede continuo y realista. Si dudas con el despiece o con los metros que necesitas, escr&iacute;benos y lo calculamos contigo.</p></div>
+                </div>
             </div>
         </div>
     </section>

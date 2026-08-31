@@ -1,0 +1,615 @@
+/* ========================================================================== */
+/* CATEGORY-2132.CSS - Azulejos 15x15                                        */
+/* ========================================================================== */
+
+.tax-product_cat.term-2132 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Eliminar espacio superior del tema --- */
+.tax-product_cat.term-2132 .site-main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* --- Ocultar filtros antiguos y elementos legacy --- */
+.tax-product_cat.term-2132 .woocommerce-products-header,
+.tax-product_cat.term-2132 .wd-shop-tools,
+.tax-product_cat.term-2132 .advanced-filter,
+.tax-product_cat.term-2132 .filter-wrapper,
+.tax-product_cat.term-2132 .ai-filters-section,
+.tax-product_cat.term-2132 .bho-filters-section,
+.tax-product_cat.term-2132 .bho-hub-section,
+.tax-product_cat.term-2132 .woocommerce-products-header__description,
+.tax-product_cat.term-2132 .term-description,
+.tax-product_cat.term-2132 .woodmart-category-desc,
+.tax-product_cat.term-2132 .wd-active-filters,
+.tax-product_cat.term-2132 .wd-subcategories,
+.tax-product_cat.term-2132 .woodmart-woocommerce-layered-nav,
+.tax-product_cat.term-2132 .wd-subcats,
+.tax-product_cat.term-2132 .products.wd-subcategories,
+.tax-product_cat.term-2132 .woocommerce-product-subcategories,
+.tax-product_cat.term-2132 .wd-cats,
+.tax-product_cat.term-2132 .wd-cats-design-default,
+.tax-product_cat.term-2132 .wd-cats-design-alt,
+.tax-product_cat.term-2132 .categories-grid,
+.tax-product_cat.term-2132 .wd-categories,
+.tax-product_cat.term-2132 .subcategories-wrap,
+.tax-product_cat.term-2132 ul.products > li.product-category,
+.tax-product_cat.term-2132 .product-category.product,
+.tax-product_cat.term-2132 .doo-category-banner {
+    display: none !important;
+}
+
+/* --- Estilos de la descripcion dinamica (contenido inferior) --- */
+.tax-product_cat.term-2132 .bho-guide-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .bho-guide-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2132 .term-description-dinamica {
+    font-size: 1rem;
+    color: #3f6f7b;
+    line-height: 1.8;
+}
+
+.tax-product_cat.term-2132 .term-description-dinamica h2,
+.tax-product_cat.term-2132 .term-description-dinamica h3 {
+    color: #102e35;
+    margin-top: 1.5em;
+}
+
+.tax-product_cat.term-2132 .term-description-dinamica a {
+    color: #4dd2d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2132 .term-description-dinamica a:hover {
+    text-decoration: underline;
+}
+
+/* --- Titulo del catalogo --- */
+.tax-product_cat.term-2132 .product-loop-header {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tax-product_cat.term-2132 .product-loop-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #102e35;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Filtro master container --- */
+.tax-product_cat.term-2132 .filter-container-master {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+/* ========================================================================== */
+/* HERO SECTION - BREAKOUT COMPLETO (Patron cat-66)                          */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .hero-section-container {
+    position: relative;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-2132 .hero-section-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.6);
+    z-index: 1;
+}
+
+.tax-product_cat.term-2132 .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* --- Breadcrumb --- */
+.tax-product_cat.term-2132 .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.tax-product_cat.term-2132 .breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tax-product_cat.term-2132 .breadcrumb-nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2132 .breadcrumb-nav span {
+    color: #4dd2d0;
+    font-weight: 600;
+}
+
+.tax-product_cat.term-2132 .hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+}
+
+.tax-product_cat.term-2132 .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.tax-product_cat.term-2132 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+.tax-product_cat.term-2132 .hero-btn {
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.tax-product_cat.term-2132 .hero-btn.primary {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2132 .hero-btn.primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-2132 .hero-btn.secondary {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2132 .hero-btn.secondary:hover {
+    background-color: #ffffff;
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* TRUST BAR SECTION                                                          */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .trust-bar-section {
+    background-color: #f0fafa;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .trust-bar-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tax-product_cat.term-2132 .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0f0ef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tax-product_cat.term-2132 .trust-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 46, 53, 0.08);
+}
+
+.tax-product_cat.term-2132 .trust-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.tax-product_cat.term-2132 .trust-text strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #102e35;
+    margin-bottom: 3px;
+}
+
+.tax-product_cat.term-2132 .trust-text span {
+    font-size: 0.85rem;
+    color: #3f6f7b;
+    line-height: 1.4;
+}
+
+/* ========================================================================== */
+/* QUICK NAV PILLS (Navegacion rapida por tipo)                              */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .quick-nav-section {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .quick-nav-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tax-product_cat.term-2132 .quick-nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #e0f0ef;
+    color: #102e35;
+    background-color: #f8fcfc;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tax-product_cat.term-2132 .quick-nav-pill:hover {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(77, 210, 208, 0.3);
+}
+
+.tax-product_cat.term-2132 .quick-nav-pill-featured {
+    background-color: #102e35;
+    border-color: #102e35;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2132 .quick-nav-pill-featured:hover {
+    background-color: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+/* ========================================================================== */
+/* CONSEJO ADRIA + FILTRO                                                     */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .adria-tip-box {
+    max-width: 960px;
+    margin: 30px auto 30px auto;
+    padding: 20px 25px;
+    background-color: #f0fafa;
+    border-left: 4px solid #4dd2d0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .adria-tip-box p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tax-product_cat.term-2132 .adria-tip-box strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* BUMPER VISUAL SECTION                                                      */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .bumper-section {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .bumper-wrapper {
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.tax-product_cat.term-2132 .bumper-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 46, 53, 0.7);
+    z-index: 1;
+}
+
+.tax-product_cat.term-2132 .bumper-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 60px 30px;
+    max-width: 700px;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2132 .bumper-content h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2132 .bumper-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 25px 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tax-product_cat.term-2132 .bumper-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #4dd2d0;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 2px solid #4dd2d0;
+}
+
+.tax-product_cat.term-2132 .bumper-btn:hover {
+    background-color: #ffffff;
+    color: #4dd2d0;
+    border-color: #ffffff;
+}
+
+/* ========================================================================== */
+/* SEO CONTENT SECTION                                                        */
+/* ========================================================================== */
+.tax-product_cat.term-2132 .seo-content-section {
+    padding: 80px 20px;
+    background-color: #f7f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2132 .seo-content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2132 .seo-content-wrapper > h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 50px 0;
+}
+
+/* --- Material Types Grid (3 columnas) --- */
+.tax-product_cat.term-2132 .material-types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.tax-product_cat.term-2132 .material-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid #e0f0ef;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tax-product_cat.term-2132 .material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(16, 46, 53, 0.1);
+}
+
+.tax-product_cat.term-2132 .material-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.tax-product_cat.term-2132 .material-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 12px 0;
+}
+
+.tax-product_cat.term-2132 .material-card p {
+    font-size: 0.9rem;
+    color: #3f6f7b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tax-product_cat.term-2132 .material-card strong {
+    color: #102e35;
+}
+
+/* --- Finish Info Block --- */
+.tax-product_cat.term-2132 .finish-info-block {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    border: 1px solid #e0f0ef;
+    text-align: left;
+}
+
+.tax-product_cat.term-2132 .finish-info-block + .finish-info-block {
+    margin-top: 20px;
+}
+
+.tax-product_cat.term-2132 .finish-info-block h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #102e35;
+    margin: 0 0 15px 0;
+}
+
+.tax-product_cat.term-2132 .finish-info-block p {
+    font-size: 0.95rem;
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0 0 15px 0;
+}
+
+.tax-product_cat.term-2132 .finish-info-block p:last-child {
+    margin-bottom: 0;
+}
+
+.tax-product_cat.term-2132 .finish-info-block strong {
+    color: #102e35;
+}
+
+/* ========================================================================== */
+/* RESPONSIVE                                                                 */
+/* ========================================================================== */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    .tax-product_cat.term-2132 .trust-bar-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tax-product_cat.term-2132 .material-types-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* --- Movil --- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2132 .hero-section-container {
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-2132 .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .tax-product_cat.term-2132 .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .tax-product_cat.term-2132 .trust-bar-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .tax-product_cat.term-2132 .trust-item {
+        padding: 15px;
+    }
+
+    .tax-product_cat.term-2132 .quick-nav-wrapper {
+        gap: 8px;
+    }
+
+    .tax-product_cat.term-2132 .quick-nav-pill {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .tax-product_cat.term-2132 .bumper-content {
+        padding: 40px 20px;
+    }
+
+    .tax-product_cat.term-2132 .seo-content-section {
+        padding: 60px 20px;
+    }
+
+    .tax-product_cat.term-2132 .seo-content-wrapper > h2 {
+        font-size: 1.5rem;
+    }
+
+    .tax-product_cat.term-2132 .finish-info-block {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tax-product_cat.term-2132 .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tax-product_cat.term-2132 .hero-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-2132 .quick-nav-pill {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,638 @@
+/* ========================================================================== */
+/* CATEGORY-2857.CSS - Platos de ducha antideslizantes (hoja de seguridad)        */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* Bloques: hero/migas/botones y guias de category-2905.css; parrilla de      */
+/* medidas, franja de precio, storytelling y pasos de category-136.css.       */
+/* TODO re-scopeado a .term-2857 para no filtrar estilos a otras categorias.  */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-2857 .woocommerce-breadcrumb,
+.tax-product_cat.term-2857 .woocommerce-products-header,
+.tax-product_cat.term-2857 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero: migas y botones (patron estandar del silo) ---------- */
+.tax-product_cat.term-2857 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2857 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+
+.tax-product_cat.term-2857 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+.tax-product_cat.term-2857 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.tax-product_cat.term-2857 .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.tax-product_cat.term-2857 .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2857 .hero-btn.primary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-2857 .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2857 .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3. Parrilla de medidas (protagonista) ---------- */
+.tax-product_cat.term-2857 .pcl-sizes-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-sizes-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-sizes-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-2857 .pcl-sizes-sub {
+    color: #3f6f7b;
+    opacity: 0.85;
+    font-size: 1rem;
+    margin: 0 0 34px;
+}
+
+.tax-product_cat.term-2857 .pcl-sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin-bottom: 26px;
+}
+
+.tax-product_cat.term-2857 .pcl-size-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: #ffffff;
+    border: 2px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 18px 10px;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-size-btn:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.10);
+}
+
+.tax-product_cat.term-2857 .pcl-size-num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #3f6f7b;
+}
+
+.tax-product_cat.term-2857 .pcl-size-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #3f6f7b;
+    opacity: 0.7;
+}
+
+.tax-product_cat.term-2857 .pcl-size-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #2a9d9b;
+}
+
+.tax-product_cat.term-2857 .pcl-sizes-exits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2857 .pcl-exit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #3f6f7b;
+    border-radius: 10px;
+    padding: 18px 22px;
+    text-decoration: none;
+    text-align: left;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-exit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.25);
+}
+
+.tax-product_cat.term-2857 .pcl-exit-title {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.tax-product_cat.term-2857 .pcl-exit-desc {
+    font-family: 'Poppins', sans-serif;
+    color: #cde8ea;
+    font-size: 0.85rem;
+}
+
+/* ---------- 4. Filtro FE heredado de la madre ---------- */
+/* NOTA: sin position:sticky (tapaba la pagina; decision del 1-ago en cat 86). */
+.tax-product_cat.term-2857 .pcl-filter-shell {
+    margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+    .tax-product_cat.term-2857 .pcl-filter-shell {
+        background: #ffffff;
+        border: 1px solid #d4e3e6;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 10px rgba(63, 111, 123, 0.08);
+    }
+}
+
+/* ---------- 5. Storytelling ---------- */
+.tax-product_cat.term-2857 .pcl-story-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-story-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2857 .pcl-story-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-story-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.68;
+    margin: 0;
+}
+
+.tax-product_cat.term-2857 .pcl-story-wrapper a {
+    color: #4dd2d0;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #4dd2d0;
+    padding-bottom: 1px;
+}
+
+/* ---------- 6. Franja de precio + CTA ---------- */
+.tax-product_cat.term-2857 .pcl-price-band {
+    background: #3f6f7b;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-price-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-2857 .pcl-price-line {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.tax-product_cat.term-2857 .pcl-price-line strong {
+    color: #4dd2d0;
+}
+
+.tax-product_cat.term-2857 .pcl-price-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tax-product_cat.term-2857 .pcl-price-link {
+    font-family: 'Poppins', sans-serif;
+    color: #cde8ea;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.tax-product_cat.term-2857 .pcl-price-link:hover {
+    color: #ffffff;
+}
+
+.tax-product_cat.term-2857 .pcl-whatsapp-btn {
+    font-family: 'Poppins', sans-serif;
+    background: #4dd2d0;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 12px 22px;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-whatsapp-btn:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 7. Titulo catalogo ---------- */
+.tax-product_cat.term-2857 .product-loop-header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .product-loop-header h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.tax-product_cat.term-2857 .product-loop-header p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* ---------- 8. Recorte: pasos ---------- */
+.tax-product_cat.term-2857 .pcl-custom-section {
+    background: #f0f7f8;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-custom-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-custom-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.tax-product_cat.term-2857 .pcl-custom-sub {
+    color: #3f6f7b;
+    opacity: 0.85;
+    margin: 0 0 30px;
+}
+
+.tax-product_cat.term-2857 .pcl-custom-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+.tax-product_cat.term-2857 .pcl-step {
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 22px 18px;
+    text-align: left;
+}
+
+.tax-product_cat.term-2857 .pcl-step-num {
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #4dd2d0;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tax-product_cat.term-2857 .pcl-step p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ---------- 9. Guias del blog ---------- */
+.tax-product_cat.term-2857 .pcl-guides-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-guides-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-guides-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-2857 .pcl-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.tax-product_cat.term-2857 .pcl-guide-link {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #3f6f7b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-guide-link:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* ---------- 10. Relacionadas ---------- */
+.tax-product_cat.term-2857 .pcl-related-section {
+    background: #f0f7f8;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-related-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-related-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 22px;
+}
+
+.tax-product_cat.term-2857 .pcl-related-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tax-product_cat.term-2857 .pcl-related-link {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 10px 20px;
+    color: #3f6f7b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-related-link:hover {
+    border-color: #4dd2d0;
+    color: #4dd2d0;
+}
+
+/* ---------- 11. Contacto Ricardo (fix circulo foto, patron CLAUDE.md) ---------- */
+.tax-product_cat.term-2857 .contact-help-common .contact-intro img {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tax-product_cat.term-2857 .contact-help-common .contact-intro h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+    line-height: 1.35;
+}
+
+/* ---------- 12. Responsive movil (patron verificado a 390 px en el silo) ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-2857 .pcl-sizes-section,
+    .tax-product_cat.term-2857 .pcl-story-section,
+    .tax-product_cat.term-2857 .pcl-custom-section {
+        padding: 40px 18px;
+    }
+
+    .tax-product_cat.term-2857 .pcl-sizes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-2857 .pcl-size-num {
+        font-size: 1.15rem;
+    }
+
+    .tax-product_cat.term-2857 .pcl-price-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-2857 .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .tax-product_cat.term-2857 .hero-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tax-product_cat.term-2857 .product-loop-header {
+        padding: 30px 15px 20px;
+    }
+}
+
+/* ---------- 13. Seccion C3 (mismo patron que story, fondo claro) ---------- */
+.tax-product_cat.term-2857 .pcl-c3-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-c3-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.tax-product_cat.term-2857 .pcl-c3-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-c3-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1rem;
+    line-height: 1.68;
+    margin: 0;
+}
+
+/* ---------- 14. Para quien (tarjetas de cruce del silo) ---------- */
+.tax-product_cat.term-2857 .pcl-who-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tax-product_cat.term-2857 .pcl-who-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax-product_cat.term-2857 .pcl-who-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.tax-product_cat.term-2857 .pcl-who-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.tax-product_cat.term-2857 .pcl-who-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 24px 20px;
+    text-align: left;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.tax-product_cat.term-2857 .pcl-who-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.10);
+}
+
+.tax-product_cat.term-2857 .pcl-who-icon {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tax-product_cat.term-2857 .pcl-who-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.tax-product_cat.term-2857 .pcl-who-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat.term-2857 .pcl-c3-section,
+    .tax-product_cat.term-2857 .pcl-who-section {
+        padding: 40px 18px;
+    }
+}

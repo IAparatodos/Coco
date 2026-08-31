@@ -195,7 +195,25 @@ function adrihosan_azulejos_bano_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Hoy en día triunfan las texturas que conectan con lo natural, como los azulejos imitación piedra o los azulejos imitación cemento para looks industriales. Para quienes buscan un estilo nostálgico, los azulejos imitación hidráulico o el formato azulejo metro siguen siendo opciones líderes por su capacidad de aportar carácter sin pasar de moda.</p>
+                        <p>Hoy en día triunfan las texturas que conectan con lo natural, como los azulejos imitación piedra o los azulejos imitación cemento para looks industriales. Para quienes buscan un estilo nostálgico, los azulejos imitación hidráulico o el formato azulejo metro siguen siendo opciones líderes por su capacidad de aportar carácter sin pasar de moda. Esa línea la tienes reunida en los <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/azulejos-antiguos/">azulejos antiguos</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Cuánto cuesta el m² de azulejo de baño?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Nuestros azulejos de baño van desde unos 11 €/m² + IVA en las series económicas hasta más de 100 €/m² en piezas de diseño. El precio depende del formato, de si la pieza es rectificada y del acabado. Usa el filtro de precio del catálogo para ajustar la búsqueda a tu presupuesto, y pide siempre un 10% extra de material para cortes y reposiciones.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>¿Qué azulejo elijo para la zona de ducha?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para las paredes de la ducha, mejor un acabado liso o satinado: la cal se limpia sin esfuerzo. Si la ducha es de obra, el suelo debe ser antideslizante Clase 3 (C3), que es lo que exige la normativa en zonas húmedas. Un truco de la casa: alicatar hasta el techo protege del vapor las paredes pintadas y el resultado queda mucho más limpio visualmente.</p>
                     </div>
                 </div>
             </div>

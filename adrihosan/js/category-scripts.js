@@ -80,9 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
    'catalogo-redondos',    // Espejos Redondos (ID 4247)
    'catalogo-camerinos',    // Camerinos (ID 2626)
 
-   // ID para Azulejo Metro (ID 2093)
-   'catalogo-metro-foco',
-
    // ID para Suelo Imitación Madera (ID 2209) <-- ¡¡AÑADIDO AQUÍ!!
    'product-loop' 
   ];

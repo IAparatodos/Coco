@@ -11,7 +11,8 @@
 function adrihosan_banera_corian_contenido_superior() {
     ?>
     <!-- 1. HERO SECTION -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Corian-Adrihosan.jpg');">
+    <!-- TODO: sustituir background-image por la URL real de la imagen hero -->
+     <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Corian-Adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -92,8 +93,7 @@ function adrihosan_banera_corian_contenido_inferior() {
     <!-- SECCION INSPIRACION (bloque unico) -->
     <section class="corian-inspiration-section adrihosan-full-width-block">
         <div class="corian-inspiration-wrapper">
-            <!-- TODO: sustituir el placeholder por la imagen real -->
-            <div class="corian-inspiration-img"></div>
+            <div class="corian-inspiration-img" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/05/Banera-exenta-Corian-Adrihosan.jpg');"></div>
             <div class="corian-inspiration-text">
                 <h2>Cada ba&ntilde;era Corian es una pieza &uacute;nica</h2>
                 <p>Material sin poros, acabado mate o brillo, integraci&oacute;n perfecta con encimeras del mismo material. Cu&eacute;ntanos tu proyecto.</p>

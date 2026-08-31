@@ -36,8 +36,10 @@ get_header();
 					<?php _e('<strong>Volver</strong> al Blog','adrihosan'); ?>
 				</a></div>
 				<div class="social-media">
-					<?php _e('<strong>Compartir</strong> Post','adrihosan'); ?>
-					<?php echo do_shortcode('[addtoany]'); ?>
+					<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) : ?>
+						<?php _e('<strong>Compartir</strong> Post','adrihosan'); ?>
+						<?php echo do_shortcode('[addtoany]'); ?>
+					<?php endif; ?>
 				</div>
 			</div>
 			

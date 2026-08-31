@@ -573,7 +573,12 @@ html {
 }
 
 .bh-simulator-text {
-    text-align: left;
+    /* El titulo y el texto ya se centran con su propia regla; con "left" aqui,
+       el boton (inline-block) se quedaba pegado al margen izquierdo en las tres
+       categorias que usan esta variante del bloque (Original Bano/Cocina/Exterior).
+       27-ago-2026. La variante de Hidraulica Original no usa .bh-simulator-text:
+       alli el bloque va a dos columnas por su propio category-4862.css. */
+    text-align: center;
 }
 
 .bh-simulator-section h2,
@@ -846,4 +851,378 @@ html {
 
 .adria-tip-box strong {
     color: #3f6f7b;
+}
+/* ========================================================================== */
+/* BLOQUE COMUN DE OPCIONALES (configurador -> WhatsApp)                      */
+/* Usar en cualquier categoria con adrihosan_bloque_opcionales()              */
+/* ========================================================================== */
+.opcionales-common {
+    padding: 80px 20px;
+    background-color: #f0fafa;
+    border-top: 1px solid #eef2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.opcionales-wrapper-common {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.opcionales-titulo-common {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #102e35;
+    margin: 0 0 12px 0;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.opcionales-intro-common {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: #3f6f7b;
+    line-height: 1.7;
+    margin: 0 auto 40px auto;
+    max-width: 720px;
+    text-align: center;
+}
+
+.opcionales-grid-common {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+}
+
+.opcional-item-common {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 18px;
+    background-color: #ffffff;
+    border: 2px solid #eef2f5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.opcional-item-common:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(16, 46, 53, 0.07);
+}
+
+.opcional-item-common:has(.opcional-check-common:checked) {
+    border-color: #4dd2d0;
+    background-color: #f7fdfd;
+    box-shadow: 0 4px 14px rgba(77, 210, 208, 0.18);
+}
+
+.opcional-check-common {
+    width: 20px;
+    height: 20px;
+    margin: 2px 0 0 0;
+    accent-color: #4dd2d0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.opcional-icono-common {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.opcional-texto-common {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.opcional-texto-common strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #102e35;
+    line-height: 1.35;
+}
+
+.opcional-texto-common span {
+    font-size: 0.85rem;
+    color: #3f6f7b;
+    line-height: 1.5;
+}
+
+.opcionales-medida-common {
+    margin: 30px auto 0 auto;
+    max-width: 560px;
+    text-align: center;
+}
+
+.opcionales-medida-common label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #102e35;
+    margin-bottom: 10px;
+}
+
+.opcionales-medida-input-common {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #3f6f7b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.opcionales-medida-input-common:focus {
+    outline: none;
+    border-color: #4dd2d0;
+    box-shadow: 0 0 0 3px rgba(77, 210, 208, 0.2);
+}
+
+.opcionales-cta-common {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.opcionales-btn-common {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.opcionales-btn-wa-common {
+    background-color: #4dd2d0;
+    border: 2px solid #4dd2d0;
+    color: #ffffff !important;
+    box-shadow: 0 5px 15px rgba(77, 210, 208, 0.3);
+}
+
+.opcionales-btn-wa-common:hover {
+    background-color: #ffffff;
+    color: #4dd2d0 !important;
+    transform: translateY(-2px);
+}
+
+.opcionales-btn-alt-common {
+    background-color: transparent;
+    border: 2px solid #3f6f7b;
+    color: #3f6f7b !important;
+}
+
+.opcionales-btn-alt-common:hover {
+    background-color: #3f6f7b;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+.opcionales-nota-common {
+    max-width: 720px;
+    margin: 28px auto 0 auto;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: #3f6f7b;
+    text-align: center;
+    opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+    .opcionales-common {
+        padding: 60px 16px;
+    }
+    .opcionales-grid-common {
+        grid-template-columns: 1fr;
+    }
+    .opcionales-btn-common {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   DISTINTIVO SERVICIO EXPRESS (entrega 48/72 h)
+   Ver inc/helpers-express.php. Turquesa de marca sobre petroleo para que
+   destaque en la tarjeta sin competir con la etiqueta de oferta.
+   ========================================================================== */
+
+ul.products li.product {
+    position: relative;
+}
+
+.express-badge-common {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background-color: #1a6c7a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(16, 46, 53, 0.22);
+    pointer-events: none;
+}
+
+.express-badge-icono {
+    font-size: 0.85rem;
+    line-height: 1;
+}
+
+.express-aviso-common {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0 0 18px 0;
+    padding: 14px 16px;
+    border: 1px solid #4dd2d0;
+    border-left: 4px solid #1a6c7a;
+    border-radius: 8px;
+    background-color: #f0fafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.express-aviso-icono {
+    flex: 0 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.express-aviso-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.express-aviso-texto strong {
+    color: #102e35;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.express-aviso-texto small {
+    color: #4a5c62;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+    .express-badge-common {
+        top: 6px;
+        right: 6px;
+        padding: 4px 8px;
+        font-size: 0.66rem;
+    }
+
+    .express-aviso-common {
+        padding: 12px 13px;
+    }
+}
+
+/* ==========================================================================
+   DESVIO A CATEGORIA
+   Ver inc/helpers-desvio.php. Fichas que rankean para consultas de categoria
+   y no venden: se les abre una salida al listado que si tiene inventario.
+   Mismo lenguaje visual que el distintivo express (turquesa/petroleo de marca)
+   pero en hueco, para que no compita con el aviso de entrega cuando coinciden.
+   ========================================================================== */
+
+.desvio-common {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0 0 18px 0;
+    padding: 14px 16px;
+    border: 1px dashed #1a6c7a;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desvio-icono {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.desvio-cuerpo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.desvio-titulo {
+    color: #102e35;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.desvio-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.desvio-lista li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.desvio-lista a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid #4dd2d0;
+    border-radius: 999px;
+    background-color: #f0fafa;
+    color: #1a6c7a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.desvio-lista a:hover,
+.desvio-lista a:focus {
+    background-color: #1a6c7a;
+    border-color: #1a6c7a;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .desvio-common {
+        padding: 12px 13px;
+    }
+
+    .desvio-lista a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
 }

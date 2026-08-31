@@ -11,10 +11,13 @@
  *   tipos -> madre 86 · material -> resina · medidas -> hijas por talla ·
  *   marcas -> Duplach 2861, Fiora 2863, Acquabella 2887.
  *
- * Wireframe 2026-08-10. Datos verificados en BD ese dia: 198 platos de
- * 120,90 a 299,90 EUR +IVA, 68 por debajo de 200, 18 por debajo de 150, 113
- * antideslizantes de textura pizarra y 86 validos para ducha adaptada. Se
- * retiraron 155 platos de 300 EUR o mas (reversion en retirados-de-2905.md).
+ * Wireframe 2026-08-10. Corte bajado a 250 EUR el 2026-08-20 (decision de
+ * Ricardo tras la auditoria externa D8; sincronizacion en
+ * projects/adrihosan-seo-categoria/2026-08-20-cat2905-corte-250/). Datos
+ * verificados en BD ese dia: 183 platos de 120,90 a 249,90 EUR +IVA, 76 por
+ * debajo de 200, 18 por debajo de 150, 171 antideslizantes de textura pizarra
+ * y 111 validos para ducha adaptada. Reversion del corte original en
+ * retirados-de-2905.md.
  *
  * REGLAS DURAS: H1 via adrihosan_h1_dinamico(); FAQ en HTML visible SIN
  * JSON-LD (Rank Math lo genera desde el termino y los textos deben coincidir
@@ -37,10 +40,11 @@ function adrihosan_baratos_contenido_superior() {
     $es_filtro = function_exists( 'adrihosan_filtro_con_regla_seo' ) && adrihosan_filtro_con_regla_seo();
     ?>
     <!-- 1. HERO -->
-    <!-- TODO: falta la URL del adjunto 429757. Mientras tanto, fondo
-         corporativo. El degradado lo pone el CSS, nunca horneado en el JPG:
-         basta cambiar el style por background-image: url('...'); -->
-    <section class="hero-section-container adrihosan-full-width-block" style="background-color: #3f6f7b;">
+    <!-- Imagen editorial (adjunto 429757, 1536x1024, 181 KB): plato de resina
+         con textura pizarra a ras de suelo y desague lineal a la vista. El
+         degradado lo pone el CSS, NUNCA horneado en el JPG.
+         NO sustituir por un color de fondo: esta imagen es la definitiva. -->
+    <section class="hero-section-container adrihosan-full-width-block" style="background-image: url('https://www.adrihosan.com/wp-content/uploads/2026/08/platos-de-ducha-baratos-adrihosan.jpg');">
         <div class="hero-content">
             <nav class="breadcrumb-nav">
                 <a href="https://www.adrihosan.com/">Inicio</a> &gt;
@@ -50,7 +54,7 @@ function adrihosan_baratos_contenido_superior() {
             </nav>
             <h1><?php echo adrihosan_h1_dinamico( 'Platos de ducha baratos' ); ?></h1>
             <?php if ( ! $es_filtro ) : ?>
-            <p>De resina, desde 120,90&nbsp;&euro; +IVA. Con 68 modelos por debajo de los 200&nbsp;&euro;.</p>
+            <p>De resina, desde 120,90&nbsp;&euro; +IVA. Con 76 modelos por debajo de los 200&nbsp;&euro;.</p>
             <div class="hero-buttons">
                 <a href="#catalogo-platos-baratos" class="hero-btn primary">Ver cat&aacute;logo</a>
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20busco%20un%20plato%20de%20ducha%20economico" class="hero-btn secondary">Preguntar por WhatsApp</a>
@@ -63,22 +67,22 @@ function adrihosan_baratos_contenido_superior() {
     <!-- 2. LAS CUATRO CIFRAS QUE DEFINEN LA SELECCION -->
     <section class="ap-value-section adrihosan-full-width-block">
         <div class="ap-value-wrapper">
-            <p class="section-intro">Este es el tramo m&aacute;s ajustado del cat&aacute;logo: los que se quedan por debajo de los 300&nbsp;&euro;. No son restos de serie ni liquidaciones, es la gama de entrada, con stock y en las medidas de siempre.</p>
+            <p class="section-intro">Este es el tramo m&aacute;s ajustado del cat&aacute;logo: los que se quedan por debajo de los 250&nbsp;&euro;. No son restos de serie ni liquidaciones, es la gama de entrada, con stock y en las medidas de siempre.</p>
             <div class="ap-value-grid">
                 <div class="ap-value-card">
                     <h3>Desde 120,90&nbsp;&euro;</h3>
-                    <p>El precio de partida, sin IVA. El m&aacute;s caro de esta selecci&oacute;n se queda en 299,90&nbsp;&euro;.</p>
+                    <p>El precio de partida, sin IVA. El m&aacute;s caro de esta selecci&oacute;n se queda en 249,90&nbsp;&euro;.</p>
                 </div>
                 <div class="ap-value-card">
-                    <h3>68 por debajo de 200&nbsp;&euro;</h3>
+                    <h3>76 por debajo de 200&nbsp;&euro;</h3>
                     <p>Y 18 no llegan a 150&nbsp;&euro;, que es donde aprieta de verdad un presupuesto.</p>
                 </div>
                 <div class="ap-value-card">
-                    <h3>113 antideslizantes</h3>
+                    <h3>171 antideslizantes</h3>
                     <p>Textura de pizarra de serie. No es un extra que se pague aparte.</p>
                 </div>
                 <div class="ap-value-card">
-                    <h3>86 para ducha adaptada</h3>
+                    <h3>111 para ducha adaptada</h3>
                     <p>A ras de suelo y sin escal&oacute;n. Los tienes todos en <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-para-personas-con-movilidad-reducida/">platos para movilidad reducida</a>.</p>
                 </div>
             </div>
@@ -105,7 +109,7 @@ function adrihosan_baratos_contenido_superior() {
          functions.php (pre_get_posts), igual que la cat 3795. -->
     <div class="product-loop-header">
         <h2 id="catalogo-platos-baratos">Cat&aacute;logo de platos de ducha baratos</h2>
-        <p>190 modelos de resina entre 120,90 y 299,90&nbsp;&euro; +IVA, ordenados para que veas antes los de menor precio.</p>
+        <p>183 modelos de resina entre 120,90 y 249,90&nbsp;&euro; +IVA, ordenados para que veas antes los de menor precio.</p>
     </div>
 
     <!-- WRAPPER AJAX para Filter Everything Pro (lo exige wpc_filter_settings) -->
@@ -144,7 +148,7 @@ function adrihosan_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>El precio de partida son 120,90&nbsp;&euro; +IVA. Dentro de esta selecci&oacute;n hay 68 modelos por debajo de los 200&nbsp;&euro; y 18 que no llegan a 150&nbsp;&euro;.</p>
+                        <p>El precio de partida son 120,90&nbsp;&euro; +IVA. Dentro de esta selecci&oacute;n hay 76 modelos por debajo de los 200&nbsp;&euro; y 18 que no llegan a 150&nbsp;&euro;.</p>
                     </div>
                 </div>
 
@@ -164,7 +168,7 @@ function adrihosan_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Hasta 299,90&nbsp;&euro; +IVA. Ese es el corte: aqu&iacute; solo entran los platos que se quedan por debajo de los 300&nbsp;&euro;. Si buscas formatos mayores o acabados m&aacute;s trabajados, los tienes en el cat&aacute;logo general de platos de ducha.</p>
+                        <p>Hasta 249,90&nbsp;&euro; +IVA. Ese es el corte: aqu&iacute; solo entran los platos que se quedan por debajo de los 250&nbsp;&euro;. Si buscas formatos mayores o acabados m&aacute;s trabajados, los tienes en el cat&aacute;logo general de platos de ducha.</p>
                     </div>
                 </div>
 
@@ -184,7 +188,7 @@ function adrihosan_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>113 de los modelos de esta selecci&oacute;n llevan superficie antideslizante con textura de pizarra, de serie. No es un extra que se pague aparte.</p>
+                        <p>171 de los modelos de esta selecci&oacute;n llevan superficie antideslizante con textura de pizarra, de serie. No es un extra que se pague aparte.</p>
                     </div>
                 </div>
 
@@ -194,7 +198,7 @@ function adrihosan_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>S&iacute;, 86 de ellos. Van a ras de suelo, sin escal&oacute;n que salvar, que es lo que se necesita para entrar en la ducha con seguridad o con una silla.</p>
+                        <p>S&iacute;, 111 de ellos. Van a ras de suelo, sin escal&oacute;n que salvar, que es lo que se necesita para entrar en la ducha con seguridad o con una silla.</p>
                     </div>
                 </div>
 
@@ -214,7 +218,7 @@ function adrihosan_baratos_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>No. Todos los precios de esta p&aacute;gina se muestran sin IVA, consultados el 10 de agosto de 2026. En la ficha de cada plato y en el carrito ver&aacute;s el importe con impuestos antes de confirmar el pedido.</p>
+                        <p>No. Todos los precios de esta p&aacute;gina se muestran sin IVA, consultados el 20 de agosto de 2026. En la ficha de cada plato y en el carrito ver&aacute;s el importe con impuestos antes de confirmar el pedido.</p>
                     </div>
                 </div>
 
@@ -249,6 +253,7 @@ function adrihosan_baratos_contenido_inferior() {
                 <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Visita Virtual</div></a>
                 <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20busco%20un%20plato%20de%20ducha%20economico" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">Whatsapp</div></a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">&#128221;</div><div class="label">Formulario</div></a>
                 <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;&#65039;</div><div class="label">Email</div></a>
             </div>
         </div>
