@@ -113,14 +113,39 @@ diagnosticar** — analizarlo lleva a conclusiones falsas.
 Mirar el diff del último despliegue. Si son N líneas que solo se ejecutan en **una** categoría
 concreta, no puede tumbar la web entera: la causa está fuera del tema.
 
-## REGLA OBLIGATORIA — main es la única fuente de verdad
+## 🔴 REGLA OBLIGATORIA — este repo NO es la fuente de verdad de producción
 
-Cada sesión nueva, **antes de tocar código**:
+**Corregido el 31-ago-2026 tras un accidente evitado por poco.** Esta sección decía antes que
+«main es la única fuente de verdad». **Es falso y es peligroso**: al ir a desplegar la categoría
+de pizarra se comparó con el hosting y Coco llevaba **~1 mes desactualizado**. Copiarlo encima
+habría revertido un mes de trabajo en la web (los `case` de 7 categorías, 6 plantillas, 3 helpers,
+las calculadoras, 29 CSS y 380 líneas de `base-global.css`).
+
+**Quién manda de verdad:**
+
+| Repo | Papel |
+|---|---|
+| **`adrihosan-wp-code`** | **El que despliega y el espejo real.** Push a `main` tocando `wp-content/**` → GitHub Actions → FTPS → producción. Además **se autoimporta del hosting** por schedule, así que refleja lo que hay servido de verdad. |
+| `Coco` (este) | Repo de **desarrollo** del tema. Puede ir por detrás. |
+
+**Antes de tocar código del tema, SIEMPRE:**
 
 ```bash
-git fetch origin main
-git rebase origin/main   # o: git merge origin/main si la rama de trabajo ya no es lineal
+# 1. Actualizar este repo
+git fetch origin main && git rebase origin/main
+
+# 2. Y COMPARAR con lo que hay realmente desplegado, archivo por archivo
+diff --strip-trailing-cr \
+  ~/adrihosan-wp-code/wp-content/themes/adrihosan/functions.php \
+  ~/Coco/adrihosan/functions.php
 ```
+
+⛔ **Nunca copiar archivos enteros de Coco → producción.** Si hay divergencia, se aplican los
+cambios **quirúrgicamente** sobre la versión de producción (que es la buena) y luego se reconcilia
+Coco. Un `functions.php` copiado a ciegas borra en silencio los `case`, `require` y *setup
+functions* de otros silos — que es exactamente el síntoma descrito más abajo.
+
+El paso 1 sigue siendo obligatorio para no pisar el trabajo de otras ramas:
 
 Esto trae a la rama de trabajo todo lo que esté ya en `main` (commits de otras sesiones, fixes urgentes, releases). Si se omite, se acaba reescribiendo archivos clave del servidor (típicamente `functions.php`) con una versión vieja que no conoce el trabajo de otras ramas, y se borran silenciosamente cases del master controller / requires / setup functions de otros silos.
 
