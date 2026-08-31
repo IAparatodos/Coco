@@ -51,25 +51,41 @@ function adrihosan_platos_ducha_contenido_superior() {
     <section class="pldu-sizes-section adrihosan-full-width-block">
         <div class="pldu-sizes-wrapper">
             <h2>&iquest;Qu&eacute; medida necesitas?</h2>
-            <p class="pldu-sizes-sub">Las medidas m&aacute;s pedidas tienen su propia p&aacute;gina. Si la tuya no est&aacute;, usa el filtro de largo y ancho de aqu&iacute; abajo.</p>
+            <p class="pldu-sizes-sub">Las 28 medidas m&aacute;s pedidas tienen su propia p&aacute;gina. Si la tuya no est&aacute;, usa el filtro de largo y ancho de aqu&iacute; abajo.</p>
             <div class="pldu-sizes-grid">
-                <?php /* Recuentos verificados en BD el 21-ago-2026 tras sincronizar las
-                         cats de talla con pa_medida-plato (registro en
-                         2026-08-21-sync-cats-talla/). Si se toca el catalogo, refrescar. */ ?>
+                <?php /* 28 medidas con pagina propia: 7 categorias + 21 filtros con regla SEO.
+                         Recuentos verificados contra pa_medida-plato en BD el 31-ago-2026, el
+                         mismo dia en que se publicaron 16 filtros nuevos (tandas 1-3). Van
+                         ordenadas por largo y luego ancho: el comprador busca por su hueco.
+                         Si se toca el catalogo, refrescar los recuentos. */ ?>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-70x70/" class="pldu-size-btn"><span class="pldu-size-num">70&times;70</span><span class="pldu-size-count">23 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-ducha-80x80/" class="pldu-size-btn"><span class="pldu-size-num">80&times;80</span><span class="pldu-size-count">29 modelos</span></a>
-                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x80/" class="pldu-size-btn"><span class="pldu-size-num">80&times;90</span><span class="pldu-size-count">26 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x70/" class="pldu-size-btn"><span class="pldu-size-num">90&times;70</span><span class="pldu-size-count">28 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-90x80/" class="pldu-size-btn"><span class="pldu-size-num">90&times;80</span><span class="pldu-size-count">26 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-90x90/" class="pldu-size-btn"><span class="pldu-size-num">90&times;90</span><span class="pldu-size-count">30 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-100x70/" class="pldu-size-btn"><span class="pldu-size-num">100&times;70</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-100x80/" class="pldu-size-btn"><span class="pldu-size-num">100&times;80</span><span class="pldu-size-count">37 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-110x70/" class="pldu-size-btn"><span class="pldu-size-num">110&times;70</span><span class="pldu-size-count">29 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-110x80/" class="pldu-size-btn"><span class="pldu-size-num">110&times;80</span><span class="pldu-size-count">29 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-110x90/" class="pldu-size-btn"><span class="pldu-size-num">110&times;90</span><span class="pldu-size-count">29 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-120x70/" class="pldu-size-btn"><span class="pldu-size-num">120&times;70</span><span class="pldu-size-count">38 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-120x80/" class="pldu-size-btn"><span class="pldu-size-num">120&times;80</span><span class="pldu-size-count">38 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-120x90/" class="pldu-size-btn"><span class="pldu-size-num">120&times;90</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-130x70/" class="pldu-size-btn"><span class="pldu-size-num">130&times;70</span><span class="pldu-size-count">29 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-130x80/" class="pldu-size-btn"><span class="pldu-size-num">130&times;80</span><span class="pldu-size-count">11 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-140x70/" class="pldu-size-btn"><span class="pldu-size-num">140&times;70</span><span class="pldu-size-count">38 modelos</span></a>
-                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-ducha-150x70/" class="pldu-size-btn"><span class="pldu-size-num">150&times;70</span><span class="pldu-size-count">32 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-140x80/" class="pldu-size-btn"><span class="pldu-size-num">140&times;80</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-150x70/" class="pldu-size-btn"><span class="pldu-size-num">150&times;70</span><span class="pldu-size-count">32 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-150x80/" class="pldu-size-btn"><span class="pldu-size-num">150&times;80</span><span class="pldu-size-count">32 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-160x70/" class="pldu-size-btn"><span class="pldu-size-num">160&times;70</span><span class="pldu-size-count">38 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-160x80/" class="pldu-size-btn"><span class="pldu-size-num">160&times;80</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-160x100/" class="pldu-size-btn"><span class="pldu-size-num">160&times;100</span><span class="pldu-size-count">16 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-170x70/" class="pldu-size-btn"><span class="pldu-size-num">170&times;70</span><span class="pldu-size-count">29 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-ducha-170x80/" class="pldu-size-btn"><span class="pldu-size-num">170&times;80</span><span class="pldu-size-count">29 modelos</span></a>
-                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plato-de-ducha-180x70/" class="pldu-size-btn"><span class="pldu-size-num">180&times;70</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-180x70/" class="pldu-size-btn"><span class="pldu-size-num">180&times;70</span><span class="pldu-size-count">38 modelos</span></a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-180x80/" class="pldu-size-btn"><span class="pldu-size-num">180&times;80</span><span class="pldu-size-count">38 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-180x100/" class="pldu-size-btn"><span class="pldu-size-num">180&times;100</span><span class="pldu-size-count">17 modelos</span></a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/plt-medida-200x80/" class="pldu-size-btn"><span class="pldu-size-num">200&times;80</span><span class="pldu-size-count">37 modelos</span></a>
             </div>
             <div class="pldu-sizes-exits">
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-grandes/" class="pldu-exit-card">
