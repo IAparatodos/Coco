@@ -68,6 +68,13 @@ function adrihosan_espejo_redondo_bano_contenido_inferior() {
             <p>Lejos de estar limitado a un solo estilo, el espejo redondo es increíblemente versátil. Un modelo <strong>sin marco</strong> es perfecto para un look minimalista o nórdico. Si buscas un toque más sofisticado o industrial, un <strong>espejo redondo con marco negro o dorado</strong> puede coordinarse con la grifería y los accesorios, creando un diseño cohesivo y lleno de personalidad.</p>
         </div>
     </section>
+
+    <?php
+    adrihosan_bloque_opcionales( array(
+        'medida'  => 'redondo',
+        'id'      => 'espejoredondobano',
+    ) );
+    ?>
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Dudas Habituales sobre Espejos Redondos</h2>
@@ -86,6 +93,7 @@ function adrihosan_espejo_redondo_bano_contenido_inferior() {
                 <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="ap-contact-option-redondo"><div class="icon">💻</div><div class="label">Visita Virtual</div></a>
                 <a href="tel:+34961957136" class="ap-contact-option-redondo"><div class="icon">📞</div><div class="label">Teléfono</div></a>
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20ayuda%20con%20los%20espejos%20redondos" class="ap-contact-option-redondo"><div class="icon">💬</div><div class="label">Whatsapp</div></a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="ap-contact-option-redondo"><div class="icon">📝</div><div class="label">Formulario</div></a>
                 <a href="mailto:hola@adrihosan.com" class="ap-contact-option-redondo"><div class="icon">✉️</div><div class="label">Email</div></a>
             </div>
         </div>

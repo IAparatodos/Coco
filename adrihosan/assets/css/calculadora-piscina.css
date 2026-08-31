@@ -1,0 +1,259 @@
+/* Calculadora del vaso de una piscina — estilos. Todo bajo #cap-calc para no
+   tocar el tema, igual que la de calefacción. Hermana de calculadora-calefaccion.css */
+
+/* el tema pinta p, h*, dl y small dentro de .entry-content: aquí se neutraliza */
+#cap-calc{font-weight:400}
+#cap-calc p, #cap-calc dl, #cap-calc dd, #cap-calc dt, #cap-calc figure{margin:0;padding:0}
+#cap-calc h1, #cap-calc h2, #cap-calc h3{text-transform:none;font-family:inherit}
+#cap-calc img{max-width:100%;height:auto;border:0}
+#cap-calc input, #cap-calc label, #cap-calc a, #cap-calc span, #cap-calc b,
+#cap-calc i, #cap-calc small, #cap-calc s{font-family:inherit}
+#cap-calc a{text-decoration:none;box-shadow:none;color:inherit}
+#cap-calc section, #cap-calc article, #cap-calc form{margin:0;padding:0}
+#cap-calc{
+  --turq:#4DD2D0; --turq-deep:#2C9A98; --turq-mist:#E8F8F8;
+  --petrol:#3F6F7B; --petrol-deep:#102E35;
+  --ink:#102E35; --body:#41565C; --muted:#6B8189; --faint:#90A3A9;
+  --paper:#FFF; --canvas:#F4F8F9; --mist:#EEF4F5;
+  --line:#E1EAEC; --line-2:#CCDBDF;
+  --gold:#C08A2E; --gold-bg:#FBF3E2;
+  --r-lg:20px; --r-md:14px; --r-sm:10px;
+  --shadow:0 1px 2px rgba(16,46,53,.04), 0 8px 24px -12px rgba(16,46,53,.14);
+}
+#cap-calc *, #cap-calc *::before, #cap-calc *::after{box-sizing:border-box}
+#cap-calc{background:var(--canvas);color:var(--body);
+  font-family:Poppins,system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+#cap-calc h1, #cap-calc h2, #cap-calc h3{color:var(--ink);margin:0;letter-spacing:-.02em;text-wrap:balance;font-weight:600}
+#cap-calc p{margin:0}
+#cap-calc a{color:inherit}
+#cap-calc .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+/* barra de prototipo */
+/* hero */
+#cap-calc .hero{background:linear-gradient(115deg,var(--petrol-deep) 0%,var(--petrol) 62%,#4A818E 100%);
+  color:#FFF;padding:52px 0 116px;position:relative;overflow:hidden}
+#cap-calc .hero::after{content:"";position:absolute;right:-140px;top:-120px;width:420px;height:420px;
+  border-radius:50%;background:rgba(77,210,208,.16);filter:blur(4px)}
+#cap-calc .hero .wrap{position:relative;z-index:1}
+#cap-calc .eyebrow{display:flex;align-items:center;gap:9px;margin:0 0 14px;font-size:12px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--turq)}
+#cap-calc .eyebrow .pip{width:7px;height:7px;border-radius:50%;background:var(--turq);flex:none;
+  box-shadow:0 0 0 4px rgba(77,210,208,.22)}
+#cap-calc .hero h1{color:#FFF;font-size:clamp(30px,4.4vw,46px);line-height:1.08;max-width:17ch}
+#cap-calc .hero .lead{color:rgba(255,255,255,.82);max-width:56ch;margin:16px 0 0;font-size:17px}
+/* rejilla */
+#cap-calc .layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(320px,1fr);gap:24px;
+  margin-top:-72px;position:relative;z-index:2;align-items:start}
+@media (max-width:940px){
+#cap-calc .layout{grid-template-columns:1fr;margin-top:-84px}
+}
+#cap-calc .panel{background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--shadow);
+  border:1px solid var(--line);overflow:hidden}
+#cap-calc .step{padding:26px 28px}
+#cap-calc .step + .step{border-top:1px solid var(--line)}
+@media (max-width:560px){
+#cap-calc .step{padding:22px 18px}
+}
+#cap-calc .slab{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--turq-deep);margin:0 0 6px}
+#cap-calc .slab::after{content:"";flex:1;height:1px;background:var(--line)}
+#cap-calc .step h2{font-size:19px;line-height:1.3}
+#cap-calc .shint{margin:5px 0 16px;font-size:14.5px;color:var(--muted)}
+/* chips */
+#cap-calc .chips{display:flex;flex-wrap:wrap;gap:9px}
+#cap-calc .chip{position:relative}
+#cap-calc .chip input{position:absolute;opacity:0;width:0;height:0}
+#cap-calc .chip span{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;
+  border:1px solid var(--line-2);border-radius:999px;background:var(--paper);color:var(--body);
+  font-size:15px;font-weight:500;cursor:pointer;transition:.15s;user-select:none;white-space:nowrap}
+#cap-calc .chip span:hover{border-color:var(--turq);background:var(--turq-mist);color:var(--ink)}
+#cap-calc .chip input:checked + span{background:var(--petrol-deep);border-color:var(--petrol-deep);color:#FFF}
+#cap-calc .chip input:focus-visible + span{outline:2px solid var(--turq-deep);outline-offset:2px}
+/* campos */
+#cap-calc .numgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+#cap-calc .numgrid.dos{grid-template-columns:repeat(2,1fr)}
+@media (max-width:560px){
+#cap-calc .numgrid, #cap-calc .numgrid.dos{grid-template-columns:1fr}
+}
+#cap-calc .numfield{display:flex;flex-direction:column;gap:6px}
+#cap-calc .numfield label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#cap-calc .numfield .box{display:flex;align-items:center;border:1px solid var(--line-2);border-radius:var(--r-md);
+  background:var(--paper);transition:.15s;overflow:hidden}
+#cap-calc .numfield .box:focus-within{border-color:var(--turq);box-shadow:0 0 0 3px rgba(77,210,208,.2)}
+#cap-calc .numfield input{flex:1;min-width:0;height:52px;padding:0 0 0 15px;border:0;background:transparent;
+  color:var(--ink);font:inherit;font-size:17px;font-weight:500;font-variant-numeric:tabular-nums}
+#cap-calc .numfield input:focus{outline:none}
+#cap-calc .numfield .unit{padding:0 15px;font-size:14px;color:var(--faint);flex:none}
+#cap-calc .hidden{display:none !important}
+/* tarjetas de sistema */
+#cap-calc .sisgrid{display:grid;grid-template-columns:1fr;gap:10px}
+@media (min-width:600px){
+#cap-calc .sisgrid{grid-template-columns:repeat(3,1fr)}
+}
+#cap-calc .sis{position:relative}
+#cap-calc .sis input{position:absolute;opacity:0;width:0;height:0}
+#cap-calc .sis span{display:flex;flex-direction:column;gap:3px;height:100%;padding:14px;
+  border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--paper);cursor:pointer;transition:.15s}
+#cap-calc .sis span::before{content:"";width:26px;height:4px;border-radius:2px;background:var(--bar);margin-bottom:7px}
+#cap-calc .sis[data-s="gunitado"] span{--bar:var(--turq-deep)}
+#cap-calc .sis[data-s="bloque"] span{--bar:#2FA96B}
+#cap-calc .sis[data-s="armado"] span{--bar:#D98C3A}
+#cap-calc .sis span:hover{border-color:var(--turq)}
+#cap-calc .sis input:checked + span{border-color:var(--petrol-deep);background:var(--mist)}
+#cap-calc .sis input:focus-visible + span{outline:2px solid var(--turq-deep);outline-offset:2px}
+#cap-calc .sis b{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+#cap-calc .sis i{font-style:normal;font-size:12.5px;color:var(--muted)}
+/* avanzado */
+#cap-calc details.avz{border-top:1px solid var(--line);padding:18px 28px 24px}
+@media (max-width:560px){
+#cap-calc details.avz{padding:18px}
+}
+#cap-calc details.avz summary{cursor:pointer;font-size:12.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);list-style:none;display:flex;align-items:center;gap:8px}
+#cap-calc details.avz summary::-webkit-details-marker{display:none}
+#cap-calc details.avz summary::before{content:"+";width:20px;height:20px;border-radius:50%;background:var(--mist);
+  color:var(--petrol);display:flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+#cap-calc details.avz[open] summary::before{content:"−"}
+#cap-calc details.avz .numgrid{margin-top:16px}
+/* carril */
+#cap-calc .rail{position:sticky;top:20px}
+@media (max-width:940px){
+#cap-calc .rail{position:static}
+}
+#cap-calc .rcard{background:linear-gradient(160deg,var(--petrol-deep),#1B454F);color:#FFF;border-radius:var(--r-lg);
+  padding:26px;box-shadow:0 18px 40px -22px rgba(16,46,53,.55)}
+#cap-calc .rlabel{margin:0;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--turq)}
+#cap-calc .big{font-size:clamp(30px,3.6vw,40px);font-weight:600;line-height:1.05;letter-spacing:-.03em;color:#FFF;
+  margin:10px 0 0;font-variant-numeric:tabular-nums}
+#cap-calc .wnote{font-size:13.5px;color:rgba(255,255,255,.72);margin:9px 0 0}
+#cap-calc .facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12);
+  border-radius:var(--r-md);overflow:hidden;margin:22px 0 0}
+#cap-calc .fact{background:rgba(255,255,255,.05);padding:12px 13px}
+#cap-calc .fact dt{margin:0;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+#cap-calc .fact dd{margin:3px 0 0;font-size:16px;font-weight:600;color:#FFF;font-variant-numeric:tabular-nums}
+#cap-calc .fact dd small{display:block;font-size:11.5px;font-weight:400;color:rgba(255,255,255,.6);margin-top:2px}
+/* aviso */
+#cap-calc .aviso{margin-top:18px;background:var(--gold-bg);border:1px solid #EBDCB8;border-left:3px solid var(--gold);
+  border-radius:0 var(--r-md) var(--r-md) 0;padding:16px 18px}
+#cap-calc .aviso b{display:block;color:var(--gold);font-size:12px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;margin-bottom:7px}
+#cap-calc .aviso p{font-size:13.5px;line-height:1.6;color:#7A5A1C}
+#cap-calc .aviso p + p{margin-top:8px}
+/* desglose */
+/* pie */
+#cap-calc .pie{margin:56px 0 0;background:var(--petrol-deep);color:rgba(255,255,255,.72);padding:36px 0 40px}
+#cap-calc .pie h3{color:#FFF;font-size:15px;margin-bottom:10px}
+#cap-calc .pie p{font-size:13.5px;line-height:1.65;max-width:78ch}
+#cap-calc .pie p + p{margin-top:10px}
+#cap-calc .pie .marca{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:12px;letter-spacing:.04em;color:rgba(255,255,255,.5)}
+/* ---------- material recomendado ---------- */
+#cap-calc .picks{margin:52px 0 0}
+#cap-calc .pickhead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+#cap-calc .pickhead h2{font-size:26px}
+#cap-calc .pickhead .count{font-size:13px;color:var(--muted)}
+#cap-calc .picksub{font-size:14.5px;color:var(--muted);margin:0 0 18px;max-width:70ch}
+/* Cabecera de grupo: los tres bloques (vaso, coronación, playa) son tres
+   compras distintas. Con el título en 11px gris se leían como una sola masa de
+   tarjetas y la gente se perdía. Ahora cada uno abre sección: número, título
+   grande, la cifra que se busca en su chapa, y aire de sobra por encima. */
+#cap-calc .grupo{margin-top:34px}
+#cap-calc .grupo + .grupo{margin-top:56px;padding-top:34px;border-top:1px solid var(--line-2)}
+#cap-calc .ghead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 8px}
+#cap-calc .ghead h3{font-size:27px;font-weight:600;color:var(--ink);letter-spacing:-.02em;margin:0;line-height:1.15}
+#cap-calc .gnum{flex:none;width:30px;height:30px;border-radius:50%;background:var(--petrol-deep);color:#FFF;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;
+  font-variant-numeric:tabular-nums}
+#cap-calc .gkey{flex:none;background:var(--turq-mist);border:1px solid var(--turq);
+  color:var(--petrol-deep);border-radius:999px;padding:8px 18px;font-size:18px;font-weight:600;
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap}
+#cap-calc .grupo > p.gsub{font-size:15px;color:var(--body);margin:0 0 20px;max-width:68ch;padding-left:44px}
+@media (max-width:680px){
+  #cap-calc .ghead{gap:11px}
+  #cap-calc .ghead h3{font-size:22px}
+  #cap-calc .gkey{font-size:16px;padding:7px 15px}
+  #cap-calc .grupo > p.gsub{padding-left:0;font-size:14.5px}
+}
+#cap-calc .cards{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch}
+#cap-calc .card{flex:1 1 250px;max-width:320px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
+  overflow:hidden;display:flex;flex-direction:column;transition:.18s}
+@media (max-width:680px){
+#cap-calc .card{max-width:none}
+}
+#cap-calc .card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+#cap-calc .card[data-tier="mejor"]{border-color:var(--turq);box-shadow:0 0 0 1px var(--turq)}
+#cap-calc .cbadge{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 16px;font-size:11px;
+  font-weight:600;letter-spacing:.13em;text-transform:uppercase;background:var(--mist);color:var(--petrol);
+  border-bottom:1px solid var(--line)}
+#cap-calc .card[data-tier="mejor"] .cbadge{background:var(--turq-mist);color:var(--turq-deep)}
+/* El mas vendido: chapa dorada. No compite con el turquesa del escaparate,
+   que sigue abriendo el bloque. */
+#cap-calc .card[data-top="1"]{border-color:#EBDCB8}
+#cap-calc .card[data-top="1"] .cbadge{background:var(--gold-bg);color:var(--gold);border-bottom-color:#EBDCB8}
+#cap-calc .cbadge .unit{letter-spacing:.02em;text-transform:none;font-size:13px;font-weight:600;color:var(--ink);
+  font-variant-numeric:tabular-nums}
+/* el catálogo mezcla fotos de ambiente con muestras sobre fondo blanco:
+   contain enseña la pieza entera en los dos casos, #cap-calc sin recortes raros */
+#cap-calc .shot{aspect-ratio:16/10;background:var(--canvas);border-bottom:1px solid var(--line);overflow:hidden;
+  display:flex;align-items:center;justify-content:center;padding:8px}
+#cap-calc .shot img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;
+  border-radius:6px}
+#cap-calc .cbody{padding:15px 16px 0;flex:1}
+#cap-calc .cname{display:block;font-size:14.5px;font-weight:500;color:var(--petrol);line-height:1.4;
+  text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+#cap-calc .cname:hover{color:var(--turq-deep);text-decoration-color:var(--turq)}
+#cap-calc .clines{margin:12px 0 0;display:flex;flex-direction:column;gap:6px}
+#cap-calc .cline{display:flex;justify-content:space-between;gap:12px;font-size:13px;font-variant-numeric:tabular-nums}
+#cap-calc .cline span:first-child{color:var(--muted)}
+#cap-calc .cline span:last-child{color:var(--ink);font-weight:500}
+#cap-calc .cfoot{margin-top:auto;padding:14px 16px 16px;display:flex;flex-direction:column;align-items:stretch;gap:11px}
+#cap-calc .cbtns{display:flex;align-items:center;gap:8px}
+#cap-calc .cbuy{flex:1;text-align:center;text-decoration:none;background:var(--turq);color:var(--petrol-deep);
+  border-radius:999px;padding:11px 14px;font-size:13.5px;font-weight:600;transition:.15s;white-space:nowrap}
+#cap-calc .cbuy:hover{background:#63DEDC;transform:translateY(-1px)}
+#cap-calc .cbuy:focus-visible{outline:2px solid var(--petrol-deep);outline-offset:2px}
+#cap-calc .cprice{line-height:1.15}
+#cap-calc .cprice b{display:block;font-size:20px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+#cap-calc .cprice small{display:block;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-top:2px}
+#cap-calc .cprice small s{text-decoration-thickness:1px}
+
+/* "+ IVA" pegado a cada cifra: los precios del catalogo son sin IVA y tiene que
+   verse sin gritar (11px, gris, misma linea que el numero). */
+#cap-calc .siva{font-style:normal;font-size:11px;font-weight:500;color:var(--faint);
+  letter-spacing:.01em;text-transform:none;white-space:nowrap;margin-left:4px}
+#cap-calc .cbadge .unit .siva{font-size:10.5px;color:inherit;opacity:.62}
+#cap-calc .cline .siva{font-size:10.5px}
+#cap-calc .cgo{flex:none;text-decoration:none;background:var(--mist);color:var(--petrol);border:1px solid var(--line-2);
+  border-radius:999px;padding:10px 15px;font-size:13.5px;font-weight:500;transition:.15s;white-space:nowrap}
+#cap-calc .cgo:hover{background:var(--paper);border-color:var(--turq);color:var(--turq-deep)}
+#cap-calc .cgo:focus-visible{outline:2px solid var(--turq-deep);outline-offset:2px}
+#cap-calc .nota-mat{margin:26px 0 0;padding:16px 18px;background:var(--mist);border-left:3px solid var(--turq);
+  border-radius:0 var(--r-md) var(--r-md) 0;font-size:13.5px;line-height:1.6}
+#cap-calc .nota-mat b{color:var(--ink)}
+#cap-calc .vacio-mat{flex:1 1 100%;padding:30px 22px;text-align:center;color:var(--muted);font-size:14.5px;background:var(--paper);
+  border:1px dashed var(--line-2);border-radius:var(--r-lg)}
+@media (prefers-reduced-motion:reduce){
+#cap-calc *{transition:none !important}
+}
+/* Los fondos van de borde a borde: el bloque se sale del ancho del tema con
+   márgenes negativos y el contenido sigue centrado por .wrap. Va al final del
+   archivo a propósito, para que no lo pise ninguna regla anterior. */
+#cap-calc{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+
+/* ---------- añadir al carrito sin salir de la página ---------- */
+#cap-calc .cbuy.cargando{opacity:.75;pointer-events:none}
+#cap-calc .cbuy.hecho{background:#2FA96B;color:#FFF}
+#cap-calc .cap-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);
+  display:flex;align-items:center;gap:14px;z-index:9998;
+  background:var(--petrol-deep);color:#FFF;border-radius:999px;padding:13px 15px 13px 22px;
+  box-shadow:0 18px 40px -14px rgba(16,46,53,.55);font-size:14.5px;
+  opacity:0;transition:transform .25s ease,opacity .25s ease;pointer-events:none}
+#cap-calc .cap-toast.visible{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+#cap-calc .cap-toast a{background:var(--turq);color:var(--petrol-deep);border-radius:999px;
+  padding:8px 16px;font-size:13.5px;font-weight:600;white-space:nowrap}
+#cap-calc .cap-toast a:hover{background:#63DEDC}
+@media (max-width:560px){
+  #cap-calc .cap-toast{left:12px;right:12px;transform:translateY(140%);width:auto;max-width:none;
+    justify-content:space-between;padding:12px 12px 12px 18px;font-size:13.5px}
+  #cap-calc .cap-toast.visible{transform:translateY(0)}
+}

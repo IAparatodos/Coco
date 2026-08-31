@@ -77,6 +77,13 @@ function adrihosan_espejo_bano_50x80_contenido_inferior() {
     </section>
 
     <!-- CONTACTO RICARDO -->
+
+    <?php
+    adrihosan_bloque_opcionales( array(
+        'medida'  => 'de 50x80 cm',
+        'id'      => 'espejobano50x80',
+    ) );
+    ?>
     <section class="contact-help-common adrihosan-full-width-block">
         <div class="contact-help-wrapper">
             <div class="contact-intro">
@@ -103,6 +110,10 @@ function adrihosan_espejo_bano_50x80_contenido_inferior() {
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20un%20espejo%20de%20ba%C3%B1o%20de%2050x80%20cm" class="contact-option-common">
                     <div class="icon">&#128172;</div>
                     <div class="label">Whatsapp</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common">
+                    <div class="icon">&#128221;</div>
+                    <div class="label">Formulario</div>
                 </a>
                 <a href="mailto:hola@adrihosan.com" class="contact-option-common">
                     <div class="icon">&#9993;&#65039;</div>

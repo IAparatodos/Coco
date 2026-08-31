@@ -60,6 +60,17 @@ function adrihosan_espejo_medida_datos() {
             'wa'    => 'Hola,%20busco%20un%20espejo%20de%20bano%20de%20120x80',
         ),
 
+        // 120x100 - hija de 5471 (Espejo bano 120). Categoria recreada el
+        // 25-ago-2026 con su slug historico: hacia 1.803 impresiones/ano a
+        // posicion 7,3 y estaba redirigida a la generica.
+        5603 => array(
+            'label' => '120x100',
+            'titulo' => 'Espejo de ba&ntilde;o 120x100',
+            // TODO: misma foto pendiente que en la 120x80.
+            'hero'  => 'https://www.adrihosan.com/wp-content/uploads/2026/04/espejo-de-bano-100-cm-Adrihosan.jpg',
+            'wa'    => 'Hola,%20busco%20un%20espejo%20de%20bano%20de%20120x100',
+        ),
+
         // 100x100 - hija de 5473 (Espejo bano 100)
         5474 => array(
             'label' => '100x100',
@@ -76,8 +87,9 @@ function adrihosan_espejo_medida_datos() {
  * el orden en que se ofrecen. Es la fuente de la tira "otra medida" y de la
  * columna "Para que mueble" de la tabla.
  *
- * NO se anaden aqui 110x80, 120x100 ni 100x90: no hay categoria y casi no hay
- * producto. Aun asi, antes de pintar cada enlace se comprueba en la BD que el
+ * NO se anaden aqui 110x80 ni 100x90: no hay categoria y casi no hay producto.
+ * La 120x100 (5603) SI entra desde el 25-ago-2026: se recreo con su slug
+ * historico y tiene 7 referencias. Aun asi, antes de pintar cada enlace se comprueba en la BD que el
  * termino existe y tiene productos, para que la tira no pueda enlazar a una
  * pagina vacia aunque alguien anada una medida de mas.
  */
@@ -85,6 +97,7 @@ function adrihosan_espejo_medida_catalogo() {
     return array(
         5474 => array( 'label' => '100x100', 'para' => 'Mueble de 100 con poca pared' ),
         5472 => array( 'label' => '120x80',  'para' => 'Mueble de 120 o dos senos' ),
+        5603 => array( 'label' => '120x100', 'para' => 'Mueble de 120 con pared alta' ),
         4415 => array( 'label' => '140x80',  'para' => 'Mueble de 140' ),
         4402 => array( 'label' => '90x80',   'para' => 'Mueble de 80 o 90' ),
     );
@@ -92,8 +105,9 @@ function adrihosan_espejo_medida_catalogo() {
 
 /** Las tres medidas que entran en la tabla: la actual primero. */
 function adrihosan_espejo_medida_tabla( $term_id ) {
-    $base = array( 5474, 5472, 4415 );
-    return array_merge( array( (int) $term_id ), array_values( array_diff( $base, array( (int) $term_id ) ) ) );
+    $base = array( 5474, 5472, 4415, 5603 );
+    $otras = array_values( array_diff( $base, array( (int) $term_id ) ) );
+    return array_slice( array_merge( array( (int) $term_id ), $otras ), 0, 3 );
 }
 
 /** URL real del termino desde la BD, o la home si algo falla. */
@@ -196,6 +210,41 @@ function adrihosan_espejo_medida_faqs( $term_id ) {
             array(
                 'q' => '&iquest;Todos los espejos de 120x80 llevan luz LED?',
                 'a' => 'Casi todos: 35 de las 37 referencias de esta medida traen iluminaci&oacute;n LED integrada. Las otras dos son espejos sin luz.',
+            ),
+            array(
+                'q' => '&iquest;El env&iacute;o es gratis?',
+                'a' => 'S&iacute;, el env&iacute;o es gratuito en todos los espejos de ba&ntilde;o.',
+            ),
+        ),
+
+        5603 => array(
+            array(
+                'q' => '&iquest;Qu&eacute; diferencia hay entre un espejo de 120x100 y uno de 120x80?',
+                'a' => 'Los 20 cm de alto. Con el mismo ancho de 120 cm, el de 100 llena el pa&ntilde;o entero sobre el mueble y refleja m&aacute;s cuerpo; el de 80 es la medida est&aacute;ndar y deja m&aacute;s pared vista por arriba.',
+            ),
+            array(
+                'q' => '&iquest;Para qu&eacute; ba&ntilde;o va bien un espejo de 120x100?',
+                'a' => 'Para un mueble de 120 cm, o de dos senos, en una pared con altura suficiente. Es la opci&oacute;n cuando quieres que el espejo mande en la pared en vez de quedar como una banda estrecha sobre el lavabo.',
+            ),
+            array(
+                'q' => '&iquest;Cu&aacute;ntas referencias de 120x100 llevan luz LED?',
+                'a' => 'Casi todas. Los de la serie Kayra llevan luz retroiluminada perimetral y el Aluminium negro monta luz bi-led. Los &uacute;nicos sin iluminaci&oacute;n son los modelos Liso, en canto recto y en canto redondeado, pensados para ba&ntilde;os que ya tienen buena luz.',
+            ),
+            array(
+                'q' => '&iquest;Cu&aacute;les traen antivaho?',
+                'a' => 'Los tres Kayra con antivaho, que llevan doble touch (un t&aacute;ctil para la luz y otro para el antivaho), y el Aluminium negro, que tambi&eacute;n lo incorpora. Los Kayra sencillos se encienden desde el interruptor de la pared, y los Liso no llevan electr&oacute;nica. En los modelos que no lo traen de serie, el antivaho se puede a&ntilde;adir como opcional.',
+            ),
+            array(
+                'q' => '&iquest;A qu&eacute; altura se coloca un espejo de 120x100?',
+                'a' => 'Dejando el borde inferior entre 10 y 20 cm por encima del mueble. Con 100 cm de alto conviene medir antes el hueco libre hasta el techo o hasta el punto de luz.',
+            ),
+            array(
+                'q' => '&iquest;Se puede pedir en otra medida?',
+                'a' => 'S&iacute;. La serie Kayra se fabrica bajo pedido desde 500 hasta 1.800 mm de ancho y desde 500 hasta 1.000 mm de alto, as&iacute; que los 100 cm de alto son justo el m&aacute;ximo de la gama. Si necesitas una medida intermedia, cons&uacute;ltanos.',
+            ),
+            array(
+                'q' => '&iquest;Se le pueden a&ntilde;adir extras?',
+                'a' => 'S&iacute;: aumento, altavoces bluetooth, display de hora y temperatura, estaci&oacute;n meteorol&oacute;gica, sensor de movimiento o logo personalizado, entre otros. Hay incompatibilidades seg&uacute;n modelo y medida, as&iacute; que lo revisamos contigo antes de presupuestar.',
             ),
             array(
                 'q' => '&iquest;El env&iacute;o es gratis?',
@@ -399,6 +448,17 @@ function adrihosan_espejo_medida_contenido_inferior() {
          Regla CLAUDE.md: el schema FAQPage lo pone Rank Math desde el termino,
          copiando este texto visible palabra por palabra. Se tocan los dos o
          ninguno. -->
+    <?php
+    // Opcionales: fuera del if de las FAQs (no dependen de ellas) y con la
+    // medida de ESTA pagina, que la plantilla la comparten 5472, 5474 y 5603.
+    $_opc_datos = adrihosan_espejo_medida_datos();
+    $_opc_label = isset( $_opc_datos[ $term_id ]['label'] ) ? $_opc_datos[ $term_id ]['label'] : '';
+    adrihosan_bloque_opcionales( array(
+        'medida' => $_opc_label ? 'de ' . $_opc_label . ' cm' : '',
+        'id'     => 'espejomedida' . $term_id,
+    ) );
+    ?>
+
     <?php $faqs = adrihosan_espejo_medida_faqs( $term_id ); ?>
     <?php if ( ! empty( $faqs ) ) : ?>
     <section class="faq-section-common adrihosan-full-width-block">
@@ -439,7 +499,7 @@ function adrihosan_espejo_medida_contenido_inferior() {
                 <a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">&#128187;</div><div class="label">Visita Virtual</div></a>
                 <a href="tel:+34961957136" class="contact-option-common"><div class="icon">&#128222;</div><div class="label">Tel&eacute;fono</div></a>
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=<?php echo esc_attr( $info['wa'] ); ?>" class="contact-option-common"><div class="icon">&#128172;</div><div class="label">Whatsapp</div></a>
-                <a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;&#65039;</div><div class="label">Email</div></a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">&#128221;</div><div class="label">Formulario</div></a><a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">&#9993;&#65039;</div><div class="label">Email</div></a>
             </div>
         </div>
     </section>

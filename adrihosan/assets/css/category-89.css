@@ -1,0 +1,403 @@
+/* ========================================================================== */
+/* CATEGORY-89.CSS - Platos de ducha decorados (hoja de ACABADO, hija de 86)  */
+/* Identidad corporativa Adrihosan:                                           */
+/*   - Color corporativo CTA: #4dd2d0                                         */
+/*   - Color corporativo texto: #3f6f7b                                       */
+/*   - Tipografia corporativa: Poppins                                        */
+/* Patron visual heredado del silo de platos (category-2857.css y 2890.css).  */
+/* Propio de esta categoria: la parrilla de los 19 acabados, que es la seccion */
+/* que de verdad busca el usuario (elige dibujo, no medida).                   */
+/* TODO re-scopeado a .term-89 para no filtrar estilos a otras categorias.     */
+/* ========================================================================== */
+
+/* ---------- 1. Ocultar elementos legacy ---------- */
+.tax-product_cat.term-89 .woocommerce-breadcrumb,
+.tax-product_cat.term-89 .woocommerce-products-header,
+.tax-product_cat.term-89 .term-description {
+    display: none;
+}
+
+/* ---------- 2. Hero ---------- */
+/* La foto va inline en la seccion 1 de inc/category-platos-decorados.php
+   (media 430648, plato hidraulico multicolor en ambiente, construido desde la
+   foto real del producto).
+   VELO: patron de la casa - ::after con velo PLANO de petroleo al 45 % y la
+   legibilidad resuelta con text-shadow, NO oscureciendo mas la foto
+   (correccion de Ricardo del 21-ago-2026 en la cat 74). */
+.tax-product_cat.term-89 .pdc-hero {
+    position: relative;
+    background-color: #3f6f7b;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tax-product_cat.term-89 .pdc-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 111, 123, .45);
+    z-index: 1;
+}
+.tax-product_cat.term-89 .pdc-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+.tax-product_cat.term-89 .pdc-hero .hero-content h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+.tax-product_cat.term-89 .pdc-hero .hero-content p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .45);
+}
+
+/* Migas y botones (patron estandar del silo) */
+.tax-product_cat.term-89 .hero-section-container .breadcrumb-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+.tax-product_cat.term-89 .hero-section-container .breadcrumb-nav a {
+    color: #4dd2d0;
+    text-decoration: none;
+}
+.tax-product_cat.term-89 .hero-section-container .breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+.tax-product_cat.term-89 .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.tax-product_cat.term-89 .hero-btn {
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+.tax-product_cat.term-89 .hero-btn.primary {
+    background: #4dd2d0;
+    border-color: #4dd2d0;
+    color: #ffffff;
+}
+.tax-product_cat.term-89 .hero-btn.primary:hover {
+    background: #3bbfbd;
+    border-color: #3bbfbd;
+}
+.tax-product_cat.term-89 .hero-btn.secondary {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.tax-product_cat.term-89 .hero-btn.secondary:hover {
+    background: #ffffff;
+    color: #3f6f7b;
+}
+
+/* ---------- 3. Los 19 acabados (seccion estrella) ---------- */
+.tax-product_cat.term-89 .pdc-finishes-section {
+    background: #ffffff;
+    padding: 54px 20px 46px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .pdc-finishes-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-89 .pdc-finishes-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px;
+}
+.tax-product_cat.term-89 .pdc-finishes-sub {
+    text-align: center;
+    color: #5c6b70;
+    font-size: 1rem;
+    max-width: 760px;
+    margin: 0 auto 30px;
+}
+.tax-product_cat.term-89 .pdc-finishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+.tax-product_cat.term-89 .pdc-finish-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 24px 22px;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.tax-product_cat.term-89 .pdc-finish-card:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(63, 111, 123, 0.10);
+}
+.tax-product_cat.term-89 .pdc-finish-icon {
+    display: block;
+    font-size: 1.9rem;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.tax-product_cat.term-89 .pdc-finish-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3f6f7b;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+.tax-product_cat.term-89 .pdc-finish-card h3 span {
+    display: inline-block;
+    margin-left: 8px;
+    background: #4dd2d0;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .3px;
+    border-radius: 999px;
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.tax-product_cat.term-89 .pdc-finish-card p {
+    color: #5c6b70;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---------- 4. Filtro FilterEverything ---------- */
+.tax-product_cat.term-89 .pdc-filter-shell {
+    max-width: 1200px;
+    margin: 0 auto 10px;
+    padding: 0 20px;
+}
+
+/* ---------- 5. Franja de precio + CTA ---------- */
+.tax-product_cat.term-89 .pdc-price-band {
+    background: #3f6f7b;
+    padding: 34px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .pdc-price-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.tax-product_cat.term-89 .pdc-price-line {
+    color: #ffffff;
+    font-size: 1.12rem;
+    margin: 0;
+}
+.tax-product_cat.term-89 .pdc-price-line strong {
+    color: #4dd2d0;
+}
+.tax-product_cat.term-89 .pdc-price-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+.tax-product_cat.term-89 .pdc-price-link {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+.tax-product_cat.term-89 .pdc-price-link:hover {
+    color: #4dd2d0;
+}
+.tax-product_cat.term-89 .pdc-whatsapp-btn {
+    background: #4dd2d0;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 12px 26px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .25s ease;
+}
+.tax-product_cat.term-89 .pdc-whatsapp-btn:hover {
+    background: #3bbfbd;
+}
+
+/* ---------- 6. Cabecera del catalogo ---------- */
+.tax-product_cat.term-89 .product-loop-header {
+    max-width: 1200px;
+    margin: 46px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .product-loop-header h2 {
+    color: #3f6f7b;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+.tax-product_cat.term-89 .product-loop-header p {
+    color: #5c6b70;
+    margin: 0;
+}
+
+/* ---------- 7. Claves del producto ---------- */
+.tax-product_cat.term-89 .pdc-keys-section {
+    background: #ffffff;
+    padding: 52px 20px 46px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .pdc-keys-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-89 .pdc-keys-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 28px;
+}
+.tax-product_cat.term-89 .pdc-keys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+.tax-product_cat.term-89 .pdc-key-card {
+    background: #f0f7f8;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 24px 20px;
+}
+.tax-product_cat.term-89 .pdc-key-icon {
+    display: block;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #4dd2d0;
+}
+.tax-product_cat.term-89 .pdc-key-card h3 {
+    color: #3f6f7b;
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+.tax-product_cat.term-89 .pdc-key-card p {
+    color: #5c6b70;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---------- 8. Guias del blog ---------- */
+.tax-product_cat.term-89 .pdc-guides-section {
+    background: #f0f7f8;
+    padding: 46px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .pdc-guides-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.tax-product_cat.term-89 .pdc-guides-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 22px;
+}
+.tax-product_cat.term-89 .pdc-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+}
+.tax-product_cat.term-89 .pdc-guide-link {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #3f6f7b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+}
+.tax-product_cat.term-89 .pdc-guide-link:hover {
+    border-color: #4dd2d0;
+    transform: translateY(-2px);
+}
+
+/* ---------- 9. Categorias relacionadas ---------- */
+.tax-product_cat.term-89 .pdc-related-section {
+    background: #ffffff;
+    padding: 44px 20px 52px;
+    font-family: 'Poppins', sans-serif;
+}
+.tax-product_cat.term-89 .pdc-related-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tax-product_cat.term-89 .pdc-related-wrapper h2 {
+    color: #3f6f7b;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.tax-product_cat.term-89 .pdc-related-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.tax-product_cat.term-89 .pdc-related-link {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    border: 1px solid #d4e3e6;
+    border-radius: 999px;
+    padding: 10px 20px;
+    color: #3f6f7b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease;
+}
+.tax-product_cat.term-89 .pdc-related-link:hover {
+    border-color: #4dd2d0;
+    color: #4dd2d0;
+}
+
+/* ---------- 10. Responsive ---------- */
+@media (max-width: 768px) {
+    .tax-product_cat.term-89 .pdc-finishes-section,
+    .tax-product_cat.term-89 .pdc-keys-section {
+        padding: 38px 16px 34px;
+    }
+    .tax-product_cat.term-89 .pdc-finishes-wrapper h2,
+    .tax-product_cat.term-89 .pdc-keys-wrapper h2,
+    .tax-product_cat.term-89 .product-loop-header h2 {
+        font-size: 1.5rem;
+    }
+    .tax-product_cat.term-89 .pdc-price-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tax-product_cat.term-89 .pdc-hero {
+        background-position: center right;
+    }
+}
+
+/* Cortesia Codigo AdrIA */

@@ -187,6 +187,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 4722: // Navarti Cer&aacute;mica
             adrihosan_setup_navarti_cpu_fix();
             break;
+        case 5668: // Cer&aacute;mica Realonda
+            adrihosan_setup_ceramica_realonda();
+            break;
         case 67: // Azulejo Mosaico
             adrihosan_setup_mosaico_cpu_fix();
             break;
@@ -262,6 +265,9 @@ function adrihosan_master_controller_cpu_fix() {
         case 86: // Platos de ducha (LA MADRE del silo, patron repartidor)
             adrihosan_setup_platos_ducha_cpu_fix();
             break;
+        case 136: // Platos de ducha de resina (hoja de MATERIAL, hija de 86; deploy 2026-08-18.2)
+            adrihosan_setup_platos_resina_cpu_fix();
+            break;
         case 2861: // Duplach platos de ducha (hoja de MARCA, hija de 86)
             adrihosan_setup_duplach_cpu_fix();
             break;
@@ -274,8 +280,20 @@ function adrihosan_master_controller_cpu_fix() {
         case 2905: // Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
             adrihosan_setup_baratos_cpu_fix();
             break;
-        case 2897: // Platos de ducha de pizarra (hoja de ACABADO, hija de 86)
+        case 2897: // Platos de ducha de pizarra (hoja de ACABADO, hija de 86; 55% del importe del silo)
             adrihosan_setup_pizarra_cpu_fix();
+            break;
+        case 2890: // Plato ducha pequeno (hoja de SEGMENTO DE TAMANO, hija de 86)
+            adrihosan_setup_pequeno_cpu_fix();
+            break;
+        case 2857: // Platos de ducha antideslizantes (hoja de SEGURIDAD, hija de 86)
+            adrihosan_setup_antideslizantes_cpu_fix();
+            break;
+        case 89: // Platos de ducha decorados (hoja de ACABADO, hija de 86)
+            adrihosan_setup_decorados_cpu_fix();
+            break;
+        case 74: // Columnas de ducha (hoja de PRODUCTO, hija de 71 griferia)
+            adrihosan_setup_columnas_ducha_cpu_fix();
             break;
         // Familia "muebles de bano con dos senos": 5461 madre (escaparate) +
         // seis hijas por medida. Comparten plantilla; los datos salen por
@@ -434,6 +452,7 @@ function adrihosan_master_controller_cpu_fix() {
         // datos de la plantilla. Nada más.
         case 5472: // Espejo baño 120x80 (hija de 5471)
         case 5474: // Espejo baño 100x100 (hija de 5473)
+        case 5603: // Espejo baño 120x100 (hija de 5471) - recreada 25-ago-2026
             adrihosan_setup_espejo_medida_cpu_fix();
             break;
         case 4274: // Espejo Redondo 70 cm con Luz LED
@@ -1237,6 +1256,21 @@ function adrihosan_setup_navarti_cpu_fix() {
     add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
 }
 
+// Cat 5668 - Cer&aacute;mica Realonda (par brand 1323 + product_cat, como Vives y Navarti)
+function adrihosan_setup_ceramica_realonda() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    if ( function_exists( 'adrihosan_ceramica_realonda_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_ceramica_realonda_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_ceramica_realonda_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_ceramica_realonda_contenido_inferior', 99);
+    }
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+}
+
 function adrihosan_setup_mosaico_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -1559,6 +1593,65 @@ function adrihosan_setup_platos_ducha_cpu_fix() {
     }
 }
 
+/**
+ * Orden del catalogo en el SILO DE PLATOS (86 y toda su descendencia).
+ * La tienda ordena por defecto por fecha, y los ~19 decorados Gel Coat
+ * (2019-2020) son mas nuevos que la mayoria de platos de talla fija: se
+ * comian las primeras posiciones de cada filtro de medida (aviso Ricardo
+ * 2026-08-18). Solucion: en el silo el orden por defecto pasa a
+ * menu_order ASC + fecha DESC. Con todo a 0 el resultado es identico al
+ * actual; lo que se quiera hundir se sube de menu_order (decorados=900).
+ * Si el usuario elige otro orden en el desplegable, se respeta.
+ */
+add_filter( 'posts_orderby', 'adrihosan_platos_orden_catalogo', 20, 2 );
+function adrihosan_platos_orden_catalogo( $orderby, $query ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
+        return $orderby;
+    }
+    if ( ! is_product_category() ) {
+        return $orderby;
+    }
+    $term = get_queried_object();
+    if ( ! $term || is_wp_error( $term ) || empty( $term->term_id ) ) {
+        return $orderby;
+    }
+    $madre_platos = 86;
+    if ( (int) $term->term_id !== $madre_platos
+        && ! term_is_ancestor_of( $madre_platos, (int) $term->term_id, 'product_cat' ) ) {
+        return $orderby;
+    }
+    if ( isset( $_GET['orderby'] ) ) {
+        return $orderby; // el visitante ha elegido orden en el desplegable: se respeta
+    }
+    // Cats del silo con orden PROPIO por precio via pre_get_posts (baratos 2905,
+    // pequeno 2890 y antideslizantes 2857): este filtro les pisaba el ORDER BY y
+    // las dejaba en fecha DESC sin que se notara (cazado el 21-ago-2026). Se eximen.
+    if ( in_array( (int) $term->term_id, array( 2905, 2890, 2857 ), true ) ) {
+        return $orderby;
+    }
+    // El silo arrastra un menu_order curado historico (735 valores, ninguno a
+    // cero), asi que menu_order NO sirve como orden directo. Se usa 99999 como
+    // MARCA de "hundido" (los decorados Gel Coat): todo queda como hoy
+    // (novedad) salvo los marcados, que cierran el listado.
+    global $wpdb;
+    return "(CASE WHEN {$wpdb->posts}.menu_order >= 99999 THEN 1 ELSE 0 END) ASC, {$wpdb->posts}.post_date DESC";
+}
+
+function adrihosan_setup_platos_resina_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_platos_resina_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_platos_resina_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_platos_resina_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_platos_resina_contenido_inferior', 99);
+    }
+}
+
 function adrihosan_setup_dos_senos_cpu_fix() {
     add_filter('woocommerce_show_page_title', '__return_false');
     remove_all_actions('woocommerce_archive_description');
@@ -1610,6 +1703,76 @@ function adrihosan_setup_baratos_cpu_fix() {
     }
     if ( function_exists( 'adrihosan_baratos_contenido_inferior' ) ) {
         add_action('woocommerce_after_shop_loop', 'adrihosan_baratos_contenido_inferior', 99);
+    }
+}
+
+/**
+ * Cat 74 - Columnas de ducha.
+ *
+ * OJO, se diferencia del resto del silo en una cosa: NO llama a
+ * adrihosan_ocultar_filtros_legacy. Esta categoria sigue usando el filtro
+ * estandar del tema porque el silo de griferia todavia no tiene filter-set de
+ * FilterEverything. Cuando se monte (decision de Ricardo del 21-ago-2026:
+ * el silo entero ira con FilterEverything y se descartara el estandar), hay
+ * que anadir aqui el add_action de wp_head y meter el [fe_widget] en la
+ * plantilla, en el hueco ya marcado.
+ */
+function adrihosan_setup_columnas_ducha_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+
+    if ( function_exists( 'adrihosan_columnas_ducha_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_columnas_ducha_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_columnas_ducha_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_columnas_ducha_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_antideslizantes_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_antideslizantes_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_antideslizantes_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_antideslizantes_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_antideslizantes_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_decorados_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_decorados_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_decorados_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_decorados_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_decorados_contenido_inferior', 99);
+    }
+}
+
+function adrihosan_setup_pequeno_cpu_fix() {
+    add_filter('woocommerce_show_page_title', '__return_false');
+    remove_all_actions('woocommerce_archive_description');
+    remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_output_product_categories', 10);
+    add_action('wp_head', 'adrihosan_ocultar_filtros_legacy', 5);
+
+    if ( function_exists( 'adrihosan_pequeno_contenido_superior' ) ) {
+        add_action('woocommerce_before_shop_loop', 'adrihosan_pequeno_contenido_superior', 5);
+    }
+    if ( function_exists( 'adrihosan_pequeno_contenido_inferior' ) ) {
+        add_action('woocommerce_after_shop_loop', 'adrihosan_pequeno_contenido_inferior', 99);
     }
 }
 
@@ -2840,6 +3003,21 @@ require get_template_directory() . '/inc/dw-cpt-escaparate.php';
  * Custom post type escaparate
  */
 require get_template_directory() . '/inc/doo-cpt-proyecto.php';
+
+/**
+ * Componente compartido: la llamada a una calculadora bajo los productos
+ */
+require get_template_directory() . '/inc/calculadora-cta.php';
+
+/**
+ * Calculadora de calefaccion (shortcode [calculadora_calefaccion])
+ */
+require get_template_directory() . '/inc/calculadora-calefaccion.php';
+
+/**
+ * Calculadora del vaso de una piscina (shortcode [calculadora_piscina])
+ */
+require get_template_directory() . '/inc/calculadora-piscina.php';
 // Page Slug Body Class
 function add_slug_body_class( $classes ) {
 	global $post;
@@ -3267,9 +3445,16 @@ if ( ! function_exists( 'adrihosan_contenido_inferior_espejos' ) ) {
             </div><!-- /fe-products-wrapper -->
             <section class="ap-seo-content-section adrihosan-full-width-block"><div class="ap-seo-content-wrapper"><h2>Guía Completa para Comprar el Espejo de Baño Ideal</h2><p>Elegir un <strong>espejo para el cuarto de baño</strong> es una decisión que combina diseño y uso diario. No es solo un objeto donde mirarse, sino una pieza que puede transformar por completo la percepción de tu espacio, aportando luminosidad, amplitud y un toque de carácter. En esta guía te damos las claves para que encuentres el espejo perfecto que se adapte a tu estilo y necesidades.</p><h3>Elige la Forma que Define tu Estilo</h3><p>La forma del espejo es el primer gran paso. Cada una transmite una sensación diferente:</p><ul><li><strong>Espejos Rectangulares:</strong> Un clásico atemporal. Son versátiles y encajan en cualquier diseño, desde el más tradicional al más moderno. Ofrecen la mayor superficie de reflejo, siendo ideales para baños familiares.</li><li><strong>Espejos Redondos:</strong> Perfectos para suavizar las líneas rectas de los muebles y azulejos. Aportan un toque orgánico y de diseño, convirtiéndose en el punto focal del lavabo.</li><li><strong>Espejos Orgánicos:</strong> Para los más atrevidos. Sus formas irregulares y asimétricas son una declaración de estilo y una tendencia en auge en el diseño de interiores.</li></ul><h3>Tecnología que Facilita tu Día a Día</h3><p>Los espejos modernos han dejado de ser simples cristales para incorporar tecnología que mejora la experiencia en el baño.</p><ul><li><strong>Espejos con Luz LED:</strong> La funcionalidad definitiva. Proporcionan una iluminación frontal perfecta para tareas como el maquillaje o el afeitado, sin generar sombras. La mayoría de nuestros modelos ofrecen diferentes temperaturas de luz (cálida, neutra o fría) para que la adaptes a tu gusto.</li><li><strong>Espejos con Sistema Antivaho:</strong> ¿Cansado de no verte después de la ducha? Esta tecnología integra una pequeña resistencia que calienta el cristal, evitando que se forme vaho. Un extra de confort que agradecerás cada día.</li></ul><h3>El Toque Final: ¿Con o sin Marco?</h3><p>El marco es el detalle que remata el diseño. Un <strong>espejo sin marco</strong> ofrece un look minimalista y limpio, integrándose perfectamente en la pared. Por otro lado, los <strong>espejos con marco</strong> (negro, dorado, madera) añaden un acento decorativo, permitiéndote coordinarlos con la grifería, los tiradores del mueble o otros accesorios del baño.</p></div></section>
 
+            <?php
+            adrihosan_bloque_opcionales( array(
+                'medida' => 'de bano',
+                'id'     => 'espejos102',
+            ) );
+            ?>
+
             <section class="faq-section-common adrihosan-full-width-block"><div class="faq-wrapper-common"><h2 class="faq-main-title-common">Resolvemos tus Dudas</h2><div class="faq-items-wrapper"><div class="faq-item-common"><button class="faq-question-common"><span>¿Qué tipo de luz es mejor para un espejo de baño?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>Depende del uso. La <strong>luz neutra (4000K)</strong> es la más recomendada y versátil, ya que reproduce los colores de forma fiel, ideal para maquillarse o afeitarse. La <strong>luz cálida (3000K)</strong> crea un ambiente más relajante, mientras que la <strong>luz fría (6000K)</strong> ofrece la máxima luminosidad. Nuestros espejos LED suelen especificar el tipo de luz que ofrecen.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Son difíciles de instalar los espejos con luz?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>No especialmente, pero <strong>recomendamos que la instalación eléctrica la realice un profesional cualificado</strong>. El espejo se cuelga en la pared como uno convencional, pero necesita una conexión a un punto de luz cercano, que normalmente es el que se usa para el aplique del baño. Todos nuestros espejos incluyen un manual de instrucciones detallado.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Qué es el sistema antivaho y cómo funciona?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>El sistema antivaho consiste en una <strong>resistencia eléctrica</strong> situada en la parte trasera del espejo. Al activarla (normalmente con un botón táctil), calienta suavemente la superficie del cristal, evitando que el vapor de la ducha se condense sobre él. Así, tendrás siempre una zona del espejo perfectamente despejada.</p></div></div><div class="faq-item-common"><button class="faq-question-common"><span>¿Cómo se limpian los espejos LED para no dañar el sistema?</span><span class="faq-icon-common">+</span></button><div class="faq-answer-common"><p>La limpieza es muy sencilla. Utiliza un <strong>paño suave de microfibra</strong> y un limpiacristales estándar. Lo más importante es <strong>no pulverizar el líquido directamente sobre el espejo</strong>, sino sobre el paño. Así evitas que el líquido se filtre por los bordes y pueda dañar los componentes electrónicos.</p></div></div></div></div></section>
 
-            <section class="contact-help-common adrihosan-full-width-block"><div class="contact-help-wrapper"><div class="contact-intro"><img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan"><div><h2>¿Aún con dudas? Te ayudo a elegir.<span>Soy Ricardo. Déjame asesorarte para que tu nuevo espejo quede exactamente como lo imaginas.</span></h2></div></div><div class="contact-options-grid-common"><a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposición</div></a><a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a><a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Teléfono</div></a><a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20espejos!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a><a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a></div></div></section>
+            <section class="contact-help-common adrihosan-full-width-block"><div class="contact-help-wrapper"><div class="contact-intro"><img src="https://www.adrihosan.com/wp-content/uploads/2025/04/Ricardo-faq.jpg" alt="Foto de Ricardo, experto en materiales de Adrihosan"><div><h2>¿Aún con dudas? Te ayudo a elegir.<span>Soy Ricardo. Déjame asesorarte para que tu nuevo espejo quede exactamente como lo imaginas.</span></h2></div></div><div class="contact-options-grid-common"><a href="https://www.adrihosan.com/contacto/#visita-exposicion-presencial" class="contact-option-common"><div class="icon">📍</div><div class="label">Exposición</div></a><a href="https://www.adrihosan.com/contacto/#visita-exposicion-videollamada" class="contact-option-common"><div class="icon">💻</div><div class="label">Videollamada</div></a><a href="tel:+34961957136" class="contact-option-common"><div class="icon">📞</div><div class="label">Teléfono</div></a><a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20espejos!" class="contact-option-common"><div class="icon">💬</div><div class="label">Whatsapp</div></a><a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common"><div class="icon">&#128221;</div><div class="label">Formulario</div></a><a href="mailto:hola@adrihosan.com" class="contact-option-common"><div class="icon">✉️</div><div class="label">Email</div></a></div></div></section>
             <?php
         }
     }
@@ -3591,6 +3776,7 @@ $_adri_p = get_template_directory() . '/inc/category-pavimentos.php'; if ( file_
 $_adri_p = get_template_directory() . '/inc/category-porcelanico-marmol.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 $_adri_p = get_template_directory() . '/inc/category-ceramica-vives.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }
 $_adri_p = get_template_directory() . '/inc/category-navarti.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 4722
+$_adri_p = get_template_directory() . '/inc/category-ceramica-realonda.php'; if ( file_exists( $_adri_p ) ) { require $_adri_p; }  // Cat 5668
 
 /* ========================================================================== */
 /* MARCAS PROPIAS (taxonomy: brand) + CARGADOR MODULAR DE CSS                 */
@@ -3643,15 +3829,20 @@ $_adri_modular_incs = array(
     '/inc/category-inodoros-baratos.php',   // Cat 3795 - Inodoros baratos (hija de 81)
     '/inc/category-inodoros-colores.php',   // Cat 3811 - Inodoros de colores (hija de 81)
     '/inc/category-platos-de-ducha.php',    // Cat 86 - Platos de ducha (MADRE del silo, patron repartidor)
+    '/inc/category-platos-de-ducha-de-resina.php', // Cat 136 - Platos de ducha de resina (hoja de MATERIAL, hija de 86)
     '/inc/category-duplach.php',            // Cat 2861 - Duplach platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-fiora.php',              // Cat 2863 - Fiora platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-acquabella.php',         // Cat 2887 - Acquabella platos de ducha (hoja de MARCA, hija de 86)
     '/inc/category-platos-de-ducha-baratos.php', // Cat 2905 - Platos de ducha baratos (hoja de INTENCION DE PRECIO, hija de 86)
     '/inc/category-platos-pizarra.php',      // Cat 2897 - Platos de ducha de pizarra (hoja de ACABADO, hija de 86; 55% del importe del silo)
+    '/inc/category-plato-ducha-pequeno.php', // Cat 2890 - Plato ducha pequeno (hoja de SEGMENTO DE TAMANO, hija de 86)
+    '/inc/category-platos-antideslizantes.php', // Cat 2857 - Platos de ducha antideslizantes (hoja de SEGURIDAD, hija de 86)
+    '/inc/category-platos-decorados.php',   // Cat 89 - Platos de ducha decorados (hoja de ACABADO, hija de 86)
+    '/inc/category-columnas-ducha.php',     // Cat 74 - Columnas de ducha (hoja de PRODUCTO, hija de 71 griferia)
     '/inc/category-muebles-dos-senos.php',  // Cats 5459-5465 - Familia muebles con dos senos (7 paginas, plantilla compartida)
     '/inc/category-azulejos-grandes-banos.php', // Cat 5467 - Azulejos grandes para banos (hija de 5466)
     '/inc/category-azulejos-grandes-cocina.php', // Cat 5468 - Azulejos grandes para cocina (hija de 5466)
-    '/inc/category-espejo-medida.php',      // Cats 5472, 5474 - Espejos de bano por medida (plantilla parametrizable)
+    '/inc/category-espejo-medida.php',      // Cats 5472, 5474, 5603 - Espejos de bano por medida (plantilla parametrizable)
     '/inc/cache-and-css.php',               // Cargador de CSS por categoria/brand/page
 );
 foreach ( $_adri_modular_incs as $_adri_inc_rel ) {
@@ -3935,6 +4126,27 @@ function adrihosan_orden_estricto_ids( $q ) {
         $q->set( 'meta_key', '_price' );
         $q->set( 'order', 'ASC' );
     }
+
+    // 7. PLATO DUCHA PEQUENO (ID 2890) -> PRECIO ASCENDENTE
+    // Con orden por fecha, las altas en bloque de una familia (las 15 medidas
+    // de Silex enmarcado del 20-ago) monopolizan la pagina 1 con el mismo
+    // plato clonado. Por precio, la entrada son los 70x70/80x70 desde
+    // 120,90 EUR: modelos variados y coherentes con la promesa del segmento.
+    // Decidido con Ricardo el 21-ago-2026.
+    elseif ( is_product_category( 2890 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
+    }
+
+    // 8. PLATOS DE DUCHA ANTIDESLIZANTES (ID 2857) -> PRECIO ASCENDENTE
+    // Mismo motivo que la 2890: el orden por fecha deja las altas en bloque
+    // clonadas en la pagina 1. Decidido con Ricardo el 21-ago-2026.
+    elseif ( is_product_category( 2857 ) ) {
+        $q->set( 'orderby', 'meta_value_num' );
+        $q->set( 'meta_key', '_price' );
+        $q->set( 'order', 'ASC' );
+    }
 }
 
 /**
@@ -3972,6 +4184,9 @@ add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
 } );
 
 require_once get_stylesheet_directory() . '/inc/helpers-h1.php';
+require_once get_template_directory() . '/inc/helpers-opcionales.php';
+require_once get_template_directory() . '/inc/helpers-express.php';
+require_once get_template_directory() . '/inc/helpers-desvio.php';
 
 /* ==========================================================================
  * oEmbed DESACTIVADO - incidente de saturacion 2026-08-05

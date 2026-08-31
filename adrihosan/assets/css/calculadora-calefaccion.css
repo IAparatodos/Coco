@@ -1,0 +1,230 @@
+/* Calculadora de calefacción — estilos. Todo bajo #cad-calc para no tocar el tema. */
+#cad-calc{
+  /* Paleta de la tienda: turquesa de marca, petroleo de titulares, nieblas frias */
+  --turq:#4DD2D0; --turq-deep:#2C9A98; --turq-mist:#E8F8F8;
+  --petrol:#3F6F7B; --petrol-deep:#102E35;
+  --ink:#102E35; --body:#41565C; --muted:#6B8189; --faint:#90A3A9;
+  --paper:#FFFFFF; --canvas:#F4F8F9; --mist:#EEF4F5;
+  --line:#E1EAEC; --line-2:#CCDBDF;
+  --gold:#C08A2E; --gold-bg:#FBF3E2;
+  --r-lg:20px; --r-md:14px; --r-sm:10px;
+  --shadow:0 1px 2px rgba(16,46,53,.04), 0 8px 24px -12px rgba(16,46,53,.14);
+}
+#cad-calc, #cad-calc *, #cad-calc *::before, #cad-calc *::after{box-sizing:border-box}
+/* Los fondos van de borde a borde: el contenedor se sale del ancho del tema
+   con margenes negativos y el contenido sigue centrado por .cad-wrap. */
+#cad-calc{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.entry-content section.cad-ancho-total{
+  /* el tema fija estos margenes con !important; aqui solo se estira el fondo,
+     el bloque conserva su padding y su aire originales */
+  margin-left:calc(50% - 50vw) !important;margin-right:calc(50% - 50vw) !important}
+
+#cad-calc{background:var(--canvas);color:var(--body);
+  font-family:Poppins,"Poppins Fallback",system-ui,-apple-system,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding:0 0 8px}
+/* el tema pinta p, h*, dl y small dentro de .entry-content: aqui se neutraliza */
+#cad-calc{font-weight:400}
+#cad-calc p, #cad-calc dl, #cad-calc dd, #cad-calc dt, #cad-calc figure{margin:0;padding:0}
+#cad-calc h1, #cad-calc h2, #cad-calc h3{text-transform:none;font-family:inherit}
+#cad-calc img{max-width:100%;height:auto;border:0}
+#cad-calc input, #cad-calc label, #cad-calc a, #cad-calc span, #cad-calc b, #cad-calc i, #cad-calc small{font-family:inherit}
+#cad-calc a{text-decoration:none}
+#cad-calc .cad-item .cad-name{text-decoration:underline}
+#cad-calc section, #cad-calc article, #cad-calc form{margin:0;padding:0}
+#cad-calc h1,#cad-calc h2,#cad-calc h3{color:var(--ink);margin:0;letter-spacing:-.02em;text-wrap:balance;font-family:inherit}
+#cad-calc a{color:inherit;box-shadow:none}
+#cad-calc .cad-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- hero ---------- */
+#cad-calc .cad-hero{background:linear-gradient(115deg,var(--petrol-deep) 0%,var(--petrol) 62%,#4A818E 100%);
+  color:#FFF;padding:52px 0 116px;position:relative;overflow:hidden}
+#cad-calc .cad-hero::after{content:"";position:absolute;right:-140px;top:-120px;width:420px;height:420px;
+  border-radius:50%;background:rgba(77,210,208,.16);filter:blur(4px)}
+#cad-calc .cad-hero .cad-wrap{position:relative;z-index:1}
+#cad-calc .cad-eyebrow{display:flex;align-items:center;gap:9px;margin:0 0 14px;
+  font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--turq)}
+#cad-calc .cad-eyebrow .cad-pip{width:7px;height:7px;border-radius:50%;background:var(--turq);flex:none;
+  box-shadow:0 0 0 4px rgba(77,210,208,.22)}
+#cad-calc .cad-hero h1{color:#FFF;font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.08;max-width:16ch}
+#cad-calc .cad-hero .cad-lead{color:rgba(255,255,255,.82);max-width:52ch;margin:16px 0 0;font-size:17px}
+
+/* ---------- rejilla principal ---------- */
+#cad-calc .cad-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(320px,1fr);gap:24px;
+  margin-top:-72px;position:relative;z-index:2;align-items:start}
+@media (max-width:940px){#cad-calc .cad-layout{grid-template-columns:1fr;margin-top:-84px}}
+
+/* panel del configurador */
+#cad-calc .cad-panel{background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--shadow);
+  border:1px solid var(--line);overflow:hidden}
+#cad-calc .cad-step{padding:26px 28px}
+#cad-calc .cad-step + .cad-step{border-top:1px solid var(--line)}
+@media (max-width:560px){#cad-calc .cad-step{padding:22px 18px}}
+#cad-calc .cad-slab{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:600;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--turq-deep);margin:0 0 6px}
+#cad-calc .cad-slab::after{content:"";flex:1;height:1px;background:var(--line)}
+#cad-calc .cad-step h2{font-size:19px;font-weight:600;line-height:1.3}
+#cad-calc .cad-shint{margin:5px 0 16px;font-size:14.5px;color:var(--muted)}
+
+/* chips */
+#cad-calc .cad-chips{display:flex;flex-wrap:wrap;gap:9px}
+#cad-calc .cad-chip{position:relative}
+#cad-calc .cad-chip input{position:absolute;opacity:0;width:0;height:0}
+#cad-calc .cad-chip span{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;
+  border:1px solid var(--line-2);border-radius:999px;background:var(--paper);color:var(--body);
+  font-size:15px;font-weight:500;cursor:pointer;transition:.15s;user-select:none;white-space:nowrap}
+#cad-calc .cad-chip span:hover{border-color:var(--turq);background:var(--turq-mist);color:var(--ink)}
+#cad-calc .cad-chip input:checked + span{background:var(--petrol-deep);border-color:var(--petrol-deep);color:#FFF}
+#cad-calc .cad-chip input:focus-visible + span{outline:2px solid var(--turq-deep);outline-offset:2px}
+
+/* nota bajo la rama */
+#cad-calc .cad-notas{display:grid;margin-top:16px}
+#cad-calc .cad-notas > p{grid-area:1 / 1;margin:0;font-size:14px;color:var(--body);background:var(--mist);
+  border-left:3px solid var(--turq);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:12px 14px;
+  visibility:hidden;opacity:0;transition:opacity .15s}
+#cad-calc .cad-notas > p.cad-on{visibility:visible;opacity:1}
+
+/* sub-pregunta del bano */
+#cad-calc .cad-subq{margin-top:16px;padding:16px 18px;background:var(--turq-mist);border-radius:var(--r-md)}
+#cad-calc .cad-subq h3{font-size:15px;font-weight:600;margin-bottom:11px}
+#cad-calc .cad-subq p{margin:11px 0 0;font-size:13.5px;color:var(--petrol)}
+#cad-calc .cad-hidden{display:none !important}
+
+/* campos numericos */
+#cad-calc .cad-numgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:560px){#cad-calc .cad-numgrid{grid-template-columns:1fr}}
+#cad-calc .cad-numfield{display:flex;flex-direction:column;gap:6px}
+#cad-calc .cad-numfield label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#cad-calc .cad-numfield .cad-box{display:flex;align-items:center;border:1px solid var(--line-2);border-radius:var(--r-md);
+  background:var(--paper);transition:.15s;overflow:hidden}
+#cad-calc .cad-numfield .cad-box:focus-within{border-color:var(--turq);box-shadow:0 0 0 3px rgba(77,210,208,.2)}
+#cad-calc .cad-numfield input{flex:1;min-width:0;height:52px;padding:0 0 0 15px;border:0;background:transparent;
+  color:var(--ink);font:inherit;font-size:17px;font-weight:500;font-variant-numeric:tabular-nums}
+#cad-calc .cad-numfield input:focus{outline:none}
+#cad-calc .cad-numfield .cad-unit{padding:0 15px;font-size:14px;color:var(--faint);flex:none}
+
+/* aislamiento */
+#cad-calc .cad-isogrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:1040px){#cad-calc .cad-isogrid{grid-template-columns:repeat(4,1fr)}}
+#cad-calc .cad-iso{position:relative}
+#cad-calc .cad-iso input{position:absolute;opacity:0;width:0;height:0}
+#cad-calc .cad-iso span{display:flex;flex-direction:column;gap:3px;height:100%;padding:14px 14px 13px;
+  border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--paper);
+  cursor:pointer;transition:.15s}
+#cad-calc .cad-iso span::before{content:"";width:26px;height:4px;border-radius:2px;background:var(--bar);margin-bottom:7px}
+#cad-calc .cad-iso[data-iso="alto"] span{--bar:#2FA96B}
+#cad-calc .cad-iso[data-iso="medio"] span{--bar:var(--turq-deep)}
+#cad-calc .cad-iso[data-iso="bajo"] span{--bar:#D98C3A}
+#cad-calc .cad-iso[data-iso="nose"] span{--bar:var(--line-2)}
+#cad-calc .cad-iso span:hover{border-color:var(--turq)}
+#cad-calc .cad-iso input:checked + span{border-color:var(--petrol-deep);background:var(--mist)}
+#cad-calc .cad-iso input:focus-visible + span{outline:2px solid var(--turq-deep);outline-offset:2px}
+#cad-calc .cad-iso b{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+#cad-calc .cad-iso i{font-style:normal;font-size:12.5px;color:var(--muted)}
+
+/* ---------- carril del resultado ---------- */
+#cad-calc .cad-rail{position:sticky;top:110px}
+@media (max-width:940px){#cad-calc .cad-rail{position:static}}
+#cad-calc .cad-rcard{background:linear-gradient(160deg,var(--petrol-deep),#1B454F);color:#FFF;
+  border-radius:var(--r-lg);padding:26px;box-shadow:0 18px 40px -22px rgba(16,46,53,.55)}
+#cad-calc .cad-rlabel{margin:0;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--turq)}
+#cad-calc .cad-watts{font-size:clamp(30px,3.6vw,40px);font-weight:600;line-height:1.05;letter-spacing:-.03em;
+  color:#FFF;margin:10px 0 0;font-variant-numeric:tabular-nums}
+#cad-calc .cad-wnote{font-size:13.5px;color:rgba(255,255,255,.72);margin:9px 0 0}
+#cad-calc .cad-scale{margin:20px 0 0}
+#cad-calc .cad-scale .cad-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:rgba(255,255,255,.14)}
+#cad-calc .cad-scale .cad-bar i{display:block;height:100%}
+#cad-calc .cad-scale .cad-ends{display:flex;justify-content:space-between;margin-top:7px;font-size:11.5px;
+  color:rgba(255,255,255,.6);font-variant-numeric:tabular-nums}
+#cad-calc .cad-facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12);
+  border-radius:var(--r-md);overflow:hidden;margin:22px 0 0}
+#cad-calc .cad-fact{background:rgba(255,255,255,.05);padding:11px 13px}
+#cad-calc .cad-fact dt{margin:0;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+#cad-calc .cad-fact dd{margin:3px 0 0;font-size:14px;font-weight:500;color:#FFF}
+#cad-calc .cad-rgo{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;width:100%;
+  background:var(--turq);color:var(--petrol-deep);border:0;border-radius:999px;
+  padding:14px 20px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;
+  text-decoration:none;transition:.15s}
+#cad-calc .cad-rgo:hover{background:#63DEDC;transform:translateY(-1px)}
+#cad-calc .cad-rgo:focus-visible{outline:2px solid #FFF;outline-offset:2px}
+
+/* ---------- fichas de producto ---------- */
+#cad-calc .cad-picks{margin:52px 0 0;scroll-margin-top:20px}
+#cad-calc .cad-pickhead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+#cad-calc .cad-pickhead h2{font-size:26px;font-weight:600}
+#cad-calc .cad-pickhead .cad-count{font-size:13px;color:var(--muted);letter-spacing:.02em}
+#cad-calc .cad-dual{font-size:12.5px;color:var(--faint);text-align:right;max-width:11ch;line-height:1.35}
+#cad-calc .cad-cards{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch}
+#cad-calc .cad-card{flex:1 1 290px;max-width:400px}
+@media (max-width:680px){#cad-calc .cad-card{max-width:none}}
+#cad-calc .cad-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
+  overflow:hidden;display:flex;flex-direction:column;transition:.18s}
+#cad-calc .cad-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+#cad-calc .cad-card[data-tier="equilibrada"]{border-color:var(--turq);box-shadow:0 0 0 1px var(--turq)}
+#cad-calc .cad-badge{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 18px;
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--mist);color:var(--petrol);border-bottom:1px solid var(--line)}
+#cad-calc .cad-card[data-tier="equilibrada"] .cad-badge{background:var(--turq-mist);color:var(--turq-deep)}
+#cad-calc .cad-badge .cad-pick{display:flex;align-items:center;gap:7px}
+#cad-calc .cad-badge .cad-pick::before{content:"";width:7px;height:7px;border-radius:2px;background:currentColor}
+#cad-calc .cad-badge .cad-w{letter-spacing:.02em;text-transform:none;font-size:13px;font-weight:600;color:var(--ink);
+  font-variant-numeric:tabular-nums}
+#cad-calc .cad-shots{display:flex;gap:10px;padding:18px 18px 4px;justify-content:center;background:var(--paper)}
+#cad-calc .cad-shot{width:100%;max-width:150px;aspect-ratio:1;border-radius:var(--r-md);background:var(--canvas);
+  border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}
+#cad-calc .cad-shot img{width:86%;height:86%;object-fit:contain;display:block}
+#cad-calc .cad-items{padding:14px 18px 0;display:flex;flex-direction:column;gap:12px;flex:1}
+#cad-calc .cad-item{display:flex;gap:12px;align-items:flex-start}
+#cad-calc .cad-item .cad-n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--mist);color:var(--petrol);
+  font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:2px}
+#cad-calc .cad-item .cad-meta{flex:1;min-width:0}
+#cad-calc .cad-item .cad-name{display:block;font-size:14.5px;font-weight:500;color:var(--petrol);line-height:1.4;
+  text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+#cad-calc .cad-item .cad-name:hover{color:var(--turq-deep);text-decoration-color:var(--turq)}
+#cad-calc .cad-item .cad-name:focus-visible{outline:2px solid var(--turq-deep);outline-offset:2px;border-radius:3px}
+#cad-calc .cad-item .cad-sub{display:block;font-size:12px;color:var(--muted);margin-top:3px;
+  font-variant-numeric:tabular-nums}
+#cad-calc .cad-item .cad-p{flex:none;font-size:14.5px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+#cad-calc .cad-cfoot{margin-top:auto;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+#cad-calc .cad-price{line-height:1.15}
+#cad-calc .cad-price b{display:block;font-size:21px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+#cad-calc .cad-price small{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-top:2px}
+
+/* "+ IVA" discreto pegado a cada precio (catalogo sin IVA). */
+#cad-calc .siva{font-style:normal;font-size:11px;font-weight:500;color:var(--faint);
+  letter-spacing:.01em;text-transform:none;white-space:nowrap;margin-left:4px}
+#cad-calc .cad-item .cad-p .siva{font-size:10.5px}
+#cad-calc .cad-buy{flex:none;text-decoration:none;background:var(--petrol-deep);color:#FFF;border-radius:999px;
+  padding:11px 20px;font-size:14px;font-weight:500;transition:.15s;white-space:nowrap}
+#cad-calc .cad-buy:hover{background:var(--turq-deep)}
+#cad-calc .cad-buy:focus-visible{outline:2px solid var(--turq-deep);outline-offset:2px}
+#cad-calc .cad-flag{display:block;margin:0;padding:12px 18px;background:var(--gold-bg);color:var(--gold);
+  border-top:1px solid var(--line);font-size:13px;line-height:1.5}
+#cad-calc .cad-flag b{font-weight:600}
+#cad-calc .cad-empty{flex:1 1 100%;padding:34px 24px;text-align:center;color:var(--muted);font-size:15px;
+  background:var(--paper);border:1px dashed var(--line-2);border-radius:var(--r-lg)}
+
+/* ---------- auditoria ---------- */
+#cad-calc .cad-audwrap{margin:44px 0 0}
+#cad-calc .cad-toggle{display:inline-flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+#cad-calc .cad-toggle input{position:absolute;opacity:0;width:0;height:0}
+#cad-calc .cad-toggle .cad-track{width:38px;height:22px;border-radius:11px;background:var(--line-2);position:relative;transition:.16s;flex:none}
+#cad-calc .cad-toggle .cad-track::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;
+  background:#FFF;transition:.16s;box-shadow:0 1px 3px rgba(16,46,53,.3)}
+#cad-calc .cad-toggle input:checked + .cad-track{background:var(--turq)}
+#cad-calc .cad-toggle input:checked + .cad-track::after{transform:translateX(16px)}
+#cad-calc .cad-toggle input:focus-visible + .cad-track{outline:2px solid var(--turq-deep);outline-offset:2px}
+#cad-calc .cad-toggle .cad-lbl{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600}
+#cad-calc .cad-audit{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px}
+#cad-calc .cad-audit h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--turq-deep);margin:0 0 12px;font-weight:600}
+#cad-calc .cad-audit h3 + h3, #cad-calc .cad-audit p + h3{margin-top:24px}
+#cad-calc .cad-calc{font-size:14.5px;line-height:1.9;overflow-x:auto;font-variant-numeric:tabular-nums}
+#cad-calc .cad-calc div{display:flex;justify-content:space-between;gap:20px;white-space:nowrap}
+#cad-calc .cad-calc .cad-op{color:var(--muted)}
+#cad-calc .cad-calc .cad-tot{border-top:1px solid var(--line-2);margin-top:8px;padding-top:8px;font-weight:600;color:var(--ink)}
+#cad-calc .cad-audit p{font-size:14.5px;color:var(--body);margin:0 0 10px}
+#cad-calc .cad-audit p:last-child{margin-bottom:0}
+#cad-calc .cad-audit code{font-size:13px;background:var(--mist);padding:2px 6px;border-radius:5px;border:1px solid var(--line)}
+#cad-calc .cad-audit strong{color:var(--ink)}
+
+@media (prefers-reduced-motion:reduce){#cad-calc *{transition:none !important}}

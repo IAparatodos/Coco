@@ -108,6 +108,12 @@ function adrihosan_azulejos_exterior_contenido_superior() {
                         <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Alto Natural</td>
                         <td style="padding: 12px; border-bottom: 1px solid #ddd;">Autenticidad y tradición mediterránea</td>
                     </tr>
+                                    <tr style="background: #f8f9fa;">
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong><a href="https://www.adrihosan.com/categoria-producto/baldosa-hidraulica/original/exterior/" style="color: #4dd2d0; text-decoration: none; font-weight: 600;">Baldosa Hidr&aacute;ulica de Exterior</a></strong></td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Patios y Terrazas con Personalidad</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: center;">Alto Natural</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #ddd;">Dibujo artesanal que no pasa de moda</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -199,7 +205,25 @@ function adrihosan_azulejos_exterior_contenido_inferior() {
                         <span class="faq-icon-common">+</span>
                     </button>
                     <div class="faq-answer-common">
-                        <p>Es porcel&aacute;nico de doble espesor que se apoya sobre soportes regulables (plots) en lugar de pegarse con cemento. Compensa cuando no puedes o no quieres picar: deja el suelo nivelado sobre una superficie que no lo est&aacute;, drena el agua y permite levantar una pieza para acceder a desag&uuml;es o cableado.</p>
+                        <p>Es porcel&aacute;nico de doble espesor que se apoya sobre soportes regulables (plots) en lugar de pegarse con cemento. Compensa cuando no puedes o no quieres picar: deja el suelo nivelado sobre una superficie que no lo est&aacute;, drena el agua y permite levantar una pieza para acceder a desag&uuml;es o cableado. Tienes la selecci&oacute;n completa en <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/suelo-tecnico-exterior/">suelo t&eacute;cnico exterior</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Existe suelo de exterior antideslizante barato?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>S&iacute;. Tenemos suelo de exterior desde unos 16 &euro;/m&sup2; + IVA, tambi&eacute;n en acabado antideslizante: lo tienes reunido en la selecci&oacute;n de <a href="https://www.adrihosan.com/categoria-producto/ceramica/pavimentos/azulejos-exterior/suelo-exterior-antideslizante/">suelo exterior antideslizante</a>. Un precio ajustado no significa renunciar a la seguridad: la clase de deslizamiento de cada modelo viene siempre en su ficha t&eacute;cnica.</p>
+                    </div>
+                </div>
+                <div class="faq-item-common">
+                    <button class="faq-question-common">
+                        <span>&iquest;Qu&eacute; pongo en una pared o fachada exterior?</span>
+                        <span class="faq-icon-common">+</span>
+                    </button>
+                    <div class="faq-answer-common">
+                        <p>Para paredes, muros y fachadas usa revestimiento cer&aacute;mico de exterior: aguanta la lluvia, el sol y las heladas sin desconcharse ni perder color. Lo tienes en la categor&iacute;a de <a href="https://www.adrihosan.com/categoria-producto/ceramica/azulejos/revestimiento-fachada-exterior/">revestimiento para fachadas</a>, con plaquetas y aplacados que se colocan igual que un azulejo convencional.</p>
                     </div>
                 </div>
             </div>

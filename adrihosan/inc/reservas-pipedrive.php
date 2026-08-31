@@ -138,13 +138,17 @@ function adrihosan_pipedrive_format_phone( $phone ) {
 }
 
 function adrihosan_pipedrive_search_person_by_email( $email ) {
-    /* exact_match=true evita falsos positivos del search difuso de
-     * Pipedrive (que devolveria coincidencias parciales). El email es
-     * unico por naturaleza, asi que solo nos vale el match exacto. */
-    $result = adrihosan_pipedrive_request(
-        'GET',
-        '/persons/search?term=' . urlencode( $email ) . '&fields=email&exact_match=true&limit=1'
-    );
+    $result = adrihosan_pipedrive_request( 'GET', '/persons/search?term=' . urlencode( $email ) . '&fields=email&limit=1' );
+    if ( is_wp_error( $result ) ) {
+        return null;
+    }
+    $items = $result['data']['items'] ?? [];
+    return ! empty( $items ) ? $items[0]['item'] : null;
+}
+
+function adrihosan_pipedrive_search_person_by_phone( $phone ) {
+    $formatted = adrihosan_pipedrive_format_phone( $phone );
+    $result    = adrihosan_pipedrive_request( 'GET', '/persons/search?term=' . urlencode( $formatted ) . '&fields=phone&limit=1' );
     if ( is_wp_error( $result ) ) {
         return null;
     }
@@ -153,12 +157,11 @@ function adrihosan_pipedrive_search_person_by_email( $email ) {
 }
 
 function adrihosan_pipedrive_find_person( $email, $phone ) {
-    /* Solo matcheamos por email (clave primaria de facto). El fallback
-     * por telefono que habia antes generaba falsos positivos: dos
-     * personas distintas pueden compartir telefono (parejas, empresas,
-     * datos de prueba) y la reserva se enganchaba a la persona
-     * equivocada. Si no hay email match -> crear persona nueva. */
-    return adrihosan_pipedrive_search_person_by_email( $email );
+    $person = adrihosan_pipedrive_search_person_by_email( $email );
+    if ( $person ) {
+        return $person;
+    }
+    return adrihosan_pipedrive_search_person_by_phone( $phone );
 }
 
 function adrihosan_pipedrive_create_person( $name, $email, $phone ) {

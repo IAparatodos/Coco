@@ -1,0 +1,45 @@
+/* Llamada a una calculadora, bajo los productos de una categoria.
+   Compartida por la de calefaccion y la de piscina. Todo bajo .cad-cta. */
+.cad-cta{
+  --cta-turq:#4DD2D0; --cta-petrol:#102E35;
+  position:relative;overflow:hidden;
+  /* de borde a borde: el bloque se sale del ancho del tema y el contenido
+     se vuelve a centrar con .cad-cta__wrap */
+  margin:48px calc(50% - 50vw) 8px;
+  min-height:340px;display:flex;align-items:center;
+  background-color:var(--cta-petrol);background-size:cover;background-position:center 58%;
+  font-family:Poppins,"Poppins Fallback",system-ui,-apple-system,sans-serif}
+/* el velo deja ver la foto a la derecha y sostiene el texto a la izquierda */
+.cad-cta::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(95deg,rgba(16,46,53,.95) 0%,rgba(16,46,53,.88) 34%,rgba(16,46,53,.5) 64%,rgba(16,46,53,.14) 100%)}
+.cad-cta__wrap{position:relative;z-index:1;width:100%;max-width:1180px;margin:0 auto;padding:52px 20px}
+.cad-cta__dentro{max-width:620px}
+.cad-cta__ojo{display:flex;align-items:center;gap:9px;margin:0 0 14px;
+  font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--cta-turq)}
+.cad-cta__ojo::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cta-turq);flex:none;
+  box-shadow:0 0 0 4px rgba(77,210,208,.22)}
+.cad-cta h2{color:#FFF;font-size:clamp(26px,3.1vw,38px);line-height:1.12;letter-spacing:-.02em;
+  margin:0;font-weight:600;text-transform:none;text-wrap:balance}
+.cad-cta p{color:rgba(255,255,255,.85);font-size:16px;line-height:1.55;margin:14px 0 0;max-width:48ch}
+/* el color va con el selector reforzado (.cad-cta a.cad-cta__boton) porque el tema
+   pisa el color de los enlaces y el texto salia turquesa sobre el turquesa del boton */
+.cad-cta__boton{display:inline-flex;align-items:center;gap:10px;margin-top:26px;
+  background:var(--cta-turq);border-radius:999px;
+  padding:15px 28px;font-size:15.5px;font-weight:600;text-decoration:none;
+  box-shadow:0 10px 26px -12px rgba(77,210,208,.9);transition:transform .15s ease,background .15s ease}
+.cad-cta a.cad-cta__boton{color:#FFF}
+.cad-cta__boton:hover{background:#63DEDC;transform:translateY(-2px)}
+.cad-cta a.cad-cta__boton:hover{color:#FFF}
+.cad-cta__boton:focus-visible{outline:2px solid #FFF;outline-offset:3px}
+.cad-cta__boton svg{width:17px;height:17px;flex:none}
+.cad-cta__pie{display:block;margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.6)}
+
+@media (max-width:781px){
+  .cad-cta{min-height:0;margin:34px calc(50% - 50vw) 8px}
+  .cad-cta::before{background:linear-gradient(180deg,rgba(16,46,53,.84) 0%,rgba(16,46,53,.93) 100%)}
+  .cad-cta__wrap{padding:32px 20px}
+  .cad-cta__dentro{max-width:none}
+  .cad-cta p{font-size:15px}
+  .cad-cta__boton{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){.cad-cta__boton{transition:none}}

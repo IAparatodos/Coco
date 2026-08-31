@@ -114,6 +114,13 @@ function adrihosan_espejo_bano_90x100_contenido_inferior() {
     ?>
 
     <!-- FAQs -->
+
+    <?php
+    adrihosan_bloque_opcionales( array(
+        'medida'  => 'de 90x100 cm',
+        'id'      => 'espejobano90x100',
+    ) );
+    ?>
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Espejos de Ba&ntilde;o de 90x100&nbsp;cm</h2>
@@ -167,6 +174,10 @@ function adrihosan_espejo_bano_90x100_contenido_inferior() {
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20un%20espejo%20de%20ba%C3%B1o%20de%2090x100%20cm" class="contact-option-common">
                     <div class="icon">&#128172;</div>
                     <div class="label">Whatsapp</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common">
+                    <div class="icon">&#128221;</div>
+                    <div class="label">Formulario</div>
                 </a>
                 <a href="mailto:hola@adrihosan.com" class="contact-option-common">
                     <div class="icon">&#9993;&#65039;</div>

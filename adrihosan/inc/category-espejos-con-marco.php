@@ -149,6 +149,13 @@ function adrihosan_espejos_con_marco_contenido_inferior() {
     <!-- IMPORTANTE (regla CLAUDE.md): aqui solo HTML visible del
          acordeon. Schema FAQ se gestiona EXCLUSIVAMENTE desde Rank
          Math (panel WP). No anadir ningun script ld+json a este inc. -->
+
+    <?php
+    adrihosan_bloque_opcionales( array(
+        'medida'  => 'con marco',
+        'id'      => 'espejosconmarco',
+    ) );
+    ?>
     <section class="faq-section-common adrihosan-full-width-block">
         <div class="faq-wrapper-common">
             <h2 class="faq-main-title-common">Preguntas Frecuentes sobre Espejos de Ba&ntilde;o con Marco</h2>
@@ -220,6 +227,10 @@ function adrihosan_espejos_con_marco_contenido_inferior() {
                 <a href="https://api.whatsapp.com/send?phone=+34961957136&text=Hola,%20necesito%20ayuda%20con%20un%20espejo%20de%20ba%C3%B1o%20con%20marco" class="contact-option-common">
                     <div class="icon">&#128172;</div>
                     <div class="label">Whatsapp</div>
+                </a>
+                <a href="https://www.adrihosan.com/contacta-con-nosotros/" class="contact-option-common">
+                    <div class="icon">&#128221;</div>
+                    <div class="label">Formulario</div>
                 </a>
                 <a href="mailto:hola@adrihosan.com" class="contact-option-common">
                     <div class="icon">&#9993;&#65039;</div>
