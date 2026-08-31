@@ -227,6 +227,10 @@ function adrihosan_pizarra_contenido_inferior() {
                     <h3>Personas mayores</h3>
                     <p>Cambiar la ba&ntilde;era por una ducha segura y sin escal&oacute;n.</p>
                 </a>
+                <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-antideslizantes/" class="pzr-related-card">
+                    <h3>Antideslizantes C3</h3>
+                    <p>Los que declaran la clase C3, la que pide la normativa para ducharse con el pie descalzo.</p>
+                </a>
                 <a href="https://www.adrihosan.com/categoria-producto/sanitarios/platos-de-ducha/platos-de-ducha-de-resina/" class="pzr-related-card">
                     <h3>Platos de resina</h3>
                     <p>Todo el cat&aacute;logo de resina: poli&eacute;ster gel coat y poliuretano.</p>
