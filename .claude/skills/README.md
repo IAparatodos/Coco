@@ -25,3 +25,20 @@ tema WordPress de adrihosan.com.
 Al arrancar una sesión, `.claude/hooks/session-start.sh` hace `git fetch` y
 lista las ramas remotas más recientes, recordando que se debe trabajar
 siempre desde la rama más reciente funcional.
+
+## Hooks de edición (`adri-guard.py`)
+
+`.claude/hooks/adri-guard.py` vigila cada Edit/Write y frena los errores más
+caros del historial de CLAUDE.md:
+
+- **Antes de editar (bloquea):** las copias viejas de la raíz (`inc/`,
+  `functions*.php`). El tema bueno es `adrihosan/`.
+- **Después de editar (avisa a Claude para que lo corrija):**
+  - `php -l` en cada `.php` de `adrihosan/` (un parse error subido por FTP
+    tira la web).
+  - JSON-LD `FAQPage` en `adrihosan/inc/category-*.php` (lo emite Rank Math).
+  - Colores nuevos fuera de la identidad corporativa en
+    `adrihosan/assets/css/category-*.css`. Solo avisa de los colores que no
+    estaban ya en HEAD, para no saltar con los CSS antiguos pendientes de migrar.
+
+Necesita `python3` (y `php` para el lint; sin `php` esa comprobación se salta).
